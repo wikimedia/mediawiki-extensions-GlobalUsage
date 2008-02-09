@@ -1,0 +1,19 @@
+When using a shared image repository, it is impossible to see within MediaWiki whether a file
+is used on one of the slave wikis. On Wikimedia this is handled by the CheckUsage tool on the 
+toolserver, but it is merely a hack of function that should be built in.
+
+GlobalUsage creates a new table globalimagelinks, which is basically the same as imagelinks, but 
+points to the usage on foreign wikis. The field il_from has been replaced by gil_wiki, gil_page
+and gil_pagename, which contain respectively the interwiki prefix, page id and page name 
+including namespace of the linking page. Since the foreign wiki may use different namespaces ,
+the namespace name needs to be included in the link as well.
+
+GlobalUsage hooks a to be created hook LinksUpdate, which is run after LinksUpdater:doUpdate.
+It will get the image usage diffs, for each image gets the repo, groups them by repo, and 
+updates the link table on the repo. 
+
+It should also hook ImageUpload and ArticleDelete, since those also influence the imagelinks,
+without LinksUpdater being run.
+
+The GlobalUsage can be found on Special:GlobalUsage. Or should it be included on the image 
+description page?
