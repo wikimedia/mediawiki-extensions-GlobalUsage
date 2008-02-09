@@ -23,6 +23,8 @@ $wgAutoloadClasses['GlobalUsage'] = $dir . 'GlobalUsage_body.php';
 //$wgExtensionMessageFiles['GlobalUsage'] = $dir . 'GlobalUsage.i18n.php';
 $wgSpecialPages['GlobalUsage'] = 'GlobalUsage';
 $wgHooks['LinksUpdate'][] = 'GlobalUsage::updateLinks';
-
-
+$wgHooks['ArticleDeleteComplete'][] = 'GlobalUsage::articleDelete';
+$wgHooks['UploadComplete'][] = 'GlobalUsage::imageUploaded';
+// This wiki does not have a globalimagelinks table
+$wgGuHasTable = false;
 

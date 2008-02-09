@@ -46,9 +46,7 @@ class GlobalUsage extends SpecialPage {
 	}
 	
 	static function doIncrementalUpdate( $linksUpdater ) {
-		global $wgOut;
-
-		$title = $linksUpdater->getTitle();
+		$title = $linksUpdater->getTitle(); # TODO: Implement
 		$pageId = $title->getArticleID();
 		$existing = $linksUpdater->getExistingImages();
 		$deletions = GlobalUsage::foreignFiles( $pageId, $title->getPrefixedText(), 
@@ -56,27 +54,27 @@ class GlobalUsage extends SpecialPage {
 		$insertions = GlobalUsage::foreignFiles( $pageId, $title->getPrefixedText(), 
 			$linksUpdater->getImageInsertions($existing), true );
 		
-		// Don't open repos you don't need and don't open them twice
+		// Don't open repo you don't need and don't open them twice
 		$repositories = array_keys($deletions) + array_keys($insertions);
 		$updatedRepositories = array ( );
-		foreach ($repositories as $repos) {
-			if ( in_array( $repos, $updatedRepositories) ) continue;
+		foreach ($repositories as $repo) {
+			if ( in_array( $repo, $updatedRepositories) ) continue;
 			
-			GlobalUsage::incrementalUpdateForeignRepository( $pageId, $repos,
-				isset($deletions[$repos]) ? $deletions[$repos] : array(),
-				isset($insertions[$repos]) ? $insertions[$repos] : array()
+			GlobalUsage::incrementalUpdateForeignRepository( $pageId, $repo,
+				isset($deletions[$repo]) ? $deletions[$repo] : array(),
+				isset($insertions[$repo]) ? $insertions[$repo] : array()
 			);
 			
-			$updatedRepositories[] =  $repos;
+			$updatedRepositories[] =  $repo;
 		}
 	}
 	
-	static function incrementalUpdateForeignRepository( $pageId, $reposName, $deletions, $insertions ) {
+	static function incrementalUpdateForeignRepository( $pageId, $repoName, $deletions, $insertions ) {
 		global $wgLocalInterwiki;
 		$fname = 'GlobalUsage::incrementalUpdateForeignRepository';
 		
-		$repos = RepoGroup::singleton()->getRepoByName($reposName);
-		$dbw =& $repos->getMasterDB();
+		$repo = RepoGroup::singleton()->getRepoByName($repoName);
+		$dbw =& $repo->getMasterDB();
 		
 		$where = array( "gil_wiki" => $wgLocalInterwiki, "gil_page" => $pageId );
 		if ( count( $deletions ) ) {
@@ -93,33 +91,41 @@ class GlobalUsage extends SpecialPage {
 		$dbw->immediateCommit();
 	}
 	
-	static function dumbTableUpdate( $linksUpdater ) {
-		global $wgLocalInterwiki;
-
-		$fname = 'GlobalUsage::dumbTableUpdate';
-
+	static function doDumbUpdate( $linksUpdater ) {
 		$title = $linksUpdater->getTitle(); # TODO: Implement
 		$pageId = $title->getArticleID();
-
-		$existing = $linksUpdater->getExistingImages();
-		// $insertions = GlobalUsage::foreignFiles($linksUpdater->getImageInsertions( $existing ));
+		$insertions = GlobalUsage::foreignFiles( $pageId, $title->getPrefixedText(), 
+			$linksUpdater->getImageInsertions(), true );
 		
-		// This is probably even wrong in the original LinksUpdate code. Needs fixing there first.
-		/*$this->mDb->delete( 'globalimagelinks', array( 'gil_wiki' => $wgLocalInterwiki, 'gil_page' => $this->mId ), $fname );
-		if ( count( $insertions ) ) {
-			# The link array was constructed without FOR UPDATE, so there may be collisions
-			# This may cause minor link table inconsistencies, which is better than
-			# crippling the site with lock contention.
-			$this->mDb->insert( $table, $insertions, $fname, array( 'IGNORE' ) );
-		}*/
+		foreach ($insertions as $repo => $insertion)
+			GlobalUsage::dumbUpdateForeignRepository( $pageId, $repo, $insertion );
+
+	}
+	static function dumbUpdateForeignRepository( $pageId, $repoName, $insertions ) {
+		global $wgLocalInterwiki;
+		$fname = 'GlobalUsage::dumbUpdateForeignRepository';
+		
+		$repo = RepoGroup::singleton()->getRepoByName($repoName);
+		$dbw =& $repo->getMasterDB();
+		
+		$dbw->immediateBegin();
+		$dbw->delete( 'globalimagelinks', array( 
+				'gil_wiki' => $wgLocalInterwiki, 
+				'gil_page' => $pageId
+			), $fname );
+		$dbw->insert( 'globalimagelinks', $insertions, $fname, 'IGNORE' );
+		$dbw->immediateCommit();
 	}
 	
-	static function articleDeleted( &$article, &$user, $reason ) {
-		global $wgLocalInterwiki;
-		$fname = 'GlobalUsage::articleDeleted';
+	static function articleDelete( &$article, &$user, $reason ) {
+		global $wgLocalInterwiki, $wgGuHasTable;
+		$fname = 'GlobalUsage::articleDelete';
 		
 		$title = $article->getTitle();
+		
 		// If the article is an image, check whether the imagelinks will poing to the foreign repository
+		// Note: ArticleDeleteComplete is currently not triggered on file deletes. This should either
+		// be fixed, or a new hook for this should be introduced.
 		if ( $title->getNamespace() == NS_IMAGE ) {
 			$image = wfFindFile($title->getDBkey());
 			if ($image) {
@@ -145,9 +151,16 @@ class GlobalUsage extends SpecialPage {
 				$dbw->insert( 'globalimagelinks', $imageLinks, $fname, 'IGNORE' );
 				$dbw->immediateCommit();
 			}
+			// If this is the shared repository and this is an image, should all links in globalimagelinks be deleted?
+			if ($wgGuHasTable)
+			{
+				$dbw =& wfGetDb( DB_MASTER );
+				$dbw->delete( 'globalimagelinks', array('gil_to' => $title->getDBkey()), $fname );
+			}
 		}
 		
 		// Remove all links that pointed to this article
+		// Probably hits performance quite drastically...
 		foreach ( RepoGroup::singleton()->foreignRepos as $repo ) {
 			$dbw =& $repo->getMasterDB();
 			$dbw->immediateBegin();
@@ -158,10 +171,31 @@ class GlobalUsage extends SpecialPage {
 			$dbw->immediateCommit();
 		}
 		
-		// If this is the shared repository and this is an image, should all links in globalimagelinks be deleted?
 	}
 	static function imageUploaded( $image ) {
 		// Delete the links in the globalimagelinks table
+		global $wgLocalInterwiki;
+		$fname = 'GlobalUsage::imageUploaded';
+		
+		$imageName = $image->getTitle()->getDBkey();
+		
+		// In order to not load the shared repository too much, first check whether there are image links to this image
+		// Hmmm... Race conditions?
+		$dbr =& wfGetDb( DB_SLAVE );
+		$res = $dbr->select( 'imagelinks', array('1'), array( 'il_to', $imageName), array('limit' => 1) );
+		if ( $dbr->fetchObject($res) ) {
+			foreach ( RepoGroup::singleton()->foreignRepos as $repo ) {
+				$dbw =& $repo->getMasterDB();
+				$dbw->immediateBegin();
+				$dbw->delete( 'globalimagelinks', array( 
+						'gil_wiki' => $wgLocalInterwiki, 
+						'gil_to' => $imageName
+					), $fname );
+				$dbw->immediateCommit();
+			}
+		}
+		$dbr->freeResult($res);
+		
 	}
 	
 	function execute() {	
@@ -179,15 +213,10 @@ class GlobalUsage extends SpecialPage {
 		while ( $row = $dbr->fetchObject($res) )
 			$wgOut->addWikiText("* [[:".$row->gil_wiki.":".$row->gil_pagename."]] \n");
 		$dbr->freeResult($res);
-		
 	}
-
 }
 
 /* TODO: 
-* Hook ImageUpload
-* Hook ArticleDelete
-* Make the code working
 * Have idea reviewed by the filerepo guy (Tim Starling?)
 * How does the interwiki stuff work?
 */
