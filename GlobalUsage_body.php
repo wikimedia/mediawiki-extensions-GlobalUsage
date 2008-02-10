@@ -46,7 +46,7 @@ class GlobalUsage extends SpecialPage {
 	}
 	
 	static function doIncrementalUpdate( $linksUpdater ) {
-		$title = $linksUpdater->getTitle(); # TODO: Implement
+		$title = $linksUpdater->getTitle();
 		$pageId = $title->getArticleID();
 		$existing = $linksUpdater->getExistingImages();
 		$deletions = GlobalUsage::foreignFiles( $pageId, $title->getPrefixedText(), 
