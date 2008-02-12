@@ -71,10 +71,9 @@ class GlobalUsage extends SpecialPage {
 	
 	static function incrementalUpdateForeignRepository( $pageId, $repoName, $deletions, $insertions ) {
 		global $wgLocalInterwiki;
-		$fname = 'GlobalUsage::incrementalUpdateForeignRepository';
 		
 		$repo = RepoGroup::singleton()->getRepoByName($repoName);
-		$dbw =& $repo->getMasterDB();
+		$dbw = $repo->getMasterDB();
 		
 		$where = array( "gil_wiki" => $wgLocalInterwiki, "gil_page" => $pageId );
 		if ( count( $deletions ) ) {
@@ -85,9 +84,9 @@ class GlobalUsage extends SpecialPage {
 		
 		$dbw->immediateBegin();
 		if ( $where ) 
-			$dbw->delete( 'globalimagelinks', $where, $fname );
+			$dbw->delete( 'globalimagelinks', $where, __METHOD__ );
 		if ( count( $insertions ) ) 
-			$dbw->insert( 'globalimagelinks', $insertions, $fname, 'IGNORE' );
+			$dbw->insert( 'globalimagelinks', $insertions, __METHOD__, 'IGNORE' );
 		$dbw->immediateCommit();
 	}
 	
@@ -103,23 +102,21 @@ class GlobalUsage extends SpecialPage {
 	}
 	static function dumbUpdateForeignRepository( $pageId, $repoName, $insertions ) {
 		global $wgLocalInterwiki;
-		$fname = 'GlobalUsage::dumbUpdateForeignRepository';
 		
 		$repo = RepoGroup::singleton()->getRepoByName($repoName);
-		$dbw =& $repo->getMasterDB();
+		$dbw = $repo->getMasterDB();
 		
 		$dbw->immediateBegin();
 		$dbw->delete( 'globalimagelinks', array( 
 				'gil_wiki' => $wgLocalInterwiki, 
 				'gil_page' => $pageId
-			), $fname );
-		$dbw->insert( 'globalimagelinks', $insertions, $fname, 'IGNORE' );
+			), __METHOD__ );
+		$dbw->insert( 'globalimagelinks', $insertions, __METHOD__, 'IGNORE' );
 		$dbw->immediateCommit();
 	}
 	
 	static function articleDelete( &$article, &$user, $reason ) {
 		global $wgLocalInterwiki, $wgGuHasTable;
-		$fname = 'GlobalUsage::articleDelete';
 		
 		$title = $article->getTitle();
 		
@@ -129,11 +126,11 @@ class GlobalUsage extends SpecialPage {
 		if ( $title->getNamespace() == NS_IMAGE ) {
 			$image = wfFindFile($title->getDBkey());
 			if ($image) {
-				$dbr =& wfGetDB( DB_SLAVE );
+				$dbr = wfGetDB( DB_SLAVE );
 				$res = $dbr->select( array( 'imagelinks', 'page' ),
 					array( 'page_id', 'page_namespace', 'page_title' ),
 					array( 'il_to' => $title()->getDBkey(), 'page_id = il_from' ),
-					$fname);
+					__METHOD__);
 					
 				$imageLinks = array();
 				while ( $row = $dbr->fetchObject ) {
@@ -146,28 +143,28 @@ class GlobalUsage extends SpecialPage {
 				}
 				$dbr->freeResult($res);
 			
-				$dbw =& $image->repo->getMasterDB();
+				$dbw = $image->repo->getMasterDB();
 				$dbw->immediateBegin();
-				$dbw->insert( 'globalimagelinks', $imageLinks, $fname, 'IGNORE' );
+				$dbw->insert( 'globalimagelinks', $imageLinks, __METHOD__, 'IGNORE' );
 				$dbw->immediateCommit();
 			}
 			// If this is the shared repository and this is an image, should all links in globalimagelinks be deleted?
 			if ($wgGuHasTable)
 			{
-				$dbw =& wfGetDb( DB_MASTER );
-				$dbw->delete( 'globalimagelinks', array('gil_to' => $title->getDBkey()), $fname );
+				$dbw = wfGetDb( DB_MASTER );
+				$dbw->delete( 'globalimagelinks', array('gil_to' => $title->getDBkey()), __METHOD__ );
 			}
 		}
 		
 		// Remove all links that pointed to this article
 		// Probably hits performance quite drastically...
 		foreach ( RepoGroup::singleton()->foreignRepos as $repo ) {
-			$dbw =& $repo->getMasterDB();
+			$dbw = $repo->getMasterDB();
 			$dbw->immediateBegin();
 			$dbw->delete( 'globalimagelinks', array( 
 					'gil_wiki' => $wgLocalInterwiki, 
 					'gil_page' => $article->getId()
-				), $fname );
+				), __METHOD__ );
 			$dbw->immediateCommit();
 		}
 		
@@ -175,22 +172,21 @@ class GlobalUsage extends SpecialPage {
 	static function imageUploaded( $image ) {
 		// Delete the links in the globalimagelinks table
 		global $wgLocalInterwiki;
-		$fname = 'GlobalUsage::imageUploaded';
 		
 		$imageName = $image->getTitle()->getDBkey();
 		
 		// In order to not load the shared repository too much, first check whether there are image links to this image
 		// Hmmm... Race conditions?
-		$dbr =& wfGetDb( DB_SLAVE );
+		$dbr = wfGetDb( DB_SLAVE );
 		$res = $dbr->select( 'imagelinks', array('1'), array( 'il_to', $imageName), array('limit' => 1) );
 		if ( $dbr->fetchObject($res) ) {
 			foreach ( RepoGroup::singleton()->foreignRepos as $repo ) {
-				$dbw =& $repo->getMasterDB();
+				$dbw = $repo->getMasterDB();
 				$dbw->immediateBegin();
 				$dbw->delete( 'globalimagelinks', array( 
 						'gil_wiki' => $wgLocalInterwiki, 
 						'gil_to' => $imageName
-					), $fname );
+					), __METHOD__ );
 				$dbw->immediateCommit();
 			}
 		}
@@ -200,14 +196,13 @@ class GlobalUsage extends SpecialPage {
 	
 	function execute() {	
 		global $wgOut, $wgRequest;
-		$fname = 'GlobalUsage::execute';
 		
-		$dbr =& wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_SLAVE );
 		$res = $dbr->select( 'globalimagelinks',
 			array( 'gil_wiki', 'gil_pagename' ),
 			// Needs normalizing
 			array( 'gil_to' => $wgRequest->getText('image') ),
-			$fname );
+			__METHOD__ );
 			
 		// Quick dirty list output
 		while ( $row = $dbr->fetchObject($res) )
