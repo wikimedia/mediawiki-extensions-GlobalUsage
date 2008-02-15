@@ -115,47 +115,49 @@ class GlobalUsage extends SpecialPage {
 		$dbw->immediateCommit();
 	}
 	
-	static function articleDelete( &$article, &$user, $reason ) {
+	static function fileDelete( $file, $oldimage, $article, $user, $reason ) {
 		global $wgLocalInterwiki, $wgGuHasTable;
 		
+		if ($oldimage) return true;
+	
 		$title = $article->getTitle();
+		$image = wfFindFile($title->getDBkey());
+		if (!$image) return true;
 		
 		// If the article is an image, check whether the imagelinks will poing to the foreign repository
-		// Note: ArticleDeleteComplete is currently not triggered on file deletes. This should either
-		// be fixed, or a new hook for this should be introduced.
-		if ( $title->getNamespace() == NS_IMAGE ) {
-			$image = wfFindFile($title->getDBkey());
-			if ($image) {
-				$dbr = wfGetDB( DB_SLAVE );
-				$res = $dbr->select( array( 'imagelinks', 'page' ),
-					array( 'page_id', 'page_namespace', 'page_title' ),
-					array( 'il_to' => $title()->getDBkey(), 'page_id = il_from' ),
-					__METHOD__);
+		$dbr = wfGetDB( DB_SLAVE );
+		$res = $dbr->select( array( 'imagelinks', 'page' ),
+			array( 'page_id', 'page_namespace', 'page_title' ),
+			array( 'il_to' => $title()->getDBkey(), 'page_id = il_from' ),
+			__METHOD__);
 					
-				$imageLinks = array();
-				while ( $row = $dbr->fetchObject ) {
-					$imageLinks[] = array(
-						"gil_wiki" => $wgLocalInterwiki, 
-						"gil_page" => $row['page_id'],
-						"gil_pagename" => Title::makeTitle($row['page_namespace'], $row['page_title'])
-							->getPrefixedText(),
-						"gil_to" => $title->getDBkey());
-				}
-				$dbr->freeResult($res);
-			
-				$dbw = $image->repo->getMasterDB();
-				$dbw->immediateBegin();
-				$dbw->insert( 'globalimagelinks', $imageLinks, __METHOD__, 'IGNORE' );
-				$dbw->immediateCommit();
-			}
-			// If this is the shared repository and this is an image, should all links in globalimagelinks be deleted?
-			if ($wgGuHasTable)
-			{
-				$dbw = wfGetDb( DB_MASTER );
-				$dbw->delete( 'globalimagelinks', array('gil_to' => $title->getDBkey()), __METHOD__ );
-			}
+		$imageLinks = array();
+		while ( $row = $dbr->fetchObject ) {
+			$imageLinks[] = array(
+				"gil_wiki" => $wgLocalInterwiki, 
+				"gil_page" => $row['page_id'],
+				"gil_pagename" => Title::makeTitle($row['page_namespace'], $row['page_title'])
+					->getPrefixedText(),
+				"gil_to" => $title->getDBkey());
 		}
+		$dbr->freeResult($res);
+			
+		$dbw = $image->repo->getMasterDB();
+		$dbw->immediateBegin();
+		$dbw->insert( 'globalimagelinks', $imageLinks, __METHOD__, 'IGNORE' );
+		$dbw->immediateCommit();
 		
+		// If this is the shared repository and this is an image, should all links in globalimagelinks be deleted?
+		if ($wgGuHasTable)
+		{
+			$dbw = wfGetDb( DB_MASTER );
+			$dbw->delete( 'globalimagelinks', array('gil_to' => $title->getDBkey()), __METHOD__ );
+		}
+	}
+		
+	static function articleDelete( &$article, &$user, $reason ) {
+		global $wgLocalInterwiki;
+
 		// Remove all links that pointed to this article
 		// Probably hits performance quite drastically...
 		foreach ( RepoGroup::singleton()->foreignRepos as $repo ) {
@@ -169,16 +171,16 @@ class GlobalUsage extends SpecialPage {
 		}
 		
 	}
-	static function imageUploaded( $image ) {
+	static function imageUploaded( $uploadForm ) {
 		// Delete the links in the globalimagelinks table
 		global $wgLocalInterwiki;
 		
-		$imageName = $image->getTitle()->getDBkey();
+		$imageName = $uploadForm->mLocalFile->getTitle()->getDBkey();
 		
 		// In order to not load the shared repository too much, first check whether there are image links to this image
 		// Hmmm... Race conditions?
 		$dbr = wfGetDb( DB_SLAVE );
-		$res = $dbr->select( 'imagelinks', array('1'), array( 'il_to', $imageName), array('limit' => 1) );
+		$res = $dbr->select( 'imagelinks', array('1'), array( 'il_to' => $imageName), array('limit' => 1) );
 		if ( $dbr->fetchObject($res) ) {
 			foreach ( RepoGroup::singleton()->foreignRepos as $repo ) {
 				$dbw = $repo->getMasterDB();
@@ -191,7 +193,7 @@ class GlobalUsage extends SpecialPage {
 			}
 		}
 		$dbr->freeResult($res);
-		
+		return true;		
 	}
 	
 	function execute() {	
