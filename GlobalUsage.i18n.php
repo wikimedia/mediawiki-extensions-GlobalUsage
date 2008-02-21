@@ -14,6 +14,13 @@ $messages['en'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Special page]] to view global file usage',
 );
 
+/** German (Deutsch)
+ * @author Raimond Spekking
+ */
+$messages['de'] = array(
+	'globalusage-desc' => '[[Special:GlobalUsage|Spezialseite]] zur Anzeige, in welchen Projekten die Dateien eines gemeinsam genutzten Repositoriums verwendet werden',
+);
+
 /** French (Français)
  * @author Grondin
  */
