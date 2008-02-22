@@ -56,6 +56,13 @@ $messages['no'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Spesialside]] for å vise bruken av en fil globalt',
 );
 
+/** Russian (Русский)
+ * @author .:Ajvol:.
+ */
+$messages['ru'] = array(
+	'globalusage-desc' => '[[Special:GlobalUsage|Служебная страница]] для просмотра общего использования файла',
+);
+
 /** Slovak (Slovenčina)
  * @author Helix84
  */
