@@ -42,6 +42,13 @@ $messages['hsb'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Specialna strona]], zo by globalne wužiwanje wobraza widźał',
 );
 
+/** Marathi (मराठी)
+ * @author Mahitgar
+ */
+$messages['mr'] = array(
+	'globalusage-desc' => '[[Special:GlobalUsage|विशेष पान]] संचिकेच्या उपयोगाचे विस्तृत दृश्य',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  */
