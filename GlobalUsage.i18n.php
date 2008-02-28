@@ -63,6 +63,13 @@ $messages['no'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Spesialside]] for å vise bruken av en fil globalt',
 );
 
+/** Occitan (Occitan)
+ * @author Cedric31
+ */
+$messages['oc'] = array(
+	'globalusage-desc' => '[[Special:GlobalUsage|Pagina especiala]] per veire l’usatge global d’un imatge',
+);
+
 /** Russian (Русский)
  * @author .:Ajvol:.
  */
