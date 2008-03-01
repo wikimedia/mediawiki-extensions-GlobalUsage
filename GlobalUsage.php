@@ -50,11 +50,11 @@ $wgAutoloadClasses['GlobalUsage'] = $dir . 'GlobalUsage_body.php';
 $wgSpecialPages['GlobalUsage'] = 'GlobalUsage';
 
 $wgHooks['LinksUpdate'][] = 'GlobalUsage::updateLinks';
-$wgHooks['ArticleDeleteComplete'][] = 'GlobalUsage::articleDelete';
-$wgHooks['FileDeleteComplete'][] = 'GlobalUsage::fileDelete';
-$wgHooks['FileUndeleteComplete'][] = 'GlobalUsage::fileUndelete';
+$wgHooks['ArticleDeleteComplete'][] = 'GlobalUsage::articleDeleted';
+$wgHooks['FileDeleteComplete'][] = 'GlobalUsage::fileDeleted';
+$wgHooks['FileUndeleteComplete'][] = 'GlobalUsage::fileUndeleted';
 $wgHooks['UploadComplete'][] = 'GlobalUsage::imageUploaded';
-// TODO: Page move may change namespace
+$wgHooks['SpecialMovepageAfterMove'][] = 'GlobalUsage::articleMoved';
 
 // This wiki does not have a globalimagelinks table
 $wgguIsMaster = false;

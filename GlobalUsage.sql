@@ -12,7 +12,12 @@ CREATE TABLE /*$wgDBprefix*/globalimagelinks (
 	-- Exists locally
 	gil_is_local tinyint(1) not null,
 	
+	-- On incremental links update
 	PRIMARY KEY (gil_wiki, gil_page, gil_to),
-	INDEX (gil_to),
-	INDEX (gil_is_local)
+	-- On dumb update and article delete and move
+	INDEX (gil_wiki, gil_page),
+	-- On gil_is_local change
+	INDEX (gil_wiki, gil_to),
+	-- On the special page itself
+	INDEX (gil_to, gil_is_local),
 ) /*$wgDBTableOptions*/;

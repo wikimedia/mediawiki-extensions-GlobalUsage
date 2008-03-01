@@ -127,13 +127,13 @@ class GlobalUsage extends SpecialPage {
 	}
 	
 	// Set gil_is_local to false
-	static function fileDelete( &$file, &$oldimage, &$article, &$user, $reason ) {
+	static function fileDeleted( &$file, &$oldimage, &$article, &$user, $reason ) {
 		if ( !$oldimage ) 
 			GlobalUsage::setLocalFlag( $article->getTitle()->getDBkey(), 0 );
 		return true;
 	}
 	// Set gil_is_local to true
-	static function fileUndelete( &$title, $versions, &$user, $reason ) {
+	static function fileUndeleted( &$title, $versions, &$user, $reason ) {
 		GlobalUsage::setLocalFlag( $title->getDBkey(), 1 );
 		return true;
 	}
@@ -144,7 +144,7 @@ class GlobalUsage extends SpecialPage {
 	}	
 	
 		
-	static function articleDelete( &$article, &$user, $reason ) {
+	static function articleDeleted( &$article, &$user, $reason ) {
 		$dbw = GlobalUsage::getDatabase();
 		$dbw->immediateBegin();
 		$dbw->delete( 'globalimagelinks', array(
@@ -157,8 +157,22 @@ class GlobalUsage extends SpecialPage {
 		
 		return true;
 	}
-
 	
+	static function articleMoved( &$movePageForm, &$from, &$to ) {
+		$dbw = GlobalUsage::getDatabase();
+		$dbw->immediateBegin();
+		$dbw->update( 'globalimagelinks', array(
+				'gil_page_namespace' => $to->getNsText(),
+				'gil_page_title' => $to->getDBkey()
+			), array(
+				'gil_wiki' => GlobalUsage::getLocalInterwiki(),
+				'gil_page' => $to->getArticleId()
+			), __METHOD__ );
+		$dbw->immediateCommit();
+		
+		return true;
+	}
+
 	function execute() {	
 		global $wgOut, $wgRequest;
 		
