@@ -48,9 +48,17 @@ $wgExtensionMessagesFiles['GlobalUsage'] = $dir . 'GlobalUsage.i18n.php';
 $wgAutoloadClasses['GlobalUsage'] = $dir . 'GlobalUsage_body.php';
 //$wgExtensionMessageFiles['GlobalUsage'] = $dir . 'GlobalUsage.i18n.php';
 $wgSpecialPages['GlobalUsage'] = 'GlobalUsage';
+
 $wgHooks['LinksUpdate'][] = 'GlobalUsage::updateLinks';
 $wgHooks['ArticleDeleteComplete'][] = 'GlobalUsage::articleDelete';
 $wgHooks['FileDeleteComplete'][] = 'GlobalUsage::fileDelete';
+$wgHooks['FileUndeleteComplete'][] = 'GlobalUsage::fileUndelete';
 $wgHooks['UploadComplete'][] = 'GlobalUsage::imageUploaded';
+// TODO: Page move may change namespace
+
 // This wiki does not have a globalimagelinks table
-$wgGuHasTable = false;
+$wgguIsMaster = false;
+// If set to an array it should have the same form as $wgForeignFileRepos
+// If set to an int will use RepoGroup::getRepo to resolve the database
+// If set to anything else, will use RepoGroup::getRepoByName to resolve the database
+$wgguMasterDatabase = 0;
