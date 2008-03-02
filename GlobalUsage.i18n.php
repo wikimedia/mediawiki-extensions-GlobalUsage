@@ -84,6 +84,13 @@ $messages['sk'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Špeciálna stránka]] na zobrazenie celkového využitia súborov',
 );
 
+/** Seeltersk (Seeltersk)
+ * @author Pyt
+ */
+$messages['stq'] = array(
+	'globalusage-desc' => '[[Special:GlobalUsage|Spezioalsiede]] toun Anwiesen, in wäkke Projekte do Doatäie fon n gemeensoam nutsed Repositorium ferwoand wäide',
+);
+
 /** Vietnamese (Tiếng Việt)
  * @author Vinhtantran
  */
