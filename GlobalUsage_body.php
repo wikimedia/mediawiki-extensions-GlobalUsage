@@ -3,9 +3,9 @@
 class GlobalUsage extends SpecialPage {
 	private static $database = array();
 
-	function GlobalUsage() {
-		SpecialPage::SpecialPage('GlobalUsage');
-		//wfLoadExtensionMessages('GlobalUsage');
+	function __construct() {
+		parent::__construct('GlobalUsage');
+		wfLoadExtensionMessages( 'GlobalUsage' );
 	}
 	
 	static function getDatabase( $dbFlags = DB_MASTER ) {
@@ -173,20 +173,52 @@ class GlobalUsage extends SpecialPage {
 		return true;
 	}
 
-	function execute() {	
-		global $wgOut, $wgRequest;
+	public function execute( $par ) {	
+		global $wgOut, $wgScript, $wgRequest;
+		
+		$this->setHeaders();
+		
+		$self = Title::makeTitle( NS_SPECIAL, 'GlobalUsage' );
+		$target= Title::makeTitleSafe( NS_IMAGE, $wgRequest->getText( 'target', $par ) );
+		
+		$wgOut->addWikiText( wfMsg( 'globalusage-text' ) );
+		
+		$form = Xml::openElement( 'form', array( 
+			'id' => 'mw-globalusage-form',
+			'method' => 'get', 
+			'action' => $wgScript ));
+		$form .= Xml::hidden( 'title', $self->getPrefixedDbKey() );
+		$form .= Xml::openElement( 'fieldset' );
+		$form .= Xml::element( 'legend', array(), wfMsg( 'globalusage' ));
+		$form .= Xml::inputLabel( wfMsg( 'filename' ), 'target', 
+			'target', 50, $target->getDBkey() );
+		$form .= Xml::submitButton( wfMsg( 'globalusage-ok' ) );
+		$form .= Xml::closeElement( 'fieldset' );
+		$form .= Xml::closeElement( 'form' );
+		
+		$wgOut->addHtml( $form );
+		
+		if ( !$target->getDBkey() ) return;
 		
 		$dbr = GlobalUsage::getDatabase( DB_SLAVE );
 		$res = $dbr->select( 'globalimagelinks',
-			array( 'gil_wiki', 'gil_pagename' ),
-			// Needs normalizing
-			array( 'gil_to' => $wgRequest->getText('image'),
-				'gil_is_local' => 0),
+			array( 'gil_wiki', 'gil_page_namespace', 'gil_page_title' ),
+			array( 'gil_to' => $target->getDBkey(), 'gil_is_local' => 0 ),
 			__METHOD__ );
 			
 		// Quick dirty list output
 		while ( $row = $dbr->fetchObject($res) )
-			$wgOut->addWikiText("* [[:".$row->gil_wiki.":".$row->gil_pagename."]] \n");
+			$wgOut->addWikiText(GlobalUsage::formatItem( $row ) );
 		$dbr->freeResult($res);
+	}
+	
+	public static function formatItem( $row ) {
+		$out = '* [[';
+		if ( GlobalUsage::getLocalInterwiki() != $row->gil_wiki )
+			$out .= ':'.$row->gil_wiki;
+		if ( $row->gil_page_namespace )
+			$out .= ':'.str_replace('_', ' ', $row->gil_page_namespace);
+		$out .= ':'.str_replace('_', ' ', $row->gil_page_title)."]]\n";
+		return $out;
 	}
 }

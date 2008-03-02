@@ -11,7 +11,10 @@ $messages = array();
  * @author Bryan Tong Minh
  */
 $messages['en'] = array(
+	'globalusage' => 'Global file usage',
 	'globalusage-desc' => '[[Special:GlobalUsage|Special page]] to view global file usage',
+	'globalusage-ok' => 'Search',
+	'globalusage-text' => 'Search global image usage.'
 );
 
 /** Arabic (العربية)
