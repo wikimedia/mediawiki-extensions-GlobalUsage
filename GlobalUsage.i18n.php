@@ -35,10 +35,14 @@ $messages['de'] = array(
 );
 
 /** French (Français)
+ * @author Meithal
  * @author Grondin
  */
 $messages['fr'] = array(
+	'globalusage'      => 'Usage global du fichier',
 	'globalusage-desc' => '[[Special:GlobalUsage|Page spéciale]] pour voir l’usage global d’une image',
+	'globalusage-ok'   => 'Recherche',
+	'globalusage-text' => "Rechercher l'usage global du fichier",
 );
 
 /** Upper Sorbian (Hornjoserbsce)
