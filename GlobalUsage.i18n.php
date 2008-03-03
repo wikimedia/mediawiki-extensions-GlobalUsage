@@ -28,7 +28,10 @@ $messages['ar'] = array(
  * @author Raimond Spekking
  */
 $messages['de'] = array(
+	'globalusage'      => 'Globale Dateinutzung',
 	'globalusage-desc' => '[[Special:GlobalUsage|Spezialseite]] zur Anzeige, in welchen Projekten die Dateien eines gemeinsam genutzten Repositoriums verwendet werden',
+	'globalusage-ok'   => 'Suchen',
+	'globalusage-text' => 'Globale Suche nach Dateinutzungen.',
 );
 
 /** French (Français)
