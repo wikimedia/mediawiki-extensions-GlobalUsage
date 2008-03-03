@@ -49,12 +49,12 @@ $wgAutoloadClasses['GlobalUsage'] = $dir . 'GlobalUsage_body.php';
 $wgExtensionMessageFiles['GlobalUsage'] = $dir . 'GlobalUsage.i18n.php';
 $wgSpecialPages['GlobalUsage'] = 'GlobalUsage';
 
-$wgHooks['LinksUpdate'][] = 'GlobalUsage::updateLinks';
-$wgHooks['ArticleDeleteComplete'][] = 'GlobalUsage::articleDeleted';
-$wgHooks['FileDeleteComplete'][] = 'GlobalUsage::fileDeleted';
-$wgHooks['FileUndeleteComplete'][] = 'GlobalUsage::fileUndeleted';
-$wgHooks['UploadComplete'][] = 'GlobalUsage::imageUploaded';
-$wgHooks['SpecialMovepageAfterMove'][] = 'GlobalUsage::articleMoved';
+$wgHooks['LinksUpdate'][] = array( 'GlobalUsage', 'updateLinks' );
+$wgHooks['ArticleDeleteComplete'][] = array( 'GlobalUsage', 'articleDeleted' );
+$wgHooks['FileDeleteComplete'][] = array( 'GlobalUsage', 'fileDeleted' );
+$wgHooks['FileUndeleteComplete'][] = array( 'GlobalUsage', 'fileUndeleted' );
+$wgHooks['UploadComplete'][] = array( 'GlobalUsage', 'imageUploaded' );
+$wgHooks['SpecialMovepageAfterMove'][] = array( 'GlobalUsage', 'articleMoved' );
 
 // This wiki does not have a globalimagelinks table
 $wgguIsMaster = false;
