@@ -24,6 +24,13 @@ $messages['ar'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|صفحة خاصة]] لرؤية استخدام الملف العام',
 );
 
+/** Bulgarian (Български)
+ * @author DCLXVI
+ */
+$messages['bg'] = array(
+	'globalusage-ok' => 'Търсене',
+);
+
 /** German (Deutsch)
  * @author Raimond Spekking
  */
@@ -45,11 +52,32 @@ $messages['fr'] = array(
 	'globalusage-text' => "Rechercher l'usage global du fichier",
 );
 
+/** Galician (Galego)
+ * @author Xosé
+ */
+$messages['gl'] = array(
+	'globalusage'      => 'Uso global do ficheiro',
+	'globalusage-desc' => '[[Special:GlobalUsage|Páxina especial]] para ver o uso global do ficheiro',
+	'globalusage-ok'   => 'Procurar',
+	'globalusage-text' => 'Procurar o uso global do ficheiro.',
+);
+
 /** Upper Sorbian (Hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
+	'globalusage'      => 'Globalne wužiwanje dataje',
 	'globalusage-desc' => '[[Special:GlobalUsage|Specialna strona]], zo by globalne wužiwanje wobraza widźał',
+	'globalusage-ok'   => 'Podać',
+	'globalusage-text' => 'Globalne wužiwanje dataje pytać.',
+);
+
+/** Khmer (ភាសាខ្មែរ)
+ * @author Chhorran
+ */
+$messages['km'] = array(
+	'globalusage-desc' => '[[Special:GlobalUsage|ទំព័រពិសេស]] ដើម្បីមើល បំរើប្រាស់ ឯកសារ សកល',
+	'globalusage-ok'   => 'ស្វែងរក',
 );
 
 /** Marathi (मराठी)
@@ -63,7 +91,10 @@ $messages['mr'] = array(
  * @author Siebrand
  */
 $messages['nl'] = array(
+	'globalusage'      => 'Globaal bestandsgebruik',
 	'globalusage-desc' => '[[Special:GlobalUsage|Speciale pagina]] voor het bekijken van globaal bestandsgebruik',
+	'globalusage-ok'   => 'Zoeken',
+	'globalusage-text' => 'Globaal bestandsgebruik bekijken',
 );
 
 /** Norwegian (‪Norsk (bokmål)‬)
@@ -77,21 +108,30 @@ $messages['no'] = array(
  * @author Cedric31
  */
 $messages['oc'] = array(
+	'globalusage'      => 'Usatge global del fichièr',
 	'globalusage-desc' => '[[Special:GlobalUsage|Pagina especiala]] per veire l’usatge global d’un imatge',
+	'globalusage-ok'   => 'Recèrca',
+	'globalusage-text' => "Recercar l'usatge global del fichièr",
 );
 
 /** Russian (Русский)
  * @author .:Ajvol:.
  */
 $messages['ru'] = array(
+	'globalusage'      => 'Глобальное использование файла',
 	'globalusage-desc' => '[[Special:GlobalUsage|Служебная страница]] для просмотра общего использования файла',
+	'globalusage-ok'   => 'Найти',
+	'globalusage-text' => 'Поиск глобального использования файла.',
 );
 
 /** Slovak (Slovenčina)
  * @author Helix84
  */
 $messages['sk'] = array(
+	'globalusage'      => 'Globálne využitie súborov',
 	'globalusage-desc' => '[[Special:GlobalUsage|Špeciálna stránka]] na zobrazenie celkového využitia súborov',
+	'globalusage-ok'   => 'Hľadať',
+	'globalusage-text' => 'Hľadať globálne využitie súborov.',
 );
 
 /** Seeltersk (Seeltersk)
@@ -99,6 +139,23 @@ $messages['sk'] = array(
  */
 $messages['stq'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Spezioalsiede]] toun Anwiesen, in wäkke Projekte do Doatäie fon n gemeensoam nutsed Repositorium ferwoand wäide',
+);
+
+/** Swedish (Svenska)
+ * @author M.M.S.
+ */
+$messages['sv'] = array(
+	'globalusage'      => 'Övergripande fil användning',
+	'globalusage-desc' => '[[Special:GlobalUsage|Special sida]] för att visa övergripande fil användning',
+	'globalusage-ok'   => 'Sök',
+	'globalusage-text' => 'Sök övergripande fil användning.',
+);
+
+/** Telugu (తెలుగు)
+ * @author Veeven
+ */
+$messages['te'] = array(
+	'globalusage-ok' => 'వెతుకు',
 );
 
 /** Vietnamese (Tiếng Việt)
