@@ -18,10 +18,12 @@ $messages['en'] = array(
 );
 
 /** Arabic (العربية)
+ * @author Alnokta
  * @author Meno25
  */
 $messages['ar'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|صفحة خاصة]] لرؤية استخدام الملف العام',
+	'globalusage-ok'   => 'ابحث',
 );
 
 /** Bulgarian (Български)
@@ -97,11 +99,14 @@ $messages['nl'] = array(
 	'globalusage-text' => 'Globaal bestandsgebruik bekijken',
 );
 
-/** Norwegian (‪Norsk (bokmål)‬)
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Jon Harald Søby
  */
 $messages['no'] = array(
+	'globalusage'      => 'Global filbruk',
 	'globalusage-desc' => '[[Special:GlobalUsage|Spesialside]] for å vise bruken av en fil globalt',
+	'globalusage-ok'   => '{{int:Search}}',
+	'globalusage-text' => 'Søk global filbruk.',
 );
 
 /** Occitan (Occitan)
@@ -112,6 +117,13 @@ $messages['oc'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Pagina especiala]] per veire l’usatge global d’un imatge',
 	'globalusage-ok'   => 'Recèrca',
 	'globalusage-text' => "Recercar l'usatge global del fichièr",
+);
+
+/** Portuguese (Português)
+ * @author Lijealso
+ */
+$messages['pt'] = array(
+	'globalusage-ok' => 'Busca',
 );
 
 /** Russian (Русский)
