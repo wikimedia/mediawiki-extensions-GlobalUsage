@@ -119,6 +119,13 @@ $messages['oc'] = array(
 	'globalusage-text' => "Recercar l'usatge global del fichièr",
 );
 
+/** Pashto (پښتو)
+ * @author Ahmed-Najib-Biabani-Ibrahimkhel
+ */
+$messages['ps'] = array(
+	'globalusage-ok' => 'لټون',
+);
+
 /** Portuguese (Português)
  * @author Lijealso
  */
@@ -167,7 +174,10 @@ $messages['sv'] = array(
  * @author Veeven
  */
 $messages['te'] = array(
-	'globalusage-ok' => 'వెతుకు',
+	'globalusage'      => 'సార్వత్రిక ఫైలు వాడుక',
+	'globalusage-desc' => 'సార్వత్రిక ఫైలు వాడుకని చూడడానికి [[Special:GlobalUsage|ప్రత్యేక పేజీ]]',
+	'globalusage-ok'   => 'వెతుకు',
+	'globalusage-text' => 'సార్వత్రిక ఫైళ్ళ వాడుకలో వెతకండి.',
 );
 
 /** Vietnamese (Tiếng Việt)
