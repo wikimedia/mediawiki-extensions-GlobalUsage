@@ -74,6 +74,13 @@ $messages['hsb'] = array(
 	'globalusage-text' => 'Globalne wužiwanje dataje pytać.',
 );
 
+/** Icelandic (Íslenska)
+ * @author S.Örvarr.S
+ */
+$messages['is'] = array(
+	'globalusage-ok' => 'Leita',
+);
+
 /** Khmer (ភាសាខ្មែរ)
  * @author Chhorran
  */
