@@ -30,7 +30,8 @@ $messages['ar'] = array(
  * @author DCLXVI
  */
 $messages['bg'] = array(
-	'globalusage-ok' => 'Търсене',
+	'globalusage-desc' => '[[Special:GlobalUsage|Специална страница]] за преглед на глобалното използване на файл',
+	'globalusage-ok'   => 'Търсене',
 );
 
 /** German (Deutsch)
