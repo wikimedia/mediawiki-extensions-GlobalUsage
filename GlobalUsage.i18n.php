@@ -169,13 +169,14 @@ $messages['stq'] = array(
 );
 
 /** Swedish (Svenska)
+ * @author Lejonel
  * @author M.M.S.
  */
 $messages['sv'] = array(
-	'globalusage'      => 'Övergripande fil användning',
-	'globalusage-desc' => '[[Special:GlobalUsage|Special sida]] för att visa övergripande fil användning',
+	'globalusage'      => 'Global filanvändning',
+	'globalusage-desc' => '[[Special:GlobalUsage|Specialsida]] för att visa på vilka projekt filer från den gemensamma filservern används.',
 	'globalusage-ok'   => 'Sök',
-	'globalusage-text' => 'Sök övergripande fil användning.',
+	'globalusage-text' => 'Sök global filanvändning.',
 );
 
 /** Telugu (తెలుగు)
