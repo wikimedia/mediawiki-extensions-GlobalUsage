@@ -18,12 +18,14 @@ $messages['en'] = array(
 );
 
 /** Arabic (العربية)
- * @author Alnokta
  * @author Meno25
+ * @author Alnokta
  */
 $messages['ar'] = array(
+	'globalusage'      => 'استخدام الملف العام',
 	'globalusage-desc' => '[[Special:GlobalUsage|صفحة خاصة]] لرؤية استخدام الملف العام',
 	'globalusage-ok'   => 'ابحث',
+	'globalusage-text' => 'بحث استخدام الملف العام',
 );
 
 /** Bulgarian (Български)
