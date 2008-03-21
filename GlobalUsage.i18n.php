@@ -46,6 +46,13 @@ $messages['de'] = array(
 	'globalusage-text' => 'Globale Suche nach Dateinutzungen.',
 );
 
+/** Esperanto (Esperanto)
+ * @author Yekrats
+ */
+$messages['eo'] = array(
+	'globalusage-ok' => 'Serĉu',
+);
+
 /** French (Français)
  * @author Meithal
  * @author Grondin
@@ -93,10 +100,14 @@ $messages['km'] = array(
 );
 
 /** Marathi (मराठी)
+ * @author Kaustubh
  * @author Mahitgar
  */
 $messages['mr'] = array(
+	'globalusage'      => 'जागतिक संचिका उपयोग',
 	'globalusage-desc' => '[[Special:GlobalUsage|विशेष पान]] संचिकेच्या उपयोगाचे विस्तृत दृश्य',
+	'globalusage-ok'   => 'शोधा',
+	'globalusage-text' => 'जागतिक संचिका उपयोग शोधा.',
 );
 
 /** Dutch (Nederlands)
