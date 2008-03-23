@@ -38,6 +38,13 @@ $messages['bg'] = array(
 	'globalusage-text' => 'Търсене за глобалното използване на файл.',
 );
 
+/** Bengali (বাংলা)
+ * @author Zaheen
+ */
+$messages['bn'] = array(
+	'globalusage-ok' => 'অনুসন্ধান',
+);
+
 /** German (Deutsch)
  * @author Raimond Spekking
  */
