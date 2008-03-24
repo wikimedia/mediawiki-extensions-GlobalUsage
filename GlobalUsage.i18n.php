@@ -45,6 +45,13 @@ $messages['bn'] = array(
 	'globalusage-ok' => 'অনুসন্ধান',
 );
 
+/** Danish (Dansk)
+ * @author Jon Harald Søby
+ */
+$messages['da'] = array(
+	'globalusage-ok' => 'Søg',
+);
+
 /** German (Deutsch)
  * @author Raimond Spekking
  */
@@ -129,13 +136,20 @@ $messages['nl'] = array(
 	'globalusage-text' => 'Globaal bestandsgebruik bekijken',
 );
 
+/** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+ * @author Jon Harald Søby
+ */
+$messages['nn'] = array(
+	'globalusage-ok' => 'Søk',
+);
+
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Jon Harald Søby
  */
 $messages['no'] = array(
 	'globalusage'      => 'Global filbruk',
 	'globalusage-desc' => '[[Special:GlobalUsage|Spesialside]] for å vise bruken av en fil globalt',
-	'globalusage-ok'   => '{{int:Search}}',
+	'globalusage-ok'   => 'Søk',
 	'globalusage-text' => 'Søk global filbruk.',
 );
 
