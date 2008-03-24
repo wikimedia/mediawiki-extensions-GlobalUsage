@@ -115,6 +115,15 @@ $messages['km'] = array(
 	'globalusage-ok'   => 'ស្វែងរក',
 );
 
+/** Luxembourgish (Lëtzebuergesch)
+ * @author Robby
+ */
+$messages['lb'] = array(
+	'globalusage'      => 'Global Notzung vum Fichier',
+	'globalusage-ok'   => 'Sichen',
+	'globalusage-text' => 'No der globaler Notzung vum Fichier sichen.',
+);
+
 /** Marathi (मराठी)
  * @author Kaustubh
  * @author Mahitgar
