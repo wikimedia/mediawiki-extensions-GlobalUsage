@@ -120,8 +120,16 @@ $messages['km'] = array(
  */
 $messages['lb'] = array(
 	'globalusage'      => 'Global Notzung vum Fichier',
+	'globalusage-desc' => '[[Special:GlobalUsage|Spezialsäit]] fir déi global Benotzung vun engem Fichier ze gesinn',
 	'globalusage-ok'   => 'Sichen',
 	'globalusage-text' => 'No der globaler Notzung vum Fichier sichen.',
+);
+
+/** Malayalam (മലയാളം)
+ * @author Shijualex
+ */
+$messages['ml'] = array(
+	'globalusage-ok' => 'തിരയുക',
 );
 
 /** Marathi (मराठी)
@@ -235,9 +243,11 @@ $messages['te'] = array(
 );
 
 /** Vietnamese (Tiếng Việt)
+ * @author Minh Nguyen
  * @author Vinhtantran
  */
 $messages['vi'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Trang đặc biệt]] để xem tập tin này đang dùng ở đâu trên toàn hệ thống',
+	'globalusage-ok'   => 'Tìm kiếm',
 );
 
