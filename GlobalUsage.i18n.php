@@ -100,6 +100,13 @@ $messages['hsb'] = array(
 	'globalusage-text' => 'Globalne wužiwanje dataje pytać.',
 );
 
+/** Hungarian (Magyar)
+ * @author Dani
+ */
+$messages['hu'] = array(
+	'globalusage-ok' => 'Keresés',
+);
+
 /** Icelandic (Íslenska)
  * @author S.Örvarr.S
  */
