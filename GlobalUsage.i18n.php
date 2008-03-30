@@ -66,6 +66,7 @@ $messages['de'] = array(
  * @author Yekrats
  */
 $messages['eo'] = array(
+	'globalusage'    => 'Ĝenerala dosier-uzado',
 	'globalusage-ok' => 'Serĉu',
 );
 
@@ -237,6 +238,13 @@ $messages['sv'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Specialsida]] för att visa på vilka projekt filer från den gemensamma filservern används.',
 	'globalusage-ok'   => 'Sök',
 	'globalusage-text' => 'Sök global filanvändning.',
+);
+
+/** Silesian (ślůnski)
+ * @author Herr Kriss
+ */
+$messages['szl'] = array(
+	'globalusage-ok' => 'Šnupej',
 );
 
 /** Telugu (తెలుగు)
