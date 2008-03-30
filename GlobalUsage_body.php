@@ -54,30 +54,28 @@ class GlobalUsage extends SpecialPage {
 	 */
 	static function doUpdate( $pageId, $wiki, $pageNamespace, $pageTitle, 
 			&$dbr, &$dbw ) {
-		$query = 'SELECT il_to, img_name IS NULL AS not_exists'.
-			'FROM '.$dbr->tableName('imagelinks').', '.
-			$dbr->tableName('page').' '.
+		$query = 'SELECT il_to, img_name IS NOT NULL AS is_local '.
+			'FROM '.$dbr->tableName('imagelinks').' '.
 			'LEFT JOIN '.$dbr->tableName('image').' ON '. 
-			'il_to = img_name WHERE page_id = il_from AND '.
-			"page_id = {$pageId}";
+			'il_to = img_name WHERE il_from = '.$pageId;
 		$res = $dbr->query($query, __METHOD__);
 		
-		$results = array();
+		$rows = array();
 		while ($row = $res->fetchRow()) {
-			$result[] = array(
+			$rows[] = array(
 				"gil_wiki" => $wiki, 
 				"gil_page" => $pageId,
 				"gil_page_namespace" => $pageNamespace,
 				"gil_page_title" => $pageTitle,
 				"gil_to" => $row['il_to'],
-				"gil_is_local" => intval(!$row['not_exists']));
+				"gil_is_local" => $row['is_local']);
 		}
 		$res->free();
 		
 		$dbw->delete('globalimagelinks', array(
 			'gil_wiki' => $wiki, 'gil_page' => $pageId),
 			__METHOD__);
-		$dbw->insert( 'globalimagelinks', $results, __METHOD__, 'IGNORE' );
+		$dbw->insert( 'globalimagelinks', $rows, __METHOD__, 'IGNORE' );
 	}
 	
 	

@@ -14,3 +14,18 @@ link as well.
 There should be one globalimagelinks table per farm, even if multiple shared
 image repositories are used. The field gil_is_local indicates whether the file
 exists locally.
+
+== GlobalUsageDaemon and populating the table ==
+This extension provides a daemon which can be used when for some reason hooks
+can not be used, like on the Toolserver. This daemon will readout recentchanges
+to fill the globalimagelinks table.
+
+This daemon is also useful for populating the globalimagelinks table. Using
+this method it is possible to get an as consistent as posible database. To do
+so first create the table on the master wiki. Then, on each project separately:
+* Run extensions/GlobalUsage/populateGlobalUsage.php on that wiki. See
+  php extensions/GlobalUsage/populateGlobalUsage.php --help for information.
+* When the daemon has finished populating the table from the local imagelinks
+  and started to follow recentchanges, enable the extension.
+* When the daemon has made at least one full iteration after the extension has
+  been enabled, the daemon can be stopped.
