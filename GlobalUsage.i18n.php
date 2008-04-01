@@ -247,6 +247,13 @@ $messages['szl'] = array(
 	'globalusage-ok' => 'Šnupej',
 );
 
+/** Tamil (தமிழ்)
+ * @author Trengarasu
+ */
+$messages['ta'] = array(
+	'globalusage-ok' => 'தேடுக',
+);
+
 /** Telugu (తెలుగు)
  * @author Veeven
  */
