@@ -222,6 +222,13 @@ $messages['sk'] = array(
 	'globalusage-text' => 'Hľadať globálne využitie súborov.',
 );
 
+/** Serbian Cyrillic ekavian (ћирилица)
+ * @author Sasa Stefanovic
+ */
+$messages['sr-ec'] = array(
+	'globalusage-ok' => 'Претрага',
+);
+
 /** Seeltersk (Seeltersk)
  * @author Pyt
  */
