@@ -2,9 +2,10 @@
 
 $wgguWikiList = array();
 
-$optionsWithArgs = array( 'wiki', 'interval', 'log', 'max-slave-lag' );
+$optionsWithArgs = array( 'wiki', 'interval', 'log', 'throttle' );
 
 require_once 'maintenance/commandLine.inc';
+require_once 'extensions/GlobalUsage/GlobalUsage.php';
 require_once 'extensions/GlobalUsage/GlobalUsage_body.php';
 require_once 'extensions/GlobalUsage/GlobalUsageDaemon.php';
 
@@ -36,16 +37,21 @@ Usage:
 	--wiki		The wiki to populate from. If this is equal to 
 			\$wgLocalInterwiki the database settings will be read
 			from LocalSettings.php. If this is not equal, a config
-			variable \$wgguWikiList[\$wiki] is expected with which 
-			can be passed to the ForeignRepo constructor, and 
-			containing a set 'apiAddress' indicating the url of the
-			API entry point.
-	--interval	Pull interval in powers of 10
+			variable \$wgguWikiList[\$wiki] is expected with the 
+			url of the API entry point.
+	--interval	Pull interval in powers of 10.
+	--throttle	Maximum number of rows per second the populator is
+			allowed to insert.
+	--wait-for-slaves
+			Seconds to wait for slaves. Default 0, disabled.
+	
 	--daemon	Run as daemon processing all wikis in \$wgguWikiList.
 			Useful when the extension can't be installed.
+	--no-daemon	Does not run a daemon after population
 	
-	--verbose	Print information to stderr
-	--help		Show this help", 
+	--silent	Don't print information to stderr
+	--help		Show this help
+", 
 	// Only exit with code 0 when no actual error occured
 	intval(!isset($options['help'])));
 
@@ -53,7 +59,10 @@ $defaults = array(
 	'wiki' => GlobalUsage::getLocalInterwiki(),
 	'interval' => 2,
 	'daemon' => false,
-	'verbose' => false,
+	'no-daemon' => false,
+	'silent' => false,
+	'throttle' => 1000000,
+	'wait-for-slaves' => 0,
 );
 
 $options = array_merge( $defaults, $options );
@@ -70,12 +79,17 @@ if (!touch($options['log']))
 if ($options['wiki'] != GlobalUsage::getLocalInterwiki()
 		&& !isset($wgguWikiList[$options['wiki']])
 		&& !$options['daemon'])
-	dieInit("Unknown wiki '{$options['wiki']}' in $wgguWikiList");
+	dieInit("Unknown wiki '{$options['wiki']}' in \$wgguWikiList");
 	
 // Check whether interval is within bounds
 $options['interval'] = intval($options['interval']);
 if ($options['interval'] < 1 || $options['interval'] > 13)
 	dieInit("Interval must be at > 0 and < 14");
+
+// Check the throttle
+$options['throttle'] = intval($options['throttle']);
+if ($options['throttle'] < 1)
+	dieInit("Throttle must be >= 1");
 
 if (!$options['daemon']) {
 	// Remove all but the specified wiki
@@ -83,15 +97,17 @@ if (!$options['daemon']) {
 }
 
 // Create the daemon object
-$daemon = new GlobalUsageDaemon($options['log'], $wgguWikiList, $options['verbose']);
+$daemon = new GlobalUsageDaemon($options['log'], $wgguWikiList, $options['silent']);
 
 // Populate all unpopulated wikis
 foreach($wgguWikiList as $wiki => $info) {
 	if (!isset($daemon->timestamps[$wiki]))
-		$daemon->populateGlobalUsage($wiki, $options['interval']);
+		$daemon->populateGlobalUsage($wiki, $options['interval'], 
+			$options['throttle'], intval($options['wait-for-slaves']));
 }
 
 // Run the daemon
+if ($options['no-daemon']) exit(0);
 if ($options['daemon'])
 	$daemon->runDaemon($options['interval']);
 else

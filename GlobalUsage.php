@@ -24,7 +24,7 @@
  OTHER DEALINGS IN THE SOFTWARE.
 */
 
-# Alert the user that this is not a valid entry point to MediaWiki if they try to access the extension file directly.
+// Alert the user that this is not a valid entry point to MediaWiki if they try to access the extension file directly.
 if (!defined('MEDIAWIKI')) {
 	echo <<<EOT
 To install my extension, put the following line in LocalSettings.php:
@@ -33,32 +33,35 @@ EOT;
 	exit( 1 );
 }
 
-$dir = dirname(__FILE__) . '/';
+// Defines
+define('GUIW_LOCAL', 0);
+define('GUIW_SERVER', 1);
 
-$wgExtensionCredits['specialpage'][] = array(
-	'name' => 'Global Usage',
-	'author' => 'Bryan Tong Minh',
-	'description' => 'Special page to view global file usage',
-	'descriptionmsg' => 'globalusage-desc',
-	'url' => 'http://www.mediawiki.org/wiki/Extension:GlobalUsage',
-	'version' => '1.0',
-);
+if (isset($_SERVER) && array_key_exists( 'REQUEST_METHOD', $_SERVER ) ) {
+	$dir = dirname(__FILE__) . '/';
 
-$wgExtensionMessagesFiles['GlobalUsage'] = $dir . 'GlobalUsage.i18n.php';
-$wgAutoloadClasses['GlobalUsage'] = $dir . 'GlobalUsage_body.php';
-$wgExtensionMessageFiles['GlobalUsage'] = $dir . 'GlobalUsage.i18n.php';
-$wgSpecialPages['GlobalUsage'] = 'GlobalUsage';
+	$wgExtensionCredits['specialpage'][] = array(
+		'name' => 'Global Usage',
+		'author' => 'Bryan Tong Minh',
+		'description' => 'Special page to view global file usage',
+		'descriptionmsg' => 'globalusage-desc',
+		'url' => 'http://www.mediawiki.org/wiki/Extension:GlobalUsage',
+		'version' => '1.0',
+	);
 
-$wgHooks['LinksUpdate'][] = array( 'GlobalUsage', 'updateLinks' );
-$wgHooks['ArticleDeleteComplete'][] = array( 'GlobalUsage', 'articleDeleted' );
-$wgHooks['FileDeleteComplete'][] = array( 'GlobalUsage', 'fileDeleted' );
-$wgHooks['FileUndeleteComplete'][] = array( 'GlobalUsage', 'fileUndeleted' );
-$wgHooks['UploadComplete'][] = array( 'GlobalUsage', 'imageUploaded' );
-$wgHooks['SpecialMovepageAfterMove'][] = array( 'GlobalUsage', 'articleMoved' );
+	$wgExtensionMessagesFiles['GlobalUsage'] = $dir . 'GlobalUsage.i18n.php';
+	$wgAutoloadClasses['GlobalUsage'] = $dir . 'GlobalUsage_body.php';
+	$wgExtensionMessageFiles['GlobalUsage'] = $dir . 'GlobalUsage.i18n.php';
+	$wgSpecialPages['GlobalUsage'] = 'GlobalUsage';
 
-// This wiki does not have a globalimagelinks table
-$wgguIsMaster = false;
-// If set to an array it should have the same form as $wgForeignFileRepos
-// If set to an int will use RepoGroup::getRepo to resolve the database
-// If set to anything else, will use RepoGroup::getRepoByName to resolve the database
-$wgguMasterDatabase = 0;
+	$wgHooks['LinksUpdate'][] = array( 'GlobalUsage', 'updateLinks' );
+	$wgHooks['ArticleDeleteComplete'][] = array( 'GlobalUsage', 'articleDeleted' );
+	$wgHooks['FileDeleteComplete'][] = array( 'GlobalUsage', 'fileDeleted' );
+	$wgHooks['FileUndeleteComplete'][] = array( 'GlobalUsage', 'fileUndeleted' );
+	$wgHooks['UploadComplete'][] = array( 'GlobalUsage', 'imageUploaded' );
+	$wgHooks['SpecialMovepageAfterMove'][] = array( 'GlobalUsage', 'articleMoved' );
+}
+
+// If set to false, the local database contains the globalimagelinks table
+// Else set to something understandable to LBFactory
+$wgguMasterDatabase = false;

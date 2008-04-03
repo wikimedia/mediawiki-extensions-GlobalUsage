@@ -27,5 +27,5 @@ so first create the table on the master wiki. Then, on each project separately:
   php extensions/GlobalUsage/populateGlobalUsage.php --help for information.
 * When the daemon has finished populating the table from the local imagelinks
   and started to follow recentchanges, enable the extension.
-* When the daemon has made at least one full iteration after the extension has
-  been enabled, the daemon can be stopped.
+* When the daemon has reached the time at which the extension was enabled, 
+  the daemon can be stopped.

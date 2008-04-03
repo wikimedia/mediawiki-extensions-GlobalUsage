@@ -2,6 +2,7 @@
 
 class GlobalUsage extends SpecialPage {
 	private static $database = array();
+	private static $interwiki = null;
 
 	function __construct() {
 		parent::__construct('GlobalUsage');
@@ -10,29 +11,25 @@ class GlobalUsage extends SpecialPage {
 	
 	static function getDatabase( $dbFlags = DB_MASTER ) {
 		global $wgguIsMaster, $wgguMasterDatabase;
-		if ( isset( self::$database[$dbFlags] ) )
-			return self::$database[$dbFlags];
-		
-		if ( $wgguIsMaster ) {
-			self::$database[$dbFlags] = wfGetDB( $dbFlags );
-		} else {
-			if ( is_array( $wgguMasterDatabase ) )
-				$repo = new ForeignDBRepo( $wgguMasterDatabase );
-			else if ( is_int( $wgguMasterDatabase ) )
-				$repo = RepoGroup::singleton()->getRepo( $wgguMasterDatabase );
-			else 
-				$repo = RepoGroup::singleton()->getRepoByName( $wgguMasterDatabase );
-			
-			if ( $dbFlags == DB_MASTER )
-				self::$database[DB_MASTER] = $repo->getMasterDB();
-			else
-				self::$database[DB_SLAVE] = $repo->getSlaveDB();
-		}
+		if ( !isset( self::$database[$dbFlags] ) )
+			self::$database[$dbFlags] = wfGetDB( $dbFlags, array(), $wgguMasterDatabase );
 		return self::$database[$dbFlags];
 	}
 	static function getLocalInterwiki() {
-		global $wgLocalInterwiki;
-		return $wgLocalInterwiki;
+		global $wgguInterwikiStyle, $wgLocalInterwiki, $wgServerName;
+		if (!self::$interwiki) {
+			switch ($wgguInterwikiStyle) {
+				case GUIW_LOCAL:
+					self::$interwiki = $wgLocalInterwiki;
+					break;
+				case GUIW_SERVER_NAME:
+					self::$interwiki = $wgServerName;
+					break;
+				default:
+					self::$interwiki = $wgLocalInterwiki;
+			}
+		}
+		return self::$interwiki;
 	}
 	
 	static function updateLinks( $linksUpdater ) {

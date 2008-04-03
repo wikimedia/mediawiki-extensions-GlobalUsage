@@ -16,14 +16,14 @@ class GlobalUsageDaemon {
 	// Array of wikis containing config settings
 	private $wikiList;
 
-	public function __construct($log, $wikiList, $verbose = false) {
+	public function __construct($log, $wikiList, $silent = false) {
 		$this->databases = array();
 		$this->timestamps = array();
 		$this->namespaces = array();
 		$this->log = $log;
 		$this->wikiList = $wikiList;
 		
-		if ($verbose)
+		if (!$silent)
 			$this->stderr = fopen('php://stderr', 'w');
 		else
 			$this->stderr = null;
@@ -51,7 +51,7 @@ class GlobalUsageDaemon {
 	/* 
 	* Populate the globalimagelinks table from the local imagelinks
 	*/
-	public function populateGlobalUsage($wiki, $interval) {
+	public function populateGlobalUsage($wiki, $interval, $throttle = 1000000, $maxLag) {
 		$this->debug("Populating globalimagelinks on {$wiki}");
 
 		if (!isset($this->namespaces[$wiki]))
@@ -74,6 +74,8 @@ class GlobalUsageDaemon {
 		$offset = 0;
 		$limit = 2000;
 		do {
+			$loopStart = microtime(true);
+			
 			$query = 'SELECT '.
 				'page_id, page_namespace, page_title, il_to, img_name IS NOT NULL AS is_local '.
 				'FROM '.$dbr->tableName('page').', '.$dbr->tableName('imagelinks').' '.
@@ -100,6 +102,25 @@ class GlobalUsageDaemon {
 			$dbw->insert( 'globalimagelinks', $rows, __METHOD__, 'IGNORE' );
 
 			$offset += $count;
+			
+			$timeTaken = microtime(true) - $loopStart;
+			$rps = $count / $timeTaken;
+			$this->debug("Inserted {$count} rows in {$timeTaken} seconds; {$rps} rows per second");
+			if ($rps > $throttle) {
+				$sleepTime = ($rps / $throttle - 1) * $timeTaken;
+				$this->debug("Throttled {$sleepTime} seconds");
+				sleep($sleepTime);
+			}
+			if ($maxLag) {
+				$lb = wfGetLB($wiki);
+				do {
+					list($host, $lag) = $lb->getMaxLag();
+					if ($lag > $maxLag) {
+						$this->debug("Waiting for {$host}; lagged {$lag} seconds");
+						sleep($lag - $maxLag);
+					}
+				while ($lag > $maxLag);
+			}
 		} while ($count == $limit);
 		$dbw->immediateCommit();
 		
@@ -248,10 +269,10 @@ class GlobalUsageDaemon {
 			// Not the current wiki, need to fetch using the API
 			$this->debug("Fetching namespaces from external wiki {$wiki}");
 			
-			if (!isset($this->wikiList[$wiki]['apiAddress'])) {
+			if (!isset($this->wikiList[$wiki])) {
 				// Raise error
 			}
-			$address = $this->wikiList[$wiki]['apiAddress'];
+			$address = $this->wikiList[$wiki];
 			$address .= '?action=query&meta=siteinfo&siprop=namespaces&format=php';
 			
 			$curl = curl_init($address);
@@ -270,18 +291,10 @@ class GlobalUsageDaemon {
 	* Get database object for reading
 	*/
 	private function getDatabase($wiki) {
-		if ($wiki == GlobalUsage::getLocalInterwiki()) {
+		if ($wiki == GlobalUsage::getLocalInterwiki())
 			return wfGetDB(DB_SLAVE);
-		} else {
-			$info = $this->wikiList[$wiki];
-			$key = implode('\x00', array_intersect_key($info, array(
-				'dbType' => 0, 'dbServer' => 0, 'dbUser' => 0)));
-			if (!isset($this->databases[$key])) {
-				$repo = new ForeignDBRepo($info);
-				$this->databases[$key] = $repo->getSlaveDB();
-			}
-			return $this->databases[$key];
-		}
+		else
+			return wfGetDB(DB_SLAVE, array(), $wiki);
 	}
 	
 	/* 
