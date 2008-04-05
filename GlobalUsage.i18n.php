@@ -271,6 +271,13 @@ $messages['te'] = array(
 	'globalusage-text' => 'సార్వత్రిక ఫైళ్ళ వాడుకలో వెతకండి.',
 );
 
+/** Tajik (Cyrillic) (Тоҷикӣ/tojikī (Cyrillic))
+ * @author Ibrahim
+ */
+$messages['tg-cyrl'] = array(
+	'globalusage-ok' => 'Ҷустуҷӯ',
+);
+
 /** Vietnamese (Tiếng Việt)
  * @author Minh Nguyen
  * @author Vinhtantran
