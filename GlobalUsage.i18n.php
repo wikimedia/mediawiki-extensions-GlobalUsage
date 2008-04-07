@@ -275,7 +275,10 @@ $messages['te'] = array(
  * @author Ibrahim
  */
 $messages['tg-cyrl'] = array(
-	'globalusage-ok' => 'Ҷустуҷӯ',
+	'globalusage'      => 'Истифодаи саросарии парванда',
+	'globalusage-desc' => '[[Special:GlobalUsage|Саҳифаи вижа]] барои дидани истифодаи саросарии парванда',
+	'globalusage-ok'   => 'Ҷустуҷӯ',
+	'globalusage-text' => 'Ҷустуҷӯи истифодаи саросарии парванда.',
 );
 
 /** Vietnamese (Tiếng Việt)
