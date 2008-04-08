@@ -119,7 +119,7 @@ class GlobalUsageDaemon {
 						$this->debug("Waiting for {$host}; lagged {$lag} seconds");
 						sleep($lag - $maxLag);
 					}
-				while ($lag > $maxLag);
+				} while ($lag > $maxLag);
 			}
 		} while ($count == $limit);
 		$dbw->immediateCommit();
