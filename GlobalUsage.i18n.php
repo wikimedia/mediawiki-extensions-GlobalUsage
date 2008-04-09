@@ -91,6 +91,16 @@ $messages['gl'] = array(
 	'globalusage-text' => 'Procurar o uso global do ficheiro.',
 );
 
+/** Hindi (हिन्दी)
+ * @author Kaustubh
+ */
+$messages['hi'] = array(
+	'globalusage'      => 'ग्लोबल फ़ाईल इस्तेमाल',
+	'globalusage-desc' => 'ग्लोबल फ़ाईल इस्तेमाल देखने के लिये [[Special:GlobalUsage|विशेष पॄष्ठ]]',
+	'globalusage-ok'   => 'खोजें',
+	'globalusage-text' => 'ग्लोबल फ़ाईल इस्तेमाल खोजें।',
+);
+
 /** Upper Sorbian (Hornjoserbsce)
  * @author Michawiki
  */
