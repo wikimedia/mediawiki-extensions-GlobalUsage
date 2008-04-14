@@ -198,6 +198,14 @@ $messages['oc'] = array(
 	'globalusage-text' => "Recercar l'usatge global del fichièr",
 );
 
+/** Polish (Polski)
+ * @author Sp5uhe
+ */
+$messages['pl'] = array(
+	'globalusage'      => 'Globalne użycie pliku',
+	'globalusage-desc' => '[[Special:GlobalUsage|Strona specjalna]] raportująca globalnie wykorzystanie pliku',
+);
+
 /** Pashto (پښتو)
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
