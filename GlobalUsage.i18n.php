@@ -91,6 +91,13 @@ $messages['gl'] = array(
 	'globalusage-text' => 'Procurar o uso global do ficheiro.',
 );
 
+/** Manx (Gaelg)
+ * @author MacTire02
+ */
+$messages['gv'] = array(
+	'globalusage-ok' => 'Ronsaghey',
+);
+
 /** Hindi (हिन्दी)
  * @author Kaustubh
  */
