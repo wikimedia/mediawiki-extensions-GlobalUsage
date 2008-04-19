@@ -221,10 +221,13 @@ $messages['ps'] = array(
 );
 
 /** Portuguese (Português)
+ * @author Malafaya
  * @author Lijealso
  */
 $messages['pt'] = array(
-	'globalusage-ok' => 'Busca',
+	'globalusage'      => 'Utilização global de ficheiro',
+	'globalusage-ok'   => 'Busca',
+	'globalusage-text' => 'Pesquisar utilização global de ficheiro.',
 );
 
 /** Russian (Русский)
