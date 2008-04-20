@@ -217,7 +217,7 @@ $messages['pl'] = array(
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
 $messages['ps'] = array(
-	'globalusage-ok' => 'لټون',
+	'globalusage-ok' => 'پلټل',
 );
 
 /** Portuguese (Português)
@@ -226,6 +226,7 @@ $messages['ps'] = array(
  */
 $messages['pt'] = array(
 	'globalusage'      => 'Utilização global de ficheiro',
+	'globalusage-desc' => '[[{{ns:Special}}:GlobalUsage|Página especial]] para consultar a utilização global de ficheiros',
 	'globalusage-ok'   => 'Busca',
 	'globalusage-text' => 'Pesquisar utilização global de ficheiro.',
 );
