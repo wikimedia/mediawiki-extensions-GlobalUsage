@@ -70,6 +70,13 @@ $messages['eo'] = array(
 	'globalusage-ok' => 'Serĉu',
 );
 
+/** Spanish (Español)
+ * @author Jatrobat
+ */
+$messages['es'] = array(
+	'globalusage-ok' => 'Buscar',
+);
+
 /** French (Français)
  * @author Meithal
  * @author Grondin
