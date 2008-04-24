@@ -45,6 +45,13 @@ $messages['bn'] = array(
 	'globalusage-ok' => 'অনুসন্ধান',
 );
 
+/** Chamorro (Chamoru)
+ * @author Jatrobat
+ */
+$messages['ch'] = array(
+	'globalusage-ok' => 'Aligao',
+);
+
 /** Danish (Dansk)
  * @author Jon Harald Søby
  */
