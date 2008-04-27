@@ -17,6 +17,13 @@ $messages['en'] = array(
 	'globalusage-text' => 'Search global file usage.'
 );
 
+/** Karelian (Karjala)
+ * @author Flrn
+ */
+$messages['krl'] = array(
+	'globalusage-ok' => 'Ečindy',
+);
+
 /** Arabic (العربية)
  * @author Meno25
  * @author Alnokta
@@ -120,6 +127,13 @@ $messages['hi'] = array(
 	'globalusage-desc' => 'ग्लोबल फ़ाईल इस्तेमाल देखने के लिये [[Special:GlobalUsage|विशेष पॄष्ठ]]',
 	'globalusage-ok'   => 'खोजें',
 	'globalusage-text' => 'ग्लोबल फ़ाईल इस्तेमाल खोजें।',
+);
+
+/** Hiligaynon (Ilonggo)
+ * @author Jose77
+ */
+$messages['hil'] = array(
+	'globalusage-ok' => 'Pangita-a',
 );
 
 /** Upper Sorbian (Hornjoserbsce)
