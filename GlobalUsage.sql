@@ -16,5 +16,5 @@ CREATE TABLE /*$wgDBprefix*/globalimagelinks (
 	-- On gil_is_local change
 	INDEX (gil_wiki, gil_to),
 	-- On the special page itself
-	INDEX (gil_to, gil_is_local),
+	INDEX (gil_to, gil_is_local)
 ) /*$wgDBTableOptions*/;

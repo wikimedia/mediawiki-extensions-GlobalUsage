@@ -244,7 +244,13 @@ class GlobalUsageDaemon {
 		$this->setTimestamp($wiki, $newTs);
 		
 		// Return when this function should be called again
-		return $this->incrementTimestamp($newTs, $interval);
+		$waitUntil = wfTimestamp(TS_MW, $this->incrementTimestamp($newTs, $interval));
+		
+		$res = $dbr->select('recentchanges', 'MAX(rc_timestamp) AS r', '', __METHOD__);
+		$row = $res->fetchRow();
+		$res->free();
+		return array($waitUntil, $row['r'] > $waitUntil);
+
 	}
 	
 	/* 
@@ -280,10 +286,12 @@ class GlobalUsageDaemon {
 			curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
 			$data = unserialize(curl_exec($curl));
 			curl_close($curl);
+			if (!$data) return false;
 			
 			$this->namespaces[$wiki] = array();
 			foreach ($data['query']['namespaces'] as $id => $value) 
 				$this->namespaces[$wiki][$id] = $value['*'];
+			return true;
 		}
 	}
 	
@@ -341,13 +349,14 @@ class GlobalUsageDaemon {
 		
 		// Fetch namespaces
 		if (!isset($this->namespaces[$wiki]))
-			$this->fetchNamespaces($wiki);
+			if (!$this->fetchNamespaces($wiki))
+				die("Could not fetch namespaces for {$wiki}\n");
 		$dbr = $this->getDatabase($wiki);
 			
 		while (true) {
-			$waitUntil = $this->processRecentChanges($wiki, $interval);
+			list($waitUntil, $hasMore) = $this->processRecentChanges($wiki, $interval);
 			while ($waitUntil > time() - $dbr->getLag()) {
-				$sleepTime = max($waitUntil + $dbr->getLag() - time(), 0);
+				$sleepTime = max(wfTimestamp(TS_UNIX, $waitUntil) + $dbr->getLag() - time(), 0);
 				$this->debug("Sleeping {$sleepTime} seconds: ".
 					'need to wait until '.wfTimestamp(TS_MW, $waitUntil).
 					'; now is '.wfTimestamp(TS_MW));
@@ -369,23 +378,38 @@ class GlobalUsageDaemon {
 			reset($waitUntil);
 			
 			$dbr = $this->getDatabase(key($waitUntil));
-			while (current($waitUntil) > time() - $dbr->getLag()) {
-				$sleepTime = max(current($waitUntil) + $dbr->getLag() - time(), 0);
-				$this->debug("Sleeping {$sleepTime} seconds: ".
-					'need to wait until '.
-					wfTimestamp(TS_MW, current($waitUntil)).
-					'; now is '.wfTimestamp(TS_MW));
-				sleep($sleepTime);
+			if (current($waitUntil) != 0) {
+				$waitUntilTime = wfTimestamp(TS_UNIX, current($waitUntil));
+				$lag = $dbr->getLag();
+				while ($waitUntilTime > time() - $lag) {
+					$sleepTime = max($waitUntilTime - time() + $lag, 0);
+					$this->debug("Sleeping {$sleepTime} seconds: ".
+						'need to wait until '.current($waitUntil).
+						'; now is '.wfTimestamp(TS_MW, time() - $lag));
+					sleep($sleepTime);
+				}
 			}
 			
 			$wiki = key($waitUntil);
 			
 			// Fetch namespaces
 			if (!isset($this->namespaces[$wiki]))
-				$this->fetchNamespaces($wiki);
+				if (!$this->fetchNamespaces($wiki)) {
+					$this->debug("Could not fetch namespaces for {$wiki}");
+					unset($waitUntil[$wiki]);
+					continue;
+				}
 			
 			$this->debug("Processing recentchanges for {$wiki}");
-			$waitUntil[$wiki] = $this->processRecentChanges($wiki, $interval);
+			$now = time();
+			list($waitUntil[$wiki], $hasMore) = $this->processRecentChanges($wiki, $interval);
+			if (!$hasMore) {
+				// There are no more entries. Set the timestamp to *now* to avoid locking
+				// of other wikis by rarely updated wikis
+				$next = substr(substr(wfTimestamp(TS_MW, $now - $dbr->getLag()),
+					0, 14 - $interval).'00000000000000', 0, 14);
+				$waitUntil[$wiki] = wfTimestamp(TS_MW, $this->incrementTimestamp($next, $interval));
+			}
 		}
 	}
 }
