@@ -160,6 +160,13 @@ $messages['is'] = array(
 	'globalusage-ok' => 'Leita',
 );
 
+/** Javanese (Basa Jawa)
+ * @author Meursault2004
+ */
+$messages['jv'] = array(
+	'globalusage-ok' => 'Golèk',
+);
+
 /** Khmer (ភាសាខ្មែរ)
  * @author Chhorran
  */
