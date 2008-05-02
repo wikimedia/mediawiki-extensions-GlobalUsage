@@ -76,12 +76,12 @@ class GlobalUsageDaemon {
 		do {
 			$loopStart = microtime(true);
 			
-			$query = 'SELECT '.
+			$sql = 'SELECT '.
 				'page_id, page_namespace, page_title, il_to, img_name IS NOT NULL AS is_local '.
 				'FROM '.$dbr->tableName('page').', '.$dbr->tableName('imagelinks').' '.
 				'LEFT JOIN '.$dbr->tableName('image').' ON il_to = img_name '.
-				'WHERE page_id = il_from '.
-				"LIMIT {$offset},{$limit}";
+				'WHERE page_id = il_from ';
+			$query = $dbr->limitResult($sql, $limit, $offset);
 			$res = $dbr->query($query, __METHOD__);
 			
 			$count = 0;
@@ -131,6 +131,7 @@ class GlobalUsageDaemon {
 	* Populate the globalimagelinks table from the recentchanges
 	*/
 	public function processRecentChanges($wiki, $interval = 2) {
+		global $wgDBtype;
 		$dbr = $this->getDatabase($wiki);
 		$dbw = GlobalUsage::getDatabase(DB_MASTER);
 		
@@ -144,16 +145,20 @@ class GlobalUsageDaemon {
 		
 		// Get timestamp
 		$timestamp = substr($this->timestamps[$wiki], 0, 14 - $interval);
-		
+
 		$dbw->immediateBegin();
 			
+		$timestamp_like_rc = $wgDBtype === 'postgres'
+			? "TO_CHAR(rc_timestamp, 'YYYYMMDDHH24MISS') = '$timestamp'"
+			: "rc_timestamp LIKE '{$timestamp}%'";
+
 		// Update links on all recentchanges
 		$query = 'SELECT DISTINCT '.
 			'page_id AS id, rc_namespace AS ns, rc_title AS title '.
 			"FROM {$tables['rc']}, {$tables['page']} ".
 			'WHERE page_namespace = rc_namespace AND page_title = rc_title '.
-			'AND rc_namespace <> -1 AND '.
-			"rc_timestamp LIKE '{$timestamp}%'";
+			'AND rc_namespace <> -1 '.
+			"AND $timestamp_like_rc";
 			
 		$res = $dbr->query($query, __METHOD__);
 		
@@ -163,6 +168,10 @@ class GlobalUsageDaemon {
 		$res->free();
 		$this->processRows($rows, $wiki, $dbr, $dbw);
 			
+		$timestamp_like_log = $wgDBtype === 'postgres'
+			? "TO_CHAR(log_timestamp, 'YYYYMMDDHH24MISS') = '$timestamp'"
+			: "log_timestamp LIKE '{$timestamp}%'";
+
 		// Update links on deletion or undeletion of an article
 		$query = 'SELECT '.
 			'page_id AS id, log_namespace AS ns, log_title AS title, '.
@@ -171,8 +180,8 @@ class GlobalUsageDaemon {
 			"LEFT JOIN {$tables['page']} ON ".
 			'page_namespace = log_namespace AND '.
 			'page_title = log_title '.
-			'WHERE log_action = "delete" AND '.
-			"log_timestamp LIKE '{$timestamp}%'";
+			"WHERE log_action = 'delete' ".
+			"AND $timestamp_like_log";
 		
 		$res = $dbr->query($query, __METHOD__);
 			
@@ -195,8 +204,9 @@ class GlobalUsageDaemon {
 			'log_title, img_name IS NOT NULL AS is_local '.
 			"FROM {$tables['log']}, {$tables['il']} ".
 			"LEFT JOIN {$tables['img']} ON il_to = img_name ".
-			'WHERE log_namespace = 6 AND log_type IN ("upload", "delete") '.
-			"AND log_timestamp LIKE '{$timestamp}%'";
+			"WHERE log_namespace = 6 AND log_type IN ('upload', 'delete') ".
+			"AND $timestamp_like_log";
+
 		$res = $dbr->query($query, __METHOD__);
 			
 		while($row = $res->fetchRow()) {
@@ -213,7 +223,7 @@ class GlobalUsageDaemon {
 		// Update titles on page move
 		$res = $dbr->select('logging', 
 			array('log_namespace', 'log_title', 'log_params'),
-			"log_type = 'move' AND log_timestamp LIKE '{$timestamp}%'",
+			"log_type = 'move' AND $timestamp_like_log",
 			__METHOD__);
 				
 		while($row = $res->fetchRow()) {
