@@ -164,7 +164,10 @@ $messages['is'] = array(
  * @author Meursault2004
  */
 $messages['jv'] = array(
-	'globalusage-ok' => 'Golèk',
+	'globalusage'      => 'Panggunan berkas sacara global',
+	'globalusage-desc' => '[[Special:GlobalUsage|Kaca astaméwa]] kanggo ndeleng panggunan global berkas',
+	'globalusage-ok'   => 'Golèk',
+	'globalusage-text' => 'Golèk panggunan global berkas.',
 );
 
 /** Khmer (ភាសាខ្មែរ)
