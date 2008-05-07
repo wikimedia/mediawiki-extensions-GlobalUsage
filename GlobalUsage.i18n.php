@@ -24,6 +24,13 @@ $messages['krl'] = array(
 	'globalusage-ok' => 'Ečindy',
 );
 
+/** Afrikaans (Afrikaans)
+ * @author Arnobarnard
+ */
+$messages['af'] = array(
+	'globalusage-ok' => 'Soek',
+);
+
 /** Arabic (العربية)
  * @author Meno25
  * @author Alnokta
@@ -176,6 +183,13 @@ $messages['jv'] = array(
 $messages['km'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|ទំព័រពិសេស]] ដើម្បីមើល បំរើប្រាស់ ឯកសារ សកល',
 	'globalusage-ok'   => 'ស្វែងរក',
+);
+
+/** Kinaray-a (Kinaray-a)
+ * @author Jose77
+ */
+$messages['krj'] = array(
+	'globalusage-ok' => 'Sagap',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
