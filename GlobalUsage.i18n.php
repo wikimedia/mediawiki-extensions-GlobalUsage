@@ -206,7 +206,7 @@ $messages['lb'] = array(
  * @author Shijualex
  */
 $messages['ml'] = array(
-	'globalusage-ok' => 'തിരയുക',
+	'globalusage-ok' => 'തിരയൂ',
 );
 
 /** Marathi (मराठी)
@@ -370,11 +370,13 @@ $messages['tg-cyrl'] = array(
 );
 
 /** Vietnamese (Tiếng Việt)
- * @author Minh Nguyen
  * @author Vinhtantran
+ * @author Minh Nguyen
  */
 $messages['vi'] = array(
+	'globalusage'      => 'Sử dụng tập tin toàn cục',
 	'globalusage-desc' => '[[Special:GlobalUsage|Trang đặc biệt]] để xem tập tin này đang dùng ở đâu trên toàn hệ thống',
 	'globalusage-ok'   => 'Tìm kiếm',
+	'globalusage-text' => 'Tìm cách dùng tập tin toàn cục.',
 );
 
