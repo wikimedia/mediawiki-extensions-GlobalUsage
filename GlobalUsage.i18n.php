@@ -87,8 +87,10 @@ $messages['de'] = array(
  * @author Yekrats
  */
 $messages['eo'] = array(
-	'globalusage'    => 'Ĝenerala dosier-uzado',
-	'globalusage-ok' => 'Serĉu',
+	'globalusage'      => 'Ĝenerala dosier-uzado',
+	'globalusage-desc' => '[[Special:GlobalUsage|Speciala paĝo]] por rigardi uzadon de ĝeneralaj dosieroj',
+	'globalusage-ok'   => 'Serĉu',
+	'globalusage-text' => 'Serĉi uzadon de ĝeneralaj dosieroj.',
 );
 
 /** Spanish (Español)
