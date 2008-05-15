@@ -89,7 +89,7 @@ $messages['de'] = array(
 $messages['eo'] = array(
 	'globalusage'      => 'Ĝenerala dosier-uzado',
 	'globalusage-desc' => '[[Special:GlobalUsage|Speciala paĝo]] por rigardi uzadon de ĝeneralaj dosieroj',
-	'globalusage-ok'   => 'Serĉu',
+	'globalusage-ok'   => 'Serĉi',
 	'globalusage-text' => 'Serĉi uzadon de ĝeneralaj dosieroj.',
 );
 
