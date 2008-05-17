@@ -12,7 +12,11 @@ CREATE TABLE /*$wgDBprefix*/globalimagelinks (
 	-- Exists locally
 	gil_is_local tinyint(1) not null,
 	
-	PRIMARY KEY (gil_wiki, gil_page),
+	-- Note: You might want to shorten the gil_wiki part of the indices.
+	-- If the domain format is used, only the "en.wikip" part is needed for an
+	-- unique lookup
+	
+	PRIMARY KEY (gil_wiki, gil_page, gil_to),
 	-- On gil_is_local change
 	INDEX (gil_wiki, gil_to),
 	-- On the special page itself

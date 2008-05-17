@@ -235,6 +235,7 @@ class GlobalUsageDaemon {
 					list($namespace, $title) = $new_title;
 				}
 			}
+			// FIXME: Unindexed update!
 			$dbw->update( 'globalimagelinks', array(
 				'gil_page_namespace' => $namespace,
 				'gil_page_title' => $title
