@@ -208,7 +208,10 @@ $messages['lb'] = array(
  * @author Shijualex
  */
 $messages['ml'] = array(
-	'globalusage-ok' => 'തിരയൂ',
+	'globalusage'      => 'പ്രമാണത്തിന്റെ ആഗോള ഉപയോഗം',
+	'globalusage-desc' => 'പ്രമാണത്തിന്റെ ആഗോള ഉപയോഗം കാണിക്കുവാനുള്ള [[Special:GlobalUsage|പ്രത്യേക താള്‍]]',
+	'globalusage-ok'   => 'തിരയൂ',
+	'globalusage-text' => 'പ്രമാണത്തിന്റെ ആഗോള ഉപയോഗം തിരയുക',
 );
 
 /** Marathi (मराठी)
