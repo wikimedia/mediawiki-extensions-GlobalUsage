@@ -194,6 +194,13 @@ $messages['krj'] = array(
 	'globalusage-ok' => 'Sagap',
 );
 
+/** Ripoarisch (Ripoarisch)
+ * @author Purodha
+ */
+$messages['ksh'] = array(
+	'globalusage-ok' => 'Sööke',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
