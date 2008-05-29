@@ -59,6 +59,13 @@ $messages['bn'] = array(
 	'globalusage-ok' => 'অনুসন্ধান',
 );
 
+/** Catalan (Català)
+ * @author Jordi Roqué
+ */
+$messages['ca'] = array(
+	'globalusage-ok' => 'Cerca',
+);
+
 /** Chamorro (Chamoru)
  * @author Jatrobat
  */
