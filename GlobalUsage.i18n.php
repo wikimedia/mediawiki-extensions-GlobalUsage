@@ -208,6 +208,13 @@ $messages['ksh'] = array(
 	'globalusage-ok' => 'Sööke',
 );
 
+/** Kurdish (Kurdî / كوردی)
+ * @author Bangin
+ */
+$messages['ku'] = array(
+	'globalusage-ok' => 'Lêbigere',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
