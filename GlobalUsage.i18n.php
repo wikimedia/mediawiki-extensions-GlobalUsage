@@ -24,6 +24,13 @@ $messages['krl'] = array(
 	'globalusage-ok' => 'Ečindy',
 );
 
+/** Eastern Mari (Олык Марий йылме)
+ * @author Сай
+ */
+$messages['mhr'] = array(
+	'globalusage-ok' => 'Кычал',
+);
+
 /** Afrikaans (Afrikaans)
  * @author Arnobarnard
  */
@@ -211,7 +218,7 @@ $messages['ksh'] = array(
 /** Kurdish (Kurdî / كوردی)
  * @author Bangin
  */
-$messages['ku'] = array(
+$messages['ku-latn'] = array(
 	'globalusage-ok' => 'Lêbigere',
 );
 
