@@ -350,6 +350,13 @@ $messages['stq'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Spezioalsiede]] toun Anwiesen, in wäkke Projekte do Doatäie fon n gemeensoam nutsed Repositorium ferwoand wäide',
 );
 
+/** Sundanese (Basa Sunda)
+ * @author Irwangatot
+ */
+$messages['su'] = array(
+	'globalusage-ok' => 'Sungsi',
+);
+
 /** Swedish (Svenska)
  * @author Lejonel
  * @author M.M.S.
