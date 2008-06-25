@@ -176,6 +176,13 @@ $messages['hu'] = array(
 	'globalusage-ok' => 'Keresés',
 );
 
+/** Armenian (Հայերեն)
+ * @author Togaed
+ */
+$messages['hy'] = array(
+	'globalusage-ok' => 'Որոնել',
+);
+
 /** Icelandic (Íslenska)
  * @author S.Örvarr.S
  */
