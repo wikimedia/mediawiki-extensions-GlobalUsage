@@ -31,6 +31,13 @@ $messages['mhr'] = array(
 	'globalusage-ok' => 'Кычал',
 );
 
+/** Niuean (native name missing)
+ * @author Jose77
+ */
+$messages['niu'] = array(
+	'globalusage-ok' => 'Kumi',
+);
+
 /** Afrikaans (Afrikaans)
  * @author Arnobarnard
  */
@@ -78,6 +85,13 @@ $messages['ca'] = array(
  */
 $messages['ch'] = array(
 	'globalusage-ok' => 'Aligao',
+);
+
+/** Church Slavic (Словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
+ * @author ОйЛ
+ */
+$messages['cu'] = array(
+	'globalusage-ok' => 'ищи́',
 );
 
 /** Danish (Dansk)
@@ -140,6 +154,13 @@ $messages['gl'] = array(
  */
 $messages['gv'] = array(
 	'globalusage-ok' => 'Ronsaghey',
+);
+
+/** Hakka (Hak-kâ-fa)
+ * @author Hakka
+ */
+$messages['hak'] = array(
+	'globalusage-ok' => 'Chhìm-cháu',
 );
 
 /** Hindi (हिन्दी)
@@ -237,6 +258,13 @@ $messages['lb'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Spezialsäit]] fir déi global Benotzung vun engem Fichier ze gesinn',
 	'globalusage-ok'   => 'Sichen',
 	'globalusage-text' => 'No der globaler Notzung vum Fichier sichen.',
+);
+
+/** Lithuanian (Lietuvių)
+ * @author Tomasdd
+ */
+$messages['lt'] = array(
+	'globalusage-ok' => 'Ieškoti',
 );
 
 /** Malayalam (മലയാളം)
