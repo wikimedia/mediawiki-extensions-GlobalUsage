@@ -71,17 +71,21 @@ class GlobalUsageDaemon {
 			'00000000000000', 0, 14);
 		$res->free();
 		
-		$offset = 0;
+		$prevPage = 0;
+		$prevImage = '';
 		$limit = 2000;
 		do {
 			$loopStart = microtime(true);
 			
 			$sql = 'SELECT '.
 				'page_id, page_namespace, page_title, il_to, img_name IS NOT NULL AS is_local '.
-				'FROM '.$dbr->tableName('page').', '.$dbr->tableName('imagelinks').' '.
+				'FROM '.$dbr->tableName('imagelinks').' '.
 				'LEFT JOIN '.$dbr->tableName('image').' ON il_to = img_name '.
-				'WHERE page_id = il_from ';
-			$query = $dbr->limitResult($sql, $limit, $offset);
+				// Note the following JOIN should be after the LEFT JOIN
+				'JOIN '.$dbr->tableName('page').' ON page_id = il_from '.
+				'WHERE il_from >= '.$prevPage.' AND il_to > '.$dbr->addQuotes($prevImage).
+				'ORDER BY il_from, il_to ';
+			$query = $dbr->limitResult($sql, $limit, 0);
 			$res = $dbr->query($query, __METHOD__);
 			
 			$count = 0;
@@ -96,12 +100,12 @@ class GlobalUsageDaemon {
 					'gil_to' => $row['il_to'],
 					'gil_is_local' => $row['is_local']
 				);
+				$prevPage = $row['page_id'];
+				$prevImage = $row['il_to'];
 			}
 			$res->free();
 				
 			$dbw->insert( 'globalimagelinks', $rows, __METHOD__, 'IGNORE' );
-
-			$offset += $count;
 			
 			$timeTaken = microtime(true) - $loopStart;
 			$rps = $count / $timeTaken;
