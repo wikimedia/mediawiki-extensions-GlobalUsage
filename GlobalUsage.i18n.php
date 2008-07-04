@@ -17,6 +17,13 @@ $messages['en'] = array(
 	'globalusage-text' => 'Search global file usage.'
 );
 
+/** Tarifit (Tarifit)
+ * @author Jose77
+ */
+$messages['rif'] = array(
+	'globalusage-ok' => 'Tarzzut',
+);
+
 /** Karelian (Karjala)
  * @author Flrn
  */
