@@ -77,11 +77,15 @@ class GlobalUsageDaemon {
 		do {
 			$loopStart = microtime(true);
 			
-			$sql = 'SELECT '.
+			$sql = 
+				// Join order is important for sorting
+				'SELECT STRAIGHT_JOIN '.
 				'page_id, page_namespace, page_title, il_to, img_name IS NOT NULL AS is_local '.
 				'FROM '.$dbr->tableName('imagelinks').' '.
+				// MySQL will choose the il_to index from il_to > 'O'
+				// TODO: Doesn't work on the Toolserver
+				'FORCE INDEX(il_from) '.
 				'LEFT JOIN '.$dbr->tableName('image').' ON il_to = img_name '.
-				// Note the following JOIN should be after the LEFT JOIN
 				'JOIN '.$dbr->tableName('page').' ON page_id = il_from '.
 				'WHERE il_from >= '.$prevPage.' AND il_to > '.$dbr->addQuotes($prevImage).
 				'ORDER BY il_from, il_to ';
@@ -370,10 +374,10 @@ class GlobalUsageDaemon {
 			
 		while (true) {
 			list($waitUntil, $hasMore) = $this->processRecentChanges($wiki, $interval);
-			while ($waitUntil > time() - $dbr->getLag()) {
+			while (wfTimestamp(TS_UNIX, $waitUntil) > time() - $dbr->getLag()) {
 				$sleepTime = max(wfTimestamp(TS_UNIX, $waitUntil) + $dbr->getLag() - time(), 0);
 				$this->debug("Sleeping {$sleepTime} seconds: ".
-					'need to wait until '.wfTimestamp(TS_MW, $waitUntil).
+					'need to wait until '.$waitUntil.
 					'; now is '.wfTimestamp(TS_MW));
 				sleep($sleepTime);
 			}
