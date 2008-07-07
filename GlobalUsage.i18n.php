@@ -17,13 +17,6 @@ $messages['en'] = array(
 	'globalusage-text' => 'Search global file usage.'
 );
 
-/** Tarifit (Tarifit)
- * @author Jose77
- */
-$messages['rif'] = array(
-	'globalusage-ok' => 'Tarzzut',
-);
-
 /** Karelian (Karjala)
  * @author Flrn
  */
@@ -31,14 +24,14 @@ $messages['krl'] = array(
 	'globalusage-ok' => 'Ečindy',
 );
 
-/** Eastern Mari (Олык Марий йылме)
+/** Eastern Mari (Олык Марий)
  * @author Сай
  */
 $messages['mhr'] = array(
 	'globalusage-ok' => 'Кычал',
 );
 
-/** Niuean (native name missing)
+/** Niuean (ko e vagahau Niuē)
  * @author Jose77
  */
 $messages['niu'] = array(
@@ -356,6 +349,13 @@ $messages['pt'] = array(
 	'globalusage-desc' => '[[{{ns:Special}}:GlobalUsage|Página especial]] para consultar a utilização global de ficheiros',
 	'globalusage-ok'   => 'Busca',
 	'globalusage-text' => 'Pesquisar utilização global de ficheiro.',
+);
+
+/** Tarifit (Tarifit)
+ * @author Jose77
+ */
+$messages['rif'] = array(
+	'globalusage-ok' => 'Tarzzut',
 );
 
 /** Russian (Русский)
