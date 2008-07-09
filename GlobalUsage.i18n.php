@@ -223,10 +223,13 @@ $messages['jv'] = array(
 
 /** Khmer (ភាសាខ្មែរ)
  * @author Chhorran
+ * @author Lovekhmer
  */
 $messages['km'] = array(
-	'globalusage-desc' => '[[Special:GlobalUsage|ទំព័រពិសេស]] ដើម្បីមើល បំរើប្រាស់ ឯកសារ សកល',
+	'globalusage'      => 'បំរើបំរាស់ឯកសារជាសាកល',
+	'globalusage-desc' => '[[Special:GlobalUsage|ទំព័រពិសេស]]ដើម្បីមើលបំរើបំរាស់ឯកសារជាសាកល',
 	'globalusage-ok'   => 'ស្វែងរក',
+	'globalusage-text' => 'ស្វែងរកបំរើបំរាស់ឯកសារជាសាកល។',
 );
 
 /** Kinaray-a (Kinaray-a)
@@ -243,7 +246,7 @@ $messages['ksh'] = array(
 	'globalusage-ok' => 'Sööke',
 );
 
-/** Kurdish (Kurdî / كوردی)
+/** Kurdish (Latin) (Kurdî / كوردی (Latin))
  * @author Bangin
  */
 $messages['ku-latn'] = array(
@@ -410,7 +413,7 @@ $messages['sv'] = array(
 	'globalusage-text' => 'Sök global filanvändning.',
 );
 
-/** Silesian (ślůnski)
+/** Silesian (Ślůnski)
  * @author Herr Kriss
  */
 $messages['szl'] = array(
