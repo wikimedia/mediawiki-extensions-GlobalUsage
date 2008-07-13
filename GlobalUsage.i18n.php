@@ -204,6 +204,13 @@ $messages['hy'] = array(
 	'globalusage-ok' => 'Որոնել',
 );
 
+/** Interlingua (Interlingua)
+ * @author McDutchie
+ */
+$messages['ia'] = array(
+	'globalusage-ok' => 'Cercar',
+);
+
 /** Icelandic (Íslenska)
  * @author S.Örvarr.S
  */
@@ -330,10 +337,12 @@ $messages['oc'] = array(
 
 /** Polish (Polski)
  * @author Sp5uhe
+ * @author Maikking
  */
 $messages['pl'] = array(
 	'globalusage'      => 'Globalne użycie pliku',
 	'globalusage-desc' => '[[Special:GlobalUsage|Strona specjalna]] raportująca globalnie wykorzystanie pliku',
+	'globalusage-ok'   => 'Szukaj',
 );
 
 /** Pashto (پښتو)
