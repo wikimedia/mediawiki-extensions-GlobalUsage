@@ -370,6 +370,13 @@ $messages['rif'] = array(
 	'globalusage-ok' => 'Tarzzut',
 );
 
+/** Romanian (Română)
+ * @author KlaudiuMihaila
+ */
+$messages['ro'] = array(
+	'globalusage-ok' => 'Caută',
+);
+
 /** Russian (Русский)
  * @author Александр Сигачёв
  */
