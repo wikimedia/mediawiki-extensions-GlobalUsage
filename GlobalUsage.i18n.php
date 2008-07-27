@@ -52,7 +52,7 @@ $messages['af'] = array(
 $messages['ar'] = array(
 	'globalusage'      => 'استخدام الملف العام',
 	'globalusage-desc' => '[[Special:GlobalUsage|صفحة خاصة]] لرؤية استخدام الملف العام',
-	'globalusage-ok'   => 'ابحث',
+	'globalusage-ok'   => 'بحث',
 	'globalusage-text' => 'بحث استخدام الملف العام',
 );
 
@@ -216,6 +216,13 @@ $messages['ia'] = array(
  */
 $messages['is'] = array(
 	'globalusage-ok' => 'Leita',
+);
+
+/** Italian (Italiano)
+ * @author Darth Kule
+ */
+$messages['it'] = array(
+	'globalusage-ok' => 'Ricerca',
 );
 
 /** Javanese (Basa Jawa)
