@@ -139,6 +139,13 @@ $messages['fr'] = array(
 	'globalusage-text' => "Rechercher l'usage global du fichier",
 );
 
+/** Western Frisian (Frysk)
+ * @author Snakesteuben
+ */
+$messages['fy'] = array(
+	'globalusage-ok' => 'Sykje',
+);
+
 /** Galician (Galego)
  * @author Xosé
  */
