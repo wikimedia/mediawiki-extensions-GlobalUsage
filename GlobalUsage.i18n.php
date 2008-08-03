@@ -229,7 +229,10 @@ $messages['is'] = array(
  * @author Darth Kule
  */
 $messages['it'] = array(
-	'globalusage-ok' => 'Ricerca',
+	'globalusage'      => 'Utilizzo globale file',
+	'globalusage-desc' => "[[Special:GlobalUsage|Pagina speciale]] per vedere l'utilizzo globale dei file",
+	'globalusage-ok'   => 'Ricerca',
+	'globalusage-text' => 'Ricerca utilizzo globale file',
 );
 
 /** Javanese (Basa Jawa)
