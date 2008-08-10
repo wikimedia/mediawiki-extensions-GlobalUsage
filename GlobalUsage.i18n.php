@@ -17,7 +17,9 @@ $messages['en'] = array(
 	'globalusage-text' => 'Search global file usage.'
 );
 
-/** Message documentation (Message documentation) */
+/** Message documentation (Message documentation)
+ * @author Jon Harald Søby
+ */
 $messages['qqq'] = array(
 	'globalusage-ok' => '{{Identical|Search}}',
 );
