@@ -19,8 +19,10 @@ $messages['en'] = array(
 
 /** Message documentation (Message documentation)
  * @author Jon Harald Søby
+ * @author Purodha
  */
 $messages['qqq'] = array(
+	'globalusage-desc' => 'Short description of this extension, shown on [[Special:Version]]. Do not translate or change links.',
 	'globalusage-ok' => '{{Identical|Search}}',
 );
 
@@ -274,7 +276,10 @@ $messages['krj'] = array(
  * @author Purodha
  */
 $messages['ksh'] = array(
-	'globalusage-ok' => 'Sööke',
+	'globalusage' => 'Jemeinsam Dateie',
+	'globalusage-desc' => '[[Special:GlobalUsage|Söndersigg]] för de jemeinsam jebruchte Dateie ze zeije.',
+	'globalusage-ok' => 'Söhke!',
+	'globalusage-text' => 'Sök noh Jemeinsam Dateie.',
 );
 
 /** Kurdish (Latin) (Kurdî / كوردی (Latin))
