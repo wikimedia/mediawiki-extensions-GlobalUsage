@@ -224,7 +224,10 @@ $messages['hy'] = array(
  * @author McDutchie
  */
 $messages['ia'] = array(
+	'globalusage' => 'Uso global de files',
+	'globalusage-desc' => '[[Special:GlobalUsage|Pagina special]] pro vider le uso global de files',
 	'globalusage-ok' => 'Cercar',
+	'globalusage-text' => 'Cercar uso global de files.',
 );
 
 /** Icelandic (Íslenska)
