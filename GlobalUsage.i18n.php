@@ -502,6 +502,13 @@ $messages['tg-cyrl'] = array(
 	'globalusage-text' => 'Ҷустуҷӯи истифодаи саросарии парванда.',
 );
 
+/** Thai (ไทย)
+ * @author Octahedron80
+ */
+$messages['th'] = array(
+	'globalusage-ok' => 'ค้นหา',
+);
+
 /** Vietnamese (Tiếng Việt)
  * @author Minh Nguyen
  * @author Vinhtantran
