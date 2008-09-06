@@ -65,6 +65,16 @@ $messages['ar'] = array(
 	'globalusage-text' => 'بحث استخدام الملف العام',
 );
 
+/** Egyptian Spoken Arabic (مصرى)
+ * @author Meno25
+ */
+$messages['arz'] = array(
+	'globalusage' => 'استخدام الملف العام',
+	'globalusage-desc' => '[[Special:GlobalUsage|صفحة خاصة]] لرؤية استخدام الملف العام',
+	'globalusage-ok' => 'بحث',
+	'globalusage-text' => 'بحث استخدام الملف العام',
+);
+
 /** Bulgarian (Български)
  * @author DCLXVI
  */
