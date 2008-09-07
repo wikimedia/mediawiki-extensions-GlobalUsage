@@ -13,12 +13,16 @@ $aliases['en'] = array(
 	'GlobalUsage' => array( 'GlobalUsage' ),
 );
 
-/** Arabic (العربية) */
+/** Arabic (العربية)
+ * @author Meno25
+ */
 $aliases['ar'] = array(
 	'GlobalUsage' => array( 'استخدام_عام' ),
 );
 
-/** Egyptian Spoken Arabic (مصرى) */
+/** Egyptian Spoken Arabic (مصرى)
+ * @author Meno25
+ */
 $aliases['arz'] = array(
 	'GlobalUsage' => array( 'استخدام_عام' ),
 );
