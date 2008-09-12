@@ -27,6 +27,11 @@ $aliases['arz'] = array(
 	'GlobalUsage' => array( 'استخدام_عام' ),
 );
 
+/** French (Français) */
+$aliases['fr'] = array(
+	'GlobalUsage' => array( 'Usage global', 'UsageGlobal' ),
+);
+
 /** Dutch (Nederlands) */
 $aliases['nl'] = array(
 	'GlobalUsage' => array( 'GobaalGebruik' ),
