@@ -32,8 +32,18 @@ $aliases['fr'] = array(
 	'GlobalUsage' => array( 'Usage global', 'UsageGlobal' ),
 );
 
+/** Nedersaksisch (Nedersaksisch) */
+$aliases['nds-nl'] = array(
+	'GlobalUsage' => array( 'Globaal_gebruuk' ),
+);
+
 /** Dutch (Nederlands) */
 $aliases['nl'] = array(
 	'GlobalUsage' => array( 'GobaalGebruik' ),
+);
+
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬) */
+$aliases['no'] = array(
+	'GlobalUsage' => array( 'Global bruk' ),
 );
 
