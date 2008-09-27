@@ -278,6 +278,13 @@ $messages['km'] = array(
 	'globalusage-text' => 'ស្វែងរកបំរើបំរាស់ឯកសារជាសាកល។',
 );
 
+/** Krio (Krio)
+ * @author Jose77
+ */
+$messages['kri'] = array(
+	'globalusage-ok' => 'Luk foh am',
+);
+
 /** Kinaray-a (Kinaray-a)
  * @author Jose77
  */
