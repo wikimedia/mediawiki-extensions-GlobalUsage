@@ -32,6 +32,11 @@ $aliases['fr'] = array(
 	'GlobalUsage' => array( 'Usage global', 'UsageGlobal' ),
 );
 
+/** Luxembourgish (Lëtzebuergesch) */
+$aliases['lb'] = array(
+	'GlobalUsage' => array( 'Globale Gebrauch' ),
+);
+
 /** Nedersaksisch (Nedersaksisch) */
 $aliases['nds-nl'] = array(
 	'GlobalUsage' => array( 'Globaal_gebruuk' ),
