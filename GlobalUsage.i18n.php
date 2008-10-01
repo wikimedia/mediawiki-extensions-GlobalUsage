@@ -75,6 +75,13 @@ $messages['arz'] = array(
 	'globalusage-text' => 'بحث استخدام الملف العام',
 );
 
+/** Assamese (অসমীয়া)
+ * @author Chaipau
+ */
+$messages['as'] = array(
+	'globalusage-ok' => 'সন্ধান কৰক',
+);
+
 /** Bulgarian (Български)
  * @author DCLXVI
  */
