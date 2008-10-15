@@ -247,6 +247,13 @@ $messages['ia'] = array(
 	'globalusage-text' => 'Cercar uso global de files.',
 );
 
+/** Indonesian (Bahasa Indonesia)
+ * @author Rex
+ */
+$messages['id'] = array(
+	'globalusage-ok' => 'Cari',
+);
+
 /** Icelandic (Íslenska)
  * @author S.Örvarr.S
  */
@@ -352,6 +359,13 @@ $messages['mr'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|विशेष पान]] संचिकेच्या उपयोगाचे विस्तृत दृश्य',
 	'globalusage-ok' => 'शोधा',
 	'globalusage-text' => 'जागतिक संचिका उपयोग शोधा.',
+);
+
+/** Erzya (Эрзянь)
+ * @author Botuzhaleny-sodamo
+ */
+$messages['myv'] = array(
+	'globalusage-ok' => 'Вешнэмс',
 );
 
 /** Dutch (Nederlands)
