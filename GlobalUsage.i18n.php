@@ -33,13 +33,6 @@ $messages['krl'] = array(
 	'globalusage-ok' => 'Ečindy',
 );
 
-/** Eastern Mari (Олык Марий)
- * @author Сай
- */
-$messages['mhr'] = array(
-	'globalusage-ok' => 'Кычал',
-);
-
 /** Niuean (ko e vagahau Niuē)
  * @author Jose77
  */
@@ -180,6 +173,13 @@ $messages['gl'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Páxina especial]] para ver o uso global do ficheiro',
 	'globalusage-ok' => 'Procurar',
 	'globalusage-text' => 'Procurar o uso global do ficheiro.',
+);
+
+/** Ancient Greek (Ἀρχαία ἑλληνικὴ)
+ * @author Omnipaedista
+ */
+$messages['grc'] = array(
+	'globalusage-ok' => 'Ζητεῖν',
 );
 
 /** Manx (Gaelg)
@@ -338,6 +338,13 @@ $messages['lb'] = array(
  */
 $messages['lt'] = array(
 	'globalusage-ok' => 'Ieškoti',
+);
+
+/** Eastern Mari (Олык Марий)
+ * @author Сай
+ */
+$messages['mhr'] = array(
+	'globalusage-ok' => 'Кычал',
 );
 
 /** Malayalam (മലയാളം)
