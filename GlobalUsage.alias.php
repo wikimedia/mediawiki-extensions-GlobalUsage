@@ -52,3 +52,8 @@ $aliases['no'] = array(
 	'GlobalUsage' => array( 'Global bruk' ),
 );
 
+/** Occitan (Occitan) */
+$aliases['oc'] = array(
+	'GlobalUsage' => array( 'Usatge global', 'UsatgeGlobal' ),
+);
+
