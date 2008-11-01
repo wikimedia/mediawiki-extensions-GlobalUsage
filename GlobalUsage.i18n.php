@@ -196,6 +196,17 @@ $messages['hak'] = array(
 	'globalusage-ok' => 'Chhìm-cháu',
 );
 
+/** Hebrew (עברית)
+ * @author Rotemliss
+ * @author YaronSh
+ */
+$messages['he'] = array(
+	'globalusage' => 'שימוש גלובלי בקבצים',
+	'globalusage-desc' => '[[Special:GlobalUsage|דף מיוחד]] להצגת השימוש הגלובלי בקבצים',
+	'globalusage-ok' => 'חיפוש',
+	'globalusage-text' => 'חיפוש בשימוש הגלובלי בקבצים.',
+);
+
 /** Hindi (हिन्दी)
  * @author Kaustubh
  */
