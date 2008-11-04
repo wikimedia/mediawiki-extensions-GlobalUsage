@@ -32,6 +32,11 @@ $aliases['fr'] = array(
 	'GlobalUsage' => array( 'Usage global', 'UsageGlobal' ),
 );
 
+/** Khmer (ភាសាខ្មែរ) */
+$aliases['km'] = array(
+	'GlobalUsage' => array( 'បំរើបំរាស់ជាសាកល' ),
+);
+
 /** Luxembourgish (Lëtzebuergesch) */
 $aliases['lb'] = array(
 	'GlobalUsage' => array( 'Globale Gebrauch' ),
