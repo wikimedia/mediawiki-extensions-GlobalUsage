@@ -27,6 +27,11 @@ $aliases['arz'] = array(
 	'GlobalUsage' => array( 'استخدام_عام' ),
 );
 
+/** Bosnian (Bosanski) */
+$aliases['bs'] = array(
+	'GlobalUsage' => array( 'GlobalnaUpotreba' ),
+);
+
 /** French (Français) */
 $aliases['fr'] = array(
 	'GlobalUsage' => array( 'Usage global', 'UsageGlobal' ),
