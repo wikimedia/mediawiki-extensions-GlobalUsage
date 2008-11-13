@@ -92,6 +92,13 @@ $messages['bn'] = array(
 	'globalusage-ok' => 'অনুসন্ধান',
 );
 
+/** Bosnian (Bosanski)
+ * @author CERminator
+ */
+$messages['bs'] = array(
+	'globalusage-ok' => 'Traži',
+);
+
 /** Catalan (Català)
  * @author Jordi Roqué
  */
