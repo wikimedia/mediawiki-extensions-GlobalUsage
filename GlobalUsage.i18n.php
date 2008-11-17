@@ -583,3 +583,11 @@ $messages['vi'] = array(
 	'globalusage-text' => 'Tìm cách dùng tập tin toàn cục.',
 );
 
+/** Yiddish (ייִדיש)
+ * @author פוילישער
+ */
+$messages['yi'] = array(
+	'globalusage-ok' => 'זוכן',
+	'globalusage-text' => 'זוכן גלאבאלע טעקע ניצן.',
+);
+
