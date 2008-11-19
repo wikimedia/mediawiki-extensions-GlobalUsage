@@ -32,6 +32,11 @@ $aliases['bs'] = array(
 	'GlobalUsage' => array( 'GlobalnaUpotreba' ),
 );
 
+/** German (Deutsch) */
+$aliases['de'] = array(
+	'GlobalUsage' => array( 'Globale Benutzung' ),
+);
+
 /** French (Français) */
 $aliases['fr'] = array(
 	'GlobalUsage' => array( 'Usage global', 'UsageGlobal' ),
