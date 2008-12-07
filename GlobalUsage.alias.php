@@ -44,7 +44,7 @@ $aliases['fr'] = array(
 
 /** Khmer (ភាសាខ្មែរ) */
 $aliases['km'] = array(
-	'GlobalUsage' => array( 'បំរើបំរាស់ជាសាកល' ),
+	'GlobalUsage' => array( 'បម្រើបម្រាស់ជាសាកល' ),
 );
 
 /** Luxembourgish (Lëtzebuergesch) */
