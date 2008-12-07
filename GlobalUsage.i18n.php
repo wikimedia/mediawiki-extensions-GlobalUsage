@@ -137,6 +137,16 @@ $messages['de'] = array(
 	'globalusage-text' => 'Globale Suche nach Dateinutzungen.',
 );
 
+/** Lower Sorbian (Dolnoserbski)
+ * @author Michawiki
+ */
+$messages['dsb'] = array(
+	'globalusage' => 'Globalne wužywanje datajow',
+	'globalusage-desc' => '[[Special:GlobalUsage|Specialny bok]], aby se globalne wužywanje datajow woglědało',
+	'globalusage-ok' => 'Pytaś',
+	'globalusage-text' => 'Za globalnym wužywanim datajow pytaś',
+);
+
 /** Esperanto (Esperanto)
  * @author Yekrats
  */
@@ -302,12 +312,13 @@ $messages['jv'] = array(
 /** Khmer (ភាសាខ្មែរ)
  * @author Chhorran
  * @author Lovekhmer
+ * @author Thearith
  */
 $messages['km'] = array(
-	'globalusage' => 'បំរើបំរាស់ឯកសារជាសាកល',
-	'globalusage-desc' => '[[Special:GlobalUsage|ទំព័រពិសេស]]ដើម្បីមើលបំរើបំរាស់ឯកសារជាសាកល',
+	'globalusage' => 'បម្រើបម្រាស់ឯកសារជាសាកល',
+	'globalusage-desc' => '[[Special:GlobalUsage|ទំព័រពិសេស]]ដើម្បីមើលបម្រើបម្រាស់ឯកសារជាសាកល',
 	'globalusage-ok' => 'ស្វែងរក',
-	'globalusage-text' => 'ស្វែងរកបំរើបំរាស់ឯកសារជាសាកល។',
+	'globalusage-text' => 'ស្វែងរកបម្រើបម្រាស់ឯកសារជាសាកល។',
 );
 
 /** Krio (Krio)
