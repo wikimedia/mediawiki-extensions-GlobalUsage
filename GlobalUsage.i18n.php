@@ -441,6 +441,13 @@ $messages['oc'] = array(
 	'globalusage-text' => "Recercar l'usatge global del fichièr",
 );
 
+/** Ossetic (Иронау)
+ * @author Amikeco
+ */
+$messages['os'] = array(
+	'globalusage-ok' => 'Агур',
+);
+
 /** Polish (Polski)
  * @author Maikking
  * @author Sp5uhe
