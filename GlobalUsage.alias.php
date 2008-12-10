@@ -42,6 +42,11 @@ $aliases['fr'] = array(
 	'GlobalUsage' => array( 'Usage global', 'UsageGlobal' ),
 );
 
+/** Swiss German (Alemannisch) */
+$aliases['gsw'] = array(
+	'GlobalUsage' => array( 'Wältwyti Benutzig' ),
+);
+
 /** Khmer (ភាសាខ្មែរ) */
 $aliases['km'] = array(
 	'GlobalUsage' => array( 'បម្រើបម្រាស់ជាសាកល' ),
