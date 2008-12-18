@@ -299,6 +299,13 @@ $messages['it'] = array(
 	'globalusage-text' => 'Ricerca utilizzo globale file',
 );
 
+/** Japanese (日本語)
+ * @author Fryed-peach
+ */
+$messages['ja'] = array(
+	'globalusage-ok' => '検索',
+);
+
 /** Javanese (Basa Jawa)
  * @author Meursault2004
  */
@@ -462,7 +469,10 @@ $messages['pl'] = array(
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
 $messages['ps'] = array(
+	'globalusage' => 'د نړېوالې دوتنې کارېدنګ',
+	'globalusage-desc' => 'د نړېوالې دوتنې د کارېدنګ د مخليدنې لپاره [[Special:GlobalUsage|ځانګړی مخ]]',
 	'globalusage-ok' => 'پلټل',
+	'globalusage-text' => 'د نړېوالې دوتنې کارېدنګ پلټل',
 );
 
 /** Portuguese (Português)
