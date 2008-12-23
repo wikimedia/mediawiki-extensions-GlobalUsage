@@ -422,10 +422,14 @@ $messages['nl'] = array(
 );
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+ * @author Harald Khan
  * @author Jon Harald Søby
  */
 $messages['nn'] = array(
+	'globalusage' => 'Global filbruk',
+	'globalusage-desc' => '[[Special:GlobalUsage|Spesialsida]] for å visa bruken av ei fil globalt',
 	'globalusage-ok' => 'Søk',
+	'globalusage-text' => 'Søk global filbruk.',
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
