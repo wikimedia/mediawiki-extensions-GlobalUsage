@@ -303,7 +303,10 @@ $messages['it'] = array(
  * @author Fryed-peach
  */
 $messages['ja'] = array(
+	'globalusage' => 'グローバル・ファイル使用状況',
+	'globalusage-desc' => 'グローバル・ファイル使用状況を見るための[[Special:GlobalUsage|特別ページ]]',
 	'globalusage-ok' => '検索',
+	'globalusage-text' => 'グローバル・ファイル使用状況を検索する。',
 );
 
 /** Javanese (Basa Jawa)
@@ -621,5 +624,12 @@ $messages['vi'] = array(
 $messages['yi'] = array(
 	'globalusage-ok' => 'זוכן',
 	'globalusage-text' => 'זוכן גלאבאלע טעקע ניצן.',
+);
+
+/** Traditional Chinese (‪中文(繁體)‬)
+ * @author Wrightbus
+ */
+$messages['zh-hant'] = array(
+	'globalusage-ok' => '搜尋',
 );
 
