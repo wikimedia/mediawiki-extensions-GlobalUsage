@@ -414,6 +414,13 @@ $messages['myv'] = array(
 	'globalusage-ok' => 'Вешнэмс',
 );
 
+/** Nahuatl (Nāhuatl)
+ * @author Fluence
+ */
+$messages['nah'] = array(
+	'globalusage-ok' => 'Titlatēmōz',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  */
@@ -624,6 +631,13 @@ $messages['vi'] = array(
 $messages['yi'] = array(
 	'globalusage-ok' => 'זוכן',
 	'globalusage-text' => 'זוכן גלאבאלע טעקע ניצן.',
+);
+
+/** Simplified Chinese (‪中文(简体)‬)
+ * @author Gzdavidwong
+ */
+$messages['zh-hans'] = array(
+	'globalusage-ok' => '搜索',
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
