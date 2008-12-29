@@ -164,6 +164,15 @@ $messages['es'] = array(
 	'globalusage-ok' => 'Buscar',
 );
 
+/** Estonian (Eesti)
+ * @author Avjoska
+ */
+$messages['et'] = array(
+	'globalusage' => 'Globaalne failikasutus',
+	'globalusage-ok' => 'Otsi',
+	'globalusage-text' => 'Otsi globaalset failikasutust.',
+);
+
 /** French (Français)
  * @author Grondin
  * @author Meithal
