@@ -47,6 +47,13 @@ $messages['af'] = array(
 	'globalusage-ok' => 'Soek',
 );
 
+/** Amharic (አማርኛ)
+ * @author Codex Sinaiticus
+ */
+$messages['am'] = array(
+	'globalusage-ok' => 'ፍለጋ',
+);
+
 /** Arabic (العربية)
  * @author Alnokta
  * @author Meno25
