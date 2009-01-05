@@ -57,6 +57,11 @@ $aliases['lb'] = array(
 	'GlobalUsage' => array( 'Globale Gebrauch' ),
 );
 
+/** Maltese (Malti) */
+$aliases['mt'] = array(
+	'GlobalUsage' => array( 'UżuGlobali' ),
+);
+
 /** Nedersaksisch (Nedersaksisch) */
 $aliases['nds-nl'] = array(
 	'GlobalUsage' => array( 'Globaal_gebruuk' ),
