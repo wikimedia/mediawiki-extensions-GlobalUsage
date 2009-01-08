@@ -180,6 +180,16 @@ $messages['et'] = array(
 	'globalusage-text' => 'Otsi globaalset failikasutust.',
 );
 
+/** Basque (Euskara)
+ * @author Kobazulo
+ */
+$messages['eu'] = array(
+	'globalusage' => 'Fitxategiaren erabilera orokorra',
+	'globalusage-desc' => 'Fitxategiaren erabilera orokorra ikusteko [[Special:GlobalUsage|orrialde berezia]]',
+	'globalusage-ok' => 'Bilatu',
+	'globalusage-text' => 'Fitxategiaren erabilera orokorra bilatu.',
+);
+
 /** French (Français)
  * @author Grondin
  * @author Meithal
