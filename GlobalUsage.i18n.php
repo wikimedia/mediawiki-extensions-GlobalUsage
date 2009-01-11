@@ -651,6 +651,16 @@ $messages['vi'] = array(
 	'globalusage-text' => 'Tìm cách dùng tập tin toàn cục.',
 );
 
+/** Volapük (Volapük)
+ * @author Smeira
+ */
+$messages['vo'] = array(
+	'globalusage' => 'Ragivigeb Valöpik',
+	'globalusage-desc' => '[[Special:GlobalUsage|Pad patik]] ad logön ragivigebi valöpik',
+	'globalusage-ok' => 'Sukön',
+	'globalusage-text' => 'Sükön ragivigebi valöpik.',
+);
+
 /** Yiddish (ייִדיש)
  * @author פוילישער
  */
