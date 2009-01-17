@@ -488,6 +488,13 @@ $messages['oc'] = array(
 	'globalusage-text' => "Recercar l'usatge global del fichièr",
 );
 
+/** Oriya (ଓଡ଼ିଆ)
+ * @author Jose77
+ */
+$messages['or'] = array(
+	'globalusage-ok' => 'ସନ୍ଧାନ',
+);
+
 /** Ossetic (Иронау)
  * @author Amikeco
  */
@@ -638,6 +645,16 @@ $messages['tg-cyrl'] = array(
  */
 $messages['th'] = array(
 	'globalusage-ok' => 'ค้นหา',
+);
+
+/** Turkish (Türkçe)
+ * @author Joseph
+ */
+$messages['tr'] = array(
+	'globalusage' => 'Küresel dosya kullanımı',
+	'globalusage-desc' => 'Küresel dosya kullanımını görmek için [[Special:GlobalUsage|özel sayfa]]',
+	'globalusage-ok' => 'Ara',
+	'globalusage-text' => 'Küresel dosya kullanımını ara.',
 );
 
 /** Vietnamese (Tiếng Việt)
