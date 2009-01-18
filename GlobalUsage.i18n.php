@@ -398,6 +398,13 @@ $messages['lb'] = array(
 	'globalusage-text' => 'No der globaler Notzung vum Fichier sichen.',
 );
 
+/** Lingua Franca Nova (Lingua Franca Nova)
+ * @author Malafaya
+ */
+$messages['lfn'] = array(
+	'globalusage-ok' => 'Xerca',
+);
+
 /** Lithuanian (Lietuvių)
  * @author Tomasdd
  */

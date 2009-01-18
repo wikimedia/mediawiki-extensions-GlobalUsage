@@ -42,9 +42,19 @@ $aliases['fr'] = array(
 	'GlobalUsage' => array( 'Usage global', 'UsageGlobal' ),
 );
 
+/** Galician (Galego) */
+$aliases['gl'] = array(
+	'GlobalUsage' => array( 'Uso global' ),
+);
+
 /** Swiss German (Alemannisch) */
 $aliases['gsw'] = array(
 	'GlobalUsage' => array( 'Wältwyti Benutzig' ),
+);
+
+/** Japanese (日本語) */
+$aliases['ja'] = array(
+	'GlobalUsage' => array( 'グローバル・ファイル使用状況', 'グローバル使用状況' ),
 );
 
 /** Khmer (ភាសាខ្មែរ) */
@@ -80,5 +90,10 @@ $aliases['no'] = array(
 /** Occitan (Occitan) */
 $aliases['oc'] = array(
 	'GlobalUsage' => array( 'Usatge global', 'UsatgeGlobal' ),
+);
+
+/** Sanskrit (संस्कृत) */
+$aliases['sa'] = array(
+	'GlobalUsage' => array( 'वैश्विकउपयोग' ),
 );
 
