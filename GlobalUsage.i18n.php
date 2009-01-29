@@ -654,6 +654,16 @@ $messages['th'] = array(
 	'globalusage-ok' => 'ค้นหา',
 );
 
+/** Tagalog (Tagalog)
+ * @author AnakngAraw
+ */
+$messages['tl'] = array(
+	'globalusage' => 'Paggamit ng pandaigdigang talaksan',
+	'globalusage-desc' => '[[Special:GlobalUsage|Natatanging pahina]] upang makita ang paggamit ng pandaigdigang talaksan',
+	'globalusage-ok' => 'Maghanap',
+	'globalusage-text' => 'Maghanap ng paggamit ng pandaigdigang talaksan.',
+);
+
 /** Turkish (Türkçe)
  * @author Joseph
  */
