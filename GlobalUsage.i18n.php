@@ -225,6 +225,16 @@ $messages['grc'] = array(
 	'globalusage-ok' => 'Ζητεῖν',
 );
 
+/** Swiss German (Alemannisch)
+ * @author Als-Holder
+ */
+$messages['gsw'] = array(
+	'globalusage' => 'Wältwyti Dateinutzig',
+	'globalusage-desc' => '[[Special:GlobalUsage|Spezialsyte]] zu Aazeige, in welene Projäkt d Dateien vun eme gmeinsam gnutzte Repositoriums verwändet wäre',
+	'globalusage-ok' => 'Sueche',
+	'globalusage-text' => 'Wältwyt no Dateinutzige sueche',
+);
+
 /** Manx (Gaelg)
  * @author MacTire02
  */
