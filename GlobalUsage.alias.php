@@ -37,6 +37,11 @@ $aliases['de'] = array(
 	'GlobalUsage' => array( 'Globale Benutzung' ),
 );
 
+/** Lower Sorbian (Dolnoserbski) */
+$aliases['dsb'] = array(
+	'GlobalUsage' => array( 'Globalne wužywanje' ),
+);
+
 /** French (Français) */
 $aliases['fr'] = array(
 	'GlobalUsage' => array( 'Usage global', 'UsageGlobal' ),
@@ -50,6 +55,11 @@ $aliases['gl'] = array(
 /** Swiss German (Alemannisch) */
 $aliases['gsw'] = array(
 	'GlobalUsage' => array( 'Wältwyti Benutzig' ),
+);
+
+/** Upper Sorbian (Hornjoserbsce) */
+$aliases['hsb'] = array(
+	'GlobalUsage' => array( 'Globalne wužiwanje' ),
 );
 
 /** Japanese (日本語) */
