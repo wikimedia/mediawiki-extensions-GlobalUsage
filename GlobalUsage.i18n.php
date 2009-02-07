@@ -416,9 +416,11 @@ $messages['lfn'] = array(
 );
 
 /** Lithuanian (Lietuvių)
+ * @author Homo
  * @author Tomasdd
  */
 $messages['lt'] = array(
+	'globalusage' => 'Visuotinis failo naudojimas',
 	'globalusage-ok' => 'Ieškoti',
 );
 
