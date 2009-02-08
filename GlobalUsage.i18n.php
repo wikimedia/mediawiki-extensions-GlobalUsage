@@ -552,6 +552,16 @@ $messages['pt'] = array(
 	'globalusage-text' => 'Pesquisar utilização global de ficheiro.',
 );
 
+/** Brazilian Portuguese (Português do Brasil)
+ * @author Eduardo.mps
+ */
+$messages['pt-br'] = array(
+	'globalusage' => 'Utilização global de arquivos',
+	'globalusage-desc' => '[[Special:GlobalUsage|Página especial]] para consultar a utilização global de arquivos',
+	'globalusage-ok' => 'Busca',
+	'globalusage-text' => 'Pesquisar utilização global de arquivos.',
+);
+
 /** Tarifit (Tarifit)
  * @author Jose77
  */
