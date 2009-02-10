@@ -108,9 +108,13 @@ $messages['bs'] = array(
 
 /** Catalan (Català)
  * @author Jordi Roqué
+ * @author SMP
  */
 $messages['ca'] = array(
+	'globalusage' => 'Ús global de fitxar',
+	'globalusage-desc' => "[[Special:GlobalUsage|Pàgina especial]] per a veure l'ús global del fitxer",
 	'globalusage-ok' => 'Cerca',
+	'globalusage-text' => "Cerca l'ús global del fitxer.",
 );
 
 /** Chamorro (Chamoru)
