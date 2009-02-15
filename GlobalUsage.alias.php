@@ -62,6 +62,11 @@ $aliases['hsb'] = array(
 	'GlobalUsage' => array( 'Globalne wužiwanje' ),
 );
 
+/** Interlingua (Interlingua) */
+$aliases['ia'] = array(
+	'GlobalUsage' => array( 'UsoGlobal' ),
+);
+
 /** Japanese (日本語) */
 $aliases['ja'] = array(
 	'GlobalUsage' => array( 'グローバル・ファイル使用状況', 'グローバル使用状況' ),
@@ -105,5 +110,10 @@ $aliases['oc'] = array(
 /** Sanskrit (संस्कृत) */
 $aliases['sa'] = array(
 	'GlobalUsage' => array( 'वैश्विकउपयोग' ),
+);
+
+/** Tagalog (Tagalog) */
+$aliases['tl'] = array(
+	'GlobalUsage' => array( 'Pandaigdigang paggamit' ),
 );
 
