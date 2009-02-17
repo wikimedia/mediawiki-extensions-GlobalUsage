@@ -103,7 +103,10 @@ $messages['bn'] = array(
  * @author CERminator
  */
 $messages['bs'] = array(
+	'globalusage' => 'Globalna upotreba datoteke',
+	'globalusage-desc' => '[[Special:GlobalUsage|Posebna stranica]] za pregled globalne upotrebe datoteke',
 	'globalusage-ok' => 'Traži',
+	'globalusage-text' => 'Pretraga globalne upotrebe datoteke.',
 );
 
 /** Catalan (Català)
