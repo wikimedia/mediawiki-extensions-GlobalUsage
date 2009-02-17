@@ -64,7 +64,7 @@ $aliases['hsb'] = array(
 
 /** Interlingua (Interlingua) */
 $aliases['ia'] = array(
-	'GlobalUsage' => array( 'UsoGlobal' ),
+	'GlobalUsage' => array( 'Uso global' ),
 );
 
 /** Japanese (日本語) */
