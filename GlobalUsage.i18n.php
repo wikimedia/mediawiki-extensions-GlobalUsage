@@ -200,11 +200,12 @@ $messages['eu'] = array(
 /** French (Français)
  * @author Grondin
  * @author Meithal
+ * @author Verdy p
  */
 $messages['fr'] = array(
 	'globalusage' => 'Usage global du fichier',
 	'globalusage-desc' => '[[Special:GlobalUsage|Page spéciale]] pour voir l’usage global d’une image',
-	'globalusage-ok' => 'Recherche',
+	'globalusage-ok' => 'Rechercher',
 	'globalusage-text' => "Rechercher l'usage global du fichier",
 );
 
