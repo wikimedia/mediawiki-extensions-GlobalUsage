@@ -94,7 +94,7 @@ $aliases['nds-nl'] = array(
 
 /** Dutch (Nederlands) */
 $aliases['nl'] = array(
-	'GlobalUsage' => array( 'GobaalGebruik' ),
+	'GlobalUsage' => array( 'GlobaalGebruik' ),
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬) */
