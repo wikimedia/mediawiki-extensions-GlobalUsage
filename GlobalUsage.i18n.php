@@ -584,6 +584,13 @@ $messages['ro'] = array(
 	'globalusage-ok' => 'Caută',
 );
 
+/** Tarandíne (Tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'globalusage-ok' => 'Cirche',
+);
+
 /** Russian (Русский)
  * @author Александр Сигачёв
  */
