@@ -622,7 +622,10 @@ $messages['sr-ec'] = array(
  * @author Pyt
  */
 $messages['stq'] = array(
+	'globalusage' => 'Globoale Doatäinutsenge',
 	'globalusage-desc' => '[[Special:GlobalUsage|Spezioalsiede]] toun Anwiesen, in wäkke Projekte do Doatäie fon n gemeensoam nutsed Repositorium ferwoand wäide',
+	'globalusage-ok' => 'Säike',
+	'globalusage-text' => 'Globoale Säike ätter Doatäinutsengen.',
 );
 
 /** Sundanese (Basa Sunda)
