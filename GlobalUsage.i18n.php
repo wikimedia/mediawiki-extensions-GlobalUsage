@@ -257,6 +257,13 @@ $messages['hak'] = array(
 	'globalusage-ok' => 'Chhìm-cháu',
 );
 
+/** Hawaiian (Hawai`i)
+ * @author Kalani
+ */
+$messages['haw'] = array(
+	'globalusage-ok' => 'Huli',
+);
+
 /** Hebrew (עברית)
  * @author Rotemliss
  * @author YaronSh
