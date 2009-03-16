@@ -172,10 +172,14 @@ $messages['eo'] = array(
 );
 
 /** Spanish (Español)
+ * @author Crazymadlover
  * @author Jatrobat
  */
 $messages['es'] = array(
+	'globalusage' => 'Uso de archivo global',
+	'globalusage-desc' => '[[Special:GlobalUsage|Página especial]] para ver uso de archivo global',
 	'globalusage-ok' => 'Buscar',
+	'globalusage-text' => 'Buscar uso de archivo global',
 );
 
 /** Estonian (Eesti)
