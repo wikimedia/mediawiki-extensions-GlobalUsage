@@ -541,6 +541,7 @@ $messages['os'] = array(
 );
 
 /** Polish (Polski)
+ * @author Leinad
  * @author Maikking
  * @author Sp5uhe
  */
@@ -548,6 +549,7 @@ $messages['pl'] = array(
 	'globalusage' => 'Globalne użycie pliku',
 	'globalusage-desc' => '[[Special:GlobalUsage|Strona specjalna]] raportująca globalnie wykorzystanie pliku',
 	'globalusage-ok' => 'Szukaj',
+	'globalusage-text' => 'Globalne wyszukiwanie użycia pliku.',
 );
 
 /** Pashto (پښتو)
