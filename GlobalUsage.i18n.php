@@ -161,6 +161,13 @@ $messages['dsb'] = array(
 	'globalusage-text' => 'Za globalnym wužywanim datajow pytaś',
 );
 
+/** Greek (Ελληνικά)
+ * @author Crazymadlover
+ */
+$messages['el'] = array(
+	'globalusage-ok' => 'Αναζήτηση',
+);
+
 /** Esperanto (Esperanto)
  * @author Yekrats
  */
