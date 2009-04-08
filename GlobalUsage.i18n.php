@@ -711,7 +711,7 @@ $messages['tg-cyrl'] = array(
  * @author Octahedron80
  */
 $messages['th'] = array(
-	'globalusage-ok' => 'ค้นหา',
+	'globalusage-ok' => 'สืบค้น',
 );
 
 /** Tagalog (Tagalog)
