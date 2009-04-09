@@ -40,6 +40,16 @@ $messages['niu'] = array(
 	'globalusage-ok' => 'Kumi',
 );
 
+/** Lower Silesian (Schläsch)
+ * @author Jonny84
+ */
+$messages['sli'] = array(
+	'globalusage' => 'Globale Dateinutzung',
+	'globalusage-desc' => '[[Special:GlobalUsage|Spezialseite]] zur Anzeige, ei welchen Projekten de Dateien eines gemeinsam genutzten Repositoriums verwendet werde',
+	'globalusage-ok' => 'Suchen',
+	'globalusage-text' => 'Globale Suche nach Dateinutzungen.',
+);
+
 /** Afrikaans (Afrikaans)
  * @author Arnobarnard
  */
