@@ -264,6 +264,13 @@ $messages['gsw'] = array(
 	'globalusage-text' => 'Wältwyt no Dateinutzige sueche',
 );
 
+/** Gujarati (ગુજરાતી)
+ * @author Dineshjk
+ */
+$messages['gu'] = array(
+	'globalusage' => 'ફાઇલનો વ્યાપક ઉપયોગ',
+);
+
 /** Manx (Gaelg)
  * @author MacTire02
  */
