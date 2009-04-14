@@ -650,9 +650,13 @@ $messages['sk'] = array(
 
 /** Serbian Cyrillic ekavian (ћирилица)
  * @author Sasa Stefanovic
+ * @author Михајло Анђелковић
  */
 $messages['sr-ec'] = array(
+	'globalusage' => 'Глобално коришћење фајлова',
+	'globalusage-desc' => '[[Special:GlobalUsage|Специјална страна]] за преглед глобалног коришћења фајлова',
 	'globalusage-ok' => 'Претрага',
+	'globalusage-text' => 'Претрага глобалног коришћења фајлова.',
 );
 
 /** Seeltersk (Seeltersk)
