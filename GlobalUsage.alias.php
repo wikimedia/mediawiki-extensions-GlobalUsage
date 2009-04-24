@@ -47,6 +47,11 @@ $aliases['fr'] = array(
 	'GlobalUsage' => array( 'Usage global', 'UsageGlobal' ),
 );
 
+/** Franco-Provençal (Arpetan) */
+$aliases['frp'] = array(
+	'GlobalUsage' => array( 'Usâjo global', 'UsâjoGlobal' ),
+);
+
 /** Galician (Galego) */
 $aliases['gl'] = array(
 	'GlobalUsage' => array( 'Uso global' ),
