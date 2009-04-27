@@ -41,6 +41,7 @@ if (isset($_SERVER) && array_key_exists( 'REQUEST_METHOD', $_SERVER ) ) {
 	$dir = dirname(__FILE__) . '/';
 
 	$wgExtensionCredits['specialpage'][] = array(
+		'path' => __FILE__,
 		'name' => 'Global Usage',
 		'author' => 'Bryan Tong Minh',
 		'description' => 'Special page to view global file usage',
