@@ -92,6 +92,16 @@ $messages['as'] = array(
 	'globalusage-ok' => 'সন্ধান কৰক',
 );
 
+/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+ * @author Jim-by
+ */
+$messages['be-tarask'] = array(
+	'globalusage' => 'Глябальнае карыстаньне файлам',
+	'globalusage-desc' => '[[Special:GlobalUsage|Спэцыяльная старонка]] для прагляду глябальнага карыстаньня файлам',
+	'globalusage-ok' => 'Пошук',
+	'globalusage-text' => 'Пошук глябальнага карыстаньня файлам.',
+);
+
 /** Bulgarian (Български)
  * @author DCLXVI
  */
