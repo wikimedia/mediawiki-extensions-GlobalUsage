@@ -93,13 +93,14 @@ $messages['as'] = array(
 );
 
 /** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+ * @author EugeneZelenko
  * @author Jim-by
  */
 $messages['be-tarask'] = array(
-	'globalusage' => 'Глябальнае карыстаньне файлам',
-	'globalusage-desc' => '[[Special:GlobalUsage|Спэцыяльная старонка]] для прагляду глябальнага карыстаньня файлам',
+	'globalusage' => 'Глябальнае выкарыстаньне файла',
+	'globalusage-desc' => '[[Special:GlobalUsage|Спэцыяльная старонка]] для прагляду глябальнага выкарыстаньня файла',
 	'globalusage-ok' => 'Пошук',
-	'globalusage-text' => 'Пошук глябальнага карыстаньня файлам.',
+	'globalusage-text' => 'Пошук глябальнага выкарыстаньня файла.',
 );
 
 /** Bulgarian (Български)
