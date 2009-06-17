@@ -40,16 +40,6 @@ $messages['niu'] = array(
 	'globalusage-ok' => 'Kumi',
 );
 
-/** Lower Silesian (Schläsch)
- * @author Jonny84
- */
-$messages['sli'] = array(
-	'globalusage' => 'Globale Dateinutzung',
-	'globalusage-desc' => '[[Special:GlobalUsage|Spezialseite]] zur Anzeige, ei welchen Projekten de Dateien eines gemeinsam genutzten Repositoriums verwendet werde',
-	'globalusage-ok' => 'Suchen',
-	'globalusage-text' => 'Globale Suche nach Dateinutzungen.',
-);
-
 /** Afrikaans (Afrikaans)
  * @author Arnobarnard
  */
@@ -90,6 +80,16 @@ $messages['arz'] = array(
  */
 $messages['as'] = array(
 	'globalusage-ok' => 'সন্ধান কৰক',
+);
+
+/** Bavarian (Boarisch)
+ * @author Man77
+ */
+$messages['bar'] = array(
+	'globalusage' => 'Globale Dateinutzung',
+	'globalusage-desc' => "[[Special:GlobalUsage|Spezialseitn]], de d'globale Vawendung vu dea Datei ãnzoagt",
+	'globalusage-ok' => 'Suacha',
+	'globalusage-text' => 'Globale Suach nåch da Dateivawendung',
 );
 
 /** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
@@ -657,6 +657,16 @@ $messages['sk'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Špeciálna stránka]] na zobrazenie celkového využitia súborov',
 	'globalusage-ok' => 'Hľadať',
 	'globalusage-text' => 'Hľadať globálne využitie súborov.',
+);
+
+/** Lower Silesian (Schläsch)
+ * @author Jonny84
+ */
+$messages['sli'] = array(
+	'globalusage' => 'Globale Dateinutzung',
+	'globalusage-desc' => '[[Special:GlobalUsage|Spezialseite]] zur Anzeige, ei welchen Projekten de Dateien eines gemeinsam genutzten Repositoriums verwendet werde',
+	'globalusage-ok' => 'Suchen',
+	'globalusage-text' => 'Globale Suche nach Dateinutzungen.',
 );
 
 /** Serbian Cyrillic ekavian (ћирилица)

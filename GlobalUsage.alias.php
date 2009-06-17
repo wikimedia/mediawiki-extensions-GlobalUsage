@@ -62,6 +62,11 @@ $aliases['gsw'] = array(
 	'GlobalUsage' => array( 'Wältwyti Benutzig' ),
 );
 
+/** Gujarati (ગુજરાતી) */
+$aliases['gu'] = array(
+	'GlobalUsage' => array( 'વૈશ્વીક વપરાશ' ),
+);
+
 /** Upper Sorbian (Hornjoserbsce) */
 $aliases['hsb'] = array(
 	'GlobalUsage' => array( 'Globalne wužiwanje' ),
