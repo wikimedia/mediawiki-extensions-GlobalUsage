@@ -366,10 +366,14 @@ $messages['ia'] = array(
 );
 
 /** Indonesian (Bahasa Indonesia)
+ * @author Bennylin
  * @author Rex
  */
 $messages['id'] = array(
+	'globalusage' => 'Penggunaan berkas global',
+	'globalusage-desc' => '[[Special:GlobalUsage|Halaman istimewa]] untuk melihat penggunaan berkas secara global',
 	'globalusage-ok' => 'Cari',
+	'globalusage-text' => 'Cari penggunaan berkas secara global.',
 );
 
 /** Icelandic (Íslenska)
