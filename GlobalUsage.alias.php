@@ -77,6 +77,11 @@ $aliases['ia'] = array(
 	'GlobalUsage' => array( 'Uso global' ),
 );
 
+/** Indonesian (Bahasa Indonesia) */
+$aliases['id'] = array(
+	'GlobalUsage' => array( 'Penggunaan global', 'PenggunaanGlobal' ),
+);
+
 /** Japanese (日本語) */
 $aliases['ja'] = array(
 	'GlobalUsage' => array( 'グローバル・ファイル使用状況', 'グローバル使用状況' ),
