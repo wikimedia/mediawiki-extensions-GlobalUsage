@@ -65,6 +65,13 @@ $messages['ar'] = array(
 	'globalusage-text' => 'بحث استخدام الملف العام',
 );
 
+/** Aramaic (ܐܪܡܝܐ)
+ * @author Basharh
+ */
+$messages['arc'] = array(
+	'globalusage-ok' => 'ܒܨܝ',
+);
+
 /** Egyptian Spoken Arabic (مصرى)
  * @author Meno25
  */
