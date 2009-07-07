@@ -97,6 +97,11 @@ $aliases['lb'] = array(
 	'GlobalUsage' => array( 'Globale Gebrauch' ),
 );
 
+/** Malayalam (മലയാളം) */
+$aliases['ml'] = array(
+	'GlobalUsage' => array( 'ആഗോള‌ഉപയോഗം' ),
+);
+
 /** Maltese (Malti) */
 $aliases['mt'] = array(
 	'GlobalUsage' => array( 'UżuGlobali' ),
