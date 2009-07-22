@@ -132,6 +132,11 @@ $aliases['sa'] = array(
 	'GlobalUsage' => array( 'वैश्विकउपयोग' ),
 );
 
+/** Slovak (Slovenčina) */
+$aliases['sk'] = array(
+	'GlobalUsage' => array( 'GlobálneVyužitie' ),
+);
+
 /** Tagalog (Tagalog) */
 $aliases['tl'] = array(
 	'GlobalUsage' => array( 'Pandaigdigang paggamit' ),
