@@ -236,6 +236,13 @@ $messages['eu'] = array(
 	'globalusage-text' => 'Fitxategiaren erabilera orokorra bilatu.',
 );
 
+/** Finnish (Suomi)
+ * @author ZeiP
+ */
+$messages['fi'] = array(
+	'globalusage-ok' => 'Hae',
+);
+
 /** French (Français)
  * @author Grondin
  * @author Meithal
