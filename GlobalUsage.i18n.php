@@ -698,6 +698,16 @@ $messages['sr-ec'] = array(
 	'globalusage-text' => 'Претрага глобалног коришћења фајлова.',
 );
 
+/** latinica (latinica)
+ * @author Michaello
+ */
+$messages['sr-el'] = array(
+	'globalusage' => 'Globalno korišćenje fajlova',
+	'globalusage-desc' => '[[Special:GlobalUsage|Specijalna strana]] za pregled globalnog korišćenja fajlova',
+	'globalusage-ok' => 'Pretraga',
+	'globalusage-text' => 'Pretraga globalnog korišćenja fajlova.',
+);
+
 /** Seeltersk (Seeltersk)
  * @author Pyt
  */
