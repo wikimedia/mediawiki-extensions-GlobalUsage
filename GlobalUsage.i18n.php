@@ -513,6 +513,13 @@ $messages['ml'] = array(
 	'globalusage-text' => 'പ്രമാണത്തിന്റെ ആഗോള ഉപയോഗം തിരയുക',
 );
 
+/** Mongolian (Монгол)
+ * @author Chinneeb
+ */
+$messages['mn'] = array(
+	'globalusage-ok' => 'Хайх',
+);
+
 /** Marathi (मराठी)
  * @author Kaustubh
  * @author Mahitgar
