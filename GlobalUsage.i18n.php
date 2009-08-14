@@ -503,6 +503,16 @@ $messages['mhr'] = array(
 	'globalusage-ok' => 'Кычал',
 );
 
+/** Macedonian (Македонски)
+ * @author Bjankuloski06
+ */
+$messages['mk'] = array(
+	'globalusage' => 'Глобална употреба на податотеки',
+	'globalusage-desc' => '[[Special:GlobalUsage|Специјална страница]] за преглед на употребата на глобални податотеки',
+	'globalusage-ok' => 'Пребарај',
+	'globalusage-text' => 'Пребарување на глобална употреба на податотеки.',
+);
+
 /** Malayalam (മലയാളം)
  * @author Shijualex
  */
