@@ -622,6 +622,16 @@ $messages['pl'] = array(
 	'globalusage-text' => 'Globalne wyszukiwanie użycia pliku.',
 );
 
+/** Piedmontese (Piemontèis)
+ * @author Dragonòt
+ */
+$messages['pms'] = array(
+	'globalusage' => 'Dovragi global dël file',
+	'globalusage-desc' => '[[Special:GlobalUsage|Pàgina special]] për vëdde ël dovragi global dël file',
+	'globalusage-ok' => 'Serca',
+	'globalusage-text' => 'Serca ël dovragi global dël file.',
+);
+
 /** Pashto (پښتو)
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
