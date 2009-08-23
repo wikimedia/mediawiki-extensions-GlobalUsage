@@ -714,7 +714,7 @@ $messages['sli'] = array(
 	'globalusage-text' => 'Globale Suche nach Dateinutzungen.',
 );
 
-/** Serbian Cyrillic ekavian (ћирилица)
+/** Serbian Cyrillic ekavian (Српски (ћирилица))
  * @author Sasa Stefanovic
  * @author Михајло Анђелковић
  */
@@ -725,7 +725,7 @@ $messages['sr-ec'] = array(
 	'globalusage-text' => 'Претрага глобалног коришћења фајлова.',
 );
 
-/** latinica (latinica)
+/** Serbian Latin ekavian (Srpski (latinica))
  * @author Michaello
  */
 $messages['sr-el'] = array(
