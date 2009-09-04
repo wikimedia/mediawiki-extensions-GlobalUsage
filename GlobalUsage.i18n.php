@@ -42,8 +42,10 @@ $messages['niu'] = array(
 
 /** Afrikaans (Afrikaans)
  * @author Arnobarnard
+ * @author Naudefj
  */
 $messages['af'] = array(
+	'globalusage' => 'Globale lêergebruik',
 	'globalusage-ok' => 'Soek',
 );
 
