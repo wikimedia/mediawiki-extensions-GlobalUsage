@@ -193,8 +193,10 @@ $messages['dsb'] = array(
 
 /** Greek (Ελληνικά)
  * @author Crazymadlover
+ * @author Omnipaedista
  */
 $messages['el'] = array(
+	'globalusage' => 'Χρήση καθολικού αρχείου',
 	'globalusage-ok' => 'Αναζήτηση',
 );
 
