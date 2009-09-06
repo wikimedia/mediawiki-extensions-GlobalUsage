@@ -129,6 +129,16 @@ $messages['bn'] = array(
 	'globalusage-ok' => 'অনুসন্ধান',
 );
 
+/** Breton (Brezhoneg)
+ * @author Fulup
+ */
+$messages['br'] = array(
+	'globalusage' => 'Implij hollek ar restr',
+	'globalusage-desc' => '[[Special:GlobalUsage|Pajenn dibar]] da welet implij hollek ur skeudenn',
+	'globalusage-ok' => 'Klask',
+	'globalusage-text' => 'Klask implij hollek ar restr',
+);
+
 /** Bosnian (Bosanski)
  * @author CERminator
  */
