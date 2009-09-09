@@ -485,13 +485,14 @@ $messages['ku-latn'] = array(
 );
 
 /** Luxembourgish (Lëtzebuergesch)
+ * @author Les Meloures
  * @author Robby
  */
 $messages['lb'] = array(
-	'globalusage' => 'Global Notzung vum Fichier',
-	'globalusage-desc' => '[[Special:GlobalUsage|Spezialsäit]] fir déi global Benotzung vun engem Fichier ze gesinn',
+	'globalusage' => 'Globaalt Benotze vum Fichier',
+	'globalusage-desc' => "[[Special:GlobalUsage|Spezialsäit]] fir d'globaalt Benotze vun engem Fichier ze gesinn",
 	'globalusage-ok' => 'Sichen',
-	'globalusage-text' => 'No der globaler Notzung vum Fichier sichen.',
+	'globalusage-text' => 'Nom globale Benotze vum Fichier sichen.',
 );
 
 /** Lingua Franca Nova (Lingua Franca Nova)
