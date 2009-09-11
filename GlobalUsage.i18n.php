@@ -197,6 +197,7 @@ $messages['de'] = array(
  */
 $messages['dsb'] = array(
 	'globalusage' => 'Globalne wužywanje datajow',
+	'globalusage-for' => 'Globalne wužywanje za "$1"',
 	'globalusage-desc' => '[[Special:GlobalUsage|Specialny bok]], aby se globalne wužywanje datajow woglědało',
 	'globalusage-ok' => 'Pytaś',
 	'globalusage-text' => 'Za globalnym wužywanim datajow pytaś',
@@ -365,6 +366,7 @@ $messages['hil'] = array(
  */
 $messages['hsb'] = array(
 	'globalusage' => 'Globalne wužiwanje dataje',
+	'globalusage-for' => 'Globalne wužiwanje za "$1"',
 	'globalusage-desc' => '[[Special:GlobalUsage|Specialna strona]], zo by globalne wužiwanje wobraza widźał',
 	'globalusage-ok' => 'Podać',
 	'globalusage-text' => 'Globalne wužiwanje dataje pytać.',
@@ -576,6 +578,7 @@ $messages['nah'] = array(
  */
 $messages['nl'] = array(
 	'globalusage' => 'Globaal bestandsgebruik',
+	'globalusage-for' => 'Globaal gebruik voor "$1"',
 	'globalusage-desc' => '[[Special:GlobalUsage|Speciale pagina]] voor het bekijken van globaal bestandsgebruik',
 	'globalusage-ok' => 'Zoeken',
 	'globalusage-text' => 'Globaal bestandsgebruik bekijken',
