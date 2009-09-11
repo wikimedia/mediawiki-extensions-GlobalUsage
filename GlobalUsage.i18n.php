@@ -12,6 +12,7 @@ $messages = array();
  */
 $messages['en'] = array(
 	'globalusage'      => 'Global file usage',
+	'globalusage-for'  => 'Global usage for "$1"',
 	'globalusage-desc' => '[[Special:GlobalUsage|Special page]] to view global file usage',
 	'globalusage-ok'   => 'Search',
 	'globalusage-text' => 'Search global file usage.'
