@@ -136,9 +136,11 @@ $messages['bn'] = array(
  */
 $messages['br'] = array(
 	'globalusage' => 'Implij hollek ar restr',
+	'globalusage-for' => 'Implij hollek evit "$1"',
 	'globalusage-desc' => '[[Special:GlobalUsage|Pajenn dibar]] da welet implij hollek ur skeudenn',
 	'globalusage-ok' => 'Klask',
 	'globalusage-text' => 'Klask implij hollek ar restr',
+	'globalusage-on-wiki' => 'Implij eus [[:File:$1|$1]] war $2',
 );
 
 /** Bosnian (Bosanski)
@@ -202,6 +204,7 @@ $messages['dsb'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Specialny bok]], aby se globalne wužywanje datajow woglědało',
 	'globalusage-ok' => 'Pytaś',
 	'globalusage-text' => 'Za globalnym wužywanim datajow pytaś',
+	'globalusage-on-wiki' => 'Wužywanje dataje [[:File:$1|$1]] na $2',
 );
 
 /** Greek (Ελληνικά)
@@ -262,14 +265,18 @@ $messages['fi'] = array(
 
 /** French (Français)
  * @author Grondin
+ * @author IAlex
  * @author Meithal
+ * @author PieRRoMaN
  * @author Verdy p
  */
 $messages['fr'] = array(
 	'globalusage' => 'Usage global du fichier',
+	'globalusage-for' => 'Usage global pour « $1 »',
 	'globalusage-desc' => '[[Special:GlobalUsage|Page spéciale]] pour voir l’usage global d’une image',
 	'globalusage-ok' => 'Rechercher',
 	'globalusage-text' => "Rechercher l'usage global du fichier",
+	'globalusage-on-wiki' => 'Utilisation de [[:File:$1|$1]] sur $2',
 );
 
 /** Western Frisian (Frysk)
@@ -280,10 +287,12 @@ $messages['fy'] = array(
 );
 
 /** Galician (Galego)
+ * @author Toliño
  * @author Xosé
  */
 $messages['gl'] = array(
 	'globalusage' => 'Uso global do ficheiro',
+	'globalusage-for' => 'Uso global de "$1"',
 	'globalusage-desc' => '[[Special:GlobalUsage|Páxina especial]] para ver o uso global do ficheiro',
 	'globalusage-ok' => 'Procurar',
 	'globalusage-text' => 'Procurar o uso global do ficheiro.',
@@ -301,9 +310,11 @@ $messages['grc'] = array(
  */
 $messages['gsw'] = array(
 	'globalusage' => 'Wältwyti Dateinutzig',
+	'globalusage-for' => 'Wältwyti Verwändig vu „$1“',
 	'globalusage-desc' => '[[Special:GlobalUsage|Spezialsyte]] zu Aazeige, in welene Projäkt d Dateien vun eme gmeinsam gnutzte Repositoriums verwändet wäre',
 	'globalusage-ok' => 'Sueche',
 	'globalusage-text' => 'Wältwyt no Dateinutzige sueche',
+	'globalusage-on-wiki' => 'Gebruch vu [[:File:$1|$1]] uf $2',
 );
 
 /** Gujarati (ગુજરાતી)
@@ -371,6 +382,7 @@ $messages['hsb'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Specialna strona]], zo by globalne wužiwanje wobraza widźał',
 	'globalusage-ok' => 'Podać',
 	'globalusage-text' => 'Globalne wužiwanje dataje pytać.',
+	'globalusage-on-wiki' => 'Wužiwanje dataje [[:File:$1|$1]] na $2',
 );
 
 /** Hungarian (Magyar)
@@ -429,10 +441,12 @@ $messages['it'] = array(
  * @author Fryed-peach
  */
 $messages['ja'] = array(
-	'globalusage' => 'グローバル・ファイル使用状況',
-	'globalusage-desc' => 'グローバル・ファイル使用状況を見るための[[Special:GlobalUsage|特別ページ]]',
+	'globalusage' => 'グローバルなファイル使用状況',
+	'globalusage-for' => '「$1」のグローバルな利用状況',
+	'globalusage-desc' => 'グローバルなファイル使用状況を見るための[[Special:GlobalUsage|特別ページ]]',
 	'globalusage-ok' => '検索',
-	'globalusage-text' => 'グローバル・ファイル使用状況を検索する。',
+	'globalusage-text' => 'グローバルなファイル使用状況を検索する',
+	'globalusage-on-wiki' => '$2での[[:File:$1|$1]]の利用状況',
 );
 
 /** Javanese (Basa Jawa)
@@ -475,10 +489,12 @@ $messages['krj'] = array(
  * @author Purodha
  */
 $messages['ksh'] = array(
-	'globalusage' => 'Jemeinsam Dateie',
-	'globalusage-desc' => '[[Special:GlobalUsage|Söndersigg]] för de jemeinsam jebruchte Dateie ze zeije.',
-	'globalusage-ok' => 'Söhke!',
-	'globalusage-text' => 'Sök noh Jemeinsam Dateie.',
+	'globalusage' => 'Jemeinsam jebruch Dateie',
+	'globalusage-for' => 'De Dattei „$1“ weed jemeinsam jebruch',
+	'globalusage-desc' => '[[Special:GlobalUsage|Söndersigg]] för jemeinsam jebruch Dateie ze zeije.',
+	'globalusage-ok' => 'Söhk!',
+	'globalusage-text' => 'Söhk noh jemeinsam jebruch Datteie.',
+	'globalusage-on-wiki' => 'Dä Jebruch vun dä Dattei „[[:File:$1|$1]]“ op $2',
 );
 
 /** Kurdish (Latin) (Kurdî / كوردی (Latin))
@@ -494,9 +510,11 @@ $messages['ku-latn'] = array(
  */
 $messages['lb'] = array(
 	'globalusage' => 'Globaalt Benotze vum Fichier',
+	'globalusage-for' => 'Global Notzung fir "$1"',
 	'globalusage-desc' => "[[Special:GlobalUsage|Spezialsäit]] fir d'globaalt Benotze vun engem Fichier ze gesinn",
 	'globalusage-ok' => 'Sichen',
 	'globalusage-text' => 'Nom globale Benotze vum Fichier sichen.',
+	'globalusage-on-wiki' => 'Notzung vu(n) [[:File:$1|$1]] op $2',
 );
 
 /** Lingua Franca Nova (Lingua Franca Nova)
@@ -583,6 +601,7 @@ $messages['nl'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Speciale pagina]] voor het bekijken van globaal bestandsgebruik',
 	'globalusage-ok' => 'Zoeken',
 	'globalusage-text' => 'Globaal bestandsgebruik bekijken',
+	'globalusage-on-wiki' => 'Gebruik van [[:File:$1|$1]] in $2',
 );
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
@@ -647,9 +666,11 @@ $messages['pl'] = array(
  */
 $messages['pms'] = array(
 	'globalusage' => 'Dovragi global dël file',
+	'globalusage-for' => 'Usagi global për "$1"',
 	'globalusage-desc' => '[[Special:GlobalUsage|Pàgina special]] për vëdde ël dovragi global dël file',
 	'globalusage-ok' => 'Serca',
 	'globalusage-text' => 'Serca ël dovragi global dël file.',
+	'globalusage-on-wiki' => 'Usagi ëd [[:File:$1|$1]] dzora $2',
 );
 
 /** Pashto (پښتو)
@@ -719,6 +740,7 @@ $messages['ru'] = array(
  */
 $messages['sk'] = array(
 	'globalusage' => 'Globálne využitie súborov',
+	'globalusage-for' => 'Globálne použitie „$1“',
 	'globalusage-desc' => '[[Special:GlobalUsage|Špeciálna stránka]] na zobrazenie celkového využitia súborov',
 	'globalusage-ok' => 'Hľadať',
 	'globalusage-text' => 'Hľadať globálne využitie súborov.',
