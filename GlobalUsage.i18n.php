@@ -15,7 +15,8 @@ $messages['en'] = array(
 	'globalusage-for'  => 'Global usage for "$1"',
 	'globalusage-desc' => '[[Special:GlobalUsage|Special page]] to view global file usage',
 	'globalusage-ok'   => 'Search',
-	'globalusage-text' => 'Search global file usage.'
+	'globalusage-text' => 'Search global file usage',
+	'globalusage-on-wiki' => 'Usage of [[:File:$1|$1]] on $2',
 );
 
 /** Message documentation (Message documentation)
