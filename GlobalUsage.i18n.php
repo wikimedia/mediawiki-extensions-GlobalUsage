@@ -296,6 +296,7 @@ $messages['gl'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Páxina especial]] para ver o uso global do ficheiro',
 	'globalusage-ok' => 'Procurar',
 	'globalusage-text' => 'Procurar o uso global do ficheiro.',
+	'globalusage-on-wiki' => 'Uso de [[:File:$1|$1]] en $2',
 );
 
 /** Ancient Greek (Ἀρχαία ἑλληνικὴ)
@@ -744,6 +745,7 @@ $messages['sk'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Špeciálna stránka]] na zobrazenie celkového využitia súborov',
 	'globalusage-ok' => 'Hľadať',
 	'globalusage-text' => 'Hľadať globálne využitie súborov.',
+	'globalusage-on-wiki' => 'Použitie [[:File:$1|$1]] na $2',
 );
 
 /** Lower Silesian (Schläsch)
