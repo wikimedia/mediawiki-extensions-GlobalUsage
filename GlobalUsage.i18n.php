@@ -148,9 +148,11 @@ $messages['br'] = array(
  */
 $messages['bs'] = array(
 	'globalusage' => 'Globalna upotreba datoteke',
+	'globalusage-for' => 'Globalna upotreba za "$1"',
 	'globalusage-desc' => '[[Special:GlobalUsage|Posebna stranica]] za pregled globalne upotrebe datoteke',
 	'globalusage-ok' => 'Traži',
 	'globalusage-text' => 'Pretraga globalne upotrebe datoteke.',
+	'globalusage-on-wiki' => 'Upotreba [[:File:$1|$1]] na $2',
 );
 
 /** Catalan (Català)
@@ -416,9 +418,11 @@ $messages['ia'] = array(
  */
 $messages['id'] = array(
 	'globalusage' => 'Penggunaan berkas global',
+	'globalusage-for' => 'Penggunaan global untuk "$1"',
 	'globalusage-desc' => '[[Special:GlobalUsage|Halaman istimewa]] untuk melihat penggunaan berkas secara global',
 	'globalusage-ok' => 'Cari',
 	'globalusage-text' => 'Cari penggunaan berkas secara global.',
+	'globalusage-on-wiki' => 'Penggunaan [[:File:$1|$1]] pada $2',
 );
 
 /** Icelandic (Íslenska)
@@ -731,9 +735,11 @@ $messages['roa-tara'] = array(
  */
 $messages['ru'] = array(
 	'globalusage' => 'Глобальное использование файла',
+	'globalusage-for' => 'Глобальное использование «$1»',
 	'globalusage-desc' => '[[Special:GlobalUsage|Служебная страница]] для просмотра общего использования файла',
 	'globalusage-ok' => 'Найти',
 	'globalusage-text' => 'Поиск глобального использования файла.',
+	'globalusage-on-wiki' => 'Использование [[:File:$1|$1]] в $2',
 );
 
 /** Slovak (Slovenčina)
