@@ -109,9 +109,11 @@ $messages['bar'] = array(
  */
 $messages['be-tarask'] = array(
 	'globalusage' => 'Глябальнае выкарыстаньне файла',
+	'globalusage-for' => 'Глябальнае выкарыстаньне «$1»',
 	'globalusage-desc' => '[[Special:GlobalUsage|Спэцыяльная старонка]] для прагляду глябальнага выкарыстаньня файла',
 	'globalusage-ok' => 'Пошук',
 	'globalusage-text' => 'Пошук глябальнага выкарыстаньня файла.',
+	'globalusage-on-wiki' => 'Выкарыстаньне [[:File:$1|$1]] у $2',
 );
 
 /** Bulgarian (Български)
