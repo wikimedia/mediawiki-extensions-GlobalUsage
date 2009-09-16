@@ -637,9 +637,11 @@ $messages['no'] = array(
  */
 $messages['oc'] = array(
 	'globalusage' => 'Usatge global del fichièr',
+	'globalusage-for' => 'Usatge global per « $1 »',
 	'globalusage-desc' => '[[Special:GlobalUsage|Pagina especiala]] per veire l’usatge global d’un imatge',
 	'globalusage-ok' => 'Recèrca',
 	'globalusage-text' => "Recercar l'usatge global del fichièr",
+	'globalusage-on-wiki' => 'Utilizacion de [[:File:$1|$1]] sus $2',
 );
 
 /** Oriya (ଓଡ଼ିଆ)
