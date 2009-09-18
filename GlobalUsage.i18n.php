@@ -392,9 +392,15 @@ $messages['hsb'] = array(
 
 /** Hungarian (Magyar)
  * @author Dani
+ * @author Glanthor Reviol
  */
 $messages['hu'] = array(
+	'globalusage' => 'Globális fájl-használat megjelenítése',
+	'globalusage-for' => '„$1” globális használata',
+	'globalusage-desc' => '[[Special:GlobalUsage|Speciális lap]] globális fájlhasználat megjelenítésére',
 	'globalusage-ok' => 'Keresés',
+	'globalusage-text' => 'Fájlhasználat globális keresése',
+	'globalusage-on-wiki' => '[[:File:$1|$1]] használata itt: $2',
 );
 
 /** Armenian (Հայերեն)
