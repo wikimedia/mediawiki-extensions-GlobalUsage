@@ -891,6 +891,13 @@ $messages['tr'] = array(
 	'globalusage-text' => 'Küresel dosya kullanımını ara.',
 );
 
+/** Veps (Vepsan kel')
+ * @author Игорь Бродский
+ */
+$messages['vep'] = array(
+	'globalusage-ok' => 'Ectä',
+);
+
 /** Vietnamese (Tiếng Việt)
  * @author Minh Nguyen
  * @author Vinhtantran
