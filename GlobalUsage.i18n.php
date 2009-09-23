@@ -904,9 +904,11 @@ $messages['vep'] = array(
  */
 $messages['vi'] = array(
 	'globalusage' => 'Sử dụng tập tin toàn cục',
+	'globalusage-for' => 'Sử dụng tập tin toàn cục của “$1”',
 	'globalusage-desc' => '[[Special:GlobalUsage|Trang đặc biệt]] để xem tập tin này đang dùng ở đâu trên toàn hệ thống',
 	'globalusage-ok' => 'Tìm kiếm',
 	'globalusage-text' => 'Tìm cách dùng tập tin toàn cục.',
+	'globalusage-on-wiki' => 'Sử dụng [[:File:$1|$1]] tại $2',
 );
 
 /** Volapük (Volapük)
