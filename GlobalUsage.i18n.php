@@ -356,9 +356,11 @@ $messages['haw'] = array(
  */
 $messages['he'] = array(
 	'globalusage' => 'שימוש גלובלי בקבצים',
+	'globalusage-for' => 'הקישורים לקובץ "$1" בכל האתרים',
 	'globalusage-desc' => '[[Special:GlobalUsage|דף מיוחד]] להצגת השימוש הגלובלי בקבצים',
 	'globalusage-ok' => 'חיפוש',
 	'globalusage-text' => 'חיפוש בשימוש הגלובלי בקבצים.',
+	'globalusage-on-wiki' => '[[:File:$1|$1]] בשימוש באתר $2',
 );
 
 /** Hindi (हिन्दी)
