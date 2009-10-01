@@ -417,9 +417,11 @@ $messages['hy'] = array(
  */
 $messages['ia'] = array(
 	'globalusage' => 'Uso global de files',
+	'globalusage-for' => 'Uso global pro "$1"',
 	'globalusage-desc' => '[[Special:GlobalUsage|Pagina special]] pro vider le uso global de files',
 	'globalusage-ok' => 'Cercar',
 	'globalusage-text' => 'Cercar uso global de files.',
+	'globalusage-on-wiki' => 'Uso de [[:File:$1|$1]] in $2',
 );
 
 /** Indonesian (Bahasa Indonesia)
