@@ -675,9 +675,11 @@ $messages['os'] = array(
  */
 $messages['pl'] = array(
 	'globalusage' => 'Globalne użycie pliku',
+	'globalusage-for' => 'Globalne użycie „$1”',
 	'globalusage-desc' => '[[Special:GlobalUsage|Strona specjalna]] raportująca globalnie wykorzystanie pliku',
 	'globalusage-ok' => 'Szukaj',
 	'globalusage-text' => 'Globalne wyszukiwanie użycia pliku.',
+	'globalusage-on-wiki' => 'Wykorzystanie [[:File:$1|$1]] na $2',
 );
 
 /** Piedmontese (Piemontèis)
