@@ -191,12 +191,15 @@ $messages['da'] = array(
 
 /** German (Deutsch)
  * @author Raimond Spekking
+ * @author Umherirrender
  */
 $messages['de'] = array(
 	'globalusage' => 'Globale Dateinutzung',
+	'globalusage-for' => 'Globale Dateinutzung für „$1“',
 	'globalusage-desc' => '[[Special:GlobalUsage|Spezialseite]] zur Anzeige, in welchen Projekten die Dateien eines gemeinsam genutzten Repositoriums verwendet werden',
 	'globalusage-ok' => 'Suchen',
 	'globalusage-text' => 'Globale Suche nach Dateinutzungen.',
+	'globalusage-on-wiki' => 'Nutzung von [[:File:$1|$1]] auf $2',
 );
 
 /** Lower Sorbian (Dolnoserbski)
