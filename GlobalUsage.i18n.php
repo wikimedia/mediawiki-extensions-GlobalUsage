@@ -61,12 +61,15 @@ $messages['am'] = array(
 /** Arabic (العربية)
  * @author Alnokta
  * @author Meno25
+ * @author OsamaK
  */
 $messages['ar'] = array(
 	'globalusage' => 'استخدام الملف العام',
+	'globalusage-for' => 'استخدام "$1" العام',
 	'globalusage-desc' => '[[Special:GlobalUsage|صفحة خاصة]] لرؤية استخدام الملف العام',
 	'globalusage-ok' => 'بحث',
 	'globalusage-text' => 'بحث استخدام الملف العام',
+	'globalusage-on-wiki' => 'استخدام [[:File:$1|$1]] في $2',
 );
 
 /** Aramaic (ܐܪܡܝܐ)
@@ -681,8 +684,8 @@ $messages['pl'] = array(
 	'globalusage-for' => 'Globalne użycie „$1”',
 	'globalusage-desc' => '[[Special:GlobalUsage|Strona specjalna]] raportująca globalnie wykorzystanie pliku',
 	'globalusage-ok' => 'Szukaj',
-	'globalusage-text' => 'Globalne wyszukiwanie użycia pliku.',
-	'globalusage-on-wiki' => 'Wykorzystanie [[:File:$1|$1]] na $2',
+	'globalusage-text' => 'Globalne wyszukiwanie wykorzystania pliku',
+	'globalusage-on-wiki' => 'Wykorzystanie [[:File:$1|$1]] w {{GRAMMAR:MS.lp:$2}}',
 );
 
 /** Piedmontese (Piemontèis)
