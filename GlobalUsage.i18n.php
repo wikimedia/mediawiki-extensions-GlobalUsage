@@ -568,9 +568,11 @@ $messages['mhr'] = array(
  */
 $messages['mk'] = array(
 	'globalusage' => 'Глобална употреба на податотеки',
+	'globalusage-for' => 'Глобална употреба на „$1“',
 	'globalusage-desc' => '[[Special:GlobalUsage|Специјална страница]] за преглед на употребата на глобални податотеки',
 	'globalusage-ok' => 'Пребарај',
 	'globalusage-text' => 'Пребарување на глобална употреба на податотеки.',
+	'globalusage-on-wiki' => 'Користење на [[:File:$1|$1]] на $2',
 );
 
 /** Malayalam (മലയാളം)
