@@ -60,11 +60,11 @@ $wgSpecialPages['GlobalUsage'] = 'SpecialGlobalUsage';
  * - Local article move (update page title)
  * - Local file upload/deletion/move (toggle is_local flag)
  */
-$wgHooks['LinksUpdateComplete'][] = 'GlobalUsageHooks::onLinksUpdate';
-$wgHooks['ArticleDelete'][] = 'GlobalUsageHooks::onArticleDelete';
-$wgHooks['FileUndeleteComplete'][] = 'GlobalUsageHooks::onFileUndelete';
-$wgHooks['UploadComplete'][] = 'GlobalUsageHooks::onUpload';
-$wgHooks['TitleMoveComplete'][] = 'GlobalUsageHooks::onTitleMove';
+$wgHooks['LinksUpdateComplete'][] = 'GlobalUsageHooks::onLinksUpdateComplete';
+$wgHooks['ArticleDeleteComplete'][] = 'GlobalUsageHooks::onArticleDeleteComplete';
+$wgHooks['FileUndeleteComplete'][] = 'GlobalUsageHooks::onFileUndeleteComplete';
+$wgHooks['UploadComplete'][] = 'GlobalUsageHooks::onUploadComplete';
+$wgHooks['TitleMoveComplete'][] = 'GlobalUsageHooks::onTitleMoveComplete';
 
 
 // If set to false, the local database contains the globalimagelinks table

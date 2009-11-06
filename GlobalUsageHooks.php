@@ -6,11 +6,11 @@ class GlobalUsageHooks {
 	 * Hook to LinksUpdateComplete
 	 * Deletes old links from usage table and insert new ones.
 	 */
-	public static function onLinksUpdate( $linksUpdater ) {
+	public static function onLinksUpdateComplete( $linksUpdater ) {
 		$title = $linksUpdater->getTitle();
 		
 		// Create a list of locally existing images
-		$images = array_keys( $linksUpdater->getExistingImages() );
+		$images = array_keys( $linksUpdater->getImages() );
 		$localFiles = array_keys( RepoGroup::singleton()->getLocalRepo()->findFiles( $images ) );
 		
 		$gu = self::getGlobalUsage();
@@ -23,7 +23,7 @@ class GlobalUsageHooks {
 	 * Hook to TitleMoveComplete
 	 * Sets the page title in usage table to the new name.
 	 */
-	public static function onTitleMove( $ot, $nt, $user, $pageid, $redirid ) {
+	public static function onTitleMoveComplete( $ot, $nt, $user, $pageid, $redirid ) {
 		$gu = self::getGlobalUsage();
 		$gu->moveTo( $pageid, $nt );
 		return true;
@@ -33,10 +33,10 @@ class GlobalUsageHooks {
 	 * Deletes entries from usage table.
 	 * In case of an image, copies the local link table to the global.
 	 */
-	public static function onArticleDelete( $article, $user, $reason ) {
+	public static function onArticleDeleteComplete( $article, $user, $reason, $id ) {
 		$title = $article->getTitle();
 		$gu = self::getGlobalUsage();
-		$gu->deleteFrom( $title->getArticleId( GAID_FOR_UPDATE ) );
+		$gu->deleteFrom( $id );
 		if ( $title->getNamespace() == NS_FILE ) {
 			$gu->copyFromLocal( $title );
 		}
@@ -47,7 +47,7 @@ class GlobalUsageHooks {
 	 * Hook to FileUndeleteComplete
 	 * Deletes the file from the global link table.
 	 */
-	public static function onFileUndelete( $title, $versions, $user, $reason ) { 
+	public static function onFileUndeleteComplete( $title, $versions, $user, $reason ) { 
 		$gu = self::getGlobalUsage();
 		$gu->deleteTo( $title );
 		return true;
@@ -56,7 +56,7 @@ class GlobalUsageHooks {
 	 * Hook to UploadComplete
 	 * Deletes the file from the global link table.
 	 */
-	public static function onUpload( $upload ) {
+	public static function onUploadComplete( $upload ) {
 		$gu = self::getGlobalUsage();
 		$gu->deleteTo( $upload->getTitle() );
 		return true;
@@ -66,9 +66,9 @@ class GlobalUsageHooks {
 	 * Initializes a GlobalUsage object for the current wiki.
 	 */
 	private static function getGlobalUsage() {
-		global $wgLocalInterwiki, $wgGlobalUsageDatabase;
+		global $wgGlobalUsageDatabase;
 		if ( is_null( self::$gu ) ) {
-			self::$gu = new GlobalUsage( $wgLocalInterwiki, 
+			self::$gu = new GlobalUsage( wfWikiId(), 
 					wfGetDB( DB_MASTER, array(), $wgGlobalUsageDatabase ) 
 			);
 		}

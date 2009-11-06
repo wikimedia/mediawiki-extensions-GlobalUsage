@@ -1,5 +1,5 @@
 CREATE TABLE /*$wgDBprefix*/globalimagelinks (
-	-- Interwiki prefix
+	-- Wiki id
 	gil_wiki varchar(32) not null,
 	-- page_id on the local wiki
 	gil_page int unsigned not null,
