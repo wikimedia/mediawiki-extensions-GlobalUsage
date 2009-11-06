@@ -95,9 +95,13 @@ class SpecialGlobalUsage extends SpecialPage {
 	 */
 	private function formatItem( $item ) {
 		if ( !$item['namespace'] )
-			return htmlspecialchars( $item['title'] );
+			$page = $item['title'];
 		else
-			return htmlspecialchars( "{$item['namespace']}:{$item['title']}" );
+			$page = "{$item['namespace']}:{$item['title']}";
+		
+		$wiki = WikiMap::getWiki( $item['wiki'] );
+		
+		return WikiMap::makeForeignLink( $item['wiki'], $page );
 	}
 
 }
@@ -187,7 +191,8 @@ class GlobalUsageQuery {
 				$this->result[$row->gil_wiki] = array();
 			$this->result[$row->gil_wiki][] = array( 
 				'namespace' => $row->gil_page_namespace, 
-				'title' => $row->gil_page_title 
+				'title' => $row->gil_page_title,
+				'wiki' => $row->gil_wiki,
 			);	
 		}
 	}
