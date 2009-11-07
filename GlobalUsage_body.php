@@ -21,12 +21,12 @@ class GlobalUsage {
 	 * @param $title Title Title of the page
 	 * @param $images array Array of db keys of images used
 	 */
-	public function setUsage( $title, $images ) {
+	public function setUsage( $title, $images, $pageIdFlags = GAID_FOR_UPDATE ) {
 		$insert = array();
 		foreach ( $images as $name ) {
 			$insert[] = array(
 				'gil_wiki' => $this->interwiki,
-				'gil_page' => $title->getArticleID( GAID_FOR_UPDATE ),
+				'gil_page' => $title->getArticleID( $pageIdFlags ),
 				'gil_page_namespace' => $title->getNsText(),
 				'gil_page_title' => $title->getText(),
 				'gil_to' => $name

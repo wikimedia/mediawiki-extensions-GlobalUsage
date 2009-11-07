@@ -36,7 +36,10 @@ class RefreshGlobalImageLinks extends Maintenance {
 				"(page_id = $lastPageId AND il_to > {$quotedLastIlTo})" .
 						" OR page_id > $lastPageId",
 				__METHOD__,
-				array( 'ORDER BY' => 'page_id, il_to', 'LIMIT' => $limit ),
+				array( 
+					'ORDER BY' => $dbr->implicitOrderBy() ? 'page_id' : 'page_id, il_to', 
+					'LIMIT' => $limit 
+				),
 				array( 
 					# LEFT JOIN imagelinks since we need to delete usage
 					# from all images, even if they don't have images anymore
