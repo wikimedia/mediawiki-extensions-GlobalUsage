@@ -75,4 +75,6 @@ class GlobalUsageHooks {
 		
 		return self::$gu;
 	}
+	
+
 }
