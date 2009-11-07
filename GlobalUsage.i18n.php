@@ -206,6 +206,9 @@ $messages['de'] = array(
 	'globalusage-ok' => 'Suchen',
 	'globalusage-text' => 'Globale Suche nach Dateinutzungen',
 	'globalusage-on-wiki' => 'Nutzung von [[:File:$1|$1]] auf $2',
+	'globalusage-of-file' => 'Die nachfolgenden anderen Wikis nutzen diese Datei:',
+	'globalusage-more' => '[[{{#Special:GlobalUsage}}/$1|Weitere globale Dateinutzung]] für dieser Datei anschauen.',
+	'globalusage-filterlocal' => 'Zeige keine lokale Dateinutzung',
 );
 
 /** Lower Sorbian (Dolnoserbski)
@@ -218,6 +221,9 @@ $messages['dsb'] = array(
 	'globalusage-ok' => 'Pytaś',
 	'globalusage-text' => 'Za globalnym wužywanim datajow pytaś',
 	'globalusage-on-wiki' => 'Wužywanje dataje [[:File:$1|$1]] na $2',
+	'globalusage-of-file' => 'Slědujuce druge wikije wužywaju toś ten wobraz:',
+	'globalusage-more' => '[[{{#Special:GlobalUsage}}/$1|Dalšne globalne wužywanje]] toś teje dataje pokazaś',
+	'globalusage-filterlocal' => 'Lokalne wužywanje njepokazaś',
 );
 
 /** Greek (Ελληνικά)
@@ -290,6 +296,9 @@ $messages['fr'] = array(
 	'globalusage-ok' => 'Rechercher',
 	'globalusage-text' => "Rechercher l'usage global du fichier",
 	'globalusage-on-wiki' => 'Utilisation de [[:File:$1|$1]] sur $2',
+	'globalusage-of-file' => 'Les autres wikis suivants utilisent cette image :',
+	'globalusage-more' => "Voir [[{{#Special:GlobalUsage}}/$1|d'autres utilisations globales]] de ce fichier.",
+	'globalusage-filterlocal' => "Ne pas montrer l'utilisation locale",
 );
 
 /** Western Frisian (Frysk)
@@ -309,7 +318,10 @@ $messages['gl'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Páxina especial]] para ver o uso global do ficheiro',
 	'globalusage-ok' => 'Procurar',
 	'globalusage-text' => 'Procurar o uso global do ficheiro.',
-	'globalusage-on-wiki' => 'Uso de [[:File:$1|$1]] en $2',
+	'globalusage-on-wiki' => 'Uso de "[[:File:$1|$1]]" en $2',
+	'globalusage-of-file' => 'Os seguintes wikis empregan esta imaxe:',
+	'globalusage-more' => 'Ver [[{{#Special:GlobalUsage}}/$1|máis usos globais]] deste ficheiro.',
+	'globalusage-filterlocal' => 'Non mostrar o uso local',
 );
 
 /** Ancient Greek (Ἀρχαία ἑλληνικὴ)
@@ -399,6 +411,9 @@ $messages['hsb'] = array(
 	'globalusage-ok' => 'Podać',
 	'globalusage-text' => 'Globalne wužiwanje dataje pytać.',
 	'globalusage-on-wiki' => 'Wužiwanje dataje [[:File:$1|$1]] na $2',
+	'globalusage-of-file' => 'Slědowace druhe wikije wužiwaja tutón wobraz:',
+	'globalusage-more' => '[[{{#Special:GlobalUsage}}/$1|Dalše globalne wužiwanje]] tuteje dataje pokazać',
+	'globalusage-filterlocal' => 'Lokalne wužiwanje njepokazać',
 );
 
 /** Hungarian (Magyar)
@@ -431,10 +446,14 @@ $messages['ia'] = array(
 	'globalusage-ok' => 'Cercar',
 	'globalusage-text' => 'Cercar uso global de files.',
 	'globalusage-on-wiki' => 'Uso de [[:File:$1|$1]] in $2',
+	'globalusage-of-file' => 'Le altere wikis sequente usa iste imagine:',
+	'globalusage-more' => 'Vider [[{{#Special:GlobalUsage}}/$1|ulterior uso global]] de iste file.',
+	'globalusage-filterlocal' => 'Non monstrar uso local',
 );
 
 /** Indonesian (Bahasa Indonesia)
  * @author Bennylin
+ * @author IvanLanin
  * @author Rex
  */
 $messages['id'] = array(
@@ -444,6 +463,9 @@ $messages['id'] = array(
 	'globalusage-ok' => 'Cari',
 	'globalusage-text' => 'Cari penggunaan berkas secara global.',
 	'globalusage-on-wiki' => 'Penggunaan [[:File:$1|$1]] pada $2',
+	'globalusage-of-file' => 'Wiki lain berikut menggunakan berkas ini:',
+	'globalusage-more' => 'Lihat [[{{#Special:GlobalUsage}}/$1|penggunaan global lain]] dari berkas ini.',
+	'globalusage-filterlocal' => 'Jangan tunjukkan penggunaan lokal',
 );
 
 /** Icelandic (Íslenska)
@@ -473,6 +495,9 @@ $messages['ja'] = array(
 	'globalusage-ok' => '検索',
 	'globalusage-text' => 'グローバルなファイル使用状況を検索する',
 	'globalusage-on-wiki' => '$2での[[:File:$1|$1]]の利用状況',
+	'globalusage-of-file' => '以下に挙げる他のウィキがこの画像を使っています:',
+	'globalusage-more' => 'このファイルの[[{{#Special:GlobalUsage}}/$1|グローバル使用状況]]をさらに表示する。',
+	'globalusage-filterlocal' => 'ローカル使用状況を表示しない',
 );
 
 /** Javanese (Basa Jawa)
@@ -906,6 +931,14 @@ $messages['tr'] = array(
 	'globalusage-desc' => 'Küresel dosya kullanımını görmek için [[Special:GlobalUsage|özel sayfa]]',
 	'globalusage-ok' => 'Ara',
 	'globalusage-text' => 'Küresel dosya kullanımını ara.',
+);
+
+/** Vèneto (Vèneto)
+ * @author Candalua
+ */
+$messages['vec'] = array(
+	'globalusage-ok' => 'Serca',
+	'globalusage-text' => 'Serca utilizo globale file',
 );
 
 /** Veps (Vepsan kel')
