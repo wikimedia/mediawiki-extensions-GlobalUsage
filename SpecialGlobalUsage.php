@@ -17,36 +17,41 @@ class SpecialGlobalUsage extends SpecialPage {
 		global $wgOut, $wgRequest;
 		
 		$target = $par ? $par : $wgRequest->getVal( 'target' );
-		$title = Title::newFromText( $target, NS_FILE );
+		$this->target = Title::newFromText( $target, NS_FILE );
+		
+		$this->filterLocal = $wgRequest->getCheck( 'filterlocal' );
 		
 		$this->setHeaders();
 		
-		$this->showForm( $title );
+		$this->showForm();
 		
-		if ( is_null( $title ) )
+		if ( is_null( $this->target ) )
 		{
 			$wgOut->setPageTitle( wfMsg( 'globalusage' ) );
 			return;			
 		}
 		
-		$wgOut->setPageTitle( wfMsg( 'globalusage-for', $title->getPrefixedText() ) );
+		$wgOut->setPageTitle( wfMsg( 'globalusage-for', $this->target->getPrefixedText() ) );
 		
-		$this->showResult( $title );
+		$this->showResult();
 	}
 	
 	/**
 	 * Shows the search form
 	 */
-	private function showForm( $title ) {
+	private function showForm() {
 		global $wgScript, $wgOut;
 				
 		$html = Xml::openElement( 'form', array( 'action' => $wgScript ) ) . "\n";
 		$html .= Xml::hidden( 'title', $this->getTitle()->getPrefixedText() ) . "\n";
-		$formContent = "\t" . Xml::input( 'target', 40, is_null( $title ) ? '' : $title->getPrefixedText() ) 
+		$formContent = "\t" . Xml::input( 'target', 40, is_null( $this->target ) ? '' 
+					: $this->target->getPrefixedText() ) 
 			. "\n\t" . Xml::element( 'input', array( 
 					'type' => 'submit', 
 					'value' => wfMsg( 'globalusage-ok' )
-					) ); 
+					) )
+			. "\n\t<p>" . Xml::checkLabel( wfMsg( 'globalusage-filterlocal' ),
+					'filterlocal', 'mw-filterlocal', $this->filterLocal ) . '</p>'; 
 		$html .= Xml::fieldSet( wfMsg( 'globalusage-text' ), $formContent ) . "\n</form>";
 		
 		$wgOut->addHtml( $html );
@@ -55,14 +60,15 @@ class SpecialGlobalUsage extends SpecialPage {
 	/**
 	 * Creates as queryer and executes it based on $wgRequest
 	 */
-	private function showResult( $target ) {
+	private function showResult() {
 		global $wgRequest;
 		
-		$query = new GlobalUsageQuery( $target );
+		$query = new GlobalUsageQuery( $this->target );
 		
 		// Extract params from $wgRequest
 		$query->setContinue( $wgRequest->getInt( 'offset', 0 ) );
 		$query->setLimit( $wgRequest->getInt( 'limit', 50 ) );
+		$query->filterLocal( $this->filterLocal );
 		
 		// Perform query
 		$query->execute();
@@ -71,11 +77,12 @@ class SpecialGlobalUsage extends SpecialPage {
 		global $wgOut;
 		
 		$navbar = wfViewPrevNext( $query->getOffset(), $query->getLimit(), $this->getTitle(), 
-				'target=' . $target->getPrefixedText(), !$query->hasMore() );
-		$targetName = $target->getText();
+				'target=' . $this->target->getPrefixedText(), !$query->hasMore() );
+		$targetName = $this->target->getText();
 		
 		$wgOut->addHtml( $navbar );
 		
+		$wgOut->addHtml( '<div id="mw-globalusage-result">' );
 		foreach ( $query->getResult() as $wiki => $result ) {
 			$wgOut->addHtml( 
 					'<h2>' . wfMsgExt( 
@@ -83,9 +90,10 @@ class SpecialGlobalUsage extends SpecialPage {
 						$targetName, $wiki )  
 					. "</h2><ul>\n" );
 			foreach ( $result as $item )
-				$wgOut->addHtml( "\t<li>" . $this->formatItem( $item ) . "</li>\n" );
+				$wgOut->addHtml( "\t<li>" . self::formatItem( $item ) . "</li>\n" );
 			$wgOut->addHtml( "</ul>\n" );
 		}
+		$wgOut->addHtml( '</div>' );
 		
 		$wgOut->addHtml( $navbar );
 	}
@@ -93,7 +101,7 @@ class SpecialGlobalUsage extends SpecialPage {
 	 * Helper to format a specific item
 	 * TODO: Make links
 	 */
-	private function formatItem( $item ) {
+	private static function formatItem( $item ) {
 		if ( !$item['namespace'] )
 			$page = $item['title'];
 		else
@@ -103,7 +111,36 @@ class SpecialGlobalUsage extends SpecialPage {
 		
 		return WikiMap::makeForeignLink( $item['wiki'], $page );
 	}
+	
+	public static function onImagePageAfterImageLinks( $imagePage, &$html ) {
+		$title = $imagePage->getFile()->getTitle();
+		$targetName = $title->getText();
+		
+		$query = new GlobalUsageQuery( $title );
+		$query->filterLocal();
+		$query->execute();
+		
+		$guHtml = '';
+		foreach ( $query->getResult() as $wiki => $result ) {
+			$guHtml .= '<li>' . wfMsgExt( 
+					'globalusage-on-wiki', 'parseinline',
+					$targetName, $wiki ) . "\n<ul>";
+			foreach ( $result as $item )
+				$guHtml .= "\t<li>" . self::formatItem( $item ) . "</li>\n";
+			$guHtml .= "</ul></li>\n";
+		}
+		
+		if ( $guHtml ) {
+			$html .= "<h2>" . wfMsgHtml( 'globalusage' ) . "</h2>\n"
+				. wfMsgExt( 'globalusage-of-file', 'parse' )
+				. "<ul>\n" . $guHtml . "</ul>\n";
+			if ( $query->hasMore() )
+				$html .= wfMsgExt( 'globalusage-more', 'parse', $targetName );
+		}
 
+		
+		return true;
+	}
 }
 
 
@@ -117,6 +154,7 @@ class GlobalUsageQuery {
 	private $limit = 50;
 	private $offset = 0;
 	private $hasMore = false;
+	private $filterLocal = false;
 	private $result;
 	
 	
@@ -155,11 +193,22 @@ class GlobalUsageQuery {
 		return $this->limit;
 	}
 	
+	/**
+	 * Set whether to filter out the local usage
+	 */
+	public function filterLocal( $value = true ) {
+		$this->filterLocal = $value;
+	}
+	
 	
 	/**
 	 * Executes the query
 	 */
 	public function execute() {
+		$where = array( 'gil_to' => $this->target->getDBkey() );
+		if ( $this->filterLocal )
+			$where[] = 'gil_wiki != ' . $this->db->addQuotes( wfWikiId() );
+		
 		$res = $this->db->select( 'globalimagelinks',
 				array( 
 					'gil_wiki', 
@@ -167,9 +216,7 @@ class GlobalUsageQuery {
 					'gil_page_namespace', 
 					'gil_page_title' 
 				),
-				array(
-					'gil_to' => $this->target->getDBkey()
-				),
+				$where,
 				__METHOD__,
 				array( 
 					'ORDER BY' => 'gil_wiki, gil_page',
