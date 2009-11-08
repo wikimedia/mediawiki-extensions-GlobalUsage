@@ -26,10 +26,22 @@ $messages['en'] = array(
 /** Message documentation (Message documentation)
  * @author Jon Harald Søby
  * @author Purodha
+ * @author Umherirrender
  */
 $messages['qqq'] = array(
+	'globalusage-for' => 'Title of [[Special:GlobalUsage]]
+* $1 - name of the searched file, with namespace',
 	'globalusage-desc' => 'Short description of this extension, shown on [[Special:Version]]. Do not translate or change links.',
-	'globalusage-ok' => '{{Identical|Search}}',
+	'globalusage-ok' => '{{Identical|Search}}
+Button on [[Special:GlobalUsage]]',
+	'globalusage-text' => 'Label on [[Special:GlobalUsage]]',
+	'globalusage-no-results' => 'Used for empty result on [[Special:GlobalUsage]]
+* $1 - name of the file (with namespace)',
+	'globalusage-of-file' => 'Used on a image page.
+The number of following wikis is unknown. By a empty result, no message is shown.',
+	'globalusage-more' => 'Used on a image page, when more results available
+* $1 - name of the file (without namespace)',
+	'globalusage-filterlocal' => 'Filteroption for [[Special:GlobalUsage]]',
 );
 
 /** Karelian (Karjala)
@@ -182,6 +194,22 @@ $messages['ch'] = array(
 	'globalusage-ok' => 'Aligao',
 );
 
+/** Czech (Česky)
+ * @author Mormegil
+ */
+$messages['cs'] = array(
+	'globalusage' => 'Globální využití souboru',
+	'globalusage-for' => 'Globální využití „$1“',
+	'globalusage-desc' => '[[Special:GlobalUsage|Speciální stránka]] zobrazující globální využití souboru',
+	'globalusage-ok' => 'Hledat',
+	'globalusage-text' => 'Hledání globálního využití souboru',
+	'globalusage-no-results' => '[[:$1]] se na ostatních wiki nepoužívá.',
+	'globalusage-on-wiki' => 'Využití souboru [[:File:$1|$1]] na $2',
+	'globalusage-of-file' => 'Tento soubor využívají následující wiki:',
+	'globalusage-more' => 'Zobrazit [[{{#Special:GlobalUsage}}/$1|další globální využití]] tohoto souboru.',
+	'globalusage-filterlocal' => 'Nezobrazovat místní využití',
+);
+
 /** Church Slavic (Словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
  * @author ОйЛ
  */
@@ -206,6 +234,7 @@ $messages['de'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Spezialseite]] zur Anzeige, in welchen Projekten die Dateien eines gemeinsam genutzten Repositoriums verwendet werden',
 	'globalusage-ok' => 'Suchen',
 	'globalusage-text' => 'Globale Suche nach Dateinutzungen',
+	'globalusage-no-results' => '[[:$1]] wird nicht auf anderen Wikis genutzt.',
 	'globalusage-on-wiki' => 'Nutzung von [[:File:$1|$1]] auf $2',
 	'globalusage-of-file' => 'Die nachfolgenden anderen Wikis nutzen diese Datei:',
 	'globalusage-more' => '[[{{#Special:GlobalUsage}}/$1|Weitere globale Dateinutzung]] für dieser Datei anschauen.',
@@ -221,6 +250,7 @@ $messages['dsb'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Specialny bok]], aby se globalne wužywanje datajow woglědało',
 	'globalusage-ok' => 'Pytaś',
 	'globalusage-text' => 'Za globalnym wužywanim datajow pytaś',
+	'globalusage-no-results' => '[[:$1]] njewužywa se w drugich wikijach.',
 	'globalusage-on-wiki' => 'Wužywanje dataje [[:File:$1|$1]] na $2',
 	'globalusage-of-file' => 'Slědujuce druge wikije wužywaju toś ten wobraz:',
 	'globalusage-more' => '[[{{#Special:GlobalUsage}}/$1|Dalšne globalne wužywanje]] toś teje dataje pokazaś',
@@ -296,6 +326,7 @@ $messages['fr'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Page spéciale]] pour voir l’usage global d’une image',
 	'globalusage-ok' => 'Rechercher',
 	'globalusage-text' => "Rechercher l'usage global du fichier",
+	'globalusage-no-results' => "[[:$1]] n'est pas utilisé sur d'autres wikis.",
 	'globalusage-on-wiki' => 'Utilisation de [[:File:$1|$1]] sur $2',
 	'globalusage-of-file' => 'Les autres wikis suivants utilisent cette image :',
 	'globalusage-more' => "Voir [[{{#Special:GlobalUsage}}/$1|d'autres utilisations globales]] de ce fichier.",
@@ -342,6 +373,9 @@ $messages['gsw'] = array(
 	'globalusage-ok' => 'Sueche',
 	'globalusage-text' => 'Wältwyt no Dateinutzige sueche',
 	'globalusage-on-wiki' => 'Gebruch vu [[:File:$1|$1]] uf $2',
+	'globalusage-of-file' => 'Die andere Wikis bruche die Datei:',
+	'globalusage-more' => '[[{{#Special:GlobalUsage}}/$1|Wygteri wältwyti Verwändig]] vu däre Datei aaluege.',
+	'globalusage-filterlocal' => 'Kei lokali Dateiverwändig zeige',
 );
 
 /** Gujarati (ગુજરાતી)
@@ -411,6 +445,7 @@ $messages['hsb'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Specialna strona]], zo by globalne wužiwanje wobraza widźał',
 	'globalusage-ok' => 'Podać',
 	'globalusage-text' => 'Globalne wužiwanje dataje pytać.',
+	'globalusage-no-results' => '[[:$1]] njewužiwa so w druhich wikijach.',
 	'globalusage-on-wiki' => 'Wužiwanje dataje [[:File:$1|$1]] na $2',
 	'globalusage-of-file' => 'Slědowace druhe wikije wužiwaja tutón wobraz:',
 	'globalusage-more' => '[[{{#Special:GlobalUsage}}/$1|Dalše globalne wužiwanje]] tuteje dataje pokazać',
@@ -428,6 +463,9 @@ $messages['hu'] = array(
 	'globalusage-ok' => 'Keresés',
 	'globalusage-text' => 'Fájlhasználat globális keresése',
 	'globalusage-on-wiki' => '[[:File:$1|$1]] használata itt: $2',
+	'globalusage-of-file' => 'A következő wikik használják ezt a fájlt:',
+	'globalusage-more' => 'A fájl [[{{#Special:GlobalUsage}}/$1|globális használatának]]  megtekintése',
+	'globalusage-filterlocal' => 'Ne mutassa a helyi használatot',
 );
 
 /** Armenian (Հայերեն)
@@ -523,6 +561,22 @@ $messages['km'] = array(
 	'globalusage-text' => 'ស្វែងរកបម្រើបម្រាស់ឯកសារជាសាកល។',
 );
 
+/** Korean (한국어)
+ * @author Kwj2772
+ */
+$messages['ko'] = array(
+	'globalusage' => '특정 파일을 사용하고 있는 모든 위키의 문서 목록',
+	'globalusage-for' => '"$1" 파일을 사용하고 있는 모든 위키의 문서 목록',
+	'globalusage-desc' => '특정 파일을 사용하고 있는 모든 위키의 문서의 목록을 보여주는 [[Special:GlobalUsage|특수 문서]]를 추가',
+	'globalusage-ok' => '찾기',
+	'globalusage-text' => '특정 파일이 사용되고 있는 모든 위키의 문서 찾기',
+	'globalusage-no-results' => '[[:$1]]은 다른 위키에서 사용되지 않고 있습니다.',
+	'globalusage-on-wiki' => '$2에서 [[:File:$1|$1]]을(를) 사용하고 있는 문서 목록',
+	'globalusage-of-file' => '다음 위키에서 이 파일을 사용하고 있습니다:',
+	'globalusage-more' => '이 파일을 사용하고 있는 [[{{#Special:GlobalUsage}}/$1|다른 위키의 더 많은 문서]]를 보기',
+	'globalusage-filterlocal' => '이 위키에서 이 파일을 사용하고 있는 문서를 보이지 않기',
+);
+
 /** Krio (Krio)
  * @author Jose77
  */
@@ -567,6 +621,9 @@ $messages['lb'] = array(
 	'globalusage-ok' => 'Sichen',
 	'globalusage-text' => 'Nom globale Benotze vum Fichier sichen.',
 	'globalusage-on-wiki' => 'Notzung vu(n) [[:File:$1|$1]] op $2',
+	'globalusage-of-file' => 'Dës aner Wikien benotzen dëse Fichier:',
+	'globalusage-more' => '[[{{#Special:GlobalUsage}}/$1|Méi global Notzunge]] vun dësem Fichier weisen.',
+	'globalusage-filterlocal' => 'Déi lokal Notzung net weisen',
 );
 
 /** Lingua Franca Nova (Lingua Franca Nova)
@@ -605,13 +662,18 @@ $messages['mk'] = array(
 );
 
 /** Malayalam (മലയാളം)
+ * @author Praveenp
  * @author Shijualex
  */
 $messages['ml'] = array(
 	'globalusage' => 'പ്രമാണത്തിന്റെ ആഗോള ഉപയോഗം',
+	'globalusage-for' => '"$1" ആഗോള ഉപയോഗം',
 	'globalusage-desc' => 'പ്രമാണത്തിന്റെ ആഗോള ഉപയോഗം കാണിക്കുവാനുള്ള [[Special:GlobalUsage|പ്രത്യേക താള്‍]]',
 	'globalusage-ok' => 'തിരയൂ',
 	'globalusage-text' => 'പ്രമാണത്തിന്റെ ആഗോള ഉപയോഗം തിരയുക',
+	'globalusage-on-wiki' => '$2 സംരംഭത്തിൽ [[:File:$1|$1]]-ന്റെ ഉപയോഗം',
+	'globalusage-of-file' => 'താഴെ കൊടുക്കുന്ന വിക്കികളും ഈ പ്രമാണം ഉപയോഗിക്കുന്നു:',
+	'globalusage-filterlocal' => 'പ്രാദേശിക ഉപയോഗം പ്രദർശിപ്പിക്കരുത്',
 );
 
 /** Mongolian (Монгол)
@@ -655,7 +717,11 @@ $messages['nl'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Speciale pagina]] voor het bekijken van globaal bestandsgebruik',
 	'globalusage-ok' => 'Zoeken',
 	'globalusage-text' => 'Globaal bestandsgebruik bekijken',
+	'globalusage-no-results' => "[[:$1]] wordt niet gebruikt in andere wiki's.",
 	'globalusage-on-wiki' => 'Gebruik van [[:File:$1|$1]] in $2',
+	'globalusage-of-file' => "De volgende andere wiki's gebruiken dit bestand:",
+	'globalusage-more' => '[[{{#Special:GlobalUsage}}/$1|Meer globaal gebruik]] van dit bestand bekijken.',
+	'globalusage-filterlocal' => 'Lokaal gebruik niet weergeven',
 );
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
@@ -711,12 +777,16 @@ $messages['os'] = array(
  * @author Sp5uhe
  */
 $messages['pl'] = array(
-	'globalusage' => 'Globalne użycie pliku',
-	'globalusage-for' => 'Globalne użycie „$1”',
-	'globalusage-desc' => '[[Special:GlobalUsage|Strona specjalna]] raportująca globalnie wykorzystanie pliku',
+	'globalusage' => 'Globalne wykorzystanie pliku',
+	'globalusage-for' => 'Globalne wykorzystanie „$1”',
+	'globalusage-desc' => '[[Special:GlobalUsage|Strona specjalna]] pokazująca globalne wykorzystanie pliku',
 	'globalusage-ok' => 'Szukaj',
 	'globalusage-text' => 'Globalne wyszukiwanie wykorzystania pliku',
-	'globalusage-on-wiki' => 'Wykorzystanie [[:File:$1|$1]] w {{GRAMMAR:MS.lp:$2}}',
+	'globalusage-no-results' => '[[:$1]] nie jest wykorzystywany w inny projektach wiki.',
+	'globalusage-on-wiki' => 'Wykorzystanie [[:File:$1|$1]] w $2',
+	'globalusage-of-file' => 'Ten plik jest wykorzystywany także w innych projektach wiki:',
+	'globalusage-more' => 'Pokaż [[{{#Special:GlobalUsage}}/$1|pełną listę globalnego wykorzystania]] tego pliku.',
+	'globalusage-filterlocal' => 'Nie pokazuj lokalnego wykorzystania',
 );
 
 /** Piedmontese (Piemontèis)
@@ -771,9 +841,19 @@ $messages['rif'] = array(
 
 /** Romanian (Română)
  * @author KlaudiuMihaila
+ * @author Minisarm
  */
 $messages['ro'] = array(
+	'globalusage' => 'Utilizarea globală a fişierului',
+	'globalusage-for' => 'Utilizarea globală a fişierului „$1”',
+	'globalusage-desc' => '[[Special:GlobalUsage|Pagină specială]] pentru vizualizarea utilizării globale a fişierului',
 	'globalusage-ok' => 'Caută',
+	'globalusage-text' => 'Caută utilizările globale ale fişierului',
+	'globalusage-no-results' => 'Fişierul „[[:$1]]” nu este folosit la alte proiecte de tip wiki.',
+	'globalusage-on-wiki' => 'Utilizarea fişierului „[[:File:$1|$1]]” la $2',
+	'globalusage-of-file' => 'Următoarele alte proiecte de tip wiki folosesc acest fişier:',
+	'globalusage-more' => 'Vizualizaţi [[{{#Special:GlobalUsage}}/$1|mai multe utilizări globale]] ale acestui fişier.',
+	'globalusage-filterlocal' => 'Nu afişa utilizările locale.',
 );
 
 /** Tarandíne (Tarandíne)
@@ -932,6 +1012,22 @@ $messages['tr'] = array(
 	'globalusage-desc' => 'Küresel dosya kullanımını görmek için [[Special:GlobalUsage|özel sayfa]]',
 	'globalusage-ok' => 'Ara',
 	'globalusage-text' => 'Küresel dosya kullanımını ara.',
+);
+
+/** Ukrainian (Українська)
+ * @author NickK
+ */
+$messages['uk'] = array(
+	'globalusage' => 'Глобальне використання файлу',
+	'globalusage-for' => 'Глобальне використання «$1»',
+	'globalusage-desc' => '[[Special:GlobalUsage|Спеціальна сторінка]] для перегляду глобального використання файлу',
+	'globalusage-ok' => 'Пошук',
+	'globalusage-text' => 'Пошук глобального використання файлу',
+	'globalusage-no-results' => '[[:$1]] не використовується в інших вікі.',
+	'globalusage-on-wiki' => 'Використання [[:File:$1|$1]] в $2',
+	'globalusage-of-file' => 'Цей файл використовують такі інші вікі:',
+	'globalusage-more' => 'Переглянути [[{{#Special:GlobalUsage}}/$1|повний список глобального використання]] цього файлу.',
+	'globalusage-filterlocal' => 'Не показувати локальне використання',
 );
 
 /** Vèneto (Vèneto)
