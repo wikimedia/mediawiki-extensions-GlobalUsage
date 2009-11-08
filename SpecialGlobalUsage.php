@@ -103,7 +103,7 @@ class SpecialGlobalUsage extends SpecialPage {
 			$wgOut->addHtml( 
 					'<h2>' . wfMsgExt( 
 						'globalusage-on-wiki', 'parseinline',
-						$targetName, $wiki )  
+						$targetName, WikiMap::getWikiName( $wiki ) )  
 					. "</h2><ul>\n" );
 			foreach ( $result as $item )
 				$wgOut->addHtml( "\t<li>" . self::formatItem( $item ) . "</li>\n" );
@@ -123,8 +123,6 @@ class SpecialGlobalUsage extends SpecialPage {
 		else
 			$page = "{$item['namespace']}:{$item['title']}";
 		
-		$wiki = WikiMap::getWiki( $item['wiki'] );
-		
 		return WikiMap::makeForeignLink( $item['wiki'], 
 				str_replace( '_', ' ', $page ) );
 	}
@@ -141,7 +139,7 @@ class SpecialGlobalUsage extends SpecialPage {
 		foreach ( $query->getResult() as $wiki => $result ) {
 			$guHtml .= '<li>' . wfMsgExt( 
 					'globalusage-on-wiki', 'parseinline',
-					$targetName, $wiki ) . "\n<ul>";
+					$targetName, WikiMap::getWikiName( $wiki ) ) . "\n<ul>";
 			foreach ( $result as $item )
 				$guHtml .= "\t<li>" . self::formatItem( $item ) . "</li>\n";
 			$guHtml .= "</ul></li>\n";
