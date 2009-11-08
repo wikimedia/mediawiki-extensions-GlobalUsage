@@ -130,11 +130,11 @@ class SpecialGlobalUsage extends SpecialPage {
 				$guHtml .= "\t<li>" . self::formatItem( $item ) . "</li>\n";
 			$guHtml .= "</ul></li>\n";
 		}
-		
+
 		if ( $guHtml ) {
-			$html .= "<h2>" . wfMsgHtml( 'globalusage' ) . "</h2>\n"
-				. wfMsgExt( 'globalusage-of-file', 'parse' )
-				. "<ul>\n" . $guHtml . "</ul>\n";
+			$html .= Html::rawElement( 'h2', array( 'class' => 'mw-globalusage-list' ), wfMsgHtml( 'globalusage' ) ) . "\n" .
+				wfMsgExt( 'globalusage-of-file', 'parse' ) .
+				Html::rawElement( 'ul', array(), $guHtml ) . "\n";
 			if ( $query->hasMore() )
 				$html .= wfMsgExt( 'globalusage-more', 'parse', $targetName );
 		}
