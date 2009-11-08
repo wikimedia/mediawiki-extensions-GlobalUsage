@@ -19,7 +19,7 @@ class RefreshGlobalImageLinks extends Maintenance {
 		$lastPageId = intval( $this->getOption( 'start-page', 0 ) );
 		$lastIlTo = $this->getOption( 'start-image' );
 		$limit = 500;
-		$maxlag = intval( $this->getOption( 'maxlag', 0 ) );
+		$maxlag = intval( $this->getOption( 'maxlag', 5 ) );
 		
 		do
 		{
