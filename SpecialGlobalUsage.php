@@ -109,7 +109,8 @@ class SpecialGlobalUsage extends SpecialPage {
 		
 		$wiki = WikiMap::getWiki( $item['wiki'] );
 		
-		return WikiMap::makeForeignLink( $item['wiki'], $page );
+		return WikiMap::makeForeignLink( $item['wiki'], 
+				str_replace( '_', ' ', $page ) );
 	}
 	
 	public static function onImagePageAfterImageLinks( $imagePage, &$html ) {

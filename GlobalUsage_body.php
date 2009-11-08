@@ -28,7 +28,7 @@ class GlobalUsage {
 				'gil_wiki' => $this->interwiki,
 				'gil_page' => $title->getArticleID( $pageIdFlags ),
 				'gil_page_namespace' => $title->getNsText(),
-				'gil_page_title' => $title->getText(),
+				'gil_page_title' => $title->getDBkey(),
 				'gil_to' => $name
 			);
 		}
