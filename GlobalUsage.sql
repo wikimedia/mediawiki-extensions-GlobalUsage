@@ -6,9 +6,9 @@ CREATE TABLE /*$wgDBprefix*/globalimagelinks (
 	-- Namespace, since the foreign namespaces may not match the local ones
 	gil_page_namespace varchar(255) not null,
 	-- Page title
-	gil_page_title varchar(255) not null,
+	gil_page_title varchar(255) binary not null,
 	-- Image name
-	gil_to varchar(255) not null,
+	gil_to varchar(255) binary not null,
 
 	
 	-- Note: You might want to shorten the gil_wiki part of the indices.
