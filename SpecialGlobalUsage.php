@@ -76,7 +76,7 @@ class SpecialGlobalUsage extends SpecialPage {
 		$query = new GlobalUsageQuery( $this->target );
 		
 		// Extract params from $wgRequest
-		$query->setContinue( $wgRequest->getInt( 'offset', 0 ) );
+		$query->setOffset( $wgRequest->getText( 'offset' ) );
 		$query->setLimit( $wgRequest->getInt( 'limit', 50 ) );
 		$query->filterLocal( $this->filterLocal );
 		
@@ -92,14 +92,14 @@ class SpecialGlobalUsage extends SpecialPage {
 			return;
 		}	
 			
-		$navbar = wfViewPrevNext( $query->getOffset(), $query->getLimit(), $this->getTitle(), 
-				'target=' . $this->target->getPrefixedText(), !$query->hasMore() );
+		$offset = $query->getOffsetString();
+		$navbar = $this->getNavBar( $query );
 		$targetName = $this->target->getText();
 		
 		$wgOut->addHtml( $navbar );
 		
 		$wgOut->addHtml( '<div id="mw-globalusage-result">' );
-		foreach ( $query->getResult() as $wiki => $result ) {
+		foreach ( reset( $query->getResult() ) as $wiki => $result ) {
 			$wgOut->addHtml( 
 					'<h2>' . wfMsgExt( 
 						'globalusage-on-wiki', 'parseinline',
@@ -123,7 +123,7 @@ class SpecialGlobalUsage extends SpecialPage {
 		else
 			$page = "{$item['namespace']}:{$item['title']}";
 		
-		return WikiMap::makeForeignLink( $item['wiki'], 
+		return WikiMap::makeForeignLink( $item['wiki'], $page,
 				str_replace( '_', ' ', $page ) );
 	}
 	
@@ -161,127 +161,56 @@ class SpecialGlobalUsage extends SpecialPage {
 		$toc[] = '<li><a href="#globalusage">' . wfMsgHtml( 'globalusage' ) . '</a></li>';
 		return true;
 	}
-}
-
-
-
-/**
- * A helper class to query the globalimagelinks table
- * 
- * Should maybe simply resort to offset/limit query rather 
- */
-class GlobalUsageQuery {
-	private $limit = 50;
-	private $offset = 0;
-	private $hasMore = false;
-	private $filterLocal = false;
-	private $result;
 	
-	
-	public function __construct( $target ) {
-		global $wgGlobalUsageDatabase;
-		$this->db = wfGetDB( DB_SLAVE, array(), $wgGlobalUsageDatabase );
-		$this->target = $target;
-
-	}
-	
-	/**
-	 * Set the offset parameter
-	 * 
-	 * @param $offset int offset
-	 */
-	public function setContinue( $offset ) {
-		$this->offset = $offset;
-	}
-	/**
-	 * Return the offset set by the user
-	 * 
-	 * @return int offset
-	 */
-	public function getOffset() {
-		return $this->offset;
-	}
-	/**
-	 * Set the maximum amount of items to return. Capped at 500.
-	 * 
-	 * @param $limit int The limit
-	 */
-	public function setLimit( $limit ) {
-		$this->limit = min( $limit, 500 );
-	}
-	public function getLimit() {
-		return $this->limit;
-	}
-	
-	/**
-	 * Set whether to filter out the local usage
-	 */
-	public function filterLocal( $value = true ) {
-		$this->filterLocal = $value;
-	}
-	
-	
-	/**
-	 * Executes the query
-	 */
-	public function execute() {
-		$where = array( 'gil_to' => $this->target->getDBkey() );
-		if ( $this->filterLocal )
-			$where[] = 'gil_wiki != ' . $this->db->addQuotes( wfWikiId() );
+	protected function getNavBar( $query ) {
+		global $wgLang;
 		
-		$res = $this->db->select( 'globalimagelinks',
-				array( 
-					'gil_wiki', 
-					'gil_page', 
-					'gil_page_namespace', 
-					'gil_page_title' 
-				),
-				$where,
-				__METHOD__,
-				array( 
-					'ORDER BY' => 'gil_wiki, gil_page',
-					'LIMIT' => $this->limit + 1,
-					'OFFSET' => $this->offset,
-				)
-		);
+		$target = $this->target->getPrefixedText();
+		$limit = $query->getLimit();
+		$fmtLimit = $wgLang->formatNum( $limit );
+		$offset = $query->getOffsetString();
+		if ( $offset == '||' )
+			$offset = '';
 		
-		$count = 0;
-		$this->hasMore = false;
-		$this->result = array();
-		foreach ( $res as $row ) {
-			$count++;
-			if ( $count > $this->limit ) {
-				$this->hasMore = true;
-				break;
-			}
-			if ( !isset( $this->result[$row->gil_wiki] ) )
-				$this->result[$row->gil_wiki] = array();
-			$this->result[$row->gil_wiki][] = array( 
-				'namespace' => $row->gil_page_namespace, 
-				'title' => $row->gil_page_title,
-				'wiki' => $row->gil_wiki,
-			);	
+		# Get prev/next link display text
+		$prev =  wfMsgExt( 'prevn', array('parsemag','escape'), $fmtLimit );
+		$next =  wfMsgExt( 'nextn', array('parsemag','escape'), $fmtLimit );
+		# Get prev/next link title text
+		$pTitle = wfMsgExt( 'prevn-title', array('parsemag','escape'), $fmtLimit );
+		$nTitle = wfMsgExt( 'nextn-title', array('parsemag','escape'), $fmtLimit );
+		
+		# Fetch the title object
+		$title = $this->getTitle();
+		
+		# Make 'previous' link
+		if ( $offset ) {
+			$q = array( 'limit' => $limit, 'offset' => $offset, 'target' => $target );
+			$plink = '<a href="' . $title->escapeLocalUrl( $q ) . "\" title=\"{$pTitle}\" class=\"mw-prevlink\">{$prev}</a>";
+		} else { 
+			$plink = $prev;
 		}
-	}
-	public function getResult() {
-		return $this->result;
-	}
+		
+		# Make 'next' link
+		if ( $query->hasMore() ) {
+			$q = array( 'limit' => $limit, 'offset' => $query->getContinueString(), 'target' => $target );
+			$nlink = '<a href="' . $title->escapeLocalUrl( $q ) . "\" title=\"{$nTitle}\" class=\"mw-nextlink\">{$next}</a>";
+		} else {
+			$nlink = $next;
+		}
 	
-	/**
-	 * Returns whether there are more results
-	 * 
-	 * @return bool
-	 */
-	public function hasMore() {
-		return $this->hasMore;
-	}
-	
-	/**
-	 * Returns the result length
-	 * 
-	 * @return int
-	 */
-	public function count() {
-		return count( $this->result );
+		# Make links to set number of items per page
+		$numLinks = array();
+		foreach ( array( 20, 50, 100, 250, 500 ) as $num ) {
+			$fmtLimit = $wgLang->formatNum( $num );
+			$q = array( 'offset' => $offset, 'limit' => $num, 'target' => $target );
+			$lTitle = wfMsgExt( 'shown-title', array( 'parsemag', 'escape' ), $num );
+			$numLinks[] = '<a href="' . $title->escapeLocalUrl( $q ) . "\" title=\"{$lTitle}\" class=\"mw-numlink\">{$fmtLimit}</a>";
+		}
+		$nums = $wgLang->pipeList( $numLinks );
+		
+		return wfMsgHtml( 'viewprevnext', $plink, $nlink, $nums );
 	}
 }
+
+
+
