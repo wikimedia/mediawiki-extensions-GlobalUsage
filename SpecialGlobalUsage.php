@@ -51,7 +51,17 @@ class SpecialGlobalUsage extends SpecialPage {
 					'value' => wfMsg( 'globalusage-ok' )
 					) )
 			. "\n\t<p>" . Xml::checkLabel( wfMsg( 'globalusage-filterlocal' ),
-					'filterlocal', 'mw-filterlocal', $this->filterLocal ) . '</p>'; 
+					'filterlocal', 'mw-filterlocal', $this->filterLocal ) . '</p>';
+		if ( !is_null( $this->target ) && wfFindFile( $this->target ) ) {
+			global $wgUser, $wgContLang;
+			$skin = $wgUser->getSkin();
+			
+			$html .= $skin->makeImageLinkObj( $this->target, 
+					$this->target->getPrefixedText(),
+					/* $alt */ '', /* $align */ $wgContLang->alignEnd(),  
+					/* $handlerParams */ array(), /* $framed */ false,
+					/* $thumb */ true );
+		} 
 		$html .= Xml::fieldSet( wfMsg( 'globalusage-text' ), $formContent ) . "\n</form>";
 		
 		$wgOut->addHtml( $html );
@@ -76,6 +86,12 @@ class SpecialGlobalUsage extends SpecialPage {
 		// Show result
 		global $wgOut;
 		
+		// Don't show form element if there is no data
+		if ( $query->count() == 0 ) {
+			$wgOut->addWikiMsg( 'globalusage-no-results', $this->target->getPrefixedText() );
+			return;
+		}	
+			
 		$navbar = wfViewPrevNext( $query->getOffset(), $query->getLimit(), $this->getTitle(), 
 				'target=' . $this->target->getPrefixedText(), !$query->hasMore() );
 		$targetName = $this->target->getText();
@@ -130,16 +146,21 @@ class SpecialGlobalUsage extends SpecialPage {
 				$guHtml .= "\t<li>" . self::formatItem( $item ) . "</li>\n";
 			$guHtml .= "</ul></li>\n";
 		}
-
+		
 		if ( $guHtml ) {
-			$html .= Html::rawElement( 'h2', array( 'class' => 'mw-globalusage-list' ), wfMsgHtml( 'globalusage' ) ) . "\n" .
-				wfMsgExt( 'globalusage-of-file', 'parse' ) .
-				Html::rawElement( 'ul', array(), $guHtml ) . "\n";
+			$html .= '<h2 id="globalusage">' . wfMsgHtml( 'globalusage' ) . "</h2>\n"
+				. wfMsgExt( 'globalusage-of-file', 'parse' )
+				. "<ul>\n" . $guHtml . "</ul>\n";
 			if ( $query->hasMore() )
 				$html .= wfMsgExt( 'globalusage-more', 'parse', $targetName );
 		}
 
 		
+		return true;
+	}
+	
+	public static function onImagePageShowTOC( $imagePage, &$toc ) {
+		$toc[] = '<li><a href="#globalusage">' . wfMsgHtml( 'globalusage' ) . '</a></li>';
 		return true;
 	}
 }
@@ -255,5 +276,14 @@ class GlobalUsageQuery {
 	 */
 	public function hasMore() {
 		return $this->hasMore;
+	}
+	
+	/**
+	 * Returns the result length
+	 * 
+	 * @return int
+	 */
+	public function count() {
+		return count( $this->result );
 	}
 }

@@ -66,6 +66,7 @@ $wgHooks['FileUndeleteComplete'][] = 'GlobalUsageHooks::onFileUndeleteComplete';
 $wgHooks['UploadComplete'][] = 'GlobalUsageHooks::onUploadComplete';
 $wgHooks['TitleMoveComplete'][] = 'GlobalUsageHooks::onTitleMoveComplete';
 $wgHooks['ImagePageAfterImageLinks'][] = 'SpecialGlobalUsage::onImagePageAfterImageLinks';
+$wgHooks['ImagePageShowTOC'][] = 'SpecialGlobalUsage::onImagePageShowTOC';
 
 
 // If set to false, the local database contains the globalimagelinks table
