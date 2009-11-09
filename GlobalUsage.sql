@@ -9,12 +9,8 @@ CREATE TABLE /*$wgDBprefix*/globalimagelinks (
 	gil_page_title varchar(255) binary not null,
 	-- Image name
 	gil_to varchar(255) binary not null,
-
-	
-	-- Note: You might want to shorten the gil_wiki part of the indices.
-	-- If the domain format is used, only the "en.wikip" part is needed for an
-	-- unique lookup
 	
 	PRIMARY KEY (gil_to, gil_wiki, gil_page), 
-	INDEX (gil_wiki, gil_page)
 ) /*$wgDBTableOptions*/;
+
+CREATE INDEX globalimagelinks_wiki ON globalimagelinks(gil_wiki, gil_page);

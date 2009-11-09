@@ -13,8 +13,8 @@ class RefreshGlobalImageLinks extends Maintenance {
 		global $wgGlobalUsageDatabase;
 		
 		$dbr = wfGetDB( DB_SLAVE );
-		$gu = new GlobalUsage( wfWikiId(), 
-			wfGetDB( DB_MASTER, array(), $wgGlobalUsageDatabase ) );
+		$dbw = wfGetDB( DB_MASTER, array(), $wgGlobalUsageDatabase );
+		$gu = new GlobalUsage( wfWikiId(), $dbw );
 		
 		$lastPageId = intval( $this->getOption( 'start-page', 0 ) );
 		$lastIlTo = $this->getOption( 'start-image' );
@@ -83,7 +83,10 @@ class RefreshGlobalImageLinks extends Maintenance {
 				# continuation variables
 				$lastPageId = $lastRow->page_id;
 				$lastIlTo = $lastRow->il_to;
-				wfWaitForSlaves( $maxlag );
+				
+				# Be nice to the database
+				$dbw->immediateCommit();
+				wfWaitForSlaves( $maxlag, $wgGlobalUsageDatabase );
 			}
 		} while ( !is_null( $lastRow ) );
 	}
