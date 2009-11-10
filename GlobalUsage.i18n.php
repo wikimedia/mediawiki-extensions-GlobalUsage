@@ -403,6 +403,7 @@ $messages['gsw'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Spezialsyte]] zu Aazeige, in welene Projäkt d Dateien vun eme gmeinsam gnutzte Repositoriums verwändet wäre',
 	'globalusage-ok' => 'Sueche',
 	'globalusage-text' => 'Wältwyt no Dateinutzige sueche',
+	'globalusage-no-results' => '[[:$1]] wird nit in andere Wiki brucht.',
 	'globalusage-on-wiki' => 'Gebruch vu [[:File:$1|$1]] uf $2',
 	'globalusage-of-file' => 'Die andere Wikis bruche die Datei:',
 	'globalusage-more' => '[[{{#Special:GlobalUsage}}/$1|Wygteri wältwyti Verwändig]] vu däre Datei aaluege.',
@@ -493,6 +494,7 @@ $messages['hu'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Speciális lap]] globális fájlhasználat megjelenítésére',
 	'globalusage-ok' => 'Keresés',
 	'globalusage-text' => 'Fájlhasználat globális keresése',
+	'globalusage-no-results' => 'A(z) [[:$1]] fájl nincs más wikiken használva.',
 	'globalusage-on-wiki' => '[[:File:$1|$1]] használata itt: $2',
 	'globalusage-of-file' => 'A következő wikik használják ezt a fájlt:',
 	'globalusage-more' => 'A fájl [[{{#Special:GlobalUsage}}/$1|globális használatának]]  megtekintése',
@@ -515,6 +517,7 @@ $messages['ia'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Pagina special]] pro vider le uso global de files',
 	'globalusage-ok' => 'Cercar',
 	'globalusage-text' => 'Cercar uso global de files.',
+	'globalusage-no-results' => '[[:$1]] non es usate in altere wikis.',
 	'globalusage-on-wiki' => 'Uso de [[:File:$1|$1]] in $2',
 	'globalusage-of-file' => 'Le altere wikis sequente usa iste imagine:',
 	'globalusage-more' => 'Vider [[{{#Special:GlobalUsage}}/$1|ulterior uso global]] de iste file.',
@@ -565,6 +568,7 @@ $messages['ja'] = array(
 	'globalusage-desc' => 'グローバルなファイル使用状況を見るための[[Special:GlobalUsage|特別ページ]]',
 	'globalusage-ok' => '検索',
 	'globalusage-text' => 'グローバルなファイル使用状況を検索する',
+	'globalusage-no-results' => '[[:$1]] は他のウィキでは使われていません。',
 	'globalusage-on-wiki' => '$2での[[:File:$1|$1]]の利用状況',
 	'globalusage-of-file' => '以下に挙げる他のウィキがこの画像を使っています:',
 	'globalusage-more' => 'このファイルの[[{{#Special:GlobalUsage}}/$1|グローバル使用状況]]をさらに表示する。',
@@ -652,6 +656,7 @@ $messages['lb'] = array(
 	'globalusage-desc' => "[[Special:GlobalUsage|Spezialsäit]] fir d'globaalt Benotze vun engem Fichier ze gesinn",
 	'globalusage-ok' => 'Sichen',
 	'globalusage-text' => 'Nom globale Benotze vum Fichier sichen.',
+	'globalusage-no-results' => '[[:$1]] gëtt net op anere Wikie benotzt.',
 	'globalusage-on-wiki' => 'Notzung vu(n) [[:File:$1|$1]] op $2',
 	'globalusage-of-file' => 'Dës aner Wikien benotzen dëse Fichier:',
 	'globalusage-more' => '[[{{#Special:GlobalUsage}}/$1|Méi global Notzunge]] vun dësem Fichier weisen.',
@@ -690,7 +695,11 @@ $messages['mk'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Специјална страница]] за преглед на употребата на глобални податотеки',
 	'globalusage-ok' => 'Пребарај',
 	'globalusage-text' => 'Пребарување на глобална употреба на податотеки.',
+	'globalusage-no-results' => '[[:$1]] не се користи во други викија..',
 	'globalusage-on-wiki' => 'Користење на [[:File:$1|$1]] на $2',
+	'globalusage-of-file' => 'Оваа податотека ја користат и следниве викија:',
+	'globalusage-more' => 'Преглед на [[{{#Special:GlobalUsage}}/$1|уште глобално користење]] на оваа податотека.',
+	'globalusage-filterlocal' => 'Не прикажувај локално користење',
 );
 
 /** Malayalam (മലയാളം)
@@ -824,6 +833,7 @@ $messages['pl'] = array(
 );
 
 /** Piedmontese (Piemontèis)
+ * @author Borichèt
  * @author Dragonòt
  */
 $messages['pms'] = array(
@@ -832,7 +842,11 @@ $messages['pms'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Pàgina special]] për vëdde ël dovragi global dël file',
 	'globalusage-ok' => 'Serca',
 	'globalusage-text' => 'Serca ël dovragi global dël file.',
+	'globalusage-no-results' => "[[:$1]] a l'é pa dovrà dzora d'àutre wiki.",
 	'globalusage-on-wiki' => 'Usagi ëd [[:File:$1|$1]] dzora $2',
+	'globalusage-of-file' => "J'àutre wiki sì sota a deuvro st'archivi-sì:",
+	'globalusage-more' => "Varda l'[[{{#Special:GlobalUsage}}/$1|usagi global]] dë st'archivi-sì.",
+	'globalusage-filterlocal' => "Mosta nen l'usagi local.",
 );
 
 /** Pashto (پښتو)
