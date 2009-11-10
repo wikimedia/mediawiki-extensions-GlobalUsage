@@ -6,7 +6,7 @@ class GlobalUsage {
 
 	/**
 	 * Construct a GlobalUsage instance for a certain wiki.
-	 * 
+	 *
 	 * @param $interwiki string Interwiki prefix of the wiki
 	 * @param $db mixed Database object
 	 */
@@ -14,10 +14,10 @@ class GlobalUsage {
 		$this->interwiki = $interwiki;
 		$this->db = $db;
 	}
-	
+
 	/**
 	 * Sets the images used by a certain page
-	 * 
+	 *
 	 * @param $title Title Title of the page
 	 * @param $images array Array of db keys of images used
 	 */
@@ -36,7 +36,7 @@ class GlobalUsage {
 	}
 	/**
 	 * Deletes all entries from a certain page
-	 * 
+	 *
 	 * @param $id int Page id of the page
 	 */
 	public function deleteFrom( $id ) {
@@ -51,7 +51,7 @@ class GlobalUsage {
 	}
 	/**
 	 * Deletes all entries to a certain image
-	 * 
+	 *
 	 * @param $title Title Title of the file
 	 */
 	public function deleteTo( $title ) {
@@ -62,20 +62,20 @@ class GlobalUsage {
 					'gil_to' => $title->getDBkey()
 				),
 				__METHOD__
-		);		
+		);
 	}
-	
+
 	/**
 	 * Copy local links to global table
-	 * 
+	 *
 	 * @param $title Title Title of the file to copy entries from.
 	 */
 	public function copyFromLocal( $title ) {
 		global $wgContLang;
-		
+
 		$dbr = wfGetDB( DB_SLAVE );
-		$res = $dbr->select( 
-				array( 'imagelinks', 'page' ), 
+		$res = $dbr->select(
+				array( 'imagelinks', 'page' ),
 				array( 'il_to', 'page_id', 'page_namespace', 'page_title' ),
 				array( 'il_from = page_id', 'il_to' => $title->getDBkey() ),
 				__METHOD__
@@ -92,7 +92,7 @@ class GlobalUsage {
 		}
 		$this->db->insert( 'globalimagelinks', $insert, __METHOD__ );
 	}
-	
+
 	/**
 	 * Changes the page title
 	 * 
@@ -102,7 +102,7 @@ class GlobalUsage {
 	public function moveTo( $id, $title ) {
 		$this->db->update(
 				'globalimagelinks',
-				array( 
+				array(
 					'gil_page_namespace' => $title->getNsText(),
 					'gil_page_title' => $title->getText()
 				),
@@ -113,9 +113,4 @@ class GlobalUsage {
 				__METHOD__
 		);
 	}
-	
-	
-	
-
-
 }

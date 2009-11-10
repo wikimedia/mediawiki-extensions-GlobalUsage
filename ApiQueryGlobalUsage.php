@@ -34,7 +34,7 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 
 	public function execute() {
 		$params = $this->extractRequestParams();
-		
+
 		$pageIds = $this->getPageSet()->getAllTitlesByNamespace();
 		if ( !empty( $pageIds[NS_FILE] ) ) {
 			# Create a query and set parameters
@@ -46,10 +46,10 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 			}
 			$query->setLimit( $params['limit'] );
 			$query->filterLocal( $params['filterlocal'] );
-			
+
 			# Execute the query
 			$query->execute();
-			
+
 			# Create the result
 			$apiResult = $this->getResult();
 			foreach ( $query->getResult() as $image => $wikis ) {
@@ -68,24 +68,24 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 								'url' => $url,
 								'wiki' => WikiMap::getWikiName( $wiki )
 						) );
-						
+
 						if ( !$fit ) {
 							$continue = "{$item['image']}|{$item['wiki']}|{$item['id']}";
 							$this->setIndexedTagName();
 							$this->setContinueEnumParameter( 'continue',  $continue );
 							return;
 						}
-					}				
+					}
 				}
 			}
 			$this->setIndexedTagName();
-			
+
 			if ( $query->hasMore() ) {
 				$this->setContinueEnumParameter( 'continue', $query->getContinueString() );
 			}
 		}
 	}
-	
+
 	private function setIndexedTagName() {
 		$result = $this->getResult();
 		$pageIds = $this->getPageSet()->getAllTitlesByNamespace();
@@ -96,7 +96,7 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 			);
 		}
 	}
-	
+
 	public function getAllowedParams() {
 		return array(
 				'limit' => array(
@@ -131,6 +131,6 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 	}
 
 	public function getVersion() {
-		return __CLASS__ . ': $Id:$';
+		return __CLASS__ . ': $Id$';
 	}
 }
