@@ -10,7 +10,7 @@ CREATE TABLE /*$wgDBprefix*/globalimagelinks (
 	-- Image name
 	gil_to varchar(255) binary not null,
 	
-	PRIMARY KEY (gil_to, gil_wiki, gil_page), 
+	PRIMARY KEY (gil_to, gil_wiki, gil_page)
 ) /*$wgDBTableOptions*/;
 
 CREATE INDEX globalimagelinks_wiki ON globalimagelinks(gil_wiki, gil_page);

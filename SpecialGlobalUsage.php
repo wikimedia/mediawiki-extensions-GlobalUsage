@@ -99,7 +99,7 @@ class SpecialGlobalUsage extends SpecialPage {
 		$wgOut->addHtml( $navbar );
 
 		$wgOut->addHtml( '<div id="mw-globalusage-result">' );
-		foreach ( reset( $query->getResult() ) as $wiki => $result ) {
+		foreach ( $query->getSingleImageResult() as $wiki => $result ) {
 			$wgOut->addHtml(
 					'<h2>' . wfMsgExt(
 						'globalusage-on-wiki', 'parseinline',
@@ -136,7 +136,7 @@ class SpecialGlobalUsage extends SpecialPage {
 		$query->execute();
 
 		$guHtml = '';
-		foreach ( $query->getResult() as $wiki => $result ) {
+		foreach ( $query->getSingleImageResult() as $wiki => $result ) {
 			$guHtml .= '<li>' . wfMsgExt( 
 					'globalusage-on-wiki', 'parseinline',
 					$targetName, WikiMap::getWikiName( $wiki ) ) . "\n<ul>";

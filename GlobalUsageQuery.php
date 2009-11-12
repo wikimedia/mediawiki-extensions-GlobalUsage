@@ -136,6 +136,12 @@ class GlobalUsageQuery {
 	public function getResult() {
 		return $this->result;
 	}
+	public function getSingleImageResult() {
+		if ( $this->result )
+			return current( $this->result );
+		else
+			return array();
+	}
 
 	/**
 	 * Returns whether there are more results

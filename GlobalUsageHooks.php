@@ -12,10 +12,28 @@ class GlobalUsageHooks {
 		// Create a list of locally existing images
 		$images = array_keys( $linksUpdater->getImages() );
 		$localFiles = array_keys( RepoGroup::singleton()->getLocalRepo()->findFiles( $images ) );
+		$missingFiles = array_diff( $images, $localFiles );
 
+		global $wgUseDumbLinkUpdate;
 		$gu = self::getGlobalUsage();
-		$gu->deleteFrom( $title->getArticleId( GAID_FOR_UPDATE ) );
-		$gu->setUsage( $title, array_diff( $images, $localFiles ) );
+		if ( $wgUseDumbLinkUpdate ) {
+			// Delete all entries to the page
+			$gu->deleteFrom( $title->getArticleId( GAID_FOR_UPDATE ) );
+			// Re-insert new usage for the page
+			$gu->setUsage( $title, $missingFiles );
+		} else {
+			$articleId = $title->getArticleId( GAID_FOR_UPDATE );
+			$existing = $gu->getAllFrom( $articleId );
+			
+			// Calculate changes
+			$added = array_diff( $missingFiles, $existing );
+			$removed  = array_diff( $existing, $missingFiles );
+			
+			// Add new usages and delete removed
+			$gu->setUsage( $title, $added );
+			if ( $removed )
+				$gu->deleteFrom( $articleId, $removed );
+		}
 
 		return true;
 	}

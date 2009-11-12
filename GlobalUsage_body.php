@@ -35,19 +35,39 @@ class GlobalUsage {
 		$this->db->insert( 'globalimagelinks', $insert, __METHOD__ );
 	}
 	/**
-	 * Deletes all entries from a certain page
-	 *
-	 * @param $id int Page id of the page
+	 * Get all global images from a certain page
 	 */
-	public function deleteFrom( $id ) {
-		$this->db->delete(
-				'globalimagelinks',
+	public function getAllFrom( $id ) {
+		$res = $this->db->select( 
+				'globalimagelinks', 
+				'gil_to', 
 				array(
 					'gil_wiki' => $this->interwiki,
-					'gil_page' => $id
+					'gil_page' => $id,
 				),
-				__METHOD__
+				__METHOD__ 
 		);
+		
+		$images = array();
+		foreach ( $res as $row )
+			$images[] = $row->gil_to;
+		return $images;
+	}
+	/**
+	 * Deletes all entries from a certain page to certain files
+	 *
+	 * @param $id int Page id of the page
+	 * @param $to mixed File name(s)
+	 */
+	public function deleteFrom( $id, $to = null ) {
+		$where = array(
+				'gil_wiki' => $this->interwiki,
+				'gil_page' => $id
+		);
+		if ( $to ) {
+			$where['gil_to'] = $to;
+		}
+		$this->db->delete( 'globalimagelinks', $where, __METHOD__ );
 	}
 	/**
 	 * Deletes all entries to a certain image
