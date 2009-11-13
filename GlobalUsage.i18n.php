@@ -178,7 +178,8 @@ $messages['bs'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Posebna stranica]] za pregled globalne upotrebe datoteke',
 	'globalusage-ok' => 'Traži',
 	'globalusage-text' => 'Pretraga globalne upotrebe datoteke.',
-	'globalusage-on-wiki' => 'Upotreba [[:File:$1|$1]] na $2',
+	'globalusage-no-results' => '[[:$1]] nije korištena na drugim wikijima.',
+	'globalusage-on-wiki' => 'Upotreba na $2',
 );
 
 /** Catalan (Català)
@@ -211,7 +212,7 @@ $messages['cs'] = array(
 	'globalusage-ok' => 'Hledat',
 	'globalusage-text' => 'Hledání globálního využití souboru',
 	'globalusage-no-results' => '[[:$1]] se na ostatních wiki nepoužívá.',
-	'globalusage-on-wiki' => 'Využití souboru [[:File:$1|$1]] na $2',
+	'globalusage-on-wiki' => 'Využití na $2',
 	'globalusage-of-file' => 'Tento soubor využívají následující wiki:',
 	'globalusage-more' => 'Zobrazit [[{{#Special:GlobalUsage}}/$1|další globální využití]] tohoto souboru.',
 	'globalusage-filterlocal' => 'Nezobrazovat místní využití',
@@ -274,7 +275,7 @@ $messages['dsb'] = array(
 	'globalusage-ok' => 'Pytaś',
 	'globalusage-text' => 'Za globalnym wužywanim datajow pytaś',
 	'globalusage-no-results' => '[[:$1]] njewužywa se w drugich wikijach.',
-	'globalusage-on-wiki' => 'Wužywanje dataje [[:File:$1|$1]] na $2',
+	'globalusage-on-wiki' => 'Wužywanje na $2',
 	'globalusage-of-file' => 'Slědujuce druge wikije wužywaju toś ten wobraz:',
 	'globalusage-more' => '[[{{#Special:GlobalUsage}}/$1|Dalšne globalne wužywanje]] toś teje dataje pokazaś',
 	'globalusage-filterlocal' => 'Lokalne wužywanje njepokazaś',
@@ -325,7 +326,7 @@ $messages['et'] = array(
 	'globalusage-ok' => 'Otsi',
 	'globalusage-text' => 'Faili globaalse kasutuse otsimine',
 	'globalusage-no-results' => '[[:$1]] pole muudes vikides kasutusel.',
-	'globalusage-on-wiki' => 'Faili [[:File:$1|$1]] kasutus vikis $2',
+	'globalusage-on-wiki' => 'Faili kasutus vikis $2',
 	'globalusage-of-file' => 'Järgmised muud vikid kasutavad seda faili:',
 	'globalusage-more' => 'Vaata veel selle faili [[{{#Special:GlobalUsage}}/$1|globaalset kasutust]].',
 	'globalusage-filterlocal' => 'Ära näita kohalikku kasutust',
@@ -352,6 +353,7 @@ $messages['fi'] = array(
  * @author Grondin
  * @author IAlex
  * @author Meithal
+ * @author Peter17
  * @author PieRRoMaN
  * @author Verdy p
  */
@@ -362,7 +364,7 @@ $messages['fr'] = array(
 	'globalusage-ok' => 'Rechercher',
 	'globalusage-text' => "Rechercher l'usage global du fichier",
 	'globalusage-no-results' => "[[:$1]] n'est pas utilisé sur d'autres wikis.",
-	'globalusage-on-wiki' => 'Utilisation de [[:File:$1|$1]] sur $2',
+	'globalusage-on-wiki' => 'Utilisation sur $2',
 	'globalusage-of-file' => 'Les autres wikis suivants utilisent cette image :',
 	'globalusage-more' => "Voir [[{{#Special:GlobalUsage}}/$1|d'autres utilisations globales]] de ce fichier.",
 	'globalusage-filterlocal' => "Ne pas montrer l'utilisation locale",
@@ -409,7 +411,7 @@ $messages['gsw'] = array(
 	'globalusage-ok' => 'Sueche',
 	'globalusage-text' => 'Wältwyt no Dateinutzige sueche',
 	'globalusage-no-results' => '[[:$1]] wird nit in andere Wiki brucht.',
-	'globalusage-on-wiki' => 'Gebruch vu [[:File:$1|$1]] uf $2',
+	'globalusage-on-wiki' => 'Gebruch uf $2',
 	'globalusage-of-file' => 'Die andere Wikis bruche die Datei:',
 	'globalusage-more' => '[[{{#Special:GlobalUsage}}/$1|Wygteri wältwyti Verwändig]] vu däre Datei aaluege.',
 	'globalusage-filterlocal' => 'Kei lokali Dateiverwändig zeige',
@@ -483,7 +485,7 @@ $messages['hsb'] = array(
 	'globalusage-ok' => 'Podać',
 	'globalusage-text' => 'Globalne wužiwanje dataje pytać.',
 	'globalusage-no-results' => '[[:$1]] njewužiwa so w druhich wikijach.',
-	'globalusage-on-wiki' => 'Wužiwanje dataje [[:File:$1|$1]] na $2',
+	'globalusage-on-wiki' => 'Wužiwanje na $2',
 	'globalusage-of-file' => 'Slědowace druhe wikije wužiwaja tutón wobraz:',
 	'globalusage-more' => '[[{{#Special:GlobalUsage}}/$1|Dalše globalne wužiwanje]] tuteje dataje pokazać',
 	'globalusage-filterlocal' => 'Lokalne wužiwanje njepokazać',
@@ -541,7 +543,7 @@ $messages['id'] = array(
 	'globalusage-ok' => 'Cari',
 	'globalusage-text' => 'Cari penggunaan berkas secara global.',
 	'globalusage-no-results' => '[[:$1]] tidak digunakan di wiki lain.',
-	'globalusage-on-wiki' => 'Penggunaan [[:File:$1|$1]] pada $2',
+	'globalusage-on-wiki' => 'Penggunaan pada $2',
 	'globalusage-of-file' => 'Wiki lain berikut menggunakan berkas ini:',
 	'globalusage-more' => 'Lihat [[{{#Special:GlobalUsage}}/$1|penggunaan global lain]] dari berkas ini.',
 	'globalusage-filterlocal' => 'Jangan tunjukkan penggunaan lokal',
@@ -574,7 +576,7 @@ $messages['ja'] = array(
 	'globalusage-ok' => '検索',
 	'globalusage-text' => 'グローバルなファイル使用状況を検索する',
 	'globalusage-no-results' => '[[:$1]] は他のウィキでは使われていません。',
-	'globalusage-on-wiki' => '$2での[[:File:$1|$1]]の利用状況',
+	'globalusage-on-wiki' => '$2 での使用状況',
 	'globalusage-of-file' => '以下に挙げる他のウィキがこの画像を使っています:',
 	'globalusage-more' => 'このファイルの[[{{#Special:GlobalUsage}}/$1|グローバル使用状況]]をさらに表示する。',
 	'globalusage-filterlocal' => 'ローカル使用状況を表示しない',
@@ -701,7 +703,7 @@ $messages['mk'] = array(
 	'globalusage-ok' => 'Пребарај',
 	'globalusage-text' => 'Пребарување на глобална употреба на податотеки.',
 	'globalusage-no-results' => '[[:$1]] не се користи во други викија..',
-	'globalusage-on-wiki' => 'Користење на [[:File:$1|$1]] на $2',
+	'globalusage-on-wiki' => 'Искористеност на $2',
 	'globalusage-of-file' => 'Оваа податотека ја користат и следниве викија:',
 	'globalusage-more' => 'Преглед на [[{{#Special:GlobalUsage}}/$1|уште глобално користење]] на оваа податотека.',
 	'globalusage-filterlocal' => 'Не прикажувај локално користење',
@@ -718,7 +720,7 @@ $messages['ml'] = array(
 	'globalusage-ok' => 'തിരയൂ',
 	'globalusage-text' => 'പ്രമാണത്തിന്റെ ആഗോള ഉപയോഗം തിരയുക',
 	'globalusage-no-results' => '[[:$1]] മറ്റു വിക്കികളിൽ ഉപയോഗിക്കുന്നില്ല.',
-	'globalusage-on-wiki' => '$2 സംരംഭത്തിൽ [[:File:$1|$1]]-ന്റെ ഉപയോഗം',
+	'globalusage-on-wiki' => '$2 സംരംഭത്തിലെ ഉപയോഗം',
 	'globalusage-of-file' => 'താഴെ കൊടുക്കുന്ന വിക്കികളും ഈ പ്രമാണം ഉപയോഗിക്കുന്നു:',
 	'globalusage-more' => 'ഈ പ്രമാണത്തിന്റെ [[{{#Special:GlobalUsage}}/$1|കൂടുതൽ ആഗോള ഉപയോഗം]] കാണുക.',
 	'globalusage-filterlocal' => 'പ്രാദേശിക ഉപയോഗം പ്രദർശിപ്പിക്കരുത്',
@@ -848,7 +850,7 @@ $messages['pms'] = array(
 	'globalusage-ok' => 'Serca',
 	'globalusage-text' => 'Serca ël dovragi global dël file.',
 	'globalusage-no-results' => "[[:$1]] a l'é pa dovrà dzora d'àutre wiki.",
-	'globalusage-on-wiki' => 'Usagi ëd [[:File:$1|$1]] dzora $2',
+	'globalusage-on-wiki' => 'Usagi dzora $2',
 	'globalusage-of-file' => "J'àutre wiki sì sota a deuvro st'archivi-sì:",
 	'globalusage-more' => "Varda l'[[{{#Special:GlobalUsage}}/$1|usagi global]] dë st'archivi-sì.",
 	'globalusage-filterlocal' => "Mosta nen l'usagi local.",
@@ -1135,7 +1137,11 @@ $messages['vi'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Trang đặc biệt]] để xem tập tin này đang dùng ở đâu trên toàn hệ thống',
 	'globalusage-ok' => 'Tìm kiếm',
 	'globalusage-text' => 'Tìm cách dùng tập tin toàn cục.',
-	'globalusage-on-wiki' => 'Sử dụng [[:File:$1|$1]] tại $2',
+	'globalusage-no-results' => '[[:$1]] không được sử dụng tại các wiki khác.',
+	'globalusage-on-wiki' => '$2 sử dụng $1 tại:',
+	'globalusage-of-file' => 'Các wiki sau đang sử dụng tập tin này:',
+	'globalusage-more' => 'Xem tập tin này [[{{#Special:GlobalUsage}}/$1|đang dùng ở đâu toàn hệ thống]].',
+	'globalusage-filterlocal' => 'Ẩn trang nội bộ sử dụng',
 );
 
 /** Volapük (Volapük)
