@@ -44,7 +44,7 @@ Button on [[Special:GlobalUsage]]',
 * $2 the project name',
 	'globalusage-of-file' => 'Used on a image page.
 The number of following wikis is unknown. By a empty result, no message is shown.',
-	'globalusage-more' => 'Used on a image page, when more results available
+	'globalusage-more' => 'Used on an image page, when more results are available
 * $1 - name of the file (without namespace)',
 	'globalusage-filterlocal' => 'Filteroption for [[Special:GlobalUsage]]',
 );
@@ -259,7 +259,7 @@ $messages['diq'] = array(
 	'globalusage-ok' => 'Bigêre',
 	'globalusage-text' => 'Karo dosyayê globali bigêre',
 	'globalusage-no-results' => '[[:$1]] wikiyanê binan de çini yo.',
-	'globalusage-on-wiki' => '[[:File:$1|$1]] ke ser $2i de kar beno',
+	'globalusage-on-wiki' => 'Kar ser $2i de',
 	'globalusage-of-file' => 'Wikiyanê ke ena dosya est o:',
 	'globalusage-more' => 'Karo [[{{#Special:GlobalUsage}}/$1|dosyayo global]]ê ena dosya bivine.',
 	'globalusage-filterlocal' => 'Karo local nimocne',
@@ -525,7 +525,7 @@ $messages['ia'] = array(
 	'globalusage-ok' => 'Cercar',
 	'globalusage-text' => 'Cercar uso global de files.',
 	'globalusage-no-results' => '[[:$1]] non es usate in altere wikis.',
-	'globalusage-on-wiki' => 'Uso de [[:File:$1|$1]] in $2',
+	'globalusage-on-wiki' => 'Uso in $2',
 	'globalusage-of-file' => 'Le altere wikis sequente usa iste imagine:',
 	'globalusage-more' => 'Vider [[{{#Special:GlobalUsage}}/$1|ulterior uso global]] de iste file.',
 	'globalusage-filterlocal' => 'Non monstrar uso local',
@@ -614,7 +614,7 @@ $messages['ko'] = array(
 	'globalusage-ok' => '찾기',
 	'globalusage-text' => '특정 파일이 사용되고 있는 모든 위키의 문서 찾기',
 	'globalusage-no-results' => '[[:$1]]은 다른 위키에서 사용되지 않고 있습니다.',
-	'globalusage-on-wiki' => '$2에서 [[:File:$1|$1]]을(를) 사용하고 있는 문서 목록',
+	'globalusage-on-wiki' => '$2에서 이 파일을 사용하고 있는 문서 목록',
 	'globalusage-of-file' => '다음 위키에서 이 파일을 사용하고 있습니다:',
 	'globalusage-more' => '이 파일을 사용하고 있는 [[{{#Special:GlobalUsage}}/$1|다른 위키의 더 많은 문서]]를 보기',
 	'globalusage-filterlocal' => '이 위키에서 이 파일을 사용하고 있는 문서를 보이지 않기',
@@ -643,7 +643,11 @@ $messages['ksh'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Söndersigg]] för jemeinsam jebruch Dateie ze zeije.',
 	'globalusage-ok' => 'Söhk!',
 	'globalusage-text' => 'Söhk noh jemeinsam jebruch Datteie.',
-	'globalusage-on-wiki' => 'Dä Jebruch vun dä Dattei „[[:File:$1|$1]]“ op $2',
+	'globalusage-no-results' => '[[:$1]] weed in ander Wikis nit jebruch.',
+	'globalusage-on-wiki' => 'Dä Jebruch op $2',
+	'globalusage-of-file' => 'Heh di ander Wikis bruche di Dattei:',
+	'globalusage-more' => 'Loor noh [[{{#Special:GlobalUsage}}/$1|mieh övver dä Jebruch]] vun heh dä Dattei.',
+	'globalusage-filterlocal' => 'Donn nix aanzeije doh drövver, wi di Dattei heh em Wiki jebruch weed',
 );
 
 /** Kurdish (Latin) (Kurdî / كوردی (Latin))
@@ -1138,7 +1142,7 @@ $messages['vi'] = array(
 	'globalusage-ok' => 'Tìm kiếm',
 	'globalusage-text' => 'Tìm cách dùng tập tin toàn cục.',
 	'globalusage-no-results' => '[[:$1]] không được sử dụng tại các wiki khác.',
-	'globalusage-on-wiki' => '$2 sử dụng $1 tại:',
+	'globalusage-on-wiki' => '$2 sử dụng tại:',
 	'globalusage-of-file' => 'Các wiki sau đang sử dụng tập tin này:',
 	'globalusage-more' => 'Xem tập tin này [[{{#Special:GlobalUsage}}/$1|đang dùng ở đâu toàn hệ thống]].',
 	'globalusage-filterlocal' => 'Ẩn trang nội bộ sử dụng',
