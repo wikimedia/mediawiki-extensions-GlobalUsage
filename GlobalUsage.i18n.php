@@ -137,7 +137,7 @@ $messages['be-tarask'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Спэцыяльная старонка]] для прагляду глябальнага выкарыстаньня файла',
 	'globalusage-ok' => 'Пошук',
 	'globalusage-text' => 'Пошук глябальнага выкарыстаньня файла.',
-	'globalusage-on-wiki' => 'Выкарыстаньне [[:File:$1|$1]] у $2',
+	'globalusage-on-wiki' => 'Выкарыстаньне ў $2',
 );
 
 /** Bulgarian (Български)
@@ -166,7 +166,11 @@ $messages['br'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Pajenn dibar]] da welet implij hollek ur skeudenn',
 	'globalusage-ok' => 'Klask',
 	'globalusage-text' => 'Klask implij hollek ar restr',
-	'globalusage-on-wiki' => 'Implij eus [[:File:$1|$1]] war $2',
+	'globalusage-no-results' => 'Ne reer ket gant [[:$1]] war wikioù all.',
+	'globalusage-on-wiki' => 'Implij war $2',
+	'globalusage-of-file' => 'Ober a ra ar wikioù da-heul gant ar restr-mañ :',
+	'globalusage-more' => 'Gwelet [[{{#Special:GlobalUsage}}/$1|implijoù hollek all]] esu ar restr-mañ.',
+	'globalusage-filterlocal' => "Arabat diskouez an implij lec'hel",
 );
 
 /** Bosnian (Bosanski)
@@ -307,12 +311,16 @@ $messages['eo'] = array(
 /** Spanish (Español)
  * @author Crazymadlover
  * @author Jatrobat
+ * @author Translationista
  */
 $messages['es'] = array(
 	'globalusage' => 'Uso de archivo global',
+	'globalusage-for' => 'No pudimos añadir la extensión porque no se encuentra el archivo seleccionado a incluir',
 	'globalusage-desc' => '[[Special:GlobalUsage|Página especial]] para ver uso de archivo global',
 	'globalusage-ok' => 'Buscar',
 	'globalusage-text' => 'Buscar uso de archivo global',
+	'globalusage-on-wiki' => 'No mostrar utilización local',
+	'globalusage-filterlocal' => 'Páginas externas',
 );
 
 /** Estonian (Eesti)
@@ -837,7 +845,7 @@ $messages['pl'] = array(
 	'globalusage-ok' => 'Szukaj',
 	'globalusage-text' => 'Globalne wyszukiwanie wykorzystania pliku',
 	'globalusage-no-results' => '[[:$1]] nie jest wykorzystywany w inny projektach wiki.',
-	'globalusage-on-wiki' => 'Wykorzystanie [[:File:$1|$1]] w $2',
+	'globalusage-on-wiki' => 'Wykorzystanie w $2',
 	'globalusage-of-file' => 'Ten plik jest wykorzystywany także w innych projektach wiki:',
 	'globalusage-more' => 'Pokaż [[{{#Special:GlobalUsage}}/$1|pełną listę globalnego wykorzystania]] tego pliku.',
 	'globalusage-filterlocal' => 'Nie pokazuj lokalnego wykorzystania',
@@ -1118,10 +1126,14 @@ $messages['uk'] = array(
  * @author Candalua
  */
 $messages['vec'] = array(
+	'globalusage' => 'Utilizo globale de file',
+	'globalusage-for' => 'Utilizo globale de "$1"',
+	'globalusage-desc' => "[[Special:GlobalUsage|Pagina special]] par védar l'utilizo globale dei file",
 	'globalusage-ok' => 'Serca',
 	'globalusage-text' => 'Serca utilizo globale file',
 	'globalusage-no-results' => '[[:$1]] no xe mia doparà su de altre wiki.',
 	'globalusage-on-wiki' => 'Utilizo de [[:File:$1|$1]] su $2',
+	'globalusage-of-file' => "St'altre wiki qua le dòpara sto file:",
 );
 
 /** Veps (Vepsan kel')
