@@ -137,7 +137,11 @@ $messages['be-tarask'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Спэцыяльная старонка]] для прагляду глябальнага выкарыстаньня файла',
 	'globalusage-ok' => 'Пошук',
 	'globalusage-text' => 'Пошук глябальнага выкарыстаньня файла.',
+	'globalusage-no-results' => '[[:$1]] не выкарыстоўваецца ў іншых вікі.',
 	'globalusage-on-wiki' => 'Выкарыстаньне ў $2',
+	'globalusage-of-file' => 'Гэты файл выкарыстоўваецца ў наступных вікі:',
+	'globalusage-more' => 'Паказаць [[{{#Special:GlobalUsage}}/$1|поўны сьпіс глябальнага выкарыстаньня]] гэтага файла.',
+	'globalusage-filterlocal' => 'Не паказваць лякальнае выкарыстаньне',
 );
 
 /** Bulgarian (Български)
@@ -184,6 +188,9 @@ $messages['bs'] = array(
 	'globalusage-text' => 'Pretraga globalne upotrebe datoteke.',
 	'globalusage-no-results' => '[[:$1]] nije korištena na drugim wikijima.',
 	'globalusage-on-wiki' => 'Upotreba na $2',
+	'globalusage-of-file' => 'Slijedeći wikiji koriste ovu datoteku:',
+	'globalusage-more' => 'Pogledajte [[{{#Special:GlobalUsage}}/$1|sve globalne upotrebe]] ove datoteke.',
+	'globalusage-filterlocal' => 'Ne prikazuj lokalnu upotrebu',
 );
 
 /** Catalan (Català)
