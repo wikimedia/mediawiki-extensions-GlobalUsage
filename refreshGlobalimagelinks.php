@@ -1,5 +1,11 @@
 <?php
-require_once( '../../maintenance/Maintenance.php' );
+$path = '../..';
+
+if ( getenv('MW_INSTALL_PATH') !== false ) {
+	$path = getenv('MW_INSTALL_PATH');
+}
+
+require_once( $path.'/maintenance/Maintenance.php' );
 
 class RefreshGlobalImageLinks extends Maintenance {
 	public function __construct() {
