@@ -18,21 +18,21 @@ class GlobalUsageHooks {
 		$gu = self::getGlobalUsage();
 		if ( $wgUseDumbLinkUpdate ) {
 			// Delete all entries to the page
-			$gu->deleteFrom( $title->getArticleId( GAID_FOR_UPDATE ) );
+			$gu->deleteLinksFromPage( $title->getArticleId( GAID_FOR_UPDATE ) );
 			// Re-insert new usage for the page
-			$gu->setUsage( $title, $missingFiles );
+			$gu->insertLinks( $title, $missingFiles );
 		} else {
 			$articleId = $title->getArticleId( GAID_FOR_UPDATE );
-			$existing = $gu->getAllFrom( $articleId );
+			$existing = $gu->getLinksFromPage( $articleId );
 			
 			// Calculate changes
 			$added = array_diff( $missingFiles, $existing );
 			$removed  = array_diff( $existing, $missingFiles );
 			
 			// Add new usages and delete removed
-			$gu->setUsage( $title, $added );
+			$gu->insertLinks( $title, $added );
 			if ( $removed )
-				$gu->deleteFrom( $articleId, $removed );
+				$gu->deleteLinksFromPage( $articleId, $removed );
 		}
 
 		return true;
@@ -54,9 +54,9 @@ class GlobalUsageHooks {
 	public static function onArticleDeleteComplete( $article, $user, $reason, $id ) {
 		$title = $article->getTitle();
 		$gu = self::getGlobalUsage();
-		$gu->deleteFrom( $id );
+		$gu->deleteLinksFromPage( $id );
 		if ( $title->getNamespace() == NS_FILE ) {
-			$gu->copyFromLocal( $title );
+			$gu->copyLocalImagelinks( $title );
 		}
 		return true;
 	}
@@ -67,7 +67,7 @@ class GlobalUsageHooks {
 	 */
 	public static function onFileUndeleteComplete( $title, $versions, $user, $reason ) {
 		$gu = self::getGlobalUsage();
-		$gu->deleteTo( $title );
+		$gu->deleteLinksToFile( $title );
 		return true;
 	}
 	/**
@@ -76,7 +76,7 @@ class GlobalUsageHooks {
 	 */
 	public static function onUploadComplete( $upload ) {
 		$gu = self::getGlobalUsage();
-		$gu->deleteTo( $upload->getTitle() );
+		$gu->deleteLinksToFile( $upload->getTitle() );
 		return true;
 	}
 

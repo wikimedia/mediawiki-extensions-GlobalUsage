@@ -21,7 +21,7 @@ class GlobalUsage {
 	 * @param $title Title Title of the page
 	 * @param $images array Array of db keys of images used
 	 */
-	public function setUsage( $title, $images, $pageIdFlags = GAID_FOR_UPDATE ) {
+	public function insertLinks( $title, $images, $pageIdFlags = GAID_FOR_UPDATE ) {
 		$insert = array();
 		foreach ( $images as $name ) {
 			$insert[] = array(
@@ -37,7 +37,7 @@ class GlobalUsage {
 	/**
 	 * Get all global images from a certain page
 	 */
-	public function getAllFrom( $id ) {
+	public function getLinksFromPage( $id ) {
 		$res = $this->db->select( 
 				'globalimagelinks', 
 				'gil_to', 
@@ -59,7 +59,7 @@ class GlobalUsage {
 	 * @param $id int Page id of the page
 	 * @param $to mixed File name(s)
 	 */
-	public function deleteFrom( $id, $to = null ) {
+	public function deleteLinksFromPage( $id, $to = null ) {
 		$where = array(
 				'gil_wiki' => $this->interwiki,
 				'gil_page' => $id
@@ -74,7 +74,7 @@ class GlobalUsage {
 	 *
 	 * @param $title Title Title of the file
 	 */
-	public function deleteTo( $title ) {
+	public function deleteLinksToFile( $title ) {
 		$this->db->delete(
 				'globalimagelinks',
 				array(
@@ -90,7 +90,7 @@ class GlobalUsage {
 	 *
 	 * @param $title Title Title of the file to copy entries from.
 	 */
-	public function copyFromLocal( $title ) {
+	public function copyLocalImagelinks( $title ) {
 		global $wgContLang;
 
 		$dbr = wfGetDB( DB_SLAVE );

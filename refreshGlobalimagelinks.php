@@ -74,13 +74,13 @@ class RefreshGlobalImageLinks extends Maintenance {
 				# Delete all original links if this page is not a continuation
 				# of last iteration.
 				if ( $pageId != $lastPageId )
-					$gu->deleteFrom( $pageId );
+					$gu->deleteLinksFromPage( $pageId );
 				if ( $rows ) {
 					$title = Title::newFromRow( reset( $rows ) );
 					$images = array_keys( $rows );
 					# Since we have a pretty accurate page_id, don't specify
 					# GAID_FOR_UPDATE
-					$gu->setUsage( $title, $images, /* $flags */ 0 );
+					$gu->insertLinks( $title, $images, /* $flags */ 0 );
 				}
 			}
 
