@@ -27,6 +27,7 @@ class GlobalUsage {
 			$insert[] = array(
 				'gil_wiki' => $this->interwiki,
 				'gil_page' => $title->getArticleID( $pageIdFlags ),
+				'gil_page_namespace_id' => $title->getNamespace(),
 				'gil_page_namespace' => $title->getNsText(),
 				'gil_page_title' => $title->getDBkey(),
 				'gil_to' => $name
@@ -105,6 +106,7 @@ class GlobalUsage {
 			$insert[] = array(
 				'gil_wiki' => $this->interwiki,
 				'gil_page' => $row->page_id,
+				'gil_page_namespace_id' => $row->page_namespace,
 				'gil_page_namespace' => $wgContLang->getNsText( $row->page_namespace ),
 				'gil_page_title' => $row->page_title,
 				'gil_to' => $row->il_to,
@@ -123,6 +125,7 @@ class GlobalUsage {
 		$this->db->update(
 				'globalimagelinks',
 				array(
+					'gil_page_namespace_id' => $title->getNamespace(),
 					'gil_page_namespace' => $title->getNsText(),
 					'gil_page_title' => $title->getText()
 				),

@@ -4,6 +4,7 @@ CREATE TABLE /*$wgDBprefix*/globalimagelinks (
 	-- page_id on the local wiki
 	gil_page int unsigned not null,
 	-- Namespace, since the foreign namespaces may not match the local ones
+	gil_page_namespace_id int not null,
 	gil_page_namespace varchar(255) not null,
 	-- Page title
 	gil_page_title varchar(255) binary not null,
