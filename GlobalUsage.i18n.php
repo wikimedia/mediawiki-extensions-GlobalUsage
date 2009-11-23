@@ -1141,6 +1141,7 @@ $messages['vec'] = array(
 	'globalusage-no-results' => '[[:$1]] no xe mia doparà su de altre wiki.',
 	'globalusage-on-wiki' => 'Utilizo de [[:File:$1|$1]] su $2',
 	'globalusage-of-file' => "St'altre wiki qua le dòpara sto file:",
+	'globalusage-more' => 'Varda i [[{{#Special:GlobalUsage}}/$1|altri utilizi globali]] de sto file.',
 	'globalusage-filterlocal' => "No stà mostrar l'utilizo local",
 );
 
