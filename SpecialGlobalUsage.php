@@ -127,13 +127,33 @@ class SpecialGlobalUsage extends SpecialPage {
 				str_replace( '_', ' ', $page ) );
 	}
 
+	
+	/**
+	 * Get an executed query for use on image pages
+	 * 
+	 * @param Title $title File to query for
+	 * @return GlobalUsageQuery Query object, already executed
+	 */
+	private static function getImagePageQuery( $title ) {
+		static $queryCache = array();
+		
+		$name = $title->getDBkey();
+		if ( !isset( $queryCache[$name] ) ) {
+			$query = new GlobalUsageQuery( $title );
+			$query->filterLocal();
+			$query->execute();
+			
+			$queryCache[$name] = $query;
+		}
+		
+		return $queryCache[$name];
+	} 
+	
 	public static function onImagePageAfterImageLinks( $imagePage, &$html ) {
 		$title = $imagePage->getFile()->getTitle();
 		$targetName = $title->getText();
 
-		$query = new GlobalUsageQuery( $title );
-		$query->filterLocal();
-		$query->execute();
+		$query = self::getImagePageQuery( $title );
 
 		$guHtml = '';
 		foreach ( $query->getSingleImageResult() as $wiki => $result ) {
@@ -157,13 +177,20 @@ class SpecialGlobalUsage extends SpecialPage {
 		return true;
 	}
 
+	/**
+	 * Show a link to the global image links in the TOC if there are any results available.
+	 */
 	public static function onImagePageShowTOC( $imagePage, &$toc ) {
-		$toc[] = '<li><a href="#globalusage">' . wfMsgHtml( 'globalusage' ) . '</a></li>';
+		$query = self::getImagePageQuery( $imagePage->getFile()->getTitle() );
+		if ( $query->getResult() )
+			$toc[] = '<li><a href="#globalusage">' . wfMsgHtml( 'globalusage' ) . '</a></li>';
 		return true;
 	}
 
 	protected function getNavBar( $query ) {
-		global $wgLang;
+		global $wgLang, $wgUser;
+
+		$skin = $wgUser->getSkin();
 
 		$target = $this->target->getPrefixedText();
 		$limit = $query->getLimit();
@@ -184,16 +211,18 @@ class SpecialGlobalUsage extends SpecialPage {
 
 		# Make 'previous' link
 		if ( $offset ) {
+			$attr = array( 'title' => $pTitle, 'class' => 'mw-prevlink' );
 			$q = array( 'limit' => $limit, 'offset' => $offset, 'target' => $target );
-			$plink = '<a href="' . $title->escapeLocalUrl( $q ) . "\" title=\"{$pTitle}\" class=\"mw-prevlink\">{$prev}</a>";
+			$plink = $skin->link( $title, $prev, $attr, $q );
 		} else { 
 			$plink = $prev;
 		}
 
 		# Make 'next' link
 		if ( $query->hasMore() ) {
+			$attr = array( 'title' => $nTitle, 'class' => 'mw-nextlink' );
 			$q = array( 'limit' => $limit, 'offset' => $query->getContinueString(), 'target' => $target );
-			$nlink = '<a href="' . $title->escapeLocalUrl( $q ) . "\" title=\"{$nTitle}\" class=\"mw-nextlink\">{$next}</a>";
+			$nlink = $skin->link( $title, $next, $attr, $q );
 		} else {
 			$nlink = $next;
 		}
@@ -202,9 +231,12 @@ class SpecialGlobalUsage extends SpecialPage {
 		$numLinks = array();
 		foreach ( array( 20, 50, 100, 250, 500 ) as $num ) {
 			$fmtLimit = $wgLang->formatNum( $num );
+			
 			$q = array( 'offset' => $offset, 'limit' => $num, 'target' => $target );
-			$lTitle = wfMsgExt( 'shown-title', array( 'parsemag', 'escape' ), $num );
-			$numLinks[] = '<a href="' . $title->escapeLocalUrl( $q ) . "\" title=\"{$lTitle}\" class=\"mw-numlink\">{$fmtLimit}</a>";
+			$lTitle = wfMsgExt( 'shown-title', array( 'parsemag', 'escape' ), $num );			
+			$attr = array( 'title' => $lTitle, 'class' => 'mw-numlink' );
+
+			$numLinks[] = $skin->link( $title, $fmtLimit, $attr, $q ); 
 		}
 		$nums = $wgLang->pipeList( $numLinks );
 
