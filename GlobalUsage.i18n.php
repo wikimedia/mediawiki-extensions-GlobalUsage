@@ -28,6 +28,7 @@ $messages['en'] = array(
  * @author Purodha
  * @author Raymond
  * @author Umherirrender
+ * @author Vriullop
  */
 $messages['qqq'] = array(
 	'globalusage-for' => 'Title of [[Special:GlobalUsage]]
@@ -44,7 +45,7 @@ Button on [[Special:GlobalUsage]]',
 * $2 the project name',
 	'globalusage-of-file' => 'Used on a image page.
 The number of following wikis is unknown. By a empty result, no message is shown.',
-	'globalusage-more' => 'Used on an image page, when more results are available
+	'globalusage-more' => 'Used on an image page, when more global usage results are available. Example: [[Commons:File:Example.jpg]]
 * $1 - name of the file (without namespace)',
 	'globalusage-filterlocal' => 'Filteroption for [[Special:GlobalUsage]]',
 );
@@ -199,10 +200,15 @@ $messages['bs'] = array(
  * @author Vriullop
  */
 $messages['ca'] = array(
-	'globalusage' => 'Ús global de fitxer',
+	'globalusage' => 'Ús global del fitxer',
+	'globalusage-for' => 'Ús global per «$1»',
 	'globalusage-desc' => "[[Special:GlobalUsage|Pàgina especial]] per a veure l'ús global del fitxer",
 	'globalusage-ok' => 'Cerca',
 	'globalusage-text' => "Cerca l'ús global del fitxer.",
+	'globalusage-no-results' => "[[:$1]] no s'utilitza en altres wikis.",
+	'globalusage-on-wiki' => 'Utilització a $2',
+	'globalusage-of-file' => "Utilització d'aquest fitxer en altres wikis:",
+	'globalusage-more' => "Vegeu [[{{#Special:GlobalUsage}}/$1|més usos globals]] d'aquest fitxer.",
 	'globalusage-filterlocal' => "No mostris l'ús local",
 );
 
