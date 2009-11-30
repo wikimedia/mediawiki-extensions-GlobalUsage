@@ -846,6 +846,13 @@ $messages['os'] = array(
 	'globalusage-ok' => 'Агур',
 );
 
+/** Deitsch (Deitsch)
+ * @author Xqt
+ */
+$messages['pdc'] = array(
+	'globalusage-ok' => 'Uffgucke',
+);
+
 /** Polish (Polski)
  * @author Leinad
  * @author Maikking
@@ -975,7 +982,11 @@ $messages['sk'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Špeciálna stránka]] na zobrazenie celkového využitia súborov',
 	'globalusage-ok' => 'Hľadať',
 	'globalusage-text' => 'Hľadať globálne využitie súborov.',
+	'globalusage-no-results' => '[[:$1]] sa nepoužíva  na iných wiki.',
 	'globalusage-on-wiki' => 'Použitie [[:File:$1|$1]] na $2',
+	'globalusage-of-file' => 'Nasledovné ďalšie wiki používajú tento súbor:',
+	'globalusage-more' => 'Zobraziť [[{{#Special:GlobalUsage}}/$1|ďalšie globálne použitie]] tohto súboru.',
+	'globalusage-filterlocal' => 'Nezobrazovať lokálne použitie',
 );
 
 /** Lower Silesian (Schläsch)
