@@ -1,4 +1,4 @@
-CREATE TABLE /*$wgDBprefix*/globalimagelinks (
+CREATE TABLE /*_*/globalimagelinks (
 	-- Wiki id
 	gil_wiki varchar(32) not null,
 	-- page_id on the local wiki
@@ -9,9 +9,11 @@ CREATE TABLE /*$wgDBprefix*/globalimagelinks (
 	-- Page title
 	gil_page_title varchar(255) binary not null,
 	-- Image name
-	gil_to varchar(255) binary not null,
-	
-	PRIMARY KEY (gil_to, gil_wiki, gil_page)
+	gil_to varchar(255) binary not null
 ) /*$wgDBTableOptions*/;
 
-CREATE INDEX globalimagelinks_wiki ON globalimagelinks(gil_wiki, gil_page);
+CREATE UNIQUE INDEX globalimagelinks_to_wiki_page 
+	ON /*_*/globalimagelinks (gil_to, gil_wiki, gil_page);
+CREATE INDEX globalimagelinks_wiki 
+	ON /*_*/globalimagelinks (gil_wiki, gil_page);
+
