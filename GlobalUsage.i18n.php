@@ -613,6 +613,13 @@ $messages['jv'] = array(
 	'globalusage-text' => 'Golèk panggunan global berkas.',
 );
 
+/** Georgian (ქართული)
+ * @author BRUTE
+ */
+$messages['ka'] = array(
+	'globalusage-ok' => 'ძიება',
+);
+
 /** Khmer (ភាសាខ្មែរ)
  * @author Chhorran
  * @author Lovekhmer
