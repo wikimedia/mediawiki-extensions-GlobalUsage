@@ -17,7 +17,7 @@ class SpecialGlobalUsage extends SpecialPage {
 		global $wgOut, $wgRequest;
 
 		$target = $par ? $par : $wgRequest->getVal( 'target' );
-		$this->target = Title::newFromText( $target, NS_FILE );
+		$this->target = Title::makeTitleSafe( NS_FILE, $target );
 
 		$this->filterLocal = $wgRequest->getCheck( 'filterlocal' );
 
@@ -127,7 +127,8 @@ class SpecialGlobalUsage extends SpecialPage {
 				str_replace( '_', ' ', $page ) );
 	}
 
-	
+
+	private static $queryCache = array();
 	/**
 	 * Get an executed query for use on image pages
 	 * 
@@ -135,18 +136,20 @@ class SpecialGlobalUsage extends SpecialPage {
 	 * @return GlobalUsageQuery Query object, already executed
 	 */
 	private static function getImagePageQuery( $title ) {
-		static $queryCache = array();
-		
 		$name = $title->getDBkey();
-		if ( !isset( $queryCache[$name] ) ) {
+		if ( !isset( self::$queryCache[$name] ) ) {
 			$query = new GlobalUsageQuery( $title );
-			$query->filterLocal();
+			//$query->filterLocal();
 			$query->execute();
 			
-			$queryCache[$name] = $query;
+			self::$queryCache[$name] = $query;
+			
+			// Limit cache size to 100
+			if ( count( self::$queryCache ) > 100 )
+				array_shift( self::$queryCache );
 		}
 		
-		return $queryCache[$name];
+		return self::$queryCache[$name];
 	} 
 	
 	public static function onImagePageAfterImageLinks( $imagePage, &$html ) {
