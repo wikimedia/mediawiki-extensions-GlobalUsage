@@ -1084,6 +1084,7 @@ $messages['te'] = array(
 	'globalusage-desc' => 'సార్వత్రిక ఫైలు వాడుకని చూడడానికి [[Special:GlobalUsage|ప్రత్యేక పేజీ]]',
 	'globalusage-ok' => 'వెతుకు',
 	'globalusage-text' => 'సార్వత్రిక ఫైళ్ళ వాడుకలో వెతకండి.',
+	'globalusage-of-file' => 'ఈ ఫైలుని క్రింది ఇతర వికీలు ఉపయోగిస్తున్నాయి:',
 );
 
 /** Tetum (Tetun)
