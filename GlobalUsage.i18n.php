@@ -328,11 +328,14 @@ $messages['eo'] = array(
  */
 $messages['es'] = array(
 	'globalusage' => 'Uso de archivo global',
-	'globalusage-for' => 'No pudimos añadir la extensión porque no se encuentra el archivo seleccionado a incluir',
+	'globalusage-for' => 'Uso global para "$1"',
 	'globalusage-desc' => '[[Special:GlobalUsage|Página especial]] para ver uso de archivo global',
 	'globalusage-ok' => 'Buscar',
 	'globalusage-text' => 'Buscar uso de archivo global',
-	'globalusage-on-wiki' => 'No mostrar utilización local',
+	'globalusage-no-results' => '[[:$1]] no es usado en otros wikis.',
+	'globalusage-on-wiki' => 'Uso en $2',
+	'globalusage-of-file' => 'Los siguientes otros wiki usan este archivo:',
+	'globalusage-more' => 'Ver [[{{#Special:GlobalUsage}}/$1|más uso global]] de este archivo.',
 	'globalusage-filterlocal' => 'Páginas externas',
 );
 
@@ -1081,10 +1084,14 @@ $messages['ta'] = array(
  */
 $messages['te'] = array(
 	'globalusage' => 'సార్వత్రిక ఫైలు వాడుక',
+	'globalusage-for' => '"$1" యొక్క సార్వత్రిక వాడుక',
 	'globalusage-desc' => 'సార్వత్రిక ఫైలు వాడుకని చూడడానికి [[Special:GlobalUsage|ప్రత్యేక పేజీ]]',
 	'globalusage-ok' => 'వెతుకు',
 	'globalusage-text' => 'సార్వత్రిక ఫైళ్ళ వాడుకలో వెతకండి.',
+	'globalusage-no-results' => '[[:$1]]ని ఇతర వికీలలో ఉపయోగించట్లేదు.',
+	'globalusage-on-wiki' => '$2 లో వాడుక',
 	'globalusage-of-file' => 'ఈ ఫైలుని క్రింది ఇతర వికీలు ఉపయోగిస్తున్నాయి:',
+	'globalusage-filterlocal' => 'స్థానిక వాడుకని చూపించకు',
 );
 
 /** Tetum (Tetun)
