@@ -153,6 +153,7 @@ $messages['bg'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Специална страница]] за преглед на глобалното използване на файл',
 	'globalusage-ok' => 'Търсене',
 	'globalusage-text' => 'Търсене за глобалното използване на файл.',
+	'globalusage-no-results' => '[[:$1]] не се използва в други уикита.',
 );
 
 /** Bengali (বাংলা)
