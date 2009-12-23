@@ -92,7 +92,11 @@ $messages['ar'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|صفحة خاصة]] لرؤية استخدام الملف العام',
 	'globalusage-ok' => 'بحث',
 	'globalusage-text' => 'بحث استخدام الملف العام',
-	'globalusage-on-wiki' => 'استخدام [[:File:$1|$1]] في $2',
+	'globalusage-no-results' => '[[:$1]] غير مستخدم في ويكيات أخرى.',
+	'globalusage-on-wiki' => 'الاستخدام في $2',
+	'globalusage-of-file' => 'الويكيات الأخرى التالية تستخدم هذا الملف:',
+	'globalusage-more' => 'عرض [[{{#Special:GlobalUsage}}/$1|المزيد من الاستخدام العام]] لهذا الملف.',
+	'globalusage-filterlocal' => 'لا تعرض الاستخدام المحلي',
 );
 
 /** Aramaic (ܐܪܡܝܐ)
@@ -996,6 +1000,13 @@ $messages['ru'] = array(
 	'globalusage-filterlocal' => 'Не показывать локальное использование',
 );
 
+/** Yakut (Саха тыла)
+ * @author HalanTul
+ */
+$messages['sah'] = array(
+	'globalusage-ok' => 'Буларга',
+);
+
 /** Slovak (Slovenčina)
  * @author Helix84
  */
@@ -1129,6 +1140,14 @@ $messages['tg-cyrl'] = array(
  */
 $messages['th'] = array(
 	'globalusage-ok' => 'สืบค้น',
+);
+
+/** Turkmen (Türkmençe)
+ * @author Hanberke
+ */
+$messages['tk'] = array(
+	'globalusage-ok' => 'Gözle',
+	'globalusage-of-file' => 'Bu faýl aşakdaky beýleki wikiler tarapyndan ulanylýar:',
 );
 
 /** Tagalog (Tagalog)
