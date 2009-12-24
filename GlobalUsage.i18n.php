@@ -1115,6 +1115,7 @@ $messages['te'] = array(
 	'globalusage-no-results' => '[[:$1]]ని ఇతర వికీలలో ఉపయోగించట్లేదు.',
 	'globalusage-on-wiki' => '$2 లో వాడుక',
 	'globalusage-of-file' => 'ఈ ఫైలుని క్రింది ఇతర వికీలు ఉపయోగిస్తున్నాయి:',
+	'globalusage-more' => 'ఈ ఫైలు యొక్క [[{{#Special:GlobalUsage}}/$1|మరింత సార్వత్రిక వాడుకని]] చూడండి.',
 	'globalusage-filterlocal' => 'స్థానిక వాడుకని చూపించకు',
 );
 
@@ -1252,16 +1253,36 @@ $messages['yi'] = array(
 );
 
 /** Simplified Chinese (‪中文(简体)‬)
+ * @author Gaoxuewei
  * @author Gzdavidwong
  */
 $messages['zh-hans'] = array(
+	'globalusage' => '全域文件使用情况',
+	'globalusage-for' => "全域 ''$1'' 使用情况",
+	'globalusage-desc' => '[[Special:GlobalUsage|特殊页面]]查看全域文件使用情况',
 	'globalusage-ok' => '搜索',
+	'globalusage-text' => '搜索全域文件使用情况',
+	'globalusage-no-results' => '[[:$1]]未在其他维基中使用。',
+	'globalusage-on-wiki' => '$2的使用情况',
+	'globalusage-of-file' => '本文件也在如下其他维基中使用：',
+	'globalusage-more' => '查看本文件的[[{{#Special:GlobalUsage}}/$1|更多全域使用情况]]。',
+	'globalusage-filterlocal' => '不要显示本地使用情况',
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
+ * @author Gaoxuewei
  * @author Wrightbus
  */
 $messages['zh-hant'] = array(
+	'globalusage' => '全域文件使用情況',
+	'globalusage-for' => "全域 ''$1'' 使用情況",
+	'globalusage-desc' => '[[Special:GlobalUsage|特殊頁面]]查看全域文件使用情況',
 	'globalusage-ok' => '搜尋',
+	'globalusage-text' => '搜索全域文件使用情況',
+	'globalusage-no-results' => '[[:$1]]未在其他維基中使用。',
+	'globalusage-on-wiki' => '$2的使用情況',
+	'globalusage-of-file' => '本文件也在如下其他維基中使用：',
+	'globalusage-more' => '查看本文件的[[{{#Special:GlobalUsage}}/$1|更多全域使用情況]]。',
+	'globalusage-filterlocal' => '不要顯示本地使用情況',
 );
 
