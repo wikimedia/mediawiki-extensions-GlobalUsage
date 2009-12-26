@@ -373,10 +373,15 @@ $messages['eu'] = array(
 );
 
 /** Finnish (Suomi)
+ * @author Crt
  * @author ZeiP
  */
 $messages['fi'] = array(
 	'globalusage-ok' => 'Hae',
+	'globalusage-no-results' => '[[:$1]] ei ole käytössä muissa wikeissä.',
+	'globalusage-on-wiki' => 'Käyttö kohteessa $2',
+	'globalusage-of-file' => 'Seuraavat muut wikit käyttävät tätä tiedostoa:',
+	'globalusage-filterlocal' => 'Älä näytä paikallista käyttöä',
 );
 
 /** French (Français)
