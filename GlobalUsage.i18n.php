@@ -152,6 +152,7 @@ $messages['be-tarask'] = array(
 
 /** Bulgarian (Български)
  * @author DCLXVI
+ * @author Turin
  */
 $messages['bg'] = array(
 	'globalusage' => 'Глобално използване на файл',
@@ -159,6 +160,7 @@ $messages['bg'] = array(
 	'globalusage-ok' => 'Търсене',
 	'globalusage-text' => 'Търсене за глобалното използване на файл.',
 	'globalusage-no-results' => '[[:$1]] не се използва в други уикита.',
+	'globalusage-of-file' => 'Този файл се използва от следните други уикита:',
 );
 
 /** Bengali (বাংলা)
@@ -322,9 +324,14 @@ $messages['el'] = array(
  */
 $messages['eo'] = array(
 	'globalusage' => 'Ĝenerala dosier-uzado',
+	'globalusage-for' => 'Ĝenerala uzado por "$1"',
 	'globalusage-desc' => '[[Special:GlobalUsage|Speciala paĝo]] por rigardi uzadon de ĝeneralaj dosieroj',
 	'globalusage-ok' => 'Serĉi',
 	'globalusage-text' => 'Serĉi uzadon de ĝeneralaj dosieroj.',
+	'globalusage-no-results' => '[[:$1]] ne estas uzata en aliaj vikioj.',
+	'globalusage-on-wiki' => 'Uzado en $2',
+	'globalusage-of-file' => 'La jenaj aliaj vikioj utiligas ĉi tiun dosieron:',
+	'globalusage-filterlocal' => 'Ne montri lokan uzadon',
 );
 
 /** Spanish (Español)
@@ -491,6 +498,7 @@ $messages['he'] = array(
 	'globalusage-ok' => 'חיפוש',
 	'globalusage-text' => 'חיפוש בשימוש הגלובלי בקבצים.',
 	'globalusage-on-wiki' => '[[:File:$1|$1]] בשימוש באתר $2',
+	'globalusage-filterlocal' => 'אין להציג שימוש מקומי',
 );
 
 /** Hindi (हिन्दी)
@@ -1139,6 +1147,16 @@ $messages['tg-cyrl'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Саҳифаи вижа]] барои дидани истифодаи саросарии парванда',
 	'globalusage-ok' => 'Ҷустуҷӯ',
 	'globalusage-text' => 'Ҷустуҷӯи истифодаи саросарии парванда.',
+);
+
+/** Tajik (Latin) (Тоҷикӣ (Latin))
+ * @author Liangent
+ */
+$messages['tg-latn'] = array(
+	'globalusage' => 'Istifodai sarosariji parvanda',
+	'globalusage-desc' => '[[Special:GlobalUsage|Sahifai viƶa]] baroi didani istifodai sarosariji parvanda',
+	'globalusage-ok' => 'Çustuçū',
+	'globalusage-text' => 'Çustuçūi istifodai sarosariji parvanda.',
 );
 
 /** Thai (ไทย)
