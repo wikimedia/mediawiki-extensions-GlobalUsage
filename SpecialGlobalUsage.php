@@ -139,7 +139,7 @@ class SpecialGlobalUsage extends SpecialPage {
 		$name = $title->getDBkey();
 		if ( !isset( self::$queryCache[$name] ) ) {
 			$query = new GlobalUsageQuery( $title );
-			//$query->filterLocal();
+			$query->filterLocal();
 			$query->execute();
 			
 			self::$queryCache[$name] = $query;
