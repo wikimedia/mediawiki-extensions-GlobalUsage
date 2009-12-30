@@ -158,10 +158,12 @@ $messages['be-tarask'] = array(
  */
 $messages['bg'] = array(
 	'globalusage' => 'Глобално използване на файл',
+	'globalusage-for' => 'Обща употреба на "$1"',
 	'globalusage-desc' => '[[Special:GlobalUsage|Специална страница]] за преглед на глобалното използване на файл',
 	'globalusage-ok' => 'Търсене',
 	'globalusage-text' => 'Търсене за глобалното използване на файл.',
 	'globalusage-no-results' => '[[:$1]] не се използва в други уикита.',
+	'globalusage-on-wiki' => 'Употреба в $2',
 	'globalusage-of-file' => 'Този файл се използва от следните други уикита:',
 	'globalusage-filterlocal' => 'Без показване на локалната употреба',
 );
@@ -391,10 +393,14 @@ $messages['eu'] = array(
  */
 $messages['fi'] = array(
 	'globalusage' => 'Tiedoston käyttö globaalisti',
+	'globalusage-for' => 'Globaali käyttö tiedostolle ”$1”',
+	'globalusage-desc' => '[[Special:GlobalUsage|Toimintosivu]] globaalin tiedostokäytön näyttämiseen',
 	'globalusage-ok' => 'Hae',
+	'globalusage-text' => 'Globaali haku tiedoston käytöstä',
 	'globalusage-no-results' => '[[:$1]] ei ole käytössä muissa wikeissä.',
 	'globalusage-on-wiki' => 'Käyttö kohteessa $2',
 	'globalusage-of-file' => 'Seuraavat muut wikit käyttävät tätä tiedostoa:',
+	'globalusage-more' => 'Näytä [[{{#Special:GlobalUsage}}/$1|lisää tiedoston globaalia käyttöä.]]',
 	'globalusage-filterlocal' => 'Älä näytä paikallista käyttöä',
 );
 
