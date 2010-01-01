@@ -732,7 +732,7 @@ $messages['ksh'] = array(
 	'globalusage-filterlocal' => 'Donn nix aanzeije doh drövver, wi di Dattei heh em Wiki jebruch weed',
 );
 
-/** Kurdish (Latin) (Kurdî / كوردی (Latin))
+/** Kurdish (Latin) (Kurdî (Latin))
  * @author Bangin
  */
 $messages['ku-latn'] = array(
