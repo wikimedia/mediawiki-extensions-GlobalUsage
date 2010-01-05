@@ -43,9 +43,9 @@ class SpecialGlobalUsage extends SpecialPage {
 		global $wgScript, $wgOut;
 
 		$html = Xml::openElement( 'form', array( 'action' => $wgScript ) ) . "\n";
-		$html .= Xml::hidden( 'title', $this->getTitle()->getPrefixedText() ) . "\n";
+		$html .= Xml::hidden( 'title', $this->getPrefixedTitle()->getText() ) . "\n";
 		$formContent = "\t" . Xml::input( 'target', 40, is_null( $this->target ) ? ''
-					: $this->target->getPrefixedText() )
+					: $this->target->getText() )
 			. "\n\t" . Xml::element( 'input', array(
 					'type' => 'submit',
 					'value' => wfMsg( 'globalusage-ok' )
@@ -195,7 +195,7 @@ class SpecialGlobalUsage extends SpecialPage {
 
 		$skin = $wgUser->getSkin();
 
-		$target = $this->target->getPrefixedText();
+		$target = $this->target->getText();
 		$limit = $query->getLimit();
 		$fmtLimit = $wgLang->formatNum( $limit );
 		$offset = $query->getOffsetString();
