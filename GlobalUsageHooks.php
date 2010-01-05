@@ -1,4 +1,10 @@
 <?php
+/**
+ * GlobalUsage hooks for updating globalimagelinks table.
+ * 
+ * UI hooks in SpecialGlobalUsage.
+ */
+
 class GlobalUsageHooks {
 	private static $gu = null;
 

@@ -2,7 +2,6 @@
 /**
  * A helper class to query the globalimagelinks table
  * 
- * Should maybe simply resort to offset/limit query rather 
  */
 class GlobalUsageQuery {
 	private $limit = 50;
@@ -12,7 +11,9 @@ class GlobalUsageQuery {
 	private $result;
 	private $continue;
 
-
+	/**
+	 * @param $target mixed Title or db key, or array of db keys of target(s)
+	 */
 	public function __construct( $target ) {
 		global $wgGlobalUsageDatabase;
 		$this->db = wfGetDB( DB_SLAVE, array(), $wgGlobalUsageDatabase );
@@ -49,7 +50,9 @@ class GlobalUsageQuery {
 		return implode( '|', $this->offset );
 	}
 	/**
-	 *
+	 * Returns the string used for continuation
+	 * 
+	 * @return string
 	 */
 	public function getContinueString() {
 		return "{$this->lastRow->gil_to}|{$this->lastRow->gil_wiki}|{$this->lastRow->gil_page}";
@@ -63,6 +66,9 @@ class GlobalUsageQuery {
 	public function setLimit( $limit ) {
 		$this->limit = min( $limit, 500 );
 	}
+	/**
+	 * Returns the user set limit
+	 */
 	public function getLimit() {
 		return $this->limit;
 	}
@@ -81,8 +87,10 @@ class GlobalUsageQuery {
 	public function execute() {
 		$where = array( 'gil_to' => $this->target );
 		if ( $this->filterLocal )
+			// Don't show local file usage
 			$where[] = 'gil_wiki != ' . $this->db->addQuotes( wfWikiId() );
 
+		// Set the continuation condition
 		$qTo = $this->db->addQuotes( $this->offset[0] );
 		$qWiki = $this->db->addQuotes( $this->offset[1] );
 		$qPage = intval( $this->offset[2] );
@@ -104,6 +112,7 @@ class GlobalUsageQuery {
 				__METHOD__,
 				array( 
 					'ORDER BY' => 'gil_to, gil_wiki, gil_page',
+					// Select an extra row to check whether we have more rows available
 					'LIMIT' => $this->limit + 1,
 				)
 		);
@@ -114,6 +123,7 @@ class GlobalUsageQuery {
 		foreach ( $res as $row ) {
 			$count++;
 			if ( $count > $this->limit ) {
+				// We've reached the extra row that indicates that there are more rows
 				$this->hasMore = true;
 				$this->lastRow = $row;
 				break;
@@ -133,9 +143,28 @@ class GlobalUsageQuery {
 			);
 		}
 	}
+	/**
+	 * Returns the result set. The result is a 4 dimensional array
+	 * (file, wiki, page), whose items are arrays with keys:
+	 *   - image: File name 
+	 *   - id: Page id
+	 *   - namespace: Page namespace text
+	 *   - title: Unprefixed page title
+	 *   - wiki: Wiki id
+	 * 
+	 * @return array Result set
+	 */
 	public function getResult() {
 		return $this->result;
 	}
+	/**
+	 * Returns a 3 dimensional array with the result of the first file. Useful
+	 * if only one image was queried.
+	 * 
+	 * For further information see documentation of getResult()
+	 * 
+	 * @return array Result set
+	 */
 	public function getSingleImageResult() {
 		if ( $this->result )
 			return current( $this->result );

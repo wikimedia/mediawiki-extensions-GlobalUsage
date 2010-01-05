@@ -1,6 +1,7 @@
 <?php
 /**
- * Crappy ui towards globalimagelinks
+ * Special page to show global file usage. Also contains hook functions for
+ * showing usage on an image page.
  */
 
 class SpecialGlobalUsage extends SpecialPage {
@@ -43,16 +44,22 @@ class SpecialGlobalUsage extends SpecialPage {
 		global $wgScript, $wgOut;
 
 		$html = Xml::openElement( 'form', array( 'action' => $wgScript ) ) . "\n";
+		// Name of SpecialPage
 		$html .= Xml::hidden( 'title', $this->getTitle()->getPrefixedText() ) . "\n";
+		// Input box with target prefilled if available
 		$formContent = "\t" . Xml::input( 'target', 40, is_null( $this->target ) ? ''
 					: $this->target->getText() )
+		// Submit button
 			. "\n\t" . Xml::element( 'input', array(
 					'type' => 'submit',
 					'value' => wfMsg( 'globalusage-ok' )
 					) )
+		// Filter local checkbox
 			. "\n\t<p>" . Xml::checkLabel( wfMsg( 'globalusage-filterlocal' ),
 					'filterlocal', 'mw-filterlocal', $this->filterLocal ) . '</p>';
+		
 		if ( !is_null( $this->target ) && wfFindFile( $this->target ) ) {
+			// Show the image if it exists
 			global $wgUser, $wgContLang;
 			$skin = $wgUser->getSkin();
 
@@ -62,6 +69,8 @@ class SpecialGlobalUsage extends SpecialPage {
 					/* $handlerParams */ array(), /* $framed */ false,
 					/* $thumb */ true );
 		}
+		
+		// Wrap the entire form in a nice fieldset
 		$html .= Xml::fieldSet( wfMsg( 'globalusage-text' ), $formContent ) . "\n</form>";
 
 		$wgOut->addHtml( $html );
@@ -96,6 +105,7 @@ class SpecialGlobalUsage extends SpecialPage {
 		$navbar = $this->getNavBar( $query );
 		$targetName = $this->target->getText();
 
+		// Top navbar
 		$wgOut->addHtml( $navbar );
 
 		$wgOut->addHtml( '<div id="mw-globalusage-result">' );
@@ -111,11 +121,11 @@ class SpecialGlobalUsage extends SpecialPage {
 		}
 		$wgOut->addHtml( '</div>' );
 
+		// Bottom navbar
 		$wgOut->addHtml( $navbar );
 	}
 	/**
 	 * Helper to format a specific item
-	 * TODO: Make links
 	 */
 	private static function formatItem( $item ) {
 		if ( !$item['namespace'] )
@@ -152,6 +162,9 @@ class SpecialGlobalUsage extends SpecialPage {
 		return self::$queryCache[$name];
 	} 
 	
+	/**
+	 * Show a global usage section on the image page
+	 */
 	public static function onImagePageAfterImageLinks( $imagePage, &$html ) {
 		$title = $imagePage->getFile()->getTitle();
 		$targetName = $title->getText();
@@ -190,6 +203,12 @@ class SpecialGlobalUsage extends SpecialPage {
 		return true;
 	}
 
+	/**
+	 * Helper function to create the navbar, stolen from wfViewPrevNext
+	 * 
+	 * @param $query GlobalUsageQuery An executed GlobalUsageQuery object
+	 * @return string Navbar HTML
+	 */
 	protected function getNavBar( $query ) {
 		global $wgLang, $wgUser;
 

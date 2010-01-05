@@ -1,4 +1,8 @@
 <?php
+/**
+ * Maintenance script to populate the globalimagelinks table. Needs to be run
+ * on all wikis.
+ */
 $path = '../..';
 
 if ( getenv('MW_INSTALL_PATH') !== false ) {
@@ -27,8 +31,7 @@ class RefreshGlobalImageLinks extends Maintenance {
 		$limit = 500;
 		$maxlag = intval( $this->getOption( 'maxlag', 5 ) );
 
-		do
-		{
+		do {
 			$this->output( "Querying links after (page_id, il_to) = ($lastPageId, $lastIlTo)\n" );
 
 			# Query all pages and any imagelinks associated with that
