@@ -43,7 +43,7 @@ class SpecialGlobalUsage extends SpecialPage {
 		global $wgScript, $wgOut;
 
 		$html = Xml::openElement( 'form', array( 'action' => $wgScript ) ) . "\n";
-		$html .= Xml::hidden( 'title', $this->getPrefixedTitle()->getText() ) . "\n";
+		$html .= Xml::hidden( 'title', $this->getTitle()->getPrefixedText() ) . "\n";
 		$formContent = "\t" . Xml::input( 'target', 40, is_null( $this->target ) ? ''
 					: $this->target->getText() )
 			. "\n\t" . Xml::element( 'input', array(
