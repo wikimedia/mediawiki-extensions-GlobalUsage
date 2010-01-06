@@ -5,11 +5,12 @@
  */
 class GlobalUsageQuery {
 	private $limit = 50;
-	private $offset = 0;
+	private $offset;
 	private $hasMore = false;
 	private $filterLocal = false;
 	private $result;
 	private $continue;
+	private $reversed = false;
 
 	/**
 	 * @param $target mixed Title or db key, or array of db keys of target(s)
@@ -21,16 +22,20 @@ class GlobalUsageQuery {
 			$this->target = $target->getDBKey();
 		else
 			$this->target = $target;
-		$this->offset = array( '', '', '' );
+		$this->offset = array();
 
 	}
 
 	/**
 	 * Set the offset parameter
 	 *
-	 * @param $offset int offset
+	 * @param $offset string offset
+	 * @param $reversed bool True if this is the upper offset
 	 */
-	public function setOffset( $offset ) {
+	public function setOffset( $offset, $reversed = null ) {
+		if ( !is_null( $reversed ) )
+			$this->reversed = $reversed;
+		
 		if ( !is_array( $offset ) )
 			$offset = explode( '|', $offset );
 
@@ -50,12 +55,24 @@ class GlobalUsageQuery {
 		return implode( '|', $this->offset );
 	}
 	/**
+	 * Is the result reversed
+	 * 
+	 * @return bool
+	 */
+	public function isReversed() {
+		return $this->reversed;
+	}
+	/**
 	 * Returns the string used for continuation
 	 * 
 	 * @return string
+	 * 
 	 */
 	public function getContinueString() {
-		return "{$this->lastRow->gil_to}|{$this->lastRow->gil_wiki}|{$this->lastRow->gil_page}";
+		if ( $this->hasMore() )
+			return "{$this->lastRow->gil_to}|{$this->lastRow->gil_wiki}|{$this->lastRow->gil_page}";
+		else
+			return '';
 	}
 
 	/**
@@ -85,21 +102,40 @@ class GlobalUsageQuery {
 	 * Executes the query
 	 */
 	public function execute() {
+		/* Construct a where clause */
+		// Add target image(s)
 		$where = array( 'gil_to' => $this->target );
+		
 		if ( $this->filterLocal )
 			// Don't show local file usage
 			$where[] = 'gil_wiki != ' . $this->db->addQuotes( wfWikiId() );
 
 		// Set the continuation condition
-		$qTo = $this->db->addQuotes( $this->offset[0] );
-		$qWiki = $this->db->addQuotes( $this->offset[1] );
-		$qPage = intval( $this->offset[2] );
+		$order = 'ASC';
+		if ( $this->offset ) {
+			$qTo = $this->db->addQuotes( $this->offset[0] );
+			$qWiki = $this->db->addQuotes( $this->offset[1] );
+			$qPage = intval( $this->offset[2] );
+			
+			// Check which limit we got in order to determine which way to traverse rows
+			if ( $this->reversed ) {
+				// Reversed traversal; do not include offset row
+				$op1 = '<';
+				$op2 = '<';
+				$order = 'DESC';
+			} else {
+				// Normal traversal; include offset row
+				$op1 = '>';
+				$op2 = '>=';
+				$order = 'ASC';
+			}
+			
+			$where[] = "(gil_to $op1 $qTo) OR " .
+				"(gil_to = $qTo AND gil_wiki $op1 $qWiki) OR " .
+				"(gil_to = $qTo AND gil_wiki = $qWiki AND gil_page $op2 $qPage)";
+		}
 
-		$where[] = "(gil_to > $qTo) OR " .
-			"(gil_to = $qTo AND gil_wiki > $qWiki) OR " .
-			"(gil_to = $qTo AND gil_wiki = $qWiki AND gil_page >= $qPage )";
-
-
+		/* Perform select (Duh.) */
 		$res = $this->db->select( 'globalimagelinks',
 				array(
 					'gil_to',
@@ -111,16 +147,26 @@ class GlobalUsageQuery {
 				$where,
 				__METHOD__,
 				array( 
-					'ORDER BY' => 'gil_to, gil_wiki, gil_page',
+					'ORDER BY' => "gil_to $order, gil_wiki $order, gil_page $order",
 					// Select an extra row to check whether we have more rows available
 					'LIMIT' => $this->limit + 1,
 				)
 		);
 
+		/* Process result */
+		// Always return the result in the same order; regardless whether reversed was specified
+		// reversed is really only used to determine from which direction the offset is
+		$rows = array();
+		foreach ( $res as $row )
+			$rows[] = $row;
+		if ( $this->reversed )
+			$rows = array_reverse( $rows );
+		
+		// Build the result array
 		$count = 0;
 		$this->hasMore = false;
 		$this->result = array();
-		foreach ( $res as $row ) {
+		foreach ( $rows as $row ) {
 			$count++;
 			if ( $count > $this->limit ) {
 				// We've reached the extra row that indicates that there are more rows

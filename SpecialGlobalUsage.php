@@ -85,7 +85,10 @@ class SpecialGlobalUsage extends SpecialPage {
 		$query = new GlobalUsageQuery( $this->target );
 
 		// Extract params from $wgRequest
-		$query->setOffset( $wgRequest->getText( 'offset' ) );
+		if ( $wgRequest->getText( 'from' ) )
+			$query->setOffset( $wgRequest->getText( 'from' ) );
+		elseif ( $wgRequest->getText( 'to' ) )
+			$query->setOffset( $wgRequest->getText( 'to' ), true );
 		$query->setLimit( $wgRequest->getInt( 'limit', 50 ) );
 		$query->filterLocal( $this->filterLocal );
 
@@ -217,9 +220,17 @@ class SpecialGlobalUsage extends SpecialPage {
 		$target = $this->target->getText();
 		$limit = $query->getLimit();
 		$fmtLimit = $wgLang->formatNum( $limit );
+	
+		# Find out which strings are for the prev and which for the next links
 		$offset = $query->getOffsetString();
-		if ( $offset == '||' )
-			$offset = '';
+		$continue = $query->getContinueString();
+		if ( $query->isReversed() ) {
+			$from = $offset;
+			$to = $continue;
+		} else {
+			$from = $continue;
+			$to = $offset;
+		}
 
 		# Get prev/next link display text
 		$prev =  wfMsgExt( 'prevn', array('parsemag','escape'), $fmtLimit );
@@ -232,18 +243,18 @@ class SpecialGlobalUsage extends SpecialPage {
 		$title = $this->getTitle();
 
 		# Make 'previous' link
-		if ( $offset ) {
+		if ( $to ) {
 			$attr = array( 'title' => $pTitle, 'class' => 'mw-prevlink' );
-			$q = array( 'limit' => $limit, 'offset' => $offset, 'target' => $target );
+			$q = array( 'limit' => $limit, 'to' => $to, 'target' => $target );
 			$plink = $skin->link( $title, $prev, $attr, $q );
 		} else { 
 			$plink = $prev;
 		}
 
 		# Make 'next' link
-		if ( $query->hasMore() ) {
+		if ( $from ) {
 			$attr = array( 'title' => $nTitle, 'class' => 'mw-nextlink' );
-			$q = array( 'limit' => $limit, 'offset' => $query->getContinueString(), 'target' => $target );
+			$q = array( 'limit' => $limit, 'from' => $from, 'target' => $target );
 			$nlink = $skin->link( $title, $next, $attr, $q );
 		} else {
 			$nlink = $next;
