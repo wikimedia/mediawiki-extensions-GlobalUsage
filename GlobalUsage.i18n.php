@@ -750,8 +750,8 @@ $messages['lb'] = array(
 	'globalusage-ok' => 'Sichen',
 	'globalusage-text' => 'Nom globale Benotze vum Fichier sichen.',
 	'globalusage-no-results' => '[[:$1]] gëtt net op anere Wikie benotzt.',
-	'globalusage-on-wiki' => 'Notzen op $2',
-	'globalusage-of-file' => 'Dës aner Wikien benotzen dëse Fichier:',
+	'globalusage-on-wiki' => 'Benotzt op $2',
+	'globalusage-of-file' => 'Dës aner Wikie benotzen dëse Fichier:',
 	'globalusage-more' => '[[{{#Special:GlobalUsage}}/$1|Méi global Notzunge]] vun dësem Fichier weisen.',
 	'globalusage-filterlocal' => 'Déi lokal Notzung net weisen',
 );
