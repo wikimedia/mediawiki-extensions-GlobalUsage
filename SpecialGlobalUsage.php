@@ -152,7 +152,7 @@ class SpecialGlobalUsage extends SpecialPage {
 		$name = $title->getDBkey();
 		if ( !isset( self::$queryCache[$name] ) ) {
 			$query = new GlobalUsageQuery( $title );
-			$query->filterLocal();
+			//$query->filterLocal();
 			$query->execute();
 			
 			self::$queryCache[$name] = $query;
@@ -169,6 +169,9 @@ class SpecialGlobalUsage extends SpecialPage {
 	 * Show a global usage section on the image page
 	 */
 	public static function onImagePageAfterImageLinks( $imagePage, &$html ) {
+		if ( !self::hasResults( $imagePage ) )
+			return true;
+				
 		$title = $imagePage->getFile()->getTitle();
 		$targetName = $title->getText();
 
@@ -200,10 +203,25 @@ class SpecialGlobalUsage extends SpecialPage {
 	 * Show a link to the global image links in the TOC if there are any results available.
 	 */
 	public static function onImagePageShowTOC( $imagePage, &$toc ) {
-		$query = self::getImagePageQuery( $imagePage->getFile()->getTitle() );
-		if ( $query->getResult() )
+		if ( self::hasResults( $imagePage ) )
 			$toc[] = '<li><a href="#globalusage">' . wfMsgHtml( 'globalusage' ) . '</a></li>';
 		return true;
+	}
+	
+	/**
+	 * Check whether there are results for an image page. Checks whether the 
+	 * file exists and is not local.
+	 * 
+	 * @param $imagePage ImagePage
+	 * @return bool
+	 */
+	protected static function hasResults( $imagePage ) {
+		$file = $imagePage->getFile();
+		if ( !$file->exists() || $file->getRepoName() == 'local' )
+			return false;
+		
+		$query = self::getImagePageQuery( $imagePage->getFile()->getTitle() );
+		return (bool)$query->getResult();
 	}
 
 	/**
