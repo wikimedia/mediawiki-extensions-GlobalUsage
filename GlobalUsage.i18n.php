@@ -632,12 +632,19 @@ $messages['is'] = array(
 
 /** Italian (Italiano)
  * @author Darth Kule
+ * @author Nemo bis
  */
 $messages['it'] = array(
-	'globalusage' => 'Utilizzo globale file',
+	'globalusage' => 'Uso globale file',
+	'globalusage-for' => 'Uso globale di "$1"',
 	'globalusage-desc' => "[[Special:GlobalUsage|Pagina speciale]] per vedere l'utilizzo globale dei file",
 	'globalusage-ok' => 'Ricerca',
-	'globalusage-text' => 'Ricerca utilizzo globale file',
+	'globalusage-text' => "Mostra l'uso globale del file",
+	'globalusage-no-results' => '[[:$1]] non è usato in altri wiki.',
+	'globalusage-on-wiki' => 'Usato nelle seguenti pagine di $2:',
+	'globalusage-of-file' => 'Anche i wiki seguenti usano questo file:',
+	'globalusage-more' => "Mostra [[{{#Special:GlobalUsage}}/$1|ulteriori informazioni sull'uso globale]] di questo file.",
+	'globalusage-filterlocal' => "Non mostrare l'uso locale",
 );
 
 /** Japanese (日本語)
@@ -690,7 +697,7 @@ $messages['km'] = array(
  * @author Kwj2772
  */
 $messages['ko'] = array(
-	'globalusage' => '특정 파일을 사용하고 있는 모든 위키의 문서 목록',
+	'globalusage' => '이 파일을 사용하고 있는 모든 위키의 문서 목록',
 	'globalusage-for' => '"$1" 파일을 사용하고 있는 모든 위키의 문서 목록',
 	'globalusage-desc' => '특정 파일을 사용하고 있는 모든 위키의 문서의 목록을 보여주는 [[Special:GlobalUsage|특수 문서]]를 추가',
 	'globalusage-ok' => '찾기',
