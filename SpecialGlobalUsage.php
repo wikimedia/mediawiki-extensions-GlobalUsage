@@ -167,6 +167,10 @@ class SpecialGlobalUsage extends SpecialPage {
 	
 	/**
 	 * Show a global usage section on the image page
+	 *
+	 * @param object $imagePage The ImagePage
+	 * @param string $html HTML to add to the image page as global usage section
+	 * @return bool
 	 */
 	public static function onImagePageAfterImageLinks( $imagePage, &$html ) {
 		if ( !self::hasResults( $imagePage ) )
@@ -179,9 +183,11 @@ class SpecialGlobalUsage extends SpecialPage {
 
 		$guHtml = '';
 		foreach ( $query->getSingleImageResult() as $wiki => $result ) {
-			$guHtml .= '<li>' . wfMsgExt( 
+			$wikiName = WikiMap::getWikiName( $wiki );
+			$escWikiName = Sanitizer::escapeClass( $wikiName );
+			$guHtml .= "<li class='mw-gu-onwiki-$escWikiName'>" . wfMsgExt( 
 					'globalusage-on-wiki', 'parseinline',
-					$targetName, WikiMap::getWikiName( $wiki ) ) . "\n<ul>";
+					$targetName, $wikiName ) . "\n<ul>";
 			foreach ( $result as $item )
 				$guHtml .= "\t<li>" . self::formatItem( $item ) . "</li>\n";
 			$guHtml .= "</ul></li>\n";
@@ -194,7 +200,6 @@ class SpecialGlobalUsage extends SpecialPage {
 			if ( $query->hasMore() )
 				$html .= wfMsgExt( 'globalusage-more', 'parse', $targetName );
 		}
-
 
 		return true;
 	}
