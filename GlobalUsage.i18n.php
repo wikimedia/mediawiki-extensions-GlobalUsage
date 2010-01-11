@@ -873,9 +873,15 @@ $messages['nl'] = array(
  */
 $messages['nn'] = array(
 	'globalusage' => 'Global filbruk',
+	'globalusage-for' => 'Global bruk for «$1»',
 	'globalusage-desc' => '[[Special:GlobalUsage|Spesialsida]] for å visa bruken av ei fil globalt',
 	'globalusage-ok' => 'Søk',
 	'globalusage-text' => 'Søk global filbruk.',
+	'globalusage-no-results' => '[[:$1]] vert ikkje nytta på andre wikiar.',
+	'globalusage-on-wiki' => 'Bruk på $2',
+	'globalusage-of-file' => 'Fylgjande andre wikiar nyttar denne fila:',
+	'globalusage-more' => 'Sjå [[{{#Special:GlobalUsage}}/$1|meir global bruk]] av denne fila.',
+	'globalusage-filterlocal' => 'Ikkje vis lokal bruk',
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
