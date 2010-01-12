@@ -70,7 +70,7 @@ $wgHooks['UploadComplete'][] = 'GlobalUsageHooks::onUploadComplete';
 $wgHooks['TitleMoveComplete'][] = 'GlobalUsageHooks::onTitleMoveComplete';
 $wgHooks['ImagePageAfterImageLinks'][] = 'SpecialGlobalUsage::onImagePageAfterImageLinks';
 $wgHooks['ImagePageShowTOC'][] = 'SpecialGlobalUsage::onImagePageShowTOC';
-
+$wgHooks['ParserTestTables'][] = 'GlobalUsageHooks::onParserTestTables';
 
 // If set to false, the local database contains the globalimagelinks table
 // Else set to something understandable to LBFactory

@@ -99,5 +99,13 @@ class GlobalUsageHooks {
 
 		return self::$gu;
 	}
+	
+	/** 
+	 * Hook to make sure globalimagelinks table gets duplicated for parsertests
+	 */
+	public static function onParserTestTables ( &$tables ) {
+		$tables[] = 'globalimagelinks';
+		return true;
+	}
 
 }
