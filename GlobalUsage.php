@@ -65,6 +65,7 @@ $wgAPIPropModules['globalusage'] = 'ApiQueryGlobalUsage';
  */
 $wgHooks['LinksUpdateComplete'][] = 'GlobalUsageHooks::onLinksUpdateComplete';
 $wgHooks['ArticleDeleteComplete'][] = 'GlobalUsageHooks::onArticleDeleteComplete';
+$wgHooks['FileDeleteComplete'][] = 'GlobalUsageHooks::onFileDeleteComplete';
 $wgHooks['FileUndeleteComplete'][] = 'GlobalUsageHooks::onFileUndeleteComplete';
 $wgHooks['UploadComplete'][] = 'GlobalUsageHooks::onUploadComplete';
 $wgHooks['TitleMoveComplete'][] = 'GlobalUsageHooks::onTitleMoveComplete';

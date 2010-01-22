@@ -55,14 +55,22 @@ class GlobalUsageHooks {
 	/**
 	 * Hook to ArticleDeleteComplete
 	 * Deletes entries from usage table.
-	 * In case of an image, copies the local link table to the global.
 	 */
 	public static function onArticleDeleteComplete( $article, $user, $reason, $id ) {
 		$title = $article->getTitle();
 		$gu = self::getGlobalUsage();
 		$gu->deleteLinksFromPage( $id );
-		if ( $title->getNamespace() == NS_FILE ) {
-			$gu->copyLocalImagelinks( $title );
+
+		return true;
+	}
+	/**
+	 * Hook to FileDeleteComplete
+	 * Copies the local link table to the global.
+	 */
+	public static function onFileDeleteComplete( $file, $oldimage, $article, $wgUser, $reason ) {
+		if ( !$oldimage ) {
+			$gu = self::getGlobalUsage();
+			$gu->copyLocalImagelinks( $file->getTitle() );
 		}
 		return true;
 	}
