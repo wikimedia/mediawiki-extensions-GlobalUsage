@@ -32,23 +32,23 @@ $messages['en'] = array(
  * @author Vriullop
  */
 $messages['qqq'] = array(
-	'globalusage-for' => 'Tittel på [[Special:GlobalUsage]]
-* $1 - navn på den ettersøkte filen, med navnerom',
+	'globalusage-for' => 'Title of [[Special:GlobalUsage]]
+* $1 - name of the searched file, with namespace',
 	'globalusage-desc' => 'Short description of this extension, shown on [[Special:Version]]. Do not translate or change links.',
 	'globalusage-ok' => '{{Identical|Search}}
 Button on [[Special:GlobalUsage]]',
 	'globalusage-text' => 'Label on [[Special:GlobalUsage]]',
-	'globalusage-no-results' => 'Brukt for tomme resultat på [[Special:GlobalUsage]]
-* $1 - navn på filen (med navnerom)',
-	'globalusage-on-wiki' => 'Vist i listen over global bruk. Eksempel: [[Commons:Special:GlobalUsage/Example.jpg]] og [[Commons:File:Example.jpg]]
+	'globalusage-no-results' => 'Used for empty result on [[Special:GlobalUsage]]
+* $1 - name of the file (with namespace)',
+	'globalusage-on-wiki' => 'Shown in the list of global usages. Example: [[Commons:Special:GlobalUsage/Example.jpg]] and [[Commons:File:Example.jpg]]
 
-* $1 filnavnet, men ikke brukt i denne meldingen
-* $2 prosjektnavnet',
-	'globalusage-of-file' => 'Brukt på en bildeside.
-Antallet følgende wikier er ukjent. Ved tomt resultat vises ingen melding.',
-	'globalusage-more' => 'Brukt på en bildeside når flere globale bruksresultat er tilgjengelige. Eksempel: [[Commons:File:Example.jpg]]
-* $1 - navn på filen (uten navnerom)',
-	'globalusage-filterlocal' => 'Filtervalg for [[Special:GlobalUsage]]',
+* $1 the file name, but unused in this message
+* $2 the project name',
+	'globalusage-of-file' => 'Used on a image page.
+The number of following wikis is unknown. By a empty result, no message is shown.',
+	'globalusage-more' => 'Used on an image page, when more global usage results are available. Example: [[Commons:File:Example.jpg]]
+* $1 - name of the file (without namespace)',
+	'globalusage-filterlocal' => 'Filteroption for [[Special:GlobalUsage]]',
 );
 
 /** Karelian (Karjala)
