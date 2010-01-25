@@ -798,7 +798,7 @@ $messages['mk'] = array(
 	'globalusage-no-results' => '[[:$1]] не се користи во други викија..',
 	'globalusage-on-wiki' => 'Искористеност на $2',
 	'globalusage-of-file' => 'Оваа податотека ја користат и следниве викија:',
-	'globalusage-more' => 'Преглед на [[{{#Special:GlobalUsage}}/$1|уште глобално користење]] на оваа податотека.',
+	'globalusage-more' => 'Погледајте [[{{#Special:GlobalUsage}}/$1|повеќе глобални употреби]] на оваа податотека.',
 	'globalusage-filterlocal' => 'Не прикажувај локално користење',
 );
 
