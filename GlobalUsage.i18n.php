@@ -345,6 +345,7 @@ $messages['eo'] = array(
 /** Spanish (Español)
  * @author Crazymadlover
  * @author Jatrobat
+ * @author Platonides
  * @author Translationista
  */
 $messages['es'] = array(
@@ -357,7 +358,7 @@ $messages['es'] = array(
 	'globalusage-on-wiki' => 'Uso en $2',
 	'globalusage-of-file' => 'Los siguientes otros wiki usan este archivo:',
 	'globalusage-more' => 'Ver [[{{#Special:GlobalUsage}}/$1|más uso global]] de este archivo.',
-	'globalusage-filterlocal' => 'Páginas externas',
+	'globalusage-filterlocal' => 'No mostrar los usos en esta wiki',
 );
 
 /** Estonian (Eesti)
