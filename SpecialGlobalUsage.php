@@ -41,11 +41,14 @@ class SpecialGlobalUsage extends SpecialPage {
 	 * Shows the search form
 	 */
 	private function showForm() {
-		global $wgScript, $wgOut;
+		global $wgScript, $wgOut, $wgRequest;
 
+		/* Build form */
 		$html = Xml::openElement( 'form', array( 'action' => $wgScript ) ) . "\n";
 		// Name of SpecialPage
 		$html .= Xml::hidden( 'title', $this->getTitle()->getPrefixedText() ) . "\n";
+		// Limit
+		$html .= Xml::hidden( 'limit', $wgRequest->getInt( 'limit', 50 ) );
 		// Input box with target prefilled if available
 		$formContent = "\t" . Xml::input( 'target', 40, is_null( $this->target ) ? ''
 					: $this->target->getText() )
@@ -136,8 +139,10 @@ class SpecialGlobalUsage extends SpecialPage {
 		else
 			$page = "{$item['namespace']}:{$item['title']}";
 
-		return WikiMap::makeForeignLink( $item['wiki'], $page,
+		$link = WikiMap::makeForeignLink( $item['wiki'], $page,
 				str_replace( '_', ' ', $page ) );
+		// Return only the title if no link can be constructed
+		return $link === false ? $page : $link;
 	}
 
 
@@ -269,6 +274,8 @@ class SpecialGlobalUsage extends SpecialPage {
 		if ( $to ) {
 			$attr = array( 'title' => $pTitle, 'class' => 'mw-prevlink' );
 			$q = array( 'limit' => $limit, 'to' => $to, 'target' => $target );
+			if ( $this->filterLocal )
+				$q['filterlocal'] = '1';
 			$plink = $skin->link( $title, $prev, $attr, $q );
 		} else { 
 			$plink = $prev;
@@ -278,6 +285,8 @@ class SpecialGlobalUsage extends SpecialPage {
 		if ( $from ) {
 			$attr = array( 'title' => $nTitle, 'class' => 'mw-nextlink' );
 			$q = array( 'limit' => $limit, 'from' => $from, 'target' => $target );
+			if ( $this->filterLocal )
+				$q['filterlocal'] = '1';
 			$nlink = $skin->link( $title, $next, $attr, $q );
 		} else {
 			$nlink = $next;
@@ -289,6 +298,8 @@ class SpecialGlobalUsage extends SpecialPage {
 			$fmtLimit = $wgLang->formatNum( $num );
 			
 			$q = array( 'offset' => $offset, 'limit' => $num, 'target' => $target );
+			if ( $this->filterLocal )
+				$q['filterlocal'] = '1';
 			$lTitle = wfMsgExt( 'shown-title', array( 'parsemag', 'escape' ), $num );			
 			$attr = array( 'title' => $lTitle, 'class' => 'mw-numlink' );
 
