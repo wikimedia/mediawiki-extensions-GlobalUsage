@@ -71,6 +71,7 @@ $messages['niu'] = array(
  */
 $messages['af'] = array(
 	'globalusage' => 'Globale lêergebruik',
+	'globalusage-for' => 'Globale gebruik vir "$1"',
 	'globalusage-ok' => 'Soek',
 	'globalusage-no-results' => "[[:$1]] word nie in ander wiki's gebruik nie.",
 	'globalusage-on-wiki' => 'Gebruik in $2',
