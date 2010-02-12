@@ -443,6 +443,13 @@ $messages['frp'] = array(
 	'globalusage-filterlocal' => 'Pas montrar l’usâjo local',
 );
 
+/** Friulian (Furlan)
+ * @author Klenje
+ */
+$messages['fur'] = array(
+	'globalusage-ok' => 'Cîr',
+);
+
 /** Western Frisian (Frysk)
  * @author Snakesteuben
  */
