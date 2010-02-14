@@ -448,6 +448,8 @@ $messages['frp'] = array(
  */
 $messages['fur'] = array(
 	'globalusage-ok' => 'Cîr',
+	'globalusage-on-wiki' => 'Ûs in $2',
+	'globalusage-of-file' => 'Chestis altris vichis a doprin chest file:',
 );
 
 /** Western Frisian (Frysk)
