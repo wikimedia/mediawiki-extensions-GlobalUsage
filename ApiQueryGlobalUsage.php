@@ -122,6 +122,12 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 	public function getDescription() {
 		return 'Returns global image usage for a certain image';
 	}
+	
+	public function getParamDescription() {
+		return array_merge( parent::getPossibleErrors(), array(
+			array ( 'code' => 'badcontinue', 'info' => 'Invalid continue parameter' ),
+		) );
+	}
 
 	protected function getExamples() {
 		return array (
