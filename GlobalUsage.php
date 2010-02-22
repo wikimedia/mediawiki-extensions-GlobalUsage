@@ -40,7 +40,6 @@ $wgExtensionCredits['specialpage'][] = array(
 	'path' => __FILE__,
 	'name' => 'Global Usage',
 	'author' => 'Bryan Tong Minh',
-	'description' => 'Special page to view global file usage',
 	'descriptionmsg' => 'globalusage-desc',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:GlobalUsage',
 	'version' => '2.0',
