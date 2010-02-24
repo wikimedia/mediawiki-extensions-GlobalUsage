@@ -116,4 +116,19 @@ class GlobalUsageHooks {
 		return true;
 	}
 
+	/**
+	 * Hook to apply schema changes
+	 */
+	public static function onLoadExtensionSchemaUpdates() {
+		global $wgExtNewTables, $wgExtNewIndexes, $wgDBtype;
+		$dir = dirname( __FILE__ );
+		if ( $wgDBtype == 'mysql' || $wgDBtype == 'sqlite' ) {
+			$wgExtNewTables[] = array( 'globalimagelinks', "$dir/GlobalUsage.sql" );
+			$wgExtNewIndexes[] = array( 'globalimagelinks', 'globalimagelinks_wiki_nsid_title', "$dir/patches/patch-globalimagelinks_wiki_nsid_title.sql" );
+		} else if ( $wgDBtype == 'postgresql' ) {
+			$wgExtNewTables[] = array( 'globalimagelinks', "$dir/GlobalUsage.pg.sql" );
+			$wgExtNewIndexes[] = array( 'globalimagelinks', 'globalimagelinks_wiki_nsid_title', "$dir/patches/patch-globalimagelinks_wiki_nsid_title.pg.sql" );
+		}
+		return true;
+	}
 }
