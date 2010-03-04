@@ -763,15 +763,15 @@ $messages['ku-latn'] = array(
  */
 $messages['lb'] = array(
 	'globalusage' => 'Globaalt Benotze vum Fichier',
-	'globalusage-for' => 'Global Notzung fir "$1"',
+	'globalusage-for' => 'Globaalt Benotze fir "$1"',
 	'globalusage-desc' => "[[Special:GlobalUsage|Spezialsäit]] fir d'globaalt Benotze vun engem Fichier ze gesinn",
 	'globalusage-ok' => 'Sichen',
 	'globalusage-text' => 'Nom globale Benotze vum Fichier sichen.',
 	'globalusage-no-results' => '[[:$1]] gëtt net op anere Wikie benotzt.',
 	'globalusage-on-wiki' => 'Benotzt op $2',
 	'globalusage-of-file' => 'Dës aner Wikie benotzen dëse Fichier:',
-	'globalusage-more' => '[[{{#Special:GlobalUsage}}/$1|Méi global Notzunge]] vun dësem Fichier weisen.',
-	'globalusage-filterlocal' => 'Déi lokal Notzung net weisen',
+	'globalusage-more' => '[[{{#Special:GlobalUsage}}/$1|Méi global Benotzunge]] vun dësem Fichier weisen.',
+	'globalusage-filterlocal' => 'Déi lokal Benotzung net weisen',
 );
 
 /** Lingua Franca Nova (Lingua Franca Nova)
