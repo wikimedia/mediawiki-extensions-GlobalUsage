@@ -314,6 +314,7 @@ $messages['dsb'] = array(
 
 /** Greek (Ελληνικά)
  * @author Crazymadlover
+ * @author Lou
  * @author Omnipaedista
  * @author ZaDiak
  * @author Απεργός
@@ -325,6 +326,7 @@ $messages['el'] = array(
 	'globalusage-text' => 'Αναζήτηση καθολικής χρήσης αρχείου',
 	'globalusage-no-results' => 'Το αρχείο [[:$1]] δεν χρησιμοποιείται σε άλλα wiki',
 	'globalusage-on-wiki' => 'Χρήση σε $2',
+	'globalusage-of-file' => 'Τα άλλα wikis που ακολουθούν χρησιμοποιούν αυτό το αρχείο:',
 );
 
 /** Esperanto (Esperanto)
