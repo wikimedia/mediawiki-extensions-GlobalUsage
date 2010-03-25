@@ -1109,6 +1109,22 @@ $messages['sk'] = array(
 	'globalusage-filterlocal' => 'Nezobrazovať lokálne použitie',
 );
 
+/** Slovenian (Slovenščina)
+ * @author Dbc334
+ */
+$messages['sl'] = array(
+	'globalusage' => 'Globalna uporaba datoteke',
+	'globalusage-for' => 'Globalna uporaba za »$1«',
+	'globalusage-desc' => '[[Special:GlobalUsage|Posebna stran]] za ogled globalne uporabe datoteke',
+	'globalusage-ok' => 'Iskanje',
+	'globalusage-text' => 'Iskanje globalne uporabe datoteke',
+	'globalusage-no-results' => '[[:$1]] se ne uporablja na drugih wikijih.',
+	'globalusage-on-wiki' => 'Uporaba na $2',
+	'globalusage-of-file' => 'Sledeči drugi wikiji uporabljajo to datoteko:',
+	'globalusage-more' => 'Oglej si [[{{#Special:GlobalUsage}}/$1|več globalne uporabe]] te datoteke.',
+	'globalusage-filterlocal' => 'Ne prikaži lokalne uporabe',
+);
+
 /** Lower Silesian (Schläsch)
  * @author Jonny84
  * @author Schläsinger
