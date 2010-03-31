@@ -200,10 +200,12 @@ class SpecialGlobalUsage extends SpecialPage {
 
 		if ( $guHtml ) {
 			$html .= '<h2 id="globalusage">' . wfMsgHtml( 'globalusage' ) . "</h2>\n"
+				. '<div id="mw-imagepage-section-globalusage">'
 				. wfMsgExt( 'globalusage-of-file', 'parse' )
 				. "<ul>\n" . $guHtml . "</ul>\n";
 			if ( $query->hasMore() )
 				$html .= wfMsgExt( 'globalusage-more', 'parse', $targetName );
+			$html .= '</div>';
 		}
 
 		return true;
