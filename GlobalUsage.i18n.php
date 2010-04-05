@@ -562,6 +562,22 @@ $messages['hil'] = array(
 	'globalusage-ok' => 'Pangita-a',
 );
 
+/** Croatian (Hrvatski)
+ * @author Ex13
+ */
+$messages['hr'] = array(
+	'globalusage' => 'Globalna uporaba datoteke',
+	'globalusage-for' => 'Globalna uporaba za "$1"',
+	'globalusage-desc' => '[[Special:GlobalUsage|Posebna stranica]] za pregled globalne uporabe datoteke',
+	'globalusage-ok' => 'Traži',
+	'globalusage-text' => 'Pretraga globalne uprabe datoteke.',
+	'globalusage-no-results' => '[[:$1]] se ne rabi na drugim wikijima.',
+	'globalusage-on-wiki' => 'Uporaba na $2',
+	'globalusage-of-file' => 'Sljedeći wikiji rabe ovu datoteku:',
+	'globalusage-more' => 'Pogledajte [[{{#Special:GlobalUsage}}/$1|sve globalne uporabe]] ove datoteke.',
+	'globalusage-filterlocal' => 'Ne prikazuj lokalnu uporabu',
+);
+
 /** Upper Sorbian (Hornjoserbsce)
  * @author Michawiki
  */
