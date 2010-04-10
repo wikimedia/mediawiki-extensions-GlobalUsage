@@ -228,9 +228,22 @@ class SpecialGlobalUsage extends SpecialPage {
 	 * @return bool
 	 */
 	protected static function hasResults( $imagePage ) {
+		# Don't display links if the target file does not exist
 		$file = $imagePage->getFile();
-		if ( !$file->exists() || $file->getRepoName() == 'local' )
+		if ( !$file->exists() ) {
 			return false;
+		}
+		
+		# Don't show global usage if the file is local.
+		# Do show it however if the current repo is the shared repo. The way 
+		# we detect this is a bit hacky and less than ideal. See bug 23136 for
+		# a discussion.
+		global $wgGlobalUsageDatabase;
+		$dbr = wfGetDB( DB_SLAVE );
+		if ( $file->getRepoName() == 'local' 
+				&& $dbr->getDBname() != $wgGlobalUsageDatabase ) {
+			return false;
+		}
 		
 		$query = self::getImagePageQuery( $imagePage->getFile()->getTitle() );
 		return (bool)$query->getResult();
