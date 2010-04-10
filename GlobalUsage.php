@@ -1,6 +1,6 @@
 <?php
 /*
- Copyright (c) 2008 - 2009 Bryan Tong Minh
+ Copyright (c) 2008 - 2010 Bryan Tong Minh
 
  Permission is hereby granted, free of charge, to any person
  obtaining a copy of this software and associated documentation
@@ -48,6 +48,7 @@ $wgExtensionCredits['specialpage'][] = array(
 $wgExtensionMessagesFiles['GlobalUsage'] = $dir . 'GlobalUsage.i18n.php';
 $wgAutoloadClasses['GlobalUsage'] = $dir . 'GlobalUsage_body.php';
 $wgAutoloadClasses['GlobalUsageHooks'] = $dir . 'GlobalUsageHooks.php';
+$wgAutoloadClasses['GlobalUsageImagePageHooks'] = $dir . 'GlobalUsageImagePageHooks.php';
 $wgAutoloadClasses['SpecialGlobalUsage'] = $dir . 'SpecialGlobalUsage.php';
 $wgAutoloadClasses['GlobalUsageQuery'] = $dir . 'GlobalUsageQuery.php';
 $wgAutoloadClasses['ApiQueryGlobalUsage'] = $dir . 'ApiQueryGlobalUsage.php';
@@ -60,7 +61,7 @@ $wgAPIPropModules['globalusage'] = 'ApiQueryGlobalUsage';
  * - Local LinksUpdate
  * - Local article deletion (remove from table)
  * - Local article move (update page title)
- * - Local file upload/deletion/move (toggle is_local flag)
+ * - Local file upload/deletion/move
  */
 $wgHooks['LinksUpdateComplete'][] = 'GlobalUsageHooks::onLinksUpdateComplete';
 $wgHooks['ArticleDeleteComplete'][] = 'GlobalUsageHooks::onArticleDeleteComplete';
@@ -68,8 +69,10 @@ $wgHooks['FileDeleteComplete'][] = 'GlobalUsageHooks::onFileDeleteComplete';
 $wgHooks['FileUndeleteComplete'][] = 'GlobalUsageHooks::onFileUndeleteComplete';
 $wgHooks['UploadComplete'][] = 'GlobalUsageHooks::onUploadComplete';
 $wgHooks['TitleMoveComplete'][] = 'GlobalUsageHooks::onTitleMoveComplete';
-$wgHooks['ImagePageAfterImageLinks'][] = 'SpecialGlobalUsage::onImagePageAfterImageLinks';
-$wgHooks['ImagePageShowTOC'][] = 'SpecialGlobalUsage::onImagePageShowTOC';
+/* Hooks for ImagePage */
+$wgHooks['ImagePageAfterImageLinks'][] = 'GlobalUsageImagePageHooks::onImagePageAfterImageLinks';
+$wgHooks['ImagePageShowTOC'][] = 'GlobalUsageImagePageHooks::onImagePageShowTOC';
+/* Other hooks */
 $wgHooks['ParserTestTables'][] = 'GlobalUsageHooks::onParserTestTables';
 $wgHooks['LoadExtensionSchemaUpdates'][] = 'GlobalUsageHooks::onLoadExtensionSchemaUpdates';
 
