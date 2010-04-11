@@ -704,10 +704,19 @@ $messages['jv'] = array(
 
 /** Georgian (ქართული)
  * @author BRUTE
+ * @author გიორგიმელა
  */
 $messages['ka'] = array(
 	'globalusage' => 'ფაილის გლობალური გამოყენება',
+	'globalusage-for' => 'გლობალური გამოყენება "$1"-თვის',
+	'globalusage-desc' => '[[Special:GlobalUsage|სპეციალური გვერდი]] ფაილის გლობალური გამოყენების სანახავად',
 	'globalusage-ok' => 'ძიება',
+	'globalusage-text' => 'მოიძიეთ ფაილის გლობალური გამოყენება',
+	'globalusage-no-results' => '[[:$1]] არ გამოიყენება სხვა ვიკიპედიებში.',
+	'globalusage-on-wiki' => 'ფაილ [[:File:$1|$1]] გამოყენება $2',
+	'globalusage-of-file' => 'ეს ფაილი გამოიყენება შემდეგ ვიკებში:',
+	'globalusage-more' => 'იხილეთღ {{#Special:GlobalUsage}}/$1|ფაილის გლობალური გამოყენება]].',
+	'globalusage-filterlocal' => 'არ აჩვენოთ ლოკალური გამოყენება',
 );
 
 /** Khmer (ភាសាខ្មែរ)
