@@ -24,7 +24,7 @@ class GlobalUsageImagePageHooks {
 		}
 		
 		return self::$queryCache[$name];
-	} 
+	}
 	
 	/**
 	 * Show a global usage section on the image page
@@ -46,7 +46,7 @@ class GlobalUsageImagePageHooks {
 		foreach ( $query->getSingleImageResult() as $wiki => $result ) {
 			$wikiName = WikiMap::getWikiName( $wiki );
 			$escWikiName = Sanitizer::escapeClass( $wikiName );
-			$guHtml .= "<li class='mw-gu-onwiki-$escWikiName'>" . wfMsgExt( 
+			$guHtml .= "<li class='mw-gu-onwiki-$escWikiName'>" . wfMsgExt(
 					'globalusage-on-wiki', 'parseinline',
 					$targetName, $wikiName ) . "\n<ul>";
 			foreach ( $result as $item )
@@ -96,7 +96,7 @@ class GlobalUsageImagePageHooks {
 		# a discussion.
 		global $wgGlobalUsageDatabase;
 		$dbr = wfGetDB( DB_SLAVE );
-		if ( $file->getRepoName() == 'local' 
+		if ( $file->getRepoName() == 'local'
 				&& $dbr->getDBname() != $wgGlobalUsageDatabase ) {
 			return false;
 		}

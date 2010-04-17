@@ -39,14 +39,14 @@ class GlobalUsage {
 	 * Get all global images from a certain page
 	 */
 	public function getLinksFromPage( $id ) {
-		$res = $this->db->select( 
-				'globalimagelinks', 
-				'gil_to', 
+		$res = $this->db->select(
+				'globalimagelinks',
+				'gil_to',
 				array(
 					'gil_wiki' => $this->interwiki,
 					'gil_page' => $id,
 				),
-				__METHOD__ 
+				__METHOD__
 		);
 		
 		$images = array();

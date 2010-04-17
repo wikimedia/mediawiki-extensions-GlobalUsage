@@ -22,7 +22,7 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
-if (!defined('MEDIAWIKI')) {
+if ( !defined( 'MEDIAWIKI' ) ) {
 	// Eclipse helper - will be ignored in production
 	require_once ( "ApiQueryBase.php" );
 }
@@ -90,7 +90,7 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 		$result = $this->getResult();
 		$pageIds = $this->getPageSet()->getAllTitlesByNamespace();
 		foreach ( $pageIds[NS_FILE] as $id ) {
-			$result->setIndexedTagName_internal( 
+			$result->setIndexedTagName_internal(
 					array( 'query', 'pages', $id, 'globalusage' ),
 					'gu'
 			);

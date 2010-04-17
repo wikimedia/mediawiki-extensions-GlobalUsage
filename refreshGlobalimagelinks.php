@@ -5,11 +5,11 @@
  */
 $path = '../..';
 
-if ( getenv('MW_INSTALL_PATH') !== false ) {
-	$path = getenv('MW_INSTALL_PATH');
+if ( getenv( 'MW_INSTALL_PATH' ) !== false ) {
+	$path = getenv( 'MW_INSTALL_PATH' );
 }
 
-require_once( $path.'/maintenance/Maintenance.php' );
+require_once( $path . '/maintenance/Maintenance.php' );
 
 class RefreshGlobalImageLinks extends Maintenance {
 	public function __construct() {
@@ -36,20 +36,20 @@ class RefreshGlobalImageLinks extends Maintenance {
 
 			# Query all pages and any imagelinks associated with that
 			$quotedLastIlTo = $dbr->addQuotes( $lastIlTo );
-			$res = $dbr->select( 
+			$res = $dbr->select(
 				array( 'page', 'imagelinks', 'image' ),
-				array( 
+				array(
 					'page_id', 'page_namespace', 'page_title',
-					'il_to', 'img_name' 
+					'il_to', 'img_name'
 				),
 				"(page_id = $lastPageId AND il_to > {$quotedLastIlTo})" .
 						" OR page_id > $lastPageId",
 				__METHOD__,
-				array( 
-					'ORDER BY' => $dbr->implicitOrderBy() ? 'page_id' : 'page_id, il_to', 
-					'LIMIT' => $limit 
+				array(
+					'ORDER BY' => $dbr->implicitOrderBy() ? 'page_id' : 'page_id, il_to',
+					'LIMIT' => $limit
 				),
-				array( 
+				array(
 					# LEFT JOIN imagelinks since we need to delete usage
 					# from all images, even if they don't have images anymore
 					'imagelinks' => array( 'LEFT JOIN', 'page_id = il_from' ),

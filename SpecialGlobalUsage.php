@@ -9,7 +9,7 @@ class SpecialGlobalUsage extends SpecialPage {
 		parent::__construct( 'GlobalUsage', 'globalusage' );
 
 		wfLoadExtensionMessages( 'globalusage' );
-	} 
+	}
 
 	/**
 	 * Entry point
@@ -172,11 +172,11 @@ class SpecialGlobalUsage extends SpecialPage {
 		}
 
 		# Get prev/next link display text
-		$prev =  wfMsgExt( 'prevn', array('parsemag','escape'), $fmtLimit );
-		$next =  wfMsgExt( 'nextn', array('parsemag','escape'), $fmtLimit );
+		$prev =  wfMsgExt( 'prevn', array( 'parsemag', 'escape' ), $fmtLimit );
+		$next =  wfMsgExt( 'nextn', array( 'parsemag', 'escape' ), $fmtLimit );
 		# Get prev/next link title text
-		$pTitle = wfMsgExt( 'prevn-title', array('parsemag','escape'), $fmtLimit );
-		$nTitle = wfMsgExt( 'nextn-title', array('parsemag','escape'), $fmtLimit );
+		$pTitle = wfMsgExt( 'prevn-title', array( 'parsemag', 'escape' ), $fmtLimit );
+		$nTitle = wfMsgExt( 'nextn-title', array( 'parsemag', 'escape' ), $fmtLimit );
 
 		# Fetch the title object
 		$title = $this->getTitle();
@@ -188,7 +188,7 @@ class SpecialGlobalUsage extends SpecialPage {
 			if ( $this->filterLocal )
 				$q['filterlocal'] = '1';
 			$plink = $skin->link( $title, $prev, $attr, $q );
-		} else { 
+		} else {
 			$plink = $prev;
 		}
 
@@ -211,10 +211,10 @@ class SpecialGlobalUsage extends SpecialPage {
 			$q = array( 'offset' => $offset, 'limit' => $num, 'target' => $target );
 			if ( $this->filterLocal )
 				$q['filterlocal'] = '1';
-			$lTitle = wfMsgExt( 'shown-title', array( 'parsemag', 'escape' ), $num );			
+			$lTitle = wfMsgExt( 'shown-title', array( 'parsemag', 'escape' ), $num );
 			$attr = array( 'title' => $lTitle, 'class' => 'mw-numlink' );
 
-			$numLinks[] = $skin->link( $title, $fmtLimit, $attr, $q ); 
+			$numLinks[] = $skin->link( $title, $fmtLimit, $attr, $q );
 		}
 		$nums = $wgLang->pipeList( $numLinks );
 

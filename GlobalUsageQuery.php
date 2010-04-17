@@ -142,11 +142,11 @@ class GlobalUsageQuery {
 					'gil_wiki',
 					'gil_page',
 					'gil_page_namespace',
-					'gil_page_title' 
+					'gil_page_title'
 				),
 				$where,
 				__METHOD__,
-				array( 
+				array(
 					'ORDER BY' => "gil_to $order, gil_wiki $order, gil_page $order",
 					// Select an extra row to check whether we have more rows available
 					'LIMIT' => $this->limit + 1,
