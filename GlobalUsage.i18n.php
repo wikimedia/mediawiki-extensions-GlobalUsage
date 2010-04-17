@@ -828,11 +828,11 @@ $messages['mhr'] = array(
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
-	'globalusage' => 'Глобална употреба на податотеки',
+	'globalusage' => 'Глобална употреба на податотеката',
 	'globalusage-for' => 'Глобална употреба на „$1“',
 	'globalusage-desc' => '[[Special:GlobalUsage|Специјална страница]] за преглед на употребата на глобални податотеки',
 	'globalusage-ok' => 'Пребарај',
-	'globalusage-text' => 'Пребарување на глобална употреба на податотеки.',
+	'globalusage-text' => 'Пребарување на глобалната употреба на податотека',
 	'globalusage-no-results' => '[[:$1]] не се користи во други викија..',
 	'globalusage-on-wiki' => 'Искористеност на $2',
 	'globalusage-of-file' => 'Оваа податотека ја користат и следниве викија:',
