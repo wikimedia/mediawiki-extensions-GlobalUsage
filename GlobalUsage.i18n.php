@@ -731,6 +731,13 @@ $messages['km'] = array(
 	'globalusage-text' => 'ស្វែងរកបម្រើបម្រាស់ឯកសារជាសាកល។',
 );
 
+/** Kannada (ಕನ್ನಡ)
+ * @author Nayvik
+ */
+$messages['kn'] = array(
+	'globalusage-ok' => 'ಹುಡುಕು',
+);
+
 /** Korean (한국어)
  * @author Kwj2772
  */
