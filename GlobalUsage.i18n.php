@@ -768,7 +768,7 @@ $messages['krj'] = array(
 	'globalusage-ok' => 'Sagap',
 );
 
-/** Ripoarisch (Ripoarisch)
+/** Colognian (Ripoarisch)
  * @author Purodha
  */
 $messages['ksh'] = array(
