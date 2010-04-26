@@ -570,7 +570,7 @@ $messages['hr'] = array(
 	'globalusage-for' => 'Globalna uporaba za "$1"',
 	'globalusage-desc' => '[[Special:GlobalUsage|Posebna stranica]] za pregled globalne uporabe datoteke',
 	'globalusage-ok' => 'Traži',
-	'globalusage-text' => 'Pretraga globalne uprabe datoteke.',
+	'globalusage-text' => 'Pretraga globalne uporabe datoteke',
 	'globalusage-no-results' => '[[:$1]] se ne rabi na drugim wikijima.',
 	'globalusage-on-wiki' => 'Uporaba na $2',
 	'globalusage-of-file' => 'Sljedeći wikiji rabe ovu datoteku:',
@@ -713,9 +713,9 @@ $messages['ka'] = array(
 	'globalusage-ok' => 'ძიება',
 	'globalusage-text' => 'მოიძიეთ ფაილის გლობალური გამოყენება',
 	'globalusage-no-results' => '[[:$1]] არ გამოიყენება სხვა ვიკიპედიებში.',
-	'globalusage-on-wiki' => 'ფაილ [[:File:$1|$1]] გამოყენება $2',
+	'globalusage-on-wiki' => 'ფაილ [[:File:$1|$1]]-ის გამოყენება $2-ში',
 	'globalusage-of-file' => 'ეს ფაილი გამოიყენება შემდეგ ვიკებში:',
-	'globalusage-more' => 'იხილეთღ {{#Special:GlobalUsage}}/$1|ფაილის გლობალური გამოყენება]].',
+	'globalusage-more' => 'იხილეთღ [[{{#Special:GlobalUsage}}/$1|ფაილის გლობალური გამოყენება]].',
 	'globalusage-filterlocal' => 'არ აჩვენოთ ლოკალური გამოყენება',
 );
 
