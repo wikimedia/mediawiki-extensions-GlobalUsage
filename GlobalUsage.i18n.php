@@ -754,6 +754,13 @@ $messages['ko'] = array(
 	'globalusage-filterlocal' => '이 위키에서 이 파일을 사용하고 있는 문서를 보이지 않기',
 );
 
+/** Karachay-Balkar (Къарачай-Малкъар)
+ * @author Iltever
+ */
+$messages['krc'] = array(
+	'globalusage' => 'Файлны глобал хайырланыуу',
+);
+
 /** Krio (Krio)
  * @author Jose77
  */
