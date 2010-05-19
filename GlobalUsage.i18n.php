@@ -1081,16 +1081,16 @@ $messages['rif'] = array(
  * @author Minisarm
  */
 $messages['ro'] = array(
-	'globalusage' => 'Utilizarea globală a fişierului',
-	'globalusage-for' => 'Utilizarea globală a fişierului „$1”',
-	'globalusage-desc' => '[[Special:GlobalUsage|Pagină specială]] pentru vizualizarea utilizării globale a fişierului',
+	'globalusage' => 'Utilizarea globală a fișierului',
+	'globalusage-for' => 'Utilizarea globală a fișierului „$1”',
+	'globalusage-desc' => '[[Special:GlobalUsage|Pagină specială]] pentru vizualizarea utilizării globale a fișierului',
 	'globalusage-ok' => 'Caută',
-	'globalusage-text' => 'Caută utilizările globale ale fişierului',
-	'globalusage-no-results' => 'Fişierul „[[:$1]]” nu este folosit la alte proiecte de tip wiki.',
-	'globalusage-on-wiki' => 'Utilizarea fişierului „[[:File:$1|$1]]” la $2',
-	'globalusage-of-file' => 'Următoarele alte proiecte de tip wiki folosesc acest fişier:',
-	'globalusage-more' => 'Vizualizaţi [[{{#Special:GlobalUsage}}/$1|mai multe utilizări globale]] ale acestui fişier.',
-	'globalusage-filterlocal' => 'Nu afişa utilizările locale.',
+	'globalusage-text' => 'Caută utilizările globale ale fișierului',
+	'globalusage-no-results' => 'Fișierul „[[:$1]]” nu este folosit la alte proiecte de tip wiki.',
+	'globalusage-on-wiki' => 'Utilizarea fișierului „[[:File:$1|$1]]” la $2',
+	'globalusage-of-file' => 'Următoarele alte proiecte de tip wiki folosesc acest fișier:',
+	'globalusage-more' => 'Vizualizați [[{{#Special:GlobalUsage}}/$1|mai multe utilizări globale]] ale acestui fișier.',
+	'globalusage-filterlocal' => 'Nu afișa utilizările locale.',
 );
 
 /** Tarandíne (Tarandíne)
