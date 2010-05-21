@@ -668,6 +668,11 @@ $messages['id'] = array(
 	'globalusage-filterlocal' => 'Jangan tunjukkan penggunaan lokal',
 );
 
+/** Igbo (Igbo) */
+$messages['ig'] = array(
+	'globalusage-ok' => 'Chöwá',
+);
+
 /** Icelandic (Íslenska)
  * @author S.Örvarr.S
  */
