@@ -7,8 +7,6 @@
 class SpecialGlobalUsage extends SpecialPage {
 	public function __construct() {
 		parent::__construct( 'GlobalUsage', 'globalusage' );
-
-		wfLoadExtensionMessages( 'globalusage' );
 	}
 
 	/**
