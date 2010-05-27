@@ -1337,9 +1337,15 @@ $messages['tk'] = array(
  */
 $messages['tl'] = array(
 	'globalusage' => 'Paggamit ng pandaigdigang talaksan',
+	'globalusage-for' => 'Pandaigdigang paggamit para sa "$1"',
 	'globalusage-desc' => '[[Special:GlobalUsage|Natatanging pahina]] upang makita ang paggamit ng pandaigdigang talaksan',
 	'globalusage-ok' => 'Maghanap',
 	'globalusage-text' => 'Maghanap ng paggamit ng pandaigdigang talaksan.',
+	'globalusage-no-results' => 'Hindi ginagamit ang [[:$1]] sa ibang mga wiki.',
+	'globalusage-on-wiki' => 'Paggamit sa $2',
+	'globalusage-of-file' => 'Ang sumusunod na mga wiki ang gumagamit ng talaksang ito:',
+	'globalusage-more' => 'Tumingin [[{{#Special:GlobalUsage}}/$1|ng marami pang pandaigdigang paggamit]] ng talaksang ito.',
+	'globalusage-filterlocal' => 'Huwag ipakita ang lokal na paggamit',
 );
 
 /** Turkish (Türkçe)
