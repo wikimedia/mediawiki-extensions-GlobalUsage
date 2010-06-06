@@ -2,7 +2,8 @@
 /**
  * Internationalisation file for extension GlobalUsage.
  *
- * @addtogroup Extensions
+ * @file
+ * @ingroup Extensions
  */
 
 $messages = array();
