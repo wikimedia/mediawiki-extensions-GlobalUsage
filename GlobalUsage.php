@@ -55,6 +55,7 @@ $wgAutoloadClasses['ApiQueryGlobalUsage'] = $dir . 'ApiQueryGlobalUsage.php';
 $wgExtensionMessageFiles['GlobalUsage'] = $dir . 'GlobalUsage.i18n.php';
 $wgExtensionAliasesFiles['GlobalUsage'] = $dir . 'GlobalUsage.alias.php';
 $wgSpecialPages['GlobalUsage'] = 'SpecialGlobalUsage';
+$wgSpecialPageGroups['GlobalUsage'] = 'media';
 $wgAPIPropModules['globalusage'] = 'ApiQueryGlobalUsage';
 
 /* Things that can cause link updates:
