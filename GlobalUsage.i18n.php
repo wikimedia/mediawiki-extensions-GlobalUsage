@@ -844,6 +844,13 @@ $messages['lfn'] = array(
 	'globalusage-ok' => 'Xerca',
 );
 
+/** Limburgish (Limburgs)
+ * @author Pahles
+ */
+$messages['li'] = array(
+	'globalusage' => 'Globaal besjtandjsgebroek',
+);
+
 /** Lithuanian (Lietuvių)
  * @author GreenZeb
  * @author Homo
