@@ -1099,12 +1099,19 @@ $messages['pt'] = array(
 
 /** Brazilian Portuguese (Português do Brasil)
  * @author Eduardo.mps
+ * @author 555
  */
 $messages['pt-br'] = array(
 	'globalusage' => 'Utilização global de arquivos',
+	'globalusage-for' => 'Uso global de "$1"',
 	'globalusage-desc' => '[[Special:GlobalUsage|Página especial]] para consultar a utilização global de arquivos',
 	'globalusage-ok' => 'Busca',
 	'globalusage-text' => 'Pesquisar utilização global de arquivos.',
+	'globalusage-no-results' => '[[:$1]] não é usado em outras wikis.',
+	'globalusage-on-wiki' => 'Uso na $2',
+	'globalusage-of-file' => 'As outras wikis a seguir usam este arquivo:',
+	'globalusage-more' => 'Ver [[{{#Special:GlobalUsage}}/$1|mais usos globais]] deste arquivo.',
+	'globalusage-filterlocal' => 'Ocultar usos locais',
 );
 
 /** Tarifit (Tarifit)
