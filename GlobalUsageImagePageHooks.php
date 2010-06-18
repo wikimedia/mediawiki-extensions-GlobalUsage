@@ -71,8 +71,11 @@ class GlobalUsageImagePageHooks {
 	 * Show a link to the global image links in the TOC if there are any results available.
 	 */
 	public static function onImagePageShowTOC( $imagePage, &$toc ) {
-		if ( self::hasResults( $imagePage ) )
-			$toc[] = '<li><a href="#globalusage">' . wfMsgHtml( 'globalusage' ) . '</a></li>';
+		if ( self::hasResults( $imagePage ) ) {
+			# Insert a link after the 3rd entry in the TOC
+			array_splice( $toc, 3, 0, '<li><a href="#globalusage">' 
+				. wfMsgHtml( 'globalusage' ) . '</a></li>');
+		}
 		return true;
 	}
 	
