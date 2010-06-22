@@ -549,6 +549,7 @@ $messages['haw'] = array(
 /** Hebrew (עברית)
  * @author Rotemliss
  * @author YaronSh
+ * @author Yonidebest
  */
 $messages['he'] = array(
 	'globalusage' => 'שימוש גלובלי בקבצים',
@@ -557,8 +558,9 @@ $messages['he'] = array(
 	'globalusage-ok' => 'חיפוש',
 	'globalusage-text' => 'חיפוש בשימוש הגלובלי בקבצים.',
 	'globalusage-no-results' => '[[:$1]] אינו בשימוש באתרי ויקי אחרים.',
-	'globalusage-on-wiki' => '[[:File:$1|$1]] בשימוש באתר $2',
+	'globalusage-on-wiki' => 'שימוש באתר $2',
 	'globalusage-of-file' => 'אתרי הוויקי השונים הבאים משתמשים בקובץ זה:',
+	'globalusage-more' => 'ראו [[{{#Special:GlobalUsage}}/$1|שימושים גלובליים נוספים]] של קובץ זה.',
 	'globalusage-filterlocal' => 'אין להציג שימוש מקומי',
 );
 
