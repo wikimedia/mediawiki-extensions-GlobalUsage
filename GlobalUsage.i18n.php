@@ -1172,6 +1172,13 @@ $messages['ru'] = array(
 	'globalusage-filterlocal' => 'Не показывать локальное использование',
 );
 
+/** Rusyn (русиньскый язык)
+ * @author Gazeb
+ */
+$messages['rue'] = array(
+	'globalusage-ok' => 'Глядати',
+);
+
 /** Yakut (Саха тыла)
  * @author HalanTul
  */
