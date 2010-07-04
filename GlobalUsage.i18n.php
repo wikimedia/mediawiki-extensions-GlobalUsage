@@ -329,6 +329,11 @@ $messages['dsb'] = array(
 	'globalusage-filterlocal' => 'Lokalne wužywanje njepokazaś',
 );
 
+/** Ewe (Eʋegbe) */
+$messages['ee'] = array(
+	'globalusage-ok' => 'Dii',
+);
+
 /** Greek (Ελληνικά)
  * @author Crazymadlover
  * @author Lou
@@ -1124,6 +1129,7 @@ $messages['rif'] = array(
 );
 
 /** Romanian (Română)
+ * @author AdiJapan
  * @author KlaudiuMihaila
  * @author Minisarm
  */
@@ -1134,7 +1140,7 @@ $messages['ro'] = array(
 	'globalusage-ok' => 'Caută',
 	'globalusage-text' => 'Caută utilizările globale ale fișierului',
 	'globalusage-no-results' => 'Fișierul „[[:$1]]” nu este folosit la alte proiecte de tip wiki.',
-	'globalusage-on-wiki' => 'Utilizarea fișierului „[[:File:$1|$1]]” la $2',
+	'globalusage-on-wiki' => 'Utilizare la $2',
 	'globalusage-of-file' => 'Următoarele alte proiecte de tip wiki folosesc acest fișier:',
 	'globalusage-more' => 'Vizualizați [[{{#Special:GlobalUsage}}/$1|mai multe utilizări globale]] ale acestui fișier.',
 	'globalusage-filterlocal' => 'Nu afișa utilizările locale.',
@@ -1238,6 +1244,8 @@ $messages['sr-ec'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Специјална страна]] за преглед глобалног коришћења фајлова',
 	'globalusage-ok' => 'Претрага',
 	'globalusage-text' => 'Претрага глобалног коришћења фајлова.',
+	'globalusage-on-wiki' => 'Употреба на $2',
+	'globalusage-filterlocal' => 'Не приказуј локалну употребу',
 );
 
 /** Serbian Latin ekavian (Srpski (latinica))
