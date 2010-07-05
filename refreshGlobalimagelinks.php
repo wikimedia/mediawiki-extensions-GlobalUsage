@@ -94,7 +94,7 @@ class RefreshGlobalImageLinks extends Maintenance {
 				$lastIlTo = $lastRow->il_to;
 
 				# Be nice to the database
-				$dbw->immediateCommit();
+				$dbw->commit();
 				wfWaitForSlaves( $maxlag, $wgGlobalUsageDatabase );
 			}
 		} while ( !is_null( $lastRow ) );
