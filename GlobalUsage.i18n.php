@@ -25,6 +25,7 @@ $messages['en'] = array(
 );
 
 /** Message documentation (Message documentation)
+ * @author Hamilton Abreu
  * @author Jon Harald Søby
  * @author Nghtwlkr
  * @author Purodha
@@ -33,6 +34,7 @@ $messages['en'] = array(
  * @author Vriullop
  */
 $messages['qqq'] = array(
+	'globalusage' => 'Header of a section that lists all the places where one shared file has been used. "Global" refers to the usage, not to the file. "File" is singular. Used while viewing the file description page ([[commons:File:Triangle.Right.ly.png|example at Commons]]). Appears at the top of the page as a link to a section anchor, and at the bottom as the section header.',
 	'globalusage-for' => 'Title of [[Special:GlobalUsage]]
 * $1 - name of the searched file, with namespace',
 	'globalusage-desc' => 'Short description of this extension, shown on [[Special:Version]]. Do not translate or change links.',
@@ -1092,7 +1094,7 @@ $messages['ps'] = array(
  * @author Malafaya
  */
 $messages['pt'] = array(
-	'globalusage' => 'Utilização global de ficheiros',
+	'globalusage' => 'Utilização global do ficheiro',
 	'globalusage-for' => 'Utilização global de "$1"',
 	'globalusage-desc' => '[[Special:GlobalUsage|Página especial]] para consultar a utilização global de ficheiros',
 	'globalusage-ok' => 'Pesquisar',
@@ -1105,8 +1107,9 @@ $messages['pt'] = array(
 );
 
 /** Brazilian Portuguese (Português do Brasil)
- * @author Eduardo.mps
  * @author 555
+ * @author Eduardo.mps
+ * @author Hamilton Abreu
  */
 $messages['pt-br'] = array(
 	'globalusage' => 'Utilização global de arquivos',
