@@ -1109,10 +1109,11 @@ $messages['pt'] = array(
 /** Brazilian Portuguese (Português do Brasil)
  * @author 555
  * @author Eduardo.mps
+ * @author Giro720
  * @author Hamilton Abreu
  */
 $messages['pt-br'] = array(
-	'globalusage' => 'Utilização global de arquivos',
+	'globalusage' => 'Utilização global do arquivo',
 	'globalusage-for' => 'Uso global de "$1"',
 	'globalusage-desc' => '[[Special:GlobalUsage|Página especial]] para consultar a utilização global de arquivos',
 	'globalusage-ok' => 'Busca',
