@@ -67,7 +67,7 @@ class GlobalUsageHooks {
 	 * Hook to FileDeleteComplete
 	 * Copies the local link table to the global.
 	 */
-	public static function onFileDeleteComplete( $file, $oldimage, $article, $wgUser, $reason ) {
+	public static function onFileDeleteComplete( $file, $oldimage, $article, $user, $reason ) {
 		if ( !$oldimage ) {
 			$gu = self::getGlobalUsage();
 			$gu->copyLocalImagelinks( $file->getTitle() );
