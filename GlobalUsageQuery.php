@@ -9,7 +9,6 @@ class GlobalUsageQuery {
 	private $hasMore = false;
 	private $filterLocal = false;
 	private $result;
-	private $continue;
 	private $reversed = false;
 
 	/**
