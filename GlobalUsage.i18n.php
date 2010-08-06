@@ -539,6 +539,11 @@ $messages['gv'] = array(
 	'globalusage-ok' => 'Ronsaghey',
 );
 
+/** Hausa (هَوُسَ) */
+$messages['ha'] = array(
+	'globalusage-ok' => 'Nema',
+);
+
 /** Hakka (Hak-kâ-fa)
  * @author Hakka
  */
