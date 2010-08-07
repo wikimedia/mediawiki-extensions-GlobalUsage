@@ -252,6 +252,11 @@ $messages['ch'] = array(
 	'globalusage-ok' => 'Aligao',
 );
 
+/** Sorani (کوردی) */
+$messages['ckb'] = array(
+	'globalusage-ok' => 'گەڕان',
+);
+
 /** Czech (Česky)
  * @author Mormegil
  */
