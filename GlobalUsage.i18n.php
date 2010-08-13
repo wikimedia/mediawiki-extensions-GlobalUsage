@@ -1424,6 +1424,7 @@ $messages['tr'] = array(
 
 /** Ukrainian (Українська)
  * @author NickK
+ * @author Тест
  */
 $messages['uk'] = array(
 	'globalusage' => 'Глобальне використання файлу',
@@ -1432,7 +1433,7 @@ $messages['uk'] = array(
 	'globalusage-ok' => 'Пошук',
 	'globalusage-text' => 'Пошук глобального використання файлу',
 	'globalusage-no-results' => '[[:$1]] не використовується в інших вікі.',
-	'globalusage-on-wiki' => 'Використання [[:File:$1|$1]] в $2',
+	'globalusage-on-wiki' => 'Використання в $2',
 	'globalusage-of-file' => 'Цей файл використовують такі інші вікі:',
 	'globalusage-more' => 'Переглянути [[{{#Special:GlobalUsage}}/$1|повний список глобального використання]] цього файлу.',
 	'globalusage-filterlocal' => 'Не показувати локальне використання',
