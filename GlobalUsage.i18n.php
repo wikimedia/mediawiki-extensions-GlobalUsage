@@ -20,7 +20,7 @@ $messages['en'] = array(
 	'globalusage-no-results' => '[[:$1]] is not used on other wikis.',
 	'globalusage-on-wiki' => 'Usage on $2',
 	'globalusage-of-file' => 'The following other wikis use this file:',
-	'globalusage-more' => 'View [[{{#Special:GlobalUsage}}/$1|more global usage]] of this file.',
+	'globalusage-more' => 'View [[{{#Special:GlobalUsage}}/$1|global usage]] of this file.',
 	'globalusage-filterlocal' => 'Do not show local usage',
 );
 
