@@ -488,7 +488,7 @@ $messages['frp'] = array(
 	'globalusage-no-results' => '[[:$1]] est pas utilisâ sur d’ôtros vouiquis.',
 	'globalusage-on-wiki' => 'Usâjo dessus $2',
 	'globalusage-of-file' => 'Cetos ôtros vouiquis utilisont ceti fichiér :',
-	'globalusage-more' => 'Vêre d’[[{{#Special:GlobalUsage}}/$1|ôtros usâjos globâls]] de ceti fichiér.',
+	'globalusage-more' => 'Vêre los [[{{#Special:GlobalUsage}}/$1|usâjos globâls]] de ceti fichiér.',
 	'globalusage-filterlocal' => 'Pas montrar l’usâjo local',
 );
 
@@ -738,6 +738,7 @@ $messages['it'] = array(
 
 /** Japanese (日本語)
  * @author Fryed-peach
+ * @author 青子守歌
  */
 $messages['ja'] = array(
 	'globalusage' => 'グローバルなファイル使用状況',
@@ -748,7 +749,7 @@ $messages['ja'] = array(
 	'globalusage-no-results' => '[[:$1]] は他のウィキでは使われていません。',
 	'globalusage-on-wiki' => '$2 での使用状況',
 	'globalusage-of-file' => '以下に挙げる他のウィキがこの画像を使っています:',
-	'globalusage-more' => 'このファイルの[[{{#Special:GlobalUsage}}/$1|グローバル使用状況]]をさらに表示する。',
+	'globalusage-more' => 'このファイルの[[{{#Special:GlobalUsage}}/$1|グローバル使用状況]]を表示する。',
 	'globalusage-filterlocal' => 'ローカル使用状況を表示しない',
 );
 
@@ -810,7 +811,7 @@ $messages['ko'] = array(
 	'globalusage-no-results' => '[[:$1]]은 다른 위키에서 사용되지 않고 있습니다.',
 	'globalusage-on-wiki' => '$2에서 이 파일을 사용하고 있는 문서 목록',
 	'globalusage-of-file' => '다음 위키에서 이 파일을 사용하고 있습니다:',
-	'globalusage-more' => '이 파일을 사용하고 있는 [[{{#Special:GlobalUsage}}/$1|다른 위키의 더 많은 문서]]를 보기',
+	'globalusage-more' => '이 파일의 [[{{#Special:GlobalUsage}}/$1|사용 내역]] 보기',
 	'globalusage-filterlocal' => '이 위키에서 이 파일을 사용하고 있는 문서를 보이지 않기',
 );
 
@@ -1082,7 +1083,7 @@ $messages['pl'] = array(
 	'globalusage-no-results' => '[[:$1]] nie jest wykorzystywany w inny projektach wiki.',
 	'globalusage-on-wiki' => 'Wykorzystanie w $2',
 	'globalusage-of-file' => 'Ten plik jest wykorzystywany także w innych projektach wiki:',
-	'globalusage-more' => 'Pokaż [[{{#Special:GlobalUsage}}/$1|pełną listę globalnego wykorzystania]] tego pliku.',
+	'globalusage-more' => 'Pokaż [[{{#Special:GlobalUsage}}/$1|listę globalnego wykorzystania]] tego pliku.',
 	'globalusage-filterlocal' => 'Nie pokazuj lokalnego wykorzystania',
 );
 
@@ -1193,7 +1194,7 @@ $messages['roa-tara'] = array(
 	'globalusage-no-results' => "[[:$1]] non g'è ausate jndr'à otre Uicchi.",
 	'globalusage-on-wiki' => 'Ause sus a $2',
 	'globalusage-of-file' => 'Le seguende Uicchi ausane stu file:',
-	'globalusage-more' => 'Vide [[{{#Special:GlobalUsage}}/$1|otre ause globale]] de stu file.',
+	'globalusage-more' => 'Vide [[{{#Special:GlobalUsage}}/$1|ause globale]] de stu file.',
 	'globalusage-filterlocal' => "No fà vedè l'ause locale",
 );
 
