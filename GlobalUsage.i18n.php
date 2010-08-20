@@ -223,11 +223,12 @@ $messages['bs'] = array(
 	'globalusage-no-results' => '[[:$1]] nije korištena na drugim wikijima.',
 	'globalusage-on-wiki' => 'Upotreba na $2',
 	'globalusage-of-file' => 'Slijedeći wikiji koriste ovu datoteku:',
-	'globalusage-more' => 'Pogledajte [[{{#Special:GlobalUsage}}/$1|sve globalne upotrebe]] ove datoteke.',
+	'globalusage-more' => 'Pogledajte [[{{#Special:GlobalUsage}}/$1|globalne upotrebe]] ove datoteke.',
 	'globalusage-filterlocal' => 'Ne prikazuj lokalnu upotrebu',
 );
 
 /** Catalan (Català)
+ * @author Davidpar
  * @author Jordi Roqué
  * @author SMP
  * @author Vriullop
@@ -472,7 +473,7 @@ $messages['fr'] = array(
 	'globalusage-no-results' => "[[:$1]] n'est pas utilisé sur d'autres wikis.",
 	'globalusage-on-wiki' => 'Utilisation sur $2',
 	'globalusage-of-file' => 'Les autres wikis suivants utilisent cette image :',
-	'globalusage-more' => "Voir [[{{#Special:GlobalUsage}}/$1|d'autres utilisations globales]] de ce fichier.",
+	'globalusage-more' => 'Voir [[{{#Special:GlobalUsage}}/$1|l’utilisation globale]] de ce fichier.',
 	'globalusage-filterlocal' => "Ne pas montrer l'utilisation locale",
 );
 
@@ -544,7 +545,7 @@ $messages['gsw'] = array(
 	'globalusage-no-results' => '[[:$1]] wird nit in andere Wiki brucht.',
 	'globalusage-on-wiki' => 'Gebruch uf $2',
 	'globalusage-of-file' => 'Die andere Wikis bruche die Datei:',
-	'globalusage-more' => '[[{{#Special:GlobalUsage}}/$1|Wygteri wältwyti Verwändig]] vu däre Datei aaluege.',
+	'globalusage-more' => '[[{{#Special:GlobalUsage}}/$1|Wältwyti Verwändig]] vu däre Datei aaluege.',
 	'globalusage-filterlocal' => 'Kei lokali Dateiverwändig zeige',
 );
 
@@ -929,7 +930,7 @@ $messages['mk'] = array(
 	'globalusage-no-results' => '[[:$1]] не се користи во други викија..',
 	'globalusage-on-wiki' => 'Искористеност на $2',
 	'globalusage-of-file' => 'Оваа податотека ја користат и следниве викија:',
-	'globalusage-more' => 'Погледајте [[{{#Special:GlobalUsage}}/$1|повеќе глобални употреби]] на оваа податотека.',
+	'globalusage-more' => 'Погледајте ја [[{{#Special:GlobalUsage}}/$1|глобалната употреба]] на податотекава.',
 	'globalusage-filterlocal' => 'Не прикажувај локално користење',
 );
 
@@ -1274,11 +1275,12 @@ $messages['sli'] = array(
 
 /** Serbian Cyrillic ekavian (Српски (ћирилица))
  * @author Sasa Stefanovic
+ * @author Жељко Тодоровић
  * @author Михајло Анђелковић
  */
 $messages['sr-ec'] = array(
 	'globalusage' => 'Глобално коришћење фајлова',
-	'globalusage-desc' => '[[Special:GlobalUsage|Специјална страна]] за преглед глобалног коришћења фајлова',
+	'globalusage-desc' => '[[Special:GlobalUsage|Посебна страница]] за преглед глобалног коришћења фајлова',
 	'globalusage-ok' => 'Претрага',
 	'globalusage-text' => 'Претрага глобалног коришћења фајлова.',
 	'globalusage-on-wiki' => 'Употреба на $2',
