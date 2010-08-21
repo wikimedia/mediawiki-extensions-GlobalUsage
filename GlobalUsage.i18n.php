@@ -30,6 +30,7 @@ $messages['en'] = array(
  * @author Nghtwlkr
  * @author Purodha
  * @author Raymond
+ * @author The Evil IP address
  * @author Umherirrender
  * @author Vriullop
  */
@@ -37,7 +38,7 @@ $messages['qqq'] = array(
 	'globalusage' => 'Header of a section that lists all the places where one shared file has been used. "Global" refers to the usage, not to the file. "File" is singular. Used while viewing the file description page ([[commons:File:Triangle.Right.ly.png|example at Commons]]). Appears at the top of the page as a link to a section anchor, and at the bottom as the section header.',
 	'globalusage-for' => 'Title of [[Special:GlobalUsage]]
 * $1 - name of the searched file, with namespace',
-	'globalusage-desc' => 'Short description of this extension, shown on [[Special:Version]]. Do not translate or change links.',
+	'globalusage-desc' => '{{desc}}',
 	'globalusage-ok' => '{{Identical|Search}}
 Button on [[Special:GlobalUsage]]',
 	'globalusage-text' => 'Label on [[Special:GlobalUsage]]',
@@ -207,7 +208,7 @@ $messages['br'] = array(
 	'globalusage-no-results' => 'Ne reer ket gant [[:$1]] war wikioù all.',
 	'globalusage-on-wiki' => 'Implij war $2',
 	'globalusage-of-file' => 'Ober a ra ar wikioù da-heul gant ar restr-mañ :',
-	'globalusage-more' => 'Gwelet [[{{#Special:GlobalUsage}}/$1|implijoù hollek all]] esu ar restr-mañ.',
+	'globalusage-more' => 'Gwelet [[{{#Special:GlobalUsage}}/$1|implij hollek]] ar restr-mañ.',
 	'globalusage-filterlocal' => "Arabat diskouez an implij lec'hel",
 );
 
@@ -969,6 +970,22 @@ $messages['mr'] = array(
 	'globalusage-text' => 'जागतिक संचिका उपयोग शोधा.',
 );
 
+/** Maltese (Malti)
+ * @author Chrisportelli
+ */
+$messages['mt'] = array(
+	'globalusage' => 'L-użu globali tal-fajl',
+	'globalusage-for' => 'Użu globali ta\' "$1"',
+	'globalusage-desc' => '[[Special:GlobalUsage|Paġna speċjali]] biex turi l-użu globali tal-fajl',
+	'globalusage-ok' => 'Fittex',
+	'globalusage-text' => 'Fittex l-użu globali tal-fajl',
+	'globalusage-no-results' => '[[:$1]] mhuwiex użat fuq wikis oħra.',
+	'globalusage-on-wiki' => 'Użu fuq $2',
+	'globalusage-of-file' => 'Il-wikis segwenti jużaw dan il-fajl:',
+	'globalusage-more' => "Ara l-[[{{#Special:GlobalUsage}}/$1|użu globali]] ta' dan il-fajl.",
+	'globalusage-filterlocal' => 'Turix l-użu lokali',
+);
+
 /** Erzya (Эрзянь)
  * @author Botuzhaleny-sodamo
  */
@@ -1258,7 +1275,7 @@ $messages['sl'] = array(
 	'globalusage-no-results' => '[[:$1]] se ne uporablja na drugih wikijih.',
 	'globalusage-on-wiki' => 'Uporaba na $2',
 	'globalusage-of-file' => 'Sledeči drugi wikiji uporabljajo to datoteko:',
-	'globalusage-more' => 'Oglej si [[{{#Special:GlobalUsage}}/$1|več globalne uporabe]] te datoteke.',
+	'globalusage-more' => 'Oglej si [[{{#Special:GlobalUsage}}/$1|globalno uporabo]] te datoteke.',
 	'globalusage-filterlocal' => 'Ne prikaži lokalne uporabe',
 );
 
