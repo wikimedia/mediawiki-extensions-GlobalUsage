@@ -1035,6 +1035,7 @@ $messages['nn'] = array(
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Jon Harald Søby
+ * @author Laaknor
  * @author Nghtwlkr
  */
 $messages['no'] = array(
@@ -1046,7 +1047,7 @@ $messages['no'] = array(
 	'globalusage-no-results' => '[[:$1]] er ikke brukt på andre wikier.',
 	'globalusage-on-wiki' => 'Bruk i $2',
 	'globalusage-of-file' => 'Følgende andre wikier bruker denne filen:',
-	'globalusage-more' => 'Vis [[{{#Special:GlobalUsage}}/$1|mer global bruk]] av denne filen',
+	'globalusage-more' => 'Vis [[{{#Special:GlobalUsage}}/$1|global bruk]] av denne filen.',
 	'globalusage-filterlocal' => 'Ikke vis lokal bruk',
 );
 
