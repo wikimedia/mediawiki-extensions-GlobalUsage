@@ -429,7 +429,7 @@ $messages['eu'] = array(
  */
 $messages['fa'] = array(
 	'globalusage' => 'کاربرد سراسری پرونده',
-	'globalusage-for' => 'کاربرد سراسری برای "$1"',
+	'globalusage-for' => 'کاربرد سراسری برای «$1»',
 	'globalusage-desc' => '[[Special:GlobalUsage|صفحهٔ ویژه]] برای دیدن استفاده‌های سراسری',
 	'globalusage-ok' => 'جستجو',
 	'globalusage-text' => 'جستجوی استفاده‌های سراسری پرونده',
