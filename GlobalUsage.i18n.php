@@ -1360,10 +1360,15 @@ $messages['szl'] = array(
 );
 
 /** Tamil (தமிழ்)
+ * @author TRYPPN
  * @author Trengarasu
  */
 $messages['ta'] = array(
+	'globalusage' => 'கோப்பின் முழுமையான பயன்பாடு',
+	'globalusage-for' => '"$1" -ன் முழுமையான பயன்பாடு',
 	'globalusage-ok' => 'தேடுக',
+	'globalusage-of-file' => 'கீழ்கண்ட மற்ற விக்கிகள் இந்த கோப்பை பயன்படுத்துகின்றன:',
+	'globalusage-filterlocal' => 'இவ்விடத்தில் பயன்படுத்தப்படுவதை காட்டவேண்டாம்',
 );
 
 /** Telugu (తెలుగు)
