@@ -723,6 +723,7 @@ $messages['is'] = array(
 
 /** Italian (Italiano)
  * @author Darth Kule
+ * @author Gianfranco
  * @author Nemo bis
  */
 $messages['it'] = array(
@@ -734,7 +735,7 @@ $messages['it'] = array(
 	'globalusage-no-results' => '[[:$1]] non è usato in altri wiki.',
 	'globalusage-on-wiki' => 'Usato nelle seguenti pagine di $2:',
 	'globalusage-of-file' => 'Anche i wiki seguenti usano questo file:',
-	'globalusage-more' => "Mostra [[{{#Special:GlobalUsage}}/$1|ulteriori informazioni sull'uso globale]] di questo file.",
+	'globalusage-more' => "Visualizza l'[[{{#Special:GlobalUsage}}/$1|utilizzo globale]] di questo file.",
 	'globalusage-filterlocal' => "Non mostrare l'uso locale",
 );
 
