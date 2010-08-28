@@ -620,6 +620,7 @@ $messages['hil'] = array(
 
 /** Croatian (Hrvatski)
  * @author Ex13
+ * @author SpeedyGonsales
  */
 $messages['hr'] = array(
 	'globalusage' => 'Globalna uporaba datoteke',
@@ -630,7 +631,7 @@ $messages['hr'] = array(
 	'globalusage-no-results' => '[[:$1]] se ne rabi na drugim wikijima.',
 	'globalusage-on-wiki' => 'Uporaba na $2',
 	'globalusage-of-file' => 'Sljedeći wikiji rabe ovu datoteku:',
-	'globalusage-more' => 'Pogledajte [[{{#Special:GlobalUsage}}/$1|sve globalne uporabe]] ove datoteke.',
+	'globalusage-more' => 'Pogledajte [[{{#Special:GlobalUsage}}/$1|globalnu uporabu]] ove datoteke.',
 	'globalusage-filterlocal' => 'Ne prikazuj lokalnu uporabu',
 );
 
