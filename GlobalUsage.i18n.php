@@ -1199,7 +1199,7 @@ $messages['ro'] = array(
 	'globalusage-no-results' => 'Fișierul „[[:$1]]” nu este folosit la alte proiecte de tip wiki.',
 	'globalusage-on-wiki' => 'Utilizare la $2',
 	'globalusage-of-file' => 'Următoarele alte proiecte de tip wiki folosesc acest fișier:',
-	'globalusage-more' => 'Vizualizați [[{{#Special:GlobalUsage}}/$1|mai multe utilizări globale]] ale acestui fișier.',
+	'globalusage-more' => 'Vizualizați [[{{#Special:GlobalUsage}}/$1|utilizările globale]] ale acestui fișier.',
 	'globalusage-filterlocal' => 'Nu afișa utilizările locale.',
 );
 
