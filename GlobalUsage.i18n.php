@@ -852,7 +852,7 @@ $messages['ksh'] = array(
 	'globalusage-no-results' => '[[:$1]] weed in ander Wikis nit jebruch.',
 	'globalusage-on-wiki' => 'Dä Jebruch op $2',
 	'globalusage-of-file' => 'Heh di ander Wikis bruche di Dattei:',
-	'globalusage-more' => 'Loor noh [[{{#Special:GlobalUsage}}/$1|mieh övver dä Jebruch]] vun heh dä Dattei.',
+	'globalusage-more' => 'Loor donoh, [[{{#Special:GlobalUsage}}/$1|woh heh di Dattei söns jebruch weed]].',
 	'globalusage-filterlocal' => 'Donn nix aanzeije doh drövver, wi di Dattei heh em Wiki jebruch weed',
 );
 
@@ -893,7 +893,15 @@ $messages['lfn'] = array(
  */
 $messages['li'] = array(
 	'globalusage' => 'Globaal besjtandjsgebroek',
+	'globalusage-for' => 'Wikiwied gebroek veur "$1"',
+	'globalusage-desc' => "[[Special:GlobalUsage|Speciaal pagina]] veur 't bekieke van wikiwied bestandjsgebroek",
 	'globalusage-ok' => 'Zeuk',
+	'globalusage-text' => 'Bekiek wikiwied bestandjsgebroek',
+	'globalusage-no-results' => "[[:$1]] weurt neet gebroek in anger wiki's.",
+	'globalusage-on-wiki' => 'Gebroek in $2',
+	'globalusage-of-file' => "De volgende anger wiki's gebroeke dit bestandj:",
+	'globalusage-more' => 'Bekiek [[{{#Special:GlobalUsage}}/$1|wikiwied gebroek]] van dit bestandj.',
+	'globalusage-filterlocal' => 'Tuin gei lokaal gebroek',
 );
 
 /** Lithuanian (Lietuvių)
