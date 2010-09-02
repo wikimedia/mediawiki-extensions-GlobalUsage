@@ -1186,6 +1186,22 @@ $messages['pt-br'] = array(
 	'globalusage-filterlocal' => 'Ocultar usos locais',
 );
 
+/** Quechua (Runa Simi)
+ * @author AlimanRuna
+ */
+$messages['qu'] = array(
+	'globalusage' => "Mayqin wikikunapi willañiqita llamk'achinku",
+	'globalusage-for' => 'Mayqin wikikunapi "$1" nisqata llamk\'achinku',
+	'globalusage-desc' => "[[Special:GlobalUsage|Sapaq p'anqa]] rikunapaq mayqin wikikunapi willañiqita llamk'achinku",
+	'globalusage-ok' => 'Maskay',
+	'globalusage-text' => "Maskay mayqin wikikunapi willañiqita llamk'achinku",
+	'globalusage-no-results' => "[[:$1]] nisqataqa huk wikikunapi manam llamk'achinkuchu.",
+	'globalusage-on-wiki' => "$2-pi kaykunapi llamk'achinku",
+	'globalusage-of-file' => "Kay wakin wikikunam willañiqitaqa llamk'achinku:",
+	'globalusage-more' => "Qhaway [[{{#Special:GlobalUsage}}/$1|mayqin wikikunapim]] willañiqita llamk'achinku.",
+	'globalusage-filterlocal' => "Ama rikuchiychu kay wikipi willañiqi llamk'achiyta.",
+);
+
 /** Tarifit (Tarifit)
  * @author Jose77
  */
