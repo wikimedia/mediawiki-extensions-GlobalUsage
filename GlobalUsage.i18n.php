@@ -781,7 +781,7 @@ $messages['ka'] = array(
 	'globalusage-no-results' => '[[:$1]] არ გამოიყენება სხვა ვიკიპედიებში.',
 	'globalusage-on-wiki' => 'ფაილ [[:File:$1|$1]]-ის გამოყენება $2-ში',
 	'globalusage-of-file' => 'ეს ფაილი გამოიყენება შემდეგ ვიკებში:',
-	'globalusage-more' => 'იხილეთღ [[{{#Special:GlobalUsage}}/$1|ფაილის გლობალური გამოყენება]].',
+	'globalusage-more' => 'იხილეთ [[{{#Special:GlobalUsage}}/$1|ფაილის გლობალური გამოყენება]].',
 	'globalusage-filterlocal' => 'არ აჩვენოთ ლოკალური გამოყენება',
 );
 
