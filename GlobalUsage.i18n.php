@@ -1379,6 +1379,11 @@ $messages['sv'] = array(
 	'globalusage-filterlocal' => 'Visa inte lokalt användande',
 );
 
+/** Swahili (Kiswahili) */
+$messages['sw'] = array(
+	'globalusage-ok' => 'Tafuta',
+);
+
 /** Silesian (Ślůnski)
  * @author Herr Kriss
  */
