@@ -655,6 +655,7 @@ $messages['hsb'] = array(
 /** Hungarian (Magyar)
  * @author Dani
  * @author Glanthor Reviol
+ * @author Misibacsi
  */
 $messages['hu'] = array(
 	'globalusage' => 'Globális fájlhasználat',
