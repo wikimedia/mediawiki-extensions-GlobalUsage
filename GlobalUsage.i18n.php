@@ -730,7 +730,7 @@ $messages['is'] = array(
  * @author Nemo bis
  */
 $messages['it'] = array(
-	'globalusage' => 'Uso globale file',
+	'globalusage' => 'Uso globale del file',
 	'globalusage-for' => 'Uso globale di "$1"',
 	'globalusage-desc' => "[[Special:GlobalUsage|Pagina speciale]] per vedere l'utilizzo globale dei file",
 	'globalusage-ok' => 'Ricerca',
