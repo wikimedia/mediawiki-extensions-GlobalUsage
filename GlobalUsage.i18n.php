@@ -935,7 +935,7 @@ $messages['mhr'] = array(
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
-	'globalusage' => 'Глобална употреба на податотеката',
+	'globalusage' => 'Глобална употреба на податотекава',
 	'globalusage-for' => 'Глобална употреба на „$1“',
 	'globalusage-desc' => '[[Special:GlobalUsage|Специјална страница]] за преглед на употребата на глобални податотеки',
 	'globalusage-ok' => 'Пребарај',
