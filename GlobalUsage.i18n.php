@@ -1508,6 +1508,22 @@ $messages['tr'] = array(
 	'globalusage-filterlocal' => 'Yerel kullanımı gösterme',
 );
 
+/** Tatar (Cyrillic) (Татарча/Tatarça (Cyrillic))
+ * @author Ильнар
+ */
+$messages['tt-cyrl'] = array(
+	'globalusage' => 'Файлның глобаль кулланышы',
+	'globalusage-for' => '«$1» глобаль кулланышы',
+	'globalusage-desc' => 'Файлның гомуми кулланышын карау өчен [[Special:GlobalUsage|махсус бит]]',
+	'globalusage-ok' => 'Эзләү',
+	'globalusage-text' => 'Файлның гомуми кулланылыш өлкәләрен эзләү.',
+	'globalusage-no-results' => '[[:$1]] башка викиларда кулланмый.',
+	'globalusage-on-wiki' => '$2 проектында [[:File:$1|$1]] куллану',
+	'globalusage-of-file' => 'Әлеге файл аста бирелгән викиларда куллана:',
+	'globalusage-more' => 'Бирелгән файлның [[{{#Special:GlobalUsage}}/$1|глобаль кулланышын]] карау.',
+	'globalusage-filterlocal' => 'Локаль кулланышын күрсәтмәскә',
+);
+
 /** Ukrainian (Українська)
  * @author NickK
  * @author Тест
