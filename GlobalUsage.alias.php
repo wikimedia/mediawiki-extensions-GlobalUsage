@@ -6,185 +6,232 @@
  * @ingroup Extensions
  */
 
-$aliases = array();
-
-/** English */
-$aliases['en'] = array(
+/** English (English) */
+$specialPageAliases['en'] = array(
 	'GlobalUsage' => array( 'GlobalUsage' ),
 );
 
-$aliases['ar'] = array(
-	'GlobalUsage'   => array( 'استخدام_عام' ),
+/** Arabic (العربية) */
+$specialPageAliases['ar'] = array(
+	'GlobalUsage' => array( 'استخدام_عام' ),
 );
 
-$aliases['arz'] = array(
-	'GlobalUsage'   => array( 'استعمال_عام' ),
+/** Egyptian Spoken Arabic (مصرى) */
+$specialPageAliases['arz'] = array(
+	'GlobalUsage' => array( 'استعمال_عام' ),
 );
 
-$aliases['bg'] = array(
-	'GlobalUsage'   => array( 'Глобално използване на файл' ),
+/** Bulgarian (Български) */
+$specialPageAliases['bg'] = array(
+	'GlobalUsage' => array( 'Глобално използване на файл' ),
 );
 
-$aliases['br'] = array(
-	'GlobalUsage'   => array( 'ImplijHollek' ),
+/** Breton (Brezhoneg) */
+$specialPageAliases['br'] = array(
+	'GlobalUsage' => array( 'ImplijHollek' ),
 );
 
-$aliases['bs'] = array(
-	'GlobalUsage'   => array( 'GlobalnaUpotreba' ),
+/** Bosnian (Bosanski) */
+$specialPageAliases['bs'] = array(
+	'GlobalUsage' => array( 'GlobalnaUpotreba' ),
 );
 
-$aliases['de'] = array(
-	'GlobalUsage'   => array( 'Globale_Benutzung' ),
+/** German (Deutsch) */
+$specialPageAliases['de'] = array(
+	'GlobalUsage' => array( 'Globale_Benutzung' ),
 );
 
-$aliases['dsb'] = array(
-	'GlobalUsage'   => array( 'Globalne_wužywanje' ),
+/** Lower Sorbian (Dolnoserbski) */
+$specialPageAliases['dsb'] = array(
+	'GlobalUsage' => array( 'Globalne_wužywanje' ),
 );
 
-$aliases['es'] = array(
-	'GlobalUsage'   => array( 'Uso_global', 'UsoGlobal' ),
+/** Spanish (Español) */
+$specialPageAliases['es'] = array(
+	'GlobalUsage' => array( 'Uso_global', 'UsoGlobal' ),
 );
 
-$aliases['et'] = array(
-	'GlobalUsage'   => array( 'Globaalne_kasutus' ),
+/** Estonian (Eesti) */
+$specialPageAliases['et'] = array(
+	'GlobalUsage' => array( 'Globaalne_kasutus' ),
 );
 
-$aliases['fa'] = array(
-	'GlobalUsage'   => array( 'استفاده_سراسری' ),
+/** Persian (فارسی) */
+$specialPageAliases['fa'] = array(
+	'GlobalUsage' => array( 'استفاده_سراسری' ),
 );
 
-$aliases['fr'] = array(
-	'GlobalUsage'   => array( 'Usage_global', 'UsageGlobal' ),
+/** French (Français) */
+$specialPageAliases['fr'] = array(
+	'GlobalUsage' => array( 'Usage_global', 'UsageGlobal' ),
 );
 
-$aliases['frp'] = array(
-	'GlobalUsage'   => array( 'Usâjo_globâl', 'UsâjoGlobâl' ),
+/** Franco-Provençal (Arpetan) */
+$specialPageAliases['frp'] = array(
+	'GlobalUsage' => array( 'Usâjo_globâl', 'UsâjoGlobâl' ),
 );
 
-$aliases['gl'] = array(
-	'GlobalUsage'   => array( 'Uso global' ),
+/** Galician (Galego) */
+$specialPageAliases['gl'] = array(
+	'GlobalUsage' => array( 'Uso global' ),
 );
 
-$aliases['gsw'] = array(
-	'GlobalUsage'   => array( 'Wältwyti Benutzig' ),
+/** Swiss German (Alemannisch) */
+$specialPageAliases['gsw'] = array(
+	'GlobalUsage' => array( 'Wältwyti Benutzig' ),
 );
 
-$aliases['gu'] = array(
-	'GlobalUsage'   => array( 'વૈશ્વીક_વપરાશ' ),
+/** Gujarati (ગુજરાતી) */
+$specialPageAliases['gu'] = array(
+	'GlobalUsage' => array( 'વૈશ્વીક_વપરાશ' ),
 );
 
-$aliases['hr'] = array(
-	'GlobalUsage'   => array( 'Globalna_uporaba' ),
+/** Croatian (Hrvatski) */
+$specialPageAliases['hr'] = array(
+	'GlobalUsage' => array( 'Globalna_uporaba' ),
 );
 
-$aliases['hsb'] = array(
-	'GlobalUsage'   => array( 'Globalne_wužiwanje' ),
+/** Upper Sorbian (Hornjoserbsce) */
+$specialPageAliases['hsb'] = array(
+	'GlobalUsage' => array( 'Globalne_wužiwanje' ),
 );
 
-$aliases['hu'] = array(
-	'GlobalUsage'   => array( 'Globális_fájlhasználat' ),
+/** Hungarian (Magyar) */
+$specialPageAliases['hu'] = array(
+	'GlobalUsage' => array( 'Globális_fájlhasználat' ),
 );
 
-$aliases['ia'] = array(
-	'GlobalUsage'   => array( 'Uso_global' ),
+/** Interlingua (Interlingua) */
+$specialPageAliases['ia'] = array(
+	'GlobalUsage' => array( 'Uso_global' ),
 );
 
-$aliases['id'] = array(
-	'GlobalUsage'   => array( 'Penggunaan_global', 'PenggunaanGlobal' ),
+/** Indonesian (Bahasa Indonesia) */
+$specialPageAliases['id'] = array(
+	'GlobalUsage' => array( 'Penggunaan_global', 'PenggunaanGlobal' ),
 );
 
-$aliases['ig'] = array(
-	'GlobalUsage'   => array( 'Ọdí_na_ùwù_nílé' ),
+/** Igbo (Igbo) */
+$specialPageAliases['ig'] = array(
+	'GlobalUsage' => array( 'Ọdí_na_ùwù_nílé' ),
 );
 
-$aliases['it'] = array(
-	'GlobalUsage'   => array( 'UsoGlobale', 'UsoGlobaleFile' ),
+/** Italian (Italiano) */
+$specialPageAliases['it'] = array(
+	'GlobalUsage' => array( 'UsoGlobale', 'UsoGlobaleFile' ),
 );
 
-$aliases['ja'] = array(
-	'GlobalUsage'   => array( 'グローバルなファイル使用状況', 'グローバル使用状況' ),
+/** Japanese (日本語) */
+$specialPageAliases['ja'] = array(
+	'GlobalUsage' => array( 'グローバルなファイル使用状況', 'グローバル使用状況' ),
 );
 
-$aliases['km'] = array(
-	'GlobalUsage'   => array( 'បម្រើបម្រាស់ជាសាកល' ),
+/** Khmer (ភាសាខ្មែរ) */
+$specialPageAliases['km'] = array(
+	'GlobalUsage' => array( 'បម្រើបម្រាស់ជាសាកល' ),
 );
 
-$aliases['lad'] = array(
-	'GlobalUsage'   => array( 'UsoGlobbal' ),
+/** Ladino (Ladino) */
+$specialPageAliases['lad'] = array(
+	'GlobalUsage' => array( 'UsoGlobbal' ),
 );
 
-$aliases['lb'] = array(
-	'GlobalUsage'   => array( 'Globale_Gebrauch' ),
+/** Luxembourgish (Lëtzebuergesch) */
+$specialPageAliases['lb'] = array(
+	'GlobalUsage' => array( 'Globale_Gebrauch' ),
 );
 
-$aliases['mk'] = array(
-	'GlobalUsage'   => array( 'ГлобалноКористење' ),
+/** Macedonian (Македонски) */
+$specialPageAliases['mk'] = array(
+	'GlobalUsage' => array( 'ГлобалноКористење' ),
 );
 
-$aliases['ml'] = array(
-	'GlobalUsage'   => array( 'ആഗോള‌ഉപയോഗം' ),
+/** Malayalam (മലയാളം) */
+$specialPageAliases['ml'] = array(
+	'GlobalUsage' => array( 'ആഗോള‌ഉപയോഗം' ),
 );
 
-$aliases['mr'] = array(
-	'GlobalUsage'   => array( 'वैश्विकउपयोग' ),
+/** Marathi (मराठी) */
+$specialPageAliases['mr'] = array(
+	'GlobalUsage' => array( 'वैश्विकउपयोग' ),
 );
 
-$aliases['mt'] = array(
-	'GlobalUsage'   => array( 'UżuGlobali' ),
+/** Maltese (Malti) */
+$specialPageAliases['mt'] = array(
+	'GlobalUsage' => array( 'UżuGlobali' ),
 );
 
-$aliases['nds-nl'] = array(
-	'GlobalUsage'   => array( 'Globaal_gebruuk' ),
+/** Nedersaksisch (Nedersaksisch) */
+$specialPageAliases['nds-nl'] = array(
+	'GlobalUsage' => array( 'Globaal_gebruuk' ),
 );
 
-$aliases['nl'] = array(
-	'GlobalUsage'   => array( 'GlobaalGebruik' ),
+/** Dutch (Nederlands) */
+$specialPageAliases['nl'] = array(
+	'GlobalUsage' => array( 'GlobaalGebruik' ),
 );
 
-$aliases['nn'] = array(
-	'GlobalUsage'   => array( 'Global_bruk' ),
+/** Norwegian Nynorsk (‪Norsk (nynorsk)‬) */
+$specialPageAliases['nn'] = array(
+	'GlobalUsage' => array( 'Global_bruk' ),
 );
 
-$aliases['no'] = array(
-	'GlobalUsage'   => array( 'Global_bruk' ),
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬) */
+$specialPageAliases['no'] = array(
+	'GlobalUsage' => array( 'Global_bruk' ),
 );
 
-$aliases['oc'] = array(
-	'GlobalUsage'   => array( 'Usatge_global', 'UsatgeGlobal' ),
+/** Occitan (Occitan) */
+$specialPageAliases['oc'] = array(
+	'GlobalUsage' => array( 'Usatge_global', 'UsatgeGlobal' ),
 );
 
-$aliases['pl'] = array(
-	'GlobalUsage'   => array( 'Globalne_wykorzystanie' ),
+/** Polish (Polski) */
+$specialPageAliases['pl'] = array(
+	'GlobalUsage' => array( 'Globalne_wykorzystanie' ),
 );
 
-$aliases['pt'] = array(
-	'GlobalUsage'   => array( 'Utilização_global' ),
+/** Portuguese (Português) */
+$specialPageAliases['pt'] = array(
+	'GlobalUsage' => array( 'Utilização_global' ),
 );
 
-$aliases['ro'] = array(
-	'GlobalUsage'   => array( 'Utilizare_globală' ),
+/** Romanian (Română) */
+$specialPageAliases['ro'] = array(
+	'GlobalUsage' => array( 'Utilizare_globală' ),
 );
 
-$aliases['sa'] = array(
-	'GlobalUsage'   => array( 'वैश्विकउपयोग' ),
+/** Sanskrit (संस्कृत) */
+$specialPageAliases['sa'] = array(
+	'GlobalUsage' => array( 'वैश्विकउपयोग' ),
 );
 
-$aliases['sk'] = array(
-	'GlobalUsage'   => array( 'GlobálneVyužitie' ),
+/** Slovak (Slovenčina) */
+$specialPageAliases['sk'] = array(
+	'GlobalUsage' => array( 'GlobálneVyužitie' ),
 );
 
-$aliases['tl'] = array(
-	'GlobalUsage'   => array( 'Pandaigdigang paggamit' ),
+/** Tagalog (Tagalog) */
+$specialPageAliases['tl'] = array(
+	'GlobalUsage' => array( 'Pandaigdigang paggamit' ),
 );
 
-$aliases['tr'] = array(
-	'GlobalUsage'   => array( 'KüreselKullanım' ),
+/** Turkish (Türkçe) */
+$specialPageAliases['tr'] = array(
+	'GlobalUsage' => array( 'KüreselKullanım' ),
 );
 
-$aliases['vec'] = array(
-	'GlobalUsage'   => array( 'UtilizoGlobal' ),
+/** Vèneto (Vèneto) */
+$specialPageAliases['vec'] = array(
+	'GlobalUsage' => array( 'UtilizoGlobal' ),
 );
 
-$aliases['zh-hant'] = array(
-	'GlobalUsage'   => array( '全域使用' ),
+/** Traditional Chinese (‪中文(繁體)‬) */
+$specialPageAliases['zh-hant'] = array(
+	'GlobalUsage' => array( '全域使用' ),
 );
+
+/**
+ * For backwards compatibility with MediaWiki 1.15 and earlier.
+ */
+$aliases =& $specialPageAliases;
