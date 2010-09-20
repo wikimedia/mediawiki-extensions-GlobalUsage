@@ -1487,7 +1487,7 @@ $messages['tl'] = array(
 	'globalusage-no-results' => 'Hindi ginagamit ang [[:$1]] sa ibang mga wiki.',
 	'globalusage-on-wiki' => 'Paggamit sa $2',
 	'globalusage-of-file' => 'Ang sumusunod na mga wiki ang gumagamit ng talaksang ito:',
-	'globalusage-more' => 'Tumingin [[{{#Special:GlobalUsage}}/$1|ng marami pang pandaigdigang paggamit]] ng talaksang ito.',
+	'globalusage-more' => 'Tumingin [[{{#Special:GlobalUsage}}/$1|ng mas marami pang pandaigdigang paggamit]] ng talaksang ito.',
 	'globalusage-filterlocal' => 'Huwag ipakita ang lokal na paggamit',
 );
 
