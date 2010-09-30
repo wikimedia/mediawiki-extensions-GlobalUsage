@@ -24,11 +24,11 @@ class GlobalUsageHooks {
 		$gu = self::getGlobalUsage();
 		if ( $wgUseDumbLinkUpdate ) {
 			// Delete all entries to the page
-			$gu->deleteLinksFromPage( $title->getArticleId( GAID_FOR_UPDATE ) );
+			$gu->deleteLinksFromPage( $title->getArticleId( Title::GAID_FOR_UPDATE ) );
 			// Re-insert new usage for the page
 			$gu->insertLinks( $title, $missingFiles );
 		} else {
-			$articleId = $title->getArticleId( GAID_FOR_UPDATE );
+			$articleId = $title->getArticleId( Title::GAID_FOR_UPDATE );
 			$existing = $gu->getLinksFromPage( $articleId );
 			
 			// Calculate changes

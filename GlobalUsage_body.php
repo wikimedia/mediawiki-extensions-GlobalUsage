@@ -21,7 +21,7 @@ class GlobalUsage {
 	 * @param $title Title Title of the page
 	 * @param $images array Array of db keys of images used
 	 */
-	public function insertLinks( $title, $images, $pageIdFlags = GAID_FOR_UPDATE ) {
+	public function insertLinks( $title, $images, $pageIdFlags = Title::GAID_FOR_UPDATE ) {
 		$insert = array();
 		foreach ( $images as $name ) {
 			$insert[] = array(

@@ -82,7 +82,7 @@ class RefreshGlobalImageLinks extends Maintenance {
 					$title = Title::newFromRow( reset( $rows ) );
 					$images = array_keys( $rows );
 					# Since we have a pretty accurate page_id, don't specify
-					# GAID_FOR_UPDATE
+					# Title::GAID_FOR_UPDATE
 					$gu->insertLinks( $title, $images, /* $flags */ 0 );
 				}
 			}
