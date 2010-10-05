@@ -426,6 +426,7 @@ $messages['eu'] = array(
 
 /** Persian (فارسی)
  * @author Ebraminio
+ * @author Huji
  * @author Wayiran
  */
 $messages['fa'] = array(
@@ -437,7 +438,7 @@ $messages['fa'] = array(
 	'globalusage-no-results' => '[[:$1]] در ویکی‌های دیگر استفاده نشده‌است.',
 	'globalusage-on-wiki' => 'کاربرد در $2',
 	'globalusage-of-file' => 'این ویکی‌های دیگر از این پرونده استفاده می‌کنند:',
-	'globalusage-more' => 'نمایش [[{{#Special:GlobalUsage}}/$1استفاده‌های سراسری]] از این پرونده.',
+	'globalusage-more' => 'نمایش [[{{#Special:GlobalUsage}}/$1|استفاده‌های سراسری]] از این پرونده.',
 	'globalusage-filterlocal' => 'استفاده‌های محلی را نشان نده',
 );
 
