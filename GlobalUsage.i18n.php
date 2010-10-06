@@ -444,6 +444,7 @@ $messages['fa'] = array(
 
 /** Finnish (Suomi)
  * @author Crt
+ * @author Nike
  * @author ZeiP
  */
 $messages['fi'] = array(
@@ -455,7 +456,7 @@ $messages['fi'] = array(
 	'globalusage-no-results' => '[[:$1]] ei ole käytössä muissa wikeissä.',
 	'globalusage-on-wiki' => 'Käyttö kohteessa $2',
 	'globalusage-of-file' => 'Seuraavat muut wikit käyttävät tätä tiedostoa:',
-	'globalusage-more' => 'Näytä [[{{#Special:GlobalUsage}}/$1|lisää tiedoston globaalia käyttöä.]]',
+	'globalusage-more' => 'Näytä lisää [[{{#Special:GlobalUsage}}/$1|tämän tiedoston globaalia käyttöä]].',
 	'globalusage-filterlocal' => 'Älä näytä paikallista käyttöä',
 );
 
@@ -1598,6 +1599,7 @@ $messages['vo'] = array(
 $messages['yi'] = array(
 	'globalusage-ok' => 'זוכן',
 	'globalusage-text' => 'זוכן גלאבאלע טעקע ניצן.',
+	'globalusage-no-results' => '[[:$1]] נישט געניצט אויף אַנדערע וויקיס.',
 );
 
 /** Simplified Chinese (‪中文(简体)‬)
