@@ -1033,6 +1033,7 @@ $messages['nl'] = array(
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
  * @author Harald Khan
  * @author Jon Harald Søby
+ * @author Nghtwlkr
  */
 $messages['nn'] = array(
 	'globalusage' => 'Global filbruk',
@@ -1268,7 +1269,12 @@ $messages['ru'] = array(
  * @author Gazeb
  */
 $messages['rue'] = array(
+	'globalusage' => 'Ґлобалне хоснованя файлу',
+	'globalusage-for' => 'Ґлобалне хоснованя „$1“',
 	'globalusage-ok' => 'Глядати',
+	'globalusage-on-wiki' => 'Хоснованя на $2',
+	'globalusage-of-file' => 'Тот файл хоснують такы іншы вікі:',
+	'globalusage-filterlocal' => 'Не указовати локалне хоснованя',
 );
 
 /** Yakut (Саха тыла)
