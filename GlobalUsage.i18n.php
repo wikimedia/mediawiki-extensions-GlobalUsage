@@ -1613,6 +1613,13 @@ $messages['yi'] = array(
 	'globalusage-no-results' => '[[:$1]] נישט געניצט אויף אַנדערע וויקיס.',
 );
 
+/** Yoruba (Yorùbá)
+ * @author Demmy
+ */
+$messages['yo'] = array(
+	'globalusage-ok' => 'Ṣàwárí',
+);
+
 /** Simplified Chinese (‪中文(简体)‬)
  * @author Gaoxuewei
  * @author Gzdavidwong
