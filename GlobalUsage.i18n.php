@@ -1618,6 +1618,8 @@ $messages['yi'] = array(
  */
 $messages['yo'] = array(
 	'globalusage-ok' => 'Ṣàwárí',
+	'globalusage-no-results' => '[[:$1]] kò jẹ́ lílò lórí àwọn wiki míràn.',
+	'globalusage-of-file' => 'Àwọn wiki míràn wọ̀nyí lo fáìlì yìí:',
 );
 
 /** Simplified Chinese (‪中文(简体)‬)
