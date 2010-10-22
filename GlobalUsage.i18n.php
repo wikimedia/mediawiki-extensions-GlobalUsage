@@ -788,6 +788,13 @@ $messages['ka'] = array(
 	'globalusage-filterlocal' => 'არ აჩვენოთ ლოკალური გამოყენება',
 );
 
+/** Kalaallisut (Kalaallisut)
+ * @author Qaqqalik
+ */
+$messages['kl'] = array(
+	'globalusage-ok' => 'Ujarlerit',
+);
+
 /** Khmer (ភាសាខ្មែរ)
  * @author Chhorran
  * @author Lovekhmer
