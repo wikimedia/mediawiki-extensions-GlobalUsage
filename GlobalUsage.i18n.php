@@ -1292,7 +1292,16 @@ $messages['rue'] = array(
  * @author HalanTul
  */
 $messages['sah'] = array(
+	'globalusage' => 'Билэни киэҥник туттуу',
+	'globalusage-for' => 'Киэҥник туттуу «$1»',
+	'globalusage-desc' => 'Билэни киэҥник туттуу [[Special:GlobalUsage|Аналлаах сирэйэ]]',
 	'globalusage-ok' => 'Буларга',
+	'globalusage-text' => 'Киэҥник туттуллар билэни көрдөөһүн',
+	'globalusage-no-results' => '[[:$1]] атын биикигэ туттуллубат.',
+	'globalusage-on-wiki' => 'Манна $2 туттуу',
+	'globalusage-of-file' => 'Бу билэ мннык биикилэргэ туттуллар:',
+	'globalusage-more' => 'Билэ [[{{#Special:GlobalUsage}}/$1|киэҥник туттуллуутун]] көрүү.',
+	'globalusage-filterlocal' => 'Локаал туттууну көрдөрүмэ',
 );
 
 /** Slovak (Slovenčina)
