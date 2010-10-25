@@ -968,7 +968,7 @@ $messages['ml'] = array(
 	'globalusage-text' => 'പ്രമാണത്തിന്റെ ആഗോള ഉപയോഗം തിരയുക',
 	'globalusage-no-results' => '[[:$1]] മറ്റു വിക്കികളിൽ ഉപയോഗിക്കുന്നില്ല.',
 	'globalusage-on-wiki' => '$2 സംരംഭത്തിലെ ഉപയോഗം',
-	'globalusage-of-file' => 'താഴെ കൊടുക്കുന്ന വിക്കികളും ഈ പ്രമാണം ഉപയോഗിക്കുന്നു:',
+	'globalusage-of-file' => 'താഴെ കൊടുത്തിരിക്കുന്ന വിക്കികളും ഈ പ്രമാണം ഉപയോഗിക്കുന്നു:',
 	'globalusage-more' => 'ഈ പ്രമാണത്തിന്റെ [[{{#Special:GlobalUsage}}/$1|ആഗോള ഉപയോഗം]] കാണുക.',
 	'globalusage-filterlocal' => 'പ്രാദേശിക ഉപയോഗം പ്രദർശിപ്പിക്കരുത്',
 );
