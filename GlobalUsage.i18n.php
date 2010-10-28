@@ -146,6 +146,22 @@ $messages['as'] = array(
 	'globalusage-ok' => 'সন্ধান কৰক',
 );
 
+/** Bashkir (Башҡорт)
+ * @author Assele
+ */
+$messages['ba'] = array(
+	'globalusage' => 'Файлды дөйөм ҡулланыу',
+	'globalusage-for' => '"$1" файлын дөйөм ҡулланыу',
+	'globalusage-desc' => 'Файлды дөйөм ҡулланыуҙы ҡарау өсөн [[Special:GlobalUsage|махсус бит]]',
+	'globalusage-ok' => 'Эҙләү',
+	'globalusage-text' => 'Файлды дөйөм ҡулланыуҙы эҙләү',
+	'globalusage-no-results' => '[[:$1]]  файлы башҡа вики проекттарҙа ҡулланылмай.',
+	'globalusage-on-wiki' => '$2 проектында ҡулланыу',
+	'globalusage-of-file' => 'Был файл түбәндәге фики проекттарҙа ҡулланыла:',
+	'globalusage-more' => 'Был файлды дөйөм ҡулланыу тураһында [[{{#Special:GlobalUsage}}/$1|ентеклерәк мәғлүмәтте]] ҡарарға.',
+	'globalusage-filterlocal' => 'Урында ҡулланыуҙы күрһәтмәҫкә',
+);
+
 /** Bavarian (Boarisch)
  * @author Man77
  */
