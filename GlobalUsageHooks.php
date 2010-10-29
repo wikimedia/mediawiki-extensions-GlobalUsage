@@ -57,7 +57,6 @@ class GlobalUsageHooks {
 	 * Deletes entries from usage table.
 	 */
 	public static function onArticleDeleteComplete( $article, $user, $reason, $id ) {
-		$title = $article->getTitle();
 		$gu = self::getGlobalUsage();
 		$gu->deleteLinksFromPage( $id );
 
