@@ -7,8 +7,6 @@
 class SpecialGlobalUsage extends SpecialPage {
 	public function __construct() {
 		parent::__construct( 'GlobalUsage', 'globalusage' );
-
-		wfLoadExtensionMessages( 'globalusage' );
 	}
 
 	/**
@@ -46,9 +44,9 @@ class SpecialGlobalUsage extends SpecialPage {
 		/* Build form */
 		$html = Xml::openElement( 'form', array( 'action' => $wgScript ) ) . "\n";
 		// Name of SpecialPage
-		$html .= Xml::hidden( 'title', $this->getTitle()->getPrefixedText() ) . "\n";
+		$html .= Html::hidden( 'title', $this->getTitle()->getPrefixedText() ) . "\n";
 		// Limit
-		$html .= Xml::hidden( 'limit', $wgRequest->getInt( 'limit', 50 ) );
+		$html .= Html::hidden( 'limit', $wgRequest->getInt( 'limit', 50 ) );
 		// Input box with target prefilled if available
 		$formContent = "\t" . Xml::input( 'target', 40, is_null( $this->target ) ? ''
 					: $this->target->getText() )
