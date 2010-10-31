@@ -529,6 +529,13 @@ $messages['fy'] = array(
 	'globalusage-ok' => 'Sykje',
 );
 
+/** Traditional Gan script (贛語(繁體))
+ * @author Symane
+ */
+$messages['gan-hant'] = array(
+	'globalusage-ok' => '尋吖',
+);
+
 /** Galician (Galego)
  * @author Toliño
  * @author Xosé
