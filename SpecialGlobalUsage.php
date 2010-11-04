@@ -105,7 +105,6 @@ class SpecialGlobalUsage extends SpecialPage {
 			return;
 		}
 
-		$offset = $query->getOffsetString();
 		$navbar = $this->getNavBar( $query );
 		$targetName = $this->target->getText();
 
