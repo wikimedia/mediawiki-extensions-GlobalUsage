@@ -351,7 +351,7 @@ $messages['dsb'] = array(
 	'globalusage-no-results' => '[[:$1]] njewužywa se w drugich wikijach.',
 	'globalusage-on-wiki' => 'Wužywanje na $2',
 	'globalusage-of-file' => 'Slědujuce druge wikije wužywaju toś ten wobraz:',
-	'globalusage-more' => '[[{{#Special:GlobalUsage}}/$1|Dalšne globalne wužywanje]] toś teje dataje pokazaś',
+	'globalusage-more' => '[[{{#Special:GlobalUsage}}/$1|Dalšne globalne wužywanje]] toś teje dataje pokazaś.',
 	'globalusage-filterlocal' => 'Lokalne wužywanje njepokazaś',
 );
 
