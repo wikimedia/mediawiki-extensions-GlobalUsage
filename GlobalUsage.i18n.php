@@ -1682,6 +1682,7 @@ $messages['zh-hans'] = array(
 /** Traditional Chinese (‪中文(繁體)‬)
  * @author Gaoxuewei
  * @author Liangent
+ * @author Pbdragonwang
  * @author Wrightbus
  */
 $messages['zh-hant'] = array(
@@ -1693,7 +1694,7 @@ $messages['zh-hant'] = array(
 	'globalusage-no-results' => '[[:$1]]未在其他wiki中使用。',
 	'globalusage-on-wiki' => '$2的使用情況',
 	'globalusage-of-file' => '本文件也在如下其他wiki中使用：',
-	'globalusage-more' => '查看本文件的[[{{#Special:GlobalUsage}}/$1|更多全域使用情況]]。',
+	'globalusage-more' => '查看本檔案的[[{{#Special:GlobalUsage}}/$1|更多全域使用情況]]。',
 	'globalusage-filterlocal' => '不要顯示本地使用情況',
 );
 
