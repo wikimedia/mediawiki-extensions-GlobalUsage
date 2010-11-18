@@ -1556,7 +1556,7 @@ $messages['tr'] = array(
 	'globalusage-no-results' => '[[:$1]] diğer vikilerde kullanılmıyor.',
 	'globalusage-on-wiki' => '$2 üzerinde [[:File:$1|$1]] adlı dosyanın kullanımı',
 	'globalusage-of-file' => 'Bu dosya aşağıdaki diğer vikiler tarafından kullanılmaktadır:',
-	'globalusage-more' => 'Bu dosyanın [[{{#Special:GlobalUsage}}/$1|küresel kullanımını]] gör.',
+	'globalusage-more' => 'Bu dosyanın [[{{#Special:GlobalUsage}}/$1|daha fazla küresel kullanımını]] gör.',
 	'globalusage-filterlocal' => 'Yerel kullanımı gösterme',
 );
 
