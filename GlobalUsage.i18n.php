@@ -1134,6 +1134,7 @@ $messages['pdc'] = array(
 );
 
 /** Polish (Polski)
+ * @author Holek
  * @author Leinad
  * @author Maikking
  * @author Sp5uhe
@@ -1144,7 +1145,7 @@ $messages['pl'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Strona specjalna]] pokazująca globalne wykorzystanie pliku',
 	'globalusage-ok' => 'Szukaj',
 	'globalusage-text' => 'Globalne wyszukiwanie wykorzystania pliku',
-	'globalusage-no-results' => '[[:$1]] nie jest wykorzystywany w inny projektach wiki.',
+	'globalusage-no-results' => '[[:$1]] nie jest wykorzystywany w innych projektach wiki.',
 	'globalusage-on-wiki' => 'Wykorzystanie w $2',
 	'globalusage-of-file' => 'Ten plik jest wykorzystywany także w innych projektach wiki:',
 	'globalusage-more' => 'Pokaż [[{{#Special:GlobalUsage}}/$1|listę globalnego wykorzystania]] tego pliku.',
