@@ -1333,6 +1333,21 @@ $messages['sah'] = array(
 	'globalusage-filterlocal' => 'Локаал туттууну көрдөрүмэ',
 );
 
+/** Sinhala (සිංහල)
+ * @author Budhajeewa
+ */
+$messages['si'] = array(
+	'globalusage' => 'ගෝලීය ගොනු භාවිතය',
+	'globalusage-for' => '"$1" සඳහා ගෝලීය භාවිතය',
+	'globalusage-desc' => 'ගෝලීය ගොනු භාවිතය බැලීම සඳහා[[Special:GlobalUsage|විශේෂ පිටුව]]',
+	'globalusage-ok' => 'සොයන්න',
+	'globalusage-text' => 'ගෝලීය ගොනු භාවිතය සොයන්න',
+	'globalusage-no-results' => '[[:$1]] අනෙකුත් විකිවල භාවිතා කර නැත.',
+	'globalusage-on-wiki' => '$2 හි භාවිතය',
+	'globalusage-of-file' => 'පහත දැක්වෙන අනෙකුත් විකියන් මෙම ගොනුව භාවිතා කරයි:',
+	'globalusage-more' => 'මෙම ගොනුවේ [[{{#Special:GlobalUsage}}/$1|තවත් ගෝලීය භාවිත]] බලන්න.',
+);
+
 /** Slovak (Slovenčina)
  * @author Helix84
  */
@@ -1374,6 +1389,13 @@ $messages['sli'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Spezialseyte]] zur Oazeige, ei welchen Projekten de Dateien annes gemeinsam genutzten Repositoriums verwendet waan',
 	'globalusage-ok' => 'Sicha',
 	'globalusage-text' => 'Globale Siche noach Dateinutzungen.',
+);
+
+/** Albanian (Shqip)
+ * @author Mikullovci11
+ */
+$messages['sq'] = array(
+	'globalusage-ok' => 'Kërko',
 );
 
 /** Serbian Cyrillic ekavian (Српски (ћирилица))
