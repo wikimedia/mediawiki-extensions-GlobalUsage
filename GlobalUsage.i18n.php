@@ -1335,6 +1335,7 @@ $messages['sah'] = array(
 
 /** Sinhala (සිංහල)
  * @author Budhajeewa
+ * @author තඹරු විජේසේකර
  */
 $messages['si'] = array(
 	'globalusage' => 'ගෝලීය ගොනු භාවිතය',
@@ -1346,6 +1347,7 @@ $messages['si'] = array(
 	'globalusage-on-wiki' => '$2 හි භාවිතය',
 	'globalusage-of-file' => 'පහත දැක්වෙන අනෙකුත් විකියන් මෙම ගොනුව භාවිතා කරයි:',
 	'globalusage-more' => 'මෙම ගොනුවේ [[{{#Special:GlobalUsage}}/$1|තවත් ගෝලීය භාවිත]] බලන්න.',
+	'globalusage-filterlocal' => 'ප්‍රාදේශීය භාවිතය නොපෙන්වන්න.',
 );
 
 /** Slovak (Slovenčina)
