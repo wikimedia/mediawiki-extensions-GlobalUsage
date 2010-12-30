@@ -1694,6 +1694,7 @@ $messages['yo'] = array(
 /** Simplified Chinese (‪中文(简体)‬)
  * @author Gaoxuewei
  * @author Gzdavidwong
+ * @author Hydra
  * @author Liangent
  */
 $messages['zh-hans'] = array(
@@ -1705,7 +1706,7 @@ $messages['zh-hans'] = array(
 	'globalusage-no-results' => '[[:$1]]未在其他wiki中使用。',
 	'globalusage-on-wiki' => '$2的使用情况',
 	'globalusage-of-file' => '本文件也在如下其他wiki中使用：',
-	'globalusage-more' => '查看本文件的[[{{#Special:GlobalUsage}}/$1|更多全域使用情况]]。',
+	'globalusage-more' => '查看 [[{{#Special:GlobalUsage}}/$1|更多全球使用]] 的此文件。',
 	'globalusage-filterlocal' => '不要显示本地使用情况',
 );
 
