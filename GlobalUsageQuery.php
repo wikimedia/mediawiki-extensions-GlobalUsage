@@ -12,15 +12,17 @@ class GlobalUsageQuery {
 	private $reversed = false;
 
 	/**
-	 * @param $target mixed Title or db key, or array of db keys of target(s)
+	 * @param $target mixed Title or db key, or array of db keys of target(s).
+	 * If a title, can be a category or a file
 	 */
 	public function __construct( $target ) {
 		global $wgGlobalUsageDatabase;
 		$this->db = wfGetDB( DB_SLAVE, array(), $wgGlobalUsageDatabase );
-		if ( $target instanceof Title )
-			$this->target = $target->getDBKey();
-		else
+		if ( $target instanceof Title ) {
 			$this->target = $target;
+		} else {
+			$this->target = Title::makeTitleSafe( NS_FILE, $target );
+		}
 		$this->offset = array();
 
 	}
@@ -101,9 +103,28 @@ class GlobalUsageQuery {
 	 * Executes the query
 	 */
 	public function execute() {
-		/* Construct a where clause */
+		/* Construct the SQL query */
+		$tables = array( 'globalimagelinks' );
+		
 		// Add target image(s)
-		$where = array( 'gil_to' => $this->target );
+		switch ( $this->target->getNamespace() ) {
+			case NS_FILE:
+				$where = array( 'gil_to' => $this->target );
+				break;
+			case NS_CATEGORY:
+				$tables[] = 'categorylinks';
+				$tables[] = 'page';
+				$where = array( 
+					'cl_to' => $this->target->getDbKey(),
+					'cl_from = page_id', 
+					'page_namespace = ' . NS_FILE, 
+					'gil_to = page_title',
+				);
+				break;
+			default:
+				return array();
+		}
+		
 		
 		if ( $this->filterLocal )
 			// Don't show local file usage
@@ -135,7 +156,7 @@ class GlobalUsageQuery {
 		}
 
 		/* Perform select (Duh.) */
-		$res = $this->db->select( 'globalimagelinks',
+		$res = $this->db->select( $tables,
 				array(
 					'gil_to',
 					'gil_wiki',
