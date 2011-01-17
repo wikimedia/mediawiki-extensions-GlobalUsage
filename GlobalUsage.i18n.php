@@ -1714,19 +1714,20 @@ $messages['zh-hans'] = array(
 /** Traditional Chinese (‪中文(繁體)‬)
  * @author Gaoxuewei
  * @author Liangent
+ * @author Mark85296341
  * @author Pbdragonwang
  * @author Wrightbus
  */
 $messages['zh-hant'] = array(
-	'globalusage' => '全域文件使用情況',
-	'globalusage-for' => '“$1”的全域使用情況',
-	'globalusage-desc' => '查看全域文件使用情況的[[Special:GlobalUsage|特殊頁面]]',
+	'globalusage' => '全域檔案使用情況',
+	'globalusage-for' => '「$1」的全域使用情況',
+	'globalusage-desc' => '檢視全域檔案使用情況的[[Special:GlobalUsage|特殊頁面]]',
 	'globalusage-ok' => '搜尋',
-	'globalusage-text' => '搜索全域文件使用情況',
-	'globalusage-no-results' => '[[:$1]]未在其他wiki中使用。',
-	'globalusage-on-wiki' => '$2的使用情況',
-	'globalusage-of-file' => '本文件也在如下其他wiki中使用：',
-	'globalusage-more' => '查看本檔案的[[{{#Special:GlobalUsage}}/$1|更多全域使用情況]]。',
+	'globalusage-text' => '搜尋全域檔案使用情況',
+	'globalusage-no-results' => '[[:$1]]未在其他 wiki 中使用。',
+	'globalusage-on-wiki' => '$2 的使用情況',
+	'globalusage-of-file' => '本檔案也在如下其他 wiki 中使用：',
+	'globalusage-more' => '檢視本檔案的[[{{#Special:GlobalUsage}}/$1|更多全域使用情況]]。',
 	'globalusage-filterlocal' => '不要顯示本地使用情況',
 );
 
