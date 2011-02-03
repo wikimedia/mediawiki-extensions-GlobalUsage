@@ -146,6 +146,13 @@ $messages['as'] = array(
 	'globalusage-ok' => 'সন্ধান কৰক',
 );
 
+/** Azerbaijani (Azərbaycanca)
+ * @author PPerviz
+ */
+$messages['az'] = array(
+	'globalusage-ok' => 'Axtar',
+);
+
 /** Bashkir (Башҡортса)
  * @author Assele
  */
