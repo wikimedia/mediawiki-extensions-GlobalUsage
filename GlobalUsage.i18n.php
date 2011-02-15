@@ -1521,7 +1521,7 @@ $messages['te'] = array(
 	'globalusage-no-results' => '[[:$1]]ని ఇతర వికీలలో ఉపయోగించట్లేదు.',
 	'globalusage-on-wiki' => '$2 లో వాడుక',
 	'globalusage-of-file' => 'ఈ ఫైలుని క్రింది ఇతర వికీలు ఉపయోగిస్తున్నాయి:',
-	'globalusage-more' => 'ఈ ఫైలు యొక్క [[{{#Special:GlobalUsage}}/$1|మరింత సార్వత్రిక వాడుకని]] చూడండి.',
+	'globalusage-more' => 'ఈ దస్త్రపు [[{{#Special:GlobalUsage}}/$1|సార్వత్రిక వాడుక]]ని చూడండి.',
 	'globalusage-filterlocal' => 'స్థానిక వాడుకని చూపించకు',
 );
 
