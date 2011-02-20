@@ -369,6 +369,7 @@ $messages['ee'] = array(
 
 /** Greek (Ελληνικά)
  * @author Crazymadlover
+ * @author Glavkos
  * @author Lou
  * @author Omnipaedista
  * @author ZaDiak
@@ -377,11 +378,14 @@ $messages['ee'] = array(
 $messages['el'] = array(
 	'globalusage' => 'Καθολική χρήση αρχείου',
 	'globalusage-for' => 'Καθολική χρήση για "$1"',
+	'globalusage-desc' => '[[Special:GlobalUsage|Special page]], για να δείτε  καθολικό αρχείο χρήση',
 	'globalusage-ok' => 'Αναζήτηση',
 	'globalusage-text' => 'Αναζήτηση καθολικής χρήσης αρχείου',
 	'globalusage-no-results' => 'Το αρχείο [[:$1]] δεν χρησιμοποιείται σε άλλα wiki',
 	'globalusage-on-wiki' => 'Χρήση σε $2',
 	'globalusage-of-file' => 'Τα άλλα wikis που ακολουθούν χρησιμοποιούν αυτό το αρχείο:',
+	'globalusage-more' => 'Δείτε  [[{{#Special:GlobalUsage}}/$1|περισσότερη καθολική χρήση]] αυτού του αρχείου.',
+	'globalusage-filterlocal' => 'Να μην εμφανίζει τοπική χρήση',
 );
 
 /** Esperanto (Esperanto)
