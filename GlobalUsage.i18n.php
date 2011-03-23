@@ -277,9 +277,15 @@ $messages['ch'] = array(
 	'globalusage-ok' => 'Aligao',
 );
 
-/** Sorani (کوردی) */
+/** Sorani (کوردی)
+ * @author Asoxor
+ */
 $messages['ckb'] = array(
+	'globalusage' => 'بەکارھێنانی سەرانسەریی پەڕگە',
+	'globalusage-for' => 'بەکارھێنانی سەرانسەری بۆ «$1»',
 	'globalusage-ok' => 'گەڕان',
+	'globalusage-on-wiki' => 'بەکارھێنان لە $2',
+	'globalusage-of-file' => 'ئەم ویکیانەی دیکەش کە خوارەوەن ئەم پەڕگە بەکاردێنن:',
 );
 
 /** Czech (Česky)
@@ -1472,6 +1478,7 @@ $messages['su'] = array(
  * @author Boivie
  * @author Lejonel
  * @author M.M.S.
+ * @author WikiPhoenix
  */
 $messages['sv'] = array(
 	'globalusage' => 'Global filanvändning',
@@ -1480,7 +1487,7 @@ $messages['sv'] = array(
 	'globalusage-ok' => 'Sök',
 	'globalusage-text' => 'Sök global filanvändning.',
 	'globalusage-no-results' => '[[:$1]] används inte på andra wikier.',
-	'globalusage-on-wiki' => 'Användande av [[:File:$1|$1]] på $2',
+	'globalusage-on-wiki' => 'Användande av $2',
 	'globalusage-of-file' => 'Följande andra wikier använder denna fil:',
 	'globalusage-more' => 'Visa [[{{#Special:GlobalUsage}}/$1|mer globalt användande]] av denna fil.',
 	'globalusage-filterlocal' => 'Visa inte lokalt användande',
