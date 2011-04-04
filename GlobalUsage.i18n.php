@@ -717,11 +717,11 @@ $messages['hu'] = array(
  * @author Togaed
  */
 $messages['hy'] = array(
-	'globalusage' => 'Ֆայլի համընդհանուր օգտագործում',
+	'globalusage' => 'Նիշքի համընդհանուր օգտագործում',
 	'globalusage-ok' => 'Որոնել',
 	'globalusage-on-wiki' => 'Օգտագործումը $2 կայքում',
 	'globalusage-of-file' => 'Հետևյալ այլ վիքիները օգտագործում են այս ֆայլը՝',
-	'globalusage-more' => 'Տեսնել այս ֆայլի [[{{#Special:GlobalUsage}}/$1|ավելի համընդհանուր օգտագործումը]]:',
+	'globalusage-more' => 'Տեսնել այս նիշքի [[{{#Special:GlobalUsage}}/$1|ավելի համընդհանուր օգտագործումը]]:',
 );
 
 /** Interlingua (Interlingua)
