@@ -285,7 +285,7 @@ $messages['ckb'] = array(
 	'globalusage-for' => 'بەکارھێنانی سەرانسەری بۆ «$1»',
 	'globalusage-ok' => 'گەڕان',
 	'globalusage-on-wiki' => 'بەکارھێنان لە $2',
-	'globalusage-of-file' => 'ئەم ویکیانەی دیکەش کە خوارەوەن ئەم پەڕگە بەکاردێنن:',
+	'globalusage-of-file' => 'ئەم ویکیانەی دیکەی خوارەوەش ئەم پەڕگە بەکاردێنن:',
 );
 
 /** Czech (Česky)
