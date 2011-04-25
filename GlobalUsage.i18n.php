@@ -1141,7 +1141,7 @@ $messages['oc'] = array(
  * @author Psubhashish
  */
 $messages['or'] = array(
-	'globalusage-ok' => 'ଖୋଜିବା',
+	'globalusage-ok' => 'ଖୋଜିବେ',
 );
 
 /** Ossetic (Иронау)
