@@ -213,10 +213,18 @@ $messages['bg'] = array(
 );
 
 /** Bengali (বাংলা)
+ * @author Wikitanvir
  * @author Zaheen
  */
 $messages['bn'] = array(
+	'globalusage' => 'ফাইলের গ্লোবাল ব্যবহার',
+	'globalusage-for' => '"$1"-এর গ্লোবাল ব্যবহার',
 	'globalusage-ok' => 'অনুসন্ধান',
+	'globalusage-text' => 'ফাইলের গ্লোবাল ব্যবহার অনুসন্ধান করুন',
+	'globalusage-no-results' => '[[:$1]] অন্য কোনো উইকিতে ব্যবহার হচ্ছে না।',
+	'globalusage-on-wiki' => '$2-এ ব্যবহার',
+	'globalusage-of-file' => 'নিচের অন্যান্য উইকিগুলো এই ফাইলটি ব্যবহার করে:',
+	'globalusage-filterlocal' => 'স্থানীয় ব্যবহার দেখানোর প্রয়োজন নেই',
 );
 
 /** Breton (Brezhoneg)
@@ -1142,6 +1150,7 @@ $messages['oc'] = array(
  */
 $messages['or'] = array(
 	'globalusage-ok' => 'ଖୋଜିବେ',
+	'globalusage-on-wiki' => '$2ରେ ବ୍ୟବହାର',
 );
 
 /** Ossetic (Иронау)
