@@ -316,7 +316,7 @@ $messages['cs'] = array(
  * @author ОйЛ
  */
 $messages['cu'] = array(
-	'globalusage-ok' => 'ищи́',
+	'globalusage-ok' => 'ищи',
 );
 
 /** Danish (Dansk)
