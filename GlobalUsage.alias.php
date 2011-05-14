@@ -75,7 +75,7 @@ $specialPageAliases['frp'] = array(
 
 /** Galician (Galego) */
 $specialPageAliases['gl'] = array(
-	'GlobalUsage' => array( 'Uso global' ),
+	'GlobalUsage' => array( 'Uso_global' ),
 );
 
 /** Swiss German (Alemannisch) */
@@ -96,6 +96,11 @@ $specialPageAliases['hr'] = array(
 /** Upper Sorbian (Hornjoserbsce) */
 $specialPageAliases['hsb'] = array(
 	'GlobalUsage' => array( 'Globalne_wužiwanje' ),
+);
+
+/** Haitian (Kreyòl ayisyen) */
+$specialPageAliases['ht'] = array(
+	'GlobalUsage' => array( 'ItilizasyonGlobal' ),
 );
 
 /** Hungarian (Magyar) */
@@ -126,6 +131,11 @@ $specialPageAliases['it'] = array(
 /** Japanese (日本語) */
 $specialPageAliases['ja'] = array(
 	'GlobalUsage' => array( 'グローバルなファイル使用状況', 'グローバル使用状況' ),
+);
+
+/** Georgian (ქართული) */
+$specialPageAliases['ka'] = array(
+	'GlobalUsage' => array( 'გლობალური_გამოყენება' ),
 );
 
 /** Khmer (ភាសាខ្មែរ) */
@@ -226,6 +236,16 @@ $specialPageAliases['tr'] = array(
 /** Vèneto (Vèneto) */
 $specialPageAliases['vec'] = array(
 	'GlobalUsage' => array( 'UtilizoGlobal' ),
+);
+
+/** Vietnamese (Tiếng Việt) */
+$specialPageAliases['vi'] = array(
+	'GlobalUsage' => array( 'Sử_dụng_toàn_cục' ),
+);
+
+/** Simplified Chinese (‪中文(简体)‬) */
+$specialPageAliases['zh-hans'] = array(
+	'GlobalUsage' => array( '全球使用' ),
 );
 
 /** Traditional Chinese (‪中文(繁體)‬) */
