@@ -1422,6 +1422,13 @@ $messages['sli'] = array(
 	'globalusage-text' => 'Globale Siche noach Dateinutzungen.',
 );
 
+/** Somali (Soomaaliga)
+ * @author Maax
+ */
+$messages['so'] = array(
+	'globalusage-ok' => 'Raadi',
+);
+
 /** Albanian (Shqip)
  * @author Mikullovci11
  * @author Olsi
