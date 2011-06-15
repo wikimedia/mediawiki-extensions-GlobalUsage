@@ -928,6 +928,16 @@ $messages['ku-latn'] = array(
 	'globalusage-ok' => 'Lêbigere',
 );
 
+/** Cornish (Kernowek)
+ * @author Kw-Moon
+ */
+$messages['kw'] = array(
+	'globalusage' => 'Devnydh ollvysel an restren',
+	'globalusage-on-wiki' => 'Devnydh war',
+	'globalusage-of-file' => "Yma'n wikis erel a-sew owth usya an restren-ma:",
+	'globalusage-more' => "Gweles [[{{#Special:GlobalUsage}}/$1|devnydh ollvysel moy]] a'n restren-ma.",
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Les Meloures
  * @author Robby
