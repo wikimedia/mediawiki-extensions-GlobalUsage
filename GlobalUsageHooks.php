@@ -1,7 +1,7 @@
 <?php
 /**
  * GlobalUsage hooks for updating globalimagelinks table.
- * 
+ *
  * UI hooks in SpecialGlobalUsage.
  */
 
@@ -30,11 +30,11 @@ class GlobalUsageHooks {
 		} else {
 			$articleId = $title->getArticleId( Title::GAID_FOR_UPDATE );
 			$existing = $gu->getLinksFromPage( $articleId );
-			
+
 			// Calculate changes
 			$added = array_diff( $missingFiles, $existing );
 			$removed  = array_diff( $existing, $missingFiles );
-			
+
 			// Add new usages and delete removed
 			$gu->insertLinks( $title, $added );
 			if ( $removed )
@@ -106,8 +106,8 @@ class GlobalUsageHooks {
 
 		return self::$gu;
 	}
-	
-	/** 
+
+	/**
 	 * Hook to make sure globalimagelinks table gets duplicated for parsertests
 	 */
 	public static function onParserTestTables ( &$tables ) {
@@ -125,7 +125,7 @@ class GlobalUsageHooks {
 			if ( $wgDBtype == 'mysql' || $wgDBtype == 'sqlite' ) {
 				$wgExtNewTables[] = array( 'globalimagelinks', "$dir/GlobalUsage.sql" );
 				$wgExtNewIndexes[] = array( 'globalimagelinks', 'globalimagelinks_wiki_nsid_title', "$dir/patches/patch-globalimagelinks_wiki_nsid_title.sql" );
-			} else if ( $wgDBtype == 'postgresql' ) {
+			} elseif ( $wgDBtype == 'postgresql' ) {
 				$wgExtNewTables[] = array( 'globalimagelinks', "$dir/GlobalUsage.pg.sql" );
 				$wgExtNewIndexes[] = array( 'globalimagelinks', 'globalimagelinks_wiki_nsid_title', "$dir/patches/patch-globalimagelinks_wiki_nsid_title.pg.sql" );
 			}
@@ -135,7 +135,7 @@ class GlobalUsageHooks {
 					"$dir/GlobalUsage.sql", true ) );
 				$updater->addExtensionUpdate( array( 'addIndex', 'globalimagelinks',
 					'globalimagelinks_wiki_nsid_title', "$dir/patches/patch-globalimagelinks_wiki_nsid_title.sql", true ) );
-			} else if ( $updater->getDB()->getType() == 'postgresql' ) {
+			} elseif ( $updater->getDB()->getType() == 'postgresql' ) {
 				$updater->addExtensionUpdate( array( 'addTable', 'globalimagelinks',
 					"$dir/GlobalUsage.pg.sql", true ) );
 				$updater->addExtensionUpdate( array( 'addIndex', 'globalimagelinks',
