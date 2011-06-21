@@ -933,7 +933,7 @@ $messages['ku-latn'] = array(
  */
 $messages['kw'] = array(
 	'globalusage' => 'Devnydh ollvysel an restren',
-	'globalusage-on-wiki' => 'Devnydh war',
+	'globalusage-on-wiki' => 'Devnydh war $2',
 	'globalusage-of-file' => "Yma'n wikis erel a-sew owth usya an restren-ma:",
 	'globalusage-more' => "Gweles [[{{#Special:GlobalUsage}}/$1|devnydh ollvysel moy]] a'n restren-ma.",
 );
