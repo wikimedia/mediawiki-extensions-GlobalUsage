@@ -61,12 +61,12 @@ class SpecialGlobalUsage extends SpecialPage {
 		
 		if ( !is_null( $this->target ) && wfFindFile( $this->target ) ) {
 			// Show the image if it exists
-			global $wgUser, $wgContLang;
+			global $wgUser;
 			$skin = $wgUser->getSkin();
 
 			$html .= $skin->makeImageLinkObj( $this->target,
 					$this->target->getPrefixedText(),
-					/* $alt */ '', /* $align */ $wgContLang->alignEnd(),
+					/* $alt */ '', /* $align */ wfUILang()->alignEnd(),
 					/* $handlerParams */ array(), /* $framed */ false,
 					/* $thumb */ true );
 		}
