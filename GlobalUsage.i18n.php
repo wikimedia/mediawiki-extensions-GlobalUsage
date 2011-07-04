@@ -1163,11 +1163,12 @@ $messages['or'] = array(
 	'globalusage-on-wiki' => '$2ରେ ବ୍ୟବହାର',
 );
 
-/** Ossetic (Иронау)
+/** Ossetic (Ирон)
  * @author Amikeco
+ * @author Bouron
  */
 $messages['os'] = array(
-	'globalusage-ok' => 'Агур',
+	'globalusage-ok' => 'Агурын',
 );
 
 /** Deitsch (Deitsch)
