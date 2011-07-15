@@ -33,7 +33,7 @@ class GlobalUsage {
 				'gil_to' => $name
 			);
 		}
-		$this->db->insert( 'globalimagelinks', $insert, __METHOD__ );
+		$this->db->insert( 'globalimagelinks', $insert, __METHOD__, array( 'IGNORE' ) );
 	}
 	/**
 	 * Get all global images from a certain page
