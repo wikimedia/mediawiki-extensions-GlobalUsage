@@ -20,6 +20,9 @@ class GlobalUsageQuery {
 		$this->db = wfGetDB( DB_SLAVE, array(), $wgGlobalUsageDatabase );
 		if ( $target instanceof Title ) {
 			$this->target = $target;
+		} elseif ( is_array( $target ) ) {
+			// List of files to query
+			$this->target = $target;
 		} else {
 			$this->target = Title::makeTitleSafe( NS_FILE, $target );
 		}
@@ -107,7 +110,12 @@ class GlobalUsageQuery {
 		$tables = array( 'globalimagelinks' );
 		
 		// Add target image(s)
-		switch ( $this->target->getNamespace() ) {
+		if ( is_array( $this->target ) ) {
+			$namespace = NS_FILE;
+		} else {
+			$namespace = $this->target->getNamespace();
+		}
+		switch ( $namespace ) {
 			case NS_FILE:
 				$where = array( 'gil_to' => $this->target );
 				break;
