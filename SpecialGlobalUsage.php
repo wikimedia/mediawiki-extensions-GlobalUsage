@@ -64,11 +64,12 @@ class SpecialGlobalUsage extends SpecialPage {
 			global $wgUser;
 			$skin = $wgUser->getSkin();
 
-			$html .= $skin->makeImageLinkObj( $this->target,
-					$this->target->getPrefixedText(),
+			$html .= Linker::makeThumbLinkObj( $this->target,
+					wfFindFile( $this->target ),
+					/* $label */ $this->target->getPrefixedText(),
 					/* $alt */ '', /* $align */ wfUILang()->alignEnd(),
 					/* $handlerParams */ array(), /* $framed */ false,
-					/* $thumb */ true );
+					/* $manualThumb */ false );
 		}
 		
 		// Wrap the entire form in a nice fieldset
