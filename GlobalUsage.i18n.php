@@ -1055,6 +1055,22 @@ $messages['mr'] = array(
 	'globalusage-text' => 'जागतिक संचिका उपयोग शोधा.',
 );
 
+/** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
+ */
+$messages['ms'] = array(
+	'globalusage' => 'Penggunaan fail sejagat',
+	'globalusage-for' => 'Penggunaan "$1" sejagat',
+	'globalusage-desc' => '[[Special:GlobalUsage|Laman khas]] untuk melihat penggunaan fail sejagat',
+	'globalusage-ok' => 'Cari',
+	'globalusage-text' => 'Cari penggunaan fail sejagat',
+	'globalusage-no-results' => '[[:$1]] tidak digunakan di wiki lain.',
+	'globalusage-on-wiki' => 'Penggunaan di $2',
+	'globalusage-of-file' => 'Fail ini digunakan oleh wiki-wiki lain yang berikut:',
+	'globalusage-more' => 'Lihat [[{{#Special:GlobalUsage}}/$1|banyak lagi penggunaan sejagat]] bagi fail ini.',
+	'globalusage-filterlocal' => 'Jangan tunjukkan penggunaan tempatan',
+);
+
 /** Maltese (Malti)
  * @author Chrisportelli
  */
