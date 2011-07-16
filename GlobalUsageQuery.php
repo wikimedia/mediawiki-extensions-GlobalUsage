@@ -169,6 +169,7 @@ class GlobalUsageQuery {
 					'gil_to',
 					'gil_wiki',
 					'gil_page',
+					'gil_page_namespace_id',
 					'gil_page_namespace',
 					'gil_page_title'
 				),
@@ -211,6 +212,7 @@ class GlobalUsageQuery {
 			$this->result[$row->gil_to][$row->gil_wiki][] = array(
 				'image'	=> $row->gil_to,
 				'id' => $row->gil_page,
+				'namespace_id' => $row->gil_page_namespace_id,
 				'namespace' => $row->gil_page_namespace,
 				'title' => $row->gil_page_title,
 				'wiki' => $row->gil_wiki,

@@ -29,6 +29,7 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 
 	public function execute() {
 		$params = $this->extractRequestParams();
+		$prop = array_flip( $params['prop'] );
 
 		$pageIds = $this->getPageSet()->getAllTitlesByNamespace();
 		if ( !empty( $pageIds[NS_FILE] ) ) {
@@ -51,18 +52,29 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 				$pageId = intval( $pageIds[$image] );
 				foreach ( $wikis as $wiki => $result ) {
 					foreach ( $result as $item ) {
-						if ( $item['namespace'] )
+						if ( $item['namespace'] ) {
 							$title = "{$item['namespace']}:{$item['title']}";
-						else
+						} else {
 							$title = $item['title'];
-						$url = WikiMap::getForeignUrl( $item['wiki'], $title );
+						}
+						$result = array(
+							'title' => $title,
+							'wiki' => WikiMap::getWikiName( $wiki )
+						);
+						if ( isset( $prop['url'] ) ) {
+							$result['url'] = wfExpandUrl( 
+								WikiMap::getForeignUrl( $item['wiki'], $title ) );
+						}
+						if ( isset( $prop['pageid'] ) ) {
+							$result['pageid'] = $item['id'];
+						}
+						if ( isset( $prop['namespace'] ) ) {
+							$result['ns'] = $item['namespace_id'];
+						}
+						
 						$fit = $apiResult->addValue( array(
 								'query', 'pages', $pageId, 'globalusage'
-							), null, array(
-								'title' => $title,
-								'url' => $url,
-								'wiki' => WikiMap::getWikiName( $wiki )
-						) );
+							), null, $result );
 
 						if ( !$fit ) {
 							$continue = "{$item['image']}|{$item['wiki']}|{$item['id']}";
@@ -94,6 +106,15 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 
 	public function getAllowedParams() {
 		return array(
+				'prop' => array(
+					ApiBase::PARAM_DFLT => 'url',
+					ApiBase::PARAM_TYPE => array(
+						'url',
+						'pageid',
+						'namespace',
+					),
+					ApiBase::PARAM_ISMULTI => true,
+				),
 				'limit' => array(
 					ApiBase :: PARAM_DFLT => 10,
 					ApiBase :: PARAM_TYPE => 'limit',
@@ -108,6 +129,12 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 
 	public function getParamDescription () {
 		return array(
+			'prop' => array(
+				'What properties to return',
+				' url        - Adds url ',
+				' pageid     - Adds page id',
+				' namespace  - Adds namespace id',
+			),
 			'limit' => 'How many links to return',
 			'continue' => 'When more results are available, use this to continue',
 			'filterlocal' => 'Filter local usage of the file',
