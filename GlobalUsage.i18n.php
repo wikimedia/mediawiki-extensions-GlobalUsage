@@ -612,7 +612,7 @@ $messages['gu'] = array(
  * @author MacTire02
  */
 $messages['gv'] = array(
-	'globalusage-ok' => 'Ronsaghey',
+	'globalusage-ok' => 'Ronsee',
 );
 
 /** Hausa (هَوُسَ) */
