@@ -321,9 +321,19 @@ $messages['cu'] = array(
 
 /** Danish (Dansk)
  * @author Jon Harald Søby
+ * @author Peter Alberti
  */
 $messages['da'] = array(
+	'globalusage' => 'Global filanvendelse',
+	'globalusage-for' => 'Global anvendelse af "$1"',
+	'globalusage-desc' => '[[Special:GlobalUsage|Specialside]] til at vise global filanvendelse',
 	'globalusage-ok' => 'Søg',
+	'globalusage-text' => 'Søg i global filanvendelse',
+	'globalusage-no-results' => '[[:$1]] er ikke i brug på andre wikier.',
+	'globalusage-on-wiki' => 'Anvendelse på $2',
+	'globalusage-of-file' => 'Følgende andre wikier anvender denne fil:',
+	'globalusage-more' => 'Vis [[{{#Special:GlobalUsage}}/$1|flere globale anvendelser]] af denne fil.',
+	'globalusage-filterlocal' => 'Vis ikke lokal anvendelse',
 );
 
 /** German (Deutsch)
@@ -1375,7 +1385,7 @@ $messages['rue'] = array(
 	'globalusage-filterlocal' => 'Не указовати локалне хоснованя',
 );
 
-/** Yakut (Саха тыла)
+/** Sakha (Саха тыла)
  * @author HalanTul
  */
 $messages['sah'] = array(
