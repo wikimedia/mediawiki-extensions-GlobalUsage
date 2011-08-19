@@ -1242,6 +1242,14 @@ $messages['pms'] = array(
 	'globalusage-filterlocal' => "Mosta nen l'usagi local.",
 );
 
+/** Western Punjabi (پنجابی)
+ * @author Khalid Mahmood
+ */
+$messages['pnb'] = array(
+	'globalusage' => 'گلوبل فائل ورتن',
+	'globalusage-filterlocal' => 'لوکل ورتن ناں دسو',
+);
+
 /** Pashto (پښتو)
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
