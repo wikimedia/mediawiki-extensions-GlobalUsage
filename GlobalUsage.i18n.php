@@ -342,16 +342,16 @@ $messages['da'] = array(
  * @author Umherirrender
  */
 $messages['de'] = array(
-	'globalusage' => 'Globale Dateinutzung',
-	'globalusage-for' => 'Globale Dateinutzung für „$1“',
-	'globalusage-desc' => '[[Special:GlobalUsage|Spezialseite]] zur Anzeige, in welchen Projekten die Dateien eines gemeinsam genutzten Repositoriums verwendet werden',
+	'globalusage' => 'Globale Dateiverwendung',
+	'globalusage-for' => 'Globale Dateiverwendung für „$1“',
+	'globalusage-desc' => '[[Special:GlobalUsage|Spezialseite]] zur Anzeige, in welchen Projekten die Dateien des gemeinsam genutzten Repositoriums verwendet werden',
 	'globalusage-ok' => 'Suchen',
-	'globalusage-text' => 'Globale Suche nach Dateinutzungen',
-	'globalusage-no-results' => '[[:$1]] wird nicht auf anderen Wikis genutzt.',
-	'globalusage-on-wiki' => 'Nutzung auf $2',
-	'globalusage-of-file' => 'Die nachfolgenden anderen Wikis nutzen diese Datei:',
-	'globalusage-more' => '[[{{#Special:GlobalUsage}}/$1|Globale Dateinutzung]] dieser Datei anschauen.',
-	'globalusage-filterlocal' => 'Zeige keine lokale Dateinutzung',
+	'globalusage-text' => 'Globale Suche nach der Dateiverwendung',
+	'globalusage-no-results' => '[[:$1]] wird nicht auf anderen Wikis verwendet.',
+	'globalusage-on-wiki' => 'Verwendung auf $2',
+	'globalusage-of-file' => 'Die nachfolgenden anderen Wikis verwenden diese Datei:',
+	'globalusage-more' => '[[{{#Special:GlobalUsage}}/$1|Weitere globale Verwendungen]] dieser Datei anschauen.',
+	'globalusage-filterlocal' => 'Zeige keine lokale Dateiverwendung',
 );
 
 /** Zazaki (Zazaki)
