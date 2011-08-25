@@ -544,7 +544,7 @@ $messages['frp'] = array(
 	'globalusage-no-results' => '[[:$1]] est pas utilisâ sur d’ôtros vouiquis.',
 	'globalusage-on-wiki' => 'Usâjo dessus $2',
 	'globalusage-of-file' => 'Cetos ôtros vouiquis utilisont ceti fichiér :',
-	'globalusage-more' => 'Vêre los [[{{#Special:GlobalUsage}}/$1|usâjos globâls]] de ceti fichiér.',
+	'globalusage-more' => 'Vêre [[{{#Special:GlobalUsage}}/$1|més d’usâjos globâls]] de ceti fichiér.',
 	'globalusage-filterlocal' => 'Pas montrar l’usâjo local',
 );
 
@@ -578,10 +578,10 @@ $messages['gan-hant'] = array(
 $messages['gl'] = array(
 	'globalusage' => 'Uso global do ficheiro',
 	'globalusage-for' => 'Uso global de "$1"',
-	'globalusage-desc' => '[[Special:GlobalUsage|Páxina especial]] para ver o uso global do ficheiro',
+	'globalusage-desc' => '[[Special:GlobalUsage|Páxina especial]] para ver o uso global dun ficheiro',
 	'globalusage-ok' => 'Procurar',
-	'globalusage-text' => 'Procurar o uso global do ficheiro.',
-	'globalusage-no-results' => '[[:$1]] non se emprega noutros wikis.',
+	'globalusage-text' => 'Procurar o uso global do ficheiro',
+	'globalusage-no-results' => '"[[:$1]]" non se emprega noutros wikis.',
 	'globalusage-on-wiki' => 'Uso en $2',
 	'globalusage-of-file' => 'Os seguintes wikis empregan esta imaxe:',
 	'globalusage-more' => 'Ollar [[{{#Special:GlobalUsage}}/$1|o uso global]] deste ficheiro.',
@@ -1020,16 +1020,16 @@ $messages['mhr'] = array(
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
-	'globalusage' => 'Глобална употреба на податотекава',
+	'globalusage' => 'Глобална употреба на податотека',
 	'globalusage-for' => 'Глобална употреба на „$1“',
-	'globalusage-desc' => '[[Special:GlobalUsage|Специјална страница]] за преглед на употребата на глобални податотеки',
+	'globalusage-desc' => '[[Special:GlobalUsage|Специјална страница]] за преглед на глобалната употреба податотеки',
 	'globalusage-ok' => 'Пребарај',
 	'globalusage-text' => 'Пребарување на глобалната употреба на податотека',
-	'globalusage-no-results' => '[[:$1]] не се користи во други викија..',
-	'globalusage-on-wiki' => 'Искористеност на $2',
+	'globalusage-no-results' => '[[:$1]] не се користи на други викија.',
+	'globalusage-on-wiki' => 'Употреба на $2',
 	'globalusage-of-file' => 'Оваа податотека ја користат и следниве викија:',
-	'globalusage-more' => 'Погледајте ја [[{{#Special:GlobalUsage}}/$1|глобалната употреба]] на податотекава.',
-	'globalusage-filterlocal' => 'Не прикажувај локално користење',
+	'globalusage-more' => 'Погледајте ја [[{{#Special:GlobalUsage}}/$1|останатата глобална употреба]] на податотекава.',
+	'globalusage-filterlocal' => 'Не прикажувај локална употреба',
 );
 
 /** Malayalam (മലയാളം)
@@ -1080,7 +1080,7 @@ $messages['ms'] = array(
 	'globalusage-on-wiki' => 'Penggunaan di $2',
 	'globalusage-of-file' => 'Fail ini digunakan oleh wiki-wiki lain yang berikut:',
 	'globalusage-more' => 'Lihat [[{{#Special:GlobalUsage}}/$1|banyak lagi penggunaan sejagat]] bagi fail ini.',
-	'globalusage-filterlocal' => 'Jangan tunjukkan penggunaan tempatan',
+	'globalusage-filterlocal' => 'Jangan tunjukkan penggunaan setempat',
 );
 
 /** Maltese (Malti)
