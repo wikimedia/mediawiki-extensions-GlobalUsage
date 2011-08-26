@@ -151,7 +151,7 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 		) );
 	}
 
-	protected function getExamples() {
+	public function getExamples() {
 		return array (
 				"Get usage of File:Example.jpg:",
 				"  api.php?action=query&prop=globalusage&titles=File:Example.jpg",
