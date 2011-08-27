@@ -110,15 +110,15 @@ $messages['am'] = array(
  * @author OsamaK
  */
 $messages['ar'] = array(
-	'globalusage' => 'استخدام الملف العام',
+	'globalusage' => 'الاستخدام العام للملف',
 	'globalusage-for' => 'استخدام "$1" العام',
-	'globalusage-desc' => '[[Special:GlobalUsage|صفحة خاصة]] لرؤية استخدام الملف العام',
+	'globalusage-desc' => '[[Special:GlobalUsage|صفحة خاصة]] لرؤية الاستخدام العام للملف',
 	'globalusage-ok' => 'ابحث',
-	'globalusage-text' => 'بحث استخدام الملف العام',
+	'globalusage-text' => 'ابحث في الاستخدام العام لملف',
 	'globalusage-no-results' => '[[:$1]] غير مستخدم في ويكيات أخرى.',
 	'globalusage-on-wiki' => 'الاستخدام في $2',
 	'globalusage-of-file' => 'الويكيات الأخرى التالية تستخدم هذا الملف:',
-	'globalusage-more' => 'عرض [[{{#Special:GlobalUsage}}/$1|المزيد من الاستخدام العام]] لهذا الملف.',
+	'globalusage-more' => 'اعرض [[{{#Special:GlobalUsage}}/$1|المزيد من الاستخدام العام]] لهذا الملف.',
 	'globalusage-filterlocal' => 'لا تعرض الاستخدام المحلي',
 );
 
@@ -431,21 +431,22 @@ $messages['eo'] = array(
 /** Spanish (Español)
  * @author Crazymadlover
  * @author Dferg
+ * @author Fitoschido
  * @author Jatrobat
  * @author Platonides
  * @author Translationista
  */
 $messages['es'] = array(
 	'globalusage' => 'Uso de archivo global',
-	'globalusage-for' => 'Uso global para "$1"',
+	'globalusage-for' => 'Uso global de «$1»',
 	'globalusage-desc' => '[[Special:GlobalUsage|Página especial]] para ver uso de archivo global',
 	'globalusage-ok' => 'Buscar',
 	'globalusage-text' => 'Buscar uso de archivo global',
-	'globalusage-no-results' => '[[:$1]] no es usado en otros wikis.',
+	'globalusage-no-results' => '[[:$1]] no se utiliza en otros wikis.',
 	'globalusage-on-wiki' => 'Uso en $2',
-	'globalusage-of-file' => 'Los siguientes otros wiki usan este archivo:',
-	'globalusage-more' => 'Ver el [[{{#Special:GlobalUsage}}/$1|uso global]] de este archivo.',
-	'globalusage-filterlocal' => 'No mostrar los usos en esta wiki',
+	'globalusage-of-file' => 'Los siguientes wiki usan este archivo:',
+	'globalusage-more' => 'Ver [[{{#Special:GlobalUsage}}/$1|más uso global]] de este archivo.',
+	'globalusage-filterlocal' => 'No mostrar el uso local',
 );
 
 /** Estonian (Eesti)
@@ -854,6 +855,13 @@ $messages['ka'] = array(
 	'globalusage-filterlocal' => 'არ აჩვენოთ ლოკალური გამოყენება',
 );
 
+/** Kazakh (Cyrillic) (Қазақша (Cyrillic))
+ * @author GaiJin
+ */
+$messages['kk-cyrl'] = array(
+	'globalusage-ok' => 'Іздеу',
+);
+
 /** Kalaallisut (Kalaallisut)
  * @author Qaqqalik
  */
@@ -956,7 +964,7 @@ $messages['kw'] = array(
  */
 $messages['lb'] = array(
 	'globalusage' => 'Globaalt Benotze vum Fichier',
-	'globalusage-for' => 'Globaalt Benotze fir "$1"',
+	'globalusage-for' => 'Globale Gebrauch vum "$1"',
 	'globalusage-desc' => "[[Special:GlobalUsage|Spezialsäit]] fir d'globaalt Benotze vun engem Fichier ze gesinn",
 	'globalusage-ok' => 'Sichen',
 	'globalusage-text' => 'Nom globale Benotze vum Fichier sichen.',
@@ -1045,8 +1053,8 @@ $messages['ml'] = array(
 	'globalusage-no-results' => '[[:$1]] മറ്റു വിക്കികളിൽ ഉപയോഗിക്കുന്നില്ല.',
 	'globalusage-on-wiki' => '$2 സംരംഭത്തിലെ ഉപയോഗം',
 	'globalusage-of-file' => 'താഴെ കൊടുത്തിരിക്കുന്ന മറ്റ് വിക്കികൾ ഈ പ്രമാണം ഉപയോഗിക്കുന്നു:',
-	'globalusage-more' => 'ഈ പ്രമാണത്തിന്റെ [[{{#Special:GlobalUsage}}/$1|ആഗോള ഉപയോഗം]] കാണുക.',
-	'globalusage-filterlocal' => 'പ്രാദേശിക ഉപയോഗം പ്രദർശിപ്പിക്കരുത്',
+	'globalusage-more' => 'ഈ പ്രമാണത്തിന്റെ [[{{#Special:GlobalUsage}}/$1|കൂടുതൽ ആഗോള ഉപയോഗം]] കാണുക.',
+	'globalusage-filterlocal' => 'പ്രാദേശിക ഉപയോഗം പ്രദർശിപ്പിക്കേണ്ടതില്ല',
 );
 
 /** Mongolian (Монгол)
