@@ -755,7 +755,7 @@ $messages['ia'] = array(
 	'globalusage-no-results' => '[[:$1]] non es usate in altere wikis.',
 	'globalusage-on-wiki' => 'Uso in $2',
 	'globalusage-of-file' => 'Le altere wikis sequente usa iste imagine:',
-	'globalusage-more' => 'Vider le [[{{#Special:GlobalUsage}}/$1|uso global]] de iste file.',
+	'globalusage-more' => 'Vider [[{{#Special:GlobalUsage}}/$1|altere usos global]] de iste file.',
 	'globalusage-filterlocal' => 'Non monstrar uso local',
 );
 
@@ -1275,6 +1275,7 @@ $messages['ps'] = array(
 );
 
 /** Portuguese (Português)
+ * @author Giro720
  * @author Hamilton Abreu
  * @author Lijealso
  * @author Malafaya
@@ -1284,7 +1285,7 @@ $messages['pt'] = array(
 	'globalusage-for' => 'Utilização global de "$1"',
 	'globalusage-desc' => '[[Special:GlobalUsage|Página especial]] para consultar a utilização global de ficheiros',
 	'globalusage-ok' => 'Pesquisar',
-	'globalusage-text' => 'Pesquisar utilização global de ficheiros.',
+	'globalusage-text' => 'Pesquisar utilização global de ficheiros',
 	'globalusage-no-results' => '[[:$1]] não é usado noutras wikis.',
 	'globalusage-on-wiki' => 'Uso na $2',
 	'globalusage-of-file' => 'As seguintes wikis usam este ficheiro:',
@@ -1303,7 +1304,7 @@ $messages['pt-br'] = array(
 	'globalusage-for' => 'Uso global de "$1"',
 	'globalusage-desc' => '[[Special:GlobalUsage|Página especial]] para consultar a utilização global de arquivos',
 	'globalusage-ok' => 'Busca',
-	'globalusage-text' => 'Pesquisar utilização global de arquivos.',
+	'globalusage-text' => 'Pesquisar utilização global de arquivos',
 	'globalusage-no-results' => '[[:$1]] não é usado em outras wikis.',
 	'globalusage-on-wiki' => 'Uso na $2',
 	'globalusage-of-file' => 'As outras wikis a seguir usam este arquivo:',
