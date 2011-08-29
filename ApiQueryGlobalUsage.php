@@ -62,8 +62,7 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 							'wiki' => WikiMap::getWikiName( $wiki )
 						);
 						if ( isset( $prop['url'] ) ) {
-							$result['url'] = wfExpandUrl( 
-								WikiMap::getForeignUrl( $item['wiki'], $title ) );
+							$result['url'] = WikiMap::getForeignUrl( $item['wiki'], $title );
 						}
 						if ( isset( $prop['pageid'] ) ) {
 							$result['pageid'] = $item['id'];
