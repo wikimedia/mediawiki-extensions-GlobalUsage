@@ -47,7 +47,7 @@ Button on [[Special:GlobalUsage]]',
 	'globalusage-on-wiki' => 'Shown in the list of global usages. Example: [[Commons:Special:GlobalUsage/Example.jpg]] and [[Commons:File:Example.jpg]]
 
 * $1 the file name, but unused in this message
-* $2 the project name',
+* $2 the project name given as a domain, e.g. en.wikipedia.org',
 	'globalusage-of-file' => 'Used on a image page.
 The number of following wikis is unknown. By a empty result, no message is shown.',
 	'globalusage-more' => 'Used on an image page, when more global usage results are available. Example: [[Commons:File:Example.jpg]]
@@ -187,7 +187,7 @@ $messages['be-tarask'] = array(
 	'globalusage' => 'Глябальнае выкарыстаньне файла',
 	'globalusage-for' => 'Глябальнае выкарыстаньне «$1»',
 	'globalusage-desc' => '[[Special:GlobalUsage|Спэцыяльная старонка]] для прагляду глябальнага выкарыстаньня файла',
-	'globalusage-ok' => 'Пошук',
+	'globalusage-ok' => 'Шукаць',
 	'globalusage-text' => 'Пошук глябальнага выкарыстаньня файла.',
 	'globalusage-no-results' => '[[:$1]] не выкарыстоўваецца ў іншых вікі.',
 	'globalusage-on-wiki' => 'Выкарыстаньне ў $2',
@@ -931,11 +931,11 @@ $messages['krj'] = array(
 $messages['ksh'] = array(
 	'globalusage' => 'Jemeinsam jebruch Dateie',
 	'globalusage-for' => 'De Dattei „$1“ weed jemeinsam jebruch',
-	'globalusage-desc' => '[[Special:GlobalUsage|Söndersigg]] för jemeinsam jebruch Dateie ze zeije.',
+	'globalusage-desc' => '[[Special:GlobalUsage|Extrasigg]] för jemeinsam jebruch Dateie ze zeije.',
 	'globalusage-ok' => 'Söhk!',
 	'globalusage-text' => 'Söhk noh jemeinsam jebruch Datteie.',
 	'globalusage-no-results' => '[[:$1]] weed in ander Wikis nit jebruch.',
-	'globalusage-on-wiki' => 'Dä Jebruch op $2',
+	'globalusage-on-wiki' => 'Der Jebruch op $2',
 	'globalusage-of-file' => 'Heh di ander Wikis bruche di Dattei:',
 	'globalusage-more' => 'Loor donoh, [[{{#Special:GlobalUsage}}/$1|woh heh di Dattei söns jebruch weed]].',
 	'globalusage-filterlocal' => 'Donn nix aanzeije doh drövver, wi di Dattei heh em Wiki jebruch weed',
