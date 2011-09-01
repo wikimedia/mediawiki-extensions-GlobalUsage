@@ -239,7 +239,7 @@ $messages['br'] = array(
 	'globalusage-no-results' => 'Ne reer ket gant [[:$1]] war wikioù all.',
 	'globalusage-on-wiki' => 'Implij war $2',
 	'globalusage-of-file' => 'Ober a ra ar wikioù da-heul gant ar restr-mañ :',
-	'globalusage-more' => 'Gwelet [[{{#Special:GlobalUsage}}/$1|implij hollek]] ar restr-mañ.',
+	'globalusage-more' => "Gwelet [[{{#Special:GlobalUsage}}/$1|muioc'h eus implij hollek]] ar restr-mañ.",
 	'globalusage-filterlocal' => "Arabat diskouez an implij lec'hel",
 );
 
