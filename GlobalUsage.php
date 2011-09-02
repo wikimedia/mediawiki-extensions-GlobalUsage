@@ -33,7 +33,6 @@ EOT;
 	exit( 1 );
 }
 
-
 $dir = dirname( __FILE__ ) . '/';
 
 $wgExtensionCredits['specialpage'][] = array(

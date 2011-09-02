@@ -24,8 +24,7 @@ class SpecialGlobalUsage extends SpecialPage {
 
 		$this->showForm();
 
-		if ( is_null( $this->target ) )
-		{
+		if ( is_null( $this->target ) ) {
 			$wgOut->setPageTitle( wfMsg( 'globalusage' ) );
 			return;
 		}
@@ -34,7 +33,7 @@ class SpecialGlobalUsage extends SpecialPage {
 
 		$this->showResult();
 	}
-	
+
 	/**
 	 * Shows the search form
 	 */
@@ -58,12 +57,9 @@ class SpecialGlobalUsage extends SpecialPage {
 		// Filter local checkbox
 			. "\n\t<p>" . Xml::checkLabel( wfMsg( 'globalusage-filterlocal' ),
 					'filterlocal', 'mw-filterlocal', $this->filterLocal ) . '</p>';
-		
+
 		if ( !is_null( $this->target ) && wfFindFile( $this->target ) ) {
 			// Show the image if it exists
-			global $wgUser;
-			$skin = $wgUser->getSkin();
-
 			$html .= Linker::makeThumbLinkObj( $this->target,
 					wfFindFile( $this->target ),
 					/* $label */ $this->target->getPrefixedText(),
@@ -71,7 +67,7 @@ class SpecialGlobalUsage extends SpecialPage {
 					/* $handlerParams */ array(), /* $framed */ false,
 					/* $manualThumb */ false );
 		}
-		
+
 		// Wrap the entire form in a nice fieldset
 		$html .= Xml::fieldSet( wfMsg( 'globalusage-text' ), $formContent ) . "\n</form>";
 
@@ -87,10 +83,11 @@ class SpecialGlobalUsage extends SpecialPage {
 		$query = new GlobalUsageQuery( $this->target );
 
 		// Extract params from $wgRequest
-		if ( $wgRequest->getText( 'from' ) )
+		if ( $wgRequest->getText( 'from' ) ) {
 			$query->setOffset( $wgRequest->getText( 'from' ) );
-		elseif ( $wgRequest->getText( 'to' ) )
+		} elseif ( $wgRequest->getText( 'to' ) ) {
 			$query->setOffset( $wgRequest->getText( 'to' ), true );
+		}
 		$query->setLimit( $wgRequest->getInt( 'limit', 50 ) );
 		$query->filterLocal( $this->filterLocal );
 
@@ -119,8 +116,9 @@ class SpecialGlobalUsage extends SpecialPage {
 						'globalusage-on-wiki', 'parseinline',
 						$targetName, WikiMap::getWikiName( $wiki ) )
 					. "</h2><ul>\n" );
-			foreach ( $result as $item )
+			foreach ( $result as $item ) {
 				$wgOut->addHtml( "\t<li>" . self::formatItem( $item ) . "</li>\n" );
+			}
 			$wgOut->addHtml( "</ul>\n" );
 		}
 		$wgOut->addHtml( '</div>' );
@@ -128,14 +126,16 @@ class SpecialGlobalUsage extends SpecialPage {
 		// Bottom navbar
 		$wgOut->addHtml( $navbar );
 	}
+
 	/**
 	 * Helper to format a specific item
 	 */
 	public static function formatItem( $item ) {
-		if ( !$item['namespace'] )
+		if ( !$item['namespace'] ) {
 			$page = $item['title'];
-		else
+		} else {
 			$page = "{$item['namespace']}:{$item['title']}";
+		}
 
 		$link = WikiMap::makeForeignLink( $item['wiki'], $page,
 				str_replace( '_', ' ', $page ) );
@@ -145,7 +145,7 @@ class SpecialGlobalUsage extends SpecialPage {
 
 	/**
 	 * Helper function to create the navbar, stolen from wfViewPrevNext
-	 * 
+	 *
 	 * @param $query GlobalUsageQuery An executed GlobalUsageQuery object
 	 * @return string Navbar HTML
 	 */
@@ -157,7 +157,7 @@ class SpecialGlobalUsage extends SpecialPage {
 		$target = $this->target->getText();
 		$limit = $query->getLimit();
 		$fmtLimit = $wgLang->formatNum( $limit );
-	
+
 		# Find out which strings are for the prev and which for the next links
 		$offset = $query->getOffsetString();
 		$continue = $query->getContinueString();
@@ -205,7 +205,7 @@ class SpecialGlobalUsage extends SpecialPage {
 		$numLinks = array();
 		foreach ( array( 20, 50, 100, 250, 500 ) as $num ) {
 			$fmtLimit = $wgLang->formatNum( $num );
-			
+
 			$q = array( 'offset' => $offset, 'limit' => $num, 'target' => $target );
 			if ( $this->filterLocal )
 				$q['filterlocal'] = '1';

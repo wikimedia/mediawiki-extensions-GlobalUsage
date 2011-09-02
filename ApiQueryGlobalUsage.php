@@ -70,7 +70,7 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 						if ( isset( $prop['namespace'] ) ) {
 							$result['ns'] = $item['namespace_id'];
 						}
-						
+
 						$fit = $apiResult->addValue( array(
 								'query', 'pages', $pageId, 'globalusage'
 							), null, $result );
@@ -126,7 +126,7 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 		);
 	}
 
-	public function getParamDescription () {
+	public function getParamDescription() {
 		return array(
 			'prop' => array(
 				'What properties to return',
@@ -143,7 +143,7 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 	public function getDescription() {
 		return 'Returns global image usage for a certain image';
 	}
-	
+
 	public function getPossibleErrors() {
 		return array_merge( parent::getPossibleErrors(), array(
 			array ( 'code' => 'badcontinue', 'info' => 'Invalid continue parameter' ),

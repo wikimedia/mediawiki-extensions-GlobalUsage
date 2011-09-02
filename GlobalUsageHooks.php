@@ -43,6 +43,7 @@ class GlobalUsageHooks {
 
 		return true;
 	}
+
 	/**
 	 * Hook to TitleMoveComplete
 	 * Sets the page title in usage table to the new name.
@@ -52,6 +53,7 @@ class GlobalUsageHooks {
 		$gu->moveTo( $pageid, $nt );
 		return true;
 	}
+
 	/**
 	 * Hook to ArticleDeleteComplete
 	 * Deletes entries from usage table.
@@ -62,6 +64,7 @@ class GlobalUsageHooks {
 
 		return true;
 	}
+
 	/**
 	 * Hook to FileDeleteComplete
 	 * Copies the local link table to the global.
@@ -83,6 +86,7 @@ class GlobalUsageHooks {
 		$gu->deleteLinksToFile( $title );
 		return true;
 	}
+
 	/**
 	 * Hook to UploadComplete
 	 * Deletes the file from the global link table.
@@ -95,6 +99,8 @@ class GlobalUsageHooks {
 
 	/**
 	 * Initializes a GlobalUsage object for the current wiki.
+	 *
+	 * @return GlobalUsage
 	 */
 	private static function getGlobalUsage() {
 		global $wgGlobalUsageDatabase;
@@ -117,6 +123,8 @@ class GlobalUsageHooks {
 
 	/**
 	 * Hook to apply schema changes
+	 *
+	 * @param $updater DatabaseUpdater
 	 */
 	public static function onLoadExtensionSchemaUpdates( $updater = null ) {
 		$dir = dirname( __FILE__ );
