@@ -763,6 +763,7 @@ $messages['ia'] = array(
  * @author Bennylin
  * @author Farras
  * @author IvanLanin
+ * @author Kenrick95
  * @author Rex
  */
 $messages['id'] = array(
@@ -774,7 +775,7 @@ $messages['id'] = array(
 	'globalusage-no-results' => '[[:$1]] tidak digunakan di wiki lain.',
 	'globalusage-on-wiki' => 'Penggunaan pada $2',
 	'globalusage-of-file' => 'Wiki lain berikut menggunakan berkas ini:',
-	'globalusage-more' => 'Lihat [[{{#Special:GlobalUsage}}/$1|penggunaan global]] dari berkas ini.',
+	'globalusage-more' => 'Lihat [[{{#Special:GlobalUsage}}/$1|lebih banyak penggunaan global]] dari berkas ini.',
 	'globalusage-filterlocal' => 'Jangan tunjukkan penggunaan lokal',
 );
 
@@ -1605,7 +1606,7 @@ $messages['te'] = array(
 	'globalusage-text' => 'సార్వత్రిక ఫైళ్ళ వాడుకలో వెతకండి.',
 	'globalusage-no-results' => '[[:$1]]ని ఇతర వికీలలో ఉపయోగించట్లేదు.',
 	'globalusage-on-wiki' => '$2 లో వాడుక',
-	'globalusage-of-file' => 'ఈ ఫైలుని క్రింది ఇతర వికీలు ఉపయోగిస్తున్నాయి:',
+	'globalusage-of-file' => 'ఈ దస్త్రాన్ని ఈ క్రింది ఇతర వికీలు ఉపయోగిస్తున్నాయి:',
 	'globalusage-more' => 'ఈ దస్త్రపు [[{{#Special:GlobalUsage}}/$1|సార్వత్రిక వాడుక]]ని చూడండి.',
 	'globalusage-filterlocal' => 'స్థానిక వాడుకని చూపించకు',
 );
