@@ -1098,7 +1098,7 @@ $messages['ms'] = array(
 $messages['mt'] = array(
 	'globalusage' => 'L-użu globali tal-fajl',
 	'globalusage-for' => 'Użu globali ta\' "$1"',
-	'globalusage-desc' => '[[Special:GlobalUsage|Paġna speċjali]] biex turi l-użu globali tal-fajl',
+	'globalusage-desc' => '[[Special:GlobalUsage|Paġna speċjali]] biex tara l-użu globali tal-fajl',
 	'globalusage-ok' => 'Fittex',
 	'globalusage-text' => 'Fittex l-użu globali tal-fajl',
 	'globalusage-no-results' => '[[:$1]] mhuwiex użat fuq wikis oħra.',
@@ -1171,7 +1171,7 @@ $messages['no'] = array(
 	'globalusage-no-results' => '[[:$1]] er ikke brukt på andre wikier.',
 	'globalusage-on-wiki' => 'Bruk i $2',
 	'globalusage-of-file' => 'Følgende andre wikier bruker denne filen:',
-	'globalusage-more' => 'Vis [[{{#Special:GlobalUsage}}/$1|global bruk]] av denne filen.',
+	'globalusage-more' => 'Vis [[{{#Special:GlobalUsage}}/$1|mer global bruk]] av denne filen.',
 	'globalusage-filterlocal' => 'Ikke vis lokal bruk',
 );
 
@@ -1503,16 +1503,17 @@ $messages['sq'] = array(
 	'globalusage-filterlocal' => 'Mos tregoni përdorimin lokal',
 );
 
-/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
+ * @author Rancher
  * @author Sasa Stefanovic
  * @author Жељко Тодоровић
  * @author Михајло Анђелковић
  */
 $messages['sr-ec'] = array(
-	'globalusage' => 'Глобално коришћење фајлова',
-	'globalusage-desc' => '[[Special:GlobalUsage|Посебна страница]] за преглед глобалног коришћења фајлова',
+	'globalusage' => 'Глобална употреба датотеке',
+	'globalusage-desc' => '[[Special:GlobalUsage|Посебна страница]] за преглед глобалне употребе датотека',
 	'globalusage-ok' => 'Претрага',
-	'globalusage-text' => 'Претрага глобалног коришћења фајлова.',
+	'globalusage-text' => 'Претрага глобалне употребе датотеке',
 	'globalusage-on-wiki' => 'Употреба на $2',
 	'globalusage-filterlocal' => 'Не приказуј локалну употребу',
 );
