@@ -76,9 +76,13 @@ $messages['niu'] = array(
 $messages['af'] = array(
 	'globalusage' => 'Globale lêergebruik',
 	'globalusage-for' => 'Globale gebruik vir "$1"',
+	'globalusage-desc' => '[[Special:GlobalUsage|Spesiale bladsy]] om globale lêergebruik te wys',
 	'globalusage-ok' => 'Soek',
+	'globalusage-text' => 'Soek globale lêergebruik',
 	'globalusage-no-results' => "[[:$1]] word nie in ander wiki's gebruik nie.",
 	'globalusage-on-wiki' => 'Gebruik in $2',
+	'globalusage-of-file' => "Die volgende ander wiki's gebruik hierdie lêer:",
+	'globalusage-filterlocal' => 'Moenie lokale gebruik wys nie',
 );
 
 /** Gheg Albanian (Gegë)
