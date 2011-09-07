@@ -33,12 +33,14 @@ $messages['en'] = array(
  * @author The Evil IP address
  * @author Umherirrender
  * @author Vriullop
+ * @author Yekrats
  */
 $messages['qqq'] = array(
 	'globalusage' => 'Header of a section that lists all the places where one shared file has been used. "Global" refers to the usage, not to the file. "File" is singular. Used while viewing the file description page ([[commons:File:Triangle.Right.ly.png|example at Commons]]). Appears at the top of the page as a link to a section anchor, and at the bottom as the section header.',
 	'globalusage-for' => 'Title of [[Special:GlobalUsage]]
 * $1 - name of the searched file, with namespace',
-	'globalusage-desc' => '{{desc}}',
+	'globalusage-desc' => 'For more information, see [[mw:Extension:GlobalUsage]]
+{{desc}}',
 	'globalusage-ok' => '{{Identical|Search}}
 Button on [[Special:GlobalUsage]]',
 	'globalusage-text' => 'Label on [[Special:GlobalUsage]]',
