@@ -314,7 +314,7 @@ $messages['cs'] = array(
 	'globalusage-no-results' => '[[:$1]] se na ostatních wiki nepoužívá.',
 	'globalusage-on-wiki' => 'Využití na $2',
 	'globalusage-of-file' => 'Tento soubor využívají následující wiki:',
-	'globalusage-more' => 'Zobrazit [[{{#Special:GlobalUsage}}/$1|globální využití]] tohoto souboru.',
+	'globalusage-more' => 'Zobrazit [[{{#Special:GlobalUsage}}/$1|další globální využití]] tohoto souboru.',
 	'globalusage-filterlocal' => 'Nezobrazovat místní využití',
 );
 
