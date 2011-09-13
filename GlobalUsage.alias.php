@@ -25,7 +25,7 @@ $specialPageAliases['arz'] = array(
 
 /** Bulgarian (Български) */
 $specialPageAliases['bg'] = array(
-	'GlobalUsage' => array( 'Глобално използване на файл' ),
+	'GlobalUsage' => array( 'Глобално_използване_на_файл' ),
 );
 
 /** Breton (Brezhoneg) */
@@ -223,6 +223,11 @@ $specialPageAliases['sk'] = array(
 	'GlobalUsage' => array( 'GlobálneVyužitie' ),
 );
 
+/** Swedish (Svenska) */
+$specialPageAliases['sv'] = array(
+	'GlobalUsage' => array( 'Global_användning' ),
+);
+
 /** Tagalog (Tagalog) */
 $specialPageAliases['tl'] = array(
 	'GlobalUsage' => array( 'Pandaigdigang paggamit' ),
@@ -243,9 +248,14 @@ $specialPageAliases['vi'] = array(
 	'GlobalUsage' => array( 'Sử_dụng_toàn_cục' ),
 );
 
+/** Cantonese (粵語) */
+$specialPageAliases['yue'] = array(
+	'GlobalUsage' => array( '全域使用' ),
+);
+
 /** Simplified Chinese (‪中文(简体)‬) */
 $specialPageAliases['zh-hans'] = array(
-	'GlobalUsage' => array( '全球使用' ),
+	'GlobalUsage' => array( '全域使用情况' ),
 );
 
 /** Traditional Chinese (‪中文(繁體)‬) */
