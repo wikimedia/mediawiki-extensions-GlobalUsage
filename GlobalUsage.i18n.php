@@ -1202,8 +1202,16 @@ $messages['oc'] = array(
  * @author Psubhashish
  */
 $messages['or'] = array(
+	'globalusage' => 'ଜଗତ ଫାଇଲ ବ୍ୟବହାର',
+	'globalusage-for' => '"$1" ପାଇଁ ଜଗତ ଫାଇଲ ବ୍ୟବହାର',
+	'globalusage-desc' => 'ଜଗତ ଫାଇଲ ବ୍ୟବହାର ନିମନ୍ତେ [[Special:GlobalUsage|ବିଶେଷ ପୃଷ୍ଠା]]',
 	'globalusage-ok' => 'ଖୋଜିବେ',
+	'globalusage-text' => 'ଜଗତ ସାରା ଫାଇଲଟିର ବ୍ୟବହର ଖୋଜିବେ',
+	'globalusage-no-results' => '[[:$1]] ବାକି ଉଇକିରେ ବ୍ୟବହାର ହୋଇନାହିଁ ।',
 	'globalusage-on-wiki' => '$2ରେ ବ୍ୟବହାର',
+	'globalusage-of-file' => 'ତଲାଲିଖିତ ଉଇକିସବୁ ଏହି ଫାଇଲଟିକୁ ବ୍ୟବାହର କରିଥାନ୍ତି',
+	'globalusage-more' => 'ଏହି ଫାଇଲଟିର [[{{#Special:GlobalUsage}}/$1|ସାରା ଜଗତରେ ଅଧିକ ବ୍ୟବହାର]] ଦେଖନ୍ତୁ ।',
+	'globalusage-filterlocal' => 'ସ୍ଥାନୀୟ ବ୍ୟବାହର ଦେଖାନ୍ତୁ ନାହିଁ',
 );
 
 /** Ossetic (Ирон)
@@ -1807,18 +1815,19 @@ $messages['yo'] = array(
  * @author Gzdavidwong
  * @author Hydra
  * @author Liangent
+ * @author Xiaomingyan
  */
 $messages['zh-hans'] = array(
-	'globalusage' => '全域文件使用情况',
-	'globalusage-for' => '“$1”的全域使用情况',
-	'globalusage-desc' => '查看全域文件使用情况的[[Special:GlobalUsage|特殊页面]]',
+	'globalusage' => '全局文件用途',
+	'globalusage-for' => '“$1”的全局用途',
+	'globalusage-desc' => '查看全局文件用途的[[Special:GlobalUsage|特殊页面]]',
 	'globalusage-ok' => '搜索',
-	'globalusage-text' => '搜索全域文件使用情况',
-	'globalusage-no-results' => '[[:$1]]未在其他wiki中使用。',
-	'globalusage-on-wiki' => '$2的使用情况',
-	'globalusage-of-file' => '本文件也在如下其他wiki中使用：',
-	'globalusage-more' => '查看 [[{{#Special:GlobalUsage}}/$1|更多全球使用]] 的此文件。',
-	'globalusage-filterlocal' => '不要显示本地使用情况',
+	'globalusage-text' => '搜索全局文件用途',
+	'globalusage-no-results' => '[[:$1]]没有用于其他wiki。',
+	'globalusage-on-wiki' => '$2上的用途',
+	'globalusage-of-file' => '下列其他wiki使用本文件：',
+	'globalusage-more' => '查看本文件的[[{{#Special:GlobalUsage}}/$1|更多全局用途]]。',
+	'globalusage-filterlocal' => '不显示本地用途',
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
