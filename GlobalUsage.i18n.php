@@ -1270,6 +1270,14 @@ $messages['pms'] = array(
  */
 $messages['pnb'] = array(
 	'globalusage' => 'گلوبل فائل ورتن',
+	'globalusage-for' => 'گلوبل فائل ورتن "$1" لئی',
+	'globalusage-desc' => '[[Special:GlobalUsage|Special page]] جگت فائل ورتن',
+	'globalusage-ok' => 'کھوجو',
+	'globalusage-text' => 'گلوبل فائل ورتن کھوجو',
+	'globalusage-no-results' => '[[$1]] دوجے وکیاں تے نئیں ورتیا جاندا۔',
+	'globalusage-on-wiki' => '$2 تے ورتن',
+	'globalusage-of-file' => 'اے دوجے وکی ایس فائل نوں ورتدے نیں:',
+	'globalusage-more' => 'ایس فائل دا ویکھو [[{{#خاص:جگت ورتن}}/$1|ہور جگت ورتن]] .',
 	'globalusage-filterlocal' => 'لوکل ورتن ناں دسو',
 );
 
