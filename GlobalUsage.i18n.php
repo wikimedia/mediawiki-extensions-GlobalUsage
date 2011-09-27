@@ -1209,7 +1209,7 @@ $messages['or'] = array(
 	'globalusage-text' => 'ଜଗତ ସାରା ଫାଇଲଟିର ବ୍ୟବହର ଖୋଜିବେ',
 	'globalusage-no-results' => '[[:$1]] ବାକି ଉଇକିରେ ବ୍ୟବହାର ହୋଇନାହିଁ ।',
 	'globalusage-on-wiki' => '$2ରେ ବ୍ୟବହାର',
-	'globalusage-of-file' => 'ତଲାଲିଖିତ ଉଇକିସବୁ ଏହି ଫାଇଲଟିକୁ ବ୍ୟବାହର କରିଥାନ୍ତି',
+	'globalusage-of-file' => 'ତଳଲିଖିତ ଉଇକିସବୁ ଏହି ଫାଇଲଟିକୁ ବ୍ୟବହାର କରିଥାନ୍ତି:',
 	'globalusage-more' => 'ଏହି ଫାଇଲଟିର [[{{#Special:GlobalUsage}}/$1|ସାରା ଜଗତରେ ଅଧିକ ବ୍ୟବହାର]] ଦେଖନ୍ତୁ ।',
 	'globalusage-filterlocal' => 'ସ୍ଥାନୀୟ ବ୍ୟବାହର ଦେଖାନ୍ତୁ ନାହିଁ',
 );
