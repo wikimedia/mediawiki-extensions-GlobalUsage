@@ -12,7 +12,7 @@ class GlobalUsageQuery {
 	private $reversed = false;
 
 	/**
-	 * @param $target mixed Title or db key, or array of db keys of target(s).
+	 * @param $target mixed Title or array of db keys of target(s).
 	 * If a title, can be a category or a file
 	 */
 	public function __construct( $target ) {
@@ -113,20 +113,22 @@ class GlobalUsageQuery {
 		$tables = array( 'globalimagelinks' );
 
 		// Add target image(s)
-		if ( is_array( $this->target ) ) {
+		if ( is_array( $this->target ) ) { // array of dbkey strings
 			$namespace = NS_FILE;
-		} else {
+			$queryIn = $this->target;
+		} else { // a Title object
 			$namespace = $this->target->getNamespace();
+			$queryIn = $this->target->getDbKey();
 		}
 		switch ( $namespace ) {
 			case NS_FILE:
-				$where = array( 'gil_to' => $this->target );
+				$where = array( 'gil_to' => $queryIn );
 				break;
 			case NS_CATEGORY:
 				$tables[] = 'categorylinks';
 				$tables[] = 'page';
 				$where = array(
-					'cl_to' => $this->target->getDbKey(),
+					'cl_to' => $queryIn,
 					'cl_from = page_id',
 					'page_namespace = ' . NS_FILE,
 					'gil_to = page_title',
