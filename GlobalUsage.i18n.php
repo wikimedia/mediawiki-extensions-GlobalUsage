@@ -524,6 +524,7 @@ $messages['fi'] = array(
  * @author Meithal
  * @author Peter17
  * @author PieRRoMaN
+ * @author Urhixidur
  * @author Verdy p
  */
 $messages['fr'] = array(
@@ -531,12 +532,12 @@ $messages['fr'] = array(
 	'globalusage-for' => 'Usage global pour « $1 »',
 	'globalusage-desc' => '[[Special:GlobalUsage|Page spéciale]] pour voir l’usage global d’une image',
 	'globalusage-ok' => 'Rechercher',
-	'globalusage-text' => "Rechercher l'usage global du fichier",
-	'globalusage-no-results' => "[[:$1]] n'est pas utilisé sur d'autres wikis.",
+	'globalusage-text' => 'Rechercher l’usage global du fichier',
+	'globalusage-no-results' => '[[:$1]] n’est pas utilisé sur d’autres wikis.',
 	'globalusage-on-wiki' => 'Utilisation sur $2',
 	'globalusage-of-file' => 'Les autres wikis suivants utilisent cette image :',
 	'globalusage-more' => 'Voir [[{{#Special:GlobalUsage}}/$1|l’utilisation globale]] de ce fichier.',
-	'globalusage-filterlocal' => "Ne pas montrer l'utilisation locale",
+	'globalusage-filterlocal' => 'Ne pas montrer l’utilisation locale',
 );
 
 /** Franco-Provençal (Arpetan)
