@@ -793,6 +793,13 @@ $messages['ig'] = array(
 	'globalusage-ok' => 'Chọwa',
 );
 
+/** Iloko (Ilokano)
+ * @author Lam-ang
+ */
+$messages['ilo'] = array(
+	'globalusage-ok' => 'Biroken',
+);
+
 /** Icelandic (Íslenska)
  * @author S.Örvarr.S
  */
