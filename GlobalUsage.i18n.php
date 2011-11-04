@@ -71,6 +71,13 @@ $messages['niu'] = array(
 	'globalusage-ok' => 'Kumi',
 );
 
+/** толышә зывон (толышә зывон)
+ * @author Гусейн
+ */
+$messages['tly'] = array(
+	'globalusage-ok' => 'Нәве',
+);
+
 /** Afrikaans (Afrikaans)
  * @author Arnobarnard
  * @author Naudefj
