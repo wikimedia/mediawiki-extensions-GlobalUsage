@@ -184,11 +184,12 @@ $messages['ba'] = array(
 
 /** Bavarian (Boarisch)
  * @author Man77
+ * @author Mucalexx
  */
 $messages['bar'] = array(
 	'globalusage' => 'Globale Dateinutzung',
 	'globalusage-desc' => "[[Special:GlobalUsage|Spezialseitn]], de d'globale Vawendung vu dea Datei ãnzoagt",
-	'globalusage-ok' => 'Suacha',
+	'globalusage-ok' => 'Suacher',
 	'globalusage-text' => 'Globale Suach nåch da Dateivawendung',
 );
 
@@ -1290,7 +1291,7 @@ $messages['pnb'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Special page]] جگت فائل ورتن',
 	'globalusage-ok' => 'کھوجو',
 	'globalusage-text' => 'گلوبل فائل ورتن کھوجو',
-	'globalusage-no-results' => '[[$1]] دوجے وکیاں تے نئیں ورتیا جاندا۔',
+	'globalusage-no-results' => '[[:$1]] دوجے وکیاں تے نئیں ورتیا جاندا۔',
 	'globalusage-on-wiki' => '$2 تے ورتن',
 	'globalusage-of-file' => 'اے دوجے وکی ایس فائل نوں ورتدے نیں:',
 	'globalusage-more' => 'ایس فائل دا ویکھو [[{{#خاص:جگت ورتن}}/$1|ہور جگت ورتن]] .',
