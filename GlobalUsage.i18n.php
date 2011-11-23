@@ -878,7 +878,7 @@ $messages['ka'] = array(
 	'globalusage-filterlocal' => 'არ აჩვენოთ ლოკალური გამოყენება',
 );
 
-/** Kazakh (Cyrillic) (Қазақша (Cyrillic))
+/** Kazakh (Cyrillic script) (‪Қазақша (кирил)‬)
  * @author GaiJin
  */
 $messages['kk-cyrl'] = array(
@@ -1557,7 +1557,7 @@ $messages['sr-ec'] = array(
 	'globalusage-filterlocal' => 'Не приказуј локалну употребу',
 );
 
-/** Serbian Latin ekavian (‪Srpski (latinica)‬)
+/** Serbian (Latin script) (‪Srpski (latinica)‬)
  * @author Michaello
  */
 $messages['sr-el'] = array(
@@ -1658,7 +1658,7 @@ $messages['tet'] = array(
 	'globalusage-ok' => 'Buka',
 );
 
-/** Tajik (Cyrillic) (Тоҷикӣ (Cyrillic))
+/** Tajik (Cyrillic script) (Тоҷикӣ)
  * @author Ibrahim
  */
 $messages['tg-cyrl'] = array(
@@ -1668,7 +1668,7 @@ $messages['tg-cyrl'] = array(
 	'globalusage-text' => 'Ҷустуҷӯи истифодаи саросарии парванда.',
 );
 
-/** Tajik (Latin) (Тоҷикӣ (Latin))
+/** Tajik (Latin script) (tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
@@ -1734,7 +1734,7 @@ $messages['tr'] = array(
 	'globalusage-filterlocal' => 'Yerel kullanımı gösterme',
 );
 
-/** Tatar (Cyrillic) (Татарча/Tatarça (Cyrillic))
+/** Tatar (Cyrillic script) (Татарча)
  * @author Ильнар
  */
 $messages['tt-cyrl'] = array(
