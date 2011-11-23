@@ -17,7 +17,19 @@ class GlobalUsageHooks {
 
 		// Create a list of locally existing images
 		$images = array_keys( $linksUpdater->getImages() );
-		$localFiles = array_keys( RepoGroup::singleton()->getLocalRepo()->findFiles( $images ) );
+		
+		//$localFiles = array_keys( RepoGroup::singleton()->getLocalRepo()->findFiles( $images ) );
+		// Unrolling findFiles() here because pages with thousands of images trigger an OOM
+		// error while building an array with thousands of File objects (bug 32598)
+		$localFiles = array();
+		$repo = RepoGroup::singleton()->getLocalRepo();
+		foreach ( $images as $image ) {
+			$file = $repo->findFile( $image );
+			if ( $file ) {
+				$localFiles[] = $file->getTitle()->getDBkey();
+			}
+		}
+		
 		$missingFiles = array_diff( $images, $localFiles );
 
 		global $wgUseDumbLinkUpdate;
