@@ -112,7 +112,7 @@ class GlobalUsage {
 				'gil_to' => $row->il_to,
 			);
 		}
-		$this->db->insert( 'globalimagelinks', $insert, __METHOD__ );
+		$this->db->insert( 'globalimagelinks', $insert, __METHOD__, array( 'IGNORE' ) );
 	}
 
 	/**
