@@ -1091,12 +1091,14 @@ $messages['mn'] = array(
 /** Marathi (मराठी)
  * @author Kaustubh
  * @author Mahitgar
+ * @author Rahuldeshmukh101
  */
 $messages['mr'] = array(
 	'globalusage' => 'जागतिक संचिका उपयोग',
 	'globalusage-desc' => '[[Special:GlobalUsage|विशेष पान]] संचिकेच्या उपयोगाचे विस्तृत दृश्य',
 	'globalusage-ok' => 'शोधा',
 	'globalusage-text' => 'जागतिक संचिका उपयोग शोधा.',
+	'globalusage-on-wiki' => '$2  चा वापर',
 );
 
 /** Malay (Bahasa Melayu)
