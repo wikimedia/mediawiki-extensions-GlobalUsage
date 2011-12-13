@@ -40,7 +40,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'name' => 'Global Usage',
 	'author' => 'Bryan Tong Minh',
 	'descriptionmsg' => 'globalusage-desc',
-	'url' => 'http://www.mediawiki.org/wiki/Extension:GlobalUsage',
+	'url' => 'https://www.mediawiki.org/wiki/Extension:GlobalUsage',
 	'version' => '2.0',
 );
 
