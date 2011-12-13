@@ -1099,6 +1099,7 @@ $messages['mr'] = array(
 	'globalusage-ok' => 'शोधा',
 	'globalusage-text' => 'जागतिक संचिका उपयोग शोधा.',
 	'globalusage-on-wiki' => '$2  चा वापर',
+	'globalusage-filterlocal' => 'स्थानिक वापर दाखवू नका',
 );
 
 /** Malay (Bahasa Melayu)
