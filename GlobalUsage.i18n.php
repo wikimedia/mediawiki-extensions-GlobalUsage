@@ -805,7 +805,16 @@ $messages['ig'] = array(
  * @author Lam-ang
  */
 $messages['ilo'] = array(
-	'globalusage-ok' => 'Biroken',
+	'globalusage' => 'Sangalubongan a pinag-usar ti papeles',
+	'globalusage-for' => 'Sangalubongan a pinag-usar ti "$1"',
+	'globalusage-desc' => '[[Special:GlobalUsage|Naipangpangruna a panid]] no kitaen ti sangalubongan a pinag-usar ti papeles',
+	'globalusage-ok' => 'Biruken',
+	'globalusage-text' => 'Agbiruk ti sangalubongan a pinag-usar ti papeles',
+	'globalusage-no-results' => '[[:$1]] ket saan a maus-usar iti sabsabali a wiki.',
+	'globalusage-on-wiki' => 'Pinag-usar idiay $2',
+	'globalusage-of-file' => 'Dagiti sumaganad a wiki ket agus-usar iti daytoy a papeles:',
+	'globalusage-more' => 'Kitaen [[{{#Special:GlobalUsage}}/$1|ti adu pay a sangalubongan a pinag-usar]] iti daytoy a papeles.',
+	'globalusage-filterlocal' => 'Saan a ipakita ti lokal a pinag-usar',
 );
 
 /** Icelandic (Íslenska)
