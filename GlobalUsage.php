@@ -44,15 +44,17 @@ $wgExtensionCredits['specialpage'][] = array(
 	'version' => '2.0',
 );
 
+// Internationlization files
 $wgExtensionMessagesFiles['GlobalUsage'] = $dir . 'GlobalUsage.i18n.php';
+$wgExtensionMessagesFiles['GlobalUsageAliases'] = $dir . 'GlobalUsage.alias.php';
+
+// Special page classes
 $wgAutoloadClasses['GlobalUsage'] = $dir . 'GlobalUsage_body.php';
 $wgAutoloadClasses['GlobalUsageHooks'] = $dir . 'GlobalUsageHooks.php';
 $wgAutoloadClasses['GlobalUsageImagePageHooks'] = $dir . 'GlobalUsageImagePageHooks.php';
 $wgAutoloadClasses['SpecialGlobalUsage'] = $dir . 'SpecialGlobalUsage.php';
 $wgAutoloadClasses['GlobalUsageQuery'] = $dir . 'GlobalUsageQuery.php';
 $wgAutoloadClasses['ApiQueryGlobalUsage'] = $dir . 'ApiQueryGlobalUsage.php';
-$wgExtensionMessageFiles['GlobalUsage'] = $dir . 'GlobalUsage.i18n.php';
-$wgExtensionAliasesFiles['GlobalUsage'] = $dir . 'GlobalUsage.alias.php';
 $wgSpecialPages['GlobalUsage'] = 'SpecialGlobalUsage';
 $wgSpecialPageGroups['GlobalUsage'] = 'media';
 $wgAPIPropModules['globalusage'] = 'ApiQueryGlobalUsage';
