@@ -1101,13 +1101,17 @@ $messages['mn'] = array(
  * @author Kaustubh
  * @author Mahitgar
  * @author Rahuldeshmukh101
+ * @author V.narsikar
  */
 $messages['mr'] = array(
 	'globalusage' => 'जागतिक संचिका उपयोग',
+	'globalusage-for' => '"$1"साठी वैश्विक सदस्यता',
 	'globalusage-desc' => '[[Special:GlobalUsage|विशेष पान]] संचिकेच्या उपयोगाचे विस्तृत दृश्य',
 	'globalusage-ok' => 'शोधा',
 	'globalusage-text' => 'जागतिक संचिका उपयोग शोधा.',
+	'globalusage-no-results' => '[[:$1]]चा वापर इतर विकिंवर नाही.',
 	'globalusage-on-wiki' => '$2  चा वापर',
+	'globalusage-of-file' => 'पुढील इतर विकि ही फाईल वापरतात:',
 	'globalusage-filterlocal' => 'स्थानिक वापर दाखवू नका',
 );
 
