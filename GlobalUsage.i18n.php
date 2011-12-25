@@ -1167,6 +1167,24 @@ $messages['nah'] = array(
 	'globalusage-ok' => 'Motèmòs',
 );
 
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+ * @author Jon Harald Søby
+ * @author Laaknor
+ * @author Nghtwlkr
+ */
+$messages['nb'] = array(
+	'globalusage' => 'Global filbruk',
+	'globalusage-for' => 'Global bruk av "$1"',
+	'globalusage-desc' => '[[Special:GlobalUsage|Spesialside]] for å vise bruken av en fil globalt',
+	'globalusage-ok' => 'Søk',
+	'globalusage-text' => 'Søk global filbruk.',
+	'globalusage-no-results' => '[[:$1]] er ikke brukt på andre wikier.',
+	'globalusage-on-wiki' => 'Bruk i $2',
+	'globalusage-of-file' => 'Følgende andre wikier bruker denne filen:',
+	'globalusage-more' => 'Vis [[{{#Special:GlobalUsage}}/$1|mer global bruk]] av denne filen.',
+	'globalusage-filterlocal' => 'Ikke vis lokal bruk',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  */
@@ -1199,24 +1217,6 @@ $messages['nn'] = array(
 	'globalusage-of-file' => 'Fylgjande andre wikiar nyttar denne fila:',
 	'globalusage-more' => 'Sjå [[{{#Special:GlobalUsage}}/$1|meir global bruk]] av denne fila.',
 	'globalusage-filterlocal' => 'Ikkje vis lokal bruk',
-);
-
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author Jon Harald Søby
- * @author Laaknor
- * @author Nghtwlkr
- */
-$messages['nb'] = array(
-	'globalusage' => 'Global filbruk',
-	'globalusage-for' => 'Global bruk av "$1"',
-	'globalusage-desc' => '[[Special:GlobalUsage|Spesialside]] for å vise bruken av en fil globalt',
-	'globalusage-ok' => 'Søk',
-	'globalusage-text' => 'Søk global filbruk.',
-	'globalusage-no-results' => '[[:$1]] er ikke brukt på andre wikier.',
-	'globalusage-on-wiki' => 'Bruk i $2',
-	'globalusage-of-file' => 'Følgende andre wikier bruker denne filen:',
-	'globalusage-more' => 'Vis [[{{#Special:GlobalUsage}}/$1|mer global bruk]] av denne filen.',
-	'globalusage-filterlocal' => 'Ikke vis lokal bruk',
 );
 
 /** Occitan (Occitan)
