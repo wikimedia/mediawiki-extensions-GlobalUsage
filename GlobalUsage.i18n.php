@@ -1206,7 +1206,7 @@ $messages['nn'] = array(
  * @author Laaknor
  * @author Nghtwlkr
  */
-$messages['no'] = array(
+$messages['nb'] = array(
 	'globalusage' => 'Global filbruk',
 	'globalusage-for' => 'Global bruk av "$1"',
 	'globalusage-desc' => '[[Special:GlobalUsage|Spesialside]] for å vise bruken av en fil globalt',
