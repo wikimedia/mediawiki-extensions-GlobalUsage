@@ -173,6 +173,11 @@ $specialPageAliases['mt'] = array(
 	'GlobalUsage' => array( 'UżuGlobali' ),
 );
 
+/** Norwegian Bokmål (‪Norsk (bokmål)‬) */
+$specialPageAliases['nb'] = array(
+	'GlobalUsage' => array( 'Global_bruk' ),
+);
+
 /** Nedersaksisch (Nedersaksisch) */
 $specialPageAliases['nds-nl'] = array(
 	'GlobalUsage' => array( 'Globaal_gebruuk' ),
@@ -185,11 +190,6 @@ $specialPageAliases['nl'] = array(
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬) */
 $specialPageAliases['nn'] = array(
-	'GlobalUsage' => array( 'Global_bruk' ),
-);
-
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬) */
-$specialPageAliases['nb'] = array(
 	'GlobalUsage' => array( 'Global_bruk' ),
 );
 
@@ -213,7 +213,7 @@ $specialPageAliases['ro'] = array(
 	'GlobalUsage' => array( 'Utilizare_globală' ),
 );
 
-/** Sanskrit (संस्कृत) */
+/** Sanskrit (संस्कृतम्) */
 $specialPageAliases['sa'] = array(
 	'GlobalUsage' => array( 'वैश्विकउपयोग' ),
 );
@@ -262,8 +262,3 @@ $specialPageAliases['zh-hans'] = array(
 $specialPageAliases['zh-hant'] = array(
 	'GlobalUsage' => array( '全域使用' ),
 );
-
-/**
- * For backwards compatibility with MediaWiki 1.15 and earlier.
- */
-$aliases =& $specialPageAliases;
