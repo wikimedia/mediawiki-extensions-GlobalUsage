@@ -1479,6 +1479,13 @@ $messages['sah'] = array(
 	'globalusage-filterlocal' => 'Локаал туттууну көрдөрүмэ',
 );
 
+/** Sicilian (Sicilianu)
+ * @author Aushulz
+ */
+$messages['scn'] = array(
+	'globalusage-ok' => "Va' cerca",
+);
+
 /** Sinhala (සිංහල)
  * @author Budhajeewa
  * @author තඹරු විජේසේකර
