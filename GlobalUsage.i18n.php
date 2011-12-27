@@ -684,6 +684,7 @@ $messages['he'] = array(
 );
 
 /** Hindi (हिन्दी)
+ * @author Ansumang
  * @author Kaustubh
  */
 $messages['hi'] = array(
@@ -691,6 +692,8 @@ $messages['hi'] = array(
 	'globalusage-desc' => 'ग्लोबल फ़ाईल इस्तेमाल देखने के लिये [[Special:GlobalUsage|विशेष पॄष्ठ]]',
 	'globalusage-ok' => 'खोजें',
 	'globalusage-text' => 'ग्लोबल फ़ाईल इस्तेमाल खोजें।',
+	'globalusage-no-results' => '[[:$1]] अन्य विकि पर प्रयोग नहीं हुई है।',
+	'globalusage-on-wiki' => '$2 पर उपयोग',
 );
 
 /** Hiligaynon (Ilonggo)
