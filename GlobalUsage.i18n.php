@@ -689,11 +689,13 @@ $messages['he'] = array(
  */
 $messages['hi'] = array(
 	'globalusage' => 'ग्लोबल फ़ाईल इस्तेमाल',
+	'globalusage-for' => 'वैश्विक प्रयोग के लिए "$1"',
 	'globalusage-desc' => 'ग्लोबल फ़ाईल इस्तेमाल देखने के लिये [[Special:GlobalUsage|विशेष पॄष्ठ]]',
 	'globalusage-ok' => 'खोजें',
 	'globalusage-text' => 'ग्लोबल फ़ाईल इस्तेमाल खोजें।',
 	'globalusage-no-results' => '[[:$1]] अन्य विकि पर प्रयोग नहीं हुई है।',
 	'globalusage-on-wiki' => '$2 पर उपयोग',
+	'globalusage-filterlocal' => 'स्थानीय प्रयोग ना दिखाये',
 );
 
 /** Hiligaynon (Ilonggo)
