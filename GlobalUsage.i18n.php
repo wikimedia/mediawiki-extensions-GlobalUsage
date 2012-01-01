@@ -526,6 +526,17 @@ $messages['fi'] = array(
 	'globalusage-filterlocal' => 'Älä näytä paikallista käyttöä',
 );
 
+/** Faroese (Føroyskt)
+ * @author EileenSanda
+ */
+$messages['fo'] = array(
+	'globalusage-ok' => 'Leita',
+	'globalusage-on-wiki' => 'Nýtsla á $2',
+	'globalusage-of-file' => 'Aðrar wkiir brúka hesa fílu:',
+	'globalusage-more' => 'Vís [[{{#Special:GlobalUsage}}/$1|meiri globala nýtslu]] av hesi fílu.',
+	'globalusage-filterlocal' => 'Ikki vísa lokala nýtslu',
+);
+
 /** French (Français)
  * @author Grondin
  * @author IAlex
@@ -695,6 +706,7 @@ $messages['hi'] = array(
 	'globalusage-text' => 'ग्लोबल फ़ाईल इस्तेमाल खोजें।',
 	'globalusage-no-results' => '[[:$1]] अन्य विकि पर प्रयोग नहीं हुई है।',
 	'globalusage-on-wiki' => '$2 पर उपयोग',
+	'globalusage-of-file' => 'निम्नलिखित अन्य विकिमें ये फ़ाइल उपयोग हुई है:',
 	'globalusage-filterlocal' => 'स्थानीय प्रयोग ना दिखाये',
 );
 
