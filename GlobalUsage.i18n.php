@@ -707,6 +707,7 @@ $messages['hi'] = array(
 	'globalusage-no-results' => '[[:$1]] अन्य विकि पर प्रयोग नहीं हुई है।',
 	'globalusage-on-wiki' => '$2 पर उपयोग',
 	'globalusage-of-file' => 'निम्नलिखित अन्य विकिमें ये फ़ाइल उपयोग हुई है:',
+	'globalusage-more' => 'इस फ़ाइल की [[{{#Special:Globalप्रयोग}}/$1|अधिक वैश्विक उपयोग]] देखें ।',
 	'globalusage-filterlocal' => 'स्थानीय प्रयोग ना दिखाये',
 );
 
