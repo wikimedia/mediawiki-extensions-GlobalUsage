@@ -1481,6 +1481,13 @@ $messages['rue'] = array(
 	'globalusage-filterlocal' => 'Не указовати локалне хоснованя',
 );
 
+/** Sanskrit (संस्कृतम्)
+ * @author Ansumang
+ */
+$messages['sa'] = array(
+	'globalusage-ok' => 'अन्वेषणम्',
+);
+
 /** Sakha (Саха тыла)
  * @author HalanTul
  */
