@@ -117,6 +117,22 @@ $messages['am'] = array(
 	'globalusage-ok' => 'ፍለጋ',
 );
 
+/** Aragonese (Aragonés)
+ * @author Juanpabl
+ */
+$messages['an'] = array(
+	'globalusage' => 'Uso de fichers globals',
+	'globalusage-for' => 'Uso global de «$1»',
+	'globalusage-desc' => "[[Special:GlobalUsage|Pachina especial]] ta veyer l'uso de fichero global",
+	'globalusage-ok' => 'Mirar',
+	'globalusage-text' => 'Mirar uso de fichers globals',
+	'globalusage-no-results' => '[[:$1]] no se fa servir en atros wikis.',
+	'globalusage-on-wiki' => 'Uso en $2',
+	'globalusage-of-file' => 'Os siguients wikis fan servir iste fichero:',
+	'globalusage-more' => "Veyer [[{{#Special:GlobalUsage}}/$1|mas información sobre l'uso global]] d'iste fichero.",
+	'globalusage-filterlocal' => "No amostrar l'uso local",
+);
+
 /** Arabic (العربية)
  * @author Alnokta
  * @author Meno25
