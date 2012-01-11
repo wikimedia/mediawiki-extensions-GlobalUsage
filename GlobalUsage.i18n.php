@@ -1151,6 +1151,7 @@ $messages['mr'] = array(
 	'globalusage-no-results' => '[[:$1]]चा वापर इतर विकिंवर नाही.',
 	'globalusage-on-wiki' => '$2  चा वापर',
 	'globalusage-of-file' => 'पुढील इतर विकि ही फाईल वापरतात:',
+	'globalusage-more' => 'या संचिका-फाईलचे [[{{#Special:GlobalUsage}}/$1|अधिक वैश्विक उपयोग]] पहा',
 	'globalusage-filterlocal' => 'स्थानिक वापर दाखवू नका',
 );
 
