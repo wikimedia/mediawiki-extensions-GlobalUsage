@@ -175,6 +175,21 @@ $messages['as'] = array(
 	'globalusage-ok' => 'সন্ধান কৰক',
 );
 
+/** Asturian (Asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'globalusage' => 'Usu global del ficheru',
+	'globalusage-for' => 'Usu global de «$1»',
+	'globalusage-desc' => "[[Special:GlobalUsage|Páxina especial]] pa ver l'usu global del ficheru",
+	'globalusage-ok' => 'Guetar',
+	'globalusage-text' => "Guetar l'usu global del ficheru",
+	'globalusage-no-results' => "[[:$1]] nun s'usa n'otres wikis.",
+	'globalusage-on-wiki' => 'Usu en $2',
+	'globalusage-of-file' => 'Estes otres wikis usen esti ficheru:',
+	'globalusage-more' => "Ver [[{{#Special:GlobalUsage}}/$1|más usos globales]] d'esti ficheru.",
+);
+
 /** Azerbaijani (Azərbaycanca)
  * @author PPerviz
  */
