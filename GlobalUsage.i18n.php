@@ -188,6 +188,7 @@ $messages['ast'] = array(
 	'globalusage-on-wiki' => 'Usu en $2',
 	'globalusage-of-file' => 'Estes otres wikis usen esti ficheru:',
 	'globalusage-more' => "Ver [[{{#Special:GlobalUsage}}/$1|más usos globales]] d'esti ficheru.",
+	'globalusage-filterlocal' => "Nun amosar l'usu llocal",
 );
 
 /** Azerbaijani (Azərbaycanca)
