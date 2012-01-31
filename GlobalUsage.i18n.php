@@ -1600,8 +1600,8 @@ $messages['sl'] = array(
 $messages['sli'] = array(
 	'globalusage' => 'Globale Dateinutzung',
 	'globalusage-desc' => '[[Special:GlobalUsage|Spezialseyte]] zur Oazeige, ei welchen Projekten de Dateien annes gemeinsam genutzten Repositoriums verwendet waan',
-	'globalusage-ok' => 'Sicha',
-	'globalusage-text' => 'Globale Siche noach Dateinutzungen.',
+	'globalusage-ok' => 'Sucha',
+	'globalusage-text' => 'Globale Suche noach der Dateiverwendung',
 );
 
 /** Somali (Soomaaliga)
