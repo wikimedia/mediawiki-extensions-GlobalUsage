@@ -677,9 +677,12 @@ $messages['gsw'] = array(
 
 /** Gujarati (ગુજરાતી)
  * @author Dineshjk
+ * @author KartikMistry
  */
 $messages['gu'] = array(
 	'globalusage' => 'ફાઇલનો વ્યાપક ઉપયોગ',
+	'globalusage-ok' => 'શોધો',
+	'globalusage-no-results' => '[[:$1]] બીજી વિકિઓ પર વપરાતું નથી.',
 );
 
 /** Manx (Gaelg)
