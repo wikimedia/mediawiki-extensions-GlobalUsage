@@ -684,9 +684,11 @@ $messages['gu'] = array(
 	'globalusage' => 'ફાઇલનો વ્યાપક ઉપયોગ',
 	'globalusage-for' => '"$1" નો વૈશ્વીક વપરાશ',
 	'globalusage-ok' => 'શોધો',
+	'globalusage-text' => 'ફાઈલનો વૈશ્વીક વપરાશ શોધો',
 	'globalusage-no-results' => '[[:$1]] બીજી વિકિઓ પર વપરાતું નથી.',
 	'globalusage-on-wiki' => '$2 પર વપરાશ',
 	'globalusage-of-file' => 'નીચેની બીજી વિકિઓ આ ફાઈલ વાપરે છે:',
+	'globalusage-filterlocal' => 'સ્થાનીય વપરાશ ન બતાવો',
 );
 
 /** Manx (Gaelg)
