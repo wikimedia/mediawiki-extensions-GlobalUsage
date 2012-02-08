@@ -677,17 +677,20 @@ $messages['gsw'] = array(
 
 /** Gujarati (ગુજરાતી)
  * @author Dineshjk
+ * @author Dsvyas
  * @author KartikMistry
  * @author Sushant savla
  */
 $messages['gu'] = array(
 	'globalusage' => 'ફાઇલનો વ્યાપક ઉપયોગ',
 	'globalusage-for' => '"$1" નો વૈશ્વીક વપરાશ',
+	'globalusage-desc' => '[[Special:GlobalUsage|ખાસ પાનાંઓ]] વૈશ્વિક ફાઈલ વપરાશ જોવા માટે',
 	'globalusage-ok' => 'શોધો',
 	'globalusage-text' => 'ફાઈલનો વૈશ્વીક વપરાશ શોધો',
 	'globalusage-no-results' => '[[:$1]] બીજી વિકિઓ પર વપરાતું નથી.',
 	'globalusage-on-wiki' => '$2 પર વપરાશ',
 	'globalusage-of-file' => 'નીચેની બીજી વિકિઓ આ ફાઈલ વાપરે છે:',
+	'globalusage-more' => 'આ ફાઇલના [[{{#Special:GlobalUsage}}/$1|વધુ વૈશ્વિક વપરાશ]] જુઓ.',
 	'globalusage-filterlocal' => 'સ્થાનીય વપરાશ ન બતાવો',
 );
 
