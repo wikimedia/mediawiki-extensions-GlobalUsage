@@ -63,7 +63,7 @@ class SpecialGlobalUsage extends SpecialPage {
 			$html .= Linker::makeThumbLinkObj( $this->target,
 					wfFindFile( $this->target ),
 					/* $label */ $this->target->getPrefixedText(),
-					/* $alt */ '', /* $align */ wfUILang()->alignEnd(),
+					/* $alt */ '', /* $align */ $this->getLang()->alignEnd(),
 					/* $handlerParams */ array(), /* $framed */ false,
 					/* $manualThumb */ false );
 		}
