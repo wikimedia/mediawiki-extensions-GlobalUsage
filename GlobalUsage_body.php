@@ -2,6 +2,10 @@
 
 class GlobalUsage {
 	private $interwiki;
+
+	/**
+	 * @var DatabaseBase
+	 */
 	private $db;
 
 	/**
@@ -127,7 +131,7 @@ class GlobalUsage {
 				array(
 					'gil_page_namespace_id' => $title->getNamespace(),
 					'gil_page_namespace' => $title->getNsText(),
-					'gil_page_title' => $title->getText()
+					'gil_page_title' => $title->getDBkey()
 				),
 				array(
 					'gil_wiki' => $this->interwiki,
