@@ -938,6 +938,7 @@ $messages['jv'] = array(
 
 /** Georgian (ქართული)
  * @author BRUTE
+ * @author David1010
  * @author Dawid Deutschland
  * @author გიორგიმელა
  */
@@ -950,7 +951,7 @@ $messages['ka'] = array(
 	'globalusage-no-results' => '[[:$1]] არ გამოიყენება სხვა ვიკიპედიებში.',
 	'globalusage-on-wiki' => 'გამოყენება $2-ში',
 	'globalusage-of-file' => 'ეს ფაილი გამოიყენება შემდეგ ვიკებში:',
-	'globalusage-more' => 'იხილეთ [[{{#Special:GlobalUsage}}/$1|ფაილის გლობალური გამოყენება]].',
+	'globalusage-more' => 'იხილეთ, ამ ფაილის [[{{#Special:GlobalUsage}}/$1|გლობალური გამოყენება]].',
 	'globalusage-filterlocal' => 'არ აჩვენოთ ლოკალური გამოყენება',
 );
 
