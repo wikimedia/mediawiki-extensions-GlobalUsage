@@ -71,13 +71,6 @@ $messages['niu'] = array(
 	'globalusage-ok' => 'Kumi',
 );
 
-/** толышә зывон (толышә зывон)
- * @author Гусейн
- */
-$messages['tly'] = array(
-	'globalusage-ok' => 'Нәве',
-);
-
 /** Afrikaans (Afrikaans)
  * @author Arnobarnard
  * @author Naudefj
@@ -1331,6 +1324,14 @@ $messages['pdc'] = array(
 	'globalusage-ok' => 'Uffgucke',
 );
 
+/** Pälzisch (Pälzisch)
+ * @author Manuae
+ */
+$messages['pfl'] = array(
+	'globalusage-ok' => 'Suche',
+	'globalusage-more' => 'Gugg fa [[{{#Special:GlobalUsage}}/$1|waidare Vawendunge]] vunde Dadai.',
+);
+
 /** Polish (Polski)
  * @author Holek
  * @author Leinad
@@ -1814,6 +1815,13 @@ $messages['tl'] = array(
 	'globalusage-of-file' => 'Ang sumusunod na mga wiki ang gumagamit ng talaksang ito:',
 	'globalusage-more' => 'Tumingin [[{{#Special:GlobalUsage}}/$1|ng mas marami pang pandaigdigang paggamit]] ng talaksang ito.',
 	'globalusage-filterlocal' => 'Huwag ipakita ang lokal na paggamit',
+);
+
+/** толышә зывон (толышә зывон)
+ * @author Гусейн
+ */
+$messages['tly'] = array(
+	'globalusage-ok' => 'Нәве',
 );
 
 /** Turkish (Türkçe)
