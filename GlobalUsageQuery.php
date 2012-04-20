@@ -12,6 +12,13 @@ class GlobalUsageQuery {
 	private $reversed = false;
 
 	/**
+	 * @var Title|array
+	 */
+	private $target;
+
+	private $lastRow;
+
+	/**
 	 * @param $target mixed Title or array of db keys of target(s).
 	 * If a title, can be a category or a file
 	 */
@@ -34,6 +41,7 @@ class GlobalUsageQuery {
 	 *
 	 * @param $offset string offset
 	 * @param $reversed bool True if this is the upper offset
+	 * @return bool
 	 */
 	public function setOffset( $offset, $reversed = null ) {
 		if ( !is_null( $reversed ) ) {
@@ -91,8 +99,10 @@ class GlobalUsageQuery {
 	public function setLimit( $limit ) {
 		$this->limit = min( $limit, 500 );
 	}
+
 	/**
 	 * Returns the user set limit
+	 * @return int
 	 */
 	public function getLimit() {
 		return $this->limit;
@@ -100,6 +110,7 @@ class GlobalUsageQuery {
 
 	/**
 	 * Set whether to filter out the local usage
+	 * @param $value bool
 	 */
 	public function filterLocal( $value = true ) {
 		$this->filterLocal = $value;
@@ -135,7 +146,7 @@ class GlobalUsageQuery {
 				);
 				break;
 			default:
-				return array();
+				return;
 		}
 
 		if ( $this->filterLocal ) {

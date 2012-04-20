@@ -5,12 +5,24 @@
  */
 
 class SpecialGlobalUsage extends SpecialPage {
+
+	/**
+	 * @var Title
+	 */
+	protected $target;
+
+	/**
+	 * @var bool
+	 */
+	protected $filterLocal;
+
 	public function __construct() {
 		parent::__construct( 'GlobalUsage', 'globalusage' );
 	}
 
 	/**
 	 * Entry point
+	 * @param $par String
 	 */
 	public function execute( $par ) {
 		global $wgOut, $wgRequest;
@@ -63,7 +75,7 @@ class SpecialGlobalUsage extends SpecialPage {
 			$html .= Linker::makeThumbLinkObj( $this->target,
 					wfFindFile( $this->target ),
 					/* $label */ $this->target->getPrefixedText(),
-					/* $alt */ '', /* $align */ $this->getLang()->alignEnd(),
+					/* $alt */ '', /* $align */ $this->getLanguage()->alignEnd(),
 					/* $handlerParams */ array(), /* $framed */ false,
 					/* $manualThumb */ false );
 		}
@@ -129,6 +141,8 @@ class SpecialGlobalUsage extends SpecialPage {
 
 	/**
 	 * Helper to format a specific item
+	 * @param $item array
+	 * @return String
 	 */
 	public static function formatItem( $item ) {
 		if ( !$item['namespace'] ) {
@@ -150,9 +164,7 @@ class SpecialGlobalUsage extends SpecialPage {
 	 * @return string Navbar HTML
 	 */
 	protected function getNavBar( $query ) {
-		global $wgLang, $wgUser;
-
-		$skin = $wgUser->getSkin();
+		global $wgLang;
 
 		$target = $this->target->getText();
 		$limit = $query->getLimit();
@@ -185,7 +197,7 @@ class SpecialGlobalUsage extends SpecialPage {
 			$q = array( 'limit' => $limit, 'to' => $to, 'target' => $target );
 			if ( $this->filterLocal )
 				$q['filterlocal'] = '1';
-			$plink = $skin->link( $title, $prev, $attr, $q );
+			$plink = Linker::link( $title, $prev, $attr, $q );
 		} else {
 			$plink = $prev;
 		}
@@ -196,7 +208,7 @@ class SpecialGlobalUsage extends SpecialPage {
 			$q = array( 'limit' => $limit, 'from' => $from, 'target' => $target );
 			if ( $this->filterLocal )
 				$q['filterlocal'] = '1';
-			$nlink = $skin->link( $title, $next, $attr, $q );
+			$nlink = Linker::link( $title, $next, $attr, $q );
 		} else {
 			$nlink = $next;
 		}
@@ -212,7 +224,7 @@ class SpecialGlobalUsage extends SpecialPage {
 			$lTitle = wfMsgExt( 'shown-title', array( 'parsemag', 'escape' ), $num );
 			$attr = array( 'title' => $lTitle, 'class' => 'mw-numlink' );
 
-			$numLinks[] = $skin->link( $title, $fmtLimit, $attr, $q );
+			$numLinks[] = Linker::link( $title, $fmtLimit, $attr, $q );
 		}
 		$nums = $wgLang->pipeList( $numLinks );
 

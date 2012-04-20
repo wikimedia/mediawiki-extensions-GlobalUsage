@@ -11,6 +11,8 @@ class GlobalUsageHooks {
 	/**
 	 * Hook to LinksUpdateComplete
 	 * Deletes old links from usage table and insert new ones.
+	 * @param $linksUpdater LinksUpdate
+	 * @return bool
 	 */
 	public static function onLinksUpdateComplete( $linksUpdater ) {
 		$title = $linksUpdater->getTitle();
@@ -59,6 +61,12 @@ class GlobalUsageHooks {
 	/**
 	 * Hook to TitleMoveComplete
 	 * Sets the page title in usage table to the new name.
+	 * @param $ot Title
+	 * @param $nt Title
+	 * @param $user User
+	 * @param $pageid int
+	 * @param $redirid
+	 * @return bool
 	 */
 	public static function onTitleMoveComplete( $ot, $nt, $user, $pageid, $redirid ) {
 		$gu = self::getGlobalUsage();
@@ -69,6 +77,11 @@ class GlobalUsageHooks {
 	/**
 	 * Hook to ArticleDeleteComplete
 	 * Deletes entries from usage table.
+	 * @param $article Article
+	 * @param $user User
+	 * @param $reason string
+	 * @param $id int
+	 * @return bool
 	 */
 	public static function onArticleDeleteComplete( $article, $user, $reason, $id ) {
 		$gu = self::getGlobalUsage();
@@ -80,6 +93,12 @@ class GlobalUsageHooks {
 	/**
 	 * Hook to FileDeleteComplete
 	 * Copies the local link table to the global.
+	 * @param $file File
+	 * @param $oldimage
+	 * @param $article Article
+	 * @param $user User
+	 * @param $reason string
+	 * @return bool
 	 */
 	public static function onFileDeleteComplete( $file, $oldimage, $article, $user, $reason ) {
 		if ( !$oldimage ) {
@@ -92,6 +111,11 @@ class GlobalUsageHooks {
 	/**
 	 * Hook to FileUndeleteComplete
 	 * Deletes the file from the global link table.
+	 * @param $title Title
+	 * @param $versions
+	 * @param $user User
+	 * @param $reason string
+	 * @return bool
 	 */
 	public static function onFileUndeleteComplete( $title, $versions, $user, $reason ) {
 		$gu = self::getGlobalUsage();
@@ -102,6 +126,8 @@ class GlobalUsageHooks {
 	/**
 	 * Hook to UploadComplete
 	 * Deletes the file from the global link table.
+	 * @param $upload File
+	 * @return bool
 	 */
 	public static function onUploadComplete( $upload ) {
 		$gu = self::getGlobalUsage();
@@ -127,6 +153,8 @@ class GlobalUsageHooks {
 
 	/**
 	 * Hook to make sure globalimagelinks table gets duplicated for parsertests
+	 * @param $tables array
+	 * @return bool
 	 */
 	public static function onParserTestTables ( &$tables ) {
 		$tables[] = 'globalimagelinks';
@@ -137,30 +165,21 @@ class GlobalUsageHooks {
 	 * Hook to apply schema changes
 	 *
 	 * @param $updater DatabaseUpdater
+	 * @return bool
 	 */
 	public static function onLoadExtensionSchemaUpdates( $updater = null ) {
 		$dir = dirname( __FILE__ );
-		if ( $updater === null ) {
-			global $wgExtNewTables, $wgExtNewIndexes, $wgDBtype;
-			if ( $wgDBtype == 'mysql' || $wgDBtype == 'sqlite' ) {
-				$wgExtNewTables[] = array( 'globalimagelinks', "$dir/GlobalUsage.sql" );
-				$wgExtNewIndexes[] = array( 'globalimagelinks', 'globalimagelinks_wiki_nsid_title', "$dir/patches/patch-globalimagelinks_wiki_nsid_title.sql" );
-			} elseif ( $wgDBtype == 'postgresql' ) {
-				$wgExtNewTables[] = array( 'globalimagelinks', "$dir/GlobalUsage.pg.sql" );
-				$wgExtNewIndexes[] = array( 'globalimagelinks', 'globalimagelinks_wiki_nsid_title', "$dir/patches/patch-globalimagelinks_wiki_nsid_title.pg.sql" );
-			}
-		} else {
-			if ( $updater->getDB()->getType() == 'mysql' || $updater->getDB()->getType() == 'sqlite' ) {
-				$updater->addExtensionUpdate( array( 'addTable', 'globalimagelinks',
-					"$dir/GlobalUsage.sql", true ) );
-				$updater->addExtensionUpdate( array( 'addIndex', 'globalimagelinks',
-					'globalimagelinks_wiki_nsid_title', "$dir/patches/patch-globalimagelinks_wiki_nsid_title.sql", true ) );
-			} elseif ( $updater->getDB()->getType() == 'postgresql' ) {
-				$updater->addExtensionUpdate( array( 'addTable', 'globalimagelinks',
-					"$dir/GlobalUsage.pg.sql", true ) );
-				$updater->addExtensionUpdate( array( 'addIndex', 'globalimagelinks',
-					'globalimagelinks_wiki_nsid_title', "$dir/patches/patch-globalimagelinks_wiki_nsid_title.pg.sql", true ) );
-			}
+
+		if ( $updater->getDB()->getType() == 'mysql' || $updater->getDB()->getType() == 'sqlite' ) {
+			$updater->addExtensionUpdate( array( 'addTable', 'globalimagelinks',
+				"$dir/GlobalUsage.sql", true ) );
+			$updater->addExtensionUpdate( array( 'addIndex', 'globalimagelinks',
+				'globalimagelinks_wiki_nsid_title', "$dir/patches/patch-globalimagelinks_wiki_nsid_title.sql", true ) );
+		} elseif ( $updater->getDB()->getType() == 'postgresql' ) {
+			$updater->addExtensionUpdate( array( 'addTable', 'globalimagelinks',
+				"$dir/GlobalUsage.pg.sql", true ) );
+			$updater->addExtensionUpdate( array( 'addIndex', 'globalimagelinks',
+				'globalimagelinks_wiki_nsid_title', "$dir/patches/patch-globalimagelinks_wiki_nsid_title.pg.sql", true ) );
 		}
 		return true;
 	}

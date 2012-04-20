@@ -24,6 +24,7 @@ class GlobalUsage {
 	 *
 	 * @param $title Title Title of the page
 	 * @param $images array Array of db keys of images used
+	 * @param $pageIdFlags int
 	 */
 	public function insertLinks( $title, $images, $pageIdFlags = Title::GAID_FOR_UPDATE ) {
 		$insert = array();
@@ -39,8 +40,11 @@ class GlobalUsage {
 		}
 		$this->db->insert( 'globalimagelinks', $insert, __METHOD__, array( 'IGNORE' ) );
 	}
+
 	/**
 	 * Get all global images from a certain page
+	 * @param $id int
+	 * @return array
 	 */
 	public function getLinksFromPage( $id ) {
 		$res = $this->db->select(
