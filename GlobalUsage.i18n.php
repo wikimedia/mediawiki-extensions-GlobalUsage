@@ -904,15 +904,16 @@ $messages['it'] = array(
 
 /** Japanese (日本語)
  * @author Fryed-peach
+ * @author Shirayuki
  * @author 青子守歌
  */
 $messages['ja'] = array(
 	'globalusage' => 'グローバルなファイル使用状況',
 	'globalusage-for' => '「$1」のグローバルな利用状況',
-	'globalusage-desc' => 'グローバルなファイル使用状況を見るための[[Special:GlobalUsage|特別ページ]]',
+	'globalusage-desc' => 'グローバルなファイル使用状況を表示する[[Special:GlobalUsage|特別ページ]]',
 	'globalusage-ok' => '検索',
-	'globalusage-text' => 'グローバルなファイル使用状況を検索する',
-	'globalusage-no-results' => '[[:$1]] は他のウィキでは使われていません。',
+	'globalusage-text' => 'グローバルなファイル使用状況を検索',
+	'globalusage-no-results' => '[[:$1]] は他のウィキでは使用されていません。',
 	'globalusage-on-wiki' => '$2 での使用状況',
 	'globalusage-of-file' => '以下に挙げる他のウィキがこの画像を使っています:',
 	'globalusage-more' => 'このファイルの[[{{#Special:GlobalUsage}}/$1|グローバル使用状況]]を表示する。',
