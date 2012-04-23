@@ -29,14 +29,15 @@ class GlobalUsageImagePageHooks {
 	/**
 	 * Show a global usage section on the image page
 	 *
-	 * @param object $imagePage The ImagePage
+	 * @param $imagePage ImagePage The ImagePage
 	 * @param string $html HTML to add to the image page as global usage section
 	 * @return bool
 	 */
 	public static function onImagePageAfterImageLinks( $imagePage, &$html ) {
-		if ( !self::hasResults( $imagePage ) )
+		if ( !self::hasResults( $imagePage ) ) {
 			return true;
-				
+		}
+
 		$title = $imagePage->getFile()->getTitle();
 		$targetName = $title->getText();
 
@@ -69,6 +70,9 @@ class GlobalUsageImagePageHooks {
 
 	/**
 	 * Show a link to the global image links in the TOC if there are any results available.
+	 * @param $imagePage ImagePage
+	 * @param $toc array
+	 * @return bool
 	 */
 	public static function onImagePageShowTOC( $imagePage, &$toc ) {
 		if ( self::hasResults( $imagePage ) ) {
