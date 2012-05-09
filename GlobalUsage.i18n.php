@@ -734,18 +734,19 @@ $messages['he'] = array(
 /** Hindi (हिन्दी)
  * @author Ansumang
  * @author Kaustubh
+ * @author Siddhartha Ghai
  */
 $messages['hi'] = array(
-	'globalusage' => 'ग्लोबल फ़ाईल इस्तेमाल',
-	'globalusage-for' => 'वैश्विक प्रयोग के लिए "$1"',
-	'globalusage-desc' => 'ग्लोबल फ़ाईल इस्तेमाल देखने के लिये [[Special:GlobalUsage|विशेष पॄष्ठ]]',
+	'globalusage' => 'वैश्विक फ़ाइल उपयोग',
+	'globalusage-for' => '"$1" का वैश्विक उपयोग',
+	'globalusage-desc' => 'वैश्विक फ़ाइल उपयोग देखने के लिये [[Special:GlobalUsage|विशेष पृष्ठ]]',
 	'globalusage-ok' => 'खोजें',
-	'globalusage-text' => 'ग्लोबल फ़ाईल इस्तेमाल खोजें।',
+	'globalusage-text' => 'वैश्विक फ़ाइल उपयोग खोजें।',
 	'globalusage-no-results' => '[[:$1]] अन्य विकि पर प्रयोग नहीं हुई है।',
 	'globalusage-on-wiki' => '$2 पर उपयोग',
-	'globalusage-of-file' => 'निम्नलिखित अन्य विकिमें ये फ़ाइल उपयोग हुई है:',
-	'globalusage-more' => 'इस फ़ाइल की [[{{#Special:Globalप्रयोग}}/$1|अधिक वैश्विक उपयोग]] देखें ।',
-	'globalusage-filterlocal' => 'स्थानीय प्रयोग ना दिखाये',
+	'globalusage-of-file' => 'इस फ़ाइल का उपयोग निम्न अन्य विकियों में है:',
+	'globalusage-more' => 'इस फ़ाइल के [[{{#Special:GlobalUsage}}/$1|वैश्विक उपयोग की अधिक जानकारी]] देखें।',
+	'globalusage-filterlocal' => 'स्थानीय उपयोग ना दिखाएँ',
 );
 
 /** Hiligaynon (Ilonggo)
