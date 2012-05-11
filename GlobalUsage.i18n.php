@@ -394,18 +394,19 @@ $messages['de'] = array(
 );
 
 /** Zazaki (Zazaki)
+ * @author Erdemaslancan
  * @author Xoser
  */
 $messages['diq'] = array(
 	'globalusage' => 'Karo dosyayê globali',
 	'globalusage-for' => "Dosyayê globali ser ''$1''",
 	'globalusage-desc' => '[[Special:GlobalUsage|Pelo xas]] ke karo dosyayê globali bivine',
-	'globalusage-ok' => 'Bigêre',
+	'globalusage-ok' => 'Cı geyre',
 	'globalusage-text' => 'Karo dosyayê globali bigêre',
 	'globalusage-no-results' => '[[:$1]] wikiyanê binan de çini yo.',
 	'globalusage-on-wiki' => 'Kar ser $2i de',
 	'globalusage-of-file' => 'Wikiyanê ke ena dosya est o:',
-	'globalusage-more' => 'Karo [[{{#Special:GlobalUsage}}/$1|dosyayo global]]ê ena dosya bivine.',
+	'globalusage-more' => '[[{{#Special:GlobalUsage}}/$1|hesabê globalê]] ena dosya bıvinên',
 	'globalusage-filterlocal' => 'Karo local nimocne',
 );
 
