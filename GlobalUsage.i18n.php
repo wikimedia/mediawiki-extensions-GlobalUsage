@@ -1047,11 +1047,12 @@ $messages['ku-latn'] = array(
 
 /** Cornish (Kernowek)
  * @author Kw-Moon
+ * @author Nrowe
  */
 $messages['kw'] = array(
 	'globalusage' => 'Devnydh ollvysel an restren',
 	'globalusage-on-wiki' => 'Devnydh war $2',
-	'globalusage-of-file' => "Yma'n wikis erel a-sew owth usya an restren-ma:",
+	'globalusage-of-file' => "Yma'n wikis erel a sew owth usya an restren-ma:",
 	'globalusage-more' => "Gweles [[{{#Special:GlobalUsage}}/$1|devnydh ollvysel moy]] a'n restren-ma.",
 );
 
@@ -1070,6 +1071,13 @@ $messages['lb'] = array(
 	'globalusage-of-file' => 'Dës aner Wikie benotzen dëse Fichier:',
 	'globalusage-more' => 'Kuckt [[{{#Special:GlobalUsage}}/$1|globale Gebrauch]] vun dësem Fichier.',
 	'globalusage-filterlocal' => 'Déi lokal Benotzung net weisen',
+);
+
+/** Lezghian (Лезги)
+ * @author Migraghvi
+ */
+$messages['lez'] = array(
+	'globalusage-ok' => 'КЪекъуьн',
 );
 
 /** Lingua Franca Nova (Lingua Franca Nova)
@@ -1265,6 +1273,7 @@ $messages['nl'] = array(
  * @author Harald Khan
  * @author Jon Harald Søby
  * @author Nghtwlkr
+ * @author Njardarlogar
  */
 $messages['nn'] = array(
 	'globalusage' => 'Global filbruk',
@@ -1771,7 +1780,7 @@ $messages['tg-cyrl'] = array(
 	'globalusage-text' => 'Ҷустуҷӯи истифодаи саросарии парванда.',
 );
 
-/** Tajik (Latin script) (tojikī)
+/** Tajik (Latin script) (Tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
@@ -1820,7 +1829,7 @@ $messages['tl'] = array(
 	'globalusage-filterlocal' => 'Huwag ipakita ang lokal na paggamit',
 );
 
-/** толышә зывон (толышә зывон)
+/** Толышә зывон (Толышә зывон)
  * @author Гусейн
  */
 $messages['tly'] = array(
@@ -1893,7 +1902,7 @@ $messages['vec'] = array(
 	'globalusage-filterlocal' => "No stà mostrar l'utilizo local",
 );
 
-/** Veps (Vepsan kel')
+/** Veps (Vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
