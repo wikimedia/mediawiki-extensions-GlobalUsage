@@ -28,6 +28,11 @@ $specialPageAliases['bg'] = array(
 	'GlobalUsage' => array( 'Глобално_използване_на_файл' ),
 );
 
+/** Banjar (Bahasa Banjar) */
+$specialPageAliases['bjn'] = array(
+	'GlobalUsage' => array( 'Pamakaian_global' ),
+);
+
 /** Breton (Brezhoneg) */
 $specialPageAliases['br'] = array(
 	'GlobalUsage' => array( 'ImplijHollek' ),
@@ -40,7 +45,7 @@ $specialPageAliases['bs'] = array(
 
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
-	'GlobalUsage' => array( 'Globale_Benutzung' ),
+	'GlobalUsage' => array( 'Globale_Benutzung', 'Globale_Verwendung' ),
 );
 
 /** Lower Sorbian (Dolnoserbski) */
@@ -80,12 +85,17 @@ $specialPageAliases['gl'] = array(
 
 /** Swiss German (Alemannisch) */
 $specialPageAliases['gsw'] = array(
-	'GlobalUsage' => array( 'Wältwyti Benutzig' ),
+	'GlobalUsage' => array( 'Wältwyti_Benutzig' ),
 );
 
 /** Gujarati (ગુજરાતી) */
 $specialPageAliases['gu'] = array(
 	'GlobalUsage' => array( 'વૈશ્વીક_વપરાશ' ),
+);
+
+/** Hindi (हिन्दी) */
+$specialPageAliases['hi'] = array(
+	'GlobalUsage' => array( 'वैश्विक_प्रयोग' ),
 );
 
 /** Croatian (Hrvatski) */
@@ -141,6 +151,11 @@ $specialPageAliases['ka'] = array(
 /** Khmer (ភាសាខ្មែរ) */
 $specialPageAliases['km'] = array(
 	'GlobalUsage' => array( 'បម្រើបម្រាស់ជាសាកល' ),
+);
+
+/** Cornish (Kernowek) */
+$specialPageAliases['kw'] = array(
+	'GlobalUsage' => array( 'DevnydhOllvysel' ),
 );
 
 /** Ladino (Ladino) */
