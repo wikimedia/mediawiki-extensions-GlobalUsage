@@ -162,10 +162,14 @@ $messages['arz'] = array(
 );
 
 /** Assamese (অসমীয়া)
+ * @author Bishnu Saikia
  * @author Chaipau
  */
 $messages['as'] = array(
+	'globalusage' => 'ফাইলৰ গোলকীয় ব্যৱহাৰ',
 	'globalusage-ok' => 'সন্ধান কৰক',
+	'globalusage-text' => 'ফাইলের গোলকীয় ব্যৱহাৰ অনুসন্ধান কৰক',
+	'globalusage-on-wiki' => '$2-ৰ ব্যৱহাৰ',
 );
 
 /** Asturian (Asturianu)
