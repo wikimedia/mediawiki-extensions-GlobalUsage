@@ -164,12 +164,19 @@ $messages['arz'] = array(
 /** Assamese (অসমীয়া)
  * @author Bishnu Saikia
  * @author Chaipau
+ * @author Gitartha.bordoloi
  */
 $messages['as'] = array(
 	'globalusage' => 'ফাইলৰ গোলকীয় ব্যৱহাৰ',
+	'globalusage-for' => '"$1"ৰ গোলকীয় ব্যৱহাৰ',
+	'globalusage-desc' => 'গোলকীয় ফাইল ব্যৱহাৰ চাবলৈ [[Special:GlobalUsage|বিশেষ পৃষ্ঠা]]',
 	'globalusage-ok' => 'সন্ধান কৰক',
 	'globalusage-text' => 'ফাইলের গোলকীয় ব্যৱহাৰ অনুসন্ধান কৰক',
+	'globalusage-no-results' => '[[:$1]] আন ৱিকিত ব্যৱহাৰ হোৱা নাই।',
 	'globalusage-on-wiki' => '$2-ৰ ব্যৱহাৰ',
+	'globalusage-of-file' => 'তলত দিয়া আন ৱিকিসমূহে এই ফাইলটো ব্যৱহাৰ কৰে:',
+	'globalusage-more' => 'এই ফাইলটোৰ [[{{#Special:GlobalUsage}}/$1|অধিক গোলকীয় ব্যৱহাৰ]] চাওক।',
+	'globalusage-filterlocal' => 'স্থানীয় ব্যৱহাৰ নেদেখুৱাব',
 );
 
 /** Asturian (Asturianu)
