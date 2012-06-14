@@ -179,7 +179,7 @@ $messages['as'] = array(
 	'globalusage-filterlocal' => 'স্থানীয় ব্যৱহাৰ নেদেখুৱাব',
 );
 
-/** Asturian (Asturianu)
+/** Asturian (asturianu)
  * @author Xuacu
  */
 $messages['ast'] = array(
@@ -195,7 +195,7 @@ $messages['ast'] = array(
 	'globalusage-filterlocal' => "Nun amosar l'usu llocal",
 );
 
-/** Azerbaijani (Azərbaycanca)
+/** Azerbaijani (azərbaycanca)
  * @author PPerviz
  */
 $messages['az'] = array(
@@ -246,7 +246,7 @@ $messages['be-tarask'] = array(
 	'globalusage-filterlocal' => 'Не паказваць лякальнае выкарыстаньне',
 );
 
-/** Bulgarian (Български)
+/** Bulgarian (български)
  * @author DCLXVI
  * @author Turin
  */
@@ -277,7 +277,7 @@ $messages['bn'] = array(
 	'globalusage-filterlocal' => 'স্থানীয় ব্যবহার দেখানোর প্রয়োজন নেই',
 );
 
-/** Breton (Brezhoneg)
+/** Breton (brezhoneg)
  * @author Fulup
  */
 $messages['br'] = array(
@@ -293,7 +293,7 @@ $messages['br'] = array(
 	'globalusage-filterlocal' => "Arabat diskouez an implij lec'hel",
 );
 
-/** Bosnian (Bosanski)
+/** Bosnian (bosanski)
  * @author CERminator
  */
 $messages['bs'] = array(
@@ -309,7 +309,7 @@ $messages['bs'] = array(
 	'globalusage-filterlocal' => 'Ne prikazuj lokalnu upotrebu',
 );
 
-/** Catalan (Català)
+/** Catalan (català)
  * @author Davidpar
  * @author Jordi Roqué
  * @author SMP
@@ -335,7 +335,7 @@ $messages['ch'] = array(
 	'globalusage-ok' => 'Aligao',
 );
 
-/** Sorani (کوردی)
+/** Sorani Kurdish (کوردی)
  * @author Asoxor
  */
 $messages['ckb'] = array(
@@ -346,7 +346,7 @@ $messages['ckb'] = array(
 	'globalusage-of-file' => 'ئەم ویکیانەی دیکەی خوارەوەش ئەم پەڕگە بەکاردێنن:',
 );
 
-/** Czech (Česky)
+/** Czech (česky)
  * @author Mormegil
  */
 $messages['cs'] = array(
@@ -369,7 +369,7 @@ $messages['cu'] = array(
 	'globalusage-ok' => 'ищи',
 );
 
-/** Danish (Dansk)
+/** Danish (dansk)
  * @author Jon Harald Søby
  * @author Peter Alberti
  */
@@ -437,7 +437,7 @@ $messages['dsb'] = array(
 	'globalusage-filterlocal' => 'Lokalne wužywanje njepokazaś',
 );
 
-/** Ewe (Eʋegbe) */
+/** Ewe (eʋegbe) */
 $messages['ee'] = array(
 	'globalusage-ok' => 'Dii',
 );
@@ -479,7 +479,7 @@ $messages['eo'] = array(
 	'globalusage-filterlocal' => 'Ne montri lokan uzadon',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Crazymadlover
  * @author Dferg
  * @author Fitoschido
@@ -500,7 +500,7 @@ $messages['es'] = array(
 	'globalusage-filterlocal' => 'No mostrar el uso local',
 );
 
-/** Estonian (Eesti)
+/** Estonian (eesti)
  * @author Avjoska
  * @author Pikne
  */
@@ -517,7 +517,7 @@ $messages['et'] = array(
 	'globalusage-filterlocal' => 'Ära näita kohalikku kasutust',
 );
 
-/** Basque (Euskara)
+/** Basque (euskara)
  * @author Kobazulo
  */
 $messages['eu'] = array(
@@ -545,7 +545,7 @@ $messages['fa'] = array(
 	'globalusage-filterlocal' => 'استفاده‌های محلی را نشان نده',
 );
 
-/** Finnish (Suomi)
+/** Finnish (suomi)
  * @author Crt
  * @author Nike
  * @author ZeiP
@@ -563,7 +563,7 @@ $messages['fi'] = array(
 	'globalusage-filterlocal' => 'Älä näytä paikallista käyttöä',
 );
 
-/** Faroese (Føroyskt)
+/** Faroese (føroyskt)
  * @author EileenSanda
  */
 $messages['fo'] = array(
@@ -574,7 +574,7 @@ $messages['fo'] = array(
 	'globalusage-filterlocal' => 'Ikki vísa lokala nýtslu',
 );
 
-/** French (Français)
+/** French (français)
  * @author Grondin
  * @author IAlex
  * @author Meithal
@@ -596,7 +596,7 @@ $messages['fr'] = array(
 	'globalusage-filterlocal' => 'Ne pas montrer l’utilisation locale',
 );
 
-/** Franco-Provençal (Arpetan)
+/** Franco-Provençal (arpetan)
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
@@ -612,7 +612,7 @@ $messages['frp'] = array(
 	'globalusage-filterlocal' => 'Pas montrar l’usâjo local',
 );
 
-/** Friulian (Furlan)
+/** Friulian (furlan)
  * @author Klenje
  */
 $messages['fur'] = array(
@@ -628,12 +628,12 @@ $messages['fy'] = array(
 	'globalusage-ok' => 'Sykje',
 );
 
-/** Simplified Gan script (‪赣语(简体)‬) */
+/** Simplified Gan script (‪赣语（简体）‬) */
 $messages['gan-hans'] = array(
 	'globalusage-ok' => '寻吖',
 );
 
-/** Traditional Gan script (‪贛語(繁體)‬)
+/** Traditional Gan script (‪贛語（繁體）‬)
  * @author Symane
  */
 $messages['gan-hant'] = array(
@@ -768,7 +768,7 @@ $messages['hil'] = array(
 	'globalusage-ok' => 'Pangita-a',
 );
 
-/** Croatian (Hrvatski)
+/** Croatian (hrvatski)
  * @author Ex13
  * @author SpeedyGonsales
  */
@@ -801,7 +801,7 @@ $messages['hsb'] = array(
 	'globalusage-filterlocal' => 'Lokalne wužiwanje njepokazać',
 );
 
-/** Hungarian (Magyar)
+/** Hungarian (magyar)
  * @author Dani
  * @author Glanthor Reviol
  * @author Misibacsi
@@ -831,7 +831,7 @@ $messages['hy'] = array(
 	'globalusage-more' => 'Տեսնել այս նիշքի [[{{#Special:GlobalUsage}}/$1|ավելի համընդհանուր օգտագործումը]]:',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -890,14 +890,14 @@ $messages['ilo'] = array(
 	'globalusage-filterlocal' => 'Saan a ipakita ti lokal a panag-usar',
 );
 
-/** Icelandic (Íslenska)
+/** Icelandic (íslenska)
  * @author S.Örvarr.S
  */
 $messages['is'] = array(
 	'globalusage-ok' => 'Leita',
 );
 
-/** Italian (Italiano)
+/** Italian (italiano)
  * @author Darth Kule
  * @author Gianfranco
  * @author Nemo bis
@@ -969,7 +969,7 @@ $messages['kk-cyrl'] = array(
 	'globalusage-ok' => 'Іздеу',
 );
 
-/** Kalaallisut (Kalaallisut)
+/** Kalaallisut (kalaallisut)
  * @author Qaqqalik
  */
 $messages['kl'] = array(
@@ -1056,7 +1056,7 @@ $messages['ku-latn'] = array(
 	'globalusage-ok' => 'Lê bigere',
 );
 
-/** Cornish (Kernowek)
+/** Cornish (kernowek)
  * @author Kw-Moon
  * @author Nrowe
  */
@@ -1115,7 +1115,7 @@ $messages['li'] = array(
 	'globalusage-filterlocal' => 'Tuin gei lokaal gebroek',
 );
 
-/** Lithuanian (Lietuvių)
+/** Lithuanian (lietuvių)
  * @author GreenZeb
  * @author Homo
  * @author Tomasdd
@@ -1126,7 +1126,7 @@ $messages['lt'] = array(
 	'globalusage-no-results' => '[[:$1]] nenaudojama kituose Wiki projektuose.',
 );
 
-/** Latvian (Latviešu)
+/** Latvian (latviešu)
  * @author GreenZeb
  */
 $messages['lv'] = array(
@@ -1140,7 +1140,7 @@ $messages['mhr'] = array(
 	'globalusage-ok' => 'Кычал',
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
@@ -1173,7 +1173,7 @@ $messages['ml'] = array(
 	'globalusage-filterlocal' => 'പ്രാദേശിക ഉപയോഗം പ്രദർശിപ്പിക്കേണ്ടതില്ല',
 );
 
-/** Mongolian (Монгол)
+/** Mongolian (монгол)
  * @author Chinneeb
  */
 $messages['mn'] = array(
@@ -1280,7 +1280,7 @@ $messages['nl'] = array(
 	'globalusage-filterlocal' => 'Lokaal gebruik niet weergeven',
 );
 
-/** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
  * @author Harald Khan
  * @author Jon Harald Søby
  * @author Nghtwlkr
@@ -1299,7 +1299,7 @@ $messages['nn'] = array(
 	'globalusage-filterlocal' => 'Ikkje vis lokal bruk',
 );
 
-/** Occitan (Occitan)
+/** Occitan (occitan)
  * @author Cedric31
  */
 $messages['oc'] = array(
@@ -1355,7 +1355,7 @@ $messages['pfl'] = array(
 	'globalusage-more' => 'Gugg fa [[{{#Special:GlobalUsage}}/$1|waidare Vawendunge]] vunde Dadai.',
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author Holek
  * @author Leinad
  * @author Maikking
@@ -1423,7 +1423,7 @@ $messages['ps'] = array(
 	'globalusage-filterlocal' => 'سيمه ايزې کارونې مه ښکاره کوه',
 );
 
-/** Portuguese (Português)
+/** Portuguese (português)
  * @author Giro720
  * @author Hamilton Abreu
  * @author Lijealso
@@ -1442,7 +1442,7 @@ $messages['pt'] = array(
 	'globalusage-filterlocal' => 'Não mostrar utilizações locais',
 );
 
-/** Brazilian Portuguese (Português do Brasil)
+/** Brazilian Portuguese (português do Brasil)
  * @author 555
  * @author Eduardo.mps
  * @author Giro720
@@ -1484,7 +1484,7 @@ $messages['rif'] = array(
 	'globalusage-ok' => 'Tarzzut',
 );
 
-/** Romanian (Română)
+/** Romanian (română)
  * @author AdiJapan
  * @author KlaudiuMihaila
  * @author Minisarm
@@ -1502,7 +1502,7 @@ $messages['ro'] = array(
 	'globalusage-filterlocal' => 'Nu afișa utilizările locale.',
 );
 
-/** Tarandíne (Tarandíne)
+/** tarandíne (tarandíne)
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
@@ -1518,7 +1518,7 @@ $messages['roa-tara'] = array(
 	'globalusage-filterlocal' => "No fà vedè l'ause locale",
 );
 
-/** Russian (Русский)
+/** Russian (русский)
  * @author Eleferen
  * @author Александр Сигачёв
  */
@@ -1558,7 +1558,7 @@ $messages['sa'] = array(
 	'globalusage-ok' => 'अन्वेषणम्',
 );
 
-/** Sakha (Саха тыла)
+/** Sakha (саха тыла)
  * @author HalanTul
  */
 $messages['sah'] = array(
@@ -1574,7 +1574,7 @@ $messages['sah'] = array(
 	'globalusage-filterlocal' => 'Локаал туттууну көрдөрүмэ',
 );
 
-/** Sicilian (Sicilianu)
+/** Sicilian (sicilianu)
  * @author Aushulz
  */
 $messages['scn'] = array(
@@ -1598,7 +1598,7 @@ $messages['si'] = array(
 	'globalusage-filterlocal' => 'ප්‍රාදේශීය භාවිතය නොපෙන්වන්න.',
 );
 
-/** Slovak (Slovenčina)
+/** Slovak (slovenčina)
  * @author Helix84
  */
 $messages['sk'] = array(
@@ -1614,7 +1614,7 @@ $messages['sk'] = array(
 	'globalusage-filterlocal' => 'Nezobrazovať lokálne použitie',
 );
 
-/** Slovenian (Slovenščina)
+/** Slovenian (slovenščina)
  * @author Dbc334
  */
 $messages['sl'] = array(
@@ -1648,7 +1648,7 @@ $messages['so'] = array(
 	'globalusage-ok' => 'Raadi',
 );
 
-/** Albanian (Shqip)
+/** Albanian (shqip)
  * @author Mikullovci11
  * @author Olsi
  */
@@ -1665,7 +1665,7 @@ $messages['sq'] = array(
 	'globalusage-filterlocal' => 'Mos tregoni përdorimin lokal',
 );
 
-/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
  * @author Rancher
  * @author Sasa Stefanovic
  * @author Жељко Тодоровић
@@ -1680,7 +1680,7 @@ $messages['sr-ec'] = array(
 	'globalusage-filterlocal' => 'Не приказуј локалну употребу',
 );
 
-/** Serbian (Latin script) (‪Srpski (latinica)‬)
+/** Serbian (Latin script) (‪srpski (latinica)‬)
  * @author Michaello
  */
 $messages['sr-el'] = array(
@@ -1709,7 +1709,7 @@ $messages['su'] = array(
 	'globalusage-ok' => 'Sungsi',
 );
 
-/** Swedish (Svenska)
+/** Swedish (svenska)
  * @author Ainali
  * @author Boivie
  * @author Lejonel
@@ -1774,14 +1774,14 @@ $messages['te'] = array(
 	'globalusage-filterlocal' => 'స్థానిక వాడుకని చూపించకు',
 );
 
-/** Tetum (Tetun)
+/** Tetum (tetun)
  * @author MF-Warburg
  */
 $messages['tet'] = array(
 	'globalusage-ok' => 'Buka',
 );
 
-/** Tajik (Cyrillic script) (Тоҷикӣ)
+/** Tajik (Cyrillic script) (тоҷикӣ)
  * @author Ibrahim
  */
 $messages['tg-cyrl'] = array(
@@ -1791,7 +1791,7 @@ $messages['tg-cyrl'] = array(
 	'globalusage-text' => 'Ҷустуҷӯи истифодаи саросарии парванда.',
 );
 
-/** Tajik (Latin script) (Tojikī)
+/** Tajik (Latin script) (tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
@@ -1840,7 +1840,7 @@ $messages['tl'] = array(
 	'globalusage-filterlocal' => 'Huwag ipakita ang lokal na paggamit',
 );
 
-/** Толышә зывон (Толышә зывон)
+/** толышә зывон (толышә зывон)
  * @author Гусейн
  */
 $messages['tly'] = array(
@@ -1864,7 +1864,7 @@ $messages['tr'] = array(
 	'globalusage-filterlocal' => 'Yerel kullanımı gösterme',
 );
 
-/** Tatar (Cyrillic script) (Татарча)
+/** Tatar (Cyrillic script) (татарча)
  * @author Ильнар
  */
 $messages['tt-cyrl'] = array(
@@ -1880,7 +1880,7 @@ $messages['tt-cyrl'] = array(
 	'globalusage-filterlocal' => 'Локаль кулланышын күрсәтмәскә',
 );
 
-/** Ukrainian (Українська)
+/** Ukrainian (українська)
  * @author NickK
  * @author Тест
  */
@@ -1897,7 +1897,7 @@ $messages['uk'] = array(
 	'globalusage-filterlocal' => 'Не показувати локальне використання',
 );
 
-/** Vèneto (Vèneto)
+/** vèneto (vèneto)
  * @author Candalua
  */
 $messages['vec'] = array(
@@ -1965,7 +1965,7 @@ $messages['yo'] = array(
 	'globalusage-of-file' => 'Àwọn wiki míràn wọ̀nyí lo fáìlì yìí:',
 );
 
-/** Simplified Chinese (‪中文(简体)‬)
+/** Simplified Chinese (‪中文（简体）‬)
  * @author Gaoxuewei
  * @author Gzdavidwong
  * @author Hydra
@@ -1985,7 +1985,7 @@ $messages['zh-hans'] = array(
 	'globalusage-filterlocal' => '不显示本地用途',
 );
 
-/** Traditional Chinese (‪中文(繁體)‬)
+/** Traditional Chinese (‪中文（繁體）‬)
  * @author Anakmalaysia
  * @author Gaoxuewei
  * @author Liangent
