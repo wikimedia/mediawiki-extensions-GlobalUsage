@@ -1067,6 +1067,13 @@ $messages['kw'] = array(
 	'globalusage-more' => "Gweles [[{{#Special:GlobalUsage}}/$1|devnydh ollvysel moy]] a'n restren-ma.",
 );
 
+/** Kirghiz (Кыргызча)
+ * @author Chorobek
+ */
+$messages['ky'] = array(
+	'globalusage-of-file' => 'Бул файл төмөнкү викилерде колдонулат:',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Les Meloures
  * @author Robby
