@@ -785,13 +785,13 @@ $messages['hr'] = array(
 	'globalusage-filterlocal' => 'Ne prikazuj lokalnu uporabu',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
 	'globalusage' => 'Globalne wužiwanje dataje',
 	'globalusage-for' => 'Globalne wužiwanje za "$1"',
-	'globalusage-desc' => '[[Special:GlobalUsage|Specialna strona]], zo by globalne wužiwanje wobraza widźał',
+	'globalusage-desc' => '[[Special:GlobalUsage|Specialna strona]], zo by sej globalne wužiwanje dataje wobhladał',
 	'globalusage-ok' => 'Podać',
 	'globalusage-text' => 'Globalne wužiwanje dataje pytać.',
 	'globalusage-no-results' => '[[:$1]] njewužiwa so w druhich wikijach.',
