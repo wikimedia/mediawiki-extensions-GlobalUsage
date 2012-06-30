@@ -23,6 +23,11 @@ $specialPageAliases['arz'] = array(
 	'GlobalUsage' => array( 'استعمال_عام' ),
 );
 
+/** Assamese (অসমীয়া) */
+$specialPageAliases['as'] = array(
+	'GlobalUsage' => array( 'গোলকীয়_ব্যৱহাৰ' ),
+);
+
 /** Bulgarian (български) */
 $specialPageAliases['bg'] = array(
 	'GlobalUsage' => array( 'Глобално_използване_на_файл' ),
@@ -53,7 +58,7 @@ $specialPageAliases['diq'] = array(
 	'GlobalUsage' => array( 'GlobalKarkerdış' ),
 );
 
-/** Lower Sorbian (Dolnoserbski) */
+/** Lower Sorbian (dolnoserbski) */
 $specialPageAliases['dsb'] = array(
 	'GlobalUsage' => array( 'Globalne_wužywanje' ),
 );
@@ -83,7 +88,7 @@ $specialPageAliases['frp'] = array(
 	'GlobalUsage' => array( 'Usâjo_globâl', 'UsâjoGlobâl' ),
 );
 
-/** Galician (Galego) */
+/** Galician (galego) */
 $specialPageAliases['gl'] = array(
 	'GlobalUsage' => array( 'Uso_global' ),
 );
@@ -108,7 +113,7 @@ $specialPageAliases['hr'] = array(
 	'GlobalUsage' => array( 'Globalna_uporaba' ),
 );
 
-/** Upper Sorbian (Hornjoserbsce) */
+/** Upper Sorbian (hornjoserbsce) */
 $specialPageAliases['hsb'] = array(
 	'GlobalUsage' => array( 'Globalne_wužiwanje' ),
 );
