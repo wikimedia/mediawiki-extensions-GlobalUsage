@@ -110,7 +110,7 @@ $messages['am'] = array(
 	'globalusage-ok' => 'ፍለጋ',
 );
 
-/** Aragonese (Aragonés)
+/** Aragonese (aragonés)
  * @author Juanpabl
  */
 $messages['an'] = array(
@@ -229,7 +229,7 @@ $messages['bar'] = array(
 	'globalusage-text' => 'Globale Suach nåch da Dateivawendung',
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  */
@@ -362,7 +362,7 @@ $messages['cs'] = array(
 	'globalusage-filterlocal' => 'Nezobrazovat místní využití',
 );
 
-/** Church Slavic (Словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
+/** Church Slavic (словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
  * @author ОйЛ
  */
 $messages['cu'] = array(
@@ -421,7 +421,7 @@ $messages['diq'] = array(
 	'globalusage-filterlocal' => 'Karo local nimocne',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -640,7 +640,7 @@ $messages['gan-hant'] = array(
 	'globalusage-ok' => '尋吖',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Toliño
  * @author Xosé
  */
@@ -1542,7 +1542,7 @@ $messages['ru'] = array(
 	'globalusage-filterlocal' => 'Не показывать локальное использование',
 );
 
-/** Rusyn (Русиньскый)
+/** Rusyn (русиньскый)
  * @author Gazeb
  */
 $messages['rue'] = array(
@@ -1741,7 +1741,7 @@ $messages['sw'] = array(
 	'globalusage-ok' => 'Tafuta',
 );
 
-/** Silesian (Ślůnski)
+/** Silesian (ślůnski)
  * @author Herr Kriss
  */
 $messages['szl'] = array(
