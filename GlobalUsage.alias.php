@@ -100,7 +100,7 @@ $specialPageAliases['gsw'] = array(
 
 /** Gujarati (ગુજરાતી) */
 $specialPageAliases['gu'] = array(
-	'GlobalUsage' => array( 'વૈશ્વીક_વપરાશ' ),
+	'GlobalUsage' => array( 'વૈશ્વિક_વપરાશ' ),
 );
 
 /** Hindi (हिन्दी) */
