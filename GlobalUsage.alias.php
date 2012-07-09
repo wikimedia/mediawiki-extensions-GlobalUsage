@@ -265,7 +265,7 @@ $specialPageAliases['sv'] = array(
 
 /** Tagalog (Tagalog) */
 $specialPageAliases['tl'] = array(
-	'GlobalUsage' => array( 'Pandaigdigang paggamit' ),
+	'GlobalUsage' => array( 'Pandaigdigang_paggamit' ),
 );
 
 /** Turkish (Türkçe) */
