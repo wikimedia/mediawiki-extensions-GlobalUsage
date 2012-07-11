@@ -273,6 +273,11 @@ $specialPageAliases['tr'] = array(
 	'GlobalUsage' => array( 'KüreselKullanım' ),
 );
 
+/** Ukrainian (українська) */
+$specialPageAliases['uk'] = array(
+	'GlobalUsage' => array( 'Глобальне_використання' ),
+);
+
 /** vèneto (vèneto) */
 $specialPageAliases['vec'] = array(
 	'GlobalUsage' => array( 'UtilizoGlobal' ),
