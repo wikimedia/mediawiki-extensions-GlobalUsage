@@ -202,7 +202,7 @@ $messages['az'] = array(
 	'globalusage-ok' => 'Axtar',
 );
 
-/** Bashkir (Башҡортса)
+/** Bashkir (башҡортса)
  * @author Assele
  */
 $messages['ba'] = array(
@@ -962,7 +962,7 @@ $messages['ka'] = array(
 	'globalusage-filterlocal' => 'არ აჩვენოთ ლოკალური გამოყენება',
 );
 
-/** Kazakh (Cyrillic script) (‪Қазақша (кирил)‬)
+/** Kazakh (Cyrillic script) (‪қазақша (кирил)‬)
  * @author GaiJin
  */
 $messages['kk-cyrl'] = array(
@@ -1011,7 +1011,7 @@ $messages['ko'] = array(
 	'globalusage-filterlocal' => '이 위키에서 이 파일을 사용하고 있는 문서를 보이지 않기',
 );
 
-/** Karachay-Balkar (Къарачай-Малкъар)
+/** Karachay-Balkar (къарачай-малкъар)
  * @author Iltever
  */
 $messages['krc'] = array(
@@ -1091,7 +1091,7 @@ $messages['lb'] = array(
 	'globalusage-filterlocal' => 'Déi lokal Benotzung net weisen',
 );
 
-/** Lezghian (Лезги)
+/** Lezghian (лезги)
  * @author Migraghvi
  */
 $messages['lez'] = array(
@@ -1140,7 +1140,7 @@ $messages['lv'] = array(
 	'globalusage-ok' => 'Meklēt',
 );
 
-/** Eastern Mari (Олык Марий)
+/** Eastern Mari (олык марий)
  * @author Сай
  */
 $messages['mhr'] = array(
@@ -1238,7 +1238,7 @@ $messages['mt'] = array(
 	'globalusage-filterlocal' => 'Turix l-użu lokali',
 );
 
-/** Erzya (Эрзянь)
+/** Erzya (эрзянь)
  * @author Botuzhaleny-sodamo
  */
 $messages['myv'] = array(
@@ -1253,8 +1253,7 @@ $messages['nah'] = array(
 	'globalusage-ok' => 'Motèmòs',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author Jon Harald Søby
+/** Norwegian Bokmål (‪norsk (bokmål)‬)
  * @author Laaknor
  * @author Nghtwlkr
  */
@@ -1920,7 +1919,7 @@ $messages['vec'] = array(
 	'globalusage-filterlocal' => "No stà mostrar l'utilizo local",
 );
 
-/** Veps (Vepsän kel’)
+/** Veps (vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
