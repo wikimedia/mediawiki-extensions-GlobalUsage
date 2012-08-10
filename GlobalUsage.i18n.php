@@ -1689,10 +1689,13 @@ $messages['sq'] = array(
  */
 $messages['sr-ec'] = array(
 	'globalusage' => 'Глобална употреба датотеке',
+	'globalusage-for' => 'Глобална употреба датотеке „$1“',
 	'globalusage-desc' => '[[Special:GlobalUsage|Посебна страница]] за преглед глобалне употребе датотека',
 	'globalusage-ok' => 'Претрага',
 	'globalusage-text' => 'Претрага глобалне употребе датотеке',
+	'globalusage-no-results' => '[[:$1]] се не користи на другим викијима.',
 	'globalusage-on-wiki' => 'Употреба на $2',
+	'globalusage-of-file' => 'Ову датотеку користе следећи викији:',
 	'globalusage-filterlocal' => 'Не приказуј локалну употребу',
 );
 
