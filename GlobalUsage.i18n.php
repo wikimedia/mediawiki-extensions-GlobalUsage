@@ -135,7 +135,7 @@ $messages['ar'] = array(
 	'globalusage' => 'الاستخدام العام للملف',
 	'globalusage-for' => 'استخدام "$1" العام',
 	'globalusage-desc' => '[[Special:GlobalUsage|صفحة خاصة]] لرؤية الاستخدام العام للملف',
-	'globalusage-ok' => 'ابحث',
+	'globalusage-ok' => 'بحث',
 	'globalusage-text' => 'ابحث في الاستخدام العام لملف',
 	'globalusage-no-results' => '[[:$1]] غير مستخدم في ويكيات أخرى.',
 	'globalusage-on-wiki' => 'الاستخدام في $2',
@@ -1695,7 +1695,7 @@ $messages['sr-ec'] = array(
 	'globalusage-text' => 'Претрага глобалне употребе датотеке',
 	'globalusage-no-results' => '[[:$1]] се не користи на другим викијима.',
 	'globalusage-on-wiki' => 'Употреба на $2',
-	'globalusage-of-file' => 'Ову датотеку користе следећи викији:',
+	'globalusage-of-file' => 'Други Викији који користе ову датотеку:',
 	'globalusage-filterlocal' => 'Не приказуј локалну употребу',
 );
 
