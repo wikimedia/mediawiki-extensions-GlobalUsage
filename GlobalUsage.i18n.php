@@ -935,12 +935,18 @@ $messages['ja'] = array(
 
 /** Javanese (Basa Jawa)
  * @author Meursault2004
+ * @author NoiX180
  */
 $messages['jv'] = array(
 	'globalusage' => 'Panggunan berkas sacara global',
+	'globalusage-for' => 'Anggoan global kanggo "$1"',
 	'globalusage-desc' => '[[Special:GlobalUsage|Kaca astaméwa]] kanggo ndeleng panggunan global berkas',
 	'globalusage-ok' => 'Golèk',
 	'globalusage-text' => 'Golèk panggunan global berkas.',
+	'globalusage-on-wiki' => 'Dianggo nalika $2',
+	'globalusage-of-file' => 'Wiki liyané ngisor iki nganggo berkas iki:',
+	'globalusage-more' => 'Delok [[{{#Special:GlobalUsage}}/$1|anggoan global luwih akèh]] saka kaca iki.',
+	'globalusage-filterlocal' => 'Aja tuduhaké anggoan lokal',
 );
 
 /** Georgian (ქართული)
