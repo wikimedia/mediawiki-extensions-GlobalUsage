@@ -761,6 +761,13 @@ $messages['hi'] = array(
 	'globalusage-filterlocal' => 'स्थानीय उपयोग ना दिखाएँ',
 );
 
+/** Fiji Hindi (Latin script) (Fiji Hindi)
+ * @author Karthi.dr
+ */
+$messages['hif-latn'] = array(
+	'globalusage-ok' => 'Khojo',
+);
+
 /** Hiligaynon (Ilonggo)
  * @author Jose77
  */
@@ -943,6 +950,7 @@ $messages['jv'] = array(
 	'globalusage-desc' => '[[Special:GlobalUsage|Kaca astaméwa]] kanggo ndeleng panggunan global berkas',
 	'globalusage-ok' => 'Golèk',
 	'globalusage-text' => 'Golèk panggunan global berkas.',
+	'globalusage-no-results' => '[[:$1]] ora dianggo nèng wiki liya.',
 	'globalusage-on-wiki' => 'Dianggo nalika $2',
 	'globalusage-of-file' => 'Wiki liyané ngisor iki nganggo berkas iki:',
 	'globalusage-more' => 'Delok [[{{#Special:GlobalUsage}}/$1|anggoan global luwih akèh]] saka kaca iki.',
