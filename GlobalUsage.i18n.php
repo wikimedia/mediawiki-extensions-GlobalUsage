@@ -263,17 +263,20 @@ $messages['bg'] = array(
 );
 
 /** Bengali (বাংলা)
+ * @author Nasir8891
  * @author Wikitanvir
  * @author Zaheen
  */
 $messages['bn'] = array(
 	'globalusage' => 'ফাইলের গ্লোবাল ব্যবহার',
 	'globalusage-for' => '"$1"-এর গ্লোবাল ব্যবহার',
+	'globalusage-desc' => 'গ্লোবাল ফাইল ব্যবহার দেখার [[Special:GlobalUsage|বিশেষ পাতা]]',
 	'globalusage-ok' => 'অনুসন্ধান',
 	'globalusage-text' => 'ফাইলের গ্লোবাল ব্যবহার অনুসন্ধান করুন',
 	'globalusage-no-results' => '[[:$1]] অন্য কোনো উইকিতে ব্যবহার হচ্ছে না।',
 	'globalusage-on-wiki' => '$2-এ ব্যবহার',
 	'globalusage-of-file' => 'নিচের অন্যান্য উইকিগুলো এই ফাইলটি ব্যবহার করে:',
+	'globalusage-more' => 'এই ফাইলের [[{{#Special:GlobalUsage}}/$1|অন্যান্য গ্লোবাল ব্যবহার]] দেখুন।',
 	'globalusage-filterlocal' => 'স্থানীয় ব্যবহার দেখানোর প্রয়োজন নেই',
 );
 
@@ -1762,9 +1765,12 @@ $messages['sv'] = array(
 	'globalusage-filterlocal' => 'Visa inte lokalt användande',
 );
 
-/** Swahili (Kiswahili) */
+/** Swahili (Kiswahili)
+ * @author Kwisha
+ */
 $messages['sw'] = array(
 	'globalusage-ok' => 'Tafuta',
+	'globalusage-on-wiki' => 'Matumizi kwa $2',
 );
 
 /** Silesian (ślůnski)
