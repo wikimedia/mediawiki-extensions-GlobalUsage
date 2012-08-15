@@ -631,6 +631,13 @@ $messages['fy'] = array(
 	'globalusage-ok' => 'Sykje',
 );
 
+/** Irish (Gaeilge)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['ga'] = array(
+	'globalusage-ok' => 'Cuardaigh',
+);
+
 /** Simplified Gan script (‪赣语（简体）‬) */
 $messages['gan-hans'] = array(
 	'globalusage-ok' => '寻吖',
