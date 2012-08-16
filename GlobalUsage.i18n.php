@@ -1943,6 +1943,16 @@ $messages['uk'] = array(
 	'globalusage-filterlocal' => 'Не показувати локальне використання',
 );
 
+/** Urdu (اردو)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['ur'] = array(
+	'globalusage' => 'گلوبل فائل کا استعمال',
+	'globalusage-ok' => 'تلاش',
+	'globalusage-text' => 'گلوبل فائل استعمال کی تلاش',
+	'globalusage-filterlocal' => 'مقامی استعمال کو دکھانے نہیں',
+);
+
 /** vèneto (vèneto)
  * @author Candalua
  */
