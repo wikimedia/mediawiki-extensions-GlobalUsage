@@ -1159,9 +1159,11 @@ $messages['lt'] = array(
 
 /** Latvian (latviešu)
  * @author GreenZeb
+ * @author Papuass
  */
 $messages['lv'] = array(
 	'globalusage-ok' => 'Meklēt',
+	'globalusage-text' => 'Meklēt globālo faila izmantošanu',
 );
 
 /** Eastern Mari (олык марий)
