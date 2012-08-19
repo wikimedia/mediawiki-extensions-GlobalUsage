@@ -71,6 +71,13 @@ $messages['niu'] = array(
 	'globalusage-ok' => 'Kumi',
 );
 
+/** Achinese (Acèh)
+ * @author Si Gam Acèh
+ */
+$messages['ace'] = array(
+	'globalusage-ok' => 'Mita',
+);
+
 /** Afrikaans (Afrikaans)
  * @author Arnobarnard
  * @author Naudefj
