@@ -85,10 +85,11 @@ class GlobalUsageQuery {
 	 *
 	 */
 	public function getContinueString() {
-		if ( $this->hasMore() )
+		if ( $this->hasMore() ) {
 			return "{$this->lastRow->gil_to}|{$this->lastRow->gil_wiki}|{$this->lastRow->gil_page}";
-		else
+		} else {
 			return '';
+		}
 	}
 
 	/**
@@ -181,21 +182,21 @@ class GlobalUsageQuery {
 
 		/* Perform select (Duh.) */
 		$res = $this->db->select( $tables,
-				array(
-					'gil_to',
-					'gil_wiki',
-					'gil_page',
-					'gil_page_namespace_id',
-					'gil_page_namespace',
-					'gil_page_title'
-				),
-				$where,
-				__METHOD__,
-				array(
-					'ORDER BY' => "gil_to $order, gil_wiki $order, gil_page $order",
-					// Select an extra row to check whether we have more rows available
-					'LIMIT' => $this->limit + 1,
-				)
+			array(
+				'gil_to',
+				'gil_wiki',
+				'gil_page',
+				'gil_page_namespace_id',
+				'gil_page_namespace',
+				'gil_page_title'
+			),
+			$where,
+			__METHOD__,
+			array(
+				'ORDER BY' => "gil_to $order, gil_wiki $order, gil_page $order",
+				// Select an extra row to check whether we have more rows available
+				'LIMIT' => $this->limit + 1,
+			)
 		);
 
 		/* Process result */
@@ -230,7 +231,7 @@ class GlobalUsageQuery {
 			}
 
 			$this->result[$row->gil_to][$row->gil_wiki][] = array(
-				'image'	=> $row->gil_to,
+				'image' => $row->gil_to,
 				'id' => $row->gil_page,
 				'namespace_id' => $row->gil_page_namespace_id,
 				'namespace' => $row->gil_page_namespace,
@@ -264,10 +265,11 @@ class GlobalUsageQuery {
 	 * @return array Result set
 	 */
 	public function getSingleImageResult() {
-		if ( $this->result )
+		if ( $this->result ) {
 			return current( $this->result );
-		else
+		} else {
 			return array();
+		}
 	}
 
 	/**

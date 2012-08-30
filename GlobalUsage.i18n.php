@@ -12,10 +12,10 @@ $messages = array();
  * @author Bryan Tong Minh
  */
 $messages['en'] = array(
-	'globalusage'      => 'Global file usage',
-	'globalusage-for'  => 'Global usage for "$1"',
+	'globalusage' => 'Global file usage',
+	'globalusage-for' => 'Global usage for "$1"',
 	'globalusage-desc' => '[[Special:GlobalUsage|Special page]] to view global file usage',
-	'globalusage-ok'   => 'Search',
+	'globalusage-ok' => 'Search',
 	'globalusage-text' => 'Search global file usage',
 	'globalusage-no-results' => '[[:$1]] is not used on other wikis.',
 	'globalusage-on-wiki' => 'Usage on $2',

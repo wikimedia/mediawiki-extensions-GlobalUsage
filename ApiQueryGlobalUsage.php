@@ -37,8 +37,9 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 			$pageIds = $pageIds[NS_FILE];
 			$query = new GlobalUsageQuery( array_keys( $pageIds ) );
 			if ( !is_null( $params['continue'] ) ) {
-				if ( !$query->setOffset( $params['continue'] ) )
+				if ( !$query->setOffset( $params['continue'] ) ) {
 					$this->dieUsage( 'Invalid continue parameter', 'badcontinue' );
+				}
 			}
 			$query->setLimit( $params['limit'] );
 			$query->filterLocal( $params['filterlocal'] );
@@ -72,14 +73,16 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 							$result['ns'] = $item['namespace_id'];
 						}
 
-						$fit = $apiResult->addValue( array(
-								'query', 'pages', $pageId, 'globalusage'
-							), null, $result );
+						$fit = $apiResult->addValue(
+							array( 'query', 'pages', $pageId, 'globalusage' ),
+							null,
+							$result
+						);
 
 						if ( !$fit ) {
 							$continue = "{$item['image']}|{$item['wiki']}|{$item['id']}";
 							$this->setIndexedTagName();
-							$this->setContinueEnumParameter( 'continue',  $continue );
+							$this->setContinueEnumParameter( 'continue', $continue );
 							return;
 						}
 					}
@@ -98,32 +101,32 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 		$pageIds = $this->getPageSet()->getAllTitlesByNamespace();
 		foreach ( $pageIds[NS_FILE] as $id ) {
 			$result->setIndexedTagName_internal(
-					array( 'query', 'pages', $id, 'globalusage' ),
-					'gu'
+				array( 'query', 'pages', $id, 'globalusage' ),
+				'gu'
 			);
 		}
 	}
 
 	public function getAllowedParams() {
 		return array(
-				'prop' => array(
-					ApiBase::PARAM_DFLT => 'url',
-					ApiBase::PARAM_TYPE => array(
-						'url',
-						'pageid',
-						'namespace',
-					),
-					ApiBase::PARAM_ISMULTI => true,
+			'prop' => array(
+				ApiBase::PARAM_DFLT => 'url',
+				ApiBase::PARAM_TYPE => array(
+					'url',
+					'pageid',
+					'namespace',
 				),
-				'limit' => array(
-					ApiBase :: PARAM_DFLT => 10,
-					ApiBase :: PARAM_TYPE => 'limit',
-					ApiBase :: PARAM_MIN => 1,
-					ApiBase :: PARAM_MAX => ApiBase :: LIMIT_BIG1,
-					ApiBase :: PARAM_MAX2 => ApiBase :: LIMIT_BIG2
-				),
-				'continue' => null,
-				'filterlocal' => false,
+				ApiBase::PARAM_ISMULTI => true,
+			),
+			'limit' => array(
+				ApiBase :: PARAM_DFLT => 10,
+				ApiBase :: PARAM_TYPE => 'limit',
+				ApiBase :: PARAM_MIN => 1,
+				ApiBase :: PARAM_MAX => ApiBase :: LIMIT_BIG1,
+				ApiBase :: PARAM_MAX2 => ApiBase :: LIMIT_BIG2
+			),
+			'continue' => null,
+			'filterlocal' => false,
 		);
 	}
 
@@ -147,15 +150,15 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 
 	public function getPossibleErrors() {
 		return array_merge( parent::getPossibleErrors(), array(
-			array ( 'code' => 'badcontinue', 'info' => 'Invalid continue parameter' ),
+			array( 'code' => 'badcontinue', 'info' => 'Invalid continue parameter' ),
 		) );
 	}
 
 	public function getExamples() {
-		return array (
-				"Get usage of File:Example.jpg:",
-				"  api.php?action=query&prop=globalusage&titles=File:Example.jpg",
-			);
+		return array(
+			"Get usage of File:Example.jpg:",
+			"  api.php?action=query&prop=globalusage&titles=File:Example.jpg",
+		);
 	}
 
 	public function getVersion() {

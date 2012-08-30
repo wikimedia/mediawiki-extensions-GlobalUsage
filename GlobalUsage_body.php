@@ -48,20 +48,21 @@ class GlobalUsage {
 	 */
 	public function getLinksFromPage( $id ) {
 		$res = $this->db->select(
-				'globalimagelinks',
-				'gil_to',
-				array(
-					'gil_wiki' => $this->interwiki,
-					'gil_page' => $id,
-				),
-				__METHOD__
+			'globalimagelinks',
+			'gil_to',
+			array(
+				'gil_wiki' => $this->interwiki,
+				'gil_page' => $id,
+			),
+			__METHOD__
 		);
-		
+
 		$images = array();
 		foreach ( $res as $row )
 			$images[] = $row->gil_to;
 		return $images;
 	}
+
 	/**
 	 * Deletes all entries from a certain page to certain files
 	 *
@@ -70,14 +71,15 @@ class GlobalUsage {
 	 */
 	public function deleteLinksFromPage( $id, $to = null ) {
 		$where = array(
-				'gil_wiki' => $this->interwiki,
-				'gil_page' => $id
+			'gil_wiki' => $this->interwiki,
+			'gil_page' => $id
 		);
 		if ( $to ) {
 			$where['gil_to'] = $to;
 		}
 		$this->db->delete( 'globalimagelinks', $where, __METHOD__ );
 	}
+
 	/**
 	 * Deletes all entries to a certain image
 	 *
@@ -85,12 +87,12 @@ class GlobalUsage {
 	 */
 	public function deleteLinksToFile( $title ) {
 		$this->db->delete(
-				'globalimagelinks',
-				array(
-					'gil_wiki' => $this->interwiki,
-					'gil_to' => $title->getDBkey()
-				),
-				__METHOD__
+			'globalimagelinks',
+			array(
+				'gil_wiki' => $this->interwiki,
+				'gil_to' => $title->getDBkey()
+			),
+			__METHOD__
 		);
 	}
 
@@ -104,10 +106,10 @@ class GlobalUsage {
 
 		$dbr = wfGetDB( DB_SLAVE );
 		$res = $dbr->select(
-				array( 'imagelinks', 'page' ),
-				array( 'il_to', 'page_id', 'page_namespace', 'page_title' ),
-				array( 'il_from = page_id', 'il_to' => $title->getDBkey() ),
-				__METHOD__
+			array( 'imagelinks', 'page' ),
+			array( 'il_to', 'page_id', 'page_namespace', 'page_title' ),
+			array( 'il_from = page_id', 'il_to' => $title->getDBkey() ),
+			__METHOD__
 		);
 		$insert = array();
 		foreach ( $res as $row ) {
@@ -125,23 +127,23 @@ class GlobalUsage {
 
 	/**
 	 * Changes the page title
-	 * 
+	 *
 	 * @param $id int Page id of the page
 	 * @param $title Title New title of the page
 	 */
 	public function moveTo( $id, $title ) {
 		$this->db->update(
-				'globalimagelinks',
-				array(
-					'gil_page_namespace_id' => $title->getNamespace(),
-					'gil_page_namespace' => $title->getNsText(),
-					'gil_page_title' => $title->getDBkey()
-				),
-				array(
-					'gil_wiki' => $this->interwiki,
-					'gil_page' => $id
-				),
-				__METHOD__
+			'globalimagelinks',
+			array(
+				'gil_page_namespace_id' => $title->getNamespace(),
+				'gil_page_namespace' => $title->getNsText(),
+				'gil_page_title' => $title->getDBkey()
+			),
+			array(
+				'gil_wiki' => $this->interwiki,
+				'gil_page' => $id
+			),
+			__METHOD__
 		);
 	}
 }

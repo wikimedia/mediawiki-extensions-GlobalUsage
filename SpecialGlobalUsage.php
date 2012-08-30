@@ -5,7 +5,6 @@
  */
 
 class SpecialGlobalUsage extends SpecialPage {
-
 	/**
 	 * @var Title
 	 */
@@ -25,23 +24,21 @@ class SpecialGlobalUsage extends SpecialPage {
 	 * @param $par String
 	 */
 	public function execute( $par ) {
-		global $wgOut, $wgRequest;
-
-		$target = $par ? $par : $wgRequest->getVal( 'target' );
+		$target = $par ? $par : $this->getRequest()->getVal( 'target' );
 		$this->target = Title::makeTitleSafe( NS_FILE, $target );
 
-		$this->filterLocal = $wgRequest->getCheck( 'filterlocal' );
+		$this->filterLocal = $this->getRequest()->getCheck( 'filterlocal' );
 
 		$this->setHeaders();
 
 		$this->showForm();
 
 		if ( is_null( $this->target ) ) {
-			$wgOut->setPageTitle( wfMsg( 'globalusage' ) );
+			$this->getOutput()->setPageTitle( $this->msg( 'globalusage' ) );
 			return;
 		}
 
-		$wgOut->setPageTitle( wfMsg( 'globalusage-for', $this->target->getPrefixedText() ) );
+		$this->getOutput()->setPageTitle( $this->msg( 'globalusage-for', $this->target->getPrefixedText() ) );
 
 		$this->showResult();
 	}
@@ -50,93 +47,92 @@ class SpecialGlobalUsage extends SpecialPage {
 	 * Shows the search form
 	 */
 	private function showForm() {
-		global $wgScript, $wgOut, $wgRequest;
+		global $wgScript;
 
 		/* Build form */
 		$html = Xml::openElement( 'form', array( 'action' => $wgScript ) ) . "\n";
 		// Name of SpecialPage
 		$html .= Html::hidden( 'title', $this->getTitle()->getPrefixedText() ) . "\n";
 		// Limit
-		$html .= Html::hidden( 'limit', $wgRequest->getInt( 'limit', 50 ) );
+		$html .= Html::hidden( 'limit', $this->getRequest()->getInt( 'limit', 50 ) );
 		// Input box with target prefilled if available
 		$formContent = "\t" . Xml::input( 'target', 40, is_null( $this->target ) ? ''
-					: $this->target->getText() )
-		// Submit button
+			: $this->target->getText() )
+			// Submit button
 			. "\n\t" . Xml::element( 'input', array(
-					'type' => 'submit',
-					'value' => wfMsg( 'globalusage-ok' )
-					) )
-		// Filter local checkbox
-			. "\n\t<p>" . Xml::checkLabel( wfMsg( 'globalusage-filterlocal' ),
-					'filterlocal', 'mw-filterlocal', $this->filterLocal ) . '</p>';
+			'type' => 'submit',
+			'value' => $this->msg( 'globalusage-ok' )->text()
+		) )
+			// Filter local checkbox
+			. "\n\t<p>" . Xml::checkLabel( $this->msg( 'globalusage-filterlocal' )->text(),
+			'filterlocal', 'mw-filterlocal', $this->filterLocal ) . '</p>';
 
 		if ( !is_null( $this->target ) && wfFindFile( $this->target ) ) {
 			// Show the image if it exists
-			$html .= Linker::makeThumbLinkObj( $this->target,
-					wfFindFile( $this->target ),
-					/* $label */ $this->target->getPrefixedText(),
-					/* $alt */ '', /* $align */ $this->getLanguage()->alignEnd(),
-					/* $handlerParams */ array(), /* $framed */ false,
-					/* $manualThumb */ false );
+			$html .= Linker::makeThumbLinkObj(
+				$this->target,
+				wfFindFile( $this->target ),
+				/* $label */ $this->target->getPrefixedText(),
+				/* $alt */ '', /* $align */ $this->getLanguage()->alignEnd(),
+				/* $handlerParams */ array(), /* $framed */ false,
+				/* $manualThumb */ false
+			);
 		}
 
 		// Wrap the entire form in a nice fieldset
-		$html .= Xml::fieldSet( wfMsg( 'globalusage-text' ), $formContent ) . "\n</form>";
+		$html .= Xml::fieldSet( $this->msg( 'globalusage-text' )->text(), $formContent ) . "\n</form>";
 
-		$wgOut->addHtml( $html );
+		$this->getOutput()->addHtml( $html );
 	}
 
 	/**
-	 * Creates as queryer and executes it based on $wgRequest
+	 * Creates as queryer and executes it based on $this->getRequest()
 	 */
 	private function showResult() {
-		global $wgRequest;
-
 		$query = new GlobalUsageQuery( $this->target );
+		$request = $this->getRequest();
 
-		// Extract params from $wgRequest
-		if ( $wgRequest->getText( 'from' ) ) {
-			$query->setOffset( $wgRequest->getText( 'from' ) );
-		} elseif ( $wgRequest->getText( 'to' ) ) {
-			$query->setOffset( $wgRequest->getText( 'to' ), true );
+		// Extract params from $request.
+		if ( $request->getText( 'from' ) ) {
+			$query->setOffset( $request->getText( 'from' ) );
+		} elseif ( $request->getText( 'to' ) ) {
+			$query->setOffset( $request->getText( 'to' ), true );
 		}
-		$query->setLimit( $wgRequest->getInt( 'limit', 50 ) );
+		$query->setLimit( $request->getInt( 'limit', 50 ) );
 		$query->filterLocal( $this->filterLocal );
 
 		// Perform query
 		$query->execute();
 
-		// Show result
-		global $wgOut;
-
 		// Don't show form element if there is no data
 		if ( $query->count() == 0 ) {
-			$wgOut->addWikiMsg( 'globalusage-no-results', $this->target->getPrefixedText() );
+			$this->getOutput()->addWikiMsg( 'globalusage-no-results', $this->target->getPrefixedText() );
 			return;
 		}
 
 		$navbar = $this->getNavBar( $query );
 		$targetName = $this->target->getText();
+		$out = $this->getOutput();
 
 		// Top navbar
-		$wgOut->addHtml( $navbar );
+		$out->addHtml( $navbar );
 
-		$wgOut->addHtml( '<div id="mw-globalusage-result">' );
+		$out->addHtml( '<div id="mw-globalusage-result">' );
 		foreach ( $query->getSingleImageResult() as $wiki => $result ) {
-			$wgOut->addHtml(
-					'<h2>' . wfMsgExt(
-						'globalusage-on-wiki', 'parseinline',
-						$targetName, WikiMap::getWikiName( $wiki ) )
+			$out->addHtml(
+				'<h2>' . $this->msg(
+					'globalusage-on-wiki',
+					$targetName, WikiMap::getWikiName( $wiki ) )->parse()
 					. "</h2><ul>\n" );
 			foreach ( $result as $item ) {
-				$wgOut->addHtml( "\t<li>" . self::formatItem( $item ) . "</li>\n" );
+				$out->addHtml( "\t<li>" . self::formatItem( $item ) . "</li>\n" );
 			}
-			$wgOut->addHtml( "</ul>\n" );
+			$out->addHtml( "</ul>\n" );
 		}
-		$wgOut->addHtml( '</div>' );
+		$out->addHtml( '</div>' );
 
 		// Bottom navbar
-		$wgOut->addHtml( $navbar );
+		$out->addHtml( $navbar );
 	}
 
 	/**
@@ -152,7 +148,7 @@ class SpecialGlobalUsage extends SpecialPage {
 		}
 
 		$link = WikiMap::makeForeignLink( $item['wiki'], $page,
-				str_replace( '_', ' ', $page ) );
+			str_replace( '_', ' ', $page ) );
 		// Return only the title if no link can be constructed
 		return $link === false ? $page : $link;
 	}
@@ -164,11 +160,8 @@ class SpecialGlobalUsage extends SpecialPage {
 	 * @return string Navbar HTML
 	 */
 	protected function getNavBar( $query ) {
-		global $wgLang;
-
 		$target = $this->target->getText();
 		$limit = $query->getLimit();
-		$fmtLimit = $wgLang->formatNum( $limit );
 
 		# Find out which strings are for the prev and which for the next links
 		$offset = $query->getOffsetString();
@@ -182,11 +175,11 @@ class SpecialGlobalUsage extends SpecialPage {
 		}
 
 		# Get prev/next link display text
-		$prev =  wfMsgExt( 'prevn', array( 'parsemag', 'escape' ), $fmtLimit );
-		$next =  wfMsgExt( 'nextn', array( 'parsemag', 'escape' ), $fmtLimit );
+		$prev = $this->msg( 'prevn' )->numParams( $limit )->escaped();
+		$next = $this->msg( 'nextn' )->numParams( $limit )->escaped();
 		# Get prev/next link title text
-		$pTitle = wfMsgExt( 'prevn-title', array( 'parsemag', 'escape' ), $fmtLimit );
-		$nTitle = wfMsgExt( 'nextn-title', array( 'parsemag', 'escape' ), $fmtLimit );
+		$pTitle = $this->msg( 'prevn-title' )->numParams( $limit )->escaped();
+		$nTitle = $this->msg( 'nextn-title' )->numParams( $limit )->escaped();
 
 		# Fetch the title object
 		$title = $this->getTitle();
@@ -195,8 +188,9 @@ class SpecialGlobalUsage extends SpecialPage {
 		if ( $to ) {
 			$attr = array( 'title' => $pTitle, 'class' => 'mw-prevlink' );
 			$q = array( 'limit' => $limit, 'to' => $to, 'target' => $target );
-			if ( $this->filterLocal )
+			if ( $this->filterLocal ) {
 				$q['filterlocal'] = '1';
+			}
 			$plink = Linker::link( $title, $prev, $attr, $q );
 		} else {
 			$plink = $prev;
@@ -206,8 +200,9 @@ class SpecialGlobalUsage extends SpecialPage {
 		if ( $from ) {
 			$attr = array( 'title' => $nTitle, 'class' => 'mw-nextlink' );
 			$q = array( 'limit' => $limit, 'from' => $from, 'target' => $target );
-			if ( $this->filterLocal )
+			if ( $this->filterLocal ) {
 				$q['filterlocal'] = '1';
+			}
 			$nlink = Linker::link( $title, $next, $attr, $q );
 		} else {
 			$nlink = $next;
@@ -215,20 +210,21 @@ class SpecialGlobalUsage extends SpecialPage {
 
 		# Make links to set number of items per page
 		$numLinks = array();
+		$lang = $this->getLanguage();
 		foreach ( array( 20, 50, 100, 250, 500 ) as $num ) {
-			$fmtLimit = $wgLang->formatNum( $num );
+			$fmtLimit = $lang->formatNum( $num );
 
 			$q = array( 'offset' => $offset, 'limit' => $num, 'target' => $target );
-			if ( $this->filterLocal )
+			if ( $this->filterLocal ) {
 				$q['filterlocal'] = '1';
-			$lTitle = wfMsgExt( 'shown-title', array( 'parsemag', 'escape' ), $num );
+			}
+			$lTitle = $this->msg( 'shown-title' )->numParams( $num )->escaped();
 			$attr = array( 'title' => $lTitle, 'class' => 'mw-numlink' );
 
 			$numLinks[] = Linker::link( $title, $fmtLimit, $attr, $q );
 		}
-		$nums = $wgLang->pipeList( $numLinks );
+		$nums = $lang->pipeList( $numLinks );
 
-		return wfMsgHtml( 'viewprevnext', $plink, $nlink, $nums );
+		return $this->msg( 'viewprevnext' )->rawParams( $plink, $nlink, $nums )->escaped();
 	}
 }
-

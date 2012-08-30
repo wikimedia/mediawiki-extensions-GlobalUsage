@@ -43,7 +43,7 @@ class RefreshGlobalImageLinks extends Maintenance {
 					'il_to', 'img_name'
 				),
 				"(page_id = $lastPageId AND il_to > {$quotedLastIlTo})" .
-						" OR page_id > $lastPageId",
+					" OR page_id > $lastPageId",
 				__METHOD__,
 				array(
 					'ORDER BY' => $dbr->implicitOrderBy() ? 'page_id' : 'page_id, il_to',
@@ -62,8 +62,9 @@ class RefreshGlobalImageLinks extends Maintenance {
 			$pages = array();
 			$lastRow = null;
 			foreach ( $res as $row ) {
-				if ( !isset( $pages[$row->page_id] ) )
+				if ( !isset( $pages[$row->page_id] ) ) {
 					$pages[$row->page_id] = array();
+				}
 				# Add the imagelinks entry to the pages array if the image
 				# does not exist locally
 				if ( !is_null( $row->il_to ) && is_null( $row->img_name ) ) {
@@ -76,8 +77,9 @@ class RefreshGlobalImageLinks extends Maintenance {
 			foreach ( $pages as $pageId => $rows ) {
 				# Delete all original links if this page is not a continuation
 				# of last iteration.
-				if ( $pageId != $lastPageId )
+				if ( $pageId != $lastPageId ) {
 					$gu->deleteLinksFromPage( $pageId );
+				}
 				if ( $rows ) {
 					$title = Title::newFromRow( reset( $rows ) );
 					$images = array_keys( $rows );

@@ -19,7 +19,7 @@ class GlobalUsageHooks {
 
 		// Create a list of locally existing images
 		$images = array_keys( $linksUpdater->getImages() );
-		
+
 		//$localFiles = array_keys( RepoGroup::singleton()->getLocalRepo()->findFiles( $images ) );
 		// Unrolling findFiles() here because pages with thousands of images trigger an OOM
 		// error while building an array with thousands of File objects (bug 32598)
@@ -31,7 +31,7 @@ class GlobalUsageHooks {
 				$localFiles[] = $file->getTitle()->getDBkey();
 			}
 		}
-		
+
 		$missingFiles = array_diff( $images, $localFiles );
 
 		global $wgUseDumbLinkUpdate;
@@ -47,12 +47,13 @@ class GlobalUsageHooks {
 
 			// Calculate changes
 			$added = array_diff( $missingFiles, $existing );
-			$removed  = array_diff( $existing, $missingFiles );
+			$removed = array_diff( $existing, $missingFiles );
 
 			// Add new usages and delete removed
 			$gu->insertLinks( $title, $added );
-			if ( $removed )
+			if ( $removed ) {
 				$gu->deleteLinksFromPage( $articleId, $removed );
+			}
 		}
 
 		return true;
@@ -144,7 +145,7 @@ class GlobalUsageHooks {
 		global $wgGlobalUsageDatabase;
 		if ( is_null( self::$gu ) ) {
 			self::$gu = new GlobalUsage( wfWikiId(),
-					wfGetDB( DB_MASTER, array(), $wgGlobalUsageDatabase )
+				wfGetDB( DB_MASTER, array(), $wgGlobalUsageDatabase )
 			);
 		}
 
@@ -156,7 +157,7 @@ class GlobalUsageHooks {
 	 * @param $tables array
 	 * @return bool
 	 */
-	public static function onParserTestTables ( &$tables ) {
+	public static function onParserTestTables( &$tables ) {
 		$tables[] = 'globalimagelinks';
 		return true;
 	}

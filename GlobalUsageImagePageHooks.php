@@ -2,10 +2,10 @@
 
 class GlobalUsageImagePageHooks {
 	private static $queryCache = array();
-	
+
 	/**
 	 * Get an executed query for use on image pages
-	 * 
+	 *
 	 * @param Title $title File to query for
 	 * @return GlobalUsageQuery Query object, already executed
 	 */
@@ -15,21 +15,22 @@ class GlobalUsageImagePageHooks {
 			$query = new GlobalUsageQuery( $title );
 			$query->filterLocal();
 			$query->execute();
-			
+
 			self::$queryCache[$name] = $query;
-			
+
 			// Limit cache size to 100
-			if ( count( self::$queryCache ) > 100 )
+			if ( count( self::$queryCache ) > 100 ) {
 				array_shift( self::$queryCache );
+			}
 		}
-		
+
 		return self::$queryCache[$name];
 	}
-	
+
 	/**
 	 * Show a global usage section on the image page
 	 *
-	 * @param $imagePage ImagePage The ImagePage
+	 * @param $imagePage ImagePage
 	 * @param string $html HTML to add to the image page as global usage section
 	 * @return bool
 	 */
@@ -38,6 +39,7 @@ class GlobalUsageImagePageHooks {
 			return true;
 		}
 
+		$context = $imagePage->getContext();
 		$title = $imagePage->getFile()->getTitle();
 		$targetName = $title->getText();
 
@@ -47,21 +49,22 @@ class GlobalUsageImagePageHooks {
 		foreach ( $query->getSingleImageResult() as $wiki => $result ) {
 			$wikiName = WikiMap::getWikiName( $wiki );
 			$escWikiName = Sanitizer::escapeClass( $wikiName );
-			$guHtml .= "<li class='mw-gu-onwiki-$escWikiName'>" . wfMsgExt(
-					'globalusage-on-wiki', 'parseinline',
-					$targetName, $wikiName ) . "\n<ul>";
+			$guHtml .= "<li class='mw-gu-onwiki-$escWikiName'>" . $context->msg(
+				'globalusage-on-wiki',
+				$targetName, $wikiName )->parse() . "\n<ul>";
 			foreach ( $result as $item )
 				$guHtml .= "\t<li>" . SpecialGlobalUsage::formatItem( $item ) . "</li>\n";
 			$guHtml .= "</ul></li>\n";
 		}
 
 		if ( $guHtml ) {
-			$html .= '<h2 id="globalusage">' . wfMsgHtml( 'globalusage' ) . "</h2>\n"
+			$html .= '<h2 id="globalusage">' . $context->msg( 'globalusage' )->escaped() . "</h2>\n"
 				. '<div id="mw-imagepage-section-globalusage">'
-				. wfMsgExt( 'globalusage-of-file', 'parse' )
+				. $context->msg( 'globalusage-of-file' )->parseAsBlock()
 				. "<ul>\n" . $guHtml . "</ul>\n";
-			if ( $query->hasMore() )
-				$html .= wfMsgExt( 'globalusage-more', 'parse', $targetName );
+			if ( $query->hasMore() ) {
+				$html .= $context->msg( 'globalusage-more', $targetName )->parseAsBlock();
+			}
 			$html .= '</div>';
 		}
 
@@ -77,16 +80,16 @@ class GlobalUsageImagePageHooks {
 	public static function onImagePageShowTOC( $imagePage, &$toc ) {
 		if ( self::hasResults( $imagePage ) ) {
 			# Insert a link after the 3rd entry in the TOC
-			array_splice( $toc, 3, 0, '<li><a href="#globalusage">' 
-				. wfMsgHtml( 'globalusage' ) . '</a></li>');
+			array_splice( $toc, 3, 0, '<li><a href="#globalusage">'
+				. $imagePage->getContext()->msg( 'globalusage' )->escaped() . '</a></li>' );
 		}
 		return true;
 	}
-	
+
 	/**
-	 * Check whether there are results for an image page. Checks whether the 
+	 * Check whether there are results for an image page. Checks whether the
 	 * file exists and is not local.
-	 * 
+	 *
 	 * @param $imagePage ImagePage
 	 * @return bool
 	 */
@@ -96,7 +99,7 @@ class GlobalUsageImagePageHooks {
 		if ( !$file->exists() ) {
 			return false;
 		}
-		
+
 		# Don't show global usage if the file is local.
 		# Do show it however if the current repo is the shared repo. The way 
 		# we detect this is a bit hacky and less than ideal. See bug 23136 for
@@ -104,10 +107,11 @@ class GlobalUsageImagePageHooks {
 		global $wgGlobalUsageDatabase;
 		$dbr = wfGetDB( DB_SLAVE );
 		if ( $file->getRepoName() == 'local'
-				&& $dbr->getDBname() != $wgGlobalUsageDatabase ) {
+			&& $dbr->getDBname() != $wgGlobalUsageDatabase
+		) {
 			return false;
 		}
-		
+
 		$query = self::getImagePageQuery( $imagePage->getFile()->getTitle() );
 		return (bool)$query->getResult();
 	}
