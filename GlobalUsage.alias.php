@@ -203,7 +203,7 @@ $specialPageAliases['mt'] = array(
 	'GlobalUsage' => array( 'UżuGlobali' ),
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬) */
+/** Norwegian Bokmål (norsk (bokmål)‎) */
 $specialPageAliases['nb'] = array(
 	'GlobalUsage' => array( 'Global_bruk' ),
 );
@@ -218,7 +218,7 @@ $specialPageAliases['nl'] = array(
 	'GlobalUsage' => array( 'GlobaalGebruik' ),
 );
 
-/** Norwegian Nynorsk (‪norsk (nynorsk)‬) */
+/** Norwegian Nynorsk (norsk (nynorsk)‎) */
 $specialPageAliases['nn'] = array(
 	'GlobalUsage' => array( 'Global_bruk' ),
 );
@@ -293,12 +293,12 @@ $specialPageAliases['yue'] = array(
 	'GlobalUsage' => array( '全域使用' ),
 );
 
-/** Simplified Chinese (‪中文（简体）‬) */
+/** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
 	'GlobalUsage' => array( '全域使用情况' ),
 );
 
-/** Traditional Chinese (‪中文（繁體）‬) */
+/** Traditional Chinese (中文（繁體）‎) */
 $specialPageAliases['zh-hant'] = array(
 	'GlobalUsage' => array( '全域使用' ),
 );
