@@ -1732,15 +1732,18 @@ $messages['sr-ec'] = array(
 	'globalusage-filterlocal' => 'Не приказуј локалну употребу',
 );
 
-/** Serbian (Latin script) (‪srpski (latinica)‬)
+/** Serbian (Latin script) (srpski (latinica)‎)
  * @author Michaello
  */
 $messages['sr-el'] = array(
 	'globalusage' => 'Globalno korišćenje fajlova',
+	'globalusage-for' => 'Globalna upotreba datoteke „$1“',
 	'globalusage-desc' => '[[Special:GlobalUsage|Specijalna strana]] za pregled globalnog korišćenja fajlova',
 	'globalusage-ok' => 'Pretraga',
 	'globalusage-text' => 'Pretraga globalnog korišćenja fajlova.',
+	'globalusage-no-results' => '[[:$1]] se ne koristi na drugim vikijima.',
 	'globalusage-on-wiki' => 'Upotreba na $2',
+	'globalusage-of-file' => 'Drugi Vikiji koji koriste ovu datoteku:',
 	'globalusage-filterlocal' => 'Ne prikazuj lokalnu upotrebu',
 );
 
