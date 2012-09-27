@@ -1665,6 +1665,7 @@ $messages['sk'] = array(
 
 /** Slovenian (slovenščina)
  * @author Dbc334
+ * @author Eleassar
  */
 $messages['sl'] = array(
 	'globalusage' => 'Globalna uporaba datoteke',
@@ -1674,7 +1675,7 @@ $messages['sl'] = array(
 	'globalusage-text' => 'Iskanje globalne uporabe datoteke',
 	'globalusage-no-results' => '[[:$1]] se ne uporablja na drugih wikijih.',
 	'globalusage-on-wiki' => 'Uporaba na $2',
-	'globalusage-of-file' => 'Sledeči drugi wikiji uporabljajo to datoteko:',
+	'globalusage-of-file' => 'To datoteko uporabljajo tudi naslednji wikiji:',
 	'globalusage-more' => 'Oglej si [[{{#Special:GlobalUsage}}/$1|globalno uporabo]] te datoteke.',
 	'globalusage-filterlocal' => 'Ne prikaži lokalne uporabe',
 );
