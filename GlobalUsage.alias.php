@@ -28,6 +28,11 @@ $specialPageAliases['as'] = array(
 	'GlobalUsage' => array( 'গোলকীয়_ব্যৱহাৰ' ),
 );
 
+/** Bashkir (башҡортса) */
+$specialPageAliases['ba'] = array(
+	'GlobalUsage' => array( 'GlobalUsage' ),
+);
+
 /** Bulgarian (български) */
 $specialPageAliases['bg'] = array(
 	'GlobalUsage' => array( 'Глобално_използване_на_файл' ),
