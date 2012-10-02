@@ -236,7 +236,7 @@ $messages['bar'] = array(
 	'globalusage-text' => 'Globale Suach nåch da Dateivawendung',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
  */
@@ -645,12 +645,12 @@ $messages['ga'] = array(
 	'globalusage-ok' => 'Cuardaigh',
 );
 
-/** Simplified Gan script (‪赣语（简体）‬) */
+/** Simplified Gan script (赣语（简体）‎) */
 $messages['gan-hans'] = array(
 	'globalusage-ok' => '寻吖',
 );
 
-/** Traditional Gan script (‪贛語（繁體）‬)
+/** Traditional Gan script (贛語（繁體）‎)
  * @author Symane
  */
 $messages['gan-hant'] = array(
@@ -723,7 +723,7 @@ $messages['gv'] = array(
 	'globalusage-ok' => 'Ronsee',
 );
 
-/** Hausa (هَوُسَ) */
+/** Hausa (Hausa) */
 $messages['ha'] = array(
 	'globalusage-ok' => 'Nema',
 );
@@ -993,7 +993,7 @@ $messages['ka'] = array(
 	'globalusage-filterlocal' => 'არ აჩვენოთ ლოკალური გამოყენება',
 );
 
-/** Kazakh (Cyrillic script) (‪қазақша (кирил)‬)
+/** Kazakh (Cyrillic script) (қазақша (кирил)‎)
  * @author GaiJin
  */
 $messages['kk-cyrl'] = array(
@@ -1079,7 +1079,7 @@ $messages['ksh'] = array(
 	'globalusage-filterlocal' => 'Donn nix aanzeije doh drövver, wi di Dattei heh em Wiki jebruch weed',
 );
 
-/** Kurdish (Latin script) (‪Kurdî (latînî)‬)
+/** Kurdish (Latin script) (Kurdî (latînî)‎)
  * @author Bangin
  * @author Gomada
  */
@@ -1286,7 +1286,7 @@ $messages['nah'] = array(
 	'globalusage-ok' => 'Motèmòs',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬)
+/** Norwegian Bokmål (norsk (bokmål)‎)
  * @author Laaknor
  * @author Nghtwlkr
  */
@@ -1319,7 +1319,7 @@ $messages['nl'] = array(
 	'globalusage-filterlocal' => 'Lokaal gebruik niet weergeven',
 );
 
-/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
+/** Norwegian Nynorsk (norsk (nynorsk)‎)
  * @author Harald Khan
  * @author Jon Harald Søby
  * @author Nghtwlkr
@@ -1715,7 +1715,7 @@ $messages['sq'] = array(
 	'globalusage-filterlocal' => 'Mos tregoni përdorimin lokal',
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Rancher
  * @author Sasa Stefanovic
  * @author Жељко Тодоровић
@@ -2034,7 +2034,7 @@ $messages['yo'] = array(
 	'globalusage-of-file' => 'Àwọn wiki míràn wọ̀nyí lo fáìlì yìí:',
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author Gaoxuewei
  * @author Gzdavidwong
  * @author Hydra
@@ -2054,7 +2054,7 @@ $messages['zh-hans'] = array(
 	'globalusage-filterlocal' => '不显示本地用途',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬)
+/** Traditional Chinese (中文（繁體）‎)
  * @author Anakmalaysia
  * @author Gaoxuewei
  * @author Liangent
