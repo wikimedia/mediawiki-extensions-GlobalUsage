@@ -561,15 +561,15 @@ $messages['fa'] = array(
  * @author ZeiP
  */
 $messages['fi'] = array(
-	'globalusage' => 'Tiedoston käyttö globaalisti',
-	'globalusage-for' => 'Globaali käyttö tiedostolle ”$1”',
-	'globalusage-desc' => '[[Special:GlobalUsage|Toimintosivu]] globaalin tiedostokäytön näyttämiseen',
+	'globalusage' => 'Tiedoston järjestelmänlaajuinen käyttö',
+	'globalusage-for' => 'Tiedoston ”$1” järjestelmänlaajuinen käyttö',
+	'globalusage-desc' => '[[Special:GlobalUsage|Toimintosivu]], joka näyttää tiedoston järjestelmänlaajuisen käytön.',
 	'globalusage-ok' => 'Hae',
-	'globalusage-text' => 'Globaali haku tiedoston käytöstä',
+	'globalusage-text' => 'Tiedoston käytön järjestelmänlaajuinen haku',
 	'globalusage-no-results' => '[[:$1]] ei ole käytössä muissa wikeissä.',
 	'globalusage-on-wiki' => 'Käyttö kohteessa $2',
 	'globalusage-of-file' => 'Seuraavat muut wikit käyttävät tätä tiedostoa:',
-	'globalusage-more' => 'Näytä lisää [[{{#Special:GlobalUsage}}/$1|tämän tiedoston globaalia käyttöä]].',
+	'globalusage-more' => 'Näytä lisää tämän tiedoston [[{{#Special:GlobalUsage}}/$1|järjestelmänlaajuista käyttöä]].',
 	'globalusage-filterlocal' => 'Älä näytä paikallista käyttöä',
 );
 
