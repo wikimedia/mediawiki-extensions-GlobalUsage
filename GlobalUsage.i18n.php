@@ -57,20 +57,6 @@ The number of following wikis is unknown. By a empty result, no message is shown
 	'globalusage-filterlocal' => 'Filteroption for [[Special:GlobalUsage]]',
 );
 
-/** Karelian (Karjala)
- * @author Flrn
- */
-$messages['krl'] = array(
-	'globalusage-ok' => 'Ečindy',
-);
-
-/** Niuean (ko e vagahau Niuē)
- * @author Jose77
- */
-$messages['niu'] = array(
-	'globalusage-ok' => 'Kumi',
-);
-
 /** Achinese (Acèh)
  * @author Si Gam Acèh
  */
@@ -106,7 +92,7 @@ $messages['aln'] = array(
 	'globalusage-no-results' => '[[:$1]] nuk është përdorur në wikis tjera.',
 	'globalusage-on-wiki' => 'Shfrytëzuar në $2',
 	'globalusage-of-file' => 'Wikis e mëposhtme të tjerë e përdorin këtë skedë:',
-	'globalusage-more' => 'Shiko [[{{#Special:GlobalUsage}}/$1|më shumë përdorimin globale]] për këtë skedë.',
+	'globalusage-more' => 'Shiko [[{{#Special:GlobalUsage}}/$1|më shumë përdorimin globale]] për këtë skedë.', # Fuzzy
 	'globalusage-filterlocal' => 'A nuk tregojnë përdorimin e lokale',
 );
 
@@ -447,7 +433,8 @@ $messages['dsb'] = array(
 	'globalusage-filterlocal' => 'Lokalne wužywanje njepokazaś',
 );
 
-/** Ewe (eʋegbe) */
+/** Ewe (eʋegbe)
+ */
 $messages['ee'] = array(
 	'globalusage-ok' => 'Dii',
 );
@@ -645,7 +632,8 @@ $messages['ga'] = array(
 	'globalusage-ok' => 'Cuardaigh',
 );
 
-/** Simplified Gan script (赣语（简体）‎) */
+/** Simplified Gan script (赣语（简体）‎)
+ */
 $messages['gan-hans'] = array(
 	'globalusage-ok' => '寻吖',
 );
@@ -723,7 +711,8 @@ $messages['gv'] = array(
 	'globalusage-ok' => 'Ronsee',
 );
 
-/** Hausa (Hausa) */
+/** Hausa (Hausa)
+ */
 $messages['ha'] = array(
 	'globalusage-ok' => 'Nema',
 );
@@ -1063,6 +1052,13 @@ $messages['krj'] = array(
 	'globalusage-ok' => 'Sagap',
 );
 
+/** Karelian (Karjala)
+ * @author Flrn
+ */
+$messages['krl'] = array(
+	'globalusage-ok' => 'Ečindy',
+);
+
 /** Colognian (Ripoarisch)
  * @author Purodha
  */
@@ -1303,6 +1299,13 @@ $messages['nb'] = array(
 	'globalusage-filterlocal' => 'Ikke vis lokal bruk',
 );
 
+/** Niuean (ko e vagahau Niuē)
+ * @author Jose77
+ */
+$messages['niu'] = array(
+	'globalusage-ok' => 'Kumi',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  */
@@ -1350,7 +1353,7 @@ $messages['oc'] = array(
 	'globalusage-no-results' => "[[:$1]] es pas utilizat sus d'autres wikis.",
 	'globalusage-on-wiki' => 'Utilizacion sus $2',
 	'globalusage-of-file' => 'Los autres wikis seguents utilizan aqueste imatge :',
-	'globalusage-more' => "Veire [[{{#Special:GlobalUsage}}/$1|d'autras utilizacions globalas]] d'aqueste fichièr.",
+	'globalusage-more' => "Veire [[{{#Special:GlobalUsage}}/$1|d'autras utilizacions globalas]] d'aqueste fichièr.", # Fuzzy
 	'globalusage-filterlocal' => "Far pas veire l'utilizacion locala",
 );
 
@@ -1482,10 +1485,10 @@ $messages['pt'] = array(
 );
 
 /** Brazilian Portuguese (português do Brasil)
- * @author 555
  * @author Eduardo.mps
  * @author Giro720
  * @author Hamilton Abreu
+ * @author 555
  */
 $messages['pt-br'] = array(
 	'globalusage' => 'Utilização global do arquivo',
@@ -1879,7 +1882,7 @@ $messages['tk'] = array(
 	'globalusage-no-results' => '[[:$1]] başga wikilerde ulanylmaýar.',
 	'globalusage-on-wiki' => '$2 sahypasynda ulanyş',
 	'globalusage-of-file' => 'Bu faýl aşakdaky beýleki wikiler tarapyndan ulanylýar:',
-	'globalusage-more' => 'Bu faýlyň [[{{#Special:GlobalUsage}}/$1|global ulanyşyny]] görkez.',
+	'globalusage-more' => 'Bu faýlyň [[{{#Special:GlobalUsage}}/$1|global ulanyşyny]] görkez.', # Fuzzy
 	'globalusage-filterlocal' => 'Ýerli ulanyşy görkezme',
 );
 
@@ -1933,7 +1936,7 @@ $messages['tt-cyrl'] = array(
 	'globalusage-ok' => 'Эзләү',
 	'globalusage-text' => 'Файлның гомуми кулланылыш өлкәләрен эзләү.',
 	'globalusage-no-results' => '[[:$1]] башка викиларда кулланмый.',
-	'globalusage-on-wiki' => '$2 проектында [[:File:$1|$1]] куллану',
+	'globalusage-on-wiki' => '$2 проектында [[:File:$1|$1]] куллану', # Fuzzy
 	'globalusage-of-file' => 'Әлеге файл аста бирелгән викиларда куллана:',
 	'globalusage-more' => 'Бирелгән файлның [[{{#Special:GlobalUsage}}/$1|глобаль кулланышын]] карау.',
 	'globalusage-filterlocal' => 'Локаль кулланышын күрсәтмәскә',
@@ -2074,4 +2077,3 @@ $messages['zh-hant'] = array(
 	'globalusage-more' => '檢視本檔案的[[{{#Special:GlobalUsage}}/$1|更多全域使用情況]]。',
 	'globalusage-filterlocal' => '勿顯示本地使用情況',
 );
-
