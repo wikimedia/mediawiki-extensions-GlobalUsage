@@ -155,8 +155,12 @@ class GlobalUsageQuery {
 			$where[] = 'gil_wiki != ' . $this->db->addQuotes( wfWikiId() );
 		}
 
+		$options = array(
+			// Select an extra row to check whether we have more rows available
+			'LIMIT' => $this->limit + 1,
+		);
+
 		// Set the continuation condition
-		$order = 'ASC';
 		if ( $this->offset ) {
 			$qTo = $this->db->addQuotes( $this->offset[0] );
 			$qWiki = $this->db->addQuotes( $this->offset[1] );
@@ -167,12 +171,11 @@ class GlobalUsageQuery {
 				// Reversed traversal; do not include offset row
 				$op1 = '<';
 				$op2 = '<';
-				$order = 'DESC';
+				$options['ORDER BY'] = 'gil_to DESC, gil_wiki DESC, gil_page DESC';
 			} else {
 				// Normal traversal; include offset row
 				$op1 = '>';
 				$op2 = '>=';
-				$order = 'ASC';
 			}
 
 			$where[] = "(gil_to $op1 $qTo) OR " .
@@ -192,11 +195,7 @@ class GlobalUsageQuery {
 			),
 			$where,
 			__METHOD__,
-			array(
-				'ORDER BY' => "gil_to $order, gil_wiki $order, gil_page $order",
-				// Select an extra row to check whether we have more rows available
-				'LIMIT' => $this->limit + 1,
-			)
+			$options
 		);
 
 		/* Process result */
