@@ -1888,9 +1888,10 @@ $messages['tk'] = array(
 
 /** Tagalog (Tagalog)
  * @author AnakngAraw
+ * @author Sky Harbor
  */
 $messages['tl'] = array(
-	'globalusage' => 'Paggamit ng pandaigdigang talaksan',
+	'globalusage' => 'Pandaigdigang paggamit ng talaksan',
 	'globalusage-for' => 'Pandaigdigang paggamit para sa "$1"',
 	'globalusage-desc' => '[[Special:GlobalUsage|Natatanging pahina]] upang makita ang paggamit ng pandaigdigang talaksan',
 	'globalusage-ok' => 'Maghanap',
