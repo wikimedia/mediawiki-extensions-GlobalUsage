@@ -30,6 +30,7 @@ $messages['en'] = array(
  * @author Nghtwlkr
  * @author Purodha
  * @author Raymond
+ * @author Shirayuki
  * @author The Evil IP address
  * @author Umherirrender
  * @author Vriullop
@@ -39,8 +40,7 @@ $messages['qqq'] = array(
 	'globalusage' => 'Header of a section that lists all the places where one shared file has been used. "Global" refers to the usage, not to the file. "File" is singular. Used while viewing the file description page ([[commons:File:Triangle.Right.ly.png|example at Commons]]). Appears at the top of the page as a link to a section anchor, and at the bottom as the section header.',
 	'globalusage-for' => 'Title of [[Special:GlobalUsage]]
 * $1 - name of the searched file, with namespace',
-	'globalusage-desc' => 'For more information, see [[mw:Extension:GlobalUsage]]
-{{desc}}',
+	'globalusage-desc' => '{{desc|name=Global Usage|url=http://www.mediawiki.org/wiki/Extension:GlobalUsage}}',
 	'globalusage-ok' => '{{Identical|Search}}
 Button on [[Special:GlobalUsage]]',
 	'globalusage-text' => 'Label on [[Special:GlobalUsage]]',
