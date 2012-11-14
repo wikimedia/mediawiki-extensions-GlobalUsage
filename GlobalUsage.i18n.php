@@ -1382,6 +1382,13 @@ $messages['os'] = array(
 	'globalusage-ok' => 'Агурын',
 );
 
+/** Pampanga (Kapampangan)
+ * @author Val2397
+ */
+$messages['pam'] = array(
+	'globalusage-ok' => '↓Paintunan',
+);
+
 /** Deitsch (Deitsch)
  * @author Xqt
  */
