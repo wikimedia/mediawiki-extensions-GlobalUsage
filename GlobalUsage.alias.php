@@ -258,6 +258,11 @@ $specialPageAliases['sa'] = array(
 	'GlobalUsage' => array( 'वैश्विकउपयोग' ),
 );
 
+/** Sicilian (sicilianu) */
+$specialPageAliases['scn'] = array(
+	'GlobalUsage' => array( 'UsoGlobale', 'UsoGlobaleFile' ),
+);
+
 /** Slovak (slovenčina) */
 $specialPageAliases['sk'] = array(
 	'GlobalUsage' => array( 'GlobálneVyužitie' ),
