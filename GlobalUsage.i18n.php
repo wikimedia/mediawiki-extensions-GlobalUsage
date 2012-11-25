@@ -848,7 +848,7 @@ $messages['hy'] = array(
  * @author McDutchie
  */
 $messages['ia'] = array(
-	'globalusage' => 'Uso global de files',
+	'globalusage' => 'Uso global de iste file',
 	'globalusage-for' => 'Uso global pro "$1"',
 	'globalusage-desc' => '[[Special:GlobalUsage|Pagina special]] pro vider le uso global de files',
 	'globalusage-ok' => 'Cercar',
