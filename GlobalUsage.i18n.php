@@ -195,6 +195,13 @@ $messages['az'] = array(
 	'globalusage-ok' => 'Axtar',
 );
 
+/** South Azerbaijani (تورکجه)
+ * @author Amir a57
+ */
+$messages['azb'] = array(
+	'globalusage-ok' => 'آختار',
+);
+
 /** Bashkir (башҡортса)
  * @author Assele
  */
