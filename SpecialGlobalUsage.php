@@ -16,7 +16,7 @@ class SpecialGlobalUsage extends SpecialPage {
 	protected $filterLocal;
 
 	public function __construct() {
-		parent::__construct( 'GlobalUsage', 'globalusage' );
+		parent::__construct( 'GlobalUsage' );
 	}
 
 	/**
