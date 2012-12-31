@@ -1957,6 +1957,13 @@ $messages['tt-cyrl'] = array(
 	'globalusage-filterlocal' => 'Локаль кулланышын күрсәтмәскә',
 );
 
+/** Uyghur (Arabic script) (ئۇيغۇرچە)
+ * @author Sahran
+ */
+$messages['ug-arab'] = array(
+	'globalusage-ok' => 'ئىزدە',
+);
+
 /** Ukrainian (українська)
  * @author NickK
  * @author Тест
