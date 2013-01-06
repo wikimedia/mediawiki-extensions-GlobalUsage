@@ -1278,7 +1278,7 @@ $messages['mt'] = array(
  * @author Botuzhaleny-sodamo
  */
 $messages['myv'] = array(
-	'globalusage-ok' => 'Вешнэмс',
+	'globalusage-ok' => 'Вешнемс',
 );
 
 /** Nahuatl (Nāhuatl)
