@@ -213,7 +213,7 @@ $specialPageAliases['nb'] = array(
 	'GlobalUsage' => array( 'Global_bruk' ),
 );
 
-/** Nedersaksies (Nedersaksies) */
+/** Low Saxon (Netherlands) (Nedersaksies) */
 $specialPageAliases['nds-nl'] = array(
 	'GlobalUsage' => array( 'Globaal_gebruuk' ),
 );
