@@ -208,7 +208,7 @@ $specialPageAliases['mt'] = array(
 	'GlobalUsage' => array( 'UżuGlobali' ),
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎) */
+/** Norwegian Bokmål (norsk bokmål) */
 $specialPageAliases['nb'] = array(
 	'GlobalUsage' => array( 'Global_bruk' ),
 );
@@ -223,7 +223,7 @@ $specialPageAliases['nl'] = array(
 	'GlobalUsage' => array( 'GlobaalGebruik' ),
 );
 
-/** Norwegian Nynorsk (norsk (nynorsk)‎) */
+/** Norwegian Nynorsk (norsk nynorsk) */
 $specialPageAliases['nn'] = array(
 	'GlobalUsage' => array( 'Global_bruk' ),
 );
