@@ -141,6 +141,8 @@ $messages['ar'] = array(
  * @author Basharh
  */
 $messages['arc'] = array(
+	'globalusage' => 'ܡܦܠܚܢܘܬܐ ܓܘܢܝܬܐ ܕܠܦܦܐ',
+	'globalusage-for' => 'ܡܦܠܚܢܘܬܐ ܓܘܢܝܬܐ ܕ "$1"',
 	'globalusage-ok' => 'ܒܨܝ',
 );
 
