@@ -41,8 +41,8 @@ $messages['qqq'] = array(
 	'globalusage-for' => 'Title of [[Special:GlobalUsage]]
 * $1 - name of the searched file, with namespace',
 	'globalusage-desc' => '{{desc|name=Global Usage|url=http://www.mediawiki.org/wiki/Extension:GlobalUsage}}',
-	'globalusage-ok' => '{{Identical|Search}}
-Button on [[Special:GlobalUsage]]',
+	'globalusage-ok' => 'Button on Special:GlobalUsage.
+{{Identical|Search}}',
 	'globalusage-text' => 'Label on [[Special:GlobalUsage]]',
 	'globalusage-no-results' => 'Used for empty result on [[Special:GlobalUsage]]
 * $1 - name of the file (with namespace)',
