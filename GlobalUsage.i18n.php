@@ -1309,6 +1309,13 @@ $messages['nb'] = array(
 	'globalusage-filterlocal' => 'Ikke vis lokal bruk',
 );
 
+/** Low German (Plattdüütsch)
+ * @author Joachim Mos
+ */
+$messages['nds'] = array(
+	'globalusage-ok' => 'Söken',
+);
+
 /** Niuean (ko e vagahau Niuē)
  * @author Jose77
  */
