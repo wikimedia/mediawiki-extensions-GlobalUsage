@@ -51,8 +51,9 @@ Header of a section that lists all the places where one shared file has been use
 
 * $1 the file name, but unused in this message
 * $2 the project name given as a domain, e.g. en.wikipedia.org',
-	'globalusage-of-file' => 'Used on a image page.
-The number of following wikis is unknown. By a empty result, no message is shown.',
+	'globalusage-of-file' => 'Used on an image page.
+
+The number of following wikis is unknown. By an empty result, no message is shown.',
 	'globalusage-more' => 'Used on an image page, when more global usage results are available. Example: [[Commons:File:Example.jpg]]
 * $1 - name of the file (without namespace)',
 	'globalusage-filterlocal' => 'Filteroption for [[Special:GlobalUsage]]',

@@ -23,7 +23,7 @@ $specialPageAliases['arz'] = array(
 	'GlobalUsage' => array( 'استعمال_عام' ),
 );
 
-/** Assamese (অসমীয়া) */
+/** Assamese (অসমীয়া) */
 $specialPageAliases['as'] = array(
 	'GlobalUsage' => array( 'গোলকীয়_ব্যৱহাৰ' ),
 );
