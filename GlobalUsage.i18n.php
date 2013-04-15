@@ -1187,6 +1187,22 @@ $messages['mhr'] = array(
 	'globalusage-ok' => 'Кычал',
 );
 
+/** Minangkabau (Baso Minangkabau)
+ * @author Iwan Novirion
+ */
+$messages['min'] = array(
+	'globalusage' => 'Panggunoan berkas global',
+	'globalusage-for' => 'Panggunoan global untuak "$1"',
+	'globalusage-desc' => '[[Special:GlobalUsage|Laman istimewa]] untuak mancaliak panggunoan berkas sacaro global',
+	'globalusage-ok' => 'Cari',
+	'globalusage-text' => 'Cari panggunoan berkas sacaro global.',
+	'globalusage-no-results' => '[[:$1]] indak digunoan di wiki lain.',
+	'globalusage-on-wiki' => 'Panggunoan pado $2',
+	'globalusage-of-file' => 'Wiki barikuik manggunoan berkas ko:',
+	'globalusage-more' => 'Calaik [[{{#Special:GlobalUsage}}/$1|labiah banyak panggunoan global]] dari berkas ko.',
+	'globalusage-filterlocal' => 'Jan tunjuakan panggunoan lokal',
+);
+
 /** Macedonian (македонски)
  * @author Bjankuloski06
  */
