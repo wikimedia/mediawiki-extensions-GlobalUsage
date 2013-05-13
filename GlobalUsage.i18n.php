@@ -1207,7 +1207,7 @@ $messages['min'] = array(
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
-	'globalusage' => 'Глобална употреба на податотека',
+	'globalusage' => 'Глобална употреба на податотеката',
 	'globalusage-for' => 'Глобална употреба на „$1“',
 	'globalusage-desc' => '[[Special:GlobalUsage|Специјална страница]] за преглед на глобалната употреба податотеки',
 	'globalusage-ok' => 'Пребарај',
