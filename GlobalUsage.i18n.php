@@ -158,7 +158,7 @@ $messages['arz'] = array(
 	'globalusage-text' => 'بحث استخدام الملف العام',
 );
 
-/** Assamese (অসমীয়া)
+/** Assamese (অসমীয়া)
  * @author Bishnu Saikia
  * @author Chaipau
  * @author Gitartha.bordoloi
@@ -1309,7 +1309,7 @@ $messages['nah'] = array(
 	'globalusage-ok' => 'Motèmòs',
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎)
+/** Norwegian Bokmål (norsk bokmål)
  * @author Laaknor
  * @author Nghtwlkr
  */
@@ -1356,7 +1356,7 @@ $messages['nl'] = array(
 	'globalusage-filterlocal' => 'Lokaal gebruik niet weergeven',
 );
 
-/** Norwegian Nynorsk (norsk (nynorsk)‎)
+/** Norwegian Nynorsk (norsk nynorsk)
  * @author Harald Khan
  * @author Jon Harald Søby
  * @author Nghtwlkr
@@ -1391,7 +1391,7 @@ $messages['oc'] = array(
 	'globalusage-filterlocal' => "Far pas veire l'utilizacion locala",
 );
 
-/** Oriya (ଓଡ଼ିଆ)
+/** Oriya (ଓଡ଼ିଆ)
  * @author Jose77
  * @author Psubhashish
  */
