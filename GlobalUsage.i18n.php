@@ -335,6 +335,17 @@ $messages['ca'] = array(
 	'globalusage-filterlocal' => "No mostris l'ús local",
 );
 
+/** Chechen (нохчийн)
+ * @author Умар
+ */
+$messages['ce'] = array(
+	'globalusage' => 'Массо проекташкахь пайдаэцар гойту лахахь',
+	'globalusage-for' => 'Массо проекташкахь пайдаэцар «$1»',
+	'globalusage-on-wiki' => 'Пайдаэцар [[:File:$1|$1]] оцу $2', # Fuzzy
+	'globalusage-of-file' => 'ХӀара файл лелош ю лахахь гайтина йолу википедиш чохь:',
+	'globalusage-more' => 'Хьажа [[{{#Special:GlobalUsage}}/$1|массо проекташкхь пайдаэцар]] хӏокху файлас.',
+);
+
 /** Chamorro (Chamoru)
  * @author Jatrobat
  */
@@ -1101,7 +1112,7 @@ $messages['ku-latn'] = array(
 $messages['kw'] = array(
 	'globalusage' => 'Devnydh ollvysel an restren',
 	'globalusage-on-wiki' => 'Devnydh war $2',
-	'globalusage-of-file' => "Yma'n wikis erel a sew owth usya an restren-ma:",
+	'globalusage-of-file' => 'Yma an wikis erel a syw ow tevnydhya an restren-ma:',
 	'globalusage-more' => "Gweles [[{{#Special:GlobalUsage}}/$1|devnydh ollvysel moy]] a'n restren-ma.",
 );
 
