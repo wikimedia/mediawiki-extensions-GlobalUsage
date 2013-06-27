@@ -341,9 +341,11 @@ $messages['ca'] = array(
 $messages['ce'] = array(
 	'globalusage' => 'Массо проекташкахь пайдаэцар гойту лахахь',
 	'globalusage-for' => 'Массо проекташкахь пайдаэцар «$1»',
+	'globalusage-text' => 'Массо проекташкахь файлах пайдаэцар лахар',
 	'globalusage-on-wiki' => 'Пайдаэцар [[:File:$1|$1]] оцу $2', # Fuzzy
 	'globalusage-of-file' => 'ХӀара файл лелош ю лахахь гайтина йолу википедиш чохь:',
-	'globalusage-more' => 'Хьажа [[{{#Special:GlobalUsage}}/$1|массо проекташкхь пайдаэцар]] хӏокху файлас.',
+	'globalusage-more' => 'Хьажа [[{{#Special:GlobalUsage}}/$1|массо проекташкахь пайдаэцар]] хӀокху файлас.',
+	'globalusage-filterlocal' => 'Ма гайта массо проекташкахь пайдаэцар',
 );
 
 /** Chamorro (Chamoru)
