@@ -233,6 +233,22 @@ $messages['bar'] = array(
 	'globalusage-text' => 'Globale Suach nåch da Dateivawendung',
 );
 
+/** Bikol Central (Bikol Central)
+ * @author Geopoet
+ */
+$messages['bcl'] = array(
+	'globalusage' => 'Pankinabang gamit nin sagunson',
+	'globalusage-for' => 'Pankinabang ginagamit para sa "$1"',
+	'globalusage-desc' => '[[Special:GlobalUsage|Espesyal na pahina]] tanganing tanawon an pankinabang paggamit nin sagunson',
+	'globalusage-ok' => 'Hanapa',
+	'globalusage-text' => 'Hanapa an pankinabang paggamit nin sagunson',
+	'globalusage-no-results' => '[[:$1]] dae tabi pinaggagamit sa ibang mga wikis.',
+	'globalusage-on-wiki' => 'An paggamit yaon sa $2',
+	'globalusage-of-file' => 'An minasunod na ibang mga wikis minagamit kaining sagunson:',
+	'globalusage-more' => 'Tanawon an [[{{#Special:GlobalUsage}}/$1|kadagdagan na pankinabang paggamit]] kaining sagunson.',
+	'globalusage-filterlocal' => 'Dae ipagpahiling an lokal na paggamit',
+);
+
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
