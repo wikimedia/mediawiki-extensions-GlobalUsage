@@ -234,13 +234,14 @@ $messages['bar'] = array(
 );
 
 /** Bikol Central (Bikol Central)
+ * @author Filipinayzd
  * @author Geopoet
  */
 $messages['bcl'] = array(
 	'globalusage' => 'Pankinabang gamit nin sagunson',
 	'globalusage-for' => 'Pankinabang ginagamit para sa "$1"',
 	'globalusage-desc' => '[[Special:GlobalUsage|Espesyal na pahina]] tanganing tanawon an pankinabang paggamit nin sagunson',
-	'globalusage-ok' => 'Hanapa',
+	'globalusage-ok' => 'Hanapon',
 	'globalusage-text' => 'Hanapa an pankinabang paggamit nin sagunson',
 	'globalusage-no-results' => '[[:$1]] dae tabi pinaggagamit sa ibang mga wikis.',
 	'globalusage-on-wiki' => 'An paggamit yaon sa $2',
@@ -1443,6 +1444,22 @@ $messages['or'] = array(
  */
 $messages['os'] = array(
 	'globalusage-ok' => 'Агурын',
+);
+
+/** Punjabi (ਪੰਜਾਬੀ)
+ * @author Babanwalia
+ */
+$messages['pa'] = array(
+	'globalusage' => 'ਫ਼ਾਈਲ ਦੀ ਵਿਆਪਕ ਵਰਤੋਂ',
+	'globalusage-for' => '"$1" ਲਈ ਵਿਆਪਕ ਵਰਤੋਂ',
+	'globalusage-desc' => 'ਫ਼ਾਈਲ ਦੀ ਵਿਆਪਕ ਵਰਤੋਂ ਵੇਖਣ ਲਈ [[Special:GlobalUsage|ਖ਼ਾਸ ਸਫ਼ਾ]]',
+	'globalusage-ok' => 'ਖੋਜ',
+	'globalusage-text' => 'ਫ਼ਾਈਲ ਦੀ ਵਿਆਪਕ ਵਰਤੋਂ ਖੋਜੋ',
+	'globalusage-no-results' => "[[:$1]] ਹੋਰ ਵਿਕੀਆਂ 'ਤੇ ਨਹੀਂ ਵਰਤਿਆ ਗਿਆ।",
+	'globalusage-on-wiki' => '$2 ਉੱਤੇ ਵਰਤੋਂ',
+	'globalusage-of-file' => 'ਇਸ ਫ਼ਾਈਲ ਨੂੰ ਹੋਰ ਹੇਠ ਲਿਖੇ ਵਿਕੀ ਵਰਤਦੇ ਹਨ:',
+	'globalusage-more' => 'ਇਸ ਫ਼ਾਈਲ ਦੀ [[{{#Special:GlobalUsage}}/$1|ਹੋਰ ਵਿਆਪਕ ਵਰਤੋਂ]] ਵੇਖੋ।',
+	'globalusage-filterlocal' => 'ਸਥਾਨਕ ਵਰਤੋਂ ਨਾ ਵਿਖਾਓ',
 );
 
 /** Pampanga (Kapampangan)
