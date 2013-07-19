@@ -1121,7 +1121,10 @@ $messages['ksh'] = array(
  * @author Gomada
  */
 $messages['ku-latn'] = array(
+	'globalusage' => 'Bikaranîna gerdûnî ya pelê',
 	'globalusage-ok' => 'Lê bigere',
+	'globalusage-on-wiki' => 'Bikaranîna di $2 de',
+	'globalusage-of-file' => 'Ev wîkiyên di rêzê de vê pelê bi kar tînin:',
 );
 
 /** Cornish (kernowek)
