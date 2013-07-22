@@ -358,6 +358,7 @@ $messages['ca'] = array(
 $messages['ce'] = array(
 	'globalusage' => 'Массо проекташкахь пайдаэцар гойту лахахь',
 	'globalusage-for' => 'Массо проекташкахь пайдаэцар «$1»',
+	'globalusage-ok' => 'Лаха',
 	'globalusage-text' => 'Массо проекташкахь файлах пайдаэцар лахар',
 	'globalusage-on-wiki' => 'Пайдаэцар [[:File:$1|$1]] оцу $2', # Fuzzy
 	'globalusage-of-file' => 'ХӀара файл лелош ю лахахь гайтина йолу википедиш чохь:',
