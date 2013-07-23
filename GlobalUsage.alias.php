@@ -53,6 +53,11 @@ $specialPageAliases['bs'] = array(
 	'GlobalUsage' => array( 'GlobalnaUpotreba' ),
 );
 
+/** Chechen (нохчийн) */
+$specialPageAliases['ce'] = array(
+	'GlobalUsage' => array( 'Глобальни_лелор' ),
+);
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'GlobalUsage' => array( 'Globale_Benutzung', 'Globale_Verwendung' ),
