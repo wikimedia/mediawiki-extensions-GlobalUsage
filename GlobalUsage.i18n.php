@@ -1165,9 +1165,10 @@ $messages['lb'] = array(
 
 /** Lezghian (лезги)
  * @author Migraghvi
+ * @author Soul Train
  */
 $messages['lez'] = array(
-	'globalusage-ok' => 'КЪекъуьн',
+	'globalusage-ok' => 'Къекъуьн',
 );
 
 /** Lingua Franca Nova (Lingua Franca Nova)
