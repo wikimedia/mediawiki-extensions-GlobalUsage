@@ -53,6 +53,11 @@ $specialPageAliases['bs'] = array(
 	'GlobalUsage' => array( 'GlobalnaUpotreba' ),
 );
 
+/** Min Dong Chinese (Mìng-dĕ̤ng-ngṳ̄) */
+$specialPageAliases['cdo'] = array(
+	'GlobalUsage' => array( '全局使法' ),
+);
+
 /** Chechen (нохчийн) */
 $specialPageAliases['ce'] = array(
 	'GlobalUsage' => array( 'Глобальни_лелор' ),
