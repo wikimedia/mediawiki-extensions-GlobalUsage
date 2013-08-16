@@ -1438,7 +1438,7 @@ $messages['oc'] = array(
 	'globalusage-no-results' => "[[:$1]] es pas utilizat sus d'autres wikis.",
 	'globalusage-on-wiki' => 'Utilizacion sus $2',
 	'globalusage-of-file' => 'Los autres wikis seguents utilizan aqueste imatge :',
-	'globalusage-more' => "Veire [[{{#Special:GlobalUsage}}/$1|d'autras utilizacions globalas]] d'aqueste fichièr.", # Fuzzy
+	'globalusage-more' => "Veire [[{{#Special:GlobalUsage}}/$1|l'utilizacion globala]] d'aqueste fichièr.",
 	'globalusage-filterlocal' => "Far pas veire l'utilizacion locala",
 );
 
