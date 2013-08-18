@@ -1059,14 +1059,15 @@ $messages['kn'] = array(
 
 /** Korean (한국어)
  * @author Kwj2772
+ * @author 아라
  */
 $messages['ko'] = array(
 	'globalusage' => '이 파일을 사용하고 있는 모든 위키의 문서 목록',
 	'globalusage-for' => '"$1" 파일을 사용하고 있는 모든 위키의 문서 목록',
-	'globalusage-desc' => '특정 파일을 사용하고 있는 모든 위키의 문서의 목록을 보여주는 [[Special:GlobalUsage|특수 문서]]를 추가',
+	'globalusage-desc' => '파일을 사용하고 있는 모든 위키의 문서의 목록을 보여주는 [[Special:GlobalUsage|특수 문서]]',
 	'globalusage-ok' => '찾기',
 	'globalusage-text' => '특정 파일이 사용되고 있는 모든 위키의 문서 찾기',
-	'globalusage-no-results' => '[[:$1]]은 다른 위키에서 사용되지 않고 있습니다.',
+	'globalusage-no-results' => '[[:$1]](은)는 다른 위키에서 사용되지 않고 있습니다.',
 	'globalusage-on-wiki' => '$2에서 이 파일을 사용하고 있는 문서 목록',
 	'globalusage-of-file' => '다음 위키에서 이 파일을 사용하고 있습니다:',
 	'globalusage-more' => '이 파일의 [[{{#Special:GlobalUsage}}/$1|사용 내역]] 보기',
