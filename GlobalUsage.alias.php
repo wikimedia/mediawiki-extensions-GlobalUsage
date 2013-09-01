@@ -78,6 +78,11 @@ $specialPageAliases['dsb'] = array(
 	'GlobalUsage' => array( 'Globalne_wužywanje' ),
 );
 
+/** Greek (Ελληνικά) */
+$specialPageAliases['el'] = array(
+	'GlobalUsage' => array( 'ΚαθολικήΧρήση' ),
+);
+
 /** Spanish (español) */
 $specialPageAliases['es'] = array(
 	'GlobalUsage' => array( 'Uso_global', 'UsoGlobal' ),

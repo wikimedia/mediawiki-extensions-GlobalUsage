@@ -100,9 +100,12 @@ $messages['aln'] = array(
 
 /** Amharic (አማርኛ)
  * @author Codex Sinaiticus
+ * @author Elfalem
  */
 $messages['am'] = array(
+	'globalusage' => 'ሌሎች ውኪዎች',
 	'globalusage-ok' => 'ፍለጋ',
+	'globalusage-of-file' => 'የሚከተሉት ሌሎች ውኪዎች ይህን ፋይል ይጠቀማሉ፦',
 );
 
 /** Aragonese (aragonés)
