@@ -47,10 +47,13 @@ Header of a section that lists all the places where one shared file has been use
 	'globalusage-text' => 'Label on [[Special:GlobalUsage]]',
 	'globalusage-no-results' => 'Used for empty result on [[Special:GlobalUsage]]
 * $1 - name of the file (with namespace)',
-	'globalusage-on-wiki' => 'Shown in the list of global usages. Example: [[Commons:Special:GlobalUsage/Example.jpg]] and [[Commons:File:Example.jpg]]
+	'globalusage-on-wiki' => 'Shown in the list of global usages.
 
-* $1 the file name, but unused in this message
-* $2 the project name given as a domain, e.g. en.wikipedia.org',
+Example: [[Commons:Special:GlobalUsage/Example.jpg]] and [[Commons:File:Example.jpg]]
+
+Parameters:
+* $1 - (Unused) the filename
+* $2 - the project name given as a domain, e.g. en.wikipedia.org',
 	'globalusage-of-file' => 'Used on an image page.
 
 The number of following wikis is unknown. By an empty result, no message is shown.',
