@@ -413,6 +413,13 @@ $messages['cu'] = array(
 	'globalusage-ok' => 'ищи',
 );
 
+/** Welsh (Cymraeg)
+ * @author Lloffiwr
+ */
+$messages['cy'] = array(
+	'globalusage-ok' => 'Chwilier',
+);
+
 /** Danish (dansk)
  * @author Jon Harald Søby
  * @author Peter Alberti
