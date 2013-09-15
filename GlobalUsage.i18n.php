@@ -1221,12 +1221,17 @@ $messages['lt'] = array(
 );
 
 /** Latvian (latviešu)
+ * @author Edgars2007
  * @author GreenZeb
  * @author Papuass
  */
 $messages['lv'] = array(
+	'globalusage' => 'Globālais faila lietojums',
 	'globalusage-ok' => 'Meklēt',
 	'globalusage-text' => 'Meklēt globālo faila izmantošanu',
+	'globalusage-on-wiki' => 'Izmantojums $2',
+	'globalusage-of-file' => 'Šīs Vikipēdijas izmanto šo failu:',
+	'globalusage-more' => 'Skatīt šī faila [[{{#Special:GlobalUsage}}/$1|pilno globālo izmantojumu]].',
 );
 
 /** Eastern Mari (олык марий)
