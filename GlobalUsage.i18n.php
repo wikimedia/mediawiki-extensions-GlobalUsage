@@ -1589,12 +1589,12 @@ $messages['pnb'] = array(
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
 $messages['ps'] = array(
-	'globalusage' => 'د نړېوالې دوتنې کارېدنګ',
+	'globalusage' => 'د نړېوالې دوتنې کارېدنه',
 	'globalusage-for' => 'د "$1" لپاره نړېوالې کارېدنې',
 	'globalusage-desc' => 'د نړېوالې دوتنې د کارېدنگ د مخليدنې لپاره [[Special:GlobalUsage|ځانگړی مخ]]',
 	'globalusage-ok' => 'پلټل',
-	'globalusage-text' => 'د نړېوالې دوتنې کارېدنګ پلټل',
-	'globalusage-no-results' => '[[:$1]] په نورو ويکي ګانو نه کارېږي.',
+	'globalusage-text' => 'د نړېوالې دوتنې کارېدنې پلټل',
+	'globalusage-no-results' => '[[:$1]] په نورو ويکي گانو نه کارېږي.',
 	'globalusage-on-wiki' => 'په $2 کارونې',
 	'globalusage-of-file' => 'همدا دوتنه لاندينۍ نورې ويکي ګانې کاروي:',
 	'globalusage-more' => 'د دې دوتنې [[{{#Special:GlobalUsage}}/$1|نورې نړېوالې کارېدنې]] کتل.',
