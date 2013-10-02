@@ -1596,7 +1596,7 @@ $messages['ps'] = array(
 	'globalusage-text' => 'د نړېوالې دوتنې کارېدنې پلټل',
 	'globalusage-no-results' => '[[:$1]] په نورو ويکي گانو نه کارېږي.',
 	'globalusage-on-wiki' => 'په $2 کارونې',
-	'globalusage-of-file' => 'همدا دوتنه لاندينۍ نورې ويکي ګانې کاروي:',
+	'globalusage-of-file' => 'همدا دوتنه لاندينۍ نورې ويکي گانې کاروي:',
 	'globalusage-more' => 'د دې دوتنې [[{{#Special:GlobalUsage}}/$1|نورې نړېوالې کارېدنې]] کتل.',
 	'globalusage-filterlocal' => 'سيمه ايزې کارونې مه ښکاره کوه',
 );
