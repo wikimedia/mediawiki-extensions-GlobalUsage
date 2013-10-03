@@ -1813,9 +1813,9 @@ $messages['sl'] = array(
 	'globalusage-ok' => 'Iskanje',
 	'globalusage-text' => 'Iskanje globalne uporabe datoteke',
 	'globalusage-no-results' => '[[:$1]] se ne uporablja na drugih wikijih.',
-	'globalusage-on-wiki' => 'Uporaba na $2',
+	'globalusage-on-wiki' => 'uporaba na $2',
 	'globalusage-of-file' => 'To datoteko uporabljajo tudi naslednji wikiji:',
-	'globalusage-more' => 'Oglej si [[{{#Special:GlobalUsage}}/$1|globalno uporabo]] te datoteke.',
+	'globalusage-more' => 'Oglejte si [[{{#Special:GlobalUsage}}/$1|globalno uporabo]] te datoteke.',
 	'globalusage-filterlocal' => 'Ne prikaži lokalne uporabe',
 );
 
