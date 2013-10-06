@@ -1092,7 +1092,7 @@ $messages['ko'] = array(
 	'globalusage-no-results' => '[[:$1]](은)는 다른 위키에서 사용되지 않고 있습니다.',
 	'globalusage-on-wiki' => '$2에서 이 파일을 사용하고 있는 문서 목록',
 	'globalusage-of-file' => '다음 위키에서 이 파일을 사용하고 있습니다:',
-	'globalusage-more' => '이 파일의 [[{{#Special:GlobalUsage}}/$1|사용 내역]] 보기',
+	'globalusage-more' => '이 파일의 [[{{#Special:GlobalUsage}}/$1|더 많은 사용 내역]]을 봅니다.',
 	'globalusage-filterlocal' => '이 위키에서 이 파일을 사용하고 있는 문서를 보이지 않기',
 );
 
