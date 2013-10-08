@@ -781,7 +781,7 @@ $messages['ha'] = array(
 	'globalusage-ok' => 'Nema',
 );
 
-/** Hakka (Hak-kâ-fa)
+/** Hakka (客家語/Hak-kâ-ngî)
  * @author Hakka
  */
 $messages['hak'] = array(
@@ -1162,7 +1162,7 @@ $messages['kw'] = array(
 	'globalusage-more' => "Gweles [[{{#Special:GlobalUsage}}/$1|devnydh ollvysel moy]] a'n restren-ma.",
 );
 
-/** Kirghiz (Кыргызча)
+/** Kyrgyz (Кыргызча)
  * @author Chorobek
  */
 $messages['ky'] = array(
