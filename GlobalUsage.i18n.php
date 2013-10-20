@@ -1449,7 +1449,7 @@ $messages['nn'] = array(
 	'globalusage-text' => 'Søk global filbruk.',
 	'globalusage-no-results' => '[[:$1]] vert ikkje nytta på andre wikiar.',
 	'globalusage-on-wiki' => 'Bruk på $2',
-	'globalusage-of-file' => 'Fylgjande andre wikiar nyttar denne fila:',
+	'globalusage-of-file' => 'Desse andre wikiane nyttar fila:',
 	'globalusage-more' => 'Sjå [[{{#Special:GlobalUsage}}/$1|meir global bruk]] av denne fila.',
 	'globalusage-filterlocal' => 'Ikkje vis lokal bruk',
 );
