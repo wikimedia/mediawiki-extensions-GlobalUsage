@@ -673,6 +673,13 @@ $messages['frp'] = array(
 	'globalusage-filterlocal' => 'Pas montrar l’usâjo local',
 );
 
+/** Northern Frisian (Nordfriisk)
+ * @author Murma174
+ */
+$messages['frr'] = array(
+	'globalusage' => 'Globaal brük faan datein',
+);
+
 /** Friulian (furlan)
  * @author Klenje
  */
