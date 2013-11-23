@@ -186,7 +186,7 @@ $specialPageAliases['km'] = array(
 
 /** Korean (한국어) */
 $specialPageAliases['ko'] = array(
-	'GlobalUsage' => array( '전체사용' ),
+	'GlobalUsage' => array( '전역사용' ),
 );
 
 /** Cornish (kernowek) */
