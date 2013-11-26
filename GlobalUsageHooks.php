@@ -34,26 +34,18 @@ class GlobalUsageHooks {
 
 		$missingFiles = array_diff( $images, $localFiles );
 
-		global $wgUseDumbLinkUpdate;
 		$gu = self::getGlobalUsage();
-		if ( $wgUseDumbLinkUpdate ) {
-			// Delete all entries to the page
-			$gu->deleteLinksFromPage( $title->getArticleID( Title::GAID_FOR_UPDATE ) );
-			// Re-insert new usage for the page
-			$gu->insertLinks( $title, $missingFiles );
-		} else {
-			$articleId = $title->getArticleID( Title::GAID_FOR_UPDATE );
-			$existing = $gu->getLinksFromPage( $articleId );
+		$articleId = $title->getArticleID( Title::GAID_FOR_UPDATE );
+		$existing = $gu->getLinksFromPage( $articleId );
 
-			// Calculate changes
-			$added = array_diff( $missingFiles, $existing );
-			$removed = array_diff( $existing, $missingFiles );
+		// Calculate changes
+		$added = array_diff( $missingFiles, $existing );
+		$removed = array_diff( $existing, $missingFiles );
 
-			// Add new usages and delete removed
-			$gu->insertLinks( $title, $added );
-			if ( $removed ) {
-				$gu->deleteLinksFromPage( $articleId, $removed );
-			}
+		// Add new usages and delete removed
+		$gu->insertLinks( $title, $added );
+		if ( $removed ) {
+			$gu->deleteLinksFromPage( $articleId, $removed );
 		}
 
 		return true;
