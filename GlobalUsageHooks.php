@@ -54,6 +54,7 @@ class GlobalUsageHooks {
 	/**
 	 * Hook to TitleMoveComplete
 	 * Sets the page title in usage table to the new name.
+	 * For shared file moves, purges all pages in the wiki farm that use the files.
 	 * @param $ot Title
 	 * @param $nt Title
 	 * @param $user User
@@ -64,6 +65,18 @@ class GlobalUsageHooks {
 	public static function onTitleMoveComplete( $ot, $nt, $user, $pageid, $redirid ) {
 		$gu = self::getGlobalUsage();
 		$gu->moveTo( $pageid, $nt );
+
+		if ( self::fileUpdatesCreatePurgeJobs() ) {
+			$jobs = array();
+			if ( $ot->inNamespace( NS_FILE ) ) {
+				$jobs[] = new GlobalUsageCachePurgeJob( $ot, array() );
+			}
+			if ( $nt->inNamespace( NS_FILE ) ) {
+				$jobs[] = new GlobalUsageCachePurgeJob( $nt, array() );
+			}
+			JobQueueGroup::singleton()->push( $jobs );
+		}
+
 		return true;
 	}
 
@@ -86,6 +99,7 @@ class GlobalUsageHooks {
 	/**
 	 * Hook to FileDeleteComplete
 	 * Copies the local link table to the global.
+	 * Purges all pages in the wiki farm that use the file if it is a shared repo file.
 	 * @param $file File
 	 * @param $oldimage
 	 * @param $article Article
@@ -97,13 +111,20 @@ class GlobalUsageHooks {
 		if ( !$oldimage ) {
 			$gu = self::getGlobalUsage();
 			$gu->copyLocalImagelinks( $file->getTitle() );
+
+			if ( self::fileUpdatesCreatePurgeJobs() ) {
+				$job = new GlobalUsageCachePurgeJob( $file->getTitle(), array() );
+				JobQueueGroup::singleton()->push( $job );
+			}
 		}
+
 		return true;
 	}
 
 	/**
 	 * Hook to FileUndeleteComplete
 	 * Deletes the file from the global link table.
+	 * Purges all pages in the wiki farm that use the file if it is a shared repo file.
 	 * @param $title Title
 	 * @param $versions
 	 * @param $user User
@@ -113,19 +134,44 @@ class GlobalUsageHooks {
 	public static function onFileUndeleteComplete( $title, $versions, $user, $reason ) {
 		$gu = self::getGlobalUsage();
 		$gu->deleteLinksToFile( $title );
+
+		if ( self::fileUpdatesCreatePurgeJobs() ) {
+			$job = new GlobalUsageCachePurgeJob( $title, array() );
+			JobQueueGroup::singleton()->push( $job );
+		}
+
 		return true;
 	}
 
 	/**
 	 * Hook to UploadComplete
 	 * Deletes the file from the global link table.
+	 * Purges all pages in the wiki farm that use the file if it is a shared repo file.
 	 * @param $upload File
 	 * @return bool
 	 */
 	public static function onUploadComplete( $upload ) {
 		$gu = self::getGlobalUsage();
 		$gu->deleteLinksToFile( $upload->getTitle() );
+
+		if ( self::fileUpdatesCreatePurgeJobs() ) {
+			$job = new GlobalUsageCachePurgeJob( $upload->getTitle(), array() );
+			JobQueueGroup::singleton()->push( $job );
+		}
+
 		return true;
+	}
+
+	/**
+	 *
+	 * Check if file updates on this wiki should cause backlink page purge jobs
+	 *
+	 * @return bool
+	 */
+	private static function fileUpdatesCreatePurgeJobs() {
+		global $wgGlobalUsageSharedRepoWiki, $wgGlobalUsagePurgeBacklinks;
+
+		return ( $wgGlobalUsagePurgeBacklinks && wfWikiId() === $wgGlobalUsageSharedRepoWiki );
 	}
 
 	/**

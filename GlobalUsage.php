@@ -48,16 +48,20 @@ $wgExtensionCredits['specialpage'][] = array(
 $wgExtensionMessagesFiles['GlobalUsage'] = $dir . 'GlobalUsage.i18n.php';
 $wgExtensionMessagesFiles['GlobalUsageAliases'] = $dir . 'GlobalUsage.alias.php';
 
-// Special page classes
 $wgAutoloadClasses['GlobalUsage'] = $dir . 'GlobalUsage_body.php';
 $wgAutoloadClasses['GlobalUsageHooks'] = $dir . 'GlobalUsageHooks.php';
 $wgAutoloadClasses['GlobalUsageImagePageHooks'] = $dir . 'GlobalUsageImagePageHooks.php';
 $wgAutoloadClasses['SpecialGlobalUsage'] = $dir . 'SpecialGlobalUsage.php';
 $wgAutoloadClasses['GlobalUsageQuery'] = $dir . 'GlobalUsageQuery.php';
 $wgAutoloadClasses['ApiQueryGlobalUsage'] = $dir . 'ApiQueryGlobalUsage.php';
+$wgAutoloadClasses['GlobalUsageCachePurgeJob'] = $dir . 'GlobalUsageCachePurgeJob.php';
+
 $wgSpecialPages['GlobalUsage'] = 'SpecialGlobalUsage';
 $wgSpecialPageGroups['GlobalUsage'] = 'media';
+
 $wgAPIPropModules['globalusage'] = 'ApiQueryGlobalUsage';
+
+$wgJobClasses['globalUsageCachePurge'] = 'GlobalUsageCachePurgeJob';
 
 /* Things that can cause link updates:
  * - Local LinksUpdate
@@ -81,3 +85,11 @@ $wgHooks['LoadExtensionSchemaUpdates'][] = 'GlobalUsageHooks::onLoadExtensionSch
 // If set to false, the local database contains the globalimagelinks table
 // Else set to something understandable to LBFactory
 $wgGlobalUsageDatabase = false;
+
+// Name of the shared repo that backlinks are shared for
+$wgGlobalUsageSharedRepoWiki = false;
+
+// If set to true, this will purge pages on the wikis that use a file when it changes.
+// This works by directly inserting HTMLCacheUpdate jobs into the local wikis.
+// @see $wgGlobalUsagePurgeBacklinks
+$wgGlobalUsagePurgeBacklinks = false;
