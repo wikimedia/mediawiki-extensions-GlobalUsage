@@ -390,7 +390,7 @@ $messages['ckb'] = array(
 	'globalusage-of-file' => 'ئەم ویکیانەی دیکەی خوارەوەش ئەم پەڕگە بەکاردێنن:',
 );
 
-/** Czech (česky)
+/** Czech (čeština)
  * @author Mormegil
  */
 $messages['cs'] = array(
@@ -406,7 +406,7 @@ $messages['cs'] = array(
 	'globalusage-filterlocal' => 'Nezobrazovat místní využití',
 );
 
-/** Church Slavic (словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
+/** Church Slavic (словѣньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
  * @author ОйЛ
  */
 $messages['cu'] = array(
