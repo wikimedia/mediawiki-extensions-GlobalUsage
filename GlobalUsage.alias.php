@@ -124,6 +124,11 @@ $specialPageAliases['gu'] = array(
 	'GlobalUsage' => array( 'વૈશ્વિક_વપરાશ' ),
 );
 
+/** Hebrew (עברית) */
+$specialPageAliases['he'] = array(
+	'GlobalUsage' => array( 'שימוש_גלובלי', 'שימוש_גלובלי_בקובץ', 'שימוש_גלובלי_בקבצים' ),
+);
+
 /** Hindi (हिन्दी) */
 $specialPageAliases['hi'] = array(
 	'GlobalUsage' => array( 'वैश्विक_प्रयोग' ),
