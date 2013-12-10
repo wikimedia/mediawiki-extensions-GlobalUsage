@@ -18,6 +18,9 @@ class GlobalUsageCachePurgeJob extends Job {
 			return true; // umm, OK
 		}
 
+		$rootParams = Job::newRootJobParams( // "overall" purge job info
+			"GlobalUsage:htmlCacheUpdate:imagelinks:{$title->getPrefixedText()}" );
+
 		$filesForPurge = array( $title->getDbKey() ); // title to purge backlinks to
 		// All File pages that redirect this one may have backlinks that need purging.
 		// These backlinks are probably broken now (missing files or double redirects).
@@ -46,7 +49,7 @@ class GlobalUsageCachePurgeJob extends Job {
 		foreach ( $res as $row ) {
 			$jobsByWiki[$row->gil_wiki][] = new HTMLCacheUpdateJob(
 				Title::makeTitle( NS_FILE, $row->gil_to ),
-				array( 'table' => 'imagelinks' )
+				array( 'table' => 'imagelinks' ) + $rootParams
 			);
 		}
 
