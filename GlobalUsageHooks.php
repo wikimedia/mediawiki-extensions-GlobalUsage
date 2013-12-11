@@ -17,20 +17,32 @@ class GlobalUsageHooks {
 	public static function onLinksUpdateComplete( $linksUpdater ) {
 		$title = $linksUpdater->getTitle();
 
-		// Create a list of locally existing images
+		// Create a list of locally existing images (DB keys)
 		$images = array_keys( $linksUpdater->getImages() );
 
-		//$localFiles = array_keys( RepoGroup::singleton()->getLocalRepo()->findFiles( $images ) );
-		// Unrolling findFiles() here because pages with thousands of images trigger an OOM
-		// error while building an array with thousands of File objects (bug 32598)
 		$localFiles = array();
 		$repo = RepoGroup::singleton()->getLocalRepo();
-		foreach ( $images as $image ) {
-			$file = $repo->findFile( $image );
-			if ( $file ) {
-				$localFiles[] = $file->getTitle()->getDBkey();
+		if ( defined( 'FileRepo::NAME_AND_TIME_ONLY' ) ) { // MW 1.23
+			$imagesInfo = $repo->findFiles( $images, FileRepo::NAME_AND_TIME_ONLY );
+			foreach ( $imagesInfo as $dbKey => $info ) {
+				$localFiles[] = $dbKey;
+				if ( $dbKey !== $info['title'] ) { // redirect
+					$localFiles[] = $info['title'];
+				}
+			}
+		} else {
+			// Unrolling findFiles() here because pages with thousands of images trigger an OOM
+			foreach ( $images as $dbKey ) {
+				$file = $repo->findFile( $dbKey );
+				if ( $file ) {
+					$localFiles[] = $dbKey;
+					if ( $file->getTitle()->getDBkey() !== $dbKey ) { // redirect
+						$localFiles[] = $file->getTitle()->getDBkey();
+					}
+				}
 			}
 		}
+		$localFiles = array_values( array_unique( $localFiles ) );
 
 		$missingFiles = array_diff( $images, $localFiles );
 
