@@ -52,7 +52,7 @@ class SpecialGlobalUsage extends SpecialPage {
 		/* Build form */
 		$html = Xml::openElement( 'form', array( 'action' => $wgScript ) ) . "\n";
 		// Name of SpecialPage
-		$html .= Html::hidden( 'title', $this->getTitle()->getPrefixedText() ) . "\n";
+		$html .= Html::hidden( 'title', $this->getPageTitle()->getPrefixedText() ) . "\n";
 		// Limit
 		$html .= Html::hidden( 'limit', $this->getRequest()->getInt( 'limit', 50 ) );
 		// Input box with target prefilled if available
@@ -182,7 +182,7 @@ class SpecialGlobalUsage extends SpecialPage {
 		$nTitle = $this->msg( 'nextn-title' )->numParams( $limit )->escaped();
 
 		# Fetch the title object
-		$title = $this->getTitle();
+		$title = $this->getPageTitle();
 
 		# Make 'previous' link
 		if ( $to ) {
