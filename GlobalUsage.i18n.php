@@ -1176,6 +1176,13 @@ $messages['ky'] = array(
 	'globalusage-of-file' => 'Бул файл төмөнкү викилерде колдонулат:',
 );
 
+/** Ladino (Ladino)
+ * @author Menachem.Moreira
+ */
+$messages['lad'] = array(
+	'globalusage-ok' => 'Bushkar',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Les Meloures
  * @author Robby
@@ -1774,6 +1781,13 @@ $messages['sah'] = array(
  */
 $messages['scn'] = array(
 	'globalusage-ok' => "Va' cerca",
+);
+
+/** Samogitian (žemaitėška)
+ * @author Hugo.arg
+ */
+$messages['sgs'] = array(
+	'globalusage' => 'Faila nauduojėms vėsor',
 );
 
 /** Sinhala (සිංහල)
