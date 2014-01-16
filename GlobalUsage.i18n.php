@@ -1896,9 +1896,10 @@ $messages['sr-ec'] = array(
 
 /** Serbian (Latin script) (srpski (latinica)‎)
  * @author Michaello
+ * @author Milicevic01
  */
 $messages['sr-el'] = array(
-	'globalusage' => 'Globalno korišćenje fajlova',
+	'globalusage' => 'Globalna upotreba datoteke',
 	'globalusage-for' => 'Globalna upotreba datoteke „$1“',
 	'globalusage-desc' => '[[Special:GlobalUsage|Specijalna strana]] za pregled globalnog korišćenja fajlova',
 	'globalusage-ok' => 'Pretraga',
