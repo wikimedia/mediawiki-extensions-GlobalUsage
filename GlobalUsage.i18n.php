@@ -1233,6 +1233,13 @@ $messages['li'] = array(
 	'globalusage-filterlocal' => 'Tuin gei lokaal gebroek',
 );
 
+/** لوری (لوری)
+ * @author Bonevarluri
+ */
+$messages['lrc'] = array(
+	'globalusage' => 'استفاده د جانیا جهونی',
+);
+
 /** Lithuanian (lietuvių)
  * @author GreenZeb
  * @author Homo
