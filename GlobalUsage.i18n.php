@@ -1238,6 +1238,7 @@ $messages['li'] = array(
  */
 $messages['lrc'] = array(
 	'globalusage' => 'استفاده د جانیا جهونی',
+	'globalusage-filterlocal' => 'استفاده ولات نشینی نه نشو نئه',
 );
 
 /** Lithuanian (lietuvių)
