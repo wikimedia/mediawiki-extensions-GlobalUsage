@@ -1113,9 +1113,10 @@ $messages['krc'] = array(
 
 /** Krio (Krio)
  * @author Jose77
+ * @author Protostar
  */
 $messages['kri'] = array(
-	'globalusage-ok' => 'Luk foh am',
+	'globalusage-ok' => 'Sarch',
 );
 
 /** Kinaray-a (Kinaray-a)
