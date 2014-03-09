@@ -963,15 +963,15 @@ $messages['ig'] = array(
  * @author Lam-ang
  */
 $messages['ilo'] = array(
-	'globalusage' => 'Sangalubongan a panag-usar ti papeles',
-	'globalusage-for' => 'Sangalubongan a panag-usar ti "$1"',
-	'globalusage-desc' => '[[Special:GlobalUsage|Naipangpangruna a panid]] no kitaen ti sangalubongan a panag-usar ti papeles',
+	'globalusage' => 'Global a panag-usar ti papeles',
+	'globalusage-for' => 'Global a panag-usar ti "$1"',
+	'globalusage-desc' => '[[Special:GlobalUsage|Naipangpangruna a panid]] no kitaen ti global a panag-usar ti papeles',
 	'globalusage-ok' => 'Biruken',
-	'globalusage-text' => 'Agbiruk ti sangalubongan a panag-usar ti papeles',
-	'globalusage-no-results' => '[[:$1]] ket saan a maus-usar iti sabsabali a wiki.',
+	'globalusage-text' => 'Agbiruk ti global a panag-usar ti papeles',
+	'globalusage-no-results' => 'Ti [[:$1]] ket saan a maus-usar kadagiti sabali a wiki.',
 	'globalusage-on-wiki' => 'Panag-usar idiay $2',
 	'globalusage-of-file' => 'Dagiti sumaganad a wiki ket agus-usar iti daytoy a papeles:',
-	'globalusage-more' => 'Kitaen [[{{#Special:GlobalUsage}}/$1|ti adu pay a sangalubongan a panag-usar]] iti daytoy a papeles.',
+	'globalusage-more' => 'Kitaen [[{{#Special:GlobalUsage}}/$1|ti adu pay a global a panag-usar]] iti daytoy a papeles.',
 	'globalusage-filterlocal' => 'Saan a ipakita ti lokal a panag-usar',
 );
 
