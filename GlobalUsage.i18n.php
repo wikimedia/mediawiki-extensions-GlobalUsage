@@ -2229,7 +2229,7 @@ $messages['zh-hans'] = array(
 	'globalusage-text' => '搜索全局文件用途',
 	'globalusage-no-results' => '[[:$1]]没有用于其他wiki。',
 	'globalusage-on-wiki' => '$2上的用途',
-	'globalusage-of-file' => '下列其他wiki使用本文件：',
+	'globalusage-of-file' => '以下其他wiki使用本文件：',
 	'globalusage-more' => '查看本文件的[[{{#Special:GlobalUsage}}/$1|更多全局用途]]。',
 	'globalusage-filterlocal' => '不显示本地用途',
 );
