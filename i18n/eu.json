@@ -1,0 +1,11 @@
+{
+    "@metadata": {
+        "authors": [
+            "Kobazulo"
+        ]
+    },
+    "globalusage": "Fitxategiaren erabilera orokorra",
+    "globalusage-desc": "Fitxategiaren erabilera orokorra ikusteko [[Special:GlobalUsage|orrialde berezia]]",
+    "globalusage-ok": "Bilatu",
+    "globalusage-text": "Fitxategiaren erabilera orokorra bilatu."
+}

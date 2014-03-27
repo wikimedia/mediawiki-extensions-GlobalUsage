@@ -1,0 +1,20 @@
+{
+    "@metadata": {
+        "authors": [
+            "Giro720",
+            "Hamilton Abreu",
+            "Lijealso",
+            "Malafaya"
+        ]
+    },
+    "globalusage": "Utilização global do ficheiro",
+    "globalusage-for": "Utilização global de \"$1\"",
+    "globalusage-desc": "[[Special:GlobalUsage|Página especial]] para consultar a utilização global de ficheiros",
+    "globalusage-ok": "Pesquisar",
+    "globalusage-text": "Pesquisar utilização global de ficheiros",
+    "globalusage-no-results": "[[:$1]] não é usado noutras wikis.",
+    "globalusage-on-wiki": "Uso na $2",
+    "globalusage-of-file": "As seguintes wikis usam este ficheiro:",
+    "globalusage-more": "Ver [[{{#Special:GlobalUsage}}/$1|a utilização global]] deste ficheiro.",
+    "globalusage-filterlocal": "Não mostrar utilizações locais"
+}

@@ -1,0 +1,17 @@
+{
+    "@metadata": {
+        "authors": [
+            "Michawiki"
+        ]
+    },
+    "globalusage": "Globalne wužiwanje dataje",
+    "globalusage-for": "Globalne wužiwanje za \"$1\"",
+    "globalusage-desc": "[[Special:GlobalUsage|Specialna strona]], zo by sej globalne wužiwanje dataje wobhladał",
+    "globalusage-ok": "Podać",
+    "globalusage-text": "Globalne wužiwanje dataje pytać.",
+    "globalusage-no-results": "[[:$1]] njewužiwa so w druhich wikijach.",
+    "globalusage-on-wiki": "Wužiwanje na $2",
+    "globalusage-of-file": "Slědowace druhe wikije wužiwaja tutón wobraz:",
+    "globalusage-more": "[[{{#Special:GlobalUsage}}/$1|Globalne wužiwanje]] tuteje dataje pokazać",
+    "globalusage-filterlocal": "Lokalne wužiwanje njepokazać"
+}

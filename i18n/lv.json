@@ -1,0 +1,15 @@
+{
+    "@metadata": {
+        "authors": [
+            "Edgars2007",
+            "GreenZeb",
+            "Papuass"
+        ]
+    },
+    "globalusage": "Globālais faila lietojums",
+    "globalusage-ok": "Meklēt",
+    "globalusage-text": "Meklēt globālo faila izmantošanu",
+    "globalusage-on-wiki": "Izmantojums $2",
+    "globalusage-of-file": "Šīs Vikipēdijas izmanto šo failu:",
+    "globalusage-more": "Skatīt šī faila [[{{#Special:GlobalUsage}}/$1|pilno globālo izmantojumu]]."
+}

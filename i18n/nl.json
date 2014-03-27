@@ -1,0 +1,17 @@
+{
+    "@metadata": {
+        "authors": [
+            "Siebrand"
+        ]
+    },
+    "globalusage": "Globaal bestandsgebruik",
+    "globalusage-for": "Globaal gebruik voor \"$1\"",
+    "globalusage-desc": "[[Special:GlobalUsage|Speciale pagina]] voor het bekijken van globaal bestandsgebruik",
+    "globalusage-ok": "Zoeken",
+    "globalusage-text": "Globaal bestandsgebruik bekijken",
+    "globalusage-no-results": "[[:$1]] wordt niet gebruikt in andere wiki's.",
+    "globalusage-on-wiki": "Gebruik in $2",
+    "globalusage-of-file": "De volgende andere wiki's gebruiken dit bestand:",
+    "globalusage-more": "[[{{#Special:GlobalUsage}}/$1|Globaal gebruik]] van dit bestand bekijken.",
+    "globalusage-filterlocal": "Lokaal gebruik niet weergeven"
+}

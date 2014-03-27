@@ -1,0 +1,17 @@
+{
+    "@metadata": {
+        "authors": [
+            "Mormegil"
+        ]
+    },
+    "globalusage": "Globální využití souboru",
+    "globalusage-for": "Globální využití „$1“",
+    "globalusage-desc": "[[Special:GlobalUsage|Speciální stránka]] zobrazující globální využití souboru",
+    "globalusage-ok": "Hledat",
+    "globalusage-text": "Hledání globálního využití souboru",
+    "globalusage-no-results": "[[:$1]] se na ostatních wiki nepoužívá.",
+    "globalusage-on-wiki": "Využití na $2",
+    "globalusage-of-file": "Tento soubor využívají následující wiki:",
+    "globalusage-more": "Zobrazit [[{{#Special:GlobalUsage}}/$1|další globální využití]] tohoto souboru.",
+    "globalusage-filterlocal": "Nezobrazovat místní využití"
+}

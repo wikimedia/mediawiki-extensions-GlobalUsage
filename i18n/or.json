@@ -1,0 +1,18 @@
+{
+    "@metadata": {
+        "authors": [
+            "Jose77",
+            "Psubhashish"
+        ]
+    },
+    "globalusage": "ଜଗତ ଫାଇଲ ବ୍ୟବହାର",
+    "globalusage-for": "\"$1\" ପାଇଁ ଜଗତ ଫାଇଲ ବ୍ୟବହାର",
+    "globalusage-desc": "ଜଗତ ଫାଇଲ ବ୍ୟବହାର ନିମନ୍ତେ [[Special:GlobalUsage|ବିଶେଷ ପୃଷ୍ଠା]]",
+    "globalusage-ok": "ଖୋଜିବେ",
+    "globalusage-text": "ଜଗତ ସାରା ଫାଇଲଟିର ବ୍ୟବହର ଖୋଜିବେ",
+    "globalusage-no-results": "[[:$1]] ବାକି ଉଇକିରେ ବ୍ୟବହାର ହୋଇନାହିଁ ।",
+    "globalusage-on-wiki": "$2ରେ ବ୍ୟବହାର",
+    "globalusage-of-file": "ତଳଲିଖିତ ଉଇକିସବୁ ଏହି ଫାଇଲଟିକୁ ବ୍ୟବହାର କରିଥାନ୍ତି:",
+    "globalusage-more": "ଏହି ଫାଇଲଟିର [[{{#Special:GlobalUsage}}/$1|ସାରା ଜଗତରେ ଅଧିକ ବ୍ୟବହାର]] ଦେଖନ୍ତୁ ।",
+    "globalusage-filterlocal": "ସ୍ଥାନୀୟ ବ୍ୟବାହର ଦେଖାନ୍ତୁ ନାହିଁ"
+}

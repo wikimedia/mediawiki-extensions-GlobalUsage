@@ -1,0 +1,18 @@
+{
+    "@metadata": {
+        "authors": [
+            "Mikullovci11",
+            "Olsi"
+        ]
+    },
+    "globalusage": "Përdorimi global i skedës",
+    "globalusage-for": "Përdorimi global për \"$1\"",
+    "globalusage-desc": "[[Special:GlobalUsage|Faqe speciale]] për të parë përdorimin global të skedës",
+    "globalusage-ok": "Kërko",
+    "globalusage-text": "Kërkoni përdorim global të skedës",
+    "globalusage-no-results": "[[:$1]] nuk është përdorur në wiki-t e tjerë.",
+    "globalusage-on-wiki": "Përdorimi në $2",
+    "globalusage-of-file": "Wiki-t e tjerë në vijim e përdorin këtë skedë:",
+    "globalusage-more": "Shikoni [[{{#Special:GlobalUsage}}/$1|më shumë përdorim global]] të kësaj skede.",
+    "globalusage-filterlocal": "Mos tregoni përdorimin lokal"
+}

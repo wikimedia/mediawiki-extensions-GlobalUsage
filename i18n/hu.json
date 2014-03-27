@@ -1,0 +1,19 @@
+{
+    "@metadata": {
+        "authors": [
+            "Dani",
+            "Glanthor Reviol",
+            "Misibacsi"
+        ]
+    },
+    "globalusage": "Globális fájlhasználat",
+    "globalusage-for": "„$1” globális használata",
+    "globalusage-desc": "[[Special:GlobalUsage|Speciális lap]] globális fájlhasználat megjelenítésére",
+    "globalusage-ok": "Keresés",
+    "globalusage-text": "Fájlhasználat globális keresése",
+    "globalusage-no-results": "A(z) [[:$1]] fájl nincs más wikiken használva.",
+    "globalusage-on-wiki": "Használata itt: $2",
+    "globalusage-of-file": "A következő wikik használják ezt a fájlt:",
+    "globalusage-more": "A fájl [[{{#Special:GlobalUsage}}/$1|globális használatának]]  megtekintése",
+    "globalusage-filterlocal": "Ne mutassa a helyi használatot"
+}

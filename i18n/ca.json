@@ -1,0 +1,20 @@
+{
+    "@metadata": {
+        "authors": [
+            "Davidpar",
+            "Jordi Roqué",
+            "SMP",
+            "Vriullop"
+        ]
+    },
+    "globalusage": "Ús global del fitxer",
+    "globalusage-for": "Ús global per «$1»",
+    "globalusage-desc": "[[Special:GlobalUsage|Pàgina especial]] per a veure l'ús global del fitxer",
+    "globalusage-ok": "Cerca",
+    "globalusage-text": "Cerca l'ús global del fitxer.",
+    "globalusage-no-results": "[[:$1]] no s'utilitza en altres wikis.",
+    "globalusage-on-wiki": "Utilització a $2",
+    "globalusage-of-file": "Utilització d'aquest fitxer en altres wikis:",
+    "globalusage-more": "Vegeu [[{{#Special:GlobalUsage}}/$1|més usos globals]] d'aquest fitxer.",
+    "globalusage-filterlocal": "No mostris l'ús local"
+}

@@ -1,0 +1,17 @@
+{
+    "@metadata": {
+        "authors": [
+            "Purodha"
+        ]
+    },
+    "globalusage": "Jemeinsam jebruch Dateie",
+    "globalusage-for": "De Dattei „$1“ weed jemeinsam jebruch",
+    "globalusage-desc": "[[Special:GlobalUsage|{{int:nstab-special}}]] för jemeinsam jebruch Dateie ze zeije.",
+    "globalusage-ok": "Söhk!",
+    "globalusage-text": "Söhk noh jemeinsam jebruch Datteie.",
+    "globalusage-no-results": "[[:$1]] weed in ander Wikis nit jebruch.",
+    "globalusage-on-wiki": "Der Jebruch op $2",
+    "globalusage-of-file": "Heh di ander Wikis bruche di Dattei:",
+    "globalusage-more": "Loor donoh, [[{{#Special:GlobalUsage}}/$1|woh heh di Dattei söns jebruch weed]].",
+    "globalusage-filterlocal": "Donn nix aanzeije doh drövver, wi di Dattei heh em Wiki jebruch weed"
+}

@@ -1,0 +1,21 @@
+{
+    "@metadata": {
+        "authors": [
+            "Bennylin",
+            "Farras",
+            "IvanLanin",
+            "Kenrick95",
+            "Rex"
+        ]
+    },
+    "globalusage": "Penggunaan berkas global",
+    "globalusage-for": "Penggunaan global untuk \"$1\"",
+    "globalusage-desc": "[[Special:GlobalUsage|Halaman istimewa]] untuk melihat penggunaan berkas secara global",
+    "globalusage-ok": "Cari",
+    "globalusage-text": "Cari penggunaan berkas secara global.",
+    "globalusage-no-results": "[[:$1]] tidak digunakan di wiki lain.",
+    "globalusage-on-wiki": "Penggunaan pada $2",
+    "globalusage-of-file": "Wiki lain berikut menggunakan berkas ini:",
+    "globalusage-more": "Lihat [[{{#Special:GlobalUsage}}/$1|lebih banyak penggunaan global]] dari berkas ini.",
+    "globalusage-filterlocal": "Jangan tunjukkan penggunaan lokal"
+}

@@ -1,0 +1,18 @@
+{
+    "@metadata": {
+        "authors": [
+            "Joseph",
+            "Vito Genovese"
+        ]
+    },
+    "globalusage": "Küresel dosya kullanımı",
+    "globalusage-for": "\"$1\" için küresel kullanım",
+    "globalusage-desc": "Küresel dosya kullanımını görmek için [[Special:GlobalUsage|özel sayfa]]",
+    "globalusage-ok": "Ara",
+    "globalusage-text": "Küresel dosya kullanımını ara.",
+    "globalusage-no-results": "[[:$1]] diğer vikilerde kullanılmıyor.",
+    "globalusage-on-wiki": "$2 üzerinde [[:File:$1|$1]] adlı dosyanın kullanımı",
+    "globalusage-of-file": "Bu dosya aşağıdaki diğer vikiler tarafından kullanılmaktadır:",
+    "globalusage-more": "Bu dosyanın [[{{#Special:GlobalUsage}}/$1|daha fazla küresel kullanımını]] gör.",
+    "globalusage-filterlocal": "Yerel kullanımı gösterme"
+}

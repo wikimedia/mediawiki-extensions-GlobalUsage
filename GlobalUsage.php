@@ -41,10 +41,11 @@ $wgExtensionCredits['specialpage'][] = array(
 	'author' => 'Bryan Tong Minh',
 	'descriptionmsg' => 'globalusage-desc',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:GlobalUsage',
-	'version' => '2.0',
+	'version' => '2.1.0',
 );
 
 // Internationlization files
+$wgMessagesDirs['GlobalUsage'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['GlobalUsage'] = $dir . 'GlobalUsage.i18n.php';
 $wgExtensionMessagesFiles['GlobalUsageAliases'] = $dir . 'GlobalUsage.alias.php';
 

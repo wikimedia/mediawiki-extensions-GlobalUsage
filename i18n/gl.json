@@ -1,0 +1,18 @@
+{
+    "@metadata": {
+        "authors": [
+            "Toliño",
+            "Xosé"
+        ]
+    },
+    "globalusage": "Uso global do ficheiro",
+    "globalusage-for": "Uso global de \"$1\"",
+    "globalusage-desc": "[[Special:GlobalUsage|Páxina especial]] para ver o uso global dun ficheiro",
+    "globalusage-ok": "Procurar",
+    "globalusage-text": "Procurar o uso global do ficheiro",
+    "globalusage-no-results": "\"[[:$1]]\" non se emprega noutros wikis.",
+    "globalusage-on-wiki": "Uso en $2",
+    "globalusage-of-file": "Os seguintes wikis empregan esta imaxe:",
+    "globalusage-more": "Ollar [[{{#Special:GlobalUsage}}/$1|o uso global]] deste ficheiro.",
+    "globalusage-filterlocal": "Non mostrar o uso local"
+}

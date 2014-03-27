@@ -1,0 +1,18 @@
+{
+    "@metadata": {
+        "authors": [
+            "Minh Nguyen",
+            "Vinhtantran"
+        ]
+    },
+    "globalusage": "Sử dụng tập tin toàn cục",
+    "globalusage-for": "Sử dụng tập tin toàn cục của “$1”",
+    "globalusage-desc": "[[Special:GlobalUsage|Trang đặc biệt]] để xem tập tin này đang dùng ở đâu trên toàn hệ thống",
+    "globalusage-ok": "Tìm kiếm",
+    "globalusage-text": "Tìm trang dùng tập tin toàn cục",
+    "globalusage-no-results": "[[:$1]] không được sử dụng tại các wiki khác.",
+    "globalusage-on-wiki": "Trang sử dụng tại $2",
+    "globalusage-of-file": "Các wiki sau đang sử dụng tập tin này:",
+    "globalusage-more": "Xem tập tin này [[{{#Special:GlobalUsage}}/$1|đang dùng ở đâu toàn hệ thống]].",
+    "globalusage-filterlocal": "Ẩn trang nội bộ sử dụng"
+}

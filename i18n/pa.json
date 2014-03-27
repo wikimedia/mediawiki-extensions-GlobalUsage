@@ -1,0 +1,17 @@
+{
+    "@metadata": {
+        "authors": [
+            "Babanwalia"
+        ]
+    },
+    "globalusage": "ਫ਼ਾਈਲ ਦੀ ਵਿਆਪਕ ਵਰਤੋਂ",
+    "globalusage-for": "\"$1\" ਲਈ ਵਿਆਪਕ ਵਰਤੋਂ",
+    "globalusage-desc": "ਫ਼ਾਈਲ ਦੀ ਵਿਆਪਕ ਵਰਤੋਂ ਵੇਖਣ ਲਈ [[Special:GlobalUsage|ਖ਼ਾਸ ਸਫ਼ਾ]]",
+    "globalusage-ok": "ਖੋਜ",
+    "globalusage-text": "ਫ਼ਾਈਲ ਦੀ ਵਿਆਪਕ ਵਰਤੋਂ ਖੋਜੋ",
+    "globalusage-no-results": "[[:$1]] ਹੋਰ ਵਿਕੀਆਂ 'ਤੇ ਨਹੀਂ ਵਰਤਿਆ ਗਿਆ।",
+    "globalusage-on-wiki": "$2 ਉੱਤੇ ਵਰਤੋਂ",
+    "globalusage-of-file": "ਇਸ ਫ਼ਾਈਲ ਨੂੰ ਹੋਰ ਹੇਠ ਲਿਖੇ ਵਿਕੀ ਵਰਤਦੇ ਹਨ:",
+    "globalusage-more": "ਇਸ ਫ਼ਾਈਲ ਦੀ [[{{#Special:GlobalUsage}}/$1|ਹੋਰ ਵਿਆਪਕ ਵਰਤੋਂ]] ਵੇਖੋ।",
+    "globalusage-filterlocal": "ਸਥਾਨਕ ਵਰਤੋਂ ਨਾ ਵਿਖਾਓ"
+}

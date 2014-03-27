@@ -1,0 +1,17 @@
+{
+    "@metadata": {
+        "authors": [
+            "Fulup"
+        ]
+    },
+    "globalusage": "Implij hollek ar restr",
+    "globalusage-for": "Implij hollek evit \"$1\"",
+    "globalusage-desc": "[[Special:GlobalUsage|Pajenn dibar]] da welet implij hollek ur skeudenn",
+    "globalusage-ok": "Klask",
+    "globalusage-text": "Klask implij hollek ar restr",
+    "globalusage-no-results": "Ne reer ket gant [[:$1]] war wikioù all.",
+    "globalusage-on-wiki": "Implij war $2",
+    "globalusage-of-file": "Ober a ra ar wikioù da-heul gant ar restr-mañ :",
+    "globalusage-more": "Gwelet [[{{#Special:GlobalUsage}}/$1|muioc'h eus implij hollek]] ar restr-mañ.",
+    "globalusage-filterlocal": "Arabat diskouez an implij lec'hel"
+}

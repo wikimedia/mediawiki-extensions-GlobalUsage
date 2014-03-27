@@ -1,0 +1,17 @@
+{
+    "@metadata": {
+        "authors": [
+            "Hanberke"
+        ]
+    },
+    "globalusage": "Global faýl ulanyşy",
+    "globalusage-for": "\"$1\" üçin global ulanyş",
+    "globalusage-desc": "Global faýl ulanyşyny görmek üçin [[Special:GlobalUsage|ýörite sahypa]]",
+    "globalusage-ok": "Gözle",
+    "globalusage-text": "Global faýl ulanyşyny gözle",
+    "globalusage-no-results": "[[:$1]] başga wikilerde ulanylmaýar.",
+    "globalusage-on-wiki": "$2 sahypasynda ulanyş",
+    "globalusage-of-file": "Bu faýl aşakdaky beýleki wikiler tarapyndan ulanylýar:",
+    "globalusage-more": "Bu faýlyň [[{{#Special:GlobalUsage}}/$1|global ulanyşyny]] görkez.",
+    "globalusage-filterlocal": "Ýerli ulanyşy görkezme"
+}
