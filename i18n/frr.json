@@ -4,5 +4,14 @@
             "Murma174"
         ]
     },
-    "globalusage": "Globaal brük faan datein"
+    "globalusage": "Globaal brük faan datein",
+    "globalusage-for": "Globaal brük faan \"$1\"",
+    "globalusage-desc": "[[Special:GlobalUsage|Spezial-sidj]], am di globaal brük faan en datei uuntuwisin",
+    "globalusage-ok": "Schük",
+    "globalusage-text": "Efter globaal brük faan detdiar datei schük",
+    "globalusage-no-results": "[[:$1]] woort ei üüb ööder Wikis brükt.",
+    "globalusage-on-wiki": "Brük üüb $2",
+    "globalusage-of-file": "Jodiar ööder Wikis brük detdiar datei:",
+    "globalusage-more": "[[{{#Special:GlobalUsage}}/$1|Muar globaal brük]] faan detdiar datei.",
+    "globalusage-filterlocal": "Lokaal datei brük ei uunwise"
 }
