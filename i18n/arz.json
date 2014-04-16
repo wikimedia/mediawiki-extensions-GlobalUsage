@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Meno25"
-        ]
-    },
-    "globalusage": "استخدام الملف العام",
-    "globalusage-desc": "[[Special:GlobalUsage|صفحة خاصة]] لرؤية استخدام الملف العام",
-    "globalusage-ok": "بحث",
-    "globalusage-text": "بحث استخدام الملف العام"
+	"@metadata": {
+		"authors": [
+			"Meno25"
+		]
+	},
+	"globalusage": "استخدام الملف العام",
+	"globalusage-desc": "[[Special:GlobalUsage|صفحة خاصة]] لرؤية استخدام الملف العام",
+	"globalusage-ok": "بحث",
+	"globalusage-text": "بحث استخدام الملف العام"
 }

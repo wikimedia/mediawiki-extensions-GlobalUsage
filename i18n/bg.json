@@ -1,17 +1,17 @@
 {
-    "@metadata": {
-        "authors": [
-            "DCLXVI",
-            "Turin"
-        ]
-    },
-    "globalusage": "Глобално използване на файл",
-    "globalusage-for": "Обща употреба на \"$1\"",
-    "globalusage-desc": "[[Special:GlobalUsage|Специална страница]] за преглед на глобалното използване на файл",
-    "globalusage-ok": "Търсене",
-    "globalusage-text": "Търсене за глобалното използване на файл.",
-    "globalusage-no-results": "[[:$1]] не се използва в други уикита.",
-    "globalusage-on-wiki": "Употреба в $2",
-    "globalusage-of-file": "Този файл се използва от следните други уикита:",
-    "globalusage-filterlocal": "Без показване на локалната употреба"
+	"@metadata": {
+		"authors": [
+			"DCLXVI",
+			"Turin"
+		]
+	},
+	"globalusage": "Глобално използване на файл",
+	"globalusage-for": "Обща употреба на \"$1\"",
+	"globalusage-desc": "[[Special:GlobalUsage|Специална страница]] за преглед на глобалното използване на файл",
+	"globalusage-ok": "Търсене",
+	"globalusage-text": "Търсене за глобалното използване на файл.",
+	"globalusage-no-results": "[[:$1]] не се използва в други уикита.",
+	"globalusage-on-wiki": "Употреба в $2",
+	"globalusage-of-file": "Този файл се използва от следните други уикита:",
+	"globalusage-filterlocal": "Без показване на локалната употреба"
 }

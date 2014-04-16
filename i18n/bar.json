@@ -1,12 +1,12 @@
 {
-    "@metadata": {
-        "authors": [
-            "Man77",
-            "Mucalexx"
-        ]
-    },
-    "globalusage": "Globale Dateinutzung",
-    "globalusage-desc": "[[Special:GlobalUsage|Spezialseitn]], de d'globale Vawendung vu dea Datei ãnzoagt",
-    "globalusage-ok": "Suacher",
-    "globalusage-text": "Globale Suach nåch da Dateivawendung"
+	"@metadata": {
+		"authors": [
+			"Man77",
+			"Mucalexx"
+		]
+	},
+	"globalusage": "Globale Dateinutzung",
+	"globalusage-desc": "[[Special:GlobalUsage|Spezialseitn]], de d'globale Vawendung vu dea Datei ãnzoagt",
+	"globalusage-ok": "Suacher",
+	"globalusage-text": "Globale Suach nåch da Dateivawendung"
 }

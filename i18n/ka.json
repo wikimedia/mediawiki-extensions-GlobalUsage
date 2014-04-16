@@ -1,20 +1,20 @@
 {
-    "@metadata": {
-        "authors": [
-            "BRUTE",
-            "David1010",
-            "Dawid Deutschland",
-            "გიორგიმელა"
-        ]
-    },
-    "globalusage": "ფაილის გლობალური გამოყენება",
-    "globalusage-for": "გლობალური გამოყენება \"$1\"-თვის",
-    "globalusage-desc": "[[Special:GlobalUsage|სპეციალური გვერდი]] ფაილის გლობალური გამოყენების სანახავად",
-    "globalusage-ok": "ძიება",
-    "globalusage-text": "მოიძიეთ ფაილის გლობალური გამოყენება",
-    "globalusage-no-results": "[[:$1]] არ გამოიყენება სხვა ვიკიპედიებში.",
-    "globalusage-on-wiki": "გამოყენება $2-ში",
-    "globalusage-of-file": "ეს ფაილი გამოიყენება შემდეგ ვიკებში:",
-    "globalusage-more": "იხილეთ, ამ ფაილის [[{{#Special:GlobalUsage}}/$1|გლობალური გამოყენება]].",
-    "globalusage-filterlocal": "არ აჩვენოთ ლოკალური გამოყენება"
+	"@metadata": {
+		"authors": [
+			"BRUTE",
+			"David1010",
+			"Dawid Deutschland",
+			"გიორგიმელა"
+		]
+	},
+	"globalusage": "ფაილის გლობალური გამოყენება",
+	"globalusage-for": "გლობალური გამოყენება \"$1\"-თვის",
+	"globalusage-desc": "[[Special:GlobalUsage|სპეციალური გვერდი]] ფაილის გლობალური გამოყენების სანახავად",
+	"globalusage-ok": "ძიება",
+	"globalusage-text": "მოიძიეთ ფაილის გლობალური გამოყენება",
+	"globalusage-no-results": "[[:$1]] არ გამოიყენება სხვა ვიკიპედიებში.",
+	"globalusage-on-wiki": "გამოყენება $2-ში",
+	"globalusage-of-file": "ეს ფაილი გამოიყენება შემდეგ ვიკებში:",
+	"globalusage-more": "იხილეთ, ამ ფაილის [[{{#Special:GlobalUsage}}/$1|გლობალური გამოყენება]].",
+	"globalusage-filterlocal": "არ აჩვენოთ ლოკალური გამოყენება"
 }

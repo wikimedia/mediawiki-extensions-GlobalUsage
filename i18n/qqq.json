@@ -1,26 +1,26 @@
 {
-    "@metadata": {
-        "authors": [
-            "Hamilton Abreu",
-            "Jon Harald Søby",
-            "Nghtwlkr",
-            "Purodha",
-            "Raymond",
-            "Shirayuki",
-            "The Evil IP address",
-            "Umherirrender",
-            "Vriullop",
-            "Yekrats"
-        ]
-    },
-    "globalusage": "{{doc-special|GlobalUsage}}\nHeader of a section that lists all the places where one shared file has been used. \"Global\" refers to the usage, not to the file. \"File\" is singular. Used while viewing the file description page ([[commons:File:Triangle.Right.ly.png|example at Commons]]). Appears at the top of the page as a link to a section anchor, and at the bottom as the section header.",
-    "globalusage-for": "Title of [[Special:GlobalUsage]]\n* $1 - name of the searched file, with namespace",
-    "globalusage-desc": "{{desc|name=Global Usage|url=http://www.mediawiki.org/wiki/Extension:GlobalUsage}}",
-    "globalusage-ok": "Button on Special:GlobalUsage.\n{{Identical|Search}}",
-    "globalusage-text": "Label on [[Special:GlobalUsage]]",
-    "globalusage-no-results": "Used for empty result on [[Special:GlobalUsage]]\n* $1 - name of the file (with namespace)",
-    "globalusage-on-wiki": "Shown in the list of global usages.\n\nExample: [[Commons:Special:GlobalUsage/Example.jpg]] and [[Commons:File:Example.jpg]]\n\nParameters:\n* $1 - (Unused) the filename\n* $2 - the project name given as a domain, e.g. en.wikipedia.org",
-    "globalusage-of-file": "Used on an image page.\n\nThe number of following wikis is unknown. By an empty result, no message is shown.",
-    "globalusage-more": "Used on an image page, when more global usage results are available. Example: [[Commons:File:Example.jpg]]\n* $1 - name of the file (without namespace)",
-    "globalusage-filterlocal": "Filteroption for [[Special:GlobalUsage]]"
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu",
+			"Jon Harald Søby",
+			"Nghtwlkr",
+			"Purodha",
+			"Raymond",
+			"Shirayuki",
+			"The Evil IP address",
+			"Umherirrender",
+			"Vriullop",
+			"Yekrats"
+		]
+	},
+	"globalusage": "{{doc-special|GlobalUsage}}\nHeader of a section that lists all the places where one shared file has been used. \"Global\" refers to the usage, not to the file. \"File\" is singular. Used while viewing the file description page ([[commons:File:Triangle.Right.ly.png|example at Commons]]). Appears at the top of the page as a link to a section anchor, and at the bottom as the section header.",
+	"globalusage-for": "Title of [[Special:GlobalUsage]]\n* $1 - name of the searched file, with namespace",
+	"globalusage-desc": "{{desc|name=Global Usage|url=http://www.mediawiki.org/wiki/Extension:GlobalUsage}}",
+	"globalusage-ok": "Button on Special:GlobalUsage.\n{{Identical|Search}}",
+	"globalusage-text": "Label on [[Special:GlobalUsage]]",
+	"globalusage-no-results": "Used for empty result on [[Special:GlobalUsage]]\n* $1 - name of the file (with namespace)",
+	"globalusage-on-wiki": "Shown in the list of global usages.\n\nExample: [[Commons:Special:GlobalUsage/Example.jpg]] and [[Commons:File:Example.jpg]]\n\nParameters:\n* $1 - (Unused) the filename\n* $2 - the project name given as a domain, e.g. en.wikipedia.org",
+	"globalusage-of-file": "Used on an image page.\n\nThe number of following wikis is unknown. By an empty result, no message is shown.",
+	"globalusage-more": "Used on an image page, when more global usage results are available. Example: [[Commons:File:Example.jpg]]\n* $1 - name of the file (without namespace)",
+	"globalusage-filterlocal": "Filteroption for [[Special:GlobalUsage]]"
 }

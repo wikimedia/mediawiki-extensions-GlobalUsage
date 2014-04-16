@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Smeira"
-        ]
-    },
-    "globalusage": "Ragivigeb Valöpik",
-    "globalusage-desc": "[[Special:GlobalUsage|Pad patik]] ad logön ragivigebi valöpik",
-    "globalusage-ok": "Sukön",
-    "globalusage-text": "Sükön ragivigebi valöpik."
+	"@metadata": {
+		"authors": [
+			"Smeira"
+		]
+	},
+	"globalusage": "Ragivigeb Valöpik",
+	"globalusage-desc": "[[Special:GlobalUsage|Pad patik]] ad logön ragivigebi valöpik",
+	"globalusage-ok": "Sukön",
+	"globalusage-text": "Sükön ragivigebi valöpik."
 }

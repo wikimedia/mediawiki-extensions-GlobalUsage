@@ -1,17 +1,17 @@
 {
-    "@metadata": {
-        "authors": [
-            "Als-Holder"
-        ]
-    },
-    "globalusage": "Wältwyti Dateinutzig",
-    "globalusage-for": "Wältwyti Verwändig vu „$1“",
-    "globalusage-desc": "[[Special:GlobalUsage|Spezialsyte]] zu Aazeige, in welene Projäkt d Dateien vun eme gmeinsam gnutzte Repositoriums verwändet wäre",
-    "globalusage-ok": "Sueche",
-    "globalusage-text": "Wältwyt no Dateinutzige sueche",
-    "globalusage-no-results": "[[:$1]] wird nit in andere Wiki brucht.",
-    "globalusage-on-wiki": "Gebruch uf $2",
-    "globalusage-of-file": "Die andere Wikis bruche die Datei:",
-    "globalusage-more": "[[{{#Special:GlobalUsage}}/$1|Wältwyti Verwändig]] vu däre Datei aaluege.",
-    "globalusage-filterlocal": "Kei lokali Dateiverwändig zeige"
+	"@metadata": {
+		"authors": [
+			"Als-Holder"
+		]
+	},
+	"globalusage": "Wältwyti Dateinutzig",
+	"globalusage-for": "Wältwyti Verwändig vu „$1“",
+	"globalusage-desc": "[[Special:GlobalUsage|Spezialsyte]] zu Aazeige, in welene Projäkt d Dateien vun eme gmeinsam gnutzte Repositoriums verwändet wäre",
+	"globalusage-ok": "Sueche",
+	"globalusage-text": "Wältwyt no Dateinutzige sueche",
+	"globalusage-no-results": "[[:$1]] wird nit in andere Wiki brucht.",
+	"globalusage-on-wiki": "Gebruch uf $2",
+	"globalusage-of-file": "Die andere Wikis bruche die Datei:",
+	"globalusage-more": "[[{{#Special:GlobalUsage}}/$1|Wältwyti Verwändig]] vu däre Datei aaluege.",
+	"globalusage-filterlocal": "Kei lokali Dateiverwändig zeige"
 }

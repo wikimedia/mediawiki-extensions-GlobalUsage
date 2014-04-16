@@ -1,18 +1,18 @@
 {
-    "@metadata": {
-        "authors": [
-            "Dbc334",
-            "Eleassar"
-        ]
-    },
-    "globalusage": "Globalna uporaba datoteke",
-    "globalusage-for": "Globalna uporaba za »$1«",
-    "globalusage-desc": "[[Special:GlobalUsage|Posebna stran]] za ogled globalne uporabe datoteke",
-    "globalusage-ok": "Iskanje",
-    "globalusage-text": "Iskanje globalne uporabe datoteke",
-    "globalusage-no-results": "[[:$1]] se ne uporablja na drugih wikijih.",
-    "globalusage-on-wiki": "uporaba na $2",
-    "globalusage-of-file": "To datoteko uporabljajo tudi naslednji wikiji:",
-    "globalusage-more": "Oglejte si [[{{#Special:GlobalUsage}}/$1|globalno uporabo]] te datoteke.",
-    "globalusage-filterlocal": "Ne prikaži lokalne uporabe"
+	"@metadata": {
+		"authors": [
+			"Dbc334",
+			"Eleassar"
+		]
+	},
+	"globalusage": "Globalna uporaba datoteke",
+	"globalusage-for": "Globalna uporaba za »$1«",
+	"globalusage-desc": "[[Special:GlobalUsage|Posebna stran]] za ogled globalne uporabe datoteke",
+	"globalusage-ok": "Iskanje",
+	"globalusage-text": "Iskanje globalne uporabe datoteke",
+	"globalusage-no-results": "[[:$1]] se ne uporablja na drugih wikijih.",
+	"globalusage-on-wiki": "uporaba na $2",
+	"globalusage-of-file": "To datoteko uporabljajo tudi naslednji wikiji:",
+	"globalusage-more": "Oglejte si [[{{#Special:GlobalUsage}}/$1|globalno uporabo]] te datoteke.",
+	"globalusage-filterlocal": "Ne prikaži lokalne uporabe"
 }

@@ -1,17 +1,17 @@
 {
-    "@metadata": {
-        "authors": [
-            "Veeven"
-        ]
-    },
-    "globalusage": "సార్వత్రిక ఫైలు వాడుక",
-    "globalusage-for": "\"$1\" యొక్క సార్వత్రిక వాడుక",
-    "globalusage-desc": "సార్వత్రిక ఫైలు వాడుకని చూడడానికి [[Special:GlobalUsage|ప్రత్యేక పేజీ]]",
-    "globalusage-ok": "వెతుకు",
-    "globalusage-text": "సార్వత్రిక ఫైళ్ళ వాడుకలో వెతకండి.",
-    "globalusage-no-results": "[[:$1]]ని ఇతర వికీలలో ఉపయోగించట్లేదు.",
-    "globalusage-on-wiki": "$2 లో వాడుక",
-    "globalusage-of-file": "ఈ దస్త్రాన్ని ఈ క్రింది ఇతర వికీలు ఉపయోగిస్తున్నాయి:",
-    "globalusage-more": "ఈ దస్త్రపు [[{{#Special:GlobalUsage}}/$1|సార్వత్రిక వాడుక]]ని చూడండి.",
-    "globalusage-filterlocal": "స్థానిక వాడుకని చూపించకు"
+	"@metadata": {
+		"authors": [
+			"Veeven"
+		]
+	},
+	"globalusage": "సార్వత్రిక ఫైలు వాడుక",
+	"globalusage-for": "\"$1\" యొక్క సార్వత్రిక వాడుక",
+	"globalusage-desc": "సార్వత్రిక ఫైలు వాడుకని చూడడానికి [[Special:GlobalUsage|ప్రత్యేక పేజీ]]",
+	"globalusage-ok": "వెతుకు",
+	"globalusage-text": "సార్వత్రిక ఫైళ్ళ వాడుకలో వెతకండి.",
+	"globalusage-no-results": "[[:$1]]ని ఇతర వికీలలో ఉపయోగించట్లేదు.",
+	"globalusage-on-wiki": "$2 లో వాడుక",
+	"globalusage-of-file": "ఈ దస్త్రాన్ని ఈ క్రింది ఇతర వికీలు ఉపయోగిస్తున్నాయి:",
+	"globalusage-more": "ఈ దస్త్రపు [[{{#Special:GlobalUsage}}/$1|సార్వత్రిక వాడుక]]ని చూడండి.",
+	"globalusage-filterlocal": "స్థానిక వాడుకని చూపించకు"
 }

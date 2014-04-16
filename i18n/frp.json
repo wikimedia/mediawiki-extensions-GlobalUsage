@@ -1,17 +1,17 @@
 {
-    "@metadata": {
-        "authors": [
-            "ChrisPtDe"
-        ]
-    },
-    "globalusage": "Usâjo globâl du fichiér",
-    "globalusage-for": "Usâjo globâl por « $1 »",
-    "globalusage-desc": "[[Special:GlobalUsage|Pâge spèciâla]] por vêre l’usâjo globâl d’un fichiér.",
-    "globalusage-ok": "Rechèrchiér",
-    "globalusage-text": "Rechèrchiér l’usâjo globâl du fichiér",
-    "globalusage-no-results": "[[:$1]] est pas utilisâ sur d’ôtros vouiquis.",
-    "globalusage-on-wiki": "Usâjo dessus $2",
-    "globalusage-of-file": "Cetos ôtros vouiquis utilisont ceti fichiér :",
-    "globalusage-more": "Vêre [[{{#Special:GlobalUsage}}/$1|més d’usâjos globâls]] de ceti fichiér.",
-    "globalusage-filterlocal": "Pas montrar l’usâjo local"
+	"@metadata": {
+		"authors": [
+			"ChrisPtDe"
+		]
+	},
+	"globalusage": "Usâjo globâl du fichiér",
+	"globalusage-for": "Usâjo globâl por « $1 »",
+	"globalusage-desc": "[[Special:GlobalUsage|Pâge spèciâla]] por vêre l’usâjo globâl d’un fichiér.",
+	"globalusage-ok": "Rechèrchiér",
+	"globalusage-text": "Rechèrchiér l’usâjo globâl du fichiér",
+	"globalusage-no-results": "[[:$1]] est pas utilisâ sur d’ôtros vouiquis.",
+	"globalusage-on-wiki": "Usâjo dessus $2",
+	"globalusage-of-file": "Cetos ôtros vouiquis utilisont ceti fichiér :",
+	"globalusage-more": "Vêre [[{{#Special:GlobalUsage}}/$1|més d’usâjos globâls]] de ceti fichiér.",
+	"globalusage-filterlocal": "Pas montrar l’usâjo local"
 }

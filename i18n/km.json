@@ -1,13 +1,13 @@
 {
-    "@metadata": {
-        "authors": [
-            "Chhorran",
-            "Lovekhmer",
-            "Thearith"
-        ]
-    },
-    "globalusage": "បម្រើបម្រាស់ឯកសារជាសាកល",
-    "globalusage-desc": "[[Special:GlobalUsage|ទំព័រពិសេស]]ដើម្បីមើលបម្រើបម្រាស់ឯកសារជាសាកល",
-    "globalusage-ok": "ស្វែងរក",
-    "globalusage-text": "ស្វែងរកបម្រើបម្រាស់ឯកសារជាសាកល។"
+	"@metadata": {
+		"authors": [
+			"Chhorran",
+			"Lovekhmer",
+			"Thearith"
+		]
+	},
+	"globalusage": "បម្រើបម្រាស់ឯកសារជាសាកល",
+	"globalusage-desc": "[[Special:GlobalUsage|ទំព័រពិសេស]]ដើម្បីមើលបម្រើបម្រាស់ឯកសារជាសាកល",
+	"globalusage-ok": "ស្វែងរក",
+	"globalusage-text": "ស្វែងរកបម្រើបម្រាស់ឯកសារជាសាកល។"
 }

@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "Klenje"
-        ]
-    },
-    "globalusage-ok": "Cîr",
-    "globalusage-on-wiki": "Ûs in $2",
-    "globalusage-of-file": "Chestis altris vichis a doprin chest file:"
+	"@metadata": {
+		"authors": [
+			"Klenje"
+		]
+	},
+	"globalusage-ok": "Cîr",
+	"globalusage-on-wiki": "Ûs in $2",
+	"globalusage-of-file": "Chestis altris vichis a doprin chest file:"
 }

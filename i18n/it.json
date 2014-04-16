@@ -1,19 +1,19 @@
 {
-    "@metadata": {
-        "authors": [
-            "Darth Kule",
-            "Gianfranco",
-            "Nemo bis"
-        ]
-    },
-    "globalusage": "Uso globale del file",
-    "globalusage-for": "Uso globale di \"$1\"",
-    "globalusage-desc": "[[Special:GlobalUsage|Pagina speciale]] per vedere l'utilizzo globale dei file",
-    "globalusage-ok": "Ricerca",
-    "globalusage-text": "Mostra l'uso globale del file",
-    "globalusage-no-results": "[[:$1]] non è usato in altri wiki.",
-    "globalusage-on-wiki": "Usato nelle seguenti pagine di $2:",
-    "globalusage-of-file": "Anche i wiki seguenti usano questo file:",
-    "globalusage-more": "Visualizza l'[[{{#Special:GlobalUsage}}/$1|utilizzo globale]] di questo file.",
-    "globalusage-filterlocal": "Non mostrare l'uso locale"
+	"@metadata": {
+		"authors": [
+			"Darth Kule",
+			"Gianfranco",
+			"Nemo bis"
+		]
+	},
+	"globalusage": "Uso globale del file",
+	"globalusage-for": "Uso globale di \"$1\"",
+	"globalusage-desc": "[[Special:GlobalUsage|Pagina speciale]] per vedere l'utilizzo globale dei file",
+	"globalusage-ok": "Ricerca",
+	"globalusage-text": "Mostra l'uso globale del file",
+	"globalusage-no-results": "[[:$1]] non è usato in altri wiki.",
+	"globalusage-on-wiki": "Usato nelle seguenti pagine di $2:",
+	"globalusage-of-file": "Anche i wiki seguenti usano questo file:",
+	"globalusage-more": "Visualizza l'[[{{#Special:GlobalUsage}}/$1|utilizzo globale]] di questo file.",
+	"globalusage-filterlocal": "Non mostrare l'uso locale"
 }

@@ -1,12 +1,12 @@
 {
-    "@metadata": {
-        "authors": [
-            "Bangin",
-            "Gomada"
-        ]
-    },
-    "globalusage": "Bikaranîna gerdûnî ya pelê",
-    "globalusage-ok": "Lê bigere",
-    "globalusage-on-wiki": "Bikaranîna di $2 de",
-    "globalusage-of-file": "Ev wîkiyên di rêzê de vê pelê bi kar tînin:"
+	"@metadata": {
+		"authors": [
+			"Bangin",
+			"Gomada"
+		]
+	},
+	"globalusage": "Bikaranîna gerdûnî ya pelê",
+	"globalusage-ok": "Lê bigere",
+	"globalusage-on-wiki": "Bikaranîna di $2 de",
+	"globalusage-of-file": "Ev wîkiyên di rêzê de vê pelê bi kar tînin:"
 }

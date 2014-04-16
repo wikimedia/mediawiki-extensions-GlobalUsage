@@ -1,19 +1,19 @@
 {
-    "@metadata": {
-        "authors": [
-            "Kghbln",
-            "Raimond Spekking",
-            "Umherirrender"
-        ]
-    },
-    "globalusage": "Globale Dateiverwendung",
-    "globalusage-for": "Globale Dateiverwendung für „$1“",
-    "globalusage-desc": "Ergänzt eine [[Special:GlobalUsage|Spezialseite]] mit der angezeigt werden kann, in welchen Projekten eine Datei aus dem gemeinsam genutzten Repositoriums verwendet wird",
-    "globalusage-ok": "Suchen",
-    "globalusage-text": "Globale Suche nach der Dateiverwendung",
-    "globalusage-no-results": "[[:$1]] wird nicht auf anderen Wikis verwendet.",
-    "globalusage-on-wiki": "Verwendung auf $2",
-    "globalusage-of-file": "Die nachfolgenden anderen Wikis verwenden diese Datei:",
-    "globalusage-more": "[[{{#Special:GlobalUsage}}/$1|Weitere globale Verwendungen]] dieser Datei anschauen.",
-    "globalusage-filterlocal": "Zeige keine lokale Dateiverwendung"
+	"@metadata": {
+		"authors": [
+			"Kghbln",
+			"Raimond Spekking",
+			"Umherirrender"
+		]
+	},
+	"globalusage": "Globale Dateiverwendung",
+	"globalusage-for": "Globale Dateiverwendung für „$1“",
+	"globalusage-desc": "Ergänzt eine [[Special:GlobalUsage|Spezialseite]] mit der angezeigt werden kann, in welchen Projekten eine Datei aus dem gemeinsam genutzten Repositoriums verwendet wird",
+	"globalusage-ok": "Suchen",
+	"globalusage-text": "Globale Suche nach der Dateiverwendung",
+	"globalusage-no-results": "[[:$1]] wird nicht auf anderen Wikis verwendet.",
+	"globalusage-on-wiki": "Verwendung auf $2",
+	"globalusage-of-file": "Die nachfolgenden anderen Wikis verwenden diese Datei:",
+	"globalusage-more": "[[{{#Special:GlobalUsage}}/$1|Weitere globale Verwendungen]] dieser Datei anschauen.",
+	"globalusage-filterlocal": "Zeige keine lokale Dateiverwendung"
 }

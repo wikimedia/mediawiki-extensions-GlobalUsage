@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Manuae"
-        ]
-    },
-    "globalusage-ok": "Suche",
-    "globalusage-more": "Gugg fa [[{{#Special:GlobalUsage}}/$1|waidare Vawendunge]] vunde Dadai."
+	"@metadata": {
+		"authors": [
+			"Manuae"
+		]
+	},
+	"globalusage-ok": "Suche",
+	"globalusage-more": "Gugg fa [[{{#Special:GlobalUsage}}/$1|waidare Vawendunge]] vunde Dadai."
 }

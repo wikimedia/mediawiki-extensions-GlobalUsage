@@ -1,12 +1,12 @@
 {
-    "@metadata": {
-        "authors": [
-            "GreenZeb",
-            "Homo",
-            "Tomasdd"
-        ]
-    },
-    "globalusage": "Visuotinis failo naudojimas",
-    "globalusage-ok": "Ieškoti",
-    "globalusage-no-results": "[[:$1]] nenaudojama kituose Wiki projektuose."
+	"@metadata": {
+		"authors": [
+			"GreenZeb",
+			"Homo",
+			"Tomasdd"
+		]
+	},
+	"globalusage": "Visuotinis failo naudojimas",
+	"globalusage-ok": "Ieškoti",
+	"globalusage-no-results": "[[:$1]] nenaudojama kituose Wiki projektuose."
 }

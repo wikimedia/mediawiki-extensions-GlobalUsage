@@ -1,17 +1,17 @@
 {
-    "@metadata": {
-        "authors": [
-            "Bjankuloski06"
-        ]
-    },
-    "globalusage": "Глобална употреба на податотеката",
-    "globalusage-for": "Глобална употреба на „$1“",
-    "globalusage-desc": "[[Special:GlobalUsage|Специјална страница]] за преглед на глобалната употреба податотеки",
-    "globalusage-ok": "Пребарај",
-    "globalusage-text": "Пребарување на глобалната употреба на податотека",
-    "globalusage-no-results": "[[:$1]] не се користи на други викија.",
-    "globalusage-on-wiki": "Употреба на $2",
-    "globalusage-of-file": "Оваа податотека ја користат и следниве викија:",
-    "globalusage-more": "Погледајте ја [[{{#Special:GlobalUsage}}/$1|останатата глобална употреба]] на податотекава.",
-    "globalusage-filterlocal": "Не прикажувај локална употреба"
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"globalusage": "Глобална употреба на податотеката",
+	"globalusage-for": "Глобална употреба на „$1“",
+	"globalusage-desc": "[[Special:GlobalUsage|Специјална страница]] за преглед на глобалната употреба податотеки",
+	"globalusage-ok": "Пребарај",
+	"globalusage-text": "Пребарување на глобалната употреба на податотека",
+	"globalusage-no-results": "[[:$1]] не се користи на други викија.",
+	"globalusage-on-wiki": "Употреба на $2",
+	"globalusage-of-file": "Оваа податотека ја користат и следниве викија:",
+	"globalusage-more": "Погледајте ја [[{{#Special:GlobalUsage}}/$1|останатата глобална употреба]] на податотекава.",
+	"globalusage-filterlocal": "Не прикажувај локална употреба"
 }

@@ -1,18 +1,18 @@
 {
-    "@metadata": {
-        "authors": [
-            "Les Meloures",
-            "Robby"
-        ]
-    },
-    "globalusage": "Globaalt Benotze vum Fichier",
-    "globalusage-for": "Globale Gebrauch vum \"$1\"",
-    "globalusage-desc": "[[Special:GlobalUsage|Spezialsäit]] fir d'globaalt Benotze vun engem Fichier ze gesinn",
-    "globalusage-ok": "Sichen",
-    "globalusage-text": "Nom globale Benotze vum Fichier sichen.",
-    "globalusage-no-results": "[[:$1]] gëtt net op anere Wikie benotzt.",
-    "globalusage-on-wiki": "Benotzt op $2",
-    "globalusage-of-file": "Dës aner Wikie benotzen dëse Fichier:",
-    "globalusage-more": "Kuckt [[{{#Special:GlobalUsage}}/$1|globale Gebrauch]] vun dësem Fichier.",
-    "globalusage-filterlocal": "Déi lokal Benotzung net weisen"
+	"@metadata": {
+		"authors": [
+			"Les Meloures",
+			"Robby"
+		]
+	},
+	"globalusage": "Globaalt Benotze vum Fichier",
+	"globalusage-for": "Globale Gebrauch vum \"$1\"",
+	"globalusage-desc": "[[Special:GlobalUsage|Spezialsäit]] fir d'globaalt Benotze vun engem Fichier ze gesinn",
+	"globalusage-ok": "Sichen",
+	"globalusage-text": "Nom globale Benotze vum Fichier sichen.",
+	"globalusage-no-results": "[[:$1]] gëtt net op anere Wikie benotzt.",
+	"globalusage-on-wiki": "Benotzt op $2",
+	"globalusage-of-file": "Dës aner Wikie benotzen dëse Fichier:",
+	"globalusage-more": "Kuckt [[{{#Special:GlobalUsage}}/$1|globale Gebrauch]] vun dësem Fichier.",
+	"globalusage-filterlocal": "Déi lokal Benotzung net weisen"
 }

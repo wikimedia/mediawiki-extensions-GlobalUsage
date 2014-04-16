@@ -1,19 +1,19 @@
 {
-    "@metadata": {
-        "authors": [
-            "Rotemliss",
-            "YaronSh",
-            "Yonidebest"
-        ]
-    },
-    "globalusage": "שימוש גלובלי בקבצים",
-    "globalusage-for": "הקישורים לקובץ \"$1\" בכל האתרים",
-    "globalusage-desc": "[[Special:GlobalUsage|דף מיוחד]] להצגת השימוש הגלובלי בקבצים",
-    "globalusage-ok": "חיפוש",
-    "globalusage-text": "חיפוש בשימוש הגלובלי בקבצים.",
-    "globalusage-no-results": "[[:$1]] אינו בשימוש באתרי ויקי אחרים.",
-    "globalusage-on-wiki": "שימוש באתר $2",
-    "globalusage-of-file": "אתרי הוויקי השונים הבאים משתמשים בקובץ זה:",
-    "globalusage-more": "צפייה ב[[{{#Special:GlobalUsage}}/$1|שימושים גלובליים נוספים]] של קובץ זה.",
-    "globalusage-filterlocal": "אין להציג שימוש מקומי"
+	"@metadata": {
+		"authors": [
+			"Rotemliss",
+			"YaronSh",
+			"Yonidebest"
+		]
+	},
+	"globalusage": "שימוש גלובלי בקבצים",
+	"globalusage-for": "הקישורים לקובץ \"$1\" בכל האתרים",
+	"globalusage-desc": "[[Special:GlobalUsage|דף מיוחד]] להצגת השימוש הגלובלי בקבצים",
+	"globalusage-ok": "חיפוש",
+	"globalusage-text": "חיפוש בשימוש הגלובלי בקבצים.",
+	"globalusage-no-results": "[[:$1]] אינו בשימוש באתרי ויקי אחרים.",
+	"globalusage-on-wiki": "שימוש באתר $2",
+	"globalusage-of-file": "אתרי הוויקי השונים הבאים משתמשים בקובץ זה:",
+	"globalusage-more": "צפייה ב[[{{#Special:GlobalUsage}}/$1|שימושים גלובליים נוספים]] של קובץ זה.",
+	"globalusage-filterlocal": "אין להציג שימוש מקומי"
 }

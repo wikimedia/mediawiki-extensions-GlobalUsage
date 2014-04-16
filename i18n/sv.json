@@ -1,21 +1,21 @@
 {
-    "@metadata": {
-        "authors": [
-            "Ainali",
-            "Boivie",
-            "Lejonel",
-            "M.M.S.",
-            "WikiPhoenix"
-        ]
-    },
-    "globalusage": "Global filanvändning",
-    "globalusage-for": "Globalt användande av \"$1\"",
-    "globalusage-desc": "[[Special:GlobalUsage|Specialsida]] för att visa på vilka projekt filer från den gemensamma filservern används.",
-    "globalusage-ok": "Sök",
-    "globalusage-text": "Sök global filanvändning.",
-    "globalusage-no-results": "[[:$1]] används inte på andra wikier.",
-    "globalusage-on-wiki": "Användande av $2",
-    "globalusage-of-file": "Följande andra wikier använder denna fil:",
-    "globalusage-more": "Visa [[{{#Special:GlobalUsage}}/$1|mer globalt användande]] av denna fil.",
-    "globalusage-filterlocal": "Visa inte lokalt användande"
+	"@metadata": {
+		"authors": [
+			"Ainali",
+			"Boivie",
+			"Lejonel",
+			"M.M.S.",
+			"WikiPhoenix"
+		]
+	},
+	"globalusage": "Global filanvändning",
+	"globalusage-for": "Globalt användande av \"$1\"",
+	"globalusage-desc": "[[Special:GlobalUsage|Specialsida]] för att visa på vilka projekt filer från den gemensamma filservern används.",
+	"globalusage-ok": "Sök",
+	"globalusage-text": "Sök global filanvändning.",
+	"globalusage-no-results": "[[:$1]] används inte på andra wikier.",
+	"globalusage-on-wiki": "Användande av $2",
+	"globalusage-of-file": "Följande andra wikier använder denna fil:",
+	"globalusage-more": "Visa [[{{#Special:GlobalUsage}}/$1|mer globalt användande]] av denna fil.",
+	"globalusage-filterlocal": "Visa inte lokalt användande"
 }

@@ -1,18 +1,18 @@
 {
-    "@metadata": {
-        "authors": [
-            "NickK",
-            "Тест"
-        ]
-    },
-    "globalusage": "Глобальне використання файлу",
-    "globalusage-for": "Глобальне використання «$1»",
-    "globalusage-desc": "[[Special:GlobalUsage|Спеціальна сторінка]] для перегляду глобального використання файлу",
-    "globalusage-ok": "Пошук",
-    "globalusage-text": "Пошук глобального використання файлу",
-    "globalusage-no-results": "[[:$1]] не використовується в інших вікі.",
-    "globalusage-on-wiki": "Використання в $2",
-    "globalusage-of-file": "Цей файл використовують такі інші вікі:",
-    "globalusage-more": "Переглянути [[{{#Special:GlobalUsage}}/$1|сторінку глобального використання]] цього файлу.",
-    "globalusage-filterlocal": "Не показувати локальне використання"
+	"@metadata": {
+		"authors": [
+			"NickK",
+			"Тест"
+		]
+	},
+	"globalusage": "Глобальне використання файлу",
+	"globalusage-for": "Глобальне використання «$1»",
+	"globalusage-desc": "[[Special:GlobalUsage|Спеціальна сторінка]] для перегляду глобального використання файлу",
+	"globalusage-ok": "Пошук",
+	"globalusage-text": "Пошук глобального використання файлу",
+	"globalusage-no-results": "[[:$1]] не використовується в інших вікі.",
+	"globalusage-on-wiki": "Використання в $2",
+	"globalusage-of-file": "Цей файл використовують такі інші вікі:",
+	"globalusage-more": "Переглянути [[{{#Special:GlobalUsage}}/$1|сторінку глобального використання]] цього файлу.",
+	"globalusage-filterlocal": "Не показувати локальне використання"
 }

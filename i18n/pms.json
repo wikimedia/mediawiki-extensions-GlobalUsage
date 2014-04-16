@@ -1,18 +1,18 @@
 {
-    "@metadata": {
-        "authors": [
-            "Borichèt",
-            "Dragonòt"
-        ]
-    },
-    "globalusage": "Dovragi global dël file",
-    "globalusage-for": "Usagi global për \"$1\"",
-    "globalusage-desc": "[[Special:GlobalUsage|Pàgina special]] për vëdde ël dovragi global dël file",
-    "globalusage-ok": "Serca",
-    "globalusage-text": "Serca ël dovragi global dël file.",
-    "globalusage-no-results": "[[:$1]] a l'é pa dovrà dzora d'àutre wiki.",
-    "globalusage-on-wiki": "Usagi dzora $2",
-    "globalusage-of-file": "J'àutre wiki sì sota a deuvro st'archivi-sì:",
-    "globalusage-more": "Varda l'[[{{#Special:GlobalUsage}}/$1|usagi global]] dë st'archivi-sì.",
-    "globalusage-filterlocal": "Mosta nen l'usagi local."
+	"@metadata": {
+		"authors": [
+			"Borichèt",
+			"Dragonòt"
+		]
+	},
+	"globalusage": "Dovragi global dël file",
+	"globalusage-for": "Usagi global për \"$1\"",
+	"globalusage-desc": "[[Special:GlobalUsage|Pàgina special]] për vëdde ël dovragi global dël file",
+	"globalusage-ok": "Serca",
+	"globalusage-text": "Serca ël dovragi global dël file.",
+	"globalusage-no-results": "[[:$1]] a l'é pa dovrà dzora d'àutre wiki.",
+	"globalusage-on-wiki": "Usagi dzora $2",
+	"globalusage-of-file": "J'àutre wiki sì sota a deuvro st'archivi-sì:",
+	"globalusage-more": "Varda l'[[{{#Special:GlobalUsage}}/$1|usagi global]] dë st'archivi-sì.",
+	"globalusage-filterlocal": "Mosta nen l'usagi local."
 }
