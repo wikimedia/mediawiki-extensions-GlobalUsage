@@ -164,4 +164,8 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 	public function getVersion() {
 		return __CLASS__ . ': $Id$';
 	}
+
+	public function getCacheMode( $params ) {
+		return 'public';
+	}
 }
