@@ -96,7 +96,7 @@ $specialPageAliases['et'] = array(
 
 /** Persian (فارسی) */
 $specialPageAliases['fa'] = array(
-	'GlobalUsage' => array( 'استفاده_سراسری' ),
+	'GlobalUsage' => array( 'استفادهٔ_سراسری' ),
 );
 
 /** French (français) */
