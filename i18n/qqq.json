@@ -23,5 +23,7 @@
 	"globalusage-on-wiki": "Shown in the list of global usages.\n\nExample: [[Commons:Special:GlobalUsage/Example.jpg]] and [[Commons:File:Example.jpg]]\n\nParameters:\n* $1 - (Unused) the filename\n* $2 - the project name given as a domain, e.g. en.wikipedia.org",
 	"globalusage-of-file": "Used on an image page.\n\nThe number of following wikis is unknown. By an empty result, no message is shown.",
 	"globalusage-more": "Used on an image page, when more global usage results are available. Example: [[Commons:File:Example.jpg]]\n* $1 - name of the file (without namespace)",
-	"globalusage-filterlocal": "Filteroption for [[Special:GlobalUsage]]"
+	"globalusage-filterlocal": "Filteroption for [[Special:GlobalUsage]]",
+	"mostgloballylinkedfiles": "{{doc-special|MostGloballyLinkedFiles}}\nName of the the special that lists files with most usages across all wikis. Global refers to the usage (all wikis, not just current wiki). This is similar to {{msg-mw|mostimages}}, but for the global special page.",
+	"mostgloballylinkedfiles-summary": "{{doc-specialpagesummary|MostGloballyLinkedFiles}}\nGlobal refers to the fact that this takes all wikis into account, not just the current wiki. This is similar to {{msg-mw|mostimages-summary}}, but for the global special page."
 }

@@ -146,4 +146,59 @@ class GlobalUsage {
 			__METHOD__
 		);
 	}
+
+	/**
+	 * Utility function to redirect special pages that are only on the shared repo
+	 *
+	 * Putting here as this can be useful in multiple special page classes.
+	 * This redirects the current page to the same page on the shared repo
+	 * wiki, making sure to use the english name of the special page, in case the
+	 * current wiki uses something other than english for its content language.
+	 *
+	 * @param IContextSource $context $this->getContext() from the special page.
+	 */
+	public static function redirectSpecialPageToSharedRepo( IContextSource $context ) {
+		global $wgGlobalUsageSharedRepoWiki;
+		// Make sure to get the "canonical" page name, and not a translation.
+		$titleText = $context->getTitle()->getDBkey();
+		list( $canonicalName, $subpage ) = SpecialPageFactory::resolveAlias( $titleText );
+		$canonicalName = MWNamespace::getCanonicalName( NS_SPECIAL ) . ':' . $canonicalName;
+		if ( $subpage !== null ) {
+			$canonicalName .= '/' . $subpage;
+		}
+
+		$url = WikiMap::getForeignURL( $wgGlobalUsageSharedRepoWiki, $canonicalName );
+		if ( $url !== false ) {
+			// We have a url
+			$args = $context->getRequest()->getQueryValues();
+			unset( $args['title'] );
+			$url = wfAppendQuery( $url, $args );
+
+			$context->getOutput()->redirect( $url );
+		} else {
+			// WikiMap can't find the url for the shared repo.
+			// Just pretend we don't exist in this case.
+			$context->getOutput()->setStatusCode( 404 );
+			$context->getOutput()->showErrorPage( 'nosuchspecialpage', 'nospecialpagetext' );
+		}
+	}
+
+	/**
+	 * Are we currently on the shared repo? (Utility function)
+	 *
+	 * @note This assumes the user has a single shared repo. If the user has
+	 *   multiple/nested foreign repos, then its unclear what it means to
+	 *   be on the "shared repo". See discussion on bug 23136.
+	 * @return boolean
+	 */
+	public static function onSharedRepo() {
+		global $wgGlobalUsageSharedRepoWiki, $wgGlobalUsageDatabase;
+		if ( !$wgGlobalUsageSharedRepoWiki ) {
+			// backwards compatability with settings from before $wgGlobalUsageSharedRepoWiki
+			// was introduced.
+			return $wgGlobalUsageDatabase === wfWikiID() || !$wgGlobalUsageDatabase;
+		} else {
+			return $wgGlobalUsageSharedRepoWiki === wfWikiID();
+		}
+	}
 }
