@@ -13,6 +13,7 @@ $specialPageAliases = array();
 $specialPageAliases['en'] = array(
 	'GlobalUsage' => array( 'GlobalUsage' ),
 	'MostGloballyLinkedFiles' => array( 'MostGloballyLinkedFiles' ),
+	'GloballyWantedFiles' => array( 'GloballyWantedFiles' ),
 );
 
 /** Arabic (العربية) */

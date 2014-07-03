@@ -201,4 +201,58 @@ class GlobalUsage {
 			return $wgGlobalUsageSharedRepoWiki === wfWikiID();
 		}
 	}
+
+	/**
+	 * Query info for getting wanted files using global image links
+	 *
+	 * Adding a utility method here, as this same query is used in
+	 * two different special page classes.
+	 *
+	 * @return Array Query info array, as a QueryPage would expect.
+	 */
+	public static function getWantedFilesQueryInfo( $wiki = false ) {
+		$qi = array(
+			'tables' => array(
+				'globalimagelinks',
+				'page',
+				'redirect',
+				'img1' => 'image',
+				'img2' => 'image',
+			),
+			'fields' => array(
+				'namespace' => NS_FILE,
+				'title' => 'gil_to',
+				'value' => 'COUNT(*)'
+			),
+			'conds' => array(
+				'img1.img_name' => null,
+				// We also need to exclude file redirects
+				'img2.img_name' => null,
+			 ),
+			'options' => array( 'GROUP BY' => 'gil_to' ),
+			'join_conds' => array(
+				'img1' => array( 'LEFT JOIN',
+					'gil_to = img_name'
+				),
+				'page' => array( 'LEFT JOIN', array(
+					'gil_to = page_title',
+					'page_namespace' => NS_FILE,
+				) ),
+				'redirect' => array( 'LEFT JOIN', array(
+					'page_id = rd_from',
+					'rd_namespace' => NS_FILE,
+					'rd_interwiki' => ''
+				) ),
+				'img2' => array( 'LEFT JOIN',
+					'rd_title = img2.img_name'
+				)
+			)
+		);
+		if ( $wiki !== false ) {
+			// Limit to just one wiki.
+			$qi['conds']['gil_wiki'] = $wiki;
+		}
+
+		return $qi;
+	}
 }

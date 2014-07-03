@@ -57,8 +57,10 @@ $wgAutoloadClasses['GlobalUsageQuery'] = $dir . 'GlobalUsageQuery.php';
 $wgAutoloadClasses['ApiQueryGlobalUsage'] = $dir . 'ApiQueryGlobalUsage.php';
 $wgAutoloadClasses['GlobalUsageCachePurgeJob'] = $dir . 'GlobalUsageCachePurgeJob.php';
 $wgAutoloadClasses['MostGloballyLinkedFilesPage'] = $dir . 'SpecialMostGloballyLinkedFiles.php';
+$wgAutoloadClasses['SpecialGloballyWantedFiles'] = $dir . 'SpecialGloballyWantedFiles.php';
 
 $wgSpecialPages['MostGloballyLinkedFiles'] = 'MostGloballyLinkedFilesPage';
+$wgSpecialPages['GloballyWantedFiles'] = 'SpecialGloballyWantedFiles';
 $wgSpecialPages['GlobalUsage'] = 'SpecialGlobalUsage';
 $wgSpecialPageGroups['GlobalUsage'] = 'media';
 

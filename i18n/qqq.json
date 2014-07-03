@@ -25,5 +25,8 @@
 	"globalusage-more": "Used on an image page, when more global usage results are available. Example: [[Commons:File:Example.jpg]]\n* $1 - name of the file (without namespace)",
 	"globalusage-filterlocal": "Filteroption for [[Special:GlobalUsage]]",
 	"mostgloballylinkedfiles": "{{doc-special|MostGloballyLinkedFiles}}\nName of the the special that lists files with most usages across all wikis. Global refers to the usage (all wikis, not just current wiki). This is similar to {{msg-mw|mostimages}}, but for the global special page.",
-	"mostgloballylinkedfiles-summary": "{{doc-specialpagesummary|MostGloballyLinkedFiles}}\nGlobal refers to the fact that this takes all wikis into account, not just the current wiki. This is similar to {{msg-mw|mostimages-summary}}, but for the global special page."
+	"mostgloballylinkedfiles-summary": "{{doc-specialpagesummary|MostGloballyLinkedFiles}}\nGlobal refers to the fact that this takes all wikis into account, not just the current wiki. This is similar to {{msg-mw|mostimages-summary}}, but for the global special page.",
+	"globallywantedfiles": "{{doc-special|GloballyWantedFiles}}\nName of the the special that lists non-existent files with most usages across all wikis. Global refers to the usage (all wikis, not just current wiki). This is similar to {{msg-mw|wantedfiles}}, but for the global special page.",
+	"globallywantedfiles-summary": "{{doc-specialpagesummary|GloballyWantedFiles}}\nGlobal refers to the fact that this takes all wikis into account, not just the current wiki. This is similar to {{msg-mw|wantedfiles-summary}} or {{msg-mw|wantedfilestext-cat}}, but for the global special page.",
+	"globallywantedfiles-foreign-repo": "Warning shown on top of Special:GloballyWantedFiles (Between the {{msg-mw|perfcachedts}} and {{msg-mw|showingresultsinrange}} messages) if the wiki has a foreign repository enabled."
 }

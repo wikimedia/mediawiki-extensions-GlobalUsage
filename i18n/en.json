@@ -15,5 +15,8 @@
     "globalusage-more": "View [[{{#Special:GlobalUsage}}/$1|more global usage]] of this file.",
     "globalusage-filterlocal": "Do not show local usage",
     "mostgloballylinkedfiles": "Most globally linked files",
-    "mostgloballylinkedfiles-summary": "List of files that have been embedded the highest number of times across all wikis. For the equivalent list that takes into account only usages on {{SITENAME}}, see [[{{#special:MostLinkedFiles}}]]."
+    "mostgloballylinkedfiles-summary": "List of files that have been embedded the highest number of times across all wikis. For the equivalent list that takes into account only usages on {{SITENAME}}, see [[{{#special:MostLinkedFiles}}]].",
+    "globallywantedfiles": "Globally wanted files",
+    "globallywantedfiles-summary": "List of files that have been embedded the highest number of times across all wikis despite not existing. For the equivalent list that takes into account only usages on {{SITENAME}}, see [[{{#special:WantedFiles}}]].",
+    "globallywantedfiles-foreign-repo": "<strong>Warning:</strong> This wiki uses a foreign file repository. Files from the foreign repository that are in use will show up on this list as struck out blue links despite the fact that they exist."
 }
