@@ -6,10 +6,11 @@
 			"Liangent",
 			"Mark85296341",
 			"Pbdragonwang",
-			"Wrightbus"
+			"Wrightbus",
+			"Simon Shek"
 		]
 	},
-	"globalusage": "全域檔案使用情況",
+	"globalusage": "全域檔案用途",
 	"globalusage-for": "「$1」的全域檔案使用情況",
 	"globalusage-desc": "檢視全域檔案使用情況的[[Special:GlobalUsage|特殊頁面]]",
 	"globalusage-ok": "搜尋",
