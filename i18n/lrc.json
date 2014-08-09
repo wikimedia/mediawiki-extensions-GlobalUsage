@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bonevarluri"
+			"Bonevarluri",
+			"Mogoeilor"
 		]
 	},
 	"globalusage": "استفاده د جانیا جهونی",
 	"globalusage-ok": "پی جوری",
+	"globalusage-on-wiki": "وه کار گرتن د $2",
 	"globalusage-filterlocal": "استفاده ولات نشینی نه نشو نئه"
 }
