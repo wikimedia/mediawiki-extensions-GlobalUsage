@@ -148,12 +148,6 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 		return 'Returns global image usage for a certain image';
 	}
 
-	public function getPossibleErrors() {
-		return array_merge( parent::getPossibleErrors(), array(
-			array( 'code' => 'badcontinue', 'info' => 'Invalid continue parameter' ),
-		) );
-	}
-
 	public function getExamples() {
 		return array(
 			"Get usage of File:Example.jpg:",
