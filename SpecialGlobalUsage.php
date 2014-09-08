@@ -91,6 +91,7 @@ class SpecialGlobalUsage extends SpecialPage {
 	private function showResult() {
 		$query = new GlobalUsageQuery( $this->target );
 		$request = $this->getRequest();
+                foreach(Interwiki::getAllPrefixes(1) as $k) {  $interWikis[$k[iw_wikiid]] = $k[iw_prefix];};
 
 		// Extract params from $request.
 		if ( $request->getText( 'from' ) ) {
@@ -122,10 +123,10 @@ class SpecialGlobalUsage extends SpecialPage {
 			$out->addHtml(
 				'<h2>' . $this->msg(
 					'globalusage-on-wiki',
-					$targetName, WikiMap::getWikiName( $wiki ) )->parse()
+                                        $targetName,  parse_url($interwiki->getURL(), PHP_URL_HOST)  )->parse()
 					. "</h2><ul>\n" );
 			foreach ( $result as $item ) {
-				$out->addHtml( "\t<li>" . self::formatItem( $item ) . "</li>\n" );
+				$out->addHtml( "\t<li>" . self::formatItem( $item, $interwiki ) . "</li>\n" );
 			}
 			$out->addHtml( "</ul>\n" );
 		}
@@ -140,15 +141,14 @@ class SpecialGlobalUsage extends SpecialPage {
 	 * @param $item array
 	 * @return String
 	 */
-	public static function formatItem( $item ) {
+	public static function formatItem( $item, $interwiki ) {
 		if ( !$item['namespace'] ) {
 			$page = $item['title'];
 		} else {
 			$page = "{$item['namespace']}:{$item['title']}";
 		}
 
-		$link = WikiMap::makeForeignLink( $item['wiki'], $page,
-			str_replace( '_', ' ', $page ) );
+                $link = Linker::makeExternalLink( $interwiki->getURL($item['wiki']) , $page);
 		// Return only the title if no link can be constructed
 		return $link === false ? $page : $link;
 	}
