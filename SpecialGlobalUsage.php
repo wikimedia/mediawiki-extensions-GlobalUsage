@@ -148,7 +148,7 @@ class SpecialGlobalUsage extends SpecialPage {
 			$page = "{$item['namespace']}:{$item['title']}";
 		}
 
-                $link = Linker::makeExternalLink( $interwiki->getURL($item['wiki']) , $page);
+                 $link = Linker::makeExternalLink( $interwiki->getURL($page) , str_replace( '_', ' ', $page ));
 		// Return only the title if no link can be constructed
 		return $link === false ? $page : $link;
 	}
