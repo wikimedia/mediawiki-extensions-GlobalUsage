@@ -62,7 +62,7 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 						}
 						$result = array(
 							'title' => $title,
-							'wiki' => parse_url($interwiki->getURL(''), PHP_URL_HOST)
+							'wiki' => parse_url($interwiki->getURL(), PHP_URL_HOST)
 						);
 						if ( isset( $prop['url'] ) ) {
 							/* We expand the url because we don't want protocol relative urls in API results */
