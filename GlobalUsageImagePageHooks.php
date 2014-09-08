@@ -42,18 +42,20 @@ class GlobalUsageImagePageHooks {
 		$context = $imagePage->getContext();
 		$title = $imagePage->getFile()->getTitle();
 		$targetName = $title->getText();
+		foreach(Interwiki::getAllPrefixes(1) as $k) {  $interWikis[$k[iw_wikiid]] = $k[iw_prefix];};
 
 		$query = self::getImagePageQuery( $title );
 
 		$guHtml = '';
 		foreach ( $query->getSingleImageResult() as $wiki => $result ) {
-			$wikiName = WikiMap::getWikiName( $wiki );
+		        $interwiki = Interwiki::fetch($interWikis[$wiki]);
+                        $wikiName = parse_url($interwiki->getURL(), PHP_URL_HOST);
 			$escWikiName = Sanitizer::escapeClass( $wikiName );
 			$guHtml .= "<li class='mw-gu-onwiki-$escWikiName'>" . $context->msg(
 				'globalusage-on-wiki',
 				$targetName, $wikiName )->parse() . "\n<ul>";
 			foreach ( $result as $item )
-				$guHtml .= "\t<li>" . SpecialGlobalUsage::formatItem( $item ) . "</li>\n";
+				$guHtml .= "\t<li>" . SpecialGlobalUsage::formatItem( $item, $interwiki ) . "</li>\n";
 			$guHtml .= "</ul></li>\n";
 		}
 
