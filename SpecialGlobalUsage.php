@@ -120,6 +120,7 @@ class SpecialGlobalUsage extends SpecialPage {
 
 		$out->addHtml( '<div id="mw-globalusage-result">' );
 		foreach ( $query->getSingleImageResult() as $wiki => $result ) {
+			$interwiki = Interwiki::fetch($interWikis[$wiki]);
 			$out->addHtml(
 				'<h2>' . $this->msg(
 					'globalusage-on-wiki',
