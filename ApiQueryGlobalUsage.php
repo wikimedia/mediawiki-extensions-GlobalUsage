@@ -30,6 +30,7 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 	public function execute() {
 		$params = $this->extractRequestParams();
 		$prop = array_flip( $params['prop'] );
+		foreach(Interwiki::getAllPrefixes(1) as $k) {  $interWikis[$k[iw_wikiid]] = $k[iw_prefix];};
 
 		$pageIds = $this->getPageSet()->getAllTitlesByNamespace();
 		if ( !empty( $pageIds[NS_FILE] ) ) {
@@ -52,6 +53,7 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 			foreach ( $query->getResult() as $image => $wikis ) {
 				$pageId = intval( $pageIds[$image] );
 				foreach ( $wikis as $wiki => $result ) {
+					$interwiki = Interwiki::fetch($interWikis[$wiki]);
 					foreach ( $result as $item ) {
 						if ( $item['namespace'] ) {
 							$title = "{$item['namespace']}:{$item['title']}";
@@ -60,11 +62,11 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 						}
 						$result = array(
 							'title' => $title,
-							'wiki' => WikiMap::getWikiName( $wiki )
+							'wiki' => parse_url($interwiki->getURL(''), PHP_URL_HOST)
 						);
 						if ( isset( $prop['url'] ) ) {
 							/* We expand the url because we don't want protocol relative urls in API results */
-							$result['url'] = wfExpandUrl( WikiMap::getForeignUrl( $item['wiki'], $title ), PROTO_CURRENT );
+							$result['url'] = $interwiki->getURL($title);
 						}
 						if ( isset( $prop['pageid'] ) ) {
 							$result['pageid'] = $item['id'];
