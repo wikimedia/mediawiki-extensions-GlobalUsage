@@ -18,5 +18,8 @@
 	"globalusage-on-wiki": "$2上的用途",
 	"globalusage-of-file": "以下其他wiki使用本文件：",
 	"globalusage-more": "查看本文件的[[{{#Special:GlobalUsage}}/$1|更多全域用途]]。",
-	"globalusage-filterlocal": "不显示本地用途"
+	"globalusage-filterlocal": "不显示本地用途",
+	"mostgloballylinkedfiles": "最多全域链接文件",
+	"globallywantedfiles": "全域需要的文件",
+	"globallywantedfiles-foreign-repo": "<strong>警告：</strong>此wiki使用外部的文件存储库。来自外部存储库使用中的文件将在此列表显示成蓝色链接，尽管它们事实上存在。"
 }

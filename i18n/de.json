@@ -3,7 +3,8 @@
 		"authors": [
 			"Kghbln",
 			"Raimond Spekking",
-			"Umherirrender"
+			"Umherirrender",
+			"Metalhead64"
 		]
 	},
 	"globalusage": "Globale Dateiverwendung",
@@ -15,5 +16,10 @@
 	"globalusage-on-wiki": "Verwendung auf $2",
 	"globalusage-of-file": "Die nachfolgenden anderen Wikis verwenden diese Datei:",
 	"globalusage-more": "[[{{#Special:GlobalUsage}}/$1|Weitere globale Verwendungen]] dieser Datei anschauen.",
-	"globalusage-filterlocal": "Zeige keine lokale Dateiverwendung"
+	"globalusage-filterlocal": "Zeige keine lokale Dateiverwendung",
+	"mostgloballylinkedfiles": "Am meisten global verlinkte Dateien",
+	"mostgloballylinkedfiles-summary": "Liste der Dateien, die am meisten auf allen Wikis eingebunden wurden. Für die entsprechende Liste, die zu den Nur-Benutzerkonten-Verwendungen auf {{SITENAME}} führt, siehe [[{{#special:MostLinkedFiles}}]].",
+	"globallywantedfiles": "Global gewünschte Dateien",
+	"globallywantedfiles-summary": "Liste der Dateien, die am meisten auf allen Wikis eingebunden wurden, obwohl sie nicht vorhanden sind. Für die entsprechende Liste, die zu den Nur-Benutzerkonten-Verwendungen auf {{SITENAME}} führt, siehe [[{{#special:WantedFiles}}]].",
+	"globallywantedfiles-foreign-repo": "<strong>Warnung:</strong> Dieses Wiki benutzt ein fremdes Dateirepositorium. Dateien aus dem anderen Repositorium, die in Verwendung sind, werden auf dieser Liste als durchgestrichene blaue Links angezeigt, obwohl sie in Wirklichkeit vorhanden sind."
 }

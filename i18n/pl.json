@@ -4,7 +4,8 @@
 			"Holek",
 			"Leinad",
 			"Maikking",
-			"Sp5uhe"
+			"Sp5uhe",
+			"Chrumps"
 		]
 	},
 	"globalusage": "Globalne wykorzystanie pliku",
@@ -16,5 +17,6 @@
 	"globalusage-on-wiki": "Wykorzystanie w $2",
 	"globalusage-of-file": "Ten plik jest wykorzystywany także w innych projektach wiki:",
 	"globalusage-more": "Pokaż [[{{#Special:GlobalUsage}}/$1|listę globalnego wykorzystania]] tego pliku.",
-	"globalusage-filterlocal": "Nie pokazuj lokalnego wykorzystania"
+	"globalusage-filterlocal": "Nie pokazuj lokalnego wykorzystania",
+	"globallywantedfiles": "Pliki potrzebne globalnie"
 }

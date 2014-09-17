@@ -329,6 +329,8 @@ $specialPageAliases['yue'] = array(
 /** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
 	'GlobalUsage' => array( '全域使用情况' ),
+	'MostGloballyLinkedFiles' => array( '全域最多链接文件' ),
+	'GloballyWantedFiles' => array( '全域需要的文件' ),
 );
 
 /** Traditional Chinese (中文（繁體）‎) */
