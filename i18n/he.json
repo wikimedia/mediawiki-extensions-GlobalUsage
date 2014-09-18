@@ -3,7 +3,8 @@
 		"authors": [
 			"Rotemliss",
 			"YaronSh",
-			"Yonidebest"
+			"Yonidebest",
+			"Amire80"
 		]
 	},
 	"globalusage": "שימוש גלובלי בקבצים",
@@ -15,5 +16,8 @@
 	"globalusage-on-wiki": "שימוש באתר $2",
 	"globalusage-of-file": "אתרי הוויקי השונים הבאים משתמשים בקובץ זה:",
 	"globalusage-more": "צפייה ב[[{{#Special:GlobalUsage}}/$1|שימושים גלובליים נוספים]] של קובץ זה.",
-	"globalusage-filterlocal": "אין להציג שימוש מקומי"
+	"globalusage-filterlocal": "אין להציג שימוש מקומי",
+	"mostgloballylinkedfiles": "הקבצים המקושרים ביותר",
+	"globallywantedfiles": "קבצים מבוקשים גלובלית",
+	"globallywantedfiles-foreign-repo": "<strong>אזהרה:</strong> הוויקי הזה משתמש במאגר קבצים חיצוני. קבצים מהמאגר החיצוני שנמצאים בשימוש יוצגו ברשימה הזאת בתור קישורים כחולים מחוקים אף שהם קיימים."
 }

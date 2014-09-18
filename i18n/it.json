@@ -3,7 +3,8 @@
 		"authors": [
 			"Darth Kule",
 			"Gianfranco",
-			"Nemo bis"
+			"Nemo bis",
+			"Beta16"
 		]
 	},
 	"globalusage": "Uso globale del file",
@@ -15,5 +16,7 @@
 	"globalusage-on-wiki": "Usato nelle seguenti pagine di $2:",
 	"globalusage-of-file": "Anche i wiki seguenti usano questo file:",
 	"globalusage-more": "Visualizza l'[[{{#Special:GlobalUsage}}/$1|utilizzo globale]] di questo file.",
-	"globalusage-filterlocal": "Non mostrare l'uso locale"
+	"globalusage-filterlocal": "Non mostrare l'uso locale",
+	"mostgloballylinkedfiles": "File più richiamati globalmente",
+	"globallywantedfiles": "File richiesti globalmente"
 }

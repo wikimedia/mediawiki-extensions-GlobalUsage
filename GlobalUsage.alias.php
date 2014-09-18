@@ -214,6 +214,8 @@ $specialPageAliases['lb'] = array(
 /** Macedonian (македонски) */
 $specialPageAliases['mk'] = array(
 	'GlobalUsage' => array( 'ГлобалноКористење' ),
+	'MostGloballyLinkedFiles' => array( 'ГлобалноНајупотребуваниПодатотеки' ),
+	'GloballyWantedFiles' => array( 'ГлобалноПотребниПодатотеки' ),
 );
 
 /** Malayalam (മലയാളം) */
