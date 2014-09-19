@@ -15,5 +15,7 @@
 	"globalusage-on-wiki": "کاربرد در $2",
 	"globalusage-of-file": "این ویکی‌های دیگر از این پرونده استفاده می‌کنند:",
 	"globalusage-more": "نمایش [[{{#Special:GlobalUsage}}/$1|استفاده‌های سراسری]] از این پرونده.",
-	"globalusage-filterlocal": "استفاده‌های محلی را نشان نده"
+	"globalusage-filterlocal": "استفاده‌های محلی را نشان نده",
+	"mostgloballylinkedfiles": "بیشترین پرونده‌های سراسری پیوندشده",
+	"globallywantedfiles": "پرونده‌های موردنیاز سراسری"
 }

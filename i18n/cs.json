@@ -13,5 +13,6 @@
 	"globalusage-on-wiki": "Využití na $2",
 	"globalusage-of-file": "Tento soubor využívají následující wiki:",
 	"globalusage-more": "Zobrazit [[{{#Special:GlobalUsage}}/$1|další globální využití]] tohoto souboru.",
-	"globalusage-filterlocal": "Nezobrazovat místní využití"
+	"globalusage-filterlocal": "Nezobrazovat místní využití",
+	"mostgloballylinkedfiles": "Globálně nejpoužívanější soubory"
 }
