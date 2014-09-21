@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Siebrand"
+			"Siebrand",
+			"Sjoerddebruin"
 		]
 	},
 	"globalusage": "Globaal bestandsgebruik",
@@ -13,5 +14,6 @@
 	"globalusage-on-wiki": "Gebruik in $2",
 	"globalusage-of-file": "De volgende andere wiki's gebruiken dit bestand:",
 	"globalusage-more": "[[{{#Special:GlobalUsage}}/$1|Globaal gebruik]] van dit bestand bekijken.",
-	"globalusage-filterlocal": "Lokaal gebruik niet weergeven"
+	"globalusage-filterlocal": "Lokaal gebruik niet weergeven",
+	"globallywantedfiles": "Globale gevraagde bestanden"
 }

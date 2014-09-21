@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"NickK",
-			"Тест"
+			"Тест",
+			"Andriykopanytsia"
 		]
 	},
 	"globalusage": "Глобальне використання файлу",
@@ -14,5 +15,7 @@
 	"globalusage-on-wiki": "Використання в $2",
 	"globalusage-of-file": "Цей файл використовують такі інші вікі:",
 	"globalusage-more": "Переглянути [[{{#Special:GlobalUsage}}/$1|сторінку глобального використання]] цього файлу.",
-	"globalusage-filterlocal": "Не показувати локальне використання"
+	"globalusage-filterlocal": "Не показувати локальне використання",
+	"mostgloballylinkedfiles": "Найбільш глобально зв'язані файли",
+	"globallywantedfiles": "Глобально розшукувані файли"
 }
