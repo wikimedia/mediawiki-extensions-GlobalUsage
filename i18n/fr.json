@@ -7,7 +7,8 @@
 			"Peter17",
 			"PieRRoMaN",
 			"Urhixidur",
-			"Verdy p"
+			"Verdy p",
+			"Gomoko"
 		]
 	},
 	"globalusage": "Usage global du fichier",
@@ -19,5 +20,10 @@
 	"globalusage-on-wiki": "Utilisation sur $2",
 	"globalusage-of-file": "Les autres wikis suivants utilisent cette image :",
 	"globalusage-more": "Voir [[{{#Special:GlobalUsage}}/$1|l’utilisation globale]] de ce fichier.",
-	"globalusage-filterlocal": "Ne pas montrer l’utilisation locale"
+	"globalusage-filterlocal": "Ne pas montrer l’utilisation locale",
+	"mostgloballylinkedfiles": "Fichiers les plus globalement liés",
+	"mostgloballylinkedfiles-summary": "Liste des fichiers qui ont été inclus le plus grand nombre de fois dans tous les wikis. Pour la liste équivalente ne prenant en compte que les utilisations sur {{SITENAME}}, voyez [[{{#special:MostLinkedFiles}}]].",
+	"globallywantedfiles": "Fichiers globalement demandés",
+	"globallywantedfiles-summary": "Liste des fichiers qui ont été inclus le plus grand nombre de fois dans tous les wikis, bien que n’existant pas. Pour la liste équivalente ne prenant en compte que les utilisations sur {{SITENAME}}, voyez [[{{#special:WantedFiles}}]].",
+	"globallywantedfiles-foreign-repo": "<strong>Attention :</strong> Ce wiki utilise un dépôt de fichiers externe. Les fichiers du dépôt externe qui sont utilisés s’afficheront dans cette liste comme des liens bleus bloqués, bien qu’ils existent."
 }

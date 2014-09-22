@@ -321,6 +321,8 @@ $specialPageAliases['vec'] = array(
 /** Vietnamese (Tiếng Việt) */
 $specialPageAliases['vi'] = array(
 	'GlobalUsage' => array( 'Sử_dụng_toàn_cục' ),
+	'MostGloballyLinkedFiles' => array( 'Tập_tin_liên_kết_nhiều_nhất_toàn_cục' ),
+	'GloballyWantedFiles' => array( 'Tập_tin_cần_thiết_toàn_cục' ),
 );
 
 /** Cantonese (粵語) */
