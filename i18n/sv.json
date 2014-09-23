@@ -6,7 +6,8 @@
 			"Lejonel",
 			"M.M.S.",
 			"WikiPhoenix",
-			"Lokal Profil"
+			"Lokal Profil",
+			"Jopparn"
 		]
 	},
 	"globalusage": "Global filanvändning",
@@ -19,7 +20,7 @@
 	"globalusage-of-file": "Följande andra wikier använder denna fil:",
 	"globalusage-more": "Visa [[{{#Special:GlobalUsage}}/$1|mer globalt användande]] av denna fil.",
 	"globalusage-filterlocal": "Visa inte lokalt användande",
-	"mostgloballylinkedfiles": "Mest globalt länkade filer",
+	"mostgloballylinkedfiles": "Mest länkade filer globalt",
 	"mostgloballylinkedfiles-summary": "Lista över filer som har blivit inbäddade flest gånger över alla wikier. För motsvarande lista som enbart tar hänsyn till användningen på {{SITENAME}}, se [[{{#special:MostLinkedFiles}}]].",
 	"globallywantedfiles": "Globalt önskade filer",
 	"globallywantedfiles-summary": "Lista över filer som har blivit inbäddade flest gånger över alla wikier, trots att de inte finns. För motsvarande lista som enbart tar hänsyn till användningen på {{SITENAME}}, se [[{{#special:WantedFiles}}]].",

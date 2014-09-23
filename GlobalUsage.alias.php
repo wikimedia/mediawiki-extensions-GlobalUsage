@@ -296,6 +296,8 @@ $specialPageAliases['sk'] = array(
 /** Swedish (svenska) */
 $specialPageAliases['sv'] = array(
 	'GlobalUsage' => array( 'Global_användning' ),
+	'MostGloballyLinkedFiles' => array( 'Mest_globalt_länkade_filer' ),
+	'GloballyWantedFiles' => array( 'Globalt_önskade_filer' ),
 );
 
 /** Tagalog (Tagalog) */
@@ -313,7 +315,7 @@ $specialPageAliases['uk'] = array(
 	'GlobalUsage' => array( 'Глобальне_використання' ),
 );
 
-/** vèneto (vèneto) */
+/** Venetian (vèneto) */
 $specialPageAliases['vec'] = array(
 	'GlobalUsage' => array( 'UtilizoGlobal' ),
 );
