@@ -69,6 +69,8 @@ $specialPageAliases['ce'] = array(
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'GlobalUsage' => array( 'Globale_Benutzung', 'Globale_Verwendung' ),
+	'MostGloballyLinkedFiles' => array( 'Am_meisten_global_verlinkte_Dateien' ),
+	'GloballyWantedFiles' => array( 'Global_gewünschte_Dateien' ),
 );
 
 /** Zazaki (Zazaki) */
