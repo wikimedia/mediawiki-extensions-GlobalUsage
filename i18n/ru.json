@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Eleferen",
-			"Александр Сигачёв"
+			"Александр Сигачёв",
+			"Okras"
 		]
 	},
 	"globalusage": "Глобальное использование файла",
@@ -14,5 +15,7 @@
 	"globalusage-on-wiki": "Использование [[:File:$1|$1]] в $2",
 	"globalusage-of-file": "Данный файл используется в следующих вики:",
 	"globalusage-more": "Просмотреть [[{{#Special:GlobalUsage}}/$1|глобальное использование]] этого файла.",
-	"globalusage-filterlocal": "Не показывать локальное использование"
+	"globalusage-filterlocal": "Не показывать локальное использование",
+	"mostgloballylinkedfiles": "Самые глобально используемые файлы",
+	"globallywantedfiles": "Глобально требуемые файлы"
 }

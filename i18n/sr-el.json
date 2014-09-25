@@ -9,7 +9,7 @@
 	"globalusage-for": "Globalna upotreba datoteke „$1“",
 	"globalusage-desc": "[[Special:GlobalUsage|Specijalna strana]] za pregled globalnog korišćenja fajlova",
 	"globalusage-ok": "Pretraga",
-	"globalusage-text": "Pretraga globalnog korišćenja fajlova.",
+	"globalusage-text": "Pretraga globalne upotrebe datoteke",
 	"globalusage-no-results": "[[:$1]] se ne koristi na drugim vikijima.",
 	"globalusage-on-wiki": "Upotreba na $2",
 	"globalusage-of-file": "Drugi Vikiji koji koriste ovu datoteku:",
