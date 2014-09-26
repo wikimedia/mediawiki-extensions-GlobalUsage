@@ -79,10 +79,16 @@ class SpecialGloballyWantedFiles extends WantedFilesPage {
 	 * @return String HTML to output
 	 */
 	public function formatResult( $skin, $result ) {
-		$title = Title::makeTitleSafe( $result->namespace, $result->title );
-		if ( $title instanceof Title ) {
+		// If some of the client wikis are $wgCapitalLinks = false
+		// but the shared repo is not, then we will get some false positives
+		// here. To avoid as much confusion as possible, use the raw (lowercase) version
+		// of the title for displaying, but the safe (properly cased) version of
+		// the title for any checks. (Bug 71359)
+		$title = Title::makeTitle( $result->namespace, $result->title );
+		$safeTitle = Title::makeTitleSafe( $result->namespace, $result->title );
+		if ( $title instanceof Title && $safeTitle instanceof Title ) {
 			$pageLink = Linker::link( $title );
-			if ( $title->isKnown() && wfFindFile( $title ) ) {
+			if ( $safeTitle->isKnown() && wfFindFile( $safeTitle ) ) {
 				// If the title exists and is a file, than strike.
 				// The wfFindFile() call should already be cached from Linker::link call
 				// so it shouldn't be too expensive. However a future @todo would be

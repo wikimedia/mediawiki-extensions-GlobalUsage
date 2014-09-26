@@ -17,7 +17,7 @@
 	"mostgloballylinkedfiles": "Most globally linked files",
 	"mostgloballylinkedfiles-summary": "List of files that have been embedded the highest number of times across all wikis. For the equivalent list that takes into account only usages on {{SITENAME}}, see [[{{#special:MostLinkedFiles}}]].",
 	"globallywantedfiles": "Globally wanted files",
-	"globallywantedfiles-summary": "List of files that have been embedded the highest number of times across all wikis despite not existing. For the equivalent list that takes into account only usages on {{SITENAME}}, see [[{{#special:WantedFiles}}]].",
+	"globallywantedfiles-summary": "List of files that have been embedded the highest number of times across all wikis despite not existing. For the equivalent list that takes into account only usages on {{SITENAME}}, see [[{{#special:WantedFiles}}]]. File usages from first letter case sensitive wikis may incorrectly be reported as being wanted.",
 	"globallywantedfiles-foreign-repo": "<strong>Warning:</strong> This wiki uses a foreign file repository. Files from the foreign repository that are in use will show up on this list as struck out blue links despite the fact that they exist.",
 	"apihelp-query+globalusage-description": "Returns global image usage for a certain image.",
 	"apihelp-query+globalusage-param-prop": "Which properties to return:\n;url:Adds url.\n;pageid:Adds page ID.\n;namespace:Adds namespace ID.",
