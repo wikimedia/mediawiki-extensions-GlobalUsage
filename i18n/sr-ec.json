@@ -4,7 +4,8 @@
 			"Rancher",
 			"Sasa Stefanovic",
 			"Жељко Тодоровић",
-			"Михајло Анђелковић"
+			"Михајло Анђелковић",
+			"Milicevic01"
 		]
 	},
 	"globalusage": "Глобална употреба датотеке",
@@ -15,5 +16,6 @@
 	"globalusage-no-results": "[[:$1]] се не користи на другим викијима.",
 	"globalusage-on-wiki": "Употреба на $2",
 	"globalusage-of-file": "Други Викији који користе ову датотеку:",
-	"globalusage-filterlocal": "Не приказуј локалну употребу"
+	"globalusage-filterlocal": "Не приказуј локалну употребу",
+	"globallywantedfiles": "Глобално тражене датотеке"
 }
