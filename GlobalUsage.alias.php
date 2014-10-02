@@ -346,4 +346,6 @@ $specialPageAliases['zh-hans'] = array(
 /** Traditional Chinese (中文（繁體）‎) */
 $specialPageAliases['zh-hant'] = array(
 	'GlobalUsage' => array( '全域使用狀況' ),
+	'MostGloballyLinkedFiles' => array( '全域最多連接檔案' ),
+	'GloballyWantedFiles' => array( '全域需要的檔案' ),
 );
