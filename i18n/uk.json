@@ -3,7 +3,8 @@
 		"authors": [
 			"NickK",
 			"Тест",
-			"Andriykopanytsia"
+			"Andriykopanytsia",
+			"Olion"
 		]
 	},
 	"globalusage": "Глобальне використання файлу",
@@ -17,5 +18,8 @@
 	"globalusage-more": "Переглянути [[{{#Special:GlobalUsage}}/$1|сторінку глобального використання]] цього файлу.",
 	"globalusage-filterlocal": "Не показувати локальне використання",
 	"mostgloballylinkedfiles": "Найбільш глобально зв'язані файли",
-	"globallywantedfiles": "Глобально розшукувані файли"
+	"mostgloballylinkedfiles-summary": "Перелік файлів, включених найбільшу кількість разів загалом на всіх вікі. За таким самим переліком, обмеженим {{SITENAME}}, див. [[{{#special:MostLinkedFiles}}]].",
+	"globallywantedfiles": "Глобально розшукувані файли",
+	"globallywantedfiles-summary": "Перелік неіснуючих файлів, включених найбільшу кількість разів загалом на всіх вікі. За таким самим переліком, обмеженим {{SITENAME}}, див. [[{{#special:WantedFiles}}]].",
+	"globallywantedfiles-foreign-repo": "<strong>Попередження:</strong> Цей вікі-проект використовує стороннє сховище файлів. Використані файли зі стороннього сховища відображено в цьому переліку як закреслені блакитні посилання, незважаючи на те, що ці файли існують."
 }
