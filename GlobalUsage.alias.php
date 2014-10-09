@@ -198,6 +198,8 @@ $specialPageAliases['km'] = array(
 /** Korean (한국어) */
 $specialPageAliases['ko'] = array(
 	'GlobalUsage' => array( '전역사용' ),
+	'MostGloballyLinkedFiles' => array( '가장전역으로링크된파일' ),
+	'GloballyWantedFiles' => array( '전역으로필요한파일' ),
 );
 
 /** Cornish (kernowek) */
