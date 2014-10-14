@@ -13,5 +13,6 @@
 	"globalusage-no-results": "[[:$1]] se ne koristi na drugim vikijima.",
 	"globalusage-on-wiki": "Upotreba na $2",
 	"globalusage-of-file": "Drugi Vikiji koji koriste ovu datoteku:",
-	"globalusage-filterlocal": "Ne prikazuj lokalnu upotrebu"
+	"globalusage-filterlocal": "Ne prikazuj lokalnu upotrebu",
+	"globallywantedfiles": "Globalno tražene datoteke"
 }
