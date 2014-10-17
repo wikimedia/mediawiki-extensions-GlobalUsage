@@ -3,10 +3,13 @@
 		"authors": [
 			"GreenZeb",
 			"Homo",
-			"Tomasdd"
+			"Tomasdd",
+			"Hugo.arg"
 		]
 	},
-	"globalusage": "Visuotinis failo naudojimas",
+	"globalusage": "Visuotinis rinkmenos naudojimas",
 	"globalusage-ok": "Ieškoti",
-	"globalusage-no-results": "[[:$1]] nenaudojama kituose Wiki projektuose."
+	"globalusage-no-results": "[[:$1]] nenaudojama kituose Wiki projektuose.",
+	"globalusage-on-wiki": "Naudojama $2",
+	"globalusage-of-file": "Ši rinkmena naudojama šiose wiki svetainėse:"
 }
