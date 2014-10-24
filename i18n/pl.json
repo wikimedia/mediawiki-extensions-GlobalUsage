@@ -18,5 +18,6 @@
 	"globalusage-of-file": "Ten plik jest wykorzystywany także w innych projektach wiki:",
 	"globalusage-more": "Pokaż [[{{#Special:GlobalUsage}}/$1|listę globalnego wykorzystania]] tego pliku.",
 	"globalusage-filterlocal": "Nie pokazuj lokalnego wykorzystania",
+	"mostgloballylinkedfiles": "Najczęściej globalnie linkowane pliki",
 	"globallywantedfiles": "Pliki potrzebne globalnie"
 }
