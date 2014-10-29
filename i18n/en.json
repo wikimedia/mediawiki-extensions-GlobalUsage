@@ -1,22 +1,27 @@
 {
-    "@metadata": {
-        "authors": [
-            "Bryan Tong Minh"
-        ]
-    },
-    "globalusage": "Global file usage",
-    "globalusage-for": "Global usage for \"$1\"",
-    "globalusage-desc": "[[Special:GlobalUsage|Special page]] to view global file usage",
-    "globalusage-ok": "Search",
-    "globalusage-text": "Search global file usage",
-    "globalusage-no-results": "[[:$1]] is not used on other wikis.",
-    "globalusage-on-wiki": "Usage on $2",
-    "globalusage-of-file": "The following other wikis use this file:",
-    "globalusage-more": "View [[{{#Special:GlobalUsage}}/$1|more global usage]] of this file.",
-    "globalusage-filterlocal": "Do not show local usage",
-    "mostgloballylinkedfiles": "Most globally linked files",
-    "mostgloballylinkedfiles-summary": "List of files that have been embedded the highest number of times across all wikis. For the equivalent list that takes into account only usages on {{SITENAME}}, see [[{{#special:MostLinkedFiles}}]].",
-    "globallywantedfiles": "Globally wanted files",
-    "globallywantedfiles-summary": "List of files that have been embedded the highest number of times across all wikis despite not existing. For the equivalent list that takes into account only usages on {{SITENAME}}, see [[{{#special:WantedFiles}}]].",
-    "globallywantedfiles-foreign-repo": "<strong>Warning:</strong> This wiki uses a foreign file repository. Files from the foreign repository that are in use will show up on this list as struck out blue links despite the fact that they exist."
+	"@metadata": {
+		"authors": [
+			"Bryan Tong Minh"
+		]
+	},
+	"globalusage": "Global file usage",
+	"globalusage-for": "Global usage for \"$1\"",
+	"globalusage-desc": "[[Special:GlobalUsage|Special page]] to view global file usage",
+	"globalusage-ok": "Search",
+	"globalusage-text": "Search global file usage",
+	"globalusage-no-results": "[[:$1]] is not used on other wikis.",
+	"globalusage-on-wiki": "Usage on $2",
+	"globalusage-of-file": "The following other wikis use this file:",
+	"globalusage-more": "View [[{{#Special:GlobalUsage}}/$1|more global usage]] of this file.",
+	"globalusage-filterlocal": "Do not show local usage",
+	"mostgloballylinkedfiles": "Most globally linked files",
+	"mostgloballylinkedfiles-summary": "List of files that have been embedded the highest number of times across all wikis. For the equivalent list that takes into account only usages on {{SITENAME}}, see [[{{#special:MostLinkedFiles}}]].",
+	"globallywantedfiles": "Globally wanted files",
+	"globallywantedfiles-summary": "List of files that have been embedded the highest number of times across all wikis despite not existing. For the equivalent list that takes into account only usages on {{SITENAME}}, see [[{{#special:WantedFiles}}]].",
+	"globallywantedfiles-foreign-repo": "<strong>Warning:</strong> This wiki uses a foreign file repository. Files from the foreign repository that are in use will show up on this list as struck out blue links despite the fact that they exist.",
+	"apihelp-query+globalusage-description": "Returns global image usage for a certain image.",
+	"apihelp-query+globalusage-param-prop": "Which properties to return:\n;url:Adds url.\n;pageid:Adds page ID.\n;namespace:Adds namespace ID.",
+	"apihelp-query+globalusage-param-limit": "How many links to return.",
+	"apihelp-query+globalusage-param-filterlocal": "Filter local usage of the file.",
+	"apihelp-query+globalusage-example-1": "Get usage of [[:File:Example.jpg]]"
 }
