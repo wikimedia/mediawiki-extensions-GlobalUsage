@@ -132,7 +132,9 @@ $specialPageAliases['gu'] = array(
 
 /** Hebrew (עברית) */
 $specialPageAliases['he'] = array(
-	'GlobalUsage' => array( 'שימוש_גלובלי_בקבצים', 'שימוש_גלובלי_בקובץ' ),
+	'GlobalUsage' => array( 'שימוש_גלובלי_בקובץ', 'שימוש_גלובלי_בקבצים' ),
+	'MostGloballyLinkedFiles' => array( 'הקבצים_המקושרים_ביותר_גלובלית' ),
+	'GloballyWantedFiles' => array( 'הקבצים_המבוקשים_ביותר_גלובלית' ),
 );
 
 /** Hindi (हिन्दी) */
