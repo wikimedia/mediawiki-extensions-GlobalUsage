@@ -7,6 +7,8 @@
 	},
 	"globalusage": "استفاده د جانیا جهونی",
 	"globalusage-ok": "پی جوری",
+	"globalusage-text": "مئن جوری وه کارگرتن سرتاسری جانیا",
 	"globalusage-on-wiki": "وه کار گرتن د $2",
-	"globalusage-filterlocal": "استفاده ولات نشینی نه نشو نئه"
+	"globalusage-filterlocal": "استفاده ولات نشینی نه نشو نئه",
+	"apihelp-query+globalusage-param-limit": "چن گله هوم پیوند سی ؤرئشتن هئ."
 }
