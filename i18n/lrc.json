@@ -12,5 +12,7 @@
 	"globalusage-no-results": "[[:$1]] د ویکی یا هنی وه کار گرته بیه.",
 	"globalusage-on-wiki": "وه کار گرتن د $2",
 	"globalusage-filterlocal": "استفاده ولات نشینی نه نشو نئه",
-	"apihelp-query+globalusage-param-limit": "چن گله هوم پیوند سی ؤرئشتن هئ."
+	"mostgloballylinkedfiles": "جانیایا هوم پیوند بیه که بیشتر جهونی بینه",
+	"apihelp-query+globalusage-param-limit": "چن گله هوم پیوند سی ؤرئشتن هئ.",
+	"apihelp-query+globalusage-example-1": "وه کار گرتن [[:File:Example.jpg]]"
 }
