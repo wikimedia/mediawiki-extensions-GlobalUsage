@@ -13,6 +13,7 @@
 	"globalusage-on-wiki": "وه کار گرتن د $2",
 	"globalusage-filterlocal": "استفاده ولات نشینی نه نشو نئه",
 	"mostgloballylinkedfiles": "جانیایا هوم پیوند بیه که بیشتر جهونی بینه",
+	"globallywantedfiles": "جانیایا جهون حاستنی",
 	"apihelp-query+globalusage-param-limit": "چن گله هوم پیوند سی ؤرئشتن هئ.",
 	"apihelp-query+globalusage-param-filterlocal": "فیلتر وه کار گرتن ولات نشینی جانیا.",
 	"apihelp-query+globalusage-example-1": "وه کار گرتن [[:File:Example.jpg]]"
