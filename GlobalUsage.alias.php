@@ -19,6 +19,8 @@ $specialPageAliases['en'] = array(
 /** Arabic (العربية) */
 $specialPageAliases['ar'] = array(
 	'GlobalUsage' => array( 'استخدام_عام' ),
+	'MostGloballyLinkedFiles' => array( 'أكثر_الملفات_الموصولة_عامة' ),
+	'GloballyWantedFiles' => array( 'ملفات_مطلوبة_عامة' ),
 );
 
 /** Egyptian Spoken Arabic (مصرى) */
