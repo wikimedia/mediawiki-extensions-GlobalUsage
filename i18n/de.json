@@ -22,5 +22,6 @@
 	"globallywantedfiles": "Global gewünschte Dateien",
 	"globallywantedfiles-summary": "Liste der Dateien, die am meisten auf allen Wikis eingebunden wurden, obwohl sie nicht vorhanden sind. Für die entsprechende Liste, die zu den Nur-Benutzerkonten-Verwendungen auf {{SITENAME}} führt, siehe [[{{#special:WantedFiles}}]].",
 	"globallywantedfiles-foreign-repo": "<strong>Warnung:</strong> Dieses Wiki benutzt ein fremdes Dateirepositorium. Dateien aus dem anderen Repositorium, die in Verwendung sind, werden auf dieser Liste als durchgestrichene blaue Links angezeigt, obwohl sie in Wirklichkeit vorhanden sind.",
+	"apihelp-query+globalusage-param-limit": "Wie viele Links zurückgegeben werden sollen.",
 	"apihelp-query+globalusage-param-filterlocal": "Lokale Verwendungen der Datei filtern."
 }
