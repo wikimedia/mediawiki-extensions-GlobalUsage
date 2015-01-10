@@ -62,7 +62,7 @@ class MostGloballyLinkedFilesPage extends MostimagesPage {
 	 */
 	protected function assertOnSharedRepo() {
 		if ( !GlobalUsage::onSharedRepo() ) {
-			throw new MWException( "Special:MostGloballyLinkedFiles should only be processed on the shared repo" );
+			throw new Exception( "Special:MostGloballyLinkedFiles should only be processed on the shared repo" );
 		}
 	}
 
