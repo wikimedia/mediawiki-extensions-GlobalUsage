@@ -219,6 +219,7 @@ $specialPageAliases['lad'] = array(
 /** Luxembourgish (Lëtzebuergesch) */
 $specialPageAliases['lb'] = array(
 	'GlobalUsage' => array( 'Globale_Gebrauch' ),
+	'GloballyWantedFiles' => array( 'Global_gewënscht_Fichieren' ),
 );
 
 /** Macedonian (македонски) */
