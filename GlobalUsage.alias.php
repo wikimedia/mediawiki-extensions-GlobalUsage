@@ -257,6 +257,8 @@ $specialPageAliases['nds-nl'] = array(
 /** Dutch (Nederlands) */
 $specialPageAliases['nl'] = array(
 	'GlobalUsage' => array( 'GlobaalGebruik' ),
+	'MostGloballyLinkedFiles' => array( 'GlobaalMeestGebruikteBestanden' ),
+	'GloballyWantedFiles' => array( 'GlobaalGewensteBestanden' ),
 );
 
 /** Norwegian Nynorsk (norsk nynorsk) */
