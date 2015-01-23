@@ -33,6 +33,11 @@ $specialPageAliases['as'] = array(
 	'GlobalUsage' => array( 'গোলকীয়_ব্যৱহাৰ' ),
 );
 
+/** Avaric (авар) */
+$specialPageAliases['av'] = array(
+	'GlobalUsage' => array( 'Глобальное_использование' ),
+);
+
 /** Bashkir (башҡортса) */
 $specialPageAliases['ba'] = array(
 	'GlobalUsage' => array( 'GlobalUsage' ),
