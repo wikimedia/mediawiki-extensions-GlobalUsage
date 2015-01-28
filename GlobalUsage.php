@@ -42,6 +42,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'descriptionmsg' => 'globalusage-desc',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:GlobalUsage',
 	'version' => '2.1.0',
+	'license-name' => 'MIT',
 );
 
 // Internationlization files
