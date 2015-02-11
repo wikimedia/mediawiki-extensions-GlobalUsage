@@ -107,7 +107,7 @@ $specialPageAliases['et'] = array(
 
 /** Persian (فارسی) */
 $specialPageAliases['fa'] = array(
-	'GlobalUsage' => array( 'استفادهٔ_سراسری' ),
+	'GlobalUsage' => array( 'کاربرد_سراسری', 'استفادهٔ_سراسری' ),
 	'MostGloballyLinkedFiles' => array( 'بیشترین_پرونده‌های_پیونده‌شدهٔ_سراسری' ),
 	'GloballyWantedFiles' => array( 'پرونده‌های_سراسری_مورد_نیاز' ),
 );
