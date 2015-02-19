@@ -6,5 +6,6 @@
 	},
 	"globalusage": "Auso globbale d' 'o file",
 	"globalusage-on-wiki": "Uso ncopp'a $2",
-	"globalusage-of-file": "'E wiki ccà abbascio aúsano stu file:"
+	"globalusage-of-file": "'E wiki ccà abbascio aúsano stu file:",
+	"globalusage-more": "Vedite [[{{#Special:GlobalUsage}}/$1|ause globbale]] 'e stu file."
 }

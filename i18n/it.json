@@ -4,10 +4,11 @@
 			"Darth Kule",
 			"Gianfranco",
 			"Nemo bis",
-			"Beta16"
+			"Beta16",
+			"FRacco"
 		]
 	},
-	"globalusage": "Uso globale del file",
+	"globalusage": "Utilizzo globale del file",
 	"globalusage-for": "Uso globale di \"$1\"",
 	"globalusage-desc": "[[Special:GlobalUsage|Pagina speciale]] per vedere l'utilizzo globale dei file",
 	"globalusage-ok": "Ricerca",
