@@ -6,10 +6,11 @@
 			"Fitoschido",
 			"Jatrobat",
 			"Platonides",
-			"Translationista"
+			"Translationista",
+			"Macofe"
 		]
 	},
-	"globalusage": "Uso de archivo global",
+	"globalusage": "Uso global del archivo",
 	"globalusage-for": "Uso global de «$1»",
 	"globalusage-desc": "[[Special:GlobalUsage|Página especial]] para ver uso de archivo global",
 	"globalusage-ok": "Buscar",
