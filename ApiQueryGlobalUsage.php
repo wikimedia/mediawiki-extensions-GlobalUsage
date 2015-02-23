@@ -99,11 +99,20 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 	private function setIndexedTagName() {
 		$result = $this->getResult();
 		$pageIds = $this->getPageSet()->getAllTitlesByNamespace();
-		foreach ( $pageIds[NS_FILE] as $id ) {
-			$result->setIndexedTagName_internal(
-				array( 'query', 'pages', $id, 'globalusage' ),
-				'gu'
-			);
+		if ( defined( 'ApiResult::META_CONTENT' ) ) {
+			foreach ( $pageIds[NS_FILE] as $id ) {
+				$result->defineIndexedTagName(
+					array( 'query', 'pages', $id, 'globalusage' ),
+					'gu'
+				);
+			}
+		} else {
+			foreach ( $pageIds[NS_FILE] as $id ) {
+				$result->setIndexedTagName_internal(
+					array( 'query', 'pages', $id, 'globalusage' ),
+					'gu'
+				);
+			}
 		}
 	}
 
