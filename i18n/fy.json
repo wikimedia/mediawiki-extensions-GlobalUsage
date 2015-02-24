@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Snakesteuben"
+			"Snakesteuben",
+			"Robin0van0der0vliet"
 		]
 	},
-	"globalusage-ok": "Sykje"
+	"globalusage": "Globaal triemgebrûk",
+	"globalusage-ok": "Sykje",
+	"globalusage-on-wiki": "Gebrûk yn $2"
 }
