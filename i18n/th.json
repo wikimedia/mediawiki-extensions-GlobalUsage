@@ -1,8 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Octahedron80"
+			"Octahedron80",
+			"Horus"
 		]
 	},
-	"globalusage-ok": "สืบค้น"
+	"globalusage": "การใช้ไฟล์ทั่วโลก",
+	"globalusage-ok": "สืบค้น",
+	"globalusage-on-wiki": "การใช้บน $2",
+	"globalusage-of-file": "วิกิอื่นต่อไปนี้ใช้ไฟล์นี้:"
 }
