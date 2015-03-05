@@ -16,6 +16,7 @@
 	"globalusage-no-results": "[[:$1]] се не користи на другим викијима.",
 	"globalusage-on-wiki": "Употреба на $2",
 	"globalusage-of-file": "Други Викији који користе ову датотеку:",
+	"globalusage-more": "Још [[{{#Special:GlobalUsage}}/$1|глобалног коришћења]] ове датотеке.",
 	"globalusage-filterlocal": "Не приказуј локалну употребу",
 	"globallywantedfiles": "Глобално тражене датотеке"
 }

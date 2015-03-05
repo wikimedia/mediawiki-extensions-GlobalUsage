@@ -13,5 +13,8 @@
 	"globalusage-on-wiki": "Der Jebruch op $2",
 	"globalusage-of-file": "Heh di ander Wikis bruche di Dattei:",
 	"globalusage-more": "Loor donoh, [[{{#Special:GlobalUsage}}/$1|woh heh di Dattei söns jebruch weed]].",
-	"globalusage-filterlocal": "Donn nix aanzeije doh drövver, wi di Dattei heh em Wiki jebruch weed"
+	"globalusage-filterlocal": "Donn nix aanzeije doh drövver, wi di Dattei heh em Wiki jebruch weed",
+	"apihelp-query+globalusage-param-prop": "Wat för en Eijeschaffte ze holle:\n;url:Donn <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\" title=\"Uniform Ressource Locator\">URL</i> derbei.\n;pageid:Donn de Siggekännong derbei.\n;namespace:Don de Kännong vum Appachtemang derbei.",
+	"apihelp-query+globalusage-param-limit": "Wi vill Lengks holle?",
+	"apihelp-query+globalusage-example-1": "Holl Aanjahbe drövver woh di Dattei „<code lang=\"en\" xml:lang=\"en\" dir=\"ltr\">[[:File:Example.jpg]]</code>“ jebruch weed."
 }

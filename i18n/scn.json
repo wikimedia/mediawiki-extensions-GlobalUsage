@@ -1,8 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Aushulz"
+			"Aushulz",
+			"Gmelfi"
 		]
 	},
-	"globalusage-ok": "Va' cerca"
+	"globalusage": "Utilizzu glubbali dû file",
+	"globalusage-ok": "Va' cerca",
+	"globalusage-on-wiki": "Utilizzu supra $2",
+	"globalusage-of-file": "Puru li wiki appressu usanu stu file:"
 }

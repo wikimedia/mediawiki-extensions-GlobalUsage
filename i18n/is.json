@@ -1,8 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"S.Örvarr.S"
+			"S.Örvarr.S",
+			"Snævar"
 		]
 	},
-	"globalusage-ok": "Leita"
+	"globalusage": "Altæk notkun skráar",
+	"globalusage-ok": "Leita",
+	"globalusage-on-wiki": "Notkun á $2",
+	"globalusage-of-file": "Eftirfarandi wikar nota einnig þessa skrá:",
+	"globalusage-more": "Skoða [[{{#Special:GlobalUsage}}/$1|frekari altæka notkun]] þessarar skráar."
 }
