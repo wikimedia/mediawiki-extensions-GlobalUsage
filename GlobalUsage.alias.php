@@ -224,6 +224,7 @@ $specialPageAliases['lad'] = array(
 /** Luxembourgish (Lëtzebuergesch) */
 $specialPageAliases['lb'] = array(
 	'GlobalUsage' => array( 'Globale_Gebrauch' ),
+	'MostGloballyLinkedFiles' => array( 'Fichieren_déi_global_am_dackste_verlinkt_sinn' ),
 	'GloballyWantedFiles' => array( 'Global_gewënscht_Fichieren' ),
 );
 
