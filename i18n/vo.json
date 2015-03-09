@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Smeira"
+			"Smeira",
+			"Malafaya"
 		]
 	},
 	"globalusage": "Ragivigeb Valöpik",
 	"globalusage-desc": "[[Special:GlobalUsage|Pad patik]] ad logön ragivigebi valöpik",
 	"globalusage-ok": "Sukön",
-	"globalusage-text": "Sükön ragivigebi valöpik."
+	"globalusage-text": "Sükön ragivigebi valöpik.",
+	"globalusage-on-wiki": "Geb su $2"
 }
