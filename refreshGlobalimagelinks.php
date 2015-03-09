@@ -107,7 +107,7 @@ class RefreshGlobalImageLinks extends Maintenance {
 		// Clean up broken links from pages that no longer exist...
 		if ( in_array( 'nonexisting', $pages ) ) {
 			$lastPageId = 0;
-			do {
+			while ( 1 ) {
 				$this->output( "Querying for broken links after (page_id) = ($lastPageId)\n" );
 
 				$res = $gdbw->select( 'globalimagelinks', 'gil_page',
@@ -115,6 +115,10 @@ class RefreshGlobalImageLinks extends Maintenance {
 					__METHOD__,
 					array( 'ORDER BY' => 'gil_page', 'LIMIT' => $this->mBatchSize )
 				);
+
+				if ( !$res->numRows() ) {
+					break;
+				}
 
 				$pageIds = array();
 				foreach ( $res as $row ) {
@@ -140,7 +144,7 @@ class RefreshGlobalImageLinks extends Maintenance {
 				if ( $deleted > 0 ) {
 					wfWaitForSlaves( false, $wgGlobalUsageDatabase );
 				}
-			} while ( $res->numRows() );
+			};
 		}
 	}
 }
