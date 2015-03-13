@@ -17,6 +17,7 @@ class RefreshGlobalImageLinks extends Maintenance {
 		$this->addOption( 'start-page', 'page_id of the page to start with' );
 		$this->addOption( 'start-image', 'il_to of the image to start with' );
 		$this->addOption( 'pages', 'CSV of (existing,nonexisting)', true, true );
+		$this->setBatchSize( 500 );
 	}
 
 	public function execute() {
@@ -32,7 +33,6 @@ class RefreshGlobalImageLinks extends Maintenance {
 		if ( in_array( 'existing', $pages ) ) {
 			$lastPageId = intval( $this->getOption( 'start-page', 0 ) );
 			$lastIlTo = $this->getOption( 'start-image' );
-			$limit = 500;
 
 			do {
 				$this->output( "Querying links after (page_id, il_to) = ($lastPageId, $lastIlTo)\n" );
@@ -50,7 +50,7 @@ class RefreshGlobalImageLinks extends Maintenance {
 					__METHOD__,
 					array(
 						'ORDER BY' => $dbr->implicitOrderBy() ? 'page_id' : 'page_id, il_to',
-						'LIMIT' => $limit
+						'LIMIT' => $this->mBatchSize,
 					),
 					array(
 						# LEFT JOIN imagelinks since we need to delete usage
