@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bachounda"
+			"Bachounda",
+			"Oldstoneage"
 		]
 	},
 	"globalusage": "لستعمال العام للملف",
-	"globalusage-on-wiki": "الاستعمال في $2"
+	"globalusage-on-wiki": "الاستعمال في $2",
+	"globalusage-of-file": "هادو وكيّات وحدخرين يستعملو هاد الفيشي:"
 }
