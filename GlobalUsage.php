@@ -42,6 +42,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'descriptionmsg' => 'globalusage-desc',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:GlobalUsage',
 	'version' => '2.1.0',
+	'license-name' => 'MIT',
 );
 
 // Internationlization files
@@ -56,7 +57,11 @@ $wgAutoloadClasses['SpecialGlobalUsage'] = $dir . 'SpecialGlobalUsage.php';
 $wgAutoloadClasses['GlobalUsageQuery'] = $dir . 'GlobalUsageQuery.php';
 $wgAutoloadClasses['ApiQueryGlobalUsage'] = $dir . 'ApiQueryGlobalUsage.php';
 $wgAutoloadClasses['GlobalUsageCachePurgeJob'] = $dir . 'GlobalUsageCachePurgeJob.php';
+$wgAutoloadClasses['MostGloballyLinkedFilesPage'] = $dir . 'SpecialMostGloballyLinkedFiles.php';
+$wgAutoloadClasses['SpecialGloballyWantedFiles'] = $dir . 'SpecialGloballyWantedFiles.php';
 
+$wgSpecialPages['MostGloballyLinkedFiles'] = 'MostGloballyLinkedFilesPage';
+$wgSpecialPages['GloballyWantedFiles'] = 'SpecialGloballyWantedFiles';
 $wgSpecialPages['GlobalUsage'] = 'SpecialGlobalUsage';
 $wgSpecialPageGroups['GlobalUsage'] = 'media';
 
@@ -82,6 +87,7 @@ $wgHooks['ImagePageShowTOC'][] = 'GlobalUsageImagePageHooks::onImagePageShowTOC'
 /* Other hooks */
 $wgHooks['ParserTestTables'][] = 'GlobalUsageHooks::onParserTestTables';
 $wgHooks['LoadExtensionSchemaUpdates'][] = 'GlobalUsageHooks::onLoadExtensionSchemaUpdates';
+$wgHooks['wgQueryPages'][] = 'GlobalUsageHooks::onwgQueryPages';
 
 // If set to false, the local database contains the globalimagelinks table
 // Else set to something understandable to LBFactory

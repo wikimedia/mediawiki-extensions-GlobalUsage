@@ -4,6 +4,9 @@
 			"Manuae"
 		]
 	},
+	"globalusage": "Globali Dadaivawendung",
 	"globalusage-ok": "Suche",
+	"globalusage-on-wiki": "Vawendung uff $2",
+	"globalusage-of-file": "Die oannare Wikis bnudzn die Dadai:",
 	"globalusage-more": "Gugg fa [[{{#Special:GlobalUsage}}/$1|waidare Vawendunge]] vunde Dadai."
 }

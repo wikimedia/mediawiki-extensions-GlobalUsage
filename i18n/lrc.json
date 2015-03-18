@@ -5,8 +5,18 @@
 			"Mogoeilor"
 		]
 	},
-	"globalusage": "استفاده د جانیا جهونی",
+	"globalusage": "وه کار گرتن جانیا جهونی",
+	"globalusage-for": "وه کار گرتن سرتاسری سی \"$1\"",
 	"globalusage-ok": "پی جوری",
+	"globalusage-text": "مئن جوری وه کارگرتن سرتاسری جانیا",
+	"globalusage-no-results": "[[:$1]] د ویکی یا هنی وه کار گرته بیه.",
 	"globalusage-on-wiki": "وه کار گرتن د $2",
-	"globalusage-filterlocal": "استفاده ولات نشینی نه نشو نئه"
+	"globalusage-of-file": "ویکیا هنی که هان د دماتر سی ای جانیا وه کار گرته بیه:",
+	"globalusage-more": "[[{{#Special:GlobalUsage}}/$1|وه کار گرتن جهونی بیشتر]] سی ای جانیا نه سیل بکیت.",
+	"globalusage-filterlocal": "استفاده ولات نشینی نه نشو نئه",
+	"mostgloballylinkedfiles": "جانیایا هوم پیوند بیه که بیشتر جهونی بینه",
+	"globallywantedfiles": "جانیایا جهون حاستنی",
+	"apihelp-query+globalusage-param-limit": "چن گله هوم پیوند سی ؤرئشتن هئ.",
+	"apihelp-query+globalusage-param-filterlocal": "فیلتر وه کار گرتن ولات نشینی جانیا.",
+	"apihelp-query+globalusage-example-1": "وه کار گرتن [[:File:Example.jpg]]"
 }

@@ -14,5 +14,7 @@
 	"globalusage-on-wiki": "Benotzt op $2",
 	"globalusage-of-file": "Dës aner Wikie benotzen dëse Fichier:",
 	"globalusage-more": "Kuckt [[{{#Special:GlobalUsage}}/$1|globale Gebrauch]] vun dësem Fichier.",
-	"globalusage-filterlocal": "Déi lokal Benotzung net weisen"
+	"globalusage-filterlocal": "Déi lokal Benotzung net weisen",
+	"mostgloballylinkedfiles": "Am dackste global verlinkt Fichieren",
+	"globallywantedfiles": "Global gewënscht Fichieren"
 }

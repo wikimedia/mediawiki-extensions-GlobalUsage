@@ -101,11 +101,20 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 	private function setIndexedTagName() {
 		$result = $this->getResult();
 		$pageIds = $this->getPageSet()->getAllTitlesByNamespace();
-		foreach ( $pageIds[NS_FILE] as $id ) {
-			$result->setIndexedTagName_internal(
-				array( 'query', 'pages', $id, 'globalusage' ),
-				'gu'
-			);
+		if ( defined( 'ApiResult::META_CONTENT' ) ) {
+			foreach ( $pageIds[NS_FILE] as $id ) {
+				$result->defineIndexedTagName(
+					array( 'query', 'pages', $id, 'globalusage' ),
+					'gu'
+				);
+			}
+		} else {
+			foreach ( $pageIds[NS_FILE] as $id ) {
+				$result->setIndexedTagName_internal(
+					array( 'query', 'pages', $id, 'globalusage' ),
+					'gu'
+				);
+			}
 		}
 	}
 
@@ -127,11 +136,17 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 				ApiBase :: PARAM_MAX => ApiBase :: LIMIT_BIG1,
 				ApiBase :: PARAM_MAX2 => ApiBase :: LIMIT_BIG2
 			),
-			'continue' => null,
+			'continue' => array(
+				/** @todo Once support for MediaWiki < 1.25 is dropped, just use ApiBase::PARAM_HELP_MSG directly */
+				constant( 'ApiBase::PARAM_HELP_MSG' ) ?: '' => 'api-help-param-continue',
+			),
 			'filterlocal' => false,
 		);
 	}
 
+	/**
+	 * @deprecated since MediaWiki core 1.25
+	 */
 	public function getParamDescription() {
 		return array(
 			'prop' => array(
@@ -146,10 +161,16 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 		);
 	}
 
+	/**
+	 * @deprecated since MediaWiki core 1.25
+	 */
 	public function getDescription() {
 		return 'Returns global image usage for a certain image';
 	}
 
+	/**
+	 * @deprecated since MediaWiki core 1.25
+	 */
 	public function getExamples() {
 		return array(
 			"Get usage of File:Example.jpg:",
@@ -157,8 +178,14 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 		);
 	}
 
-	public function getVersion() {
-		return __CLASS__ . ': $Id$';
+	/**
+	 * @see ApiBase::getExamplesMessages()
+	 */
+	protected function getExamplesMessages() {
+		return array(
+			'action=query&prop=globalusage&titles=File:Example.jpg'
+				=> 'apihelp-query+globalusage-example-1',
+		);
 	}
 
 	public function getCacheMode( $params ) {

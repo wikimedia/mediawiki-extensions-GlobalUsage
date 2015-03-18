@@ -7,7 +7,7 @@
 		]
 	},
 	"globalusage": "グローバルなファイル使用状況",
-	"globalusage-for": "「$1」のグローバルな利用状況",
+	"globalusage-for": "「$1」のグローバルな使用状況",
 	"globalusage-desc": "グローバルなファイル使用状況を表示する[[Special:GlobalUsage|特別ページ]]",
 	"globalusage-ok": "検索",
 	"globalusage-text": "グローバルなファイル使用状況を検索",

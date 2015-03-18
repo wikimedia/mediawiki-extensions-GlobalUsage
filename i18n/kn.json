@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Nayvik"
+			"Nayvik",
+			"Omshivaprakash"
 		]
 	},
-	"globalusage-ok": "ಹುಡುಕು"
+	"globalusage-ok": "ಹುಡುಕು",
+	"globalusage-on-wiki": "$2 ಮೇಲೆ ಬಳಕೆ"
 }

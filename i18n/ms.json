@@ -13,5 +13,6 @@
 	"globalusage-on-wiki": "Penggunaan di $2",
 	"globalusage-of-file": "Fail ini digunakan oleh wiki-wiki lain yang berikut:",
 	"globalusage-more": "Lihat [[{{#Special:GlobalUsage}}/$1|banyak lagi penggunaan sejagat]] bagi fail ini.",
-	"globalusage-filterlocal": "Jangan tunjukkan penggunaan setempat"
+	"globalusage-filterlocal": "Jangan tunjukkan penggunaan setempat",
+	"globallywantedfiles-foreign-repo": "<strong>Amaran:</strong> Wiki ini menggunakan repositori fail yang asing. Fail-fail yang sedang digunakan dari repositori asing berkenaan akan muncul dalam senarai ini sebagai pautan biru yang dicoret biarpun ia wujud pada hakikatnya."
 }

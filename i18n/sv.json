@@ -5,7 +5,9 @@
 			"Boivie",
 			"Lejonel",
 			"M.M.S.",
-			"WikiPhoenix"
+			"WikiPhoenix",
+			"Lokal Profil",
+			"Jopparn"
 		]
 	},
 	"globalusage": "Global filanvändning",
@@ -17,5 +19,15 @@
 	"globalusage-on-wiki": "Användande av $2",
 	"globalusage-of-file": "Följande andra wikier använder denna fil:",
 	"globalusage-more": "Visa [[{{#Special:GlobalUsage}}/$1|mer globalt användande]] av denna fil.",
-	"globalusage-filterlocal": "Visa inte lokalt användande"
+	"globalusage-filterlocal": "Visa inte lokalt användande",
+	"mostgloballylinkedfiles": "Mest länkade filer globalt",
+	"mostgloballylinkedfiles-summary": "Lista över filer som har blivit inbäddade flest gånger över alla wikier. För motsvarande lista som enbart tar hänsyn till användningen på {{SITENAME}}, se [[{{#special:MostLinkedFiles}}]].",
+	"globallywantedfiles": "Globalt önskade filer",
+	"globallywantedfiles-summary": "Lista över filer som har blivit inbäddade flest gånger över alla wikier, trots att de inte finns. För motsvarande lista som enbart tar hänsyn till användningen på {{SITENAME}}, se [[{{#special:WantedFiles}}]].",
+	"globallywantedfiles-foreign-repo": "<strong>Varning:</strong> Denna wiki använder ett externt filarkiv. Filer från den externa databasen som används kommer att visa på denna lista som genomstrukna blå länkar trots att de finns.",
+	"apihelp-query+globalusage-description": "Returnerar den globala bildanvändning för en viss bild.",
+	"apihelp-query+globalusage-param-prop": "Vilka egenskaper att återvända:\n;url:Lägger till url.\n;sidid:Lägger till sid-ID.\n;namespace:Lägger till namnrymd-ID.",
+	"apihelp-query+globalusage-param-limit": "Hur många länkar som ska returneras.",
+	"apihelp-query+globalusage-param-filterlocal": "Filtrera lokal användning av filen.",
+	"apihelp-query+globalusage-example-1": "Hämta användning av [[:File:Example.jpg]]"
 }

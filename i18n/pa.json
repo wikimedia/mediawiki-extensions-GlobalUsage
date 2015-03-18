@@ -13,5 +13,6 @@
 	"globalusage-on-wiki": "$2 ਉੱਤੇ ਵਰਤੋਂ",
 	"globalusage-of-file": "ਇਸ ਫ਼ਾਈਲ ਨੂੰ ਹੋਰ ਹੇਠ ਲਿਖੇ ਵਿਕੀ ਵਰਤਦੇ ਹਨ:",
 	"globalusage-more": "ਇਸ ਫ਼ਾਈਲ ਦੀ [[{{#Special:GlobalUsage}}/$1|ਹੋਰ ਵਿਆਪਕ ਵਰਤੋਂ]] ਵੇਖੋ।",
-	"globalusage-filterlocal": "ਸਥਾਨਕ ਵਰਤੋਂ ਨਾ ਵਿਖਾਓ"
+	"globalusage-filterlocal": "ਸਥਾਨਕ ਵਰਤੋਂ ਨਾ ਵਿਖਾਓ",
+	"globallywantedfiles": "ਸਾਰੇ ਕਿਤੇ ਲੁੜੀਂਦੀਆਂ ਫ਼ਾਈਲਾਂ"
 }
