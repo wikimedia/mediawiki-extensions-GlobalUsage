@@ -4,7 +4,8 @@
 			"Rotemliss",
 			"YaronSh",
 			"Yonidebest",
-			"Amire80"
+			"Amire80",
+			"ערן"
 		]
 	},
 	"globalusage": "שימוש גלובלי בקבצים",
@@ -21,5 +22,6 @@
 	"mostgloballylinkedfiles-summary": "רשימת קבצים שהוטבעו הכי הרבה בכל אתרי הוויקי. לרשימה המקבילה שלוקחת בחשבון שימוש באתר {{SITENAME}}, ר' [[{{#special:MostLinkedFiles}}]].",
 	"globallywantedfiles": "קבצים מבוקשים גלובלית",
 	"globallywantedfiles-summary": "רשימת קבצים שהוטבעו הכי הרבה בכל אתרי הוויקי אף שאינם קיימים. לרשימה המקבילה שלוקחת בחשבון שימוש באתר {{SITENAME}}, ר' [[{{#special:WantedFiles}}]].",
-	"globallywantedfiles-foreign-repo": "<strong>אזהרה:</strong> הוויקי הזה משתמש במאגר קבצים חיצוני. קבצים מהמאגר החיצוני שנמצאים בשימוש יוצגו ברשימה הזאת בתור קישורים כחולים מחוקים אף שהם קיימים."
+	"globallywantedfiles-foreign-repo": "<strong>אזהרה:</strong> הוויקי הזה משתמש במאגר קבצים חיצוני. קבצים מהמאגר החיצוני שנמצאים בשימוש יוצגו ברשימה הזאת בתור קישורים כחולים מחוקים אף שהם קיימים.",
+	"apihelp-query+globalusage-description": "מחזיר שימוש גלובלי בתמונה עבור תמונה מסוימת."
 }

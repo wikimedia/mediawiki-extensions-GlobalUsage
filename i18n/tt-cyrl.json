@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ильнар"
+			"Ильнар",
+			"Derslek"
 		]
 	},
 	"globalusage": "Файлның глобаль кулланышы",
@@ -10,7 +11,7 @@
 	"globalusage-ok": "Эзләү",
 	"globalusage-text": "Файлның гомуми кулланылыш өлкәләрен эзләү.",
 	"globalusage-no-results": "[[:$1]] башка викиларда кулланмый.",
-	"globalusage-on-wiki": "$2 проектында [[:File:$1|$1]] куллану",
+	"globalusage-on-wiki": "$2 проектында куллану",
 	"globalusage-of-file": "Әлеге файл аста бирелгән викиларда куллана:",
 	"globalusage-more": "Бирелгән файлның [[{{#Special:GlobalUsage}}/$1|глобаль кулланышын]] карау.",
 	"globalusage-filterlocal": "Локаль кулланышын күрсәтмәскә"
