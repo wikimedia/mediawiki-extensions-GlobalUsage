@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Toliño",
-			"Xosé"
+			"Xosé",
+			"Banjo"
 		]
 	},
 	"globalusage": "Uso global do ficheiro",
@@ -14,5 +15,6 @@
 	"globalusage-on-wiki": "Uso en $2",
 	"globalusage-of-file": "Os seguintes wikis empregan esta imaxe:",
 	"globalusage-more": "Ollar [[{{#Special:GlobalUsage}}/$1|o uso global]] deste ficheiro.",
-	"globalusage-filterlocal": "Non mostrar o uso local"
+	"globalusage-filterlocal": "Non mostrar o uso local",
+	"apihelp-query+globalusage-param-limit": "Cantas ligazóns devolver."
 }
