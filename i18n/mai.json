@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Tulsi Bhagat"
+			"Tulsi Bhagat",
+			"बिप्लब आनन्द"
 		]
 	},
 	"globalusage": "ग्लोबल फाइल उपयोग",
 	"globalusage-on-wiki": "$2 कऽ उपयोग पर",
-	"globalusage-of-file": "यी फ़ाइल कऽ उपयोग निम्न दोसर विकियों में अछि:"
+	"globalusage-of-file": "यी फ़ाइल कऽ उपयोग निम्न दोसर विकियों में अछि:",
+	"globalusage-more": "ऐ फाइलके [[{{#Special:GlobalUsage}}/$1|वैश्विक उपयोग कें अधिक जानकारी]] देखी।"
 }
