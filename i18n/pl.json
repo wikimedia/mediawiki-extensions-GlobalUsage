@@ -19,6 +19,6 @@
 	"globalusage-more": "Pokaż [[{{#Special:GlobalUsage}}/$1|listę globalnego wykorzystania]] tego pliku.",
 	"globalusage-filterlocal": "Nie pokazuj lokalnego wykorzystania",
 	"mostgloballylinkedfiles": "Najczęściej globalnie linkowane pliki",
-	"mostgloballylinkedfiles-summary": "Lista plików, które zostały wykorzystane największą liczbę razy we wszystkich wiki. Równoważna lista, które uwzględnia użycie plików tylko w projekcie {{SITENAME}}, znajduje się na stronie [[{{#special: MostLinkedFiles}}]].",
+	"mostgloballylinkedfiles-summary": "Lista plików, które zostały wykorzystane największą liczbę razy we wszystkich wiki. Równoważna lista, które uwzględnia użycie plików tylko w projekcie {{SITENAME}}, znajduje się na stronie [[{{#special:MostLinkedFiles}}]].",
 	"globallywantedfiles": "Pliki potrzebne globalnie"
 }
