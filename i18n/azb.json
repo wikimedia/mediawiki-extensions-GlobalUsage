@@ -4,5 +4,9 @@
 			"Amir a57"
 		]
 	},
-	"globalusage-ok": "آختار"
+	"globalusage": "فایلین سراسری ایشلنیلمه سی",
+	"globalusage-ok": "آختار",
+	"globalusage-on-wiki": "$2 دا ایشلدیلن",
+	"globalusage-of-file": "بو فایل آشاغی داکی آیری ویکی لرده ایشلَنیر:",
+	"globalusage-more": "بو فایلین[[{{#Special:GlobalUsage}}/$1|سراسری ایستفاده لرینه]] باخین."
 }
