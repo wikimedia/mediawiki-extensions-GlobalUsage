@@ -9,5 +9,6 @@
 	"globalusage-text": "זוכן גלאבאלע טעקע ניצן.",
 	"globalusage-no-results": "[[:$1]] נישט געניצט אויף אַנדערע וויקיס.",
 	"globalusage-on-wiki": "באניץ ביי $2",
-	"globalusage-of-file": "די פאלגנדע אנדערע וויקיס ניצן די דאזיקע טעקע:"
+	"globalusage-of-file": "די פאלגנדע אנדערע וויקיס ניצן די דאזיקע טעקע:",
+	"globalusage-more": "באקוקן [[{{#Special:GlobalUsage}}/$1|נאך גלאבאלן באניץ]] פון דער טעקע."
 }
