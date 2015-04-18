@@ -13,5 +13,6 @@
 	"globalusage-no-results": "[[:$1]] word nie in ander wiki's gebruik nie.",
 	"globalusage-on-wiki": "Gebruik in $2",
 	"globalusage-of-file": "Die volgende ander wiki's gebruik hierdie lêer:",
+	"globalusage-more": "Wys [[{{#Special:GlobalUsage}}/$1|meer globale gebruik]] van die lêer.",
 	"globalusage-filterlocal": "Moenie lokale gebruik wys nie"
 }
