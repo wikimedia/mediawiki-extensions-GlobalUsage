@@ -16,5 +16,8 @@
 	"globalusage-of-file": "Os seguintes wikis empregan esta imaxe:",
 	"globalusage-more": "Ollar [[{{#Special:GlobalUsage}}/$1|o uso global]] deste ficheiro.",
 	"globalusage-filterlocal": "Non mostrar o uso local",
-	"apihelp-query+globalusage-param-limit": "Cantas ligazóns devolver."
+	"globallywantedfiles": "Ficheiros requeridos globalmente",
+	"apihelp-query+globalusage-param-limit": "Cantas ligazóns devolver.",
+	"apihelp-query+globalusage-param-filterlocal": "Filtrar o uso local do ficheiro.",
+	"apihelp-query+globalusage-example-1": "Obter o uso de [[:File:Example.jpg]]"
 }
