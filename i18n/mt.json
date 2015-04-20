@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chrisportelli"
+		]
+	},
+	"globalusage": "L-użu globali tal-fajl",
+	"globalusage-for": "Użu globali ta' \"$1\"",
+	"globalusage-desc": "[[Special:GlobalUsage|Paġna speċjali]] biex tara l-użu globali tal-fajl",
+	"globalusage-ok": "Fittex",
+	"globalusage-text": "Fittex l-użu globali tal-fajl",
+	"globalusage-no-results": "[[:$1]] mhuwiex użat fuq wikis oħra.",
+	"globalusage-on-wiki": "Użu fuq $2",
+	"globalusage-of-file": "Il-wikis segwenti jużaw dan il-fajl:",
+	"globalusage-more": "Ara l-[[{{#Special:GlobalUsage}}/$1|użu globali]] ta' dan il-fajl.",
+	"globalusage-filterlocal": "Turix l-użu lokali"
+}

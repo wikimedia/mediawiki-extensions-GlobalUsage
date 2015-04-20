@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Minh Nguyen",
+			"Vinhtantran"
+		]
+	},
+	"globalusage": "Sử dụng tập tin toàn cục",
+	"globalusage-for": "Sử dụng tập tin toàn cục của “$1”",
+	"globalusage-desc": "[[Special:GlobalUsage|Trang đặc biệt]] để xem tập tin này đang dùng ở đâu trên toàn hệ thống",
+	"globalusage-ok": "Tìm kiếm",
+	"globalusage-text": "Tìm trang dùng tập tin toàn cục",
+	"globalusage-no-results": "[[:$1]] không được sử dụng tại các wiki khác.",
+	"globalusage-on-wiki": "Trang sử dụng tại $2",
+	"globalusage-of-file": "Các wiki sau đang sử dụng tập tin này:",
+	"globalusage-more": "Xem tập tin này [[{{#Special:GlobalUsage}}/$1|đang dùng ở đâu toàn hệ thống]].",
+	"globalusage-filterlocal": "Ẩn trang nội bộ sử dụng",
+	"mostgloballylinkedfiles": "Tập tin được liên kết đến nhiều nhất toàn cục",
+	"mostgloballylinkedfiles-summary": "Danh sách các tập tin được nhúng vào nhiều trang nhất trên tất cả các wiki. Xem danh sách tương tự chỉ tính các trang trên {{SITENAME}} tại [[{{#special:MostLinkedFiles}}]].",
+	"globallywantedfiles": "Tập tin cần thiết toàn cục",
+	"globallywantedfiles-summary": "Danh sách các tập tin được nhúng vào nhiều trang nhất trên tất cả các wiki mặc dù tập tin không tồn tại. Xem danh sách tương tự chỉ tính các trang trên {{SITENAME}} tại [[{{#special:WantedFiles}}]].",
+	"globallywantedfiles-foreign-repo": "<strong>Cảnh báo:</strong> Wiki này sử dụng một kho tập tin bên ngoài. Các tập tin được sử dụng từ kho bên ngoài được liệt kê trong danh sách này là liên kết màu xanh được gạch ngang, mặc dù những tập tin này có tồn tại."
+}

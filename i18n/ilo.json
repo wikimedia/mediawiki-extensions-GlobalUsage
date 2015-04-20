@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Lam-ang"
+		]
+	},
+	"globalusage": "Global a panagusar ti papeles",
+	"globalusage-for": "Global a panagusar ti \"$1\"",
+	"globalusage-desc": "[[Special:GlobalUsage|Naipangpangruna a panid]] no kitaen ti global a panagusar ti papeles",
+	"globalusage-ok": "Biruken",
+	"globalusage-text": "Agbiruk ti global a panagusar ti papeles",
+	"globalusage-no-results": "Ti [[:$1]] ket saan a maus-usar kadagiti sabali a wiki.",
+	"globalusage-on-wiki": "Panagusar idiay $2",
+	"globalusage-of-file": "Dagiti sumaganad a wiki ket agus-usar iti daytoy a papeles:",
+	"globalusage-more": "Kitaen [[{{#Special:GlobalUsage}}/$1|ti adu pay a global a panagusar]] iti daytoy a papeles.",
+	"globalusage-filterlocal": "Saan nga ipakita ti lokal a panagusar",
+	"mostgloballylinkedfiles": "Kaaduan ti global a naisilpo a pappapales",
+	"mostgloballylinkedfiles-summary": "Listaan dagiti papeles a naisenggaten iti kaaduan a bilang iti namin ano a beses iti ballasiw ti amin a wiki. Para iti kapada a listaan a mangipakita laeng kadagiti panagusar iti {{SITENAME}}, kitaen ti [[{{#special:MostLinkedFiles}}]].",
+	"globallywantedfiles": "Global a makiddaw a pappapeles",
+	"globallywantedfiles-summary": "Listaan dagiti papeles a naisenggaten iti kaaduan a bilang iti namin ano a beses iti ballasiw ti amin a wiki urayno awan. Para iti kapada a listaan a mangipakita laeng kadagiti panagusar iti {{SITENAME}}, kitaen ti [[{{#special:WantedFiles}}]].",
+	"globallywantedfiles-foreign-repo": "<strong>Ballaag:</strong> Daytoy a wiki ket agus-usar ti ganganaet a repositorio ti papeles. Dagiti papeles manipud ti ganganaet a repositorio a maus-usar ket maipakita iti daytoy a listaan a kas nakurosan nga asul a silsilpo urayno dagitoy ket awan.",
+	"apihelp-query+globalusage-description": "Mangisubli ti global a panagusar iti ladawan para iti naisangayan a ladawan.",
+	"apihelp-query+globalusage-param-prop": "No ania a tagtagikua ti maisubli:\n;url:Agnayon iti url.\n;pageid:Agnayon ti ID ti panid.\n;namespace:Agnayon ti ID ti nagan ti espasio.",
+	"apihelp-query+globalusage-param-limit": "No mano kadagiti silpo ti maisubli.",
+	"apihelp-query+globalusage-param-filterlocal": "Sagaten ti lokal a panagusar ti papeles.",
+	"apihelp-query+globalusage-example-1": "Mangala ti panagusar ti [[:File:Example.jpg]]"
+}

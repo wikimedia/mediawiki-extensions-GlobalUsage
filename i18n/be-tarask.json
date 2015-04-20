@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"EugeneZelenko",
+			"Jim-by"
+		]
+	},
+	"globalusage": "Глябальнае выкарыстаньне файла",
+	"globalusage-for": "Глябальнае выкарыстаньне «$1»",
+	"globalusage-desc": "[[Special:GlobalUsage|Спэцыяльная старонка]] для прагляду глябальнага выкарыстаньня файла",
+	"globalusage-ok": "Шукаць",
+	"globalusage-text": "Пошук глябальнага выкарыстаньня файла.",
+	"globalusage-no-results": "[[:$1]] не выкарыстоўваецца ў іншых вікі.",
+	"globalusage-on-wiki": "Выкарыстаньне ў $2",
+	"globalusage-of-file": "Гэты файл выкарыстоўваецца ў наступных вікі:",
+	"globalusage-more": "Паказаць [[{{#Special:GlobalUsage}}/$1|глябальнае выкарыстаньне]] гэтага файла.",
+	"globalusage-filterlocal": "Не паказваць лякальнае выкарыстаньне"
+}

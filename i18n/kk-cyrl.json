@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"GaiJin",
+			"Arystanbek"
+		]
+	},
+	"globalusage": "Файлдың ғаламдық пайдаланылуы",
+	"globalusage-for": "\"$1\" дегеннің ғаламдық қолданылуы",
+	"globalusage-desc": "[[Special:GlobalUsage|Арнайы бетінде]] файлдың ғаламдық пайдаланылуын қарау",
+	"globalusage-ok": "Іздеу",
+	"globalusage-text": "Файлдың ғаламдық қолданылуын іздеу",
+	"globalusage-no-results": "[[:$1]] басқа уикилерде қолданылмайды.",
+	"globalusage-on-wiki": "$2 уикиінде қолданылуы",
+	"globalusage-of-file": "Бұл файл келесі басқа уикилерде қолданылады:",
+	"globalusage-more": "Бұл файлдың [[{{#Special:GlobalUsage}}/$1|көбірек ғаламдық қолданылуын]] қарау.",
+	"globalusage-filterlocal": "Жергілікті қолданылуын көрсетпеу"
+}

@@ -5,17 +5,22 @@
  * @file
  * @ingroup Extensions
  */
+// @codingStandardsIgnoreFile
 
 $specialPageAliases = array();
 
 /** English (English) */
 $specialPageAliases['en'] = array(
 	'GlobalUsage' => array( 'GlobalUsage' ),
+	'MostGloballyLinkedFiles' => array( 'MostGloballyLinkedFiles' ),
+	'GloballyWantedFiles' => array( 'GloballyWantedFiles' ),
 );
 
 /** Arabic (العربية) */
 $specialPageAliases['ar'] = array(
 	'GlobalUsage' => array( 'استخدام_عام' ),
+	'MostGloballyLinkedFiles' => array( 'أكثر_الملفات_الموصولة_عامة' ),
+	'GloballyWantedFiles' => array( 'ملفات_مطلوبة_عامة' ),
 );
 
 /** Egyptian Spoken Arabic (مصرى) */
@@ -23,9 +28,14 @@ $specialPageAliases['arz'] = array(
 	'GlobalUsage' => array( 'استعمال_عام' ),
 );
 
-/** Assamese (অসমীয়া) */
+/** Assamese (অসমীয়া) */
 $specialPageAliases['as'] = array(
 	'GlobalUsage' => array( 'গোলকীয়_ব্যৱহাৰ' ),
+);
+
+/** Avaric (авар) */
+$specialPageAliases['av'] = array(
+	'GlobalUsage' => array( 'Глобальное_использование' ),
 );
 
 /** Bashkir (башҡортса) */
@@ -36,6 +46,13 @@ $specialPageAliases['ba'] = array(
 /** Bulgarian (български) */
 $specialPageAliases['bg'] = array(
 	'GlobalUsage' => array( 'Глобално_използване_на_файл' ),
+);
+
+/** Western Balochi (بلوچی رخشانی) */
+$specialPageAliases['bgn'] = array(
+	'GlobalUsage' => array( 'سراسرین_ایستیپاده' ),
+	'MostGloballyLinkedFiles' => array( 'بازتیرین_سراسرین_لینک_بوته_ئین_پایلان' ),
+	'GloballyWantedFiles' => array( 'زَرورتین_سراسرین_پایلان' ),
 );
 
 /** Banjar (Bahasa Banjar) */
@@ -53,9 +70,21 @@ $specialPageAliases['bs'] = array(
 	'GlobalUsage' => array( 'GlobalnaUpotreba' ),
 );
 
+/** Min Dong Chinese (Mìng-dĕ̤ng-ngṳ̄) */
+$specialPageAliases['cdo'] = array(
+	'GlobalUsage' => array( '全局使法' ),
+);
+
+/** Chechen (нохчийн) */
+$specialPageAliases['ce'] = array(
+	'GlobalUsage' => array( 'Глобальни_лелор' ),
+);
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'GlobalUsage' => array( 'Globale_Benutzung', 'Globale_Verwendung' ),
+	'MostGloballyLinkedFiles' => array( 'Am_meisten_global_verlinkte_Dateien' ),
+	'GloballyWantedFiles' => array( 'Global_gewünschte_Dateien' ),
 );
 
 /** Zazaki (Zazaki) */
@@ -66,6 +95,11 @@ $specialPageAliases['diq'] = array(
 /** Lower Sorbian (dolnoserbski) */
 $specialPageAliases['dsb'] = array(
 	'GlobalUsage' => array( 'Globalne_wužywanje' ),
+);
+
+/** Greek (Ελληνικά) */
+$specialPageAliases['el'] = array(
+	'GlobalUsage' => array( 'ΚαθολικήΧρήση' ),
 );
 
 /** Spanish (español) */
@@ -80,7 +114,9 @@ $specialPageAliases['et'] = array(
 
 /** Persian (فارسی) */
 $specialPageAliases['fa'] = array(
-	'GlobalUsage' => array( 'استفاده_سراسری' ),
+	'GlobalUsage' => array( 'استفادهٔ_سراسری' ),
+	'MostGloballyLinkedFiles' => array( 'بیشترین_پرونده‌های_پیونده‌شدهٔ_سراسری' ),
+	'GloballyWantedFiles' => array( 'پرونده‌های_سراسری_مورد_نیاز' ),
 );
 
 /** French (français) */
@@ -106,6 +142,13 @@ $specialPageAliases['gsw'] = array(
 /** Gujarati (ગુજરાતી) */
 $specialPageAliases['gu'] = array(
 	'GlobalUsage' => array( 'વૈશ્વિક_વપરાશ' ),
+);
+
+/** Hebrew (עברית) */
+$specialPageAliases['he'] = array(
+	'GlobalUsage' => array( 'שימוש_גלובלי_בקובץ', 'שימוש_גלובלי_בקבצים' ),
+	'MostGloballyLinkedFiles' => array( 'הקבצים_המקושרים_ביותר_גלובלית' ),
+	'GloballyWantedFiles' => array( 'הקבצים_המבוקשים_ביותר_גלובלית' ),
 );
 
 /** Hindi (हिन्दी) */
@@ -170,7 +213,9 @@ $specialPageAliases['km'] = array(
 
 /** Korean (한국어) */
 $specialPageAliases['ko'] = array(
-	'GlobalUsage' => array( '전체사용' ),
+	'GlobalUsage' => array( '전역사용' ),
+	'MostGloballyLinkedFiles' => array( '가장전역으로링크된파일' ),
+	'GloballyWantedFiles' => array( '전역으로필요한파일' ),
 );
 
 /** Cornish (kernowek) */
@@ -186,11 +231,15 @@ $specialPageAliases['lad'] = array(
 /** Luxembourgish (Lëtzebuergesch) */
 $specialPageAliases['lb'] = array(
 	'GlobalUsage' => array( 'Globale_Gebrauch' ),
+	'MostGloballyLinkedFiles' => array( 'Fichieren_déi_global_am_dackste_verlinkt_sinn' ),
+	'GloballyWantedFiles' => array( 'Global_gewënscht_Fichieren' ),
 );
 
 /** Macedonian (македонски) */
 $specialPageAliases['mk'] = array(
 	'GlobalUsage' => array( 'ГлобалноКористење' ),
+	'MostGloballyLinkedFiles' => array( 'ГлобалноНајупотребуваниПодатотеки' ),
+	'GloballyWantedFiles' => array( 'ГлобалноПотребниПодатотеки' ),
 );
 
 /** Malayalam (മലയാളം) */
@@ -208,12 +257,12 @@ $specialPageAliases['mt'] = array(
 	'GlobalUsage' => array( 'UżuGlobali' ),
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎) */
+/** Norwegian Bokmål (norsk bokmål) */
 $specialPageAliases['nb'] = array(
 	'GlobalUsage' => array( 'Global_bruk' ),
 );
 
-/** Nedersaksisch (Nedersaksisch) */
+/** Low Saxon (Netherlands) (Nedersaksies) */
 $specialPageAliases['nds-nl'] = array(
 	'GlobalUsage' => array( 'Globaal_gebruuk' ),
 );
@@ -221,9 +270,11 @@ $specialPageAliases['nds-nl'] = array(
 /** Dutch (Nederlands) */
 $specialPageAliases['nl'] = array(
 	'GlobalUsage' => array( 'GlobaalGebruik' ),
+	'MostGloballyLinkedFiles' => array( 'GlobaalMeestGebruikteBestanden' ),
+	'GloballyWantedFiles' => array( 'GlobaalGewensteBestanden' ),
 );
 
-/** Norwegian Nynorsk (norsk (nynorsk)‎) */
+/** Norwegian Nynorsk (norsk nynorsk) */
 $specialPageAliases['nn'] = array(
 	'GlobalUsage' => array( 'Global_bruk' ),
 );
@@ -258,6 +309,11 @@ $specialPageAliases['sa'] = array(
 	'GlobalUsage' => array( 'वैश्विकउपयोग' ),
 );
 
+/** Sicilian (sicilianu) */
+$specialPageAliases['scn'] = array(
+	'GlobalUsage' => array( 'UsoGlobale', 'UsoGlobaleFile' ),
+);
+
 /** Slovak (slovenčina) */
 $specialPageAliases['sk'] = array(
 	'GlobalUsage' => array( 'GlobálneVyužitie' ),
@@ -266,6 +322,8 @@ $specialPageAliases['sk'] = array(
 /** Swedish (svenska) */
 $specialPageAliases['sv'] = array(
 	'GlobalUsage' => array( 'Global_användning' ),
+	'MostGloballyLinkedFiles' => array( 'Mest_globalt_länkade_filer' ),
+	'GloballyWantedFiles' => array( 'Globalt_önskade_filer' ),
 );
 
 /** Tagalog (Tagalog) */
@@ -283,7 +341,7 @@ $specialPageAliases['uk'] = array(
 	'GlobalUsage' => array( 'Глобальне_використання' ),
 );
 
-/** vèneto (vèneto) */
+/** Venetian (vèneto) */
 $specialPageAliases['vec'] = array(
 	'GlobalUsage' => array( 'UtilizoGlobal' ),
 );
@@ -291,6 +349,8 @@ $specialPageAliases['vec'] = array(
 /** Vietnamese (Tiếng Việt) */
 $specialPageAliases['vi'] = array(
 	'GlobalUsage' => array( 'Sử_dụng_toàn_cục' ),
+	'MostGloballyLinkedFiles' => array( 'Tập_tin_liên_kết_nhiều_nhất_toàn_cục' ),
+	'GloballyWantedFiles' => array( 'Tập_tin_cần_thiết_toàn_cục' ),
 );
 
 /** Cantonese (粵語) */
@@ -301,9 +361,13 @@ $specialPageAliases['yue'] = array(
 /** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
 	'GlobalUsage' => array( '全域使用情况' ),
+	'MostGloballyLinkedFiles' => array( '全域最多链接文件' ),
+	'GloballyWantedFiles' => array( '全域需要的文件' ),
 );
 
 /** Traditional Chinese (中文（繁體）‎) */
 $specialPageAliases['zh-hant'] = array(
-	'GlobalUsage' => array( '全域使用' ),
+	'GlobalUsage' => array( '全域使用狀況' ),
+	'MostGloballyLinkedFiles' => array( '全域最多連接檔案' ),
+	'GloballyWantedFiles' => array( '全域需要的檔案' ),
 );

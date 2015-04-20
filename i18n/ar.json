@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"Alnokta",
+			"Meno25",
+			"OsamaK",
+			"Abanima"
+		]
+	},
+	"globalusage": "الاستخدام العام للملف",
+	"globalusage-for": "استخدام \"$1\" العام",
+	"globalusage-desc": "[[Special:GlobalUsage|صفحة خاصة]] لرؤية الاستخدام العام للملف",
+	"globalusage-ok": "بحث",
+	"globalusage-text": "ابحث في الاستخدام العام لملف",
+	"globalusage-no-results": "[[:$1]] غير مستخدم في ويكيات أخرى.",
+	"globalusage-on-wiki": "الاستخدام في $2",
+	"globalusage-of-file": "الويكيات الأخرى التالية تستخدم هذا الملف:",
+	"globalusage-more": "اعرض [[{{#Special:GlobalUsage}}/$1|المزيد من الاستخدام العام]] لهذا الملف.",
+	"globalusage-filterlocal": "لا تعرض الاستخدام المحلي",
+	"mostgloballylinkedfiles": "أكثر الملفات وصلاً على جميع الويكيات",
+	"mostgloballylinkedfiles-summary": "قائمة بالملفات التي تم دمجها أكبر عدد من المرات في جميع الويكيات. للحصول على قائمة مماثلة لا تأخذ في الحسبان إلا حالات الاستعمال في {{SITENAME}} راجع [[{{#special:MostLinkedFiles}}]].",
+	"globallywantedfiles": "الملفات المطلوبة في جميع الويكيات",
+	"globallywantedfiles-summary": "قائمة بالملفات الموصول إليها أكبر عدد من المرات في جميع الويكيات رغم أنها غير موجودة. للحصول على القائمة التي لا تأخذ في الحسبان إلا حالات الاستعمال في {{SITENAME}}، راجع [[{{#special:WantedFiles}}]].",
+	"globallywantedfiles-foreign-repo": "<strong>تنبيه:</strong> هذا الويكي يستعمل مخزن ملفات خارجي. ستظهر الملفات من المخزن الخارجي المستخدمة في هذا الويكي على شكل وصلات زرقاء مشطوبة رغم أن هذه الملفات موجودة.",
+	"apihelp-query+globalusage-description": "يعطي المعلومات عن استخدام صورة معينة في جميع الويكيات.",
+	"apihelp-query+globalusage-param-limit": "عدد الوصلات في النتيجة.",
+	"apihelp-query+globalusage-param-filterlocal": "ترشيح الاستخدام المحلي للملف."
+}

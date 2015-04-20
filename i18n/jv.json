@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Meursault2004",
+			"NoiX180"
+		]
+	},
+	"globalusage": "Panggunan berkas sacara global",
+	"globalusage-for": "Anggoan global kanggo \"$1\"",
+	"globalusage-desc": "[[Special:GlobalUsage|Kaca astaméwa]] kanggo ndeleng panggunan global berkas",
+	"globalusage-ok": "Golèk",
+	"globalusage-text": "Golèk panggunan global berkas.",
+	"globalusage-no-results": "[[:$1]] ora dianggo nèng wiki liya.",
+	"globalusage-on-wiki": "Dianggo nalika $2",
+	"globalusage-of-file": "Wiki liyané ngisor iki nganggo berkas iki:",
+	"globalusage-more": "Delok [[{{#Special:GlobalUsage}}/$1|anggoan global luwih akèh]] saka kaca iki.",
+	"globalusage-filterlocal": "Aja tuduhaké anggoan lokal"
+}

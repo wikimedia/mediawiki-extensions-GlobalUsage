@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"1AnuraagPandey"
+		]
+	},
+	"globalusage": "वैश्विक फाइल प्रयोग",
+	"globalusage-on-wiki": "$2 पर उपयोग",
+	"globalusage-of-file": "अउर विकि जवन इ फाइल कय प्रयोग करत हँय:",
+	"globalusage-more": "इ फ़ाइल कय [[{{#Special:GlobalUsage}}/$1|वैश्विक उपयोग कय अधिक जानकारी]] देखा जाय।"
+}

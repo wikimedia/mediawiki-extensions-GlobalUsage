@@ -1,0 +1,32 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gaoxuewei",
+			"Gzdavidwong",
+			"Hydra",
+			"Liangent",
+			"Xiaomingyan",
+			"Liuxinyu970226"
+		]
+	},
+	"globalusage": "全域文件用途",
+	"globalusage-for": "“$1”的全域用途",
+	"globalusage-desc": "查看全域文件用途的[[Special:GlobalUsage|特殊页面]]",
+	"globalusage-ok": "搜索",
+	"globalusage-text": "搜索全域文件用途",
+	"globalusage-no-results": "[[:$1]]没有用于其他wiki。",
+	"globalusage-on-wiki": "$2上的用途",
+	"globalusage-of-file": "以下其他wiki使用此文件：",
+	"globalusage-more": "查看本文件的[[{{#Special:GlobalUsage}}/$1|更多全域用途]]。",
+	"globalusage-filterlocal": "不显示本地用途",
+	"mostgloballylinkedfiles": "最多全域链接文件",
+	"mostgloballylinkedfiles-summary": "这是跨所有wiki嵌入页面最多次数的文件列表。关于在{{SITENAME}}上只考虑用途的等价列表，参见[[{{#special:MostLinkedFiles}}]]。",
+	"globallywantedfiles": "全域需要的文件",
+	"globallywantedfiles-summary": "这是跨所有wiki嵌入页面最多次数的文件列表，尽管不存在。关于在{{SITENAME}}上只考虑用途的等价列表，参见[[{{#special:WantedFiles}}]]。",
+	"globallywantedfiles-foreign-repo": "<strong>警告：</strong>此wiki使用外部的文件存储库。来自外部存储库使用中的文件将在此列表显示成蓝色链接，尽管它们事实上存在。",
+	"apihelp-query+globalusage-description": "返回某一图片的全域图片使用。",
+	"apihelp-query+globalusage-param-prop": "返回的属性：\n;url:加入url。\n;pageid:加入页面ID。\n;namespace:加入名字空间ID。",
+	"apihelp-query+globalusage-param-limit": "返回链接数。",
+	"apihelp-query+globalusage-param-filterlocal": "过滤文件的本地用途。",
+	"apihelp-query+globalusage-example-1": "获得[[:File:Example.jpg]]的用途"
+}

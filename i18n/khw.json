@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Rachitrali"
+		]
+	},
+	"globalusage": "گلوبل فائلو استعمال",
+	"globalusage-on-wiki": "$2 استعمال",
+	"globalusage-of-file": "مندرجہ ذیل ویکیپیڈیا ھیہ فائلو استعمال بیتی شیر:",
+	"globalusage-more": "ھیہ فائلو لوڑے[[{{#Special:GlobalUsage}}/$1|more global usage]] of this file."
+}

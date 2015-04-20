@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ooswesthoesbes",
+			"Pahles"
+		]
+	},
+	"globalusage": "Globaal besjtandjsgebroek",
+	"globalusage-for": "Wikiwied gebroek veur \"$1\"",
+	"globalusage-desc": "[[Special:GlobalUsage|Speciaal pagina]] veur 't bekieke van wikiwied bestandjsgebroek",
+	"globalusage-ok": "Zeuk",
+	"globalusage-text": "Bekiek wikiwied bestandjsgebroek",
+	"globalusage-no-results": "[[:$1]] weurt neet gebroek in anger wiki's.",
+	"globalusage-on-wiki": "Gebroek in $2",
+	"globalusage-of-file": "De volgende anger wiki's gebroeke dit bestandj:",
+	"globalusage-more": "Bekiek [[{{#Special:GlobalUsage}}/$1|wikiwied gebroek]] van dit bestandj.",
+	"globalusage-filterlocal": "Tuin gei lokaal gebroek"
+}

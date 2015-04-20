@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"PPerviz",
+			"Dağlı95"
+		]
+	},
+	"globalusage": "Faylın qlobal istifadəsi",
+	"globalusage-ok": "Axtar",
+	"globalusage-of-file": "Bu fayl aşağıdakı vikilərdə istifadə olunur:",
+	"globalusage-more": "Bu faylın [[{{#Special:GlobalUsage}}/$1|daha ətraflı qlobal istifadəsinə]] baxın."
+}

@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mdupont"
+		]
+	},
+	"globalusage": "përdorimin e Global file",
+	"globalusage-for": "përdorim global për \"$1\"",
+	"globalusage-desc": "[[Special:GlobalUsage|faqe Speciale]] për të parë përdorimin globale file",
+	"globalusage-ok": "Kërkim",
+	"globalusage-text": "përdorimit file Kërko globale",
+	"globalusage-no-results": "[[:$1]] nuk është përdorur në wikis tjera.",
+	"globalusage-on-wiki": "Shfrytëzuar në $2",
+	"globalusage-of-file": "Wikis e mëposhtme të tjerë e përdorin këtë skedë:",
+	"globalusage-more": "Shiko [[{{#Special:GlobalUsage}}/$1|më shumë përdorimin globale]] për këtë skedë.",
+	"globalusage-filterlocal": "A nuk tregojnë përdorimin e lokale"
+}

@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yueman"
+		]
+	},
+	"globalusage": "全域檔案使用情況",
+	"globalusage-on-wiki": "$2嘅使用情況",
+	"globalusage-of-file": "下面嘅維基都用緊呢個檔案：",
+	"globalusage-more": "睇呢個檔案嘅[[{{#Special:GlobalUsage}}/$1|更多全域使用情況]]。"
+}

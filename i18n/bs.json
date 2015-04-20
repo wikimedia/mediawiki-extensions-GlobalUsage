@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"CERminator"
+		]
+	},
+	"globalusage": "Globalna upotreba datoteke",
+	"globalusage-for": "Globalna upotreba za \"$1\"",
+	"globalusage-desc": "[[Special:GlobalUsage|Posebna stranica]] za pregled globalne upotrebe datoteke",
+	"globalusage-ok": "Traži",
+	"globalusage-text": "Pretraga globalne upotrebe datoteke.",
+	"globalusage-no-results": "[[:$1]] nije korištena na drugim wikijima.",
+	"globalusage-on-wiki": "Upotreba na $2",
+	"globalusage-of-file": "Slijedeći wikiji koriste ovu datoteku:",
+	"globalusage-more": "Pogledajte [[{{#Special:GlobalUsage}}/$1|globalne upotrebe]] ove datoteke.",
+	"globalusage-filterlocal": "Ne prikazuj lokalnu upotrebu"
+}

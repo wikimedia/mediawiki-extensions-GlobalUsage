@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ansumang",
+			"Shubha"
+		]
+	},
+	"globalusage": "वैश्विकसञ्चिकायाः उपयोगः",
+	"globalusage-for": "\"$1\" इत्यस्य वैश्विकोपयोगः",
+	"globalusage-desc": "वैश्विकसञ्चिकायाः उपयोगस्य दर्शनाय [[Special:GlobalUsage|विशेषपृष्ठम्]]",
+	"globalusage-ok": "अन्वेषणम्",
+	"globalusage-text": "वैश्विकसञ्चिकोपयोगः अन्विष्यताम्",
+	"globalusage-no-results": "[[:$1]] अन्यासु विकीषु न उपयुक्ता ।",
+	"globalusage-on-wiki": "$2 इत्यस्मिन् उपयोगः",
+	"globalusage-of-file": "एतां सञ्चिकाम् अधोनिर्दिष्टाः वीक्यः उपयुञ्जते:",
+	"globalusage-more": "अस्याः सञ्चिकायाः [[{{#Special:GlobalUsage}}/$1|वैश्विकोपयोगस्य अधिकविवरणम्]] दृश्यताम् ।",
+	"globalusage-filterlocal": "स्थनीयोपयोगः न दर्श्यताम्"
+}

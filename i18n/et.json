@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Avjoska",
+			"Pikne"
+		]
+	},
+	"globalusage": "Globaalne failikasutus",
+	"globalusage-for": "Faili \"$1\" globaalne kasutus",
+	"globalusage-desc": "[[Special:GlobalUsage|Erilehekülg]] faili globaalse kasutuse vaatamiseks",
+	"globalusage-ok": "Otsi",
+	"globalusage-text": "Faili globaalse kasutuse otsimine",
+	"globalusage-no-results": "[[:$1]] pole muudes vikides kasutusel.",
+	"globalusage-on-wiki": "Faili kasutus vikis $2",
+	"globalusage-of-file": "Järgmised muud vikid kasutavad seda faili:",
+	"globalusage-more": "Vaata selle faili [[{{#Special:GlobalUsage}}/$1|globaalset kasutust]].",
+	"globalusage-filterlocal": "Ära näita kohalikku kasutust",
+	"mostgloballylinkedfiles": "Globaalselt enim lingitud failid",
+	"mostgloballylinkedfiles-summary": "Loend failidest, mida on kõigi vikide kõigi lehekülgede peale kokku kõige rohkem kordi kasutatud. Sarnene loend [[{{#special:MostLinkedFiles}}]] võtab arvesse ainult kasutust projektis {{SITENAME}}."
+}

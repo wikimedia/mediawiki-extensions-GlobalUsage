@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Cedric31"
+		]
+	},
+	"globalusage": "Usatge global del fichièr",
+	"globalusage-for": "Usatge global per « $1 »",
+	"globalusage-desc": "[[Special:GlobalUsage|Pagina especiala]] per veire l’usatge global d’un imatge",
+	"globalusage-ok": "Recèrca",
+	"globalusage-text": "Recercar l'usatge global del fichièr",
+	"globalusage-no-results": "[[:$1]] es pas utilizat sus d'autres wikis.",
+	"globalusage-on-wiki": "Utilizacion sus $2",
+	"globalusage-of-file": "Los autres wikis seguents utilizan aqueste imatge :",
+	"globalusage-more": "Veire [[{{#Special:GlobalUsage}}/$1|l'utilizacion globala]] d'aqueste fichièr.",
+	"globalusage-filterlocal": "Far pas veire l'utilizacion locala"
+}

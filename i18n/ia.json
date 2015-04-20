@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"globalusage": "Uso global de iste file",
+	"globalusage-for": "Uso global pro \"$1\"",
+	"globalusage-desc": "[[Special:GlobalUsage|Pagina special]] pro vider le uso global de files",
+	"globalusage-ok": "Cercar",
+	"globalusage-text": "Cercar uso global de files.",
+	"globalusage-no-results": "[[:$1]] non es usate in altere wikis.",
+	"globalusage-on-wiki": "Uso in $2",
+	"globalusage-of-file": "Le altere wikis sequente usa iste imagine:",
+	"globalusage-more": "Vider [[{{#Special:GlobalUsage}}/$1|altere usos global]] de iste file.",
+	"globalusage-filterlocal": "Non monstrar uso local"
+}

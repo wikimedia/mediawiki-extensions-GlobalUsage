@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu",
+			"Jon Harald Søby",
+			"Nghtwlkr",
+			"Purodha",
+			"Raymond",
+			"Shirayuki",
+			"The Evil IP address",
+			"Umherirrender",
+			"Vriullop",
+			"Yekrats",
+			"Krinkle",
+			"Amire80"
+		]
+	},
+	"globalusage": "{{doc-special|GlobalUsage}}\nHeader of a section that lists all the places where one shared file has been used. \"Global\" refers to the usage, not to the file. \"File\" is singular. Used while viewing the file description page ([[commons:File:Triangle.Right.ly.png|example at Commons]]). Appears at the top of the page as a link to a section anchor, and at the bottom as the section header.\n\n{{Identical|File usage}}",
+	"globalusage-for": "Title of [[Special:GlobalUsage]]\n* $1 - name of the searched file, with namespace",
+	"globalusage-desc": "{{desc|name=Global Usage|url=https://www.mediawiki.org/wiki/Extension:GlobalUsage}}",
+	"globalusage-ok": "Button on Special:GlobalUsage.\n{{Identical|Search}}",
+	"globalusage-text": "Label on [[Special:GlobalUsage]]",
+	"globalusage-no-results": "Used for empty result on [[Special:GlobalUsage]]\n* $1 - name of the file (with namespace)",
+	"globalusage-on-wiki": "Shown in the list of global usages.\n\nExample: [[Commons:Special:GlobalUsage/Example.jpg]] and [[Commons:File:Example.jpg]]\n\nParameters:\n* $1 - (Unused) the filename\n* $2 - the project name given as a domain, e.g. en.wikipedia.org",
+	"globalusage-of-file": "Used on an image page.\n\nThe number of following wikis is unknown. By an empty result, no message is shown.",
+	"globalusage-more": "Used on an image page, when more global usage results are available. Example: [[Commons:File:Example.jpg]]\n* $1 - name of the file (without namespace)",
+	"globalusage-filterlocal": "Filteroption for [[Special:GlobalUsage]]",
+	"mostgloballylinkedfiles": "{{doc-special|MostGloballyLinkedFiles}}\nName of the the special that lists files with most usages across all wikis. Global refers to the usage (all wikis, not just current wiki). This is similar to {{msg-mw|mostimages}}, but for the global special page.",
+	"mostgloballylinkedfiles-summary": "Summary for [[Special:MostGloballyLinkedFiles]].\n\n\"Global\" refers to the fact that this takes into account all the wikis in the current wiki family and not just the current wiki.\n\nThis is similar to {{msg-mw|Mostimages-summary}}, but for the global special page.",
+	"globallywantedfiles": "{{doc-special|GloballyWantedFiles}}\nName of the the special that lists non-existent files with most usages across all wikis. Global refers to the usage (all wikis, not just current wiki). This is similar to {{msg-mw|wantedfiles}}, but for the global special page.",
+	"globallywantedfiles-summary": "Summary of [[Special:GloballyWantedFiles]].\n\n\"Global\" refers to the fact that this takes into account all the wikis in the wiki family, not just the current wiki. This is similar to {{msg-mw|wantedfiles-summary}} or {{msg-mw|wantedfilestext-cat}}, but for the global special page.",
+	"globallywantedfiles-foreign-repo": "Warning shown on top of Special:GloballyWantedFiles (Between the {{msg-mw|perfcachedts}} and {{msg-mw|showingresultsinrange}} messages) if the wiki has a foreign repository enabled.",
+	"apihelp-query+globalusage-description": "{{doc-apihelp-description|query+globalusage}}",
+	"apihelp-query+globalusage-param-prop": "{{doc-apihelp-param|query+globalusage|prop}}",
+	"apihelp-query+globalusage-param-limit": "{{doc-apihelp-param|query+globalusage|limit}}",
+	"apihelp-query+globalusage-param-filterlocal": "{{doc-apihelp-param|query+globalusage|filterlocal}}",
+	"apihelp-query+globalusage-example-1": "{{doc-apihelp-example|query+globalusage}}"
+}

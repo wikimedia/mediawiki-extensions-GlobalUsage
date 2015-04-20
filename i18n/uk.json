@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"NickK",
+			"Тест",
+			"Andriykopanytsia",
+			"Olion"
+		]
+	},
+	"globalusage": "Глобальне використання файлу",
+	"globalusage-for": "Глобальне використання «$1»",
+	"globalusage-desc": "[[Special:GlobalUsage|Спеціальна сторінка]] для перегляду глобального використання файлу",
+	"globalusage-ok": "Пошук",
+	"globalusage-text": "Пошук глобального використання файлу",
+	"globalusage-no-results": "[[:$1]] не використовується в інших вікі.",
+	"globalusage-on-wiki": "Використання в $2",
+	"globalusage-of-file": "Цей файл використовують такі інші вікі:",
+	"globalusage-more": "Переглянути [[{{#Special:GlobalUsage}}/$1|сторінку глобального використання]] цього файлу.",
+	"globalusage-filterlocal": "Не показувати локальне використання",
+	"mostgloballylinkedfiles": "Найбільш глобально зв'язані файли",
+	"mostgloballylinkedfiles-summary": "Перелік файлів, включених найбільшу кількість разів загалом на всіх вікі. За таким самим переліком, обмеженим {{SITENAME}}, див. [[{{#special:MostLinkedFiles}}]].",
+	"globallywantedfiles": "Глобально розшукувані файли",
+	"globallywantedfiles-summary": "Перелік неіснуючих файлів, включених найбільшу кількість разів загалом на всіх вікі. За таким самим переліком, обмеженим {{SITENAME}}, див. [[{{#special:WantedFiles}}]].",
+	"globallywantedfiles-foreign-repo": "<strong>Попередження:</strong> Цей вікі-проект використовує стороннє сховище файлів. Використані файли зі стороннього сховища відображено в цьому переліку як закреслені блакитні посилання, незважаючи на те, що ці файли існують."
+}

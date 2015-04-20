@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Laaknor",
+			"Nghtwlkr"
+		]
+	},
+	"globalusage": "Global filbruk",
+	"globalusage-for": "Global bruk av \"$1\"",
+	"globalusage-desc": "[[Special:GlobalUsage|Spesialside]] for å vise bruken av en fil globalt",
+	"globalusage-ok": "Søk",
+	"globalusage-text": "Søk global filbruk.",
+	"globalusage-no-results": "[[:$1]] er ikke brukt på andre wikier.",
+	"globalusage-on-wiki": "Bruk i $2",
+	"globalusage-of-file": "Følgende andre wikier bruker denne filen:",
+	"globalusage-more": "Vis [[{{#Special:GlobalUsage}}/$1|mer global bruk]] av denne filen.",
+	"globalusage-filterlocal": "Ikke vis lokal bruk"
+}

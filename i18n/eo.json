@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yekrats"
+		]
+	},
+	"globalusage": "Ĝenerala dosier-uzado",
+	"globalusage-for": "Ĝenerala uzado por \"$1\"",
+	"globalusage-desc": "[[Special:GlobalUsage|Speciala paĝo]] por rigardi uzadon de ĝeneralaj dosieroj",
+	"globalusage-ok": "Serĉi",
+	"globalusage-text": "Serĉi uzadon de ĝeneralaj dosieroj.",
+	"globalusage-no-results": "[[:$1]] ne estas uzata en aliaj vikioj.",
+	"globalusage-on-wiki": "Uzado en $2",
+	"globalusage-of-file": "La jenaj aliaj vikioj utiligas ĉi tiun dosieron:",
+	"globalusage-more": "Vidi [[{{#Special:GlobalUsage}}/$1|plian ĝeneralan uzadon]] de ĉi tiu dosiero.",
+	"globalusage-filterlocal": "Ne montri lokan uzadon"
+}

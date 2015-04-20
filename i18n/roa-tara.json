@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joetaras"
+		]
+	},
+	"globalusage": "Ause d'u file globale",
+	"globalusage-for": "Ause globale pe \"$1\"",
+	"globalusage-desc": "[[Special:GlobalUsage|Pàgena speciale]] pe vedè l'ause de le file globale",
+	"globalusage-ok": "Cirche",
+	"globalusage-text": "Cirche le file de ause globale",
+	"globalusage-no-results": "[[:$1]] non g'è ausate jndr'à otre Uicchi.",
+	"globalusage-on-wiki": "Ause sus a $2",
+	"globalusage-of-file": "Le seguende Uicchi ausane stu file:",
+	"globalusage-more": "Vide [[{{#Special:GlobalUsage}}/$1|ause globale]] de stu file.",
+	"globalusage-filterlocal": "No fà vedè l'ause locale"
+}

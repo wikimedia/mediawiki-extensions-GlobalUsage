@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ebraminio",
+			"Huji",
+			"Wayiran"
+		]
+	},
+	"globalusage": "کاربرد سراسری پرونده",
+	"globalusage-for": "کاربرد سراسری برای «$1»",
+	"globalusage-desc": "[[Special:GlobalUsage|صفحهٔ ویژه]] برای دیدن استفاده‌های سراسری",
+	"globalusage-ok": "جستجو",
+	"globalusage-text": "جستجوی استفاده‌های سراسری پرونده",
+	"globalusage-no-results": "[[:$1]] در ویکی‌های دیگر استفاده نشده‌است.",
+	"globalusage-on-wiki": "کاربرد در $2",
+	"globalusage-of-file": "این ویکی‌های دیگر از این پرونده استفاده می‌کنند:",
+	"globalusage-more": "نمایش [[{{#Special:GlobalUsage}}/$1|استفاده‌های سراسری]] از این پرونده.",
+	"globalusage-filterlocal": "استفاده‌های محلی را نشان نده",
+	"mostgloballylinkedfiles": "بیشترین پرونده‌های سراسری پیوندشده",
+	"mostgloballylinkedfiles-summary": "فهرشت پرونده‌هایی که بیشترین تعداد بین همهٔ ویکی‌ها تعبیه شده است. برای معادل این فهرست که فقط استفاده‌های در {{SITENAME}} را درنظر می‌گیرد، [[{{#special:MostLinkedFiles}}]] را ببینید.",
+	"globallywantedfiles": "پرونده‌های موردنیاز سراسری",
+	"globallywantedfiles-summary": "فهرست همهٔ پرونده‌هایی که با بیشترین تعداد بین همهٔ ویکی‌ها استفاده شده به جز آن‌هایی که موجود نیستند. برای معادل این فهرست که فقط استفاده‌های در {{SITENAME}} را در نظر می‌گیرد، [[{{#special:WantedFiles}}]] را ببینید.",
+	"globallywantedfiles-foreign-repo": "<strong>اخطار:</strong> این ویکی از یک پروندهٔ مخزن خارجی استفاده می‌کند. پرونده‌های مخزن خارجی که در استفاده هستند در این فهرست اگر موجود باشند با پیوندهای آبی نمایش داده می‌شوند."
+}
