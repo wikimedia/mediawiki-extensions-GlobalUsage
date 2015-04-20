@@ -101,7 +101,7 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 		$pageIds = $this->getPageSet()->getAllTitlesByNamespace();
 		if ( defined( 'ApiResult::META_CONTENT' ) ) {
 			foreach ( $pageIds[NS_FILE] as $id ) {
-				$result->defineIndexedTagName(
+				$result->addIndexedTagName(
 					array( 'query', 'pages', $id, 'globalusage' ),
 					'gu'
 				);
