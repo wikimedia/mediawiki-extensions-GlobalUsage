@@ -3,7 +3,8 @@
 		"authors": [
 			"Toliño",
 			"Xosé",
-			"Banjo"
+			"Banjo",
+			"Elisardojm"
 		]
 	},
 	"globalusage": "Uso global do ficheiro",
@@ -16,7 +17,10 @@
 	"globalusage-of-file": "Os seguintes wikis empregan esta imaxe:",
 	"globalusage-more": "Ollar [[{{#Special:GlobalUsage}}/$1|o uso global]] deste ficheiro.",
 	"globalusage-filterlocal": "Non mostrar o uso local",
+	"mostgloballylinkedfiles": "Ficheiros máis ligados globalmente",
 	"globallywantedfiles": "Ficheiros requeridos globalmente",
+	"apihelp-query+globalusage-description": "Mostra o uso global dunha imaxe concreta.",
+	"apihelp-query+globalusage-param-prop": "Que propiedades devolver:\n;url: Engade a URL.\n;pageid: Engade o identificador da páxina.\n;namespace: Engade o identificador do espazo de nomes.",
 	"apihelp-query+globalusage-param-limit": "Cantas ligazóns devolver.",
 	"apihelp-query+globalusage-param-filterlocal": "Filtrar o uso local do ficheiro.",
 	"apihelp-query+globalusage-example-1": "Obter o uso de [[:File:Example.jpg]]"
