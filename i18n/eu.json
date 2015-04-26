@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kobazulo"
+			"Kobazulo",
+			"Sator"
 		]
 	},
 	"globalusage": "Fitxategiaren erabilera orokorra",
 	"globalusage-desc": "Fitxategiaren erabilera orokorra ikusteko [[Special:GlobalUsage|orrialde berezia]]",
 	"globalusage-ok": "Bilatu",
-	"globalusage-text": "Fitxategiaren erabilera orokorra bilatu."
+	"globalusage-text": "Fitxategiaren erabilera orokorra bilatu.",
+	"globalusage-of-file": "Hurrengo beste wikiek fitxategi hau darabilte:"
 }

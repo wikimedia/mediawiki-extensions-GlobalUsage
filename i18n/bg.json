@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"DCLXVI",
-			"Turin"
+			"Turin",
+			"StanProg"
 		]
 	},
 	"globalusage": "Глобално използване на файл",
@@ -13,5 +14,6 @@
 	"globalusage-no-results": "[[:$1]] не се използва в други уикита.",
 	"globalusage-on-wiki": "Употреба в $2",
 	"globalusage-of-file": "Този файл се използва от следните други уикита:",
+	"globalusage-more": "Преглед на [[{{#Special:GlobalUsage}}/$1|глобалната употреба]] на файла.",
 	"globalusage-filterlocal": "Без показване на локалната употреба"
 }

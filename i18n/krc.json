@@ -6,5 +6,6 @@
 	},
 	"globalusage": "Файлны глобал хайырланыуу",
 	"globalusage-on-wiki": "$2 проектде хайырланылыуу",
-	"globalusage-of-file": "Бу файл бу викиледе хайырландырылады:"
+	"globalusage-of-file": "Бу файл бу викиледе хайырландырылады:",
+	"globalusage-more": "Бу файлны [[{{#Special:GlobalUsage}}/$1|глобал хайырландырылыуун]] кёрюу."
 }
