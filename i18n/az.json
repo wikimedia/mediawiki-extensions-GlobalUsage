@@ -2,11 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"PPerviz",
-			"Dağlı95"
+			"Dağlı95",
+			"Wertuose"
 		]
 	},
 	"globalusage": "Faylın qlobal istifadəsi",
 	"globalusage-ok": "Axtar",
+	"globalusage-on-wiki": "$2 layihəsində istifadəsi",
 	"globalusage-of-file": "Bu fayl aşağıdakı vikilərdə istifadə olunur:",
 	"globalusage-more": "Bu faylın [[{{#Special:GlobalUsage}}/$1|daha ətraflı qlobal istifadəsinə]] baxın."
 }

@@ -6,5 +6,6 @@
 	},
 	"globalusage": "ფაილიშ გლობალური გჷმორინაფა",
 	"globalusage-on-wiki": "$2-ს გჷმორინაფა",
-	"globalusage-of-file": "თე ფაილი გმირინუაფუ გეჸვენჯი ვიკეფს:"
+	"globalusage-of-file": "თე ფაილი გმირინუაფუ გეჸვენჯი ვიკეფს:",
+	"globalusage-more": "ქოძირით, თე ფაილიშ [[{{#Special:GlobalUsage}}/$1|გლობალური გიმორინაფა]]."
 }

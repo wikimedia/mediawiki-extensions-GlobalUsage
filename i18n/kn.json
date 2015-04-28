@@ -2,9 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Nayvik",
-			"Omshivaprakash"
+			"Omshivaprakash",
+			"VASANTH S.N."
 		]
 	},
+	"globalusage": "ಜಾಗತಿಕ ಕಡತ ಉಪಯೋಗ",
 	"globalusage-ok": "ಹುಡುಕು",
-	"globalusage-on-wiki": "$2 ಮೇಲೆ ಬಳಕೆ"
+	"globalusage-on-wiki": "$2 ಮೇಲೆ ಬಳಕೆ",
+	"globalusage-of-file": "ಈ ಕಡತವನ್ನು ಕೆಳಗಿನ ಬೇರೆ ವಿಕಿಗಳೂ ಉಪಯೋಗಿಸುತ್ತಿವೆ:"
 }
