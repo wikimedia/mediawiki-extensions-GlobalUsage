@@ -2,12 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Ansumang",
-			"Shubha"
+			"Shubha",
+			"NehalDaveND"
 		]
 	},
 	"globalusage": "वैश्विकसञ्चिकायाः उपयोगः",
 	"globalusage-for": "\"$1\" इत्यस्य वैश्विकोपयोगः",
-	"globalusage-desc": "वैश्विकसञ्चिकायाः उपयोगस्य दर्शनाय [[Special:GlobalUsage|विशेषपृष्ठम्]]",
+	"globalusage-desc": "वैश्विकसञ्चिकायाः उपयोगस्य दर्शनाय [[Special:GlobalUsage|विशिष्टपृष्ठम्]]",
 	"globalusage-ok": "अन्वेषणम्",
 	"globalusage-text": "वैश्विकसञ्चिकोपयोगः अन्विष्यताम्",
 	"globalusage-no-results": "[[:$1]] अन्यासु विकीषु न उपयुक्ता ।",
