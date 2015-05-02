@@ -2,12 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Amir a57",
-			"Koroğlu"
+			"Koroğlu",
+			"Mousa"
 		]
 	},
-	"globalusage": "فایلین باشاباش ایشلنیلمه سی",
+	"globalusage": "فایلین باشاباش ایشلنیلمه‌سی",
 	"globalusage-ok": "آختار",
-	"globalusage-on-wiki": "$2 دا ایشلدیلن",
+	"globalusage-on-wiki": "$2-ده ایشلنمه‌سی",
 	"globalusage-of-file": "بو فایل آشاغی داکی آیری ویکی لرده ایشلَنیر:",
 	"globalusage-more": "بو فایلین[[{{#Special:GlobalUsage}}/$1|سراسری ایستفاده لرینه]] باخین."
 }
