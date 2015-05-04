@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Чаховіч Уладзіслаў"
+			"Чаховіч Уладзіслаў",
+			"Maksim L."
 		]
 	},
 	"globalusage": "Глабальнае выкарыстанне файла",
-	"globalusage-on-wiki": "Выкарыстанне [[:File:$1|$1]] у $2",
+	"globalusage-on-wiki": "Выкарыстанне ў $2",
 	"globalusage-of-file": "Гэты файл выкарыстоўваецца ў наступных вікі:",
 	"globalusage-more": "Паказаць [[{{#Special:GlobalUsage}}/$1|глабальнае выкарыстанне]] гэтага файла."
 }
