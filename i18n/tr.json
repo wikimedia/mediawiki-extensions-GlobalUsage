@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Joseph",
-			"Vito Genovese"
+			"Vito Genovese",
+			"Stultiwikia"
 		]
 	},
 	"globalusage": "Küresel dosya kullanımı",
@@ -11,7 +12,7 @@
 	"globalusage-ok": "Ara",
 	"globalusage-text": "Küresel dosya kullanımını ara.",
 	"globalusage-no-results": "[[:$1]] diğer vikilerde kullanılmıyor.",
-	"globalusage-on-wiki": "$2 üzerinde [[:File:$1|$1]] adlı dosyanın kullanımı",
+	"globalusage-on-wiki": "$2 üzerinde kullanımı",
 	"globalusage-of-file": "Bu dosya aşağıdaki diğer vikiler tarafından kullanılmaktadır:",
 	"globalusage-more": "Bu dosyanın [[{{#Special:GlobalUsage}}/$1|daha fazla küresel kullanımını]] gör.",
 	"globalusage-filterlocal": "Yerel kullanımı gösterme"

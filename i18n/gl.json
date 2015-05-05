@@ -19,6 +19,7 @@
 	"globalusage-filterlocal": "Non mostrar o uso local",
 	"mostgloballylinkedfiles": "Ficheiros máis ligados globalmente",
 	"globallywantedfiles": "Ficheiros requeridos globalmente",
+	"globallywantedfiles-foreign-repo": "<strong>Atención:</strong> esta wiki usa un repositorio de ficheiros externo. Os ficheiros deste repositorio que estean en uso mostraranse nesta lista como ligazóns azuis riscadas a pesares de que existen.",
 	"apihelp-query+globalusage-description": "Mostra o uso global dunha imaxe concreta.",
 	"apihelp-query+globalusage-param-prop": "Que propiedades devolver:\n;url: Engade a URL.\n;pageid: Engade o identificador da páxina.\n;namespace: Engade o identificador do espazo de nomes.",
 	"apihelp-query+globalusage-param-limit": "Cantas ligazóns devolver.",
