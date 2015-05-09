@@ -8,7 +8,8 @@
 			"PieRRoMaN",
 			"Urhixidur",
 			"Verdy p",
-			"Gomoko"
+			"Gomoko",
+			"Djiboun"
 		]
 	},
 	"globalusage": "Usage global du fichier",
@@ -25,5 +26,9 @@
 	"mostgloballylinkedfiles-summary": "Liste des fichiers qui ont été inclus le plus grand nombre de fois dans tous les wikis. Pour la liste équivalente ne prenant en compte que les utilisations sur {{SITENAME}}, voyez [[{{#special:MostLinkedFiles}}]].",
 	"globallywantedfiles": "Fichiers globalement demandés",
 	"globallywantedfiles-summary": "Liste des fichiers qui ont été inclus le plus grand nombre de fois dans tous les wikis, bien que n’existant pas. Pour la liste équivalente ne prenant en compte que les utilisations sur {{SITENAME}}, voyez [[{{#special:WantedFiles}}]].",
-	"globallywantedfiles-foreign-repo": "<strong>Attention :</strong> Ce wiki utilise un dépôt de fichiers externe. Les fichiers du dépôt externe qui sont utilisés s’afficheront dans cette liste comme des liens bleus bloqués, bien qu’ils existent."
+	"globallywantedfiles-foreign-repo": "<strong>Attention :</strong> Ce wiki utilise un dépôt de fichiers externe. Les fichiers du dépôt externe qui sont utilisés s’afficheront dans cette liste comme des liens bleus bloqués, bien qu’ils existent.",
+	"apihelp-query+globalusage-description": "Renvoie l'utilisation globale d'une image particulière",
+	"apihelp-query+globalusage-param-limit": "Combien de liens à renvoyer.",
+	"apihelp-query+globalusage-param-filterlocal": "Filtre l'utilisation locale du fichier.",
+	"apihelp-query+globalusage-example-1": "Renvoie l'utilisation de [[:File:Example.jpg]]"
 }
