@@ -23,7 +23,7 @@ $specialPageAliases['ar'] = array(
 	'GloballyWantedFiles' => array( 'ملفات_مطلوبة_عامة' ),
 );
 
-/** Egyptian Spoken Arabic (مصرى) */
+/** Egyptian Arabic (مصرى) */
 $specialPageAliases['arz'] = array(
 	'GlobalUsage' => array( 'استعمال_عام' ),
 );
@@ -124,7 +124,7 @@ $specialPageAliases['fr'] = array(
 	'GlobalUsage' => array( 'Usage_global', 'UsageGlobal' ),
 );
 
-/** Franco-Provençal (arpetan) */
+/** Arpitan (arpetan) */
 $specialPageAliases['frp'] = array(
 	'GlobalUsage' => array( 'Usâjo_globâl', 'UsâjoGlobâl' ),
 );
