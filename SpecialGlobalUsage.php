@@ -227,4 +227,8 @@ class SpecialGlobalUsage extends SpecialPage {
 
 		return $this->msg( 'viewprevnext' )->rawParams( $plink, $nlink, $nums )->escaped();
 	}
+
+	protected function getGroupName() {
+		return 'media';
+	}
 }

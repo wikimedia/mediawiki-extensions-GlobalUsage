@@ -63,7 +63,6 @@ $wgAutoloadClasses['SpecialGloballyWantedFiles'] = $dir . 'SpecialGloballyWanted
 $wgSpecialPages['MostGloballyLinkedFiles'] = 'MostGloballyLinkedFilesPage';
 $wgSpecialPages['GloballyWantedFiles'] = 'SpecialGloballyWantedFiles';
 $wgSpecialPages['GlobalUsage'] = 'SpecialGlobalUsage';
-$wgSpecialPageGroups['GlobalUsage'] = 'media';
 
 $wgAPIPropModules['globalusage'] = 'ApiQueryGlobalUsage';
 
