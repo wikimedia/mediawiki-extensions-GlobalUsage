@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Võrok"
+		]
+	},
+	"globalusage": "Globaalne failipruukminõ",
+	"globalusage-on-wiki": "Faili pruukminõ vikin $2",
+	"globalusage-of-file": "Järgmädseq muuq vikiq pruukvaq seod faili:",
+	"globalusage-more": "Kaeq seo faili [[{{#Special:GlobalUsage}}/$1|vikidevaihõlist pruukmist]]."
+}
