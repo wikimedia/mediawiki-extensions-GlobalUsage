@@ -7,7 +7,8 @@
 			"Jatrobat",
 			"Platonides",
 			"Translationista",
-			"Macofe"
+			"Macofe",
+			"Ryo567"
 		]
 	},
 	"globalusage": "Uso global del archivo",
@@ -22,5 +23,6 @@
 	"globalusage-filterlocal": "No mostrar el uso local",
 	"mostgloballylinkedfiles": "Archivos más enlazados globalmente",
 	"globallywantedfiles": "Archivos solicitados globalmente",
-	"globallywantedfiles-foreign-repo": "<strong>Atención:</strong> este wiki usa un repositorio de archivos externo. Los archivos de este repositorio que estén en uso se mostrarán en esta lista como enlaces azules tachados a pesar de que existen."
+	"globallywantedfiles-foreign-repo": "<strong>Atención:</strong> este wiki usa un repositorio de archivos externo. Los archivos de este repositorio que estén en uso se mostrarán en esta lista como enlaces azules tachados a pesar de que existen.",
+	"apihelp-query+globalusage-param-limit": "Cuántos enlaces se devolverán."
 }

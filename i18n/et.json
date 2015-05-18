@@ -16,5 +16,13 @@
 	"globalusage-more": "Vaata selle faili [[{{#Special:GlobalUsage}}/$1|globaalset kasutust]].",
 	"globalusage-filterlocal": "Ära näita kohalikku kasutust",
 	"mostgloballylinkedfiles": "Globaalselt enim lingitud failid",
-	"mostgloballylinkedfiles-summary": "Loend failidest, mida on kõigi vikide kõigi lehekülgede peale kokku kõige rohkem kordi kasutatud. Sarnene loend [[{{#special:MostLinkedFiles}}]] võtab arvesse ainult kasutust projektis {{SITENAME}}."
+	"mostgloballylinkedfiles-summary": "Loend failidest, mida on kõigi vikide kõigi lehekülgede peale kokku kõige rohkem kordi kasutatud. Sarnene loend [[{{#special:MostLinkedFiles}}]] võtab arvesse ainult kasutust projektis {{SITENAME}}.",
+	"globallywantedfiles": "Globaalselt oodatumad failid",
+	"globallywantedfiles-summary": "Siin on loetletud failid, mida on kõigi vikide peale kokku enim manustatud, kuigi neid faile pole. Sarnase loendi, mis võtab arvesse vaid kasutust saidil {{SITENAME}}, leiad leheküljelt [[{{#special:WantedFiles}}]].",
+	"globallywantedfiles-foreign-repo": "<strong>Hoiatus:</strong> See viki kasutab välist failihoidlat. Välisest hoidlast pärit failide linke näidatakse siin sinisena ja läbikriipsutatult, kuigi need failid on olemas.",
+	"apihelp-query+globalusage-description": "Tagastab kindla pildi globaalse kasutuse.",
+	"apihelp-query+globalusage-param-prop": "Millised atribuudid tagastada:\n;url: Lisab internetiaadressi.\n;pageid: Lisab lehekülje identifikaatori.\n;namespace: Lisab nimeruumi identifikaatori.",
+	"apihelp-query+globalusage-param-limit": "Kui palju linke tagastada.",
+	"apihelp-query+globalusage-param-filterlocal": "Arva välja faili kohalik kasutus.",
+	"apihelp-query+globalusage-example-1": "Hangi faili [[:File:Example.jpg|Example.jpg]] kasutus"
 }
