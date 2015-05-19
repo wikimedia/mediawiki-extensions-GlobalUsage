@@ -24,5 +24,8 @@
 	"mostgloballylinkedfiles": "Archivos más enlazados globalmente",
 	"globallywantedfiles": "Archivos solicitados globalmente",
 	"globallywantedfiles-foreign-repo": "<strong>Atención:</strong> este wiki usa un repositorio de archivos externo. Los archivos de este repositorio que estén en uso se mostrarán en esta lista como enlaces azules tachados a pesar de que existen.",
-	"apihelp-query+globalusage-param-limit": "Cuántos enlaces se devolverán."
+	"apihelp-query+globalusage-param-prop": "Qué propiedades se devolverán:\n;url: Añade una URL.\n;pageid: Añade una ID de página.\n;namespace: Añade una ID de un espacio de nombre.",
+	"apihelp-query+globalusage-param-limit": "Cuántos enlaces se devolverán.",
+	"apihelp-query+globalusage-param-filterlocal": "Filtrar uso local del archivo.",
+	"apihelp-query+globalusage-example-1": "Obtener uso de [[:File:Example.jpg]]"
 }
