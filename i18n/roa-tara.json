@@ -13,5 +13,11 @@
 	"globalusage-on-wiki": "Ause sus a $2",
 	"globalusage-of-file": "Le seguende Uicchi ausane stu file:",
 	"globalusage-more": "Vide [[{{#Special:GlobalUsage}}/$1|ause globale]] de stu file.",
-	"globalusage-filterlocal": "No fà vedè l'ause locale"
+	"globalusage-filterlocal": "No fà vedè l'ause locale",
+	"mostgloballylinkedfiles": "Le file cchiù collegate globbalmende",
+	"mostgloballylinkedfiles-summary": "Elenghe de le file ca onne state 'ngapsulate 'u cchiù ierte numere de vote sus a tutte le uicchi. Pe l'elenghe uguale ca pigghie da le cunde sulamende l'ause sus a {{SITENAME}}, 'ndruche [[{{#special:MostLinkedFiles}}]].",
+	"globallywantedfiles": "Le file cchiù cercate globbalmende",
+	"apihelp-query+globalusage-param-limit": "Quanda collegaminde da turnà.",
+	"apihelp-query+globalusage-param-filterlocal": "Filtre le ause locale d'u file.",
+	"apihelp-query+globalusage-example-1": "Pigghie l'ause de [[:File:Example.jpg]]"
 }
