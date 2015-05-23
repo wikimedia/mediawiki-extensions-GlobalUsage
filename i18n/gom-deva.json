@@ -2,10 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Darshan kandolkar",
-			"Supriya kankumbikar"
+			"Supriya kankumbikar",
+			"Vaishali Parab"
 		]
 	},
 	"globalusage": "भुमंडळ फाइल उपेग",
 	"globalusage-on-wiki": "$2 चो वापर",
-	"globalusage-of-file": "सकयल दिल्ल्यो विकी ही फायल वापरतात"
+	"globalusage-of-file": "सकयल दिल्ल्यो विकी ही फायल वापरतात",
+	"globalusage-more": "ह्या फायलीचें [[{{#Special:GlobalUsage}}/$1|वैश्वीक उपेगांची चड म्हायती]] पळयात."
 }

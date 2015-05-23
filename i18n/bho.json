@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Ganesh",
-			"Nepaboy"
+			"Nepaboy",
+			"SatyamMishra"
 		]
 	},
 	"globalusage": "वैश्विक फाइल उपयोग",
-	"globalusage-on-wiki": "$2 पर प्रयोग"
+	"globalusage-on-wiki": "$2 पर प्रयोग",
+	"globalusage-of-file": "ए फाइल के ई सब दूसर विकिन पर इस्तेमाल होत बा:"
 }
