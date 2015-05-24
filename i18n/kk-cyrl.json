@@ -14,5 +14,10 @@
 	"globalusage-on-wiki": "$2 уикиінде қолданылуы",
 	"globalusage-of-file": "Бұл файл келесі басқа уикилерде қолданылады:",
 	"globalusage-more": "Бұл файлдың [[{{#Special:GlobalUsage}}/$1|көбірек ғаламдық қолданылуын]] қарау.",
-	"globalusage-filterlocal": "Жергілікті қолданылуын көрсетпеу"
+	"globalusage-filterlocal": "Жергілікті қолданылуын көрсетпеу",
+	"mostgloballylinkedfiles": "Ғаламдық ең көп сілтенген беттер",
+	"globallywantedfiles": "Ғаламдық қажет етілген файл",
+	"apihelp-query+globalusage-param-limit": "Қайту үшін қанша сілтемелер.",
+	"apihelp-query+globalusage-param-filterlocal": "Жергілікті қолданысын сүзгілеу",
+	"apihelp-query+globalusage-example-1": "[[:File:Example.jpg]] қолданысын алу"
 }
