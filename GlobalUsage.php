@@ -47,7 +47,6 @@ $wgExtensionCredits['specialpage'][] = array(
 
 // Internationlization files
 $wgMessagesDirs['GlobalUsage'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['GlobalUsage'] = $dir . 'GlobalUsage.i18n.php';
 $wgExtensionMessagesFiles['GlobalUsageAliases'] = $dir . 'GlobalUsage.alias.php';
 
 $wgAutoloadClasses['GlobalUsage'] = $dir . 'GlobalUsage_body.php';
