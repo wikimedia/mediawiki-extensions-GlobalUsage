@@ -24,77 +24,16 @@
  OTHER DEALINGS IN THE SOFTWARE.
 */
 
-// Alert the user that this is not a valid entry point to MediaWiki if they try to access the extension file directly.
-if ( !defined( 'MEDIAWIKI' ) ) {
-	echo <<<EOT
-To install my extension, put the following line in LocalSettings.php:
-require_once( "\$IP/extensions/GlobalUsage/GlobalUsage.php" );
-EOT;
-	exit( 1 );
+if ( function_exists( 'wfLoadExtension' ) ) {
+	wfLoadExtension( 'GlobalUsage' );
+	// Keep i18n globals so mergeMessageFileList.php doesn't break
+	$wgMessagesDirs['GlobalUsage'] = __DIR__ . '/i18n';
+	$wgExtensionMessagesFiles['GlobalUsageAliases'] = __DIR__ . '/GlobalUsage.alias.php';
+	/* wfWarn(
+		'Deprecated PHP entry point used for GlobalUsage extension. Please use wfLoadExtension instead, ' .
+		'see https://www.mediawiki.org/wiki/Extension_registration for more details.'
+	); */
+	return;
+} else {
+	die( 'This version of the GlobalUsage extension requires MediaWiki 1.25+' );
 }
-
-$dir = dirname( __FILE__ ) . '/';
-
-$wgExtensionCredits['specialpage'][] = array(
-	'path' => __FILE__,
-	'name' => 'Global Usage',
-	'author' => 'Bryan Tong Minh',
-	'descriptionmsg' => 'globalusage-desc',
-	'url' => 'https://www.mediawiki.org/wiki/Extension:GlobalUsage',
-	'version' => '2.1.0',
-	'license-name' => 'MIT',
-);
-
-// Internationlization files
-$wgMessagesDirs['GlobalUsage'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['GlobalUsageAliases'] = $dir . 'GlobalUsage.alias.php';
-
-$wgAutoloadClasses['GlobalUsage'] = $dir . 'GlobalUsage_body.php';
-$wgAutoloadClasses['GlobalUsageHooks'] = $dir . 'GlobalUsageHooks.php';
-$wgAutoloadClasses['GlobalUsageImagePageHooks'] = $dir . 'GlobalUsageImagePageHooks.php';
-$wgAutoloadClasses['SpecialGlobalUsage'] = $dir . 'SpecialGlobalUsage.php';
-$wgAutoloadClasses['GlobalUsageQuery'] = $dir . 'GlobalUsageQuery.php';
-$wgAutoloadClasses['ApiQueryGlobalUsage'] = $dir . 'ApiQueryGlobalUsage.php';
-$wgAutoloadClasses['GlobalUsageCachePurgeJob'] = $dir . 'GlobalUsageCachePurgeJob.php';
-$wgAutoloadClasses['MostGloballyLinkedFilesPage'] = $dir . 'SpecialMostGloballyLinkedFiles.php';
-$wgAutoloadClasses['SpecialGloballyWantedFiles'] = $dir . 'SpecialGloballyWantedFiles.php';
-
-$wgSpecialPages['MostGloballyLinkedFiles'] = 'MostGloballyLinkedFilesPage';
-$wgSpecialPages['GloballyWantedFiles'] = 'SpecialGloballyWantedFiles';
-$wgSpecialPages['GlobalUsage'] = 'SpecialGlobalUsage';
-
-$wgAPIPropModules['globalusage'] = 'ApiQueryGlobalUsage';
-
-$wgJobClasses['globalUsageCachePurge'] = 'GlobalUsageCachePurgeJob';
-
-/* Things that can cause link updates:
- * - Local LinksUpdate
- * - Local article deletion (remove from table)
- * - Local article move (update page title)
- * - Local file upload/deletion/move
- */
-$wgHooks['LinksUpdateComplete'][] = 'GlobalUsageHooks::onLinksUpdateComplete';
-$wgHooks['ArticleDeleteComplete'][] = 'GlobalUsageHooks::onArticleDeleteComplete';
-$wgHooks['FileDeleteComplete'][] = 'GlobalUsageHooks::onFileDeleteComplete';
-$wgHooks['FileUndeleteComplete'][] = 'GlobalUsageHooks::onFileUndeleteComplete';
-$wgHooks['UploadComplete'][] = 'GlobalUsageHooks::onUploadComplete';
-$wgHooks['TitleMoveComplete'][] = 'GlobalUsageHooks::onTitleMoveComplete';
-/* Hooks for ImagePage */
-$wgHooks['ImagePageAfterImageLinks'][] = 'GlobalUsageImagePageHooks::onImagePageAfterImageLinks';
-$wgHooks['ImagePageShowTOC'][] = 'GlobalUsageImagePageHooks::onImagePageShowTOC';
-/* Other hooks */
-$wgHooks['ParserTestTables'][] = 'GlobalUsageHooks::onParserTestTables';
-$wgHooks['LoadExtensionSchemaUpdates'][] = 'GlobalUsageHooks::onLoadExtensionSchemaUpdates';
-$wgHooks['wgQueryPages'][] = 'GlobalUsageHooks::onwgQueryPages';
-
-// If set to false, the local database contains the globalimagelinks table
-// Else set to something understandable to LBFactory
-$wgGlobalUsageDatabase = false;
-
-// Name of the shared repo that backlinks are shared for
-$wgGlobalUsageSharedRepoWiki = false;
-
-// If set to true, this will purge pages on the wikis that use a file when it changes.
-// This works by directly inserting HTMLCacheUpdate jobs into the local wikis.
-// @see $wgGlobalUsagePurgeBacklinks
-$wgGlobalUsagePurgeBacklinks = false;

@@ -1,0 +1,97 @@
+{
+	"name": "Global Usage",
+	"version": "2.1.0",
+	"author": "Bryan Tong Minh",
+	"url": "https://www.mediawiki.org/wiki/Extension:GlobalUsage",
+	"descriptionmsg": "globalusage-desc",
+	"license-name": "MIT",
+	"type": "specialpage",
+	"SpecialPages": {
+		"MostGloballyLinkedFiles": "MostGloballyLinkedFilesPage",
+		"GloballyWantedFiles": "SpecialGloballyWantedFiles",
+		"GlobalUsage": "SpecialGlobalUsage"
+	},
+	"JobClasses": {
+		"globalUsageCachePurge": "GlobalUsageCachePurgeJob"
+	},
+	"APIPropModules": {
+		"globalusage": "ApiQueryGlobalUsage"
+	},
+	"MessagesDirs": {
+		"GlobalUsage": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"GlobalUsageAliases": "GlobalUsage.alias.php"
+	},
+	"AutoloadClasses": {
+		"GlobalUsage": "GlobalUsage_body.php",
+		"GlobalUsageHooks": "GlobalUsageHooks.php",
+		"GlobalUsageImagePageHooks": "GlobalUsageImagePageHooks.php",
+		"SpecialGlobalUsage": "SpecialGlobalUsage.php",
+		"GlobalUsageQuery": "GlobalUsageQuery.php",
+		"ApiQueryGlobalUsage": "ApiQueryGlobalUsage.php",
+		"GlobalUsageCachePurgeJob": "GlobalUsageCachePurgeJob.php",
+		"MostGloballyLinkedFilesPage": "SpecialMostGloballyLinkedFiles.php",
+		"SpecialGloballyWantedFiles": "SpecialGloballyWantedFiles.php"
+	},
+	"@doc": [
+		"Things that can cause link updates:",
+		"- Local LinksUpdate",
+		"- Local article deletion (remove from table)",
+		"- Local article move (update page title)",
+		"- Local file upload/deletion/move"
+	],
+	"Hooks": {
+		"LinksUpdateComplete": [
+			"GlobalUsageHooks::onLinksUpdateComplete"
+		],
+		"ArticleDeleteComplete": [
+			"GlobalUsageHooks::onArticleDeleteComplete"
+		],
+		"FileDeleteComplete": [
+			"GlobalUsageHooks::onFileDeleteComplete"
+		],
+		"FileUndeleteComplete": [
+			"GlobalUsageHooks::onFileUndeleteComplete"
+		],
+		"UploadComplete": [
+			"GlobalUsageHooks::onUploadComplete"
+		],
+		"TitleMoveComplete": [
+			"GlobalUsageHooks::onTitleMoveComplete"
+		],
+		"ImagePageAfterImageLinks": [
+			"GlobalUsageImagePageHooks::onImagePageAfterImageLinks"
+		],
+		"ImagePageShowTOC": [
+			"GlobalUsageImagePageHooks::onImagePageShowTOC"
+		],
+		"ParserTestTables": [
+			"GlobalUsageHooks::onParserTestTables"
+		],
+		"LoadExtensionSchemaUpdates": [
+			"GlobalUsageHooks::onLoadExtensionSchemaUpdates"
+		],
+		"wgQueryPages": [
+			"GlobalUsageHooks::onwgQueryPages"
+		]
+	},
+	"config": {
+		"@doc": [
+			"If set to false, the local database contains the globalimagelinks table",
+			"Else set to something understandable to LBFactory"
+		],
+		"GlobalUsageDatabase": false,
+		"@doc": "Name of the shared repo that backlinks are shared for",
+		"GlobalUsageSharedRepoWiki": false,
+		"@doc": [
+			"If set to true, this will purge pages on the wikis that use a file when it changes.",
+			"This works by directly inserting HTMLCacheUpdate jobs into the local wikis.",
+			"@see $wgGlobalUsagePurgeBacklinks"
+		],
+		"GlobalUsagePurgeBacklinks": false
+	},
+	"manifest_version": 1
+}
