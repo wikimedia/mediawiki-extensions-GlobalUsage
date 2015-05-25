@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"बिप्लब आनन्द"
+			"बिप्लब आनन्द",
+			"NehalDaveND"
 		]
 	},
 	"globalusage": "वैश्विक फाइल प्रयोग",
+	"globalusage-ok": "खोज्ने",
 	"globalusage-on-wiki": "$2 मा उपयोग",
 	"globalusage-of-file": "निम्न अन्य विकिहरुमा यस फाइलको प्रयोग:"
 }
