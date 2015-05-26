@@ -4,7 +4,8 @@
 			"NickK",
 			"Тест",
 			"Andriykopanytsia",
-			"Olion"
+			"Olion",
+			"Ата"
 		]
 	},
 	"globalusage": "Глобальне використання файлу",
@@ -20,6 +21,11 @@
 	"mostgloballylinkedfiles": "Найбільш глобально зв'язані файли",
 	"mostgloballylinkedfiles-summary": "Перелік файлів, включених найбільшу кількість разів загалом на всіх вікі. За таким самим переліком, обмеженим {{SITENAME}}, див. [[{{#special:MostLinkedFiles}}]].",
 	"globallywantedfiles": "Глобально розшукувані файли",
-	"globallywantedfiles-summary": "Перелік неіснуючих файлів, включених найбільшу кількість разів загалом на всіх вікі. За таким самим переліком, обмеженим {{SITENAME}}, див. [[{{#special:WantedFiles}}]].",
-	"globallywantedfiles-foreign-repo": "<strong>Попередження:</strong> Цей вікі-проект використовує стороннє сховище файлів. Використані файли зі стороннього сховища відображено в цьому переліку як закреслені блакитні посилання, незважаючи на те, що ці файли існують."
+	"globallywantedfiles-summary": "Перелік файлів, включених найбільшу кількість разів загалом у всіх вікі, крім неіснуючих. Такий самий перелік для використання лише у {{GRAMMAR:locative|SITENAME}}, див. [[{{#special:WantedFiles}}]]. Виведення використання файлів у вікі, чутливих до регістру першої літери, може бути некоректним.",
+	"globallywantedfiles-foreign-repo": "<strong>Попередження:</strong> Цей вікі-проект використовує стороннє сховище файлів. Використані файли зі стороннього сховища відображено в цьому переліку як закреслені блакитні посилання, незважаючи на те, що ці файли існують.",
+	"apihelp-query+globalusage-description": "Видає глобальне використання певного зображення.",
+	"apihelp-query+globalusage-param-prop": "Які властивості виводити:\n;url:Додає url.\n;pageid:Додає ID сторінки.\n;namespace:Додає ID простору назв.",
+	"apihelp-query+globalusage-param-limit": "Скільки посилань виводити.",
+	"apihelp-query+globalusage-param-filterlocal": "Відфільтрувати локальне використання файлу.",
+	"apihelp-query+globalusage-example-1": "Отримати використання [[:File:Example.jpg]]"
 }
