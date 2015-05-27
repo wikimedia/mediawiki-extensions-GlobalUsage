@@ -17,7 +17,7 @@
 	"mostgloballylinkedfiles": "De aam mihßte vun alle müjjelesche Wikkis verlengkte Datteije",
 	"mostgloballylinkedfiles-summary": "En heh dä Leß sin Datteije, di aam mihßte vun alle müjjelesche Wikkis verlengk sin.\nWann De blohß Datteije en heh däm Wikki han wells, jangk noh [[{{#special:MostLinkedFiles}}]].",
 	"globallywantedfiles": "Datteije, di onß noch fähle, vun alle müjjelesche Wikkis",
-	"globallywantedfiles-summary": "En heh dä Leß sin Datteije, di aam mihßte vun alle müjjelesche Wikkis verlengk sin, ävver noch nit doh sin.\nWann De blohß de fählende Datteije uß heh däm Wikki han wells, jangk noh [[{{#special:WantedFiles}}]].",
+	"globallywantedfiles-summary": "En heh dä Leß sin Datteije, di aam mihßte vun alle müjjelesche Wikkis verlengk sin, ävver noch nit doh sin.\nWann De blohß de fählende Datteije uß heh däm Wikki han wells, jangk noh [[{{#special:WantedFiles}}]]. Opprohfe vun Datteije uß Wikkis, woh de eezde Bohchschtahbe vun Övverschreffte klein sin darref, künne als fählend opjeleß sin, och wann se doh sin.",
 	"globallywantedfiles-foreign-repo": "<strong>Opjepaß:</strong> Heh dat Wikki benöz en främbde Biblijteek met Datteije. Wat vun doh kütt, es heh dorschjeschtresche, es ävver doh.",
 	"apihelp-query+globalusage-description": "För en beschtemmpte Dattei, jiff der Jebruch en alle müjjelesche Wikkis uß.",
 	"apihelp-query+globalusage-param-prop": "Wat för en Eijeschaffte ze holle:\n;url:Donn <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\" title=\"Uniform Ressource Locator\">URL</i> derbei.\n;pageid:Donn de Siggekännong derbei.\n;namespace:Don de Kännong vum Appachtemang derbei.\n<!--\nhttps://translatewiki.net/wiki/Thread:Support/About_MediaWiki:Apihelp-query%2Bglobalusage-param-prop/en\n-->",
