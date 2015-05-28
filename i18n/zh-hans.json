@@ -22,7 +22,7 @@
 	"mostgloballylinkedfiles": "最多全域链接文件",
 	"mostgloballylinkedfiles-summary": "这是跨所有wiki嵌入页面最多次数的文件列表。关于在{{SITENAME}}上只考虑用途的等价列表，参见[[{{#special:MostLinkedFiles}}]]。",
 	"globallywantedfiles": "全域需要的文件",
-	"globallywantedfiles-summary": "这是跨所有wiki嵌入页面最多次数的文件列表，尽管不存在。关于在{{SITENAME}}上只考虑用途的等价列表，参见[[{{#special:WantedFiles}}]]。",
+	"globallywantedfiles-summary": "这是跨所有wiki嵌入页面最多次数的文件列表，尽管不存在。关于在{{SITENAME}}上只考虑用途的等价列表，参见[[{{#special:WantedFiles}}]]。从第一个字母大小写敏感的wiki起的文件使用可能会不希望的被错误报告。",
 	"globallywantedfiles-foreign-repo": "<strong>警告：</strong>此wiki使用外部的文件存储库。来自外部存储库使用中的文件将在此列表显示成蓝色链接，尽管它们事实上存在。",
 	"apihelp-query+globalusage-description": "返回某一图片的全域图片使用。",
 	"apihelp-query+globalusage-param-prop": "返回的属性：\n;url:加入url。\n;pageid:加入页面ID。\n;namespace:加入名字空间ID。",
