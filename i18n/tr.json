@@ -18,7 +18,7 @@
 	"globalusage-more": "Bu dosyanın [[{{#Special:GlobalUsage}}/$1|daha fazla küresel kullanımını]] gör.",
 	"globalusage-filterlocal": "Yerel kullanımı gösterme",
 	"globallywantedfiles": "Küresel istedim dosyaları",
-	"globallywantedfiles-summary": "Mevcut değil rağmen tüm vikiler boyunca en yüksek sayıda gömülü olan dosyaların listesi. Hesaba sadece kullanımları üzerinde eşdeğer listesi için {{SITENAME}}, bakınız [[{{#special:WantedFiles}}]]. İlk harfi büyük / küçük harf duyarlı wiki dosya kullanımları yanlış arananlar bildirdi.",
+	"globallywantedfiles-summary": "Mevcut bulunmamalarına rağmen tüm vikiler arasında en fazla sayıda gömülmüş dosyaların listesi. Sadece {{SITENAME}} üzerindeki kullanımları hesaba katan denk bir liste için bkz. [[{{#special:WantedFiles}}]]. İlk harfi büyük/küçük duyarlı olan vikilerdeki dosya kullanımlarında yanlışlıkla rapor ediliyor olabilir.",
 	"globallywantedfiles-foreign-repo": "<strong>Uyarı:</strong> Bu wiki kullanan bir yabancı dosya deposu. Kullanımda olan yabancı deposundan dosya var olmasına rağmen mavi bağlantıları kopmuş olarak bu listede görünecektir.",
 	"apihelp-query+globalusage-description": "Belirli bir görüntü verir genel görüntü kullanımı.",
 	"apihelp-query+globalusage-param-prop": "Hangi özellikleri dönmek için:\n;url:url Ekler.\n;pageıd:sayfa NUMARASI Ekler.\n;AD:AD KİMLİĞİ Ekler.",
