@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Siebrand",
-			"Sjoerddebruin"
+			"Sjoerddebruin",
+			"Esketti"
 		]
 	},
 	"globalusage": "Globaal bestandsgebruik",
@@ -15,5 +16,14 @@
 	"globalusage-of-file": "De volgende andere wiki's gebruiken dit bestand:",
 	"globalusage-more": "[[{{#Special:GlobalUsage}}/$1|Globaal gebruik]] van dit bestand bekijken.",
 	"globalusage-filterlocal": "Lokaal gebruik niet weergeven",
-	"globallywantedfiles": "Globale gevraagde bestanden"
+	"mostgloballylinkedfiles": "Wereldwijd meest gekoppelde bestanden",
+	"mostgloballylinkedfiles-summary": "Lijst van bestanden die zijn opgenomen met het hoogste aantal keer over alle wiki ' s. Voor het equivalent lijst die alleen rekening houdt met de gewoonte op {{SITENAME}}, zie [[{{#special:MostLinkedFiles}}]].",
+	"globallywantedfiles": "Globale gevraagde bestanden",
+	"globallywantedfiles-summary": "Lijst van bestanden die zijn opgenomen met het hoogste aantal keer over alle wiki ' s, ondanks een niet bestaande. Voor het equivalent lijst die alleen rekening houdt met de gewoonte op {{SITENAME}}, zie [[{{#special:WantedFiles}}]]. Bestand gewoonten van de eerste letter een hoofdletter gevoelig wiki ' s mogelijk niet correct worden gerapporteerd als zijnde wilde.",
+	"globallywantedfiles-foreign-repo": "<strong>Waarschuwing:</strong> Deze wiki maakt gebruik van een buitenlandse file repository. Bestanden van de vreemde repository die in gebruik zijn op deze lijst als doorgehaald blauwe links, ondanks het feit dat ze bestaan.",
+	"apihelp-query+globalusage-description": "Geeft globaal beeld van het gebruik voor een bepaald beeld.",
+	"apihelp-query+globalusage-param-prop": "Welke eigenschappen terug:\n;url:hiermee Voegt u de url.\n;pageid:hiermee Voegt u pagina-ID.\n;naamruimte:hiermee Voegt u de naamruimte-ID.",
+	"apihelp-query+globalusage-param-limit": "Hoeveel links om terug te keren.",
+	"apihelp-query+globalusage-param-filterlocal": "Filter lokale gebruik van het bestand.",
+	"apihelp-query+globalusage-example-1": "Voor het gebruik van de [[:File:Example.jpg]]"
 }
