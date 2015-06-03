@@ -5,7 +5,8 @@
 			"Gianfranco",
 			"Nemo bis",
 			"Beta16",
-			"FRacco"
+			"FRacco",
+			"Alexmar983"
 		]
 	},
 	"globalusage": "Utilizzo globale del file",
@@ -20,5 +21,6 @@
 	"globalusage-filterlocal": "Non mostrare l'uso locale",
 	"mostgloballylinkedfiles": "File più richiamati globalmente",
 	"globallywantedfiles": "File richiesti globalmente",
+	"globallywantedfiles-summary": "Elenco dei file che sono stati incorporati il maggior numero di volte in tutte le wiki, nonostante non esistano. Per l'elenco equivalente, che tiene conto solo l'uso su {{SITENAME}}, si veda [[{{#special:WantedFiles}}]]. Gli utilizzi di file da wiki sensibili alle maiuscole sulla prima lettera possono essere riportati erroneamente come richiesti.",
 	"globallywantedfiles-foreign-repo": "<strong>Attenzione:</strong> questo wiki usa un archivio di file esterno. I file dall'archivio esterno che sono in uso verranno mostrati in questo elenco con un collegamento blu barrato, nonostante il fatto che essi esistano."
 }
