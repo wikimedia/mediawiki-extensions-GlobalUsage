@@ -13,7 +13,7 @@
 	},
 	"globalusage": "Uso global del archivo",
 	"globalusage-for": "Uso global de «$1»",
-	"globalusage-desc": "[[Special:GlobalUsage|Página especial]] para ver uso de archivo global",
+	"globalusage-desc": "[[Special:GlobalUsage|Página especial]] para ver el uso de archivo global",
 	"globalusage-ok": "Buscar",
 	"globalusage-text": "Buscar uso de archivo global",
 	"globalusage-no-results": "[[:$1]] no se utiliza en otros wikis.",

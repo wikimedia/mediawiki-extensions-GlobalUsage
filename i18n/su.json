@@ -1,8 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Irwangatot"
+			"Irwangatot",
+			"Kandar"
 		]
 	},
-	"globalusage-ok": "Sungsi"
+	"globalusage": "Pamakéan berkas sajagat",
+	"globalusage-ok": "Sungsi",
+	"globalusage-on-wiki": "Pamakéan di $2",
+	"globalusage-of-file": "Wiki lianna anu maké ieu berkas:"
 }
