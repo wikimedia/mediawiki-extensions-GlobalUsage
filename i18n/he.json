@@ -23,5 +23,9 @@
 	"globallywantedfiles": "קבצים מבוקשים גלובלית",
 	"globallywantedfiles-summary": "רשימת קבצים שהוטבעו הכי הרבה בכל אתרי הוויקי אף שאינם קיימים. לרשימה המקבילה שלוקחת בחשבון שימוש באתר {{SITENAME}}, ר' [[{{#special:WantedFiles}}]]. ייתכן ששימוש בקבצים באתרי ויקי שבהם מותר ליצור דפים ששמם מתחיל באות קטנה ידווח באופן שגוי.",
 	"globallywantedfiles-foreign-repo": "<strong>אזהרה:</strong> הוויקי הזה משתמש במאגר קבצים חיצוני. קבצים מהמאגר החיצוני שנמצאים בשימוש יוצגו ברשימה הזאת בתור קישורים כחולים מחוקים אף שהם קיימים.",
-	"apihelp-query+globalusage-description": "מחזיר שימוש גלובלי בתמונה עבור תמונה מסוימת."
+	"apihelp-query+globalusage-description": "מחזיר שימוש גלובלי בתמונה עבור תמונה מסוימת.",
+	"apihelp-query+globalusage-param-prop": "אילו מאפיינים להחזיר:\n;url:הוספת url.\n;pageid:הוספת מזהה דף.\n;namespace:הוספת מהה מרחב שם.",
+	"apihelp-query+globalusage-param-limit": "כמה קישורים להחזיר.",
+	"apihelp-query+globalusage-param-filterlocal": "סינון לפי השימוש המקומי בקובץ.",
+	"apihelp-query+globalusage-example-1": "קבלת שימוש בקובץ [[:File:Example.jpg]]"
 }
