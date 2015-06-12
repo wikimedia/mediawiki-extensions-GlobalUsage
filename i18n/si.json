@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Budhajeewa",
-			"තඹරු විජේසේකර"
+			"තඹරු විජේසේකර",
+			"Singhalawap"
 		]
 	},
 	"globalusage": "ගෝලීය ගොනු භාවිතය",
@@ -12,7 +13,7 @@
 	"globalusage-text": "ගෝලීය ගොනු භාවිතය සොයන්න",
 	"globalusage-no-results": "[[:$1]] අනෙකුත් විකිවල භාවිතා කර නැත.",
 	"globalusage-on-wiki": "$2 හි භාවිතය",
-	"globalusage-of-file": "පහත දැක්වෙන අනෙකුත් විකියන් මෙම ගොනුව භාවිතා කරයි:",
+	"globalusage-of-file": "පහත දැක්වෙන අනෙකුත් විකියන් මගින් මෙම ගොනුව භාවිතා කරයි:",
 	"globalusage-more": "මෙම ගොනුවේ [[{{#Special:GlobalUsage}}/$1|තවත් ගෝලීය භාවිත]] බලන්න.",
 	"globalusage-filterlocal": "ප්‍රාදේශීය භාවිතය නොපෙන්වන්න."
 }
