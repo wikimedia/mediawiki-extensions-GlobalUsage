@@ -3,11 +3,13 @@
 		"authors": [
 			"Chhorran",
 			"Lovekhmer",
-			"Thearith"
+			"Thearith",
+			"គីមស៊្រុន"
 		]
 	},
 	"globalusage": "បម្រើបម្រាស់ឯកសារជាសាកល",
 	"globalusage-desc": "[[Special:GlobalUsage|ទំព័រពិសេស]]ដើម្បីមើលបម្រើបម្រាស់ឯកសារជាសាកល",
 	"globalusage-ok": "ស្វែងរក",
-	"globalusage-text": "ស្វែងរកបម្រើបម្រាស់ឯកសារជាសាកល។"
+	"globalusage-text": "ស្វែងរកបម្រើបម្រាស់ឯកសារជាសាកល។",
+	"globalusage-of-file": "វីគីដទៃទៀតដូចខាងក្រោមនេះប្រើប្រាស់ឯកសារនេះ៖"
 }

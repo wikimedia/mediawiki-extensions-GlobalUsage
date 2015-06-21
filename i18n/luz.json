@@ -5,5 +5,7 @@
 		]
 	},
 	"globalusage": "استفاده بین المللی د فایل",
-	"globalusage-of-file": "ویکی یل دیه د ای فایل استفاده ایکنن"
+	"globalusage-on-wiki": "استفاده مئن $2",
+	"globalusage-of-file": "ویکی یل دیه د ای فایل استفاده ایکنن",
+	"globalusage-more": "دیئن [[{{#Special:GlobalUsage}}/$1|استفاده بین المللی بیشتر]] د فایل."
 }
