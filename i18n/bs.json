@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"CERminator"
+			"CERminator",
+			"KWiki"
 		]
 	},
 	"globalusage": "Globalna upotreba datoteke",
@@ -11,7 +12,7 @@
 	"globalusage-text": "Pretraga globalne upotrebe datoteke.",
 	"globalusage-no-results": "[[:$1]] nije korištena na drugim wikijima.",
 	"globalusage-on-wiki": "Upotreba na $2",
-	"globalusage-of-file": "Slijedeći wikiji koriste ovu datoteku:",
+	"globalusage-of-file": "Sljedeći wikiji koriste ovu datoteku:",
 	"globalusage-more": "Pogledajte [[{{#Special:GlobalUsage}}/$1|globalne upotrebe]] ove datoteke.",
 	"globalusage-filterlocal": "Ne prikazuj lokalnu upotrebu"
 }
