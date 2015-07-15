@@ -4,13 +4,28 @@
 			"GreenZeb",
 			"Homo",
 			"Tomasdd",
-			"Hugo.arg"
+			"Hugo.arg",
+			"Albertas"
 		]
 	},
 	"globalusage": "Visuotinis rinkmenos naudojimas",
+	"globalusage-for": "Globalus \"$1\" naudojimas",
+	"globalusage-desc": "[[Special:GlobalUsage|Specialus puslapis]] pamatyti globaliam failo naudojimui",
 	"globalusage-ok": "Ieškoti",
+	"globalusage-text": "Ieškoti globalaus failo naudojimo",
 	"globalusage-no-results": "[[:$1]] nenaudojama kituose Wiki projektuose.",
 	"globalusage-on-wiki": "Naudojama $2",
 	"globalusage-of-file": "Ši rinkmena naudojama šiose wiki svetainėse:",
-	"globalusage-more": "Žiūrėti [[{{#Special:GlobalUsage}}/$1|visuotinį šios rinkmenos naudojimą]]."
+	"globalusage-more": "Žiūrėti [[{{#Special:GlobalUsage}}/$1|visuotinį šios rinkmenos naudojimą]].",
+	"globalusage-filterlocal": "Nerodyti lokalaus naudojimo",
+	"mostgloballylinkedfiles": "Daugiausia globaliai susietų failų",
+	"mostgloballylinkedfiles-summary": "Sąrašas failų, kurie buvo daugiausiai kartų įterpti visuose vikiuose. Norėdami pamatyti ekvivalentų sąrašą, kuris apima tik {{SITENAME}}, žiūrėkite [[{{#special:MostLinkedFiles}}]].",
+	"globallywantedfiles": "Globaliai norimi failai",
+	"globallywantedfiles-summary": "Sąrašas failų, kurie daugiausiai kartų buvo įterpti visuose vikiuose, neskaitant neegzistuojančių. Norėdami pamatyti ekvivalentų sąrašą, kuris apima tik {{SITENAME}}, žiūrėkite [[{{#special:WantedFiles}}]]. File naudojimas vikiuose paisantiems pirmosios raidės lygį gali sąlygoti neteisingą priskyrimą prie norimų failų.",
+	"globallywantedfiles-foreign-repo": "<strong>Įspėjimas:</strong> Šis vikis naudoja užsenietiškas failų talpyklas. Naudojami failai iš užsenietiškų talpyklų šiame sąraše bus rodomi kaip išbrauktos mėlynos nuorodos, nepaisant fakto, kad jie egzistuoja.",
+	"apihelp-query+globalusage-description": "Grąžinti globalų paveikslėlio naudojimą konkrečiam paveikslėliui.",
+	"apihelp-query+globalusage-param-prop": "Kurias parinktis grąžinti:\n;url:Prideda url adresą.\n;pageid:Prideda puslapio ID.\n;namespace:Prideda vardų srities ID.",
+	"apihelp-query+globalusage-param-limit": "Kiek nuorodų grąžinti.",
+	"apihelp-query+globalusage-param-filterlocal": "Filtruoti lokalų failo naudojimą.",
+	"apihelp-query+globalusage-example-1": "Gauti [[:File:Example.jpg]] naudojimą"
 }
