@@ -18,6 +18,6 @@
 	"mostgloballylinkedfiles": "Tập tin được liên kết đến nhiều nhất toàn cục",
 	"mostgloballylinkedfiles-summary": "Danh sách các tập tin được nhúng vào nhiều trang nhất trên tất cả các wiki. Xem danh sách tương tự chỉ tính các trang trên {{SITENAME}} tại [[{{#special:MostLinkedFiles}}]].",
 	"globallywantedfiles": "Tập tin cần thiết toàn cục",
-	"globallywantedfiles-summary": "Danh sách các tập tin được nhúng vào nhiều trang nhất trên tất cả các wiki mặc dù tập tin không tồn tại. Xem danh sách tương tự chỉ tính các trang trên {{SITENAME}} tại [[{{#special:WantedFiles}}]].",
+	"globallywantedfiles-summary": "Danh sách các tập tin được nhúng vào nhiều trang nhất trên tất cả các wiki mặc dù tập tin không tồn tại. Xem danh sách tương tự chỉ tính các trang trên {{SITENAME}} tại [[{{#special:WantedFiles}}]]. Các trang sử dụng tập tin tại wiki phân biệt chữ hoa/thường đâu tiên có thể được liệt kê không chính xác.",
 	"globallywantedfiles-foreign-repo": "<strong>Cảnh báo:</strong> Wiki này sử dụng một kho tập tin bên ngoài. Các tập tin được sử dụng từ kho bên ngoài được liệt kê trong danh sách này là liên kết màu xanh được gạch ngang, mặc dù những tập tin này có tồn tại."
 }
