@@ -13,7 +13,7 @@
 	"globalusage-on-wiki": "Употреба на $2",
 	"globalusage-of-file": "Оваа податотека ја користат и следниве викија:",
 	"globalusage-more": "Погледајте ја [[{{#Special:GlobalUsage}}/$1|останатата глобална употреба]] на податотекава.",
-	"globalusage-filterlocal": "Не прикажувај локална употреба",
+	"globalusage-filterlocal": "Не прикажувај месна употреба",
 	"mostgloballylinkedfiles": "Глобално најискористени податотеки",
 	"mostgloballylinkedfiles-summary": "Список на најупотребени податотеки на глобално ниво (земајќи ги предвид сите викија). Списокот со најупотребени податотеки на {{SITENAME}} ќе го најдете на [[{{#special:MostLinkedFiles}}]].",
 	"globallywantedfiles": "Глобално потребни податотеки",
