@@ -13,5 +13,15 @@
 	"globalusage-on-wiki": "Usu en $2",
 	"globalusage-of-file": "Estes otres wikis usen esti ficheru:",
 	"globalusage-more": "Ver [[{{#Special:GlobalUsage}}/$1|más usos globales]] d'esti ficheru.",
-	"globalusage-filterlocal": "Nun amosar l'usu llocal"
+	"globalusage-filterlocal": "Nun amosar l'usu llocal",
+	"mostgloballylinkedfiles": "Ficheros más enllazaos globalmente",
+	"mostgloballylinkedfiles-summary": "Llista de los ficheros que s'incluyeron más vegaes en toles wikis. Pa una llista equivalente que sólo tien en cuenta los usos en {{SITENAME}}, consulta [[{{#special:MostLinkedFiles}}]].",
+	"globallywantedfiles": "Ficheros solicitaos globalmente",
+	"globallywantedfiles-summary": "Llista de los ficheros que más vegaes tán incluyéndose'n toles wikis anque nun esisten. Pa la llista equivalente que sólo tien en cuenta los usos en {{SITENAME}}, consulta [[{{#special:WantedFiles}}]]. Los usos de ficheros nes wikis sensibles a la primera lletra en mayúscules pueden apaecer incorreutamente como solicitaos.",
+	"globallywantedfiles-foreign-repo": "<strong>Atención:</strong> esta wiki usa un repositoriu de ficheros esternu. Los ficheros del repositoriu esternu que tean usándose apaecerán nesta llista como enllaces azules tachaos anque existen.",
+	"apihelp-query+globalusage-description": "Devuelve l'usu global d'una determinada imaxe.",
+	"apihelp-query+globalusage-param-prop": "Qué propiedaes devolver:\n;url: Amiesta la URL.\n;pageid: Amiesta la ID de la páxina.\n;namespace: Amiesta la ID del espaciu de nomes.",
+	"apihelp-query+globalusage-param-limit": "Cuántos enllaces hai que devolver.",
+	"apihelp-query+globalusage-param-filterlocal": "Filtriar l'usu llocal del ficheru.",
+	"apihelp-query+globalusage-example-1": "Ver l'usu de [[:File:Example.jpg]]"
 }
