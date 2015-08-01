@@ -26,7 +26,7 @@
 	"globallywantedfiles-foreign-repo": "<strong>警告：</strong>此wiki使用外部的文件存储库。来自外部存储库使用中的文件将在此列表显示成蓝色链接，尽管它们事实上存在。",
 	"apihelp-query+globalusage-description": "返回某一图片的全域图片使用。",
 	"apihelp-query+globalusage-param-prop": "返回的属性：\n;url:加入url。\n;pageid:加入页面ID。\n;namespace:加入名字空间ID。",
-	"apihelp-query+globalusage-param-limit": "返回链接数。",
+	"apihelp-query+globalusage-param-limit": "返回的链接数。",
 	"apihelp-query+globalusage-param-filterlocal": "过滤文件的本地用途。",
-	"apihelp-query+globalusage-example-1": "获得[[:File:Example.jpg]]的用途"
+	"apihelp-query+globalusage-example-1": "获取[[:File:Example.jpg]]的用途"
 }
