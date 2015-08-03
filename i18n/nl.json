@@ -4,7 +4,8 @@
 			"Siebrand",
 			"Sjoerddebruin",
 			"Esketti",
-			"McDutchie"
+			"McDutchie",
+			"Mbch331"
 		]
 	},
 	"globalusage": "Globaal bestandsgebruik",
@@ -23,8 +24,8 @@
 	"globallywantedfiles-summary": "Lijst van bestanden die zijn opgenomen met het hoogste aantal keer over alle wiki ' s, ondanks een niet bestaande. Voor het equivalent lijst die alleen rekening houdt met de gewoonte op {{SITENAME}}, zie [[{{#special:WantedFiles}}]]. Bestand gewoonten van de eerste letter een hoofdletter gevoelig wiki ' s mogelijk niet correct worden gerapporteerd als zijnde wilde.",
 	"globallywantedfiles-foreign-repo": "<strong>Waarschuwing:</strong> Deze wiki maakt gebruik van een buitenlandse file repository. Bestanden van de vreemde repository die in gebruik zijn op deze lijst als doorgehaald blauwe links, ondanks het feit dat ze bestaan.",
 	"apihelp-query+globalusage-description": "Geeft globaal beeld van het gebruik voor een bepaald beeld.",
-	"apihelp-query+globalusage-param-prop": "Welke eigenschappen er moeten worden teruggegeven:\n;url:Voegt de URL toe.\n;pageid:Voegt de pagina-ID toe.\n;namespace:Voegt de naamruimte-ID toe.",
-	"apihelp-query+globalusage-param-limit": "Hoeveel links er moeten worden teruggegeven.",
+	"apihelp-query+globalusage-param-prop": "Welke eigenschappen er moeten worden teruggestuurd:\n;url:Voegt de URL toe.\n;pageid:Voegt de pagina-ID toe.\n;namespace:Voegt de naamruimte-ID toe.",
+	"apihelp-query+globalusage-param-limit": "Hoeveel links er moeten worden teruggestuurd.",
 	"apihelp-query+globalusage-param-filterlocal": "Lokaal gebruik van dit bestand filteren.",
 	"apihelp-query+globalusage-example-1": "Laat zien waar [[:File:Example.jpg]] gebruikt wordt"
 }
