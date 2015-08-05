@@ -6,5 +6,6 @@
 	},
 	"globalusage": "Fampiasan-drakitra maneran-tontolo",
 	"globalusage-on-wiki": "Fampiasana eo amin'i $2",
-	"globalusage-of-file": "Mampiasa ity rakitra ity ireo wiki hafa ireo:"
+	"globalusage-of-file": "Mampiasa ity rakitra ity ireo wiki hafa ireo:",
+	"globalusage-more": "Hijery [[{{#Special:GlobalUsage}}/$1|fampiasana eran-terikasa]]n'ity rakitra ity."
 }
