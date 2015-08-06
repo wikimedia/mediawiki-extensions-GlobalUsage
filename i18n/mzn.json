@@ -6,5 +6,6 @@
 	},
 	"globalusage": "پرونده‌ی ِهمه جایی استفاده بیی‌ین",
 	"globalusage-on-wiki": "کاربرد $2 دله",
-	"globalusage-of-file": "این ویکیون هم این پرونده جه استفاده کانّه:"
+	"globalusage-of-file": "این ویکیون هم این پرونده جه استفاده کانّه:",
+	"globalusage-more": "[[{{#Special:GlobalUsage}}/$1|سراسری استفاده‌ئون]] ره این پرونده جه سِراق هاده."
 }
