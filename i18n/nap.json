@@ -5,7 +5,18 @@
 		]
 	},
 	"globalusage": "Auso globbale d' 'o file",
+	"globalusage-for": "Auso globbale pe' \"$1\"",
+	"globalusage-desc": "[[Special:GlobalUsage|Paggena speciale]] pe' vedé aùse 'e file globbale",
+	"globalusage-ok": "Ascìa",
+	"globalusage-text": "Cirche 'e file d'ause globbale",
+	"globalusage-no-results": "[[:$1]] nun è ausato int'a n'ata wiki.",
 	"globalusage-on-wiki": "Uso ncopp'a $2",
 	"globalusage-of-file": "'E wiki ccà abbascio aúsano stu file:",
-	"globalusage-more": "Vedite [[{{#Special:GlobalUsage}}/$1|ause globbale]] 'e stu file."
+	"globalusage-more": "Vedite [[{{#Special:GlobalUsage}}/$1|ause globbale]] 'e stu file.",
+	"globalusage-filterlocal": "Nun fà vedè l'ause lucale",
+	"mostgloballylinkedfiles": "'E file cchiù cullegate globbalmente",
+	"globallywantedfiles": "'E file cchiù addimannate globbalmente",
+	"apihelp-query+globalusage-description": "Torna l'aùse 'e l'immaggene globbale pe' na cierta immaggene.",
+	"apihelp-query+globalusage-param-limit": "Quante cullegamiente wiki s'avesser'a turnà",
+	"apihelp-query+globalusage-param-filterlocal": "Filtra l'ause lucale d' 'o file."
 }
