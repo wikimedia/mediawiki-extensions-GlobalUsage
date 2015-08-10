@@ -15,8 +15,11 @@
 	"globalusage-more": "Vedite [[{{#Special:GlobalUsage}}/$1|ause globbale]] 'e stu file.",
 	"globalusage-filterlocal": "Nun fà vedè l'ause lucale",
 	"mostgloballylinkedfiles": "'E file cchiù cullegate globbalmente",
+	"mostgloballylinkedfiles-summary": "Elenco d' 'e file ca so' state appennute 'o cchiù auto nummero 'e vote ncopp'a tutt' 'e wiki. Pe' n'avé n'elenco equivalente ca pigliasse cunto surtanto 'e ll'use ncopp'a {{SITENAME}}, 'ndruche [[{{#special:MostLinkedFiles}}]].",
 	"globallywantedfiles": "'E file cchiù addimannate globbalmente",
+	"globallywantedfiles-foreign-repo": "<strong>Attenziò:</strong> stu wiki aùsa n'archivio 'e file esterno. 'E file 'e ll'archivio esterno ca songo 'n'uso sarranno mmustate dint'a st'elenco cu nu cullegamento blu barrato, ancora che overo esistessero.",
 	"apihelp-query+globalusage-description": "Torna l'aùse 'e l'immaggene globbale pe' na cierta immaggene.",
 	"apihelp-query+globalusage-param-limit": "Quante cullegamiente wiki s'avesser'a turnà",
-	"apihelp-query+globalusage-param-filterlocal": "Filtra l'ause lucale d' 'o file."
+	"apihelp-query+globalusage-param-filterlocal": "Filtra l'ause lucale d' 'o file.",
+	"apihelp-query+globalusage-example-1": "Piglia l'auso 'e [[:File:Example.jpg]]"
 }
