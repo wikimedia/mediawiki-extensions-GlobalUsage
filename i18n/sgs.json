@@ -4,5 +4,7 @@
 			"Hugo.arg"
 		]
 	},
-	"globalusage": "Faila nauduojėms vėsor"
+	"globalusage": "Abruozdielė nauduojėms vėsor",
+	"globalusage-on-wiki": "Skvarmas nauduojėms $2",
+	"globalusage-more": "Veizietė, kāp vėsor tasā abruozdielis [[{{#Special:GlobalUsage}}/$1|nauduojams īr]]."
 }
