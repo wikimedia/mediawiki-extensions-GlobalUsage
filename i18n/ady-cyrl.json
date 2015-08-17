@@ -2,10 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Bedynokue.nart",
-			"SmartNart12"
+			"SmartNart12",
+			"Inyzh"
 		]
 	},
 	"globalusage": "Файлым и глобал гъэфедэныгъэ",
 	"globalusage-on-wiki": "$2-м и гъэфедэныгъэ",
-	"globalusage-of-file": "Мы файлыр мы викихэм агъэфедэ:"
+	"globalusage-of-file": "Мы файлыр мы викихэм агъэфедэ:",
+	"globalusage-more": "Мы файлым и [[{{#Special:GlobalUsage}}/$1|глобал гъэфедэныгъэм]] еплъ."
 }
