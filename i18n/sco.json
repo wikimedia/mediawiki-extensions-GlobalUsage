@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"AmaryllisGardener"
+		]
+	},
+	"globalusage": "Global file uisage",
+	"globalusage-on-wiki": "Uisage on $2",
+	"globalusage-of-file": "The follaein ither wikis uise this file:",
+	"globalusage-more": "View [[{{#Special:GlobalUsage}}/$1|mair global usage]] o this file."
+}
