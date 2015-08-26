@@ -26,5 +26,6 @@
 	"apihelp-query+globalusage-param-prop": "Welche Eigenschaften zurückgegeben werden sollen:\n;url:Ergänzt die URL.\n;pageid:Ergänzt die Kennung der Seite.\n;namespace:Ergänzt die Kennung des Namensraums.",
 	"apihelp-query+globalusage-param-limit": "Wie viele Links zurückgegeben werden sollen.",
 	"apihelp-query+globalusage-param-filterlocal": "Lokale Verwendungen der Datei filtern.",
-	"apihelp-query+globalusage-example-1": "Ruft die Verwendung von [[:File:Example.jpg]] ab"
+	"apihelp-query+globalusage-example-1": "Ruft die Verwendung von [[:File:Example.jpg]] ab",
+	"globalusage-header": "Diese Seite zeigt, wo eine Datei auf anderen Wikis verwendet wird. Du kannst diese Information auch auf der Dateibeschreibungsseite unten finden."
 }

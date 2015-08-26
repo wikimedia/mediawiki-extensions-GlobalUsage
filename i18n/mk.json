@@ -23,5 +23,6 @@
 	"apihelp-query+globalusage-param-prop": "Кои својства да се дадат:\n;url: Додава URL-адреса.\n;pageid: Додава назнака на страницата.\n;namespace: Додава назнака на именскиот простор.",
 	"apihelp-query+globalusage-param-limit": "Колку врски да се дадат.",
 	"apihelp-query+globalusage-param-filterlocal": "Филтрирај месна употреба на податотеката.",
-	"apihelp-query+globalusage-example-1": "Дај употреба на [[:File:Example.jpg]]"
+	"apihelp-query+globalusage-example-1": "Дај употреба на [[:File:Example.jpg]]",
+	"globalusage-header": "На страницава се наведени сите места на други викија кајшто се користи дадена податотека. Тие информации можете да ги најдете и на дното од нејзината описната страница."
 }
