@@ -30,7 +30,7 @@ class SpecialGlobalUsage extends SpecialPage {
 		$this->filterLocal = $this->getRequest()->getCheck( 'filterlocal' );
 
 		$this->setHeaders();
-
+		$this->getOutput()->addWikiMsg( 'globalusage-header' );
 		$this->showForm();
 
 		if ( is_null( $this->target ) ) {
