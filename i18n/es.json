@@ -28,5 +28,6 @@
 	"apihelp-query+globalusage-param-prop": "Qué propiedades se devolverán:\n;url: añade una URL.\n;pageid: añade una ID de página.\n;namespace: añade una ID de un espacio de nombres.",
 	"apihelp-query+globalusage-param-limit": "Cuántos enlaces se devolverán.",
 	"apihelp-query+globalusage-param-filterlocal": "Filtrar uso local del archivo.",
-	"apihelp-query+globalusage-example-1": "Obtener uso de [[:File:Example.jpg]]"
+	"apihelp-query+globalusage-example-1": "Obtener uso de [[:File:Example.jpg]]",
+	"globalusage-header": "Esta página muestra donde se usa un archivo en otros wikis. También puedes encontrar esta información en la parte inferior la página de descripción del archivo."
 }

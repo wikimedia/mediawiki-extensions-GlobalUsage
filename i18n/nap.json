@@ -23,5 +23,6 @@
 	"apihelp-query+globalusage-param-prop": "Quala proprietà 'a turnà:\n;url:Azzecca url.\n;pageid:Azzecca identificaziona 'e paggena.\n;namespace:Azzecca identificaziona 'e namespace.",
 	"apihelp-query+globalusage-param-limit": "Quante cullegamiente wiki s'avesser'a turnà",
 	"apihelp-query+globalusage-param-filterlocal": "Filtra l'ause lucale d' 'o file.",
-	"apihelp-query+globalusage-example-1": "Piglia l'auso 'e [[:File:Example.jpg]]"
+	"apihelp-query+globalusage-example-1": "Piglia l'auso 'e [[:File:Example.jpg]]",
+	"globalusage-header": "Sta paggena mmustasse quanno nu file s'ausa dint'a ll'ati wiki. Putite truvà st'informazione abbascio ncopp' 'a paggena 'e descriziona."
 }
