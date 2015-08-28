@@ -24,5 +24,6 @@
 	"apihelp-query+globalusage-param-prop": "Millised atribuudid tagastada:\n;url: Lisab internetiaadressi.\n;pageid: Lisab lehekülje identifikaatori.\n;namespace: Lisab nimeruumi identifikaatori.",
 	"apihelp-query+globalusage-param-limit": "Kui palju linke tagastada.",
 	"apihelp-query+globalusage-param-filterlocal": "Arva välja faili kohalik kasutus.",
-	"apihelp-query+globalusage-example-1": "Hangi faili [[:File:Example.jpg|Example.jpg]] kasutus"
+	"apihelp-query+globalusage-example-1": "Hangi faili [[:File:Example.jpg|Example.jpg]] kasutus",
+	"globalusage-header": "Siin leheküljel näidatakse, kus faili teistes vikides kasutatakse. Samad andmed leiad ka faili kirjelduslehekülje allosas."
 }
