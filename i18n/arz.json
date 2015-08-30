@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Meno25"
+			"Meno25",
+			"Ghaly"
 		]
 	},
 	"globalusage": "استخدام الملف العام",
 	"globalusage-desc": "[[Special:GlobalUsage|صفحة خاصة]] لرؤية استخدام الملف العام",
 	"globalusage-ok": "بحث",
-	"globalusage-text": "بحث استخدام الملف العام"
+	"globalusage-text": "بحث استخدام الملف العام",
+	"globalusage-on-wiki": "الاستخدام ف $2"
 }
