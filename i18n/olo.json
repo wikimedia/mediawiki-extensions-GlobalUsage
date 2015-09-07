@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ilja.mos"
+			"Ilja.mos",
+			"Mashoi7"
 		]
 	},
 	"globalusage": "Globualine failan käyttö",
-	"globalusage-on-wiki": "$2 käyttö"
+	"globalusage-on-wiki": "$2 käyttö",
+	"globalusage-of-file": "Nämmä wikit käytetäh tädä failua:"
 }
