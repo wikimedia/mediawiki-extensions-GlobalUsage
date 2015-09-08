@@ -9,5 +9,6 @@
 	"globalusage-desc": "[[Special:GlobalUsage|صفحة خاصة]] لرؤية استخدام الملف العام",
 	"globalusage-ok": "بحث",
 	"globalusage-text": "بحث استخدام الملف العام",
-	"globalusage-on-wiki": "الاستخدام ف $2"
+	"globalusage-on-wiki": "الاستخدام ف $2",
+	"globalusage-of-file": "الويكيات التانيه دى بتستخدم الفايل ده:"
 }
