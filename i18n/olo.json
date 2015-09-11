@@ -7,5 +7,6 @@
 	},
 	"globalusage": "Globualine failan käyttö",
 	"globalusage-on-wiki": "$2 käyttö",
-	"globalusage-of-file": "Nämmä wikit käytetäh tädä failua:"
+	"globalusage-of-file": "Nämmä wikit käytetäh tädä failua:",
+	"globalusage-more": "Kačo ližiä tämän failan  [[{{#Special:GlobalUsage}}/$1|globalnoidu käyttyö]]."
 }
