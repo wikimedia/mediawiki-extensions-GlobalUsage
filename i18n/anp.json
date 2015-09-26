@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Angpradesh"
+			"Angpradesh",
+			"Samyo"
 		]
 	},
+	"globalusage": "वैश्विक फ़ाइल उपयोग",
 	"globalusage-on-wiki": "$2 प॑ उपयोग"
 }
