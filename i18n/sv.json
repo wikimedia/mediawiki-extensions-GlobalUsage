@@ -29,5 +29,6 @@
 	"apihelp-query+globalusage-param-prop": "Vilka egenskaper att återvända:\n;url:Lägger till url.\n;sidid:Lägger till sid-ID.\n;namespace:Lägger till namnrymd-ID.",
 	"apihelp-query+globalusage-param-limit": "Hur många länkar som ska returneras.",
 	"apihelp-query+globalusage-param-filterlocal": "Filtrera lokal användning av filen.",
-	"apihelp-query+globalusage-example-1": "Hämta användning av [[:File:Example.jpg]]"
+	"apihelp-query+globalusage-example-1": "Hämta användning av [[:File:Example.jpg]]",
+	"globalusage-header": "Denna sida visar var en fil används på andra wikis. Du kan också hitta information på botten av den filens beskrivningssida."
 }

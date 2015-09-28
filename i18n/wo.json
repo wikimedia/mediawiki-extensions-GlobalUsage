@@ -6,5 +6,6 @@
 	},
 	"globalusage": "Fépp fees jëfandikoo dencukaay bi",
 	"globalusage-on-wiki": "Jëfandikoo nañu ko ci $2",
-	"globalusage-of-file": "Yeneen wiki yiy toftal dañuy jëfandikoo itam bii dencukaay:"
+	"globalusage-of-file": "Yeneen wiki yiy toftal dañuy jëfandikoo itam bii dencukaay:",
+	"globalusage-more": "Wone [[{{#Special:GlobalUsage}}/$1|njëfandikoo gu daj]] gu bii dencukaay."
 }
