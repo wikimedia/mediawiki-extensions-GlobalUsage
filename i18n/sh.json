@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"OC Ripper"
+		]
+	},
+	"globalusage": "Globalna upotreba datoteke",
+	"globalusage-on-wiki": "Upotreba na $2",
+	"globalusage-of-file": "Sljedeći wikiji koriste ovu datoteku:",
+	"globalusage-more": "Pogledajte [[{{#Special:GlobalUsage}}/$1|globalne upotrebe]] ove datoteke."
+}
