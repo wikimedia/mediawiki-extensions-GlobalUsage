@@ -4,7 +4,8 @@
 			"Giro720",
 			"Hamilton Abreu",
 			"Lijealso",
-			"Malafaya"
+			"Malafaya",
+			"Fúlvio"
 		]
 	},
 	"globalusage": "Utilização global do ficheiro",
@@ -16,5 +17,9 @@
 	"globalusage-on-wiki": "Uso na $2",
 	"globalusage-of-file": "As seguintes wikis usam este ficheiro:",
 	"globalusage-more": "Ver [[{{#Special:GlobalUsage}}/$1|a utilização global]] deste ficheiro.",
-	"globalusage-filterlocal": "Não mostrar utilizações locais"
+	"globalusage-filterlocal": "Não mostrar utilizações locais",
+	"mostgloballylinkedfiles": "Ficheiros com mais afluentes globais",
+	"mostgloballylinkedfiles-summary": "Lista com os ficheiros mais incorporados em todas as wikis. Para a lista equivalente que leva em conta apenas utilizações em {{SITENAME}}, veja [[{{#special:MostLinkedFiles}}]].",
+	"globallywantedfiles": "Ficheiros procurados globalmente",
+	"globalusage-header": "Esta página mostra em quais wikis é utilizado um ficheiro. Pode também encontrar essa informação na parte inferior da página de descrição."
 }
