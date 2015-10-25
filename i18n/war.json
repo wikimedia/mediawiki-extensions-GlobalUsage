@@ -6,5 +6,6 @@
 	},
 	"globalusage": "Global file usage",
 	"globalusage-on-wiki": "Paggamit ha $2",
-	"globalusage-of-file": "An masunod nga iba nga mga wiki in nagamit hini nga file:"
+	"globalusage-of-file": "An masunod nga iba nga mga wiki in nagamit hini nga file:",
+	"globalusage-more": "Kitaa [[{{#Special:GlobalUsage}}/$1|durudamo nga global usage]] hinin nga file."
 }
