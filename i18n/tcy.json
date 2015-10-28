@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"VASANTH S.N.",
-			"Vishwanatha Badikana"
+			"Vishwanatha Badikana",
+			"Bharathesha Alasandemajalu"
 		]
 	},
 	"globalusage": "ಜಾಗತಿಕೊ ಕಡತೊ ಬಳಕೆ",
-	"globalusage-on-wiki": "$2 ದ ಬಳಕೆ"
+	"globalusage-on-wiki": "$2 ದ ಬಳಕೆ",
+	"globalusage-of-file": "ಈ ಕಡತನೂ ತಿರ್ತ್ ಬೇತೆ ವಿಕಿಳೂ ಗಳಸುತೋ:"
 }
