@@ -7,7 +7,7 @@
 		]
 	},
 	"globalusage": "ಜಾಗತಿಕೊ ಕಡತೊ ಬಳಕೆ",
-	"globalusage-on-wiki": "$2 ದ ಬಳಕೆ",
-	"globalusage-of-file": "ಈ ಕಡತನೂ ತಿರ್ತ್ ಬೇತೆ ವಿಕಿಳೂ ಗಳಸುತೋ:",
-	"globalusage-more": "ನೋಟ[[{{#Special:GlobalUsage}}/$1|ಜಾಗತಿಕವಾದ್ ಹೆಚ್ಚ್ ಬಳಕೆ]]ಈ ಫೈಲ್."
+	"globalusage-on-wiki": "$2ದ ಬಳಕೆ",
+	"globalusage-of-file": "ಈ ಕಡತನೂ ತಿರ್ತ್ ಬೇತೆ ವಿಕಿಲು ಗಳಸುತೋ:",
+	"globalusage-more": "ನೋಟ[[{{#Special:GlobalUsage}}/$1|ಜಾಗತಿಕವಾದ್ ಹೆಚ್ಚ್ ಬಳಕೆ]]ಈ ಕಡತೊ."
 }
