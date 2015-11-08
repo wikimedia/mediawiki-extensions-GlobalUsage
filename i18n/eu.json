@@ -2,12 +2,15 @@
 	"@metadata": {
 		"authors": [
 			"Kobazulo",
-			"Sator"
+			"Sator",
+			"Theklan"
 		]
 	},
 	"globalusage": "Fitxategiaren erabilera orokorra",
 	"globalusage-desc": "Fitxategiaren erabilera orokorra ikusteko [[Special:GlobalUsage|orrialde berezia]]",
 	"globalusage-ok": "Bilatu",
 	"globalusage-text": "Fitxategiaren erabilera orokorra bilatu.",
-	"globalusage-of-file": "Hurrengo beste wikiek fitxategi hau darabilte:"
+	"globalusage-on-wiki": "Hemen erabiltzen da $2",
+	"globalusage-of-file": "Hurrengo beste wikiek fitxategi hau darabilte:",
+	"globalusage-more": "Ikus fitxategi honen [[{{#Special:GlobalUsage}}/$1|erabilpen global gehiago]]."
 }
