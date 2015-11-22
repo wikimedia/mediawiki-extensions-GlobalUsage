@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Ex13",
-			"SpeedyGonsales"
+			"SpeedyGonsales",
+			"MaGa"
 		]
 	},
 	"globalusage": "Globalna uporaba datoteke",
@@ -14,5 +15,6 @@
 	"globalusage-on-wiki": "Uporaba na $2",
 	"globalusage-of-file": "Sljedeći wikiji rabe ovu datoteku:",
 	"globalusage-more": "Pogledajte [[{{#Special:GlobalUsage}}/$1|globalnu uporabu]] ove datoteke.",
-	"globalusage-filterlocal": "Ne prikazuj lokalnu uporabu"
+	"globalusage-filterlocal": "Ne prikazuj lokalnu uporabu",
+	"globalusage-header": "Ova stranica prikazuje na kojim je sve wikijima uporabljena datoteka. Ovu informaciju možete pronaći i na dnu stranice s opisom."
 }
