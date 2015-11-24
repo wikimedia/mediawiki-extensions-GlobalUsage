@@ -18,5 +18,6 @@
 	"mostgloballylinkedfiles-summary": "Seznam souborů, které se na všech wiki používají nejvícekrát. Odpovídající seznam, který bere do úvahy jen použití na {{grammar:6sg|{{SITENAME}}}}, je na [[{{#special:MostLinkedFiles}}]].",
 	"globallywantedfiles": "Globálně chybějící soubory",
 	"globallywantedfiles-summary": "Seznam souborů, které na všech wiki používají nejvícekrát, přestože neexistují. Odpovídající seznam, který bere do úvahy jen použití na {{grammar:6sg|{{SITENAME}}}}, je na [[{{#special:WantedFiles}}]].",
-	"globallywantedfiles-foreign-repo": "<strong>Upozornění:</strong> Tato wiki používá vzdálené úložiště souborů. Používané soubory ze vzdáleného úložiště se na tomto seznamu objeví jako přeškrtnuté modré odkazy, přestože existují."
+	"globallywantedfiles-foreign-repo": "<strong>Upozornění:</strong> Tato wiki používá vzdálené úložiště souborů. Používané soubory ze vzdáleného úložiště se na tomto seznamu objeví jako přeškrtnuté modré odkazy, přestože existují.",
+	"globalusage-header": "Tato stránka zobrazuje, kde se soubor používá na jiných wiki. Tuto informaci najdete také naspodu každé stránky s informacemi o souboru."
 }
