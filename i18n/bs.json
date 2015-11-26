@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"CERminator",
-			"KWiki"
+			"KWiki",
+			"Srdjan m"
 		]
 	},
 	"globalusage": "Globalna upotreba datoteke",
@@ -14,5 +15,7 @@
 	"globalusage-on-wiki": "Upotreba na $2",
 	"globalusage-of-file": "Sljedeći wikiji koriste ovu datoteku:",
 	"globalusage-more": "Pogledajte [[{{#Special:GlobalUsage}}/$1|globalne upotrebe]] ove datoteke.",
-	"globalusage-filterlocal": "Ne prikazuj lokalnu upotrebu"
+	"globalusage-filterlocal": "Ne prikazuj lokalnu upotrebu",
+	"mostgloballylinkedfiles": "Datoteke s najviše linkova globalno",
+	"globalusage-header": "Ova stranica prikazuje na kojim se sve wikijima koristi ova datoteka.  Ovu informaciju također možete pronaći na dnu stranice s opisom."
 }
