@@ -4,5 +4,8 @@
 			"Hosseinblue"
 		]
 	},
-	"globalusage-on-wiki": "کاربرد وۀ $2"
+	"globalusage": "کاربرد سراسری پرونده",
+	"globalusage-on-wiki": "کاربرد وۀ $2",
+	"globalusage-of-file": ": ویکی ئۀلئ تر گإ إئ پۀروۀندۀ استفادۀ مۀکۀن",
+	"globalusage-more": "View [[{{#Special:GlobalUsage}}/$1|more global usage]] of this file."
 }
