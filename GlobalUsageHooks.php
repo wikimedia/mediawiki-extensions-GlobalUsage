@@ -86,7 +86,10 @@ class GlobalUsageHooks {
 			if ( $nt->inNamespace( NS_FILE ) ) {
 				$jobs[] = new GlobalUsageCachePurgeJob( $nt, array() );
 			}
-			JobQueueGroup::singleton()->push( $jobs );
+			// Push the jobs after DB commit but cancel on rollback
+			wfGetDB( DB_MASTER )->onTransactionIdle( function() use ( $jobs ) {
+				JobQueueGroup::singleton()->lazyPush( $jobs );
+			} );
 		}
 
 		return true;
