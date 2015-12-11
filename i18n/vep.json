@@ -4,5 +4,7 @@
 			"Игорь Бродский"
 		]
 	},
-	"globalusage-ok": "Ectä"
+	"globalusage": "Failan globaline kävutamine",
+	"globalusage-ok": "Ectä",
+	"globalusage-on-wiki": "Failan kävutamine $2-vikiš"
 }
