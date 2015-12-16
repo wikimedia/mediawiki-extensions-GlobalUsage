@@ -3,14 +3,15 @@
 		"authors": [
 			"Kobazulo",
 			"Sator",
-			"Theklan"
+			"Theklan",
+			"Xabier Armendaritz"
 		]
 	},
 	"globalusage": "Fitxategiaren erabilera orokorra",
 	"globalusage-desc": "Fitxategiaren erabilera orokorra ikusteko [[Special:GlobalUsage|orrialde berezia]]",
 	"globalusage-ok": "Bilatu",
 	"globalusage-text": "Fitxategiaren erabilera orokorra bilatu.",
-	"globalusage-on-wiki": "Hemen erabiltzen da $2",
+	"globalusage-on-wiki": "$2 proiektuan duen erabilera",
 	"globalusage-of-file": "Hurrengo beste wikiek fitxategi hau darabilte:",
 	"globalusage-more": "Ikus fitxategi honen [[{{#Special:GlobalUsage}}/$1|erabilpen global gehiago]]."
 }
