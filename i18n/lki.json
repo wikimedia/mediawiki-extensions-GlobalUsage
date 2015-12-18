@@ -12,7 +12,7 @@
 	"globalusage-no-results": "[[:$1]] در ویکی‌های دیگر استفاده نشده‌است.",
 	"globalusage-on-wiki": "کاربرد وۀ $2",
 	"globalusage-of-file": ": ویکی ئۀلئ تر گإ إئ پۀروۀندۀ استفادۀ مۀکۀن",
-	"globalusage-more": "View [[{{#Special:GlobalUsage}}/$1|more global usage]] of this file.",
+	"globalusage-more": "[[{{#Special:GlobalUsage}}/$1|وه کار گرتِتن فرةتر]] ئةرا ئئ پرونده سئر کةن.",
 	"globalusage-filterlocal": "استفاده‌های محلی را نشان نده",
 	"mostgloballylinkedfiles": "بیشترین پرونده‌های سراسری پیوندشده",
 	"mostgloballylinkedfiles-summary": "فهرشت پرونده‌هایی که بیشترین تعداد بین همهٔ ویکی‌ها تعبیه شده است. برای معادل این فهرست که فقط استفاده‌های در {{SITENAME}} را درنظر می‌گیرد، [[{{#special:MostLinkedFiles}}]] را ببینید.",
