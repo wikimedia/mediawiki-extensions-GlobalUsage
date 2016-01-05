@@ -4,7 +4,8 @@
 			"Davidpar",
 			"Jordi Roqué",
 			"SMP",
-			"Vriullop"
+			"Vriullop",
+			"Ssola"
 		]
 	},
 	"globalusage": "Ús global del fitxer",
@@ -16,5 +17,9 @@
 	"globalusage-on-wiki": "Utilització a $2",
 	"globalusage-of-file": "Utilització d'aquest fitxer en altres wikis:",
 	"globalusage-more": "Vegeu [[{{#Special:GlobalUsage}}/$1|més usos globals]] d'aquest fitxer.",
-	"globalusage-filterlocal": "No mostris l'ús local"
+	"globalusage-filterlocal": "No mostris l'ús local",
+	"mostgloballylinkedfiles": "Fitxers més enllaçats globalment",
+	"globallywantedfiles": "Fitxers sol·licitats globalment",
+	"apihelp-query+globalusage-description": "Retorna l'ús global d'una imatge determinada.",
+	"apihelp-query+globalusage-param-limit": "Quants enllaços es retornaran."
 }
