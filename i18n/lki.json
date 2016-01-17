@@ -1,13 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Hosseinblue"
+			"Hosseinblue",
+			"Lakzon"
 		]
 	},
 	"globalusage": "کاربرد سراسری پرونده",
 	"globalusage-for": "کاربرد سراسری برای «$1»",
 	"globalusage-desc": "[[Special:GlobalUsage|صفحهٔ ویژه]] برای دیدن استفاده‌های سراسری",
-	"globalusage-ok": "گئردین/مهِ نی",
+	"globalusage-ok": "مِنِی کِردِن(گێردین)",
 	"globalusage-text": "جستجوی استفاده‌های سراسری پرونده",
 	"globalusage-no-results": "[[:$1]] در ویکی‌های دیگر استفاده نشده‌است.",
 	"globalusage-on-wiki": "کاربرد وۀ $2",
