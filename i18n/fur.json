@@ -1,10 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Klenje"
+			"Klenje",
+			"Tocaibon"
 		]
 	},
+	"globalusage": "ûs globâl dal file",
 	"globalusage-ok": "Cîr",
 	"globalusage-on-wiki": "Ûs in $2",
-	"globalusage-of-file": "Chestis altris vichis a doprin chest file:"
+	"globalusage-of-file": "Chestis altris vichis a doprin chest file:",
+	"globalusage-more": "Mostre[[{{#Special:GlobalUsage}}/$1|l'ûs globâl]] di chest file."
 }
