@@ -15,5 +15,8 @@
 	"globalusage-of-file": "Drugi Vikiji koji koriste ovu datoteku:",
 	"globalusage-more": "Još [[{{#Special:GlobalUsage}}/$1|globalnog korišćenja]] ove datoteke.",
 	"globalusage-filterlocal": "Ne prikazuj lokalnu upotrebu",
-	"globallywantedfiles": "Globalno tražene datoteke"
+	"mostgloballylinkedfiles": "Datoteke s najviše veza globalno",
+	"mostgloballylinkedfiles-summary": "Spisak datoteka koje se najviše koriste na svim vikijima. Za spisak datoteka koje se najviše koriste na {{SITENAME}}, pogledajte [[{{#special:MostLinkedFiles}}]].",
+	"globallywantedfiles": "Globalno tražene datoteke",
+	"globallywantedfiles-summary": "Spisak najtraženih datoteka koje se koriste na svim vikijima a ne postoje Za spisak najtraženih datoteka za {{SITENAME}}, pogledajte [[{{#special:WantedFiles}}]]. Na ovom spisku se mogu nalaziti i datoteke koje postoje, zbog osetljivosti nekih vikija na veličinu prvog slova."
 }
