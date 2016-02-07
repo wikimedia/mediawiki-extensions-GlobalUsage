@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Flrn"
+			"Flrn",
+			"Mashoi7"
 		]
 	},
-	"globalusage-ok": "Ečindy"
+	"globalusage-ok": "Ečindy",
+	"globalusage-on-wiki": "$2 käyttö",
+	"globalusage-of-file": "Nämä wikit käytetäh tätä tiijoštuo:"
 }
