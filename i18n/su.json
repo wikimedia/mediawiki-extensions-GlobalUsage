@@ -8,5 +8,6 @@
 	"globalusage": "Pamakéan berkas sajagat",
 	"globalusage-ok": "Sungsi",
 	"globalusage-on-wiki": "Pamakéan di $2",
-	"globalusage-of-file": "Wiki lianna anu maké ieu berkas:"
+	"globalusage-of-file": "Wiki lianna anu maké ieu berkas:",
+	"globalusage-more": "Témbongkeun [[{{#Special:GlobalUsage}}/$1|pamakéan global leuwih loba]] pikeun ieu berkas."
 }
