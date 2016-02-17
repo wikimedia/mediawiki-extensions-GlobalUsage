@@ -16,5 +16,6 @@
 	"globalusage-on-wiki": "გამოყენება $2-ში",
 	"globalusage-of-file": "ეს ფაილი გამოიყენება შემდეგ ვიკებში:",
 	"globalusage-more": "იხილეთ, ამ ფაილის [[{{#Special:GlobalUsage}}/$1|გლობალური გამოყენება]].",
-	"globalusage-filterlocal": "არ აჩვენოთ ლოკალური გამოყენება"
+	"globalusage-filterlocal": "არ აჩვენოთ ლოკალური გამოყენება",
+	"apihelp-query+globalusage-param-limit": "რამდენი შედეგი ვაჩვენოთ?"
 }
