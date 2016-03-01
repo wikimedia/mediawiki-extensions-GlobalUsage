@@ -1,8 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Omnipaedista"
+			"Omnipaedista",
+			"Gts-tg"
 		]
 	},
-	"globalusage-ok": "Ζητεῖν"
+	"globalusage": "Καθολικήν δελτίου χρεία",
+	"globalusage-ok": "Ζητεῖν",
+	"globalusage-on-wiki": "Χρεία ἐν $2",
+	"globalusage-of-file": "Τά κάτω ἄλλα βίκι ταύτο ἀρχείον χρειούν:",
+	"globalusage-more": "Ὀρᾶν [[{{#Special:GlobalUsage}}/$1|ἐπιπλέον καθολικήν]] χρειά ἀρχείου ταύτου."
 }
