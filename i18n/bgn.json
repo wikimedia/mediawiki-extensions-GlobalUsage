@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Baloch Afghanistan"
+			"Baloch Afghanistan",
+			"Ibrahim khashrowdi"
 		]
 	},
-	"globalusage": "فایلی سراسرین کاربرد",
+	"globalusage": "فایلی سراسرین کارگیپت",
 	"globalusage-ok": "گشتین",
-	"globalusage-on-wiki": "کار زوروک بئ $2 تا",
+	"globalusage-on-wiki": "استفاده بوته به $2",
 	"globalusage-of-file": "دیگرین ویکی هان که شه ای فایلا استفاده ئه کننت:",
 	"globalusage-more": "نشان داتین [[{{#Special:GlobalUsage}}/$1|سراسرین استفاده ئان]] شه ای فایلا."
 }
