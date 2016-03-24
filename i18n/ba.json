@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Assele"
+			"Assele",
+			"Янмурза Баки"
 		]
 	},
 	"globalusage": "Файлды дөйөм ҡулланыу",
@@ -13,5 +14,10 @@
 	"globalusage-on-wiki": "$2 проектында ҡулланыу",
 	"globalusage-of-file": "Был файл түбәндәге фики проекттарҙа ҡулланыла:",
 	"globalusage-more": "Был файлды дөйөм ҡулланыу тураһында [[{{#Special:GlobalUsage}}/$1|ентеклерәк мәғлүмәтте]] ҡарарға.",
-	"globalusage-filterlocal": "Урында ҡулланыуҙы күрһәтмәҫкә"
+	"globalusage-filterlocal": "Урында ҡулланыуҙы күрһәтмәҫкә",
+	"mostgloballylinkedfiles": "Иң күп һанлы глобаль элемтәләрҙең файлдары.",
+	"globallywantedfiles": "Глобаль кәрәкле булған файлдар.",
+	"apihelp-query+globalusage-param-limit": "Күпме һылтанмаларҙы кире ҡайтарырға.",
+	"apihelp-query+globalusage-param-filterlocal": "Файлдың локаль ҡулланылыуын һөҙөргә.",
+	"apihelp-query+globalusage-example-1": "[[:File:Example.jpg]] Ҡулланыу турһында мәғлүмәт алырға."
 }
