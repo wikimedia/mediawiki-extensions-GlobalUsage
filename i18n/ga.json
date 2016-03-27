@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"පසිඳු කාවින්ද"
+			"පසිඳු කාවින්ද",
+			"Tem"
 		]
 	},
-	"globalusage-ok": "Cuardaigh"
+	"globalusage-ok": "Cuardaigh",
+	"globalusage-on-wiki": "Úsáid ar $2"
 }
