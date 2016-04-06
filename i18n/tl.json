@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"AnakngAraw",
-			"Sky Harbor"
+			"Sky Harbor",
+			"Jojit fb"
 		]
 	},
-	"globalusage": "Pandaigdigang paggamit ng talaksan",
+	"globalusage": "Pandaigdigang paggamit ng file",
 	"globalusage-for": "Pandaigdigang paggamit para sa \"$1\"",
 	"globalusage-desc": "[[Special:GlobalUsage|Natatanging pahina]] upang makita ang paggamit ng pandaigdigang talaksan",
 	"globalusage-ok": "Maghanap",
