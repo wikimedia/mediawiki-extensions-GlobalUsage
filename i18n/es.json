@@ -8,7 +8,8 @@
 			"Platonides",
 			"Translationista",
 			"Macofe",
-			"Ryo567"
+			"Ryo567",
+			"Lemondoge"
 		]
 	},
 	"globalusage": "Uso global del archivo",
@@ -22,6 +23,7 @@
 	"globalusage-more": "Ver [[{{#Special:GlobalUsage}}/$1|más uso global]] de este archivo.",
 	"globalusage-filterlocal": "No mostrar el uso local",
 	"mostgloballylinkedfiles": "Archivos más enlazados globalmente",
+	"mostgloballylinkedfiles-summary": "Lista de archivos que se han incrustado el mayor número de veces a través de todos los wikis. Para el equivalente de la lista que sólo tiene en cuenta los usos en {{SITENAME}}, véase [[{{#special:MostLinkedFiles}}]].",
 	"globallywantedfiles": "Archivos solicitados globalmente",
 	"globallywantedfiles-foreign-repo": "<strong>Atención:</strong> este wiki usa un repositorio de archivos externo. Los archivos de este repositorio que estén en uso se mostrarán en esta lista como enlaces azules tachados a pesar de que existen.",
 	"apihelp-query+globalusage-description": "Devuelve el uso global de una determinada imagen.",
