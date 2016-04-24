@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"LNDDYL",
-			"飞舞回堂前"
+			"飞舞回堂前",
+			"SolidBlock"
 		]
 	},
+	"globalusage": "總文之用",
 	"globalusage-ok": "尋",
 	"globalusage-on-wiki": "$2上之用"
 }
