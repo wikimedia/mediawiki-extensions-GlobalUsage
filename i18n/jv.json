@@ -12,7 +12,7 @@
 	"globalusage-text": "Golèk panggunan global berkas.",
 	"globalusage-no-results": "[[:$1]] ora dianggo nèng wiki liya.",
 	"globalusage-on-wiki": "Dianggo nalika $2",
-	"globalusage-of-file": "Wiki liyané ngisor iki nganggo berkas iki:",
-	"globalusage-more": "Delok [[{{#Special:GlobalUsage}}/$1|anggoan global luwih akèh]] saka kaca iki.",
+	"globalusage-of-file": "Wiki liya ngisor iki nganggo barkas iki:",
+	"globalusage-more": "Deleng [[{{#Special:GlobalUsage}}/$1|panganggo liyané sadonya]] saka kaca iki.",
 	"globalusage-filterlocal": "Aja tuduhaké anggoan lokal"
 }

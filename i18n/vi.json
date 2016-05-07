@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Minh Nguyen",
-			"Vinhtantran"
+			"Vinhtantran",
+			"Dinhxuanduyet"
 		]
 	},
 	"globalusage": "Sử dụng tập tin toàn cục",
@@ -20,5 +21,6 @@
 	"globallywantedfiles": "Tập tin cần thiết toàn cục",
 	"globallywantedfiles-summary": "Danh sách các tập tin được nhúng vào nhiều trang nhất trên tất cả các wiki mặc dù tập tin không tồn tại. Xem danh sách tương tự chỉ tính các trang trên {{SITENAME}} tại [[{{#special:WantedFiles}}]]. Các trang sử dụng tập tin tại wiki phân biệt chữ hoa/thường đâu tiên có thể được liệt kê không chính xác.",
 	"globallywantedfiles-foreign-repo": "<strong>Cảnh báo:</strong> Wiki này sử dụng một kho tập tin bên ngoài. Các tập tin được sử dụng từ kho bên ngoài được liệt kê trong danh sách này là liên kết màu xanh được gạch ngang, mặc dù những tập tin này có tồn tại.",
+	"apihelp-query+globalusage-param-limit": "Có bao nhiêu liên kết được trả về.",
 	"globalusage-header": "Trang này cho biết một tập tin cụ thể được sử dụng ở đâu trên các wiki kia. Các thông tin này cũng xuất hiện ở cuối trang miêu tả tập tin."
 }
