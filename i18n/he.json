@@ -5,10 +5,11 @@
 			"YaronSh",
 			"Yonidebest",
 			"Amire80",
-			"ערן"
+			"ערן",
+			"Guycn2"
 		]
 	},
-	"globalusage": "שימוש גלובלי בקבצים",
+	"globalusage": "שימוש גלובלי בקובץ",
 	"globalusage-for": "הקישורים לקובץ \"$1\" בכל האתרים",
 	"globalusage-desc": "[[Special:GlobalUsage|דף מיוחד]] להצגת השימוש הגלובלי בקבצים",
 	"globalusage-ok": "חיפוש",
