@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Flrn",
-			"Mashoi7"
+			"Mashoi7",
+			"Varvana"
 		]
 	},
+	"globalusage": "Globalini failin käyttö",
 	"globalusage-ok": "Ečindy",
 	"globalusage-on-wiki": "$2 käyttö",
 	"globalusage-of-file": "Nämä wikit käytetäh tätä tiijoštuo:"
