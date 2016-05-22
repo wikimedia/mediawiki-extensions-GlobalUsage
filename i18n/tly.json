@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Гусейн"
+			"Гусейн",
+			"Ganbarzada"
 		]
 	},
-	"globalusage-ok": "Нәве"
+	"globalusage": "Çı fayli qlobal istifadə",
+	"globalusage-ok": "Нәве",
+	"globalusage-on-wiki": "Çı $2 istifadə"
 }

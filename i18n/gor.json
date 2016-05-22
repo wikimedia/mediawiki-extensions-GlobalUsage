@@ -6,5 +6,6 @@
 	},
 	"globalusage": "Pilopohuna berkas global",
 	"globalusage-on-wiki": "Pilopohuna to $2",
-	"globalusage-of-file": "Wiki uweewo hemomake berkas botiya"
+	"globalusage-of-file": "Wiki uweewo hemomake berkas botiya",
+	"globalusage-more": "Bilohi [[{{#Special:GlobalUsage}}/$1|ngohuntuwa ta lopohuna global]] lo berkas botiye."
 }
