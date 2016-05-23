@@ -6,5 +6,6 @@
 	},
 	"globalusage": "takayaɣ labɩnaʋ nɛ paa anɩ",
 	"globalusage-on-wiki": "Labɩnaʋ $2 yɔɔ",
-	"globalusage-of-file": "Wikinaa kɩtɩŋaa lɛlaa lakɩna kɩlɛmʋʋ kʋnɛ nɛ tʋmɩyɛ :"
+	"globalusage-of-file": "Wikinaa kɩtɩŋaa lɛlaa lakɩna kɩlɛmʋʋ kʋnɛ nɛ tʋmɩyɛ :",
+	"globalusage-more": "Cɔna takayaɣ [[{{#Special:GlobalUsage}}/$1|labɩnaʋ tɩŋa]]"
 }

@@ -3,7 +3,8 @@
 		"authors": [
 			"Ansumang",
 			"Kaustubh",
-			"Siddhartha Ghai"
+			"Siddhartha Ghai",
+			"Sfic"
 		]
 	},
 	"globalusage": "वैश्विक फ़ाइल उपयोग",
@@ -15,5 +16,6 @@
 	"globalusage-on-wiki": "$2 पर उपयोग",
 	"globalusage-of-file": "इस फ़ाइल का उपयोग निम्न अन्य विकियों में है:",
 	"globalusage-more": "इस फ़ाइल के [[{{#Special:GlobalUsage}}/$1|वैश्विक उपयोग की अधिक जानकारी]] देखें।",
-	"globalusage-filterlocal": "स्थानीय उपयोग ना दिखाएँ"
+	"globalusage-filterlocal": "स्थानीय उपयोग ना दिखाएँ",
+	"apihelp-query+globalusage-param-limit": "कितना कड़ी दिखेगा।"
 }
