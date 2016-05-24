@@ -7,5 +7,6 @@
 	"globalusage": "Массанахьа файлах пайда эцар",
 	"globalusage-ok": "Хьалáха",
 	"globalusage-on-wiki": "Пайда эцар $2 чу",
-	"globalusage-of-file": "Ер файл пайда эцаш лелаю укх википейдаш чу:"
+	"globalusage-of-file": "Ер файл пайда эцаш лелаю укх википейдаш чу:",
+	"globalusage-more": "БIаргтоха укх файлах [[{{#Special:GlobalUsage}}/$1|еррига проекташка пайда эцара]]."
 }
