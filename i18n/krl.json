@@ -9,5 +9,6 @@
 	"globalusage": "Globalini failin käyttö",
 	"globalusage-ok": "Ečindy",
 	"globalusage-on-wiki": "$2 käyttö",
-	"globalusage-of-file": "Nämä wikit käytetäh tätä failie:"
+	"globalusage-of-file": "Nämä wikit käytetäh tätä failie:",
+	"globalusage-more": "Kačo lisiä tämän failaäin  [[{{#Special:GlobalUsage}}/$1|globalnoita käyttyö]]."
 }
