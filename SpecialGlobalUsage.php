@@ -31,6 +31,9 @@ class SpecialGlobalUsage extends SpecialPage {
 
 		$this->setHeaders();
 		$this->getOutput()->addWikiMsg( 'globalusage-header' );
+		if ( !is_null( $this->target ) ) {
+			$this->getOutput()->addWikiMsg( 'globalusage-header-image', $this->target->getText() );
+		}
 		$this->showForm();
 
 		if ( is_null( $this->target ) ) {

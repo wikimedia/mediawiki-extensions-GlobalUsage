@@ -24,5 +24,6 @@
 	"apihelp-query+globalusage-param-limit": "How many links to return.",
 	"apihelp-query+globalusage-param-filterlocal": "Filter local usage of the file.",
 	"apihelp-query+globalusage-example-1": "Get usage of [[:File:Example.jpg]]",
-	"globalusage-header": "This page shows where a file is used on other wikis. You can also find that information at the bottom of the file description page."
+	"globalusage-header": "This page shows where a file is used on other wikis. You can also find that information at the bottom of the file description page.",
+	"globalusage-header-image": ""
 }
