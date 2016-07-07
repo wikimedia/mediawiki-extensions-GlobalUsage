@@ -101,16 +101,16 @@ class GlobalUsage {
 	 *
 	 * @param $title Title Title of the file to copy entries from.
 	 */
-	public function copyLocalImagelinks( $title ) {
+	public function copyLocalImagelinks( Title $title ) {
 		global $wgContLang;
 
-		$dbr = wfGetDB( DB_SLAVE );
-		$res = $dbr->select(
+		$res = $this->db->select(
 			array( 'imagelinks', 'page' ),
 			array( 'il_to', 'page_id', 'page_namespace', 'page_title' ),
 			array( 'il_from = page_id', 'il_to' => $title->getDBkey() ),
 			__METHOD__
 		);
+
 		$insert = array();
 		foreach ( $res as $row ) {
 			$insert[] = array(
@@ -122,7 +122,11 @@ class GlobalUsage {
 				'gil_to' => $row->il_to,
 			);
 		}
-		$this->db->insert( 'globalimagelinks', $insert, __METHOD__, array( 'IGNORE' ) );
+
+		$fname = __METHOD__;
+		DeferredUpdates::addCallableUpdate( function () use ( $insert, $fname ) {
+			$this->db->insert( 'globalimagelinks', $insert, $fname, array( 'IGNORE' ) );
+		} );
 	}
 
 	/**
