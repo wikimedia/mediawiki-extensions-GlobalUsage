@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Yekrats"
+			"Yekrats",
+			"Lucas"
 		]
 	},
-	"globalusage": "Ĝenerala dosier-uzado",
+	"globalusage": "Suma uzado de la dosiero",
 	"globalusage-for": "Ĝenerala uzado por \"$1\"",
 	"globalusage-desc": "[[Special:GlobalUsage|Speciala paĝo]] por rigardi uzadon de ĝeneralaj dosieroj",
 	"globalusage-ok": "Serĉi",
