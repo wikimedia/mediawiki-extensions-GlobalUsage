@@ -16,7 +16,7 @@
 	"globalusage-ok": "Sök",
 	"globalusage-text": "Sök global filanvändning.",
 	"globalusage-no-results": "[[:$1]] används inte på andra wikier.",
-	"globalusage-on-wiki": "Användande av $2",
+	"globalusage-on-wiki": "Användande på $2",
 	"globalusage-of-file": "Följande andra wikier använder denna fil:",
 	"globalusage-more": "Visa [[{{#Special:GlobalUsage}}/$1|mer globalt användande]] av denna fil.",
 	"globalusage-filterlocal": "Visa inte lokalt användande",
