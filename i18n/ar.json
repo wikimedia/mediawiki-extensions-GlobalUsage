@@ -26,5 +26,6 @@
 	"apihelp-query+globalusage-description": "يعطي المعلومات عن استخدام صورة معينة في جميع الويكيات.",
 	"apihelp-query+globalusage-param-limit": "عدد الوصلات في النتيجة.",
 	"apihelp-query+globalusage-param-filterlocal": "ترشيح الاستخدام المحلي للملف.",
+	"apihelp-query+globalusage-example-1": "الحصول على استخدام [[:File:Example.jpg]]",
 	"globalusage-header": "هذه الصفحة تعرض أين الملف مستخدم في الويكيات الأخرى. يمكنك أيضا أن تجد هذه المعلومات أسفل صفحة وصف الملف."
 }
