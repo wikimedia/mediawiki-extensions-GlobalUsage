@@ -14,7 +14,7 @@ class GlobalUsageHooks {
 	 * @param $linksUpdater LinksUpdate
 	 * @return bool
 	 */
-	public static function onLinksUpdateComplete( $linksUpdater ) {
+	public static function onLinksUpdateComplete( LinksUpdate $linksUpdater ) {
 		$title = $linksUpdater->getTitle();
 
 		// Create a list of locally existing images (DB keys)
@@ -22,24 +22,11 @@ class GlobalUsageHooks {
 
 		$localFiles = array();
 		$repo = RepoGroup::singleton()->getLocalRepo();
-		if ( defined( 'FileRepo::NAME_AND_TIME_ONLY' ) ) { // MW 1.23
-			$imagesInfo = $repo->findFiles( $images, FileRepo::NAME_AND_TIME_ONLY );
-			foreach ( $imagesInfo as $dbKey => $info ) {
-				$localFiles[] = $dbKey;
-				if ( $dbKey !== $info['title'] ) { // redirect
-					$localFiles[] = $info['title'];
-				}
-			}
-		} else {
-			// Unrolling findFiles() here because pages with thousands of images trigger an OOM
-			foreach ( $images as $dbKey ) {
-				$file = $repo->findFile( $dbKey );
-				if ( $file ) {
-					$localFiles[] = $dbKey;
-					if ( $file->getTitle()->getDBkey() !== $dbKey ) { // redirect
-						$localFiles[] = $file->getTitle()->getDBkey();
-					}
-				}
+		$imagesInfo = $repo->findFiles( $images, FileRepo::NAME_AND_TIME_ONLY );
+		foreach ( $imagesInfo as $dbKey => $info ) {
+			$localFiles[] = $dbKey;
+			if ( $dbKey !== $info['title'] ) { // redirect
+				$localFiles[] = $info['title'];
 			}
 		}
 		$localFiles = array_values( array_unique( $localFiles ) );
@@ -106,6 +93,7 @@ class GlobalUsageHooks {
 	 */
 	public static function onArticleDeleteComplete( $article, $user, $reason, $id ) {
 		$gu = self::getGlobalUsage();
+		// @FIXME: avoid making DB replication lag
 		$gu->deleteLinksFromPage( $id );
 
 		return true;

@@ -1,6 +1,8 @@
 <?php
+use MediaWiki\MediaWikiServices;
 
 class GlobalUsage {
+	/** @var string */
 	private $interwiki;
 
 	/**
@@ -27,6 +29,8 @@ class GlobalUsage {
 	 * @param $pageIdFlags int
 	 */
 	public function insertLinks( $title, $images, $pageIdFlags = Title::GAID_FOR_UPDATE ) {
+		global $wgUpdateRowsPerQuery;
+
 		$insert = array();
 		foreach ( $images as $name ) {
 			$insert[] = array(
@@ -38,7 +42,13 @@ class GlobalUsage {
 				'gil_to' => $name
 			);
 		}
-		$this->db->insert( 'globalimagelinks', $insert, __METHOD__, array( 'IGNORE' ) );
+
+		$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
+		$ticket = $lbFactory->getEmptyTransactionTicket( __METHOD__ );
+		foreach ( array_chunk( $insert, $wgUpdateRowsPerQuery ) as $insertBatch ) {
+			$this->db->insert( 'globalimagelinks', $insertBatch, __METHOD__, array( 'IGNORE' ) );
+			$lbFactory->commitAndWaitForReplication( __METHOD__, $ticket );
+		}
 	}
 
 	/**
@@ -58,8 +68,10 @@ class GlobalUsage {
 		);
 
 		$images = array();
-		foreach ( $res as $row )
+		foreach ( $res as $row ) {
 			$images[] = $row->gil_to;
+		}
+
 		return $images;
 	}
 
@@ -69,15 +81,24 @@ class GlobalUsage {
 	 * @param $id int Page id of the page
 	 * @param $to mixed File name(s)
 	 */
-	public function deleteLinksFromPage( $id, $to = null ) {
+	public function deleteLinksFromPage( $id, array $to = null ) {
+		global $wgUpdateRowsPerQuery;
+
 		$where = array(
 			'gil_wiki' => $this->interwiki,
 			'gil_page' => $id
 		);
 		if ( $to ) {
-			$where['gil_to'] = $to;
+			$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
+			$ticket = $lbFactory->getEmptyTransactionTicket( __METHOD__ );
+			foreach ( array_chunk( $to, $wgUpdateRowsPerQuery ) as $toBatch ) {
+				$where['gil_to'] = $toBatch;
+				$this->db->delete( 'globalimagelinks', $where, __METHOD__ );
+				$lbFactory->commitAndWaitForReplication( __METHOD__, $ticket );
+			}
+		} else {
+			$this->db->delete( 'globalimagelinks', $where, __METHOD__ );
 		}
-		$this->db->delete( 'globalimagelinks', $where, __METHOD__ );
 	}
 
 	/**
