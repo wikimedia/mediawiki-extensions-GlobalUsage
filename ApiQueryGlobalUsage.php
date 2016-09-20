@@ -99,20 +99,11 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 	private function setIndexedTagName() {
 		$result = $this->getResult();
 		$pageIds = $this->getPageSet()->getAllTitlesByNamespace();
-		if ( defined( 'ApiResult::META_CONTENT' ) ) {
-			foreach ( $pageIds[NS_FILE] as $id ) {
-				$result->addIndexedTagName(
-					array( 'query', 'pages', $id, 'globalusage' ),
-					'gu'
-				);
-			}
-		} else {
-			foreach ( $pageIds[NS_FILE] as $id ) {
-				$result->setIndexedTagName_internal(
-					array( 'query', 'pages', $id, 'globalusage' ),
-					'gu'
-				);
-			}
+		foreach ( $pageIds[NS_FILE] as $id ) {
+			$result->addIndexedTagName(
+				array( 'query', 'pages', $id, 'globalusage' ),
+				'gu'
+			);
 		}
 	}
 
@@ -135,44 +126,9 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 				ApiBase :: PARAM_MAX2 => ApiBase :: LIMIT_BIG2
 			),
 			'continue' => array(
-				/** @todo Once support for MediaWiki < 1.25 is dropped, just use ApiBase::PARAM_HELP_MSG directly */
-				constant( 'ApiBase::PARAM_HELP_MSG' ) ?: '' => 'api-help-param-continue',
+				ApiBase::PARAM_HELP_MSG => 'api-help-param-continue',
 			),
 			'filterlocal' => false,
-		);
-	}
-
-	/**
-	 * @deprecated since MediaWiki core 1.25
-	 */
-	public function getParamDescription() {
-		return array(
-			'prop' => array(
-				'What properties to return',
-				' url        - Adds url ',
-				' pageid     - Adds page id',
-				' namespace  - Adds namespace id',
-			),
-			'limit' => 'How many links to return',
-			'continue' => 'When more results are available, use this to continue',
-			'filterlocal' => 'Filter local usage of the file',
-		);
-	}
-
-	/**
-	 * @deprecated since MediaWiki core 1.25
-	 */
-	public function getDescription() {
-		return 'Returns global image usage for a certain image';
-	}
-
-	/**
-	 * @deprecated since MediaWiki core 1.25
-	 */
-	public function getExamples() {
-		return array(
-			"Get usage of File:Example.jpg:",
-			"  api.php?action=query&prop=globalusage&titles=File:Example.jpg",
 		);
 	}
 
