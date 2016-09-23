@@ -27,8 +27,11 @@ class GlobalUsage {
 	 * @param $title Title Title of the page
 	 * @param $images array Array of db keys of images used
 	 * @param $pageIdFlags int
+	 * @param $ticket int|null
 	 */
-	public function insertLinks( $title, $images, $pageIdFlags = Title::GAID_FOR_UPDATE ) {
+	public function insertLinks(
+		Title $title, array $images, $pageIdFlags = Title::GAID_FOR_UPDATE, $ticket = null
+	) {
 		global $wgUpdateRowsPerQuery;
 
 		$insert = array();
@@ -44,7 +47,7 @@ class GlobalUsage {
 		}
 
 		$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
-		$ticket = $lbFactory->getEmptyTransactionTicket( __METHOD__ );
+		$ticket = $ticket ?: $lbFactory->getEmptyTransactionTicket( __METHOD__ );
 		foreach ( array_chunk( $insert, $wgUpdateRowsPerQuery ) as $insertBatch ) {
 			$this->db->insert( 'globalimagelinks', $insertBatch, __METHOD__, array( 'IGNORE' ) );
 			$lbFactory->commitAndWaitForReplication( __METHOD__, $ticket );
@@ -80,8 +83,9 @@ class GlobalUsage {
 	 *
 	 * @param $id int Page id of the page
 	 * @param $to mixed File name(s)
+	 * @param $ticket int|null
 	 */
-	public function deleteLinksFromPage( $id, array $to = null ) {
+	public function deleteLinksFromPage( $id, array $to = null, $ticket = null ) {
 		global $wgUpdateRowsPerQuery;
 
 		$where = array(
@@ -90,7 +94,7 @@ class GlobalUsage {
 		);
 		if ( $to ) {
 			$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
-			$ticket = $lbFactory->getEmptyTransactionTicket( __METHOD__ );
+			$ticket = $ticket ?: $lbFactory->getEmptyTransactionTicket( __METHOD__ );
 			foreach ( array_chunk( $to, $wgUpdateRowsPerQuery ) as $toBatch ) {
 				$where['gil_to'] = $toBatch;
 				$this->db->delete( 'globalimagelinks', $where, __METHOD__ );
