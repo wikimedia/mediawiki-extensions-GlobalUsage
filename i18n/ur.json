@@ -4,14 +4,15 @@
 			"පසිඳු කාවින්ද",
 			"عثمان خان شاہ",
 			"محمد افضل",
-			"Obaid Raza"
+			"Obaid Raza",
+			"Muhammad Shuaib"
 		]
 	},
-	"globalusage": "گلوبل فائل کا استعمال",
+	"globalusage": "فائل کا عالمی استعمال",
 	"globalusage-ok": "تلاش",
 	"globalusage-text": "گلوبل فائل استعمال کی تلاش",
 	"globalusage-on-wiki": "$2 پر استعمال",
-	"globalusage-of-file": "مندرجہ ذیل ویکی جات میں اس ملف کا استعمال ہوا ہے:",
+	"globalusage-of-file": "مندرجہ ذیل ویکیوں میں یہ فائل زیر استعمال ہے:",
 	"globalusage-more": "اس  ملف/فائل کا [[{{#Special:GlobalUsage}}/$1|مزید عالمی استعمال]] دیکھیے۔",
 	"globalusage-filterlocal": "مقامی استعمال کو دکھانے نہیں"
 }
