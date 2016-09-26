@@ -12,9 +12,10 @@ class GlobalUsageHooks {
 	 * Hook to LinksUpdateComplete
 	 * Deletes old links from usage table and insert new ones.
 	 * @param $linksUpdater LinksUpdate
+	 * @param int|null $ticket
 	 * @return bool
 	 */
-	public static function onLinksUpdateComplete( LinksUpdate $linksUpdater ) {
+	public static function onLinksUpdateComplete( LinksUpdate $linksUpdater, $ticket = null ) {
 		$title = $linksUpdater->getTitle();
 
 		// Create a list of locally existing images (DB keys)
@@ -42,9 +43,9 @@ class GlobalUsageHooks {
 		$removed = array_diff( $existing, $missingFiles );
 
 		// Add new usages and delete removed
-		$gu->insertLinks( $title, $added );
+		$gu->insertLinks( $title, $added, Title::GAID_FOR_UPDATE, $ticket );
 		if ( $removed ) {
-			$gu->deleteLinksFromPage( $articleId, $removed );
+			$gu->deleteLinksFromPage( $articleId, $removed, $ticket );
 		}
 
 		return true;
