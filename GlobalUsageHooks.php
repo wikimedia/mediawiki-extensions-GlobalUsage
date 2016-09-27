@@ -184,11 +184,8 @@ class GlobalUsageHooks {
 	 * @return GlobalUsage
 	 */
 	private static function getGlobalUsage() {
-		global $wgGlobalUsageDatabase;
 		if ( is_null( self::$gu ) ) {
-			self::$gu = new GlobalUsage( wfWikiId(),
-				wfGetDB( DB_MASTER, array(), $wgGlobalUsageDatabase )
-			);
+			self::$gu = new GlobalUsage( wfWikiID(), GlobalUsage::getGlobalDB( DB_MASTER ) );
 		}
 
 		return self::$gu;

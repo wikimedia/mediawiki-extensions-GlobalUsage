@@ -11,8 +11,6 @@ class GlobalUsageCachePurgeJob extends Job {
 	}
 
 	function run() {
-		global $wgGlobalUsageDatabase;
-
 		$title = $this->getTitle();
 		if ( !$title->inNamespace( NS_FILE ) ) {
 			return true; // umm, OK
@@ -33,11 +31,11 @@ class GlobalUsageCachePurgeJob extends Job {
 		$filesForPurge = array_values( array_unique( $filesForPurge ) );
 
 		// Find all wikis that use any of these files in any of their pages...
-		$dbr = wfGetDB( DB_SLAVE, array(), $wgGlobalUsageDatabase );
+		$dbr = GlobalUsage::getGlobalDB( DB_REPLICA );
 		$res = $dbr->select(
 			'globalimagelinks',
 			array( 'gil_wiki', 'gil_to' ),
-			array( 'gil_to' => $filesForPurge, 'gil_wiki != ' . $dbr->addQuotes( wfWikiId() ) ),
+			array( 'gil_to' => $filesForPurge, 'gil_wiki != ' . $dbr->addQuotes( wfWikiID() ) ),
 			__METHOD__,
 			array( 'DISTINCT' )
 		);

@@ -11,6 +11,8 @@ if ( getenv( 'MW_INSTALL_PATH' ) !== false ) {
 
 require_once( $path . '/maintenance/Maintenance.php' );
 
+use MediaWiki\MediaWikiServices;
+
 class RefreshGlobalImageLinks extends Maintenance {
 	public function __construct() {
 		parent::__construct();
@@ -21,13 +23,14 @@ class RefreshGlobalImageLinks extends Maintenance {
 	}
 
 	public function execute() {
-		global $wgGlobalUsageDatabase;
-
 		$pages = explode( ',', $this->getOption( 'pages' ) );
 
 		$dbr = wfGetDB( DB_SLAVE );
-		$gdbw = wfGetDB( DB_MASTER, array(), $wgGlobalUsageDatabase );
-		$gu = new GlobalUsage( wfWikiId(), $gdbw );
+		$gdbw = GlobalUsage::getGlobalDB( DB_MASTER );
+		$gu = new GlobalUsage( wfWikiID(), $gdbw );
+
+		$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
+		$ticket = $lbFactory->getEmptyTransactionTicket( __METHOD__ );
 
 		// Clean up links for existing pages...
 		if ( in_array( 'existing', $pages ) ) {
@@ -49,7 +52,7 @@ class RefreshGlobalImageLinks extends Maintenance {
 						" OR page_id > $lastPageId",
 					__METHOD__,
 					array(
-						'ORDER BY' => $dbr->implicitOrderBy() ? 'page_id' : 'page_id, il_to',
+						'ORDER BY' => $dbr->implicitOrderby() ? 'page_id' : 'page_id, il_to',
 						'LIMIT' => $this->mBatchSize,
 					),
 					array(
@@ -99,7 +102,7 @@ class RefreshGlobalImageLinks extends Maintenance {
 					$lastIlTo = $lastRow->il_to;
 
 					# Be nice to the database
-					wfWaitForSlaves( false, $wgGlobalUsageDatabase );
+					$lbFactory->commitAndWaitForReplication( __METHOD__, $ticket );
 				}
 			} while ( !is_null( $lastRow ) );
 		}
@@ -142,7 +145,7 @@ class RefreshGlobalImageLinks extends Maintenance {
 				}
 
 				if ( $deleted > 0 ) {
-					wfWaitForSlaves( false, $wgGlobalUsageDatabase );
+					$lbFactory->commitAndWaitForReplication( __METHOD__, $ticket );
 				}
 			};
 		}

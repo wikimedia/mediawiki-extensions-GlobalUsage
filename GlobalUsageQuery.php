@@ -23,8 +23,7 @@ class GlobalUsageQuery {
 	 * If a title, can be a category or a file
 	 */
 	public function __construct( $target ) {
-		global $wgGlobalUsageDatabase;
-		$this->db = wfGetDB( DB_SLAVE, array(), $wgGlobalUsageDatabase );
+		$this->db = GlobalUsage::getGlobalDB( DB_REPLICA );
 		if ( $target instanceof Title ) {
 			$this->target = $target;
 		} elseif ( is_array( $target ) ) {

@@ -6,7 +6,7 @@ class GlobalUsage {
 	private $interwiki;
 
 	/**
-	 * @var DatabaseBase
+	 * @var IDatabase
 	 */
 	private $db;
 
@@ -14,9 +14,9 @@ class GlobalUsage {
 	 * Construct a GlobalUsage instance for a certain wiki.
 	 *
 	 * @param $interwiki string Interwiki prefix of the wiki
-	 * @param $db mixed Database object
+	 * @param $db IDatabase Database object
 	 */
-	public function __construct( $interwiki, $db ) {
+	public function __construct( $interwiki, IDatabase $db ) {
 		$this->interwiki = $interwiki;
 		$this->db = $db;
 	}
@@ -237,7 +237,8 @@ class GlobalUsage {
 	 * Adding a utility method here, as this same query is used in
 	 * two different special page classes.
 	 *
-	 * @return Array Query info array, as a QueryPage would expect.
+	 * @param string|bool $wiki
+	 * @return array Query info array, as a QueryPage would expect.
 	 */
 	public static function getWantedFilesQueryInfo( $wiki = false ) {
 		$qi = array(
@@ -283,5 +284,19 @@ class GlobalUsage {
 		}
 
 		return $qi;
+	}
+
+	/**
+	 * @param integer $index DB_MASTER/DB_REPLICA
+	 * @param array $groups
+	 * @return IDatabase
+	 */
+	public static function getGlobalDB( $index, $groups = [] ) {
+		global $wgGlobalUsageDatabase;
+
+		$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
+		$lb = $lbFactory->getMainLB( $wgGlobalUsageDatabase );
+
+		return $lb->getConnectionRef( $index, [], $wgGlobalUsageDatabase );
 	}
 }

@@ -93,10 +93,9 @@ class MostGloballyLinkedFilesPage extends MostimagesPage {
 			return parent::getRecacheDB();
 		} else {
 			// The global usage db could be on a different db
-			return wfGetDB(
-				DB_SLAVE,
-				array( $this->getName(), 'QueryPage::recache', 'vslow' ),
-				$wgGlobalUsageDatabase
+			return GlobalUsage::getGlobalDB(
+				DB_REPLICA,
+				[ $this->getName(), 'QueryPage::recache', 'vslow' ]
 			);
 		}
 	}
