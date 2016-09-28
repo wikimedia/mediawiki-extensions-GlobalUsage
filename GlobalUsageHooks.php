@@ -6,8 +6,6 @@
  */
 
 class GlobalUsageHooks {
-	private static $gu = null;
-
 	/**
 	 * Hook to LinksUpdateComplete
 	 * Deletes old links from usage table and insert new ones.
@@ -184,11 +182,7 @@ class GlobalUsageHooks {
 	 * @return GlobalUsage
 	 */
 	private static function getGlobalUsage() {
-		if ( is_null( self::$gu ) ) {
-			self::$gu = new GlobalUsage( wfWikiID(), GlobalUsage::getGlobalDB( DB_MASTER ) );
-		}
-
-		return self::$gu;
+		return new GlobalUsage( wfWikiID(), GlobalUsage::getGlobalDB( DB_MASTER ) );
 	}
 
 	/**
