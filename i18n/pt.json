@@ -5,7 +5,8 @@
 			"Hamilton Abreu",
 			"Lijealso",
 			"Malafaya",
-			"Fúlvio"
+			"Fúlvio",
+			"Vitorvicentevalente"
 		]
 	},
 	"globalusage": "Utilização global do ficheiro",
@@ -25,7 +26,7 @@
 	"globallywantedfiles-foreign-repo": "<strong>Aviso:</strong> Esta wiki usa um repositório externo de ficheiros. Os ficheiros do repositório externo que sejam utilizados aparecem nesta lista como links azuis cruzados, apesar de existirem.",
 	"apihelp-query+globalusage-description": "Devolve a utilização global de uma certa imagem.",
 	"apihelp-query+globalusage-param-prop": "As propriedades a devolver:\n;url:Adiciona um URL.\n;pageid:Adiciona um identificador de página.\n;namespace:Adiciona um identificador de espaço nominal.",
-	"apihelp-query+globalusage-param-limit": "Quantos links devolver.",
+	"apihelp-query+globalusage-param-limit": "Quantas hiperligações devolver.",
 	"apihelp-query+globalusage-param-filterlocal": "Filtar a utilização local do ficheiro.",
 	"apihelp-query+globalusage-example-1": "Obter a utilização de [[:File:Example.jpg]]",
 	"globalusage-header": "Esta página mostra em que wikis é utilizado um ficheiro. Pode também encontrar essa informação na parte inferior da página de descrição."
