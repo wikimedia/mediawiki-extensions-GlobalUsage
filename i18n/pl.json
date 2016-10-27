@@ -20,5 +20,6 @@
 	"globalusage-filterlocal": "Nie pokazuj lokalnego wykorzystania",
 	"mostgloballylinkedfiles": "Najczęściej globalnie linkowane pliki",
 	"mostgloballylinkedfiles-summary": "Lista plików, które zostały wykorzystane największą liczbę razy we wszystkich wiki. Równoważna lista, które uwzględnia użycie plików tylko w projekcie {{SITENAME}}, znajduje się na stronie [[{{#special:MostLinkedFiles}}]].",
-	"globallywantedfiles": "Pliki potrzebne globalnie"
+	"globallywantedfiles": "Pliki potrzebne globalnie",
+	"apihelp-query+globalusage-param-limit": "Liczba linków do zwrócenia."
 }
