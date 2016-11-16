@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Sindhu",
-			"Aursani"
+			"Aursani",
+			"Mehtab ahmed"
 		]
 	},
 	"globalusage": "گلوبل فائيل جو استعمال",
 	"globalusage-on-wiki": "$2 تي استعمال",
-	"globalusage-of-file": "هيٺيون وڪيز بہ هيءُ فائيل استعمال ڪن ٿيون."
+	"globalusage-of-file": "هيٺيون وڪيز بہ هيءُ فائيل استعمال ڪن ٿيون:"
 }
