@@ -5,7 +5,10 @@
 		]
 	},
 	"globalusage": "Utilizzo globale do file",
+	"globalusage-text": "Mostra l'uso globale do file",
 	"globalusage-on-wiki": "Deuviou inte seguente paggine de $2:",
 	"globalusage-of-file": "Sto file chì o l'è deuviou da sti atri wiki ascì",
-	"globalusage-more": "Visualizza l'[[{{#Special:GlobalUsage}}/$1|utilizzo globale]] de questo file."
+	"globalusage-more": "Visualizza l'[[{{#Special:GlobalUsage}}/$1|utilizzo globale]] de questo file.",
+	"globalusage-filterlocal": "No mostrâ l'uso locale",
+	"globalusage-header": "Sta paggina chì a mostra onde l'è che 'n file o l'è doeuviou inti atre wiki. Ti poeu trovâ st'informaçion ascì in fondo a-a paggina de descriçion do file."
 }
