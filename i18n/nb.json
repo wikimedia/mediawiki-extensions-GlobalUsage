@@ -16,6 +16,7 @@
 	"globalusage-of-file": "Følgende andre wikier bruker denne filen:",
 	"globalusage-more": "Vis [[{{#Special:GlobalUsage}}/$1|mer global bruk]] av denne filen.",
 	"globalusage-filterlocal": "Ikke vis lokal bruk",
+	"mostgloballylinkedfiles": "Mest lenkede filer globkalt",
 	"mostgloballylinkedfiles-summary": "Liste over filer som har blitt brukt mest på alle wikier. For samme liste med kun bruk på {{SITENAME}}, se [[{{#special:MostLinkedFiles}}]].",
 	"globallywantedfiles": "Globalt ønskede filer",
 	"globallywantedfiles-summary": "Liste over filer som har blitt brukt mest på alle wikier til tross for at de ikke eksisterer. For en tilsvarende liste med bruk kun på {{SITENAME}}, se [[{{#special:WantedFiles}}]]. Filbruk fra wikier som tillater små bokstaver i starten av sidenavn blir muligens feilrapportert.",
