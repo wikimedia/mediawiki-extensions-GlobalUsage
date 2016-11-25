@@ -338,7 +338,7 @@ $specialPageAliases['tr'] = array(
 
 /** Ukrainian (українська) */
 $specialPageAliases['uk'] = array(
-	'GlobalUsage' => array( 'Глобальне_використання' ),
+	'GlobalUsage' => array( 'Глобальне_використання', 'Глобальное_использование' ),
 );
 
 /** Venetian (vèneto) */
