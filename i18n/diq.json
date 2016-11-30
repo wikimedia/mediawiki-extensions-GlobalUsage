@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Erdemaslancan",
-			"Xoser"
+			"Xoser",
+			"Gırd"
 		]
 	},
 	"globalusage": "Karo dosyayê globali",
@@ -12,7 +13,7 @@
 	"globalusage-text": "Karo dosyayê globali bigêre",
 	"globalusage-no-results": "[[:$1]] wikiyanê binan de çini yo.",
 	"globalusage-on-wiki": "Kar ser $2i de",
-	"globalusage-of-file": "Wikiyanê ke ena dosya est o:",
+	"globalusage-of-file": "Wikiyê binê ke ena dosta inan de esta.",
 	"globalusage-more": "[[{{#Special:GlobalUsage}}/$1|hesabê globalê]] ena dosya bıvinên",
 	"globalusage-filterlocal": "Karo local nimocne"
 }

@@ -6,5 +6,6 @@
 	},
 	"globalusage": "Мукет проектъёсын файл уже кутон",
 	"globalusage-on-wiki": "Уже кутон $2 пушкын",
-	"globalusage-of-file": "Та викиос файлэз уже куто:"
+	"globalusage-of-file": "Та викиос файлэз уже куто:",
+	"globalusage-more": "Та файлэз [[{{#Special:GlobalUsage}}/$1|глобальной уже кутонэз]] учкыны."
 }
