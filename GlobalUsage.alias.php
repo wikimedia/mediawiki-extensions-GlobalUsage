@@ -60,6 +60,13 @@ $specialPageAliases['bjn'] = array(
 	'GlobalUsage' => array( 'Pamakaian_global' ),
 );
 
+/** Bengali (বাংলা) */
+$specialPageAliases['bn'] = array(
+	'GlobalUsage' => array( 'বৈশ্বিক_ব্যবহার' ),
+	'MostGloballyLinkedFiles' => array( 'বৈশ্বিকভাবে_সর্বাধিক_সংযুক্ত_ফাইল' ),
+	'GloballyWantedFiles' => array( 'বৈশ্বিকভাবে_আবশ্যিক_ফাইল' ),
+);
+
 /** Breton (brezhoneg) */
 $specialPageAliases['br'] = array(
 	'GlobalUsage' => array( 'ImplijHollek' ),
