@@ -8,5 +8,6 @@
 	},
 	"globalusage": "گلوبل فائيل جو استعمال",
 	"globalusage-on-wiki": "$2 تي استعمال",
-	"globalusage-of-file": "هيٺيون وڪيز بہ هيءُ فائيل استعمال ڪن ٿيون:"
+	"globalusage-of-file": "ھيٺيون وڪيز بہ ھيءُ فائيل استعمال ڪن ٿيون:",
+	"globalusage-more": "ھن فائيل جو [[{{#Special:GlobalUsage}}/$1|وڌيڪ گلوبل استعمال]] ڏسو."
 }
