@@ -79,14 +79,14 @@
 		]
 	},
 	"config": {
-		"@doc": [
+		"@docGlobalUsageDatabase": [
 			"If set to false, the local database contains the globalimagelinks table",
 			"Else set to something understandable to LBFactory"
 		],
 		"GlobalUsageDatabase": false,
-		"@doc": "Name of the shared repo that backlinks are shared for",
+		"@docGlobalUsageSharedRepoWiki": "Name of the shared repo that backlinks are shared for",
 		"GlobalUsageSharedRepoWiki": false,
-		"@doc": [
+		"@docGlobalUsagePurgeBacklinks": [
 			"If set to true, this will purge pages on the wikis that use a file when it changes.",
 			"This works by directly inserting HTMLCacheUpdate jobs into the local wikis.",
 			"@see $wgGlobalUsagePurgeBacklinks"
