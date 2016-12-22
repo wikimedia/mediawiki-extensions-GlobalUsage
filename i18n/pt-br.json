@@ -4,10 +4,11 @@
 			"Eduardo.mps",
 			"Giro720",
 			"Hamilton Abreu",
-			"555"
+			"555",
+			"Opraco"
 		]
 	},
-	"globalusage": "Utilização global do arquivo",
+	"globalusage": "Uso global do arquivo",
 	"globalusage-for": "Uso global de \"$1\"",
 	"globalusage-desc": "[[Special:GlobalUsage|Página especial]] para consultar a utilização global de arquivos",
 	"globalusage-ok": "Busca",
@@ -16,5 +17,6 @@
 	"globalusage-on-wiki": "Uso na $2",
 	"globalusage-of-file": "As outras wikis a seguir usam este arquivo:",
 	"globalusage-more": "Ver [[{{#Special:GlobalUsage}}/$1|a utilização global]] deste arquivo.",
-	"globalusage-filterlocal": "Ocultar usos locais"
+	"globalusage-filterlocal": "Ocultar usos locais",
+	"globalusage-header": "Esta página mostra em quais páginas de outras wikis um arquivo é usado. Essa informação também pode ser encontrada na parte inferior da página de descrição de um arquivo."
 }
