@@ -1,8 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Karthi.dr"
+			"Karthi.dr",
+			"Girmitya",
+			"Thakurji"
 		]
 	},
-	"globalusage-ok": "Khojo"
+	"globalusage": "Global file usage",
+	"globalusage-ok": "Khojo",
+	"globalusage-on-wiki": "$2 pe upyog"
 }
