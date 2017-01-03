@@ -52,40 +52,90 @@ class SpecialGlobalUsage extends SpecialPage {
 	private function showForm() {
 		global $wgScript;
 
+		$this->getOutput()->enableOOUI();
 		/* Build form */
-		$html = Xml::openElement( 'form', array( 'action' => $wgScript ) ) . "\n";
-		// Name of SpecialPage
-		$html .= Html::hidden( 'title', $this->getPageTitle()->getPrefixedText() ) . "\n";
-		// Limit
-		$html .= Html::hidden( 'limit', $this->getRequest()->getInt( 'limit', 50 ) );
-		// Input box with target prefilled if available
-		$formContent = "\t" . Xml::input( 'target', 40, is_null( $this->target ) ? ''
-			: $this->target->getText() )
-			// Submit button
-			. "\n\t" . Xml::element( 'input', array(
-			'type' => 'submit',
-			'value' => $this->msg( 'globalusage-ok' )->text()
-		) )
-			// Filter local checkbox
-			. "\n\t<p>" . Xml::checkLabel( $this->msg( 'globalusage-filterlocal' )->text(),
-			'filterlocal', 'mw-filterlocal', $this->filterLocal ) . '</p>';
+		$form = new OOUI\FormLayout( [
+			'method' => 'get',
+			'action' => $wgScript,
+		] );
+
+		$fields = [];
+		$fields[] = new OOUI\FieldLayout(
+			new OOUI\TextInputWidget( [
+				'name' => 'target',
+				'id' => 'target',
+				'maxLength' => 40,
+				'infusable' => true,
+				'value' => is_null( $this->target ) ? '' : $this->target->getText(),
+			] ),
+			[
+				'label' => $this->msg( 'globalusage-filename' )->text(),
+				'align' => 'top',
+			]
+		);
+
+		// Filter local checkbox
+		$fields[] = new OOUI\FieldLayout(
+			new OOUI\CheckboxInputWidget( [
+				'name' => 'filterlocal',
+				'id' => 'mw-filterlocal',
+				'value' => '1',
+				'selected' => $this->filterLocal,
+			] ),
+			[
+				'align' => 'inline',
+				'label' => $this->msg( 'globalusage-filterlocal' )->text(),
+			]
+		);
+
+		// Submit button
+		$fields[] = new OOUI\FieldLayout(
+			new OOUI\ButtonInputWidget( [
+				'value' => $this->msg( 'globalusage-ok' )->text(),
+				'label' => $this->msg( 'globalusage-ok' )->text(),
+				'flags' => [ 'primary', 'progressive' ],
+				'type' => 'submit',
+			] ),
+			[
+				'align' => 'top',
+			]
+		);
+
+		$fieldset = new OOUI\FieldsetLayout( [
+			'label' => $this->msg( 'globalusage-text' )->text(),
+			'id' => 'globalusage-text',
+			'items' => $fields,
+		] );
+
+		$form->appendContent(
+			$fieldset,
+			new OOUI\HtmlSnippet(
+				Html::hidden( 'title', $this->getPageTitle()->getPrefixedText() )  .
+				Html::hidden( 'limit', $this->getRequest()->getInt( 'limit', 50 ) )
+			)
+		);
+
+		$this->getOutput()->addHTML(
+			new OOUI\PanelLayout( [
+				'expanded' => false,
+				'padded' => true,
+				'framed' => true,
+				'content' => $form,
+			] )
+		);
 
 		if ( !is_null( $this->target ) && wfFindFile( $this->target ) ) {
 			// Show the image if it exists
-			$html .= Linker::makeThumbLinkObj(
+			$html = Linker::makeThumbLinkObj(
 				$this->target,
 				wfFindFile( $this->target ),
 				/* $label */ $this->target->getPrefixedText(),
 				/* $alt */ '', /* $align */ $this->getLanguage()->alignEnd(),
-				/* $handlerParams */ array(), /* $framed */ false,
+				/* $handlerParams */ [], /* $framed */ false,
 				/* $manualThumb */ false
 			);
+			$this->getOutput()->addHtml( $html );
 		}
-
-		// Wrap the entire form in a nice fieldset
-		$html .= Xml::fieldSet( $this->msg( 'globalusage-text' )->text(), $formContent ) . "\n</form>";
-
-		$this->getOutput()->addHtml( $html );
 	}
 
 	/**
