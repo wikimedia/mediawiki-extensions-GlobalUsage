@@ -3,11 +3,13 @@
 		"authors": [
 			"Ex13",
 			"SpeedyGonsales",
-			"MaGa"
+			"MaGa",
+			"Ivi104"
 		]
 	},
 	"globalusage": "Globalna uporaba datoteke",
 	"globalusage-for": "Globalna uporaba za \"$1\"",
+	"globalusage-filename": "Ime datoteke:",
 	"globalusage-desc": "[[Special:GlobalUsage|Posebna stranica]] za pregled globalne uporabe datoteke",
 	"globalusage-ok": "Traži",
 	"globalusage-text": "Pretraga globalne uporabe datoteke",

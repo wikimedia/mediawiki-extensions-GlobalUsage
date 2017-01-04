@@ -10,6 +10,7 @@
 	},
 	"globalusage": "Globalne wykorzystanie pliku",
 	"globalusage-for": "Globalne wykorzystanie „$1”",
+	"globalusage-filename": "Nazwa pliku:",
 	"globalusage-desc": "[[Special:GlobalUsage|Strona specjalna]] pokazująca globalne wykorzystanie pliku",
 	"globalusage-ok": "Szukaj",
 	"globalusage-text": "Globalne wyszukiwanie wykorzystania pliku",

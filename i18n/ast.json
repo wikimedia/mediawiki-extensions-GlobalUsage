@@ -6,6 +6,7 @@
 	},
 	"globalusage": "Usu global del ficheru",
 	"globalusage-for": "Usu global de «$1»",
+	"globalusage-filename": "Nome del ficheru:",
 	"globalusage-desc": "[[Special:GlobalUsage|Páxina especial]] pa ver l'usu global del ficheru",
 	"globalusage-ok": "Guetar",
 	"globalusage-text": "Guetar l'usu global del ficheru",

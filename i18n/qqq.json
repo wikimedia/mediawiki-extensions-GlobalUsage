@@ -12,12 +12,13 @@
 			"Vriullop",
 			"Yekrats",
 			"Krinkle",
-			"Amire80"
+			"Amire80",
+			"Robby"
 		]
 	},
 	"globalusage": "{{doc-special|GlobalUsage}}\nHeader of a section that lists all the places where one shared file has been used. \"Global\" refers to the usage, not to the file. \"File\" is singular. Used while viewing the file description page ([[commons:File:Triangle.Right.ly.png|example at Commons]]). Appears at the top of the page as a link to a section anchor, and at the bottom as the section header.\n\n{{Identical|File usage}}",
-	"globalusage-filename": "File name to set in special page",
 	"globalusage-for": "Title of [[Special:GlobalUsage]]\n* $1 - name of the searched file, with namespace",
+	"globalusage-filename": "File name to set in special page\n{{Identical|Filename}}",
 	"globalusage-desc": "{{desc|name=Global Usage|url=https://www.mediawiki.org/wiki/Extension:GlobalUsage}}",
 	"globalusage-ok": "Button on Special:GlobalUsage.\n{{Identical|Search}}",
 	"globalusage-text": "Label on [[Special:GlobalUsage]]",

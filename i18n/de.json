@@ -9,6 +9,7 @@
 	},
 	"globalusage": "Globale Dateiverwendung",
 	"globalusage-for": "Globale Dateiverwendung für „$1“",
+	"globalusage-filename": "Dateiname:",
 	"globalusage-desc": "Ergänzt eine [[Special:GlobalUsage|Spezialseite]] mit der angezeigt werden kann, in welchen Projekten eine Datei aus dem gemeinsam genutzten Repositoriums verwendet wird",
 	"globalusage-ok": "Suchen",
 	"globalusage-text": "Globale Suche nach der Dateiverwendung",
