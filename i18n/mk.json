@@ -6,6 +6,7 @@
 	},
 	"globalusage": "Глобална употреба на податотеката",
 	"globalusage-for": "Глобална употреба на „$1“",
+	"globalusage-filename": "Име на податотеката:",
 	"globalusage-desc": "[[Special:GlobalUsage|Службена страница]] за преглед на глобалната употреба податотеки",
 	"globalusage-ok": "Пребарај",
 	"globalusage-text": "Пребарување на глобалната употреба на податотека",

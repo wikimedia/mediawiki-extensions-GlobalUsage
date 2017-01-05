@@ -2,11 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Kwj2772",
-			"아라"
+			"아라",
+			"Ykhwong"
 		]
 	},
 	"globalusage": "이 파일을 사용하고 있는 모든 위키의 문서 목록",
 	"globalusage-for": "\"$1\" 파일을 사용하고 있는 모든 위키의 문서 목록",
+	"globalusage-filename": "파일 이름:",
 	"globalusage-desc": "파일을 사용하고 있는 모든 위키의 문서의 목록을 보여주는 [[Special:GlobalUsage|특수 문서]]",
 	"globalusage-ok": "검색",
 	"globalusage-text": "파일이 사용되고 있는 모든 위키의 문서 검색",

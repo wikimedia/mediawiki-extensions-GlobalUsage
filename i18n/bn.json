@@ -10,6 +10,7 @@
 	},
 	"globalusage": "ফাইলের বৈশ্বিক ব্যবহার",
 	"globalusage-for": "\"$1\"-এর বৈশ্বিক ব্যবহার",
+	"globalusage-filename": "ফাইলের নাম:",
 	"globalusage-desc": "বৈশ্বিক ফাইল ব্যবহার দেখার [[Special:GlobalUsage|বিশেষ পাতা]]",
 	"globalusage-ok": "অনুসন্ধান",
 	"globalusage-text": "ফাইলের বৈশ্বিক ব্যবহার অনুসন্ধান করুন",

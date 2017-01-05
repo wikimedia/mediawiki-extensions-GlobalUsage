@@ -11,6 +11,7 @@
 	},
 	"globalusage": "全域文件用途",
 	"globalusage-for": "“$1”的全域用途",
+	"globalusage-filename": "文件名：",
 	"globalusage-desc": "查看全域文件用途的[[Special:GlobalUsage|特殊页面]]",
 	"globalusage-ok": "搜索",
 	"globalusage-text": "搜索全域文件用途",

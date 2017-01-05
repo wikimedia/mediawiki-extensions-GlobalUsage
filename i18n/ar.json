@@ -10,6 +10,7 @@
 	},
 	"globalusage": "الاستخدام العام للملف",
 	"globalusage-for": "استخدام \"$1\" العام",
+	"globalusage-filename": "اسم الملف:",
 	"globalusage-desc": "[[Special:GlobalUsage|صفحة خاصة]] لرؤية الاستخدام العام للملف",
 	"globalusage-ok": "بحث",
 	"globalusage-text": "ابحث في الاستخدام العام لملف",
