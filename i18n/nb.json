@@ -8,6 +8,7 @@
 	},
 	"globalusage": "Global filbruk",
 	"globalusage-for": "Global bruk av \"$1\"",
+	"globalusage-filename": "Filnavn:",
 	"globalusage-desc": "[[Special:GlobalUsage|Spesialside]] for å vise bruken av en fil globalt",
 	"globalusage-ok": "Søk",
 	"globalusage-text": "Søk global filbruk.",

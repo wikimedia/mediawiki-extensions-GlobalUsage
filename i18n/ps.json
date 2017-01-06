@@ -6,6 +6,7 @@
 	},
 	"globalusage": "د نړېوالې دوتنې کارېدنه",
 	"globalusage-for": "د \"$1\" لپاره نړېوالې کارېدنې",
+	"globalusage-filename": "د دوتنې نوم:",
 	"globalusage-desc": "د نړېوالې دوتنې د کارېدنگ د مخليدنې لپاره [[Special:GlobalUsage|ځانگړی مخ]]",
 	"globalusage-ok": "پلټل",
 	"globalusage-text": "د نړېوالې دوتنې کارېدنې پلټل",
