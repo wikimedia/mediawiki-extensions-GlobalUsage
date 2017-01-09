@@ -11,6 +11,7 @@
 	},
 	"globalusage": "Utilizzo globale del file",
 	"globalusage-for": "Uso globale di \"$1\"",
+	"globalusage-filename": "Nome file:",
 	"globalusage-desc": "[[Special:GlobalUsage|Pagina speciale]] per vedere l'utilizzo globale dei file",
 	"globalusage-ok": "Ricerca",
 	"globalusage-text": "Mostra l'uso globale del file",
