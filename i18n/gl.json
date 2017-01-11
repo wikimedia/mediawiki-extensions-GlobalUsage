@@ -9,6 +9,7 @@
 	},
 	"globalusage": "Uso global do ficheiro",
 	"globalusage-for": "Uso global de \"$1\"",
+	"globalusage-filename": "Nome de ficheiro:",
 	"globalusage-desc": "[[Special:GlobalUsage|Páxina especial]] para ver o uso global dun ficheiro",
 	"globalusage-ok": "Procurar",
 	"globalusage-text": "Procurar o uso global do ficheiro",

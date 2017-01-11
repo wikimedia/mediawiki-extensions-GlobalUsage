@@ -10,6 +10,7 @@
 	},
 	"globalusage": "Глобална употреба датотеке",
 	"globalusage-for": "Глобална употреба датотеке „$1“",
+	"globalusage-filename": "Назив датотеке:",
 	"globalusage-desc": "[[Special:GlobalUsage|Посебна страница]] за преглед глобалне употребе датотека",
 	"globalusage-ok": "Претрага",
 	"globalusage-text": "Претрага глобалне употребе датотеке",
