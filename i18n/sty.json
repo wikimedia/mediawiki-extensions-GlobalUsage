@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Khanmarat"
+			"Khanmarat",
+			"Sorbat"
 		]
 	},
 	"globalusage": "Файлның глобаль төсәтелеүе",
+	"globalusage-filename": "Файл исем:",
 	"globalusage-on-wiki": "$2 проектынта ҡулланыу",
 	"globalusage-of-file": "Пы файл түмәнтәге википроектларта ҡулланылаты:"
 }
