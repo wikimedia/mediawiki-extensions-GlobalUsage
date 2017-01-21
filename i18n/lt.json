@@ -5,11 +5,13 @@
 			"Homo",
 			"Tomasdd",
 			"Hugo.arg",
-			"Albertas"
+			"Albertas",
+			"Eitvys200"
 		]
 	},
 	"globalusage": "Visuotinis rinkmenos naudojimas",
 	"globalusage-for": "Globalus \"$1\" naudojimas",
+	"globalusage-filename": "Failo pavadinimas:",
 	"globalusage-desc": "[[Special:GlobalUsage|Specialus puslapis]] pamatyti globaliam failo naudojimui",
 	"globalusage-ok": "Ieškoti",
 	"globalusage-text": "Ieškoti globalaus failo naudojimo",
