@@ -1,8 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Malafaya"
+			"Malafaya",
+			"Cgboeree"
 		]
 	},
-	"globalusage-ok": "Xerca"
+	"globalusage": "Usa de fix global",
+	"globalusage-ok": "Xerca",
+	"globalusage-on-wiki": "Usa a $2",
+	"globalusage-of-file": "Esta otra wikis seguente usa esta fix:",
+	"globalusage-more": "Vide [[{{#Special:GlobalUsage}}/$1|plu usa global]] de esta fix."
 }
