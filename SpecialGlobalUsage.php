@@ -64,7 +64,7 @@ class SpecialGlobalUsage extends SpecialPage {
 			new OOUI\TextInputWidget( [
 				'name' => 'target',
 				'id' => 'target',
-				'maxLength' => 40,
+				'autosize' => true,
 				'infusable' => true,
 				'value' => is_null( $this->target ) ? '' : $this->target->getText(),
 			] ),
