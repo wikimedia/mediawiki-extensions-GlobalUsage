@@ -8,5 +8,6 @@
 	"globalusage": "Файлның глобаль ҡулланыуы",
 	"globalusage-filename": "Файл исем:",
 	"globalusage-on-wiki": "$2 проектынта ҡулланыу",
-	"globalusage-of-file": "Пы файл түмәнтәге википроектларта ҡулланылаты:"
+	"globalusage-of-file": "Пы файл түмәнтәге википроектларта ҡулланылаты:",
+	"globalusage-more": "Пы файлның [[{{#Special:GlobalUsage}}/$1|глобаль ҡулланышын]] ҡарағалы."
 }
