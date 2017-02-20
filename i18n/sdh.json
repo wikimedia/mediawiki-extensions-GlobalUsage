@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kurdbuddha"
+			"Kurdbuddha",
+			"Paraw2"
 		]
 	},
-	"globalusage-ok": "جوورین"
+	"globalusage": "ئەوکاربردن سەراێسەری پەڕگە",
+	"globalusage-ok": "جوورین",
+	"globalusage-on-wiki": "ئەوکاربردن لە $2"
 }
