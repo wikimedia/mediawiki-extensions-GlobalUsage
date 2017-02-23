@@ -202,18 +202,18 @@ class GlobalUsageHooks {
 	 * @return bool
 	 */
 	public static function onLoadExtensionSchemaUpdates( $updater = null ) {
-		$dir = dirname( __FILE__ );
+		$dir = dirname( __DIR__ ) . '/patches';
 
 		if ( $updater->getDB()->getType() == 'mysql' || $updater->getDB()->getType() == 'sqlite' ) {
 			$updater->addExtensionUpdate( array( 'addTable', 'globalimagelinks',
 				"$dir/GlobalUsage.sql", true ) );
 			$updater->addExtensionUpdate( array( 'addIndex', 'globalimagelinks',
-				'globalimagelinks_wiki_nsid_title', "$dir/patches/patch-globalimagelinks_wiki_nsid_title.sql", true ) );
+				'globalimagelinks_wiki_nsid_title', "$dir/patch-globalimagelinks_wiki_nsid_title.sql", true ) );
 		} elseif ( $updater->getDB()->getType() == 'postgresql' ) {
 			$updater->addExtensionUpdate( array( 'addTable', 'globalimagelinks',
 				"$dir/GlobalUsage.pg.sql", true ) );
 			$updater->addExtensionUpdate( array( 'addIndex', 'globalimagelinks',
-				'globalimagelinks_wiki_nsid_title', "$dir/patches/patch-globalimagelinks_wiki_nsid_title.pg.sql", true ) );
+				'globalimagelinks_wiki_nsid_title', "$dir/patch-globalimagelinks_wiki_nsid_title.pg.sql", true ) );
 		}
 		return true;
 	}
