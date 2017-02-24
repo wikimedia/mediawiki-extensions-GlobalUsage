@@ -94,7 +94,7 @@ class SpecialGloballyWantedFiles extends WantedFilesPage {
 				// The wfFindFile() call should already be cached from LinkRenderer::makeLink call
 				// so it shouldn't be too expensive. However a future @todo would be
 				// to do preload existence checks for files all at once via RepoGroup::findFiles.
-				$pageLink = Html::rawElement( 'del', array(), $pageLink );
+				$pageLink = Html::rawElement( 'del', [], $pageLink );
 			}
 
 			$gu = SpecialPage::getTitleFor( 'GlobalUsage', $title->getDBKey() );

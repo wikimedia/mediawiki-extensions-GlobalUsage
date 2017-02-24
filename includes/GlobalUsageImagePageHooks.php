@@ -1,7 +1,7 @@
 <?php
 
 class GlobalUsageImagePageHooks {
-	private static $queryCache = array();
+	private static $queryCache = [];
 
 	/**
 	 * Get an executed query for use on image pages

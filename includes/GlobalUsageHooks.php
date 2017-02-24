@@ -19,7 +19,7 @@ class GlobalUsageHooks {
 		// Create a list of locally existing images (DB keys)
 		$images = array_keys( $linksUpdater->getImages() );
 
-		$localFiles = array();
+		$localFiles = [];
 		$repo = RepoGroup::singleton()->getLocalRepo();
 		$imagesInfo = $repo->findFiles( $images, FileRepo::NAME_AND_TIME_ONLY );
 		foreach ( $imagesInfo as $dbKey => $info ) {
@@ -65,12 +65,12 @@ class GlobalUsageHooks {
 		$gu->moveTo( $pageid, $nt );
 
 		if ( self::fileUpdatesCreatePurgeJobs() ) {
-			$jobs = array();
+			$jobs = [];
 			if ( $ot->inNamespace( NS_FILE ) ) {
-				$jobs[] = new GlobalUsageCachePurgeJob( $ot, array() );
+				$jobs[] = new GlobalUsageCachePurgeJob( $ot, [] );
 			}
 			if ( $nt->inNamespace( NS_FILE ) ) {
-				$jobs[] = new GlobalUsageCachePurgeJob( $nt, array() );
+				$jobs[] = new GlobalUsageCachePurgeJob( $nt, [] );
 			}
 			// Push the jobs after DB commit but cancel on rollback
 			wfGetDB( DB_MASTER )->onTransactionIdle( function() use ( $jobs ) {
@@ -115,7 +115,7 @@ class GlobalUsageHooks {
 			$gu->copyLocalImagelinks( $file->getTitle() );
 
 			if ( self::fileUpdatesCreatePurgeJobs() ) {
-				$job = new GlobalUsageCachePurgeJob( $file->getTitle(), array() );
+				$job = new GlobalUsageCachePurgeJob( $file->getTitle(), [] );
 				JobQueueGroup::singleton()->push( $job );
 			}
 		}
@@ -138,7 +138,7 @@ class GlobalUsageHooks {
 		$gu->deleteLinksToFile( $title );
 
 		if ( self::fileUpdatesCreatePurgeJobs() ) {
-			$job = new GlobalUsageCachePurgeJob( $title, array() );
+			$job = new GlobalUsageCachePurgeJob( $title, [] );
 			JobQueueGroup::singleton()->push( $job );
 		}
 
@@ -157,7 +157,7 @@ class GlobalUsageHooks {
 		$gu->deleteLinksToFile( $upload->getTitle() );
 
 		if ( self::fileUpdatesCreatePurgeJobs() ) {
-			$job = new GlobalUsageCachePurgeJob( $upload->getTitle(), array() );
+			$job = new GlobalUsageCachePurgeJob( $upload->getTitle(), [] );
 			JobQueueGroup::singleton()->push( $job );
 		}
 
@@ -205,22 +205,22 @@ class GlobalUsageHooks {
 		$dir = dirname( __DIR__ ) . '/patches';
 
 		if ( $updater->getDB()->getType() == 'mysql' || $updater->getDB()->getType() == 'sqlite' ) {
-			$updater->addExtensionUpdate( array( 'addTable', 'globalimagelinks',
-				"$dir/GlobalUsage.sql", true ) );
-			$updater->addExtensionUpdate( array( 'addIndex', 'globalimagelinks',
-				'globalimagelinks_wiki_nsid_title', "$dir/patch-globalimagelinks_wiki_nsid_title.sql", true ) );
+			$updater->addExtensionUpdate( [ 'addTable', 'globalimagelinks',
+				"$dir/GlobalUsage.sql", true ] );
+			$updater->addExtensionUpdate( [ 'addIndex', 'globalimagelinks',
+				'globalimagelinks_wiki_nsid_title', "$dir/patch-globalimagelinks_wiki_nsid_title.sql", true ] );
 		} elseif ( $updater->getDB()->getType() == 'postgresql' ) {
-			$updater->addExtensionUpdate( array( 'addTable', 'globalimagelinks',
-				"$dir/GlobalUsage.pg.sql", true ) );
-			$updater->addExtensionUpdate( array( 'addIndex', 'globalimagelinks',
-				'globalimagelinks_wiki_nsid_title', "$dir/patch-globalimagelinks_wiki_nsid_title.pg.sql", true ) );
+			$updater->addExtensionUpdate( [ 'addTable', 'globalimagelinks',
+				"$dir/GlobalUsage.pg.sql", true ] );
+			$updater->addExtensionUpdate( [ 'addIndex', 'globalimagelinks',
+				'globalimagelinks_wiki_nsid_title', "$dir/patch-globalimagelinks_wiki_nsid_title.pg.sql", true ] );
 		}
 		return true;
 	}
 
 	public static function onwgQueryPages( &$queryPages ) {
-		$queryPages[] = array( 'MostGloballyLinkedFilesPage', 'MostGloballyLinkedFiles' );
-		$queryPages[] = array( 'SpecialGloballyWantedFiles', 'GloballyWantedFiles' );
+		$queryPages[] = [ 'GlobalUsage\MostGloballyLinkedFilesPage', 'MostGloballyLinkedFiles' ];
+		$queryPages[] = [ 'GlobalUsage\SpecialGloballyWantedFiles', 'GloballyWantedFiles' ];
 		return true;
 	}
 }

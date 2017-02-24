@@ -240,8 +240,8 @@ class SpecialGlobalUsage extends SpecialPage {
 
 		# Make 'previous' link
 		if ( $to ) {
-			$attr = array( 'title' => $pTitle, 'class' => 'mw-prevlink' );
-			$q = array( 'limit' => $limit, 'to' => $to, 'target' => $target );
+			$attr = [ 'title' => $pTitle, 'class' => 'mw-prevlink' ];
+			$q = [ 'limit' => $limit, 'to' => $to, 'target' => $target ];
 			if ( $this->filterLocal ) {
 				$q['filterlocal'] = '1';
 			}
@@ -252,8 +252,8 @@ class SpecialGlobalUsage extends SpecialPage {
 
 		# Make 'next' link
 		if ( $from ) {
-			$attr = array( 'title' => $nTitle, 'class' => 'mw-nextlink' );
-			$q = array( 'limit' => $limit, 'from' => $from, 'target' => $target );
+			$attr = [ 'title' => $nTitle, 'class' => 'mw-nextlink' ];
+			$q = [ 'limit' => $limit, 'from' => $from, 'target' => $target ];
 			if ( $this->filterLocal ) {
 				$q['filterlocal'] = '1';
 			}
@@ -263,17 +263,17 @@ class SpecialGlobalUsage extends SpecialPage {
 		}
 
 		# Make links to set number of items per page
-		$numLinks = array();
+		$numLinks = [];
 		$lang = $this->getLanguage();
-		foreach ( array( 20, 50, 100, 250, 500 ) as $num ) {
+		foreach ( [ 20, 50, 100, 250, 500 ] as $num ) {
 			$fmtLimit = $lang->formatNum( $num );
 
-			$q = array( 'offset' => $offset, 'limit' => $num, 'target' => $target );
+			$q = [ 'offset' => $offset, 'limit' => $num, 'target' => $target ];
 			if ( $this->filterLocal ) {
 				$q['filterlocal'] = '1';
 			}
 			$lTitle = $this->msg( 'shown-title' )->numParams( $num )->escaped();
-			$attr = array( 'title' => $lTitle, 'class' => 'mw-numlink' );
+			$attr = [ 'title' => $lTitle, 'class' => 'mw-numlink' ];
 
 			$numLinks[] = $linkRenderer->makeLink( $title, $fmtLimit, $attr, $q );
 		}

@@ -40,18 +40,18 @@ class MostGloballyLinkedFilesPage extends MostimagesPage {
 	 */
 	function getQueryInfo() {
 		$this->assertOnSharedRepo();
-		return array(
-			'tables' => array( 'globalimagelinks' ),
-			'fields' => array(
+		return [
+			'tables' => [ 'globalimagelinks' ],
+			'fields' => [
 				'namespace' => NS_FILE,
 				'title' => 'gil_to',
 				'value' => 'COUNT(*)'
-			),
-			'options' => array(
+			],
+			'options' => [
 				'GROUP BY' => 'gil_to',
 				'HAVING' => 'COUNT(*) > 1'
-			)
-		);
+			]
+		];
 	}
 
 	/**

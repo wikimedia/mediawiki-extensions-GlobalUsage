@@ -34,22 +34,22 @@ class GlobalUsage {
 	) {
 		global $wgUpdateRowsPerQuery;
 
-		$insert = array();
+		$insert = [];
 		foreach ( $images as $name ) {
-			$insert[] = array(
+			$insert[] = [
 				'gil_wiki' => $this->interwiki,
 				'gil_page' => $title->getArticleID( $pageIdFlags ),
 				'gil_page_namespace_id' => $title->getNamespace(),
 				'gil_page_namespace' => $title->getNsText(),
 				'gil_page_title' => $title->getDBkey(),
 				'gil_to' => $name
-			);
+			];
 		}
 
 		$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
 		$ticket = $ticket ?: $lbFactory->getEmptyTransactionTicket( __METHOD__ );
 		foreach ( array_chunk( $insert, $wgUpdateRowsPerQuery ) as $insertBatch ) {
-			$this->db->insert( 'globalimagelinks', $insertBatch, __METHOD__, array( 'IGNORE' ) );
+			$this->db->insert( 'globalimagelinks', $insertBatch, __METHOD__, [ 'IGNORE' ] );
 			$lbFactory->commitAndWaitForReplication( __METHOD__, $ticket );
 		}
 	}
@@ -63,14 +63,14 @@ class GlobalUsage {
 		$res = $this->db->select(
 			'globalimagelinks',
 			'gil_to',
-			array(
+			[
 				'gil_wiki' => $this->interwiki,
 				'gil_page' => $id,
-			),
+			],
 			__METHOD__
 		);
 
-		$images = array();
+		$images = [];
 		foreach ( $res as $row ) {
 			$images[] = $row->gil_to;
 		}
@@ -88,10 +88,10 @@ class GlobalUsage {
 	public function deleteLinksFromPage( $id, array $to = null, $ticket = null ) {
 		global $wgUpdateRowsPerQuery;
 
-		$where = array(
+		$where = [
 			'gil_wiki' => $this->interwiki,
 			'gil_page' => $id
-		);
+		];
 		if ( $to ) {
 			$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
 			$ticket = $ticket ?: $lbFactory->getEmptyTransactionTicket( __METHOD__ );
@@ -113,10 +113,10 @@ class GlobalUsage {
 	public function deleteLinksToFile( $title ) {
 		$this->db->delete(
 			'globalimagelinks',
-			array(
+			[
 				'gil_wiki' => $this->interwiki,
 				'gil_to' => $title->getDBkey()
-			),
+			],
 			__METHOD__
 		);
 	}
@@ -130,27 +130,27 @@ class GlobalUsage {
 		global $wgContLang;
 
 		$res = $this->db->select(
-			array( 'imagelinks', 'page' ),
-			array( 'il_to', 'page_id', 'page_namespace', 'page_title' ),
-			array( 'il_from = page_id', 'il_to' => $title->getDBkey() ),
+			[ 'imagelinks', 'page' ],
+			[ 'il_to', 'page_id', 'page_namespace', 'page_title' ],
+			[ 'il_from = page_id', 'il_to' => $title->getDBkey() ],
 			__METHOD__
 		);
 
-		$insert = array();
+		$insert = [];
 		foreach ( $res as $row ) {
-			$insert[] = array(
+			$insert[] = [
 				'gil_wiki' => $this->interwiki,
 				'gil_page' => $row->page_id,
 				'gil_page_namespace_id' => $row->page_namespace,
 				'gil_page_namespace' => $wgContLang->getNsText( $row->page_namespace ),
 				'gil_page_title' => $row->page_title,
 				'gil_to' => $row->il_to,
-			);
+			];
 		}
 
 		$fname = __METHOD__;
 		DeferredUpdates::addCallableUpdate( function () use ( $insert, $fname ) {
-			$this->db->insert( 'globalimagelinks', $insert, $fname, array( 'IGNORE' ) );
+			$this->db->insert( 'globalimagelinks', $insert, $fname, [ 'IGNORE' ] );
 		} );
 	}
 
@@ -163,15 +163,15 @@ class GlobalUsage {
 	public function moveTo( $id, $title ) {
 		$this->db->update(
 			'globalimagelinks',
-			array(
+			[
 				'gil_page_namespace_id' => $title->getNamespace(),
 				'gil_page_namespace' => $title->getNsText(),
 				'gil_page_title' => $title->getDBkey()
-			),
-			array(
+			],
+			[
 				'gil_wiki' => $this->interwiki,
 				'gil_page' => $id
-			),
+			],
 			__METHOD__
 		);
 	}
@@ -241,43 +241,43 @@ class GlobalUsage {
 	 * @return array Query info array, as a QueryPage would expect.
 	 */
 	public static function getWantedFilesQueryInfo( $wiki = false ) {
-		$qi = array(
-			'tables' => array(
+		$qi = [
+			'tables' => [
 				'globalimagelinks',
 				'page',
 				'redirect',
 				'img1' => 'image',
 				'img2' => 'image',
-			),
-			'fields' => array(
+			],
+			'fields' => [
 				'namespace' => NS_FILE,
 				'title' => 'gil_to',
 				'value' => 'COUNT(*)'
-			),
-			'conds' => array(
+			],
+			'conds' => [
 				'img1.img_name' => null,
 				// We also need to exclude file redirects
 				'img2.img_name' => null,
-			 ),
-			'options' => array( 'GROUP BY' => 'gil_to' ),
-			'join_conds' => array(
-				'img1' => array( 'LEFT JOIN',
+			 ],
+			'options' => [ 'GROUP BY' => 'gil_to' ],
+			'join_conds' => [
+				'img1' => [ 'LEFT JOIN',
 					'gil_to = img_name'
-				),
-				'page' => array( 'LEFT JOIN', array(
+				],
+				'page' => [ 'LEFT JOIN', [
 					'gil_to = page_title',
 					'page_namespace' => NS_FILE,
-				) ),
-				'redirect' => array( 'LEFT JOIN', array(
+				] ],
+				'redirect' => [ 'LEFT JOIN', [
 					'page_id = rd_from',
 					'rd_namespace' => NS_FILE,
 					'rd_interwiki' => ''
-				) ),
-				'img2' => array( 'LEFT JOIN',
+				] ],
+				'img2' => [ 'LEFT JOIN',
 					'rd_title = img2.img_name'
-				)
-			)
-		);
+				]
+			]
+		];
 		if ( $wiki !== false ) {
 			// Limit to just one wiki.
 			$qi['conds']['gil_wiki'] = $wiki;

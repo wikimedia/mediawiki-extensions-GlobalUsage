@@ -19,7 +19,7 @@ class GlobalUsageCachePurgeJob extends Job {
 		$rootParams = Job::newRootJobParams( // "overall" purge job info
 			"GlobalUsage:htmlCacheUpdate:imagelinks:{$title->getPrefixedText()}" );
 
-		$filesForPurge = array( $title->getDbKey() ); // title to purge backlinks to
+		$filesForPurge = [ $title->getDbKey() ]; // title to purge backlinks to
 		// All File pages that redirect this one may have backlinks that need purging.
 		// These backlinks are probably broken now (missing files or double redirects).
 		foreach ( $title->getBacklinkCache()->getLinks( 'redirect' ) as $redirTitle ) {
@@ -34,20 +34,20 @@ class GlobalUsageCachePurgeJob extends Job {
 		$dbr = GlobalUsage::getGlobalDB( DB_REPLICA );
 		$res = $dbr->select(
 			'globalimagelinks',
-			array( 'gil_wiki', 'gil_to' ),
-			array( 'gil_to' => $filesForPurge, 'gil_wiki != ' . $dbr->addQuotes( wfWikiID() ) ),
+			[ 'gil_wiki', 'gil_to' ],
+			[ 'gil_to' => $filesForPurge, 'gil_wiki != ' . $dbr->addQuotes( wfWikiID() ) ],
 			__METHOD__,
-			array( 'DISTINCT' )
+			[ 'DISTINCT' ]
 		);
 
 		// Build up a list of HTMLCacheUpdateJob jobs to put on each affected wiki to clear
 		// the caches for all pages that link to these file pages. These jobs will use the
 		// local imagelinks table, which should have the same links that the global one has.
-		$jobsByWiki = array();
+		$jobsByWiki = [];
 		foreach ( $res as $row ) {
 			$jobsByWiki[$row->gil_wiki][] = new HTMLCacheUpdateJob(
 				Title::makeTitle( NS_FILE, $row->gil_to ),
-				array( 'table' => 'imagelinks' ) + $rootParams
+				[ 'table' => 'imagelinks' ] + $rootParams
 			);
 		}
 

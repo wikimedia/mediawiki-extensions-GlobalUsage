@@ -32,7 +32,7 @@ class GlobalUsageQuery {
 		} else {
 			$this->target = Title::makeTitleSafe( NS_FILE, $target );
 		}
-		$this->offset = array();
+		$this->offset = [];
 	}
 
 	/**
@@ -121,7 +121,7 @@ class GlobalUsageQuery {
 	 */
 	public function execute() {
 		/* Construct the SQL query */
-		$tables = array( 'globalimagelinks' );
+		$tables = [ 'globalimagelinks' ];
 
 		// Add target image(s)
 		if ( is_array( $this->target ) ) { // array of dbkey strings
@@ -133,17 +133,17 @@ class GlobalUsageQuery {
 		}
 		switch ( $namespace ) {
 			case NS_FILE:
-				$where = array( 'gil_to' => $queryIn );
+				$where = [ 'gil_to' => $queryIn ];
 				break;
 			case NS_CATEGORY:
 				$tables[] = 'categorylinks';
 				$tables[] = 'page';
-				$where = array(
+				$where = [
 					'cl_to' => $queryIn,
 					'cl_from = page_id',
 					'page_namespace = ' . NS_FILE,
 					'gil_to = page_title',
-				);
+				];
 				break;
 			default:
 				return;
@@ -154,10 +154,10 @@ class GlobalUsageQuery {
 			$where[] = 'gil_wiki != ' . $this->db->addQuotes( wfWikiId() );
 		}
 
-		$options = array(
+		$options = [
 			// Select an extra row to check whether we have more rows available
 			'LIMIT' => $this->limit + 1,
-		);
+		];
 
 		// Set the continuation condition
 		if ( $this->offset ) {
@@ -184,14 +184,14 @@ class GlobalUsageQuery {
 
 		/* Perform select (Duh.) */
 		$res = $this->db->select( $tables,
-			array(
+			[
 				'gil_to',
 				'gil_wiki',
 				'gil_page',
 				'gil_page_namespace_id',
 				'gil_page_namespace',
 				'gil_page_title'
-			),
+			],
 			$where,
 			__METHOD__,
 			$options
@@ -200,7 +200,7 @@ class GlobalUsageQuery {
 		/* Process result */
 		// Always return the result in the same order; regardless whether reversed was specified
 		// reversed is really only used to determine from which direction the offset is
-		$rows = array();
+		$rows = [];
 		foreach ( $res as $row ) {
 			$rows[] = $row;
 		}
@@ -211,7 +211,7 @@ class GlobalUsageQuery {
 		// Build the result array
 		$count = 0;
 		$this->hasMore = false;
-		$this->result = array();
+		$this->result = [];
 		foreach ( $rows as $row ) {
 			$count++;
 			if ( $count > $this->limit ) {
@@ -222,20 +222,20 @@ class GlobalUsageQuery {
 			}
 
 			if ( !isset( $this->result[$row->gil_to] ) ) {
-				$this->result[$row->gil_to] = array();
+				$this->result[$row->gil_to] = [];
 			}
 			if ( !isset( $this->result[$row->gil_to][$row->gil_wiki] ) ) {
-				$this->result[$row->gil_to][$row->gil_wiki] = array();
+				$this->result[$row->gil_to][$row->gil_wiki] = [];
 			}
 
-			$this->result[$row->gil_to][$row->gil_wiki][] = array(
+			$this->result[$row->gil_to][$row->gil_wiki][] = [
 				'image' => $row->gil_to,
 				'id' => $row->gil_page,
 				'namespace_id' => $row->gil_page_namespace_id,
 				'namespace' => $row->gil_page_namespace,
 				'title' => $row->gil_page_title,
 				'wiki' => $row->gil_wiki,
-			);
+			];
 		}
 	}
 
@@ -266,7 +266,7 @@ class GlobalUsageQuery {
 		if ( $this->result ) {
 			return current( $this->result );
 		} else {
-			return array();
+			return [];
 		}
 	}
 
