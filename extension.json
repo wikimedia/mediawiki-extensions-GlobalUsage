@@ -1,10 +1,13 @@
 {
 	"name": "Global Usage",
-	"version": "2.1.0",
+	"version": "2.2.0",
 	"author": "Bryan Tong Minh",
 	"url": "https://www.mediawiki.org/wiki/Extension:GlobalUsage",
 	"descriptionmsg": "globalusage-desc",
 	"license-name": "MIT",
+	"requires": {
+		"MediaWiki": ">= 1.28.0"
+	},
 	"type": "specialpage",
 	"SpecialPages": {
 		"MostGloballyLinkedFiles": "MostGloballyLinkedFilesPage",

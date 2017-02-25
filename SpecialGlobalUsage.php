@@ -228,14 +228,15 @@ class SpecialGlobalUsage extends SpecialPage {
 		}
 
 		# Get prev/next link display text
-		$prev = $this->msg( 'prevn' )->numParams( $limit )->escaped();
-		$next = $this->msg( 'nextn' )->numParams( $limit )->escaped();
+		$prevMsg = $this->msg( 'prevn' )->numParams( $limit );
+		$nextMsg = $this->msg( 'nextn' )->numParams( $limit );
 		# Get prev/next link title text
 		$pTitle = $this->msg( 'prevn-title' )->numParams( $limit )->escaped();
 		$nTitle = $this->msg( 'nextn-title' )->numParams( $limit )->escaped();
 
 		# Fetch the title object
 		$title = $this->getPageTitle();
+		$linkRenderer = $this->getLinkRenderer();
 
 		# Make 'previous' link
 		if ( $to ) {
@@ -244,9 +245,9 @@ class SpecialGlobalUsage extends SpecialPage {
 			if ( $this->filterLocal ) {
 				$q['filterlocal'] = '1';
 			}
-			$plink = Linker::link( $title, $prev, $attr, $q );
+			$plink = $linkRenderer->makeLink( $title, $prevMsg->text(), $attr, $q );
 		} else {
-			$plink = $prev;
+			$plink = $prevMsg->escaped();
 		}
 
 		# Make 'next' link
@@ -256,9 +257,9 @@ class SpecialGlobalUsage extends SpecialPage {
 			if ( $this->filterLocal ) {
 				$q['filterlocal'] = '1';
 			}
-			$nlink = Linker::link( $title, $next, $attr, $q );
+			$nlink = $linkRenderer->makeLink( $title, $nextMsg->text(), $attr, $q );
 		} else {
-			$nlink = $next;
+			$nlink = $nextMsg->escaped();
 		}
 
 		# Make links to set number of items per page
@@ -274,7 +275,7 @@ class SpecialGlobalUsage extends SpecialPage {
 			$lTitle = $this->msg( 'shown-title' )->numParams( $num )->escaped();
 			$attr = array( 'title' => $lTitle, 'class' => 'mw-numlink' );
 
-			$numLinks[] = Linker::link( $title, $fmtLimit, $attr, $q );
+			$numLinks[] = $linkRenderer->makeLink( $title, $fmtLimit, $attr, $q );
 		}
 		$nums = $lang->pipeList( $numLinks );
 

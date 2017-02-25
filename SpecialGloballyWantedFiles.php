@@ -87,18 +87,19 @@ class SpecialGloballyWantedFiles extends WantedFilesPage {
 		$title = Title::makeTitle( $result->namespace, $result->title );
 		$safeTitle = Title::makeTitleSafe( $result->namespace, $result->title );
 		if ( $title instanceof Title && $safeTitle instanceof Title ) {
-			$pageLink = Linker::link( $title );
+			$linkRenderer = $this->getLinkRenderer();
+			$pageLink = $linkRenderer->makeLink( $title );
 			if ( $safeTitle->isKnown() && wfFindFile( $safeTitle ) ) {
 				// If the title exists and is a file, than strike.
-				// The wfFindFile() call should already be cached from Linker::link call
+				// The wfFindFile() call should already be cached from LinkRenderer::makeLink call
 				// so it shouldn't be too expensive. However a future @todo would be
 				// to do preload existence checks for files all at once via RepoGroup::findFiles.
 				$pageLink = Html::rawElement( 'del', array(), $pageLink );
 			}
 
 			$gu = SpecialPage::getTitleFor( 'GlobalUsage', $title->getDBKey() );
-			$label = $this->msg( 'nlinks' )->numParams( $result->value )->escaped();
-			$usages = Linker::link( $gu, $label );
+			$label = $this->msg( 'nlinks' )->numParams( $result->value )->text();
+			$usages = $linkRenderer->makeLink( $gu, $label );
 
 			return $this->getLanguage()->specialList( $pageLink, $usages );
 		} else {
