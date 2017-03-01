@@ -1,12 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Asoxor"
+			"Asoxor",
+			"Lost Whispers"
 		]
 	},
 	"globalusage": "بەکارھێنانی سەرانسەریی پەڕگە",
 	"globalusage-for": "بەکارھێنانی سەرانسەری بۆ «$1»",
 	"globalusage-ok": "گەڕان",
 	"globalusage-on-wiki": "بەکارھێنان لە $2",
-	"globalusage-of-file": "ئەم ویکیانەی دیکەی خوارەوەش ئەم پەڕگە بەکاردێنن:"
+	"globalusage-of-file": "ئەم ویکیانەی دیکەی خوارەوەش ئەم پەڕگە بەکاردێنن:",
+	"globalusage-more": "بینینی [[{{#Special:GlobalUsage}}/$1|بەکارھێنانی گشتی زیاتر]]ی ئەم پەڕگەیە."
 }
