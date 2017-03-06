@@ -5,7 +5,12 @@
 		]
 	},
 	"globalusage": "Fampiasan-drakitra maneran-tontolo",
+	"globalusage-for": "Fampiasana eran-tontolo ho an'i \"$1\"",
+	"globalusage-desc": "[[Special:GlobalUsage|Pejy manokana]] anehoana ny fampiasan'ny rakitra iray maneraa ny tontolo",
+	"globalusage-text": "Hitady fampiasana ern-tontolo'ny rakitra",
 	"globalusage-on-wiki": "Fampiasana eo amin'i $2",
 	"globalusage-of-file": "Mampiasa ity rakitra ity ireo wiki hafa ireo:",
-	"globalusage-more": "Hijery [[{{#Special:GlobalUsage}}/$1|fampiasana eran-terikasa]]n'ity rakitra ity."
+	"globalusage-more": "Hijery [[{{#Special:GlobalUsage}}/$1|fampiasana eran-terikasa]]n'ity rakitra ity.",
+	"mostgloballylinkedfiles": "Rakitra tena voarohy maneran-tontolo",
+	"globallywantedfiles": "Rakitra takiana maner-tontolo"
 }
