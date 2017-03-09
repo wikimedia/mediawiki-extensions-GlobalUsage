@@ -4,11 +4,13 @@
 			"BRUTE",
 			"David1010",
 			"Dawid Deutschland",
-			"გიორგიმელა"
+			"გიორგიმელა",
+			"Otogi"
 		]
 	},
 	"globalusage": "ფაილის გლობალური გამოყენება",
 	"globalusage-for": "გლობალური გამოყენება \"$1\"-თვის",
+	"globalusage-filename": "ფაილის სახელი:",
 	"globalusage-desc": "[[Special:GlobalUsage|სპეციალური გვერდი]] ფაილის გლობალური გამოყენების სანახავად",
 	"globalusage-ok": "ძიება",
 	"globalusage-text": "მოიძიეთ ფაილის გლობალური გამოყენება",
@@ -17,5 +19,6 @@
 	"globalusage-of-file": "ეს ფაილი გამოიყენება შემდეგ ვიკებში:",
 	"globalusage-more": "იხილეთ, ამ ფაილის [[{{#Special:GlobalUsage}}/$1|გლობალური გამოყენება]].",
 	"globalusage-filterlocal": "არ აჩვენოთ ლოკალური გამოყენება",
-	"apihelp-query+globalusage-param-limit": "რამდენი შედეგი ვაჩვენოთ?"
+	"apihelp-query+globalusage-param-limit": "რამდენი შედეგი ვაჩვენოთ?",
+	"globalusage-header": "ეს გვერდი აჩვენებს სხვა ვიკი-პროექტებში გამოყენებულ ფაილებს. თქვენ აგრეთვე შეგიძლიათ მოიძიოთ ეს ინფორმაცია ფაილის გვერდის აღწერის ქვემო ნაწილში."
 }

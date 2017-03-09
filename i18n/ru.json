@@ -5,11 +5,13 @@
 			"Александр Сигачёв",
 			"Okras",
 			"Striking Blue",
-			"Kaganer"
+			"Kaganer",
+			"Otogi"
 		]
 	},
 	"globalusage": "Глобальное использование файла",
 	"globalusage-for": "Глобальное использование «$1»",
+	"globalusage-filename": "Имя файла:",
 	"globalusage-desc": "[[Special:GlobalUsage|Служебная страница]] для просмотра общего использования файла",
 	"globalusage-ok": "Найти",
 	"globalusage-text": "Поиск глобального использования файла.",
