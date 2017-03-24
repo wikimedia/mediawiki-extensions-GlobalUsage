@@ -29,15 +29,15 @@
 		"GlobalUsageAliases": "GlobalUsage.alias.php"
 	},
 	"AutoloadClasses": {
-		"GlobalUsage": "GlobalUsage_body.php",
-		"GlobalUsageHooks": "GlobalUsageHooks.php",
-		"GlobalUsageImagePageHooks": "GlobalUsageImagePageHooks.php",
-		"SpecialGlobalUsage": "SpecialGlobalUsage.php",
-		"GlobalUsageQuery": "GlobalUsageQuery.php",
-		"ApiQueryGlobalUsage": "ApiQueryGlobalUsage.php",
-		"GlobalUsageCachePurgeJob": "GlobalUsageCachePurgeJob.php",
-		"MostGloballyLinkedFilesPage": "SpecialMostGloballyLinkedFiles.php",
-		"SpecialGloballyWantedFiles": "SpecialGloballyWantedFiles.php"
+		"GlobalUsage": "includes/GlobalUsage.php",
+		"GlobalUsageHooks": "includes/GlobalUsageHooks.php",
+		"GlobalUsageImagePageHooks": "includes/GlobalUsageImagePageHooks.php",
+		"SpecialGlobalUsage": "includes/SpecialGlobalUsage.php",
+		"GlobalUsageQuery": "includes/GlobalUsageQuery.php",
+		"ApiQueryGlobalUsage": "includes/ApiQueryGlobalUsage.php",
+		"GlobalUsageCachePurgeJob": "includes/GlobalUsageCachePurgeJob.php",
+		"MostGloballyLinkedFilesPage": "includes/SpecialMostGloballyLinkedFiles.php",
+		"SpecialGloballyWantedFiles": "includes/SpecialGloballyWantedFiles.php"
 	},
 	"@doc": [
 		"Things that can cause link updates:",
