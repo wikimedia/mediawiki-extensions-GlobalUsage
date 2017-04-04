@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Man77",
-			"Mucalexx"
+			"Mucalexx",
+			"Joe Watzmo"
 		]
 	},
 	"globalusage": "Globale Dateinutzung",
 	"globalusage-desc": "[[Special:GlobalUsage|Spezialseitn]], de d'globale Vawendung vu dea Datei ãnzoagt",
 	"globalusage-ok": "Suacher",
-	"globalusage-text": "Globale Suach nåch da Dateivawendung"
+	"globalusage-text": "Globale Suach noch Dateivawendung"
 }
