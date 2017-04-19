@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Benoit Rochon"
+			"Benoit Rochon",
+			"Ninmeka"
 		]
 	},
 	"globalusage": "Kitciwe e irapatak masinahikaniwoc",
-	"globalusage-on-wiki": "Ote icihapitan $2",
+	"globalusage-on-wiki": "Ote ici apatan $2",
 	"globalusage-of-file": "Kotakahik wikis apatcitawok ohweriw ka masinaterik:",
 	"globalusage-more": "Nta [[{{#Special:GlobalUsage}}/$1|kanawapata misiwe]] e irapatak masinahikaniwoc"
 }
