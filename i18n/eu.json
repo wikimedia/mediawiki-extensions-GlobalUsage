@@ -4,10 +4,12 @@
 			"Kobazulo",
 			"Sator",
 			"Theklan",
-			"Xabier Armendaritz"
+			"Xabier Armendaritz",
+			"Subi"
 		]
 	},
 	"globalusage": "Fitxategiaren erabilera orokorra",
+	"globalusage-filename": "Fitxategi izena:",
 	"globalusage-desc": "Fitxategiaren erabilera orokorra ikusteko [[Special:GlobalUsage|orrialde berezia]]",
 	"globalusage-ok": "Bilatu",
 	"globalusage-text": "Fitxategiaren erabilera orokorra bilatu.",
