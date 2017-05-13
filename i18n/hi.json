@@ -9,6 +9,7 @@
 	},
 	"globalusage": "वैश्विक फ़ाइल उपयोग",
 	"globalusage-for": "\"$1\" का वैश्विक उपयोग",
+	"globalusage-filename": "फ़ाईलनाम:",
 	"globalusage-desc": "वैश्विक फ़ाइल उपयोग देखने के लिये [[Special:GlobalUsage|विशेष पृष्ठ]]",
 	"globalusage-ok": "खोजें",
 	"globalusage-text": "वैश्विक फ़ाइल उपयोग खोजें।",
