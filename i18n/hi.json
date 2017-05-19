@@ -18,15 +18,6 @@
 	"globalusage-of-file": "इस फ़ाइल का उपयोग निम्न अन्य विकियों में है:",
 	"globalusage-more": "इस फ़ाइल के [[{{#Special:GlobalUsage}}/$1|वैश्विक उपयोग की अधिक जानकारी]] देखें।",
 	"globalusage-filterlocal": "स्थानीय उपयोग ना दिखाएँ",
-	"mostgloballylinkedfiles": "Most globally linked files",
-	"mostgloballylinkedfiles-summary": "List of files that have been embedded the highest number of times across all wikis. For the equivalent list that takes into account only usages on {{SITENAME}}, see [[{{#special:MostLinkedFiles}}]].",
 	"globallywantedfiles": "वैश्विक आवश्यक फ़ाइलें",
-	"globallywantedfiles-summary": "List of files that have been embedded the highest number of times across all wikis despite not existing. For the equivalent list that takes into account only usages on {{SITENAME}}, see [[{{#special:WantedFiles}}]]. File usages from first letter case sensitive wikis may incorrectly be reported as being wanted.",
-	"globallywantedfiles-foreign-repo": "<strong>Warning:</strong> This wiki uses a foreign file repository. Files from the foreign repository that are in use will show up on this list as struck out blue links despite the fact that they exist.",
-	"apihelp-query+globalusage-description": "Returns global image usage for a certain image.",
-	"apihelp-query+globalusage-param-prop": "Which properties to return:\n;url:Adds url.\n;pageid:Adds page ID.\n;namespace:Adds namespace ID.",
-	"apihelp-query+globalusage-param-limit": "कितना कड़ी दिखेगा।",
-	"apihelp-query+globalusage-param-filterlocal": "Filter local usage of the file.",
-	"apihelp-query+globalusage-example-1": "Get usage of [[:File:Example.jpg]]",
-	"globalusage-header": "This page shows where a file is used on other wikis. You can also find that information at the bottom of the file description page."
+	"apihelp-query+globalusage-param-limit": "कितना कड़ी दिखेगा।"
 }
