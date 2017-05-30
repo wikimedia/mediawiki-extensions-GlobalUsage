@@ -61,8 +61,10 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 							'wiki' => WikiMap::getWikiName( $wiki )
 						];
 						if ( isset( $prop['url'] ) ) {
-							/* We expand the url because we don't want protocol relative urls in API results */
-							$result['url'] = wfExpandUrl( WikiMap::getForeignUrl( $item['wiki'], $title ), PROTO_CURRENT );
+							// We expand the url because we don't want protocol relative urls
+							// in API results
+							$result['url'] = wfExpandUrl(
+								WikiMap::getForeignUrl( $item['wiki'], $title ), PROTO_CURRENT );
 						}
 						if ( isset( $prop['pageid'] ) ) {
 							$result['pageid'] = $item['id'];

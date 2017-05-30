@@ -3,13 +3,13 @@
  * Maintenance script to populate the globalimagelinks table. Needs to be run
  * on all wikis.
  */
-$path = dirname( dirname( dirname( __FILE__ ) ) );
+$path = dirname( dirname( __DIR__ ) );
 
 if ( getenv( 'MW_INSTALL_PATH' ) !== false ) {
 	$path = getenv( 'MW_INSTALL_PATH' );
 }
 
-require_once( $path . '/maintenance/Maintenance.php' );
+require_once $path . '/maintenance/Maintenance.php';
 
 use MediaWiki\MediaWikiServices;
 
@@ -43,33 +43,33 @@ class RefreshGlobalImageLinks extends Maintenance {
 				# Query all pages and any imagelinks associated with that
 				$quotedLastIlTo = $dbr->addQuotes( $lastIlTo );
 				$res = $dbr->select(
-					array( 'page', 'imagelinks', 'image' ),
-					array(
+					[ 'page', 'imagelinks', 'image' ],
+					[
 						'page_id', 'page_namespace', 'page_title',
 						'il_to', 'img_name'
-					),
+					],
 					"(page_id = $lastPageId AND il_to > {$quotedLastIlTo})" .
 						" OR page_id > $lastPageId",
 					__METHOD__,
-					array(
+					[
 						'ORDER BY' => $dbr->implicitOrderby() ? 'page_id' : 'page_id, il_to',
 						'LIMIT' => $this->mBatchSize,
-					),
-					array(
+					],
+					[
 						# LEFT JOIN imagelinks since we need to delete usage
 						# from all images, even if they don't have images anymore
-						'imagelinks' => array( 'LEFT JOIN', 'page_id = il_from' ),
+						'imagelinks' => [ 'LEFT JOIN', 'page_id = il_from' ],
 						# Check to see if images exist locally
-						'image' => array( 'LEFT JOIN', 'il_to = img_name' )
-					)
+						'image' => [ 'LEFT JOIN', 'il_to = img_name' ]
+					]
 				);
 
 				# Build up a tree per pages
-				$pages = array();
+				$pages = [];
 				$lastRow = null;
 				foreach ( $res as $row ) {
 					if ( !isset( $pages[$row->page_id] ) ) {
-						$pages[$row->page_id] = array();
+						$pages[$row->page_id] = [];
 					}
 					# Add the imagelinks entry to the pages array if the image
 					# does not exist locally
@@ -114,23 +114,23 @@ class RefreshGlobalImageLinks extends Maintenance {
 				$this->output( "Querying for broken links after (page_id) = ($lastPageId)\n" );
 
 				$res = $gdbw->select( 'globalimagelinks', 'gil_page',
-					array( 'gil_wiki' => wfWikiID(), "gil_page > $lastPageId" ),
+					[ 'gil_wiki' => wfWikiID(), "gil_page > $lastPageId" ],
 					__METHOD__,
-					array( 'ORDER BY' => 'gil_page', 'LIMIT' => $this->mBatchSize )
+					[ 'ORDER BY' => 'gil_page', 'LIMIT' => $this->mBatchSize ]
 				);
 
 				if ( !$res->numRows() ) {
 					break;
 				}
 
-				$pageIds = array();
+				$pageIds = [];
 				foreach ( $res as $row ) {
 					$pageIds[$row->gil_page] = false;
 					$lastPageId = (int)$row->gil_page;
 				}
 
 				$lres = $dbr->select( 'page', 'page_id',
-					array( 'page_id' => array_keys( $pageIds ) ), __METHOD__ );
+					[ 'page_id' => array_keys( $pageIds ) ], __METHOD__ );
 
 				foreach ( $lres as $row ) {
 					$pageIds[$row->page_id] = true;
@@ -153,4 +153,4 @@ class RefreshGlobalImageLinks extends Maintenance {
 }
 
 $maintClass = 'RefreshGlobalImageLinks';
-require_once( DO_MAINTENANCE );
+require_once DO_MAINTENANCE;

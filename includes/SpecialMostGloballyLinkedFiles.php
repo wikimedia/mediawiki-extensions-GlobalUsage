@@ -18,7 +18,6 @@ class MostGloballyLinkedFilesPage extends MostimagesPage {
 	 * If we're not on a shared repo, try to redirect there.
 	 */
 	function execute( $par ) {
-		global $wgGlobalUsageSharedRepoWiki;
 		if ( GlobalUsage::onSharedRepo() ) {
 			parent::execute( $par );
 		} else {
@@ -62,7 +61,9 @@ class MostGloballyLinkedFilesPage extends MostimagesPage {
 	 */
 	protected function assertOnSharedRepo() {
 		if ( !GlobalUsage::onSharedRepo() ) {
-			throw new Exception( "Special:MostGloballyLinkedFiles should only be processed on the shared repo" );
+			throw new Exception(
+				'Special:MostGloballyLinkedFiles should only be processed on the shared repo'
+			);
 		}
 	}
 

@@ -41,7 +41,8 @@ class SpecialGlobalUsage extends SpecialPage {
 			return;
 		}
 
-		$this->getOutput()->setPageTitle( $this->msg( 'globalusage-for', $this->target->getPrefixedText() ) );
+		$this->getOutput()->setPageTitle(
+			$this->msg( 'globalusage-for', $this->target->getPrefixedText() ) );
 
 		$this->showResult();
 	}

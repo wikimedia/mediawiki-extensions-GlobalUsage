@@ -52,8 +52,9 @@ class GlobalUsageImagePageHooks {
 			$guHtml .= "<li class='mw-gu-onwiki-$escWikiName'>" . $context->msg(
 				'globalusage-on-wiki',
 				$targetName, $wikiName )->parse() . "\n<ul>";
-			foreach ( $result as $item )
+			foreach ( $result as $item ) {
 				$guHtml .= "\t<li>" . SpecialGlobalUsage::formatItem( $item ) . "</li>\n";
+			}
 			$guHtml .= "</ul></li>\n";
 		}
 
@@ -101,7 +102,7 @@ class GlobalUsageImagePageHooks {
 		}
 
 		# Don't show global usage if the file is local.
-		# Do show it however if the current repo is the shared repo. The way 
+		# Do show it however if the current repo is the shared repo. The way
 		# we detect this is a bit hacky and less than ideal. See bug 23136 for
 		# a discussion.
 		global $wgGlobalUsageDatabase;
