@@ -18,7 +18,6 @@ class SpecialGloballyWantedFiles extends WantedFilesPage {
 	 * If we're not on a shared repo, try to redirect there.
 	 */
 	function execute( $par ) {
-		global $wgGlobalUsageSharedRepoWiki;
 		if ( GlobalUsage::onSharedRepo() ) {
 			parent::execute( $par );
 		} else {

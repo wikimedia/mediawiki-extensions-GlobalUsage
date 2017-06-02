@@ -208,12 +208,14 @@ class GlobalUsageHooks {
 			$updater->addExtensionUpdate( [ 'addTable', 'globalimagelinks',
 				"$dir/GlobalUsage.sql", true ] );
 			$updater->addExtensionUpdate( [ 'addIndex', 'globalimagelinks',
-				'globalimagelinks_wiki_nsid_title', "$dir/patch-globalimagelinks_wiki_nsid_title.sql", true ] );
+				'globalimagelinks_wiki_nsid_title',
+				"$dir/patch-globalimagelinks_wiki_nsid_title.sql", true ] );
 		} elseif ( $updater->getDB()->getType() == 'postgresql' ) {
 			$updater->addExtensionUpdate( [ 'addTable', 'globalimagelinks',
 				"$dir/GlobalUsage.pg.sql", true ] );
 			$updater->addExtensionUpdate( [ 'addIndex', 'globalimagelinks',
-				'globalimagelinks_wiki_nsid_title', "$dir/patch-globalimagelinks_wiki_nsid_title.pg.sql", true ] );
+				'globalimagelinks_wiki_nsid_title',
+				"$dir/patch-globalimagelinks_wiki_nsid_title.pg.sql", true ] );
 		}
 		return true;
 	}
