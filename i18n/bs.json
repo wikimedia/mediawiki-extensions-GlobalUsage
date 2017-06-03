@@ -8,6 +8,7 @@
 	},
 	"globalusage": "Globalna upotreba datoteke",
 	"globalusage-for": "Globalna upotreba za \"$1\"",
+	"globalusage-filename": "Ime datoteke:",
 	"globalusage-desc": "[[Special:GlobalUsage|Posebna stranica]] za pregled globalne upotrebe datoteke",
 	"globalusage-ok": "Traži",
 	"globalusage-text": "Pretraga globalne upotrebe datoteke.",
@@ -17,5 +18,9 @@
 	"globalusage-more": "Pogledajte [[{{#Special:GlobalUsage}}/$1|globalne upotrebe]] ove datoteke.",
 	"globalusage-filterlocal": "Ne prikazuj lokalnu upotrebu",
 	"mostgloballylinkedfiles": "Datoteke s najviše linkova globalno",
+	"globallywantedfiles": "Globalno potrebne datoteke",
+	"apihelp-query+globalusage-param-limit": "Koliko linkova dati.",
+	"apihelp-query+globalusage-param-filterlocal": "Filtriraj lokalnu upotrebu datoteke.",
+	"apihelp-query+globalusage-example-1": "Daj upotrebu datoteke [[:File:Example.jpg]]",
 	"globalusage-header": "Ova stranica prikazuje na kojim se sve wikijima koristi ova datoteka.  Ovu informaciju također možete pronaći na dnu stranice s opisom."
 }
