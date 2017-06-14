@@ -33,6 +33,7 @@
 	"globallywantedfiles-summary": "Summary of [[Special:GloballyWantedFiles]].\n\n\"Global\" refers to the fact that this takes into account all the wikis in the wiki family, not just the current wiki. This is similar to {{msg-mw|wantedfiles-summary}} or {{msg-mw|wantedfilestext-cat}}, but for the global special page.",
 	"globallywantedfiles-foreign-repo": "Warning shown on top of Special:GloballyWantedFiles (Between the {{msg-mw|perfcachedts}} and {{msg-mw|showingresultsinrange}} messages) if the wiki has a foreign repository enabled.",
 	"apihelp-query+globalusage-description": "{{doc-apihelp-description|query+globalusage}}",
+	"apihelp-query+globalusage-summary": "{{doc-apihelp-summary|query+globalusage}}",
 	"apihelp-query+globalusage-param-prop": "{{doc-apihelp-param|query+globalusage|prop}}",
 	"apihelp-query+globalusage-param-limit": "{{doc-apihelp-param|query+globalusage|limit}}",
 	"apihelp-query+globalusage-param-filterlocal": "{{doc-apihelp-param|query+globalusage|filterlocal}}",
