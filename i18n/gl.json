@@ -24,6 +24,7 @@
 	"globallywantedfiles-summary": "Lista dos ficheiros que máis están sendo incluídos a través de todas as wikis a pesar de non existir. Para a lista equivalente que só ten en conta os usos en {{SITENAME}}, consulte [[{{#special:WantedFiles}}]]. Os usos de ficheiro das wikis nas que a primeira letra diferencia entre maiúsculas e minúsculas poden ser listados incorrectamente.",
 	"globallywantedfiles-foreign-repo": "<strong>Atención:</strong> Este wiki usa un repositorio de ficheiros externo. Os ficheiros dese repositorio que estean en uso mostraranse nesta lista como ligazóns azuis riscadas, malia existiren.",
 	"apihelp-query+globalusage-description": "Mostra o uso global dunha imaxe concreta.",
+	"apihelp-query+globalusage-summary": "Mostra o uso global dunha imaxe concreta.",
 	"apihelp-query+globalusage-param-prop": "Que propiedades devolver:\n;url: Engade a URL.\n;pageid: Engade o identificador da páxina.\n;namespace: Engade o identificador do espazo de nomes.",
 	"apihelp-query+globalusage-param-limit": "Cantas ligazóns devolver.",
 	"apihelp-query+globalusage-param-filterlocal": "Filtrar o uso local do ficheiro.",
