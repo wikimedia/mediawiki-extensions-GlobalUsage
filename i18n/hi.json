@@ -4,7 +4,8 @@
 			"Ansumang",
 			"Kaustubh",
 			"Siddhartha Ghai",
-			"Sfic"
+			"Sfic",
+			"Jayprakash12345"
 		]
 	},
 	"globalusage": "वैश्विक फ़ाइल उपयोग",
@@ -18,6 +19,7 @@
 	"globalusage-of-file": "इस फ़ाइल का उपयोग निम्न अन्य विकियों में है:",
 	"globalusage-more": "इस फ़ाइल के [[{{#Special:GlobalUsage}}/$1|वैश्विक उपयोग की अधिक जानकारी]] देखें।",
 	"globalusage-filterlocal": "स्थानीय उपयोग ना दिखाएँ",
+	"mostgloballylinkedfiles": "विश्व स्तर पर सबसे ज्यादा जुड़ी फाइलें",
 	"globallywantedfiles": "वैश्विक आवश्यक फ़ाइलें",
 	"apihelp-query+globalusage-param-limit": "कितना कड़ी दिखेगा।"
 }
