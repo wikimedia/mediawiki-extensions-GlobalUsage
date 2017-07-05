@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kirsan"
+			"Kirsan",
+			"Kaszeba"
 		]
 	},
 	"globalusage": "Globalné wëzwëskanié lopka",
-	"globalusage-on-wiki": "Wëzwëskanié w $2"
+	"globalusage-on-wiki": "Wëzwëskanié w $2",
+	"globalusage-of-file": "Nene lopk je téż brëkòwnóny w jinnych ùdbach Wiki:",
+	"globalusage-more": "Pòkôżë [[{{#Special:GlobalUsage}}/$1| lëstã glonal;negò brëkwaniô]] negò lopka."
 }
