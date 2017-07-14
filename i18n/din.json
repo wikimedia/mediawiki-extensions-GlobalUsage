@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Dinkawiki",
-			"Mawanmuortat"
+			"Mawanmuortat",
+			"Amire80"
 		]
 	},
-	"globalusage": "luui ë yɔ̈rcïduut de pinynhom",
-	"globalusage-on-wiki": "luɔi $2ic",
+	"globalusage": "Luui ë yɔ̈rcïduut de pinynhom",
+	"globalusage-on-wiki": "Luɔi $2ic",
 	"globalusage-of-file": "Wiki kɔ̈k bɔ̈ looi makec kënë",
 	"globalusage-more": "Tïŋ [[{{#Special:GlobalUsage}}/$1|luui de tëriëcëbɛ̈n juëckɔ̈k]] de apamduööt kënë."
 }
