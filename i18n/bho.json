@@ -7,6 +7,7 @@
 		]
 	},
 	"globalusage": "वैश्विक फाइल उपयोग",
-	"globalusage-on-wiki": "$2 पर प्रयोग",
-	"globalusage-of-file": "ए फाइल के ई सब दूसर विकिन पर इस्तेमाल होत बा:"
+	"globalusage-on-wiki": "$2 पर इस्तेमाल",
+	"globalusage-of-file": "ए फाइल के नीचे दिहल अउरी विकिसभ पर इस्तेमाल होत बा:",
+	"globalusage-more": "एह फाइल के [[{{#Special:GlobalUsage}}/$1|अउरी बैस्विक इस्तेमाल]] देखीं"
 }
