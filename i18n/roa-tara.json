@@ -6,6 +6,7 @@
 	},
 	"globalusage": "Ause d'u file globale",
 	"globalusage-for": "Ause globale pe \"$1\"",
+	"globalusage-filename": "Nome d'u file:",
 	"globalusage-desc": "[[Special:GlobalUsage|Pàgena speciale]] pe vedè l'ause de le file globale",
 	"globalusage-ok": "Cirche",
 	"globalusage-text": "Cirche le file de ause globale",
