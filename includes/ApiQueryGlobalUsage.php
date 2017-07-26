@@ -24,7 +24,7 @@
 
 class ApiQueryGlobalUsage extends ApiQueryBase {
 	public function __construct( $query, $moduleName ) {
-		parent :: __construct( $query, $moduleName, 'gu' );
+		parent::__construct( $query, $moduleName, 'gu' );
 	}
 
 	public function execute() {
@@ -119,11 +119,11 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 				ApiBase::PARAM_ISMULTI => true,
 			],
 			'limit' => [
-				ApiBase :: PARAM_DFLT => 10,
-				ApiBase :: PARAM_TYPE => 'limit',
-				ApiBase :: PARAM_MIN => 1,
-				ApiBase :: PARAM_MAX => ApiBase :: LIMIT_BIG1,
-				ApiBase :: PARAM_MAX2 => ApiBase :: LIMIT_BIG2
+				ApiBase::PARAM_DFLT => 10,
+				ApiBase::PARAM_TYPE => 'limit',
+				ApiBase::PARAM_MIN => 1,
+				ApiBase::PARAM_MAX => ApiBase::LIMIT_BIG1,
+				ApiBase::PARAM_MAX2 => ApiBase::LIMIT_BIG2
 			],
 			'continue' => [
 				ApiBase::PARAM_HELP_MSG => 'api-help-param-continue',

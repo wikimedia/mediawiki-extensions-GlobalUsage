@@ -218,7 +218,7 @@ class GlobalUsage {
 	 * @note This assumes the user has a single shared repo. If the user has
 	 *   multiple/nested foreign repos, then its unclear what it means to
 	 *   be on the "shared repo". See discussion on bug 23136.
-	 * @return boolean
+	 * @return bool
 	 */
 	public static function onSharedRepo() {
 		global $wgGlobalUsageSharedRepoWiki, $wgGlobalUsageDatabase;
