@@ -27,7 +27,7 @@ class MostGloballyLinkedFilesPage extends MostimagesPage {
 
 	/**
 	 * Don't want to do cached handling on non-shared repo, since we only redirect.
-	 * @return boolean
+	 * @return bool
 	 */
 	function isCacheable() {
 		return GlobalUsage::onSharedRepo();
@@ -70,7 +70,7 @@ class MostGloballyLinkedFilesPage extends MostimagesPage {
 	/**
 	 * Only list this special page on the wiki that is the shared repo.
 	 *
-	 * @return boolean Should this be listed in Special:SpecialPages
+	 * @return bool Should this be listed in Special:SpecialPages
 	 */
 	function isListed() {
 		return GlobalUsage::onSharedRepo();

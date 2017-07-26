@@ -46,7 +46,7 @@ class SpecialGloballyWantedFiles extends WantedFilesPage {
 	 * Also make sure that GlobalUsage db same as shared repo.
 	 * (To catch the unlikely case where GlobalUsage db is different db from the
 	 * shared repo db).
-	 * @return boolean
+	 * @return bool
 	 */
 	function isCacheable() {
 		global $wgGlobalUsageDatabase;
@@ -57,7 +57,7 @@ class SpecialGloballyWantedFiles extends WantedFilesPage {
 	/**
 	 * Only list this special page on the wiki that is the shared repo.
 	 *
-	 * @return boolean Should this be listed in Special:SpecialPages
+	 * @return bool Should this be listed in Special:SpecialPages
 	 */
 	function isListed() {
 		return GlobalUsage::onSharedRepo();
