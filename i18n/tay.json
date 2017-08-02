@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Hitaypayan"
+			"Hitaypayan",
+			"Translatealcd"
 		]
 	},
 	"globalusage": "Pinkaykita’ naha’ na kwara’ kkayal kay’ ana kahul inu’ squw biru’ qaniy",
-	"globalusage-on-wiki": "$2 na zyuwaw na pincyuwagan"
+	"globalusage-on-wiki": "$2 na zyuwaw na pincyuwagan",
+	"globalusage-more": "’nblaq mita’ quw biru’ na sslyan kwara’ zayzyuwaw  [[{{#Special:GlobalUsage}}/$1|pzyux na’ zyuwaw na kwara’ kin na kaykay’ ana’ inu’]]."
 }
