@@ -14,5 +14,6 @@
 	"globalusage-on-wiki": "Gebroek in $2",
 	"globalusage-of-file": "De volgende anger wiki's gebroeke dit bestandj:",
 	"globalusage-more": "Bekiek [[{{#Special:GlobalUsage}}/$1|wikiwied gebroek]] van dit bestandj.",
-	"globalusage-filterlocal": "Tuin gei lokaal gebroek"
+	"globalusage-filterlocal": "Tuin gei lokaal gebroek",
+	"mostgloballylinkedfiles-summary": "Lies van bestenj die 't dökste zeen ingebèd euver alle wiki's. Veur de geliekwaerdige lies die allein raekening hèltj mit gebroek op {{SITENAME}}, zuuch [[{{#special:MostLinkedFiles}}]]."
 }

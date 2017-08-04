@@ -6,7 +6,8 @@
 			"Esketti",
 			"McDutchie",
 			"Mbch331",
-			"Mainframe98"
+			"Mainframe98",
+			"Ooswesthoesbes"
 		]
 	},
 	"globalusage": "Globaal bestandsgebruik",
@@ -21,7 +22,7 @@
 	"globalusage-more": "[[{{#Special:GlobalUsage}}/$1|Globaal gebruik]] van dit bestand bekijken.",
 	"globalusage-filterlocal": "Lokaal gebruik niet weergeven",
 	"mostgloballylinkedfiles": "Wereldwijd meest gekoppelde bestanden",
-	"mostgloballylinkedfiles-summary": "Lijst van bestanden die zijn opgenomen met het hoogste aantal keer over alle wiki ' s. Voor het equivalent lijst die alleen rekening houdt met de gewoonte op {{SITENAME}}, zie [[{{#special:MostLinkedFiles}}]].",
+	"mostgloballylinkedfiles-summary": "Lijst van bestanden die zijn opgenomen met het hoogste aantal keer over alle wiki's. Voor het equivalent lijst die alleen rekening houdt met de gewoonte op {{SITENAME}}, zie [[{{#special:MostLinkedFiles}}]].",
 	"globallywantedfiles": "Globale gevraagde bestanden",
 	"globallywantedfiles-summary": "Lijst van bestanden die het vaakst zijn ingesloten over alle wiki's, terwijl ze niet bestaan. Voor de lijst die alleen rekening houdt met het gebruik op {{SITENAME}}, zie [[{{#special:WantedFiles}}]]. Bestandsgebruik van wiki's waar de eerste letter hoofdletter gevoelig is worden mogelijk niet correct  gerapporteerd als niet-bestaand.",
 	"globallywantedfiles-foreign-repo": "<strong>Waarschuwing:</strong> Deze wiki maakt gebruik van een externe bestandsrepository. Bestanden van de vreemde repository die in gebruik zijn op deze lijst als doorgehaald blauwe links, ondanks het feit dat ze bestaan.",
