@@ -5,6 +5,8 @@
 		]
 	},
 	"globalusage": "فائل دا کلجگ ورتاوا",
+	"globalusage-filename": "فائل دا ناں:",
+	"globalusage-ok": "ڳولو",
 	"globalusage-on-wiki": "$2 تے ورتݨ",
 	"globalusage-of-file": "ایہ ٻئے وکی ایں فائل کوں ورتیندن:",
 	"globalusage-more": "ایں فائل دا ݙیکھو [[{{#Special:GlobalUsage}}/$1|ٻیا جگ ورتݨ]] ."
