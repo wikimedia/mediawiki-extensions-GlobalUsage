@@ -19,7 +19,7 @@ class GlobalUsageQuery {
 	private $lastRow;
 
 	/**
-	 * @param $target mixed Title or array of db keys of target(s).
+	 * @param mixed $target Title or array of db keys of target(s).
 	 * If a title, can be a category or a file
 	 */
 	public function __construct( $target ) {
@@ -38,8 +38,8 @@ class GlobalUsageQuery {
 	/**
 	 * Set the offset parameter
 	 *
-	 * @param $offset string offset
-	 * @param $reversed bool True if this is the upper offset
+	 * @param string $offset offset
+	 * @param bool $reversed True if this is the upper offset
 	 * @return bool
 	 */
 	public function setOffset( $offset, $reversed = null ) {
@@ -94,7 +94,7 @@ class GlobalUsageQuery {
 	/**
 	 * Set the maximum amount of items to return. Capped at 500.
 	 *
-	 * @param $limit int The limit
+	 * @param int $limit The limit
 	 */
 	public function setLimit( $limit ) {
 		$this->limit = min( $limit, 500 );
@@ -110,7 +110,7 @@ class GlobalUsageQuery {
 
 	/**
 	 * Set whether to filter out the local usage
-	 * @param $value bool
+	 * @param bool $value
 	 */
 	public function filterLocal( $value = true ) {
 		$this->filterLocal = $value;

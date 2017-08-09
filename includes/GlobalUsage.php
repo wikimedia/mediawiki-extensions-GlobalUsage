@@ -13,8 +13,8 @@ class GlobalUsage {
 	/**
 	 * Construct a GlobalUsage instance for a certain wiki.
 	 *
-	 * @param $interwiki string Interwiki prefix of the wiki
-	 * @param $db IDatabase Database object
+	 * @param string $interwiki Interwiki prefix of the wiki
+	 * @param IDatabase $db Database object
 	 */
 	public function __construct( $interwiki, IDatabase $db ) {
 		$this->interwiki = $interwiki;
@@ -24,10 +24,10 @@ class GlobalUsage {
 	/**
 	 * Sets the images used by a certain page
 	 *
-	 * @param $title Title Title of the page
-	 * @param $images array Array of db keys of images used
-	 * @param $pageIdFlags int
-	 * @param $ticket int|null
+	 * @param Title $title Title of the page
+	 * @param array $images Array of db keys of images used
+	 * @param int $pageIdFlags
+	 * @param int|null $ticket
 	 */
 	public function insertLinks(
 		Title $title, array $images, $pageIdFlags = Title::GAID_FOR_UPDATE, $ticket = null
@@ -56,7 +56,7 @@ class GlobalUsage {
 
 	/**
 	 * Get all global images from a certain page
-	 * @param $id int
+	 * @param int $id
 	 * @return array
 	 */
 	public function getLinksFromPage( $id ) {
@@ -81,9 +81,9 @@ class GlobalUsage {
 	/**
 	 * Deletes all entries from a certain page to certain files
 	 *
-	 * @param $id int Page id of the page
-	 * @param $to mixed File name(s)
-	 * @param $ticket int|null
+	 * @param int $id Page id of the page
+	 * @param mixed $to File name(s)
+	 * @param int|null $ticket
 	 */
 	public function deleteLinksFromPage( $id, array $to = null, $ticket = null ) {
 		global $wgUpdateRowsPerQuery;
@@ -108,7 +108,7 @@ class GlobalUsage {
 	/**
 	 * Deletes all entries to a certain image
 	 *
-	 * @param $title Title Title of the file
+	 * @param Title $title Title of the file
 	 */
 	public function deleteLinksToFile( $title ) {
 		$this->db->delete(
@@ -124,7 +124,7 @@ class GlobalUsage {
 	/**
 	 * Copy local links to global table
 	 *
-	 * @param $title Title Title of the file to copy entries from.
+	 * @param Title $title Title of the file to copy entries from.
 	 */
 	public function copyLocalImagelinks( Title $title ) {
 		global $wgContLang;
@@ -157,8 +157,8 @@ class GlobalUsage {
 	/**
 	 * Changes the page title
 	 *
-	 * @param $id int Page id of the page
-	 * @param $title Title New title of the page
+	 * @param int $id Page id of the page
+	 * @param Title $title New title of the page
 	 */
 	public function moveTo( $id, $title ) {
 		$this->db->update(
@@ -287,7 +287,7 @@ class GlobalUsage {
 	}
 
 	/**
-	 * @param integer $index DB_MASTER/DB_REPLICA
+	 * @param int $index DB_MASTER/DB_REPLICA
 	 * @param array $groups
 	 * @return IDatabase
 	 */

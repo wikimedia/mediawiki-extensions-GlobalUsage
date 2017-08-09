@@ -16,6 +16,7 @@ class SpecialGloballyWantedFiles extends WantedFilesPage {
 	/**
 	 * Main execution function. Use the parent if we're on the right wiki.
 	 * If we're not on a shared repo, try to redirect there.
+	 * @param string $par
 	 */
 	function execute( $par ) {
 		if ( GlobalUsage::onSharedRepo() ) {
@@ -73,8 +74,8 @@ class SpecialGloballyWantedFiles extends WantedFilesPage {
 	 * We need to override this in order to link to Special:GlobalUsage
 	 * instead of Special:WhatLinksHere.
 	 *
-	 * @param $skin Skin
-	 * @param $result stdClass A row from the database
+	 * @param Skin $skin
+	 * @param stdClass $result A row from the database
 	 * @return String HTML to output
 	 */
 	public function formatResult( $skin, $result ) {

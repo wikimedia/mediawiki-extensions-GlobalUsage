@@ -16,6 +16,7 @@ class MostGloballyLinkedFilesPage extends MostimagesPage {
 	/**
 	 * Main execution function. Use the parent if we're on the right wiki.
 	 * If we're not on a shared repo, try to redirect there.
+	 * @param string $par
 	 */
 	function execute( $par ) {
 		if ( GlobalUsage::onSharedRepo() ) {
@@ -80,6 +81,7 @@ class MostGloballyLinkedFilesPage extends MostimagesPage {
 	 * In most common configs (including WMF's), this wouldn't be needed. However
 	 * for completeness support having the shared repo db be separate from the
 	 * globalimagelinks db.
+	 * @return IDatabase
 	 */
 	function getRecacheDB() {
 		global $wgGlobalUsageDatabase;

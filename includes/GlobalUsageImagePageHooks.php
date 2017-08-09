@@ -30,8 +30,8 @@ class GlobalUsageImagePageHooks {
 	/**
 	 * Show a global usage section on the image page
 	 *
-	 * @param $imagePage ImagePage
-	 * @param string $html HTML to add to the image page as global usage section
+	 * @param ImagePage $imagePage
+	 * @param string &$html HTML to add to the image page as global usage section
 	 * @return bool
 	 */
 	public static function onImagePageAfterImageLinks( $imagePage, &$html ) {
@@ -74,8 +74,8 @@ class GlobalUsageImagePageHooks {
 
 	/**
 	 * Show a link to the global image links in the TOC if there are any results available.
-	 * @param $imagePage ImagePage
-	 * @param $toc array
+	 * @param ImagePage $imagePage
+	 * @param array &$toc
 	 * @return bool
 	 */
 	public static function onImagePageShowTOC( $imagePage, &$toc ) {
@@ -91,7 +91,7 @@ class GlobalUsageImagePageHooks {
 	 * Check whether there are results for an image page. Checks whether the
 	 * file exists and is not local.
 	 *
-	 * @param $imagePage ImagePage
+	 * @param ImagePage $imagePage
 	 * @return bool
 	 */
 	protected static function hasResults( $imagePage ) {

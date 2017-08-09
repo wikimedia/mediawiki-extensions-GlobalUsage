@@ -21,7 +21,7 @@ class SpecialGlobalUsage extends SpecialPage {
 
 	/**
 	 * Entry point
-	 * @param $par String
+	 * @param string $par
 	 */
 	public function execute( $par ) {
 		$target = $par ? $par : $this->getRequest()->getVal( 'target' );
@@ -191,7 +191,7 @@ class SpecialGlobalUsage extends SpecialPage {
 
 	/**
 	 * Helper to format a specific item
-	 * @param $item array
+	 * @param array $item
 	 * @return String
 	 */
 	public static function formatItem( $item ) {
@@ -210,7 +210,7 @@ class SpecialGlobalUsage extends SpecialPage {
 	/**
 	 * Helper function to create the navbar, stolen from wfViewPrevNext
 	 *
-	 * @param $query GlobalUsageQuery An executed GlobalUsageQuery object
+	 * @param GlobalUsageQuery $query An executed GlobalUsageQuery object
 	 * @return string Navbar HTML
 	 */
 	protected function getNavBar( $query ) {
