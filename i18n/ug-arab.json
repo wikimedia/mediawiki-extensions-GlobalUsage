@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Sahran"
+			"Sahran",
+			"Uzdil"
 		]
 	},
-	"globalusage-ok": "ئىزدە"
+	"globalusage": "ئورتاق ھۆججەت ئىشلىتىلىشى",
+	"globalusage-ok": "ئىزدە",
+	"globalusage-on-wiki": "$2 دىكى ئىشلىتىشى"
 }
