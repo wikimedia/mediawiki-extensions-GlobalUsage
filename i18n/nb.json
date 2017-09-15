@@ -23,6 +23,7 @@
 	"globallywantedfiles-summary": "Liste over filer som har blitt brukt mest på alle wikier til tross for at de ikke eksisterer. For en tilsvarende liste med bruk kun på {{SITENAME}}, se [[{{#special:WantedFiles}}]]. Filbruk fra wikier som tillater små bokstaver i starten av sidenavn blir muligens feilrapportert.",
 	"globallywantedfiles-foreign-repo": "<strong>Advarsel:</strong> Denne wikien bruker et eksternt fillager. Filer fra det eksterne fillageret som er i bruk vil vises i listen som utstrekede blå lenker til tross for at de eksisterer.",
 	"apihelp-query+globalusage-description": "Returnerer global bildebruk for et visst bilde.",
+	"apihelp-query+globalusage-summary": "Returnerer global bildebruk for et visst bilde.",
 	"apihelp-query+globalusage-param-prop": "Hvilke egenskaper som skal returneres:\n;url:Legger til URL.\n;pageid:Legger til side-ID.\n;namespace:Legger til navneroms-ID.",
 	"apihelp-query+globalusage-param-limit": "Hvor mange lenker som skal returneres.",
 	"apihelp-query+globalusage-param-filterlocal": "Filtrer lokal bruk av filen.",
