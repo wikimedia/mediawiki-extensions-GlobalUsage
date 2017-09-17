@@ -9,5 +9,6 @@
 	"globalusage-filename": "kalungangan nu tangan:",
 	"globalusage-ok": "kilim",
 	"globalusage-on-wiki": "$2 ku pisaungay kalitemuhan kawaw",
-	"globalusage-more": "ciwsace kina tanganay a [[{{#Special:GlobalUsage}}/$1|yadah pulungamin pisaungay tu zasatu]]."
+	"globalusage-more": "ciwsace kina tanganay a [[{{#Special:GlobalUsage}}/$1|yadah pulungamin pisaungay tu zasatu]].",
+	"apihelp-query+globalusage-param-limit": "atatiku papina masasiketay."
 }
