@@ -10,5 +10,7 @@
 	"globalusage-ok": "kilim",
 	"globalusage-on-wiki": "$2 ku pisaungay kalitemuhan kawaw",
 	"globalusage-more": "ciwsace kina tanganay a [[{{#Special:GlobalUsage}}/$1|yadah pulungamin pisaungay tu zasatu]].",
+	"globalusage-filterlocal": "caay paazih itiniay pisaungay zasatu",
+	"mostgloballylinkedfiles": "sayadahay hamin-subal masasiket a tangan",
 	"apihelp-query+globalusage-param-limit": "atatiku papina masasiketay."
 }
