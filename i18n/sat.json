@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Albinus"
+			"Albinus",
+			"Manik Soren"
 		]
 	},
+	"globalusage": "ᱜᱚᱴᱟ ᱫᱷᱟᱹᱨᱛᱤ ᱯᱷᱟᱭᱤᱞ ᱵᱮᱵᱦᱟᱨ",
 	"globalusage-on-wiki": "$2 re beohar",
+	"globalusage-of-file": "ᱞᱟᱛᱟᱨᱨᱮᱱ ᱮᱴᱟᱜ ᱩᱭᱠᱤᱠᱚᱦᱚᱸ ᱱᱤᱭᱟᱹ ᱯᱷᱟᱭᱤᱞ ᱠᱩ ᱵᱮᱵᱦᱟᱨ ᱟᱠᱟᱫᱟ",
 	"globalusage-more": "Noa phayel reaḱ [[{{#Special:GlobalUsage}}/$1|arhõ aema dhạrtireaḱ beohar]] ńel."
 }
