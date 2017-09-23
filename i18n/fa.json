@@ -3,11 +3,13 @@
 		"authors": [
 			"Ebraminio",
 			"Huji",
-			"Wayiran"
+			"Wayiran",
+			"Ladsgroup"
 		]
 	},
 	"globalusage": "کاربرد سراسری پرونده",
 	"globalusage-for": "کاربرد سراسری برای «$1»",
+	"globalusage-filename": "نام پرونده:",
 	"globalusage-desc": "[[Special:GlobalUsage|صفحهٔ ویژه]] برای دیدن استفاده‌های سراسری",
 	"globalusage-ok": "جستجو",
 	"globalusage-text": "جستجوی استفاده‌های سراسری پرونده",
