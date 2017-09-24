@@ -106,7 +106,7 @@ class GlobalUsageImagePageHooks {
 		# we detect this is a bit hacky and less than ideal. See bug 23136 for
 		# a discussion.
 		global $wgGlobalUsageDatabase;
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 		if ( $file->getRepoName() == 'local'
 			&& $dbr->getDBname() != $wgGlobalUsageDatabase
 		) {

@@ -25,7 +25,7 @@ class RefreshGlobalImageLinks extends Maintenance {
 	public function execute() {
 		$pages = explode( ',', $this->getOption( 'pages' ) );
 
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 		$gdbw = GlobalUsage::getGlobalDB( DB_MASTER );
 		$gu = new GlobalUsage( wfWikiID(), $gdbw );
 
