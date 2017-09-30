@@ -6,5 +6,6 @@
 	},
 	"globalusage": "Outelizaçon global dun fexeiro",
 	"globalusage-on-wiki": "Outelizaçon na $2",
-	"globalusage-of-file": "Las seguintes wikis outelizan este fexeiro:"
+	"globalusage-of-file": "Las seguintes wikis outelizan este fexeiro:",
+	"globalusage-more": "Ber [[{{#Special:GlobalUsage}}/$1|la outelizaçon global]] deste fexeiro."
 }
