@@ -23,5 +23,6 @@
 	"globallywantedfiles": "پرونده‌های موردنیاز سراسری",
 	"globallywantedfiles-summary": "فهرست همهٔ پرونده‌هایی که با بیشترین تعداد بین همهٔ ویکی‌ها استفاده شده به جز آن‌هایی که موجود نیستند. برای معادل این فهرست که فقط استفاده‌های در {{SITENAME}} را در نظر می‌گیرد، [[{{#special:WantedFiles}}]] را ببینید.",
 	"globallywantedfiles-foreign-repo": "<strong>اخطار:</strong> این ویکی از یک پروندهٔ مخزن خارجی استفاده می‌کند. پرونده‌های مخزن خارجی که در استفاده هستند در این فهرست اگر موجود باشند با پیوندهای آبی نمایش داده می‌شوند.",
-	"apihelp-query+globalusage-param-limit": "تعداد پیوندها برای بازگرداندن"
+	"apihelp-query+globalusage-param-limit": "تعداد پیوندها برای بازگرداندن",
+	"apihelp-query+globalusage-example-1": "گرفتن استفاده‌های [[:File:Example.jpg]]"
 }
