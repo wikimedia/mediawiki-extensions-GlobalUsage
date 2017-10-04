@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Benel",
-			"Bunukwiki"
+			"Bunukwiki",
+			"Tokoabibi"
 		]
 	},
 	"globalusage": "golobalo tangan pisaungay kalitemuhan kawaw",
@@ -11,8 +12,11 @@
 	"globalusage-ok": "kilim",
 	"globalusage-text": "mikilim hamin-subal tangan pisaungay zasatu",
 	"globalusage-on-wiki": "$2 ku pisaungay kalitemuhan kawaw",
+	"globalusage-of-file": "isasa’ zuma Wiki masaungay tina tangan:",
 	"globalusage-more": "ciwsace kina tanganay a [[{{#Special:GlobalUsage}}/$1|yadah pulungamin pisaungay tu zasatu]].",
 	"globalusage-filterlocal": "caay paazih itiniay pisaungay zasatu",
 	"mostgloballylinkedfiles": "sayadahay hamin-subal masasiket a tangan",
-	"apihelp-query+globalusage-param-limit": "atatiku papina masasiketay."
+	"apihelp-query+globalusage-description": "maminay tu zumaay zunga a hamin-subal zunga pisaungay zasatu",
+	"apihelp-query+globalusage-param-limit": "atatiku papina masasiketay.",
+	"apihelp-query+globalusage-param-filterlocal": "misebseb tu tangan itiniay a pisaungay zasatu."
 }
