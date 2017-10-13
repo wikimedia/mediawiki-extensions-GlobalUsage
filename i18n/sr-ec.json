@@ -5,7 +5,8 @@
 			"Sasa Stefanovic",
 			"Жељко Тодоровић",
 			"Михајло Анђелковић",
-			"Milicevic01"
+			"Milicevic01",
+			"Obsuser"
 		]
 	},
 	"globalusage": "Глобална употреба датотеке",
@@ -16,7 +17,7 @@
 	"globalusage-text": "Претрага глобалне употребе датотеке",
 	"globalusage-no-results": "[[:$1]] се не користи на другим викијима.",
 	"globalusage-on-wiki": "Употреба на $2",
-	"globalusage-of-file": "Други Викији који користе ову датотеку:",
+	"globalusage-of-file": "Други викији који користе ову датотеку:",
 	"globalusage-more": "Још [[{{#Special:GlobalUsage}}/$1|глобалног коришћења]] ове датотеке.",
 	"globalusage-filterlocal": "Не приказуј локалну употребу",
 	"mostgloballylinkedfiles": "Датотеке с највише веза глобално",
