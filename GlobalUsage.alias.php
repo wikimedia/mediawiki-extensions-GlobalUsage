@@ -347,6 +347,13 @@ $specialPageAliases['uk'] = [
 	'GlobalUsage' => [ 'Глобальне_використання', 'Глобальное_использование' ],
 ];
 
+/** Urdu (اردو) */
+$specialPageAliases['ur'] = [
+	'GlobalUsage' => [ 'عالمی_استعمال' ],
+	'MostGloballyLinkedFiles' => [ 'بیشتر_عالمی_مربوط_فائلیں' ],
+	'GloballyWantedFiles' => [ 'عالمی_مطلوب_فائلیں' ],
+];
+
 /** Venetian (vèneto) */
 $specialPageAliases['vec'] = [
 	'GlobalUsage' => [ 'UtilizoGlobal' ],
