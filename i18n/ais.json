@@ -17,6 +17,7 @@
 	"globalusage-more": "ciwsace kina tanganay a [[{{#Special:GlobalUsage}}/$1|yadah pulungamin pisaungay tu zasatu]].",
 	"globalusage-filterlocal": "caay paazih itiniay pisaungay zasatu",
 	"mostgloballylinkedfiles": "sayadahay hamin-subal masasiket a tangan",
+	"globallywantedfiles": "hamin-subal maydihay tangan",
 	"apihelp-query+globalusage-description": "maminay tu zumaay zunga a hamin-subal zunga pisaungay zasatu",
 	"apihelp-query+globalusage-param-limit": "atatiku papina masasiketay.",
 	"apihelp-query+globalusage-param-filterlocal": "misebseb tu tangan itiniay a pisaungay zasatu."
