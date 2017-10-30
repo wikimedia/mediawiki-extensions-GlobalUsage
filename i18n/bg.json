@@ -8,7 +8,7 @@
 		]
 	},
 	"globalusage": "Глобално използване на файл",
-	"globalusage-for": "Обща употреба на \"$1\"",
+	"globalusage-for": "Обща употреба на „$1“",
 	"globalusage-filename": "Име на файл:",
 	"globalusage-desc": "[[Special:GlobalUsage|Специална страница]] за преглед на глобалното използване на файл",
 	"globalusage-ok": "Търсене",
