@@ -5,14 +5,19 @@
 			"عثمان خان شاہ",
 			"محمد افضل",
 			"Obaid Raza",
-			"Muhammad Shuaib"
+			"Muhammad Shuaib",
+			"BukhariSaeed"
 		]
 	},
 	"globalusage": "فائل کا عالمی استعمال",
+	"globalusage-filename": "فائل کا نام:",
+	"globalusage-desc": "فائل کے عالمگیر استعمال کے لیے [[Special:GlobalUsage|خاص صفحہ]] دیکھیے",
 	"globalusage-ok": "تلاش",
 	"globalusage-text": "گلوبل فائل استعمال کی تلاش",
+	"globalusage-no-results": "[[:$1]] کا استعمال دوسری ویکیپیڈیاؤں میں نہیں کیا گیا ہے۔",
 	"globalusage-on-wiki": "$2 پر استعمال",
 	"globalusage-of-file": "مندرجہ ذیل ویکیوں میں یہ فائل زیر استعمال ہے:",
 	"globalusage-more": "اس  ملف/فائل کا [[{{#Special:GlobalUsage}}/$1|مزید عالمی استعمال]] دیکھیے۔",
-	"globalusage-filterlocal": "مقامی استعمال کو دکھانے نہیں"
+	"globalusage-filterlocal": "مقامی استعمال کو دکھانے نہیں",
+	"mostgloballylinkedfiles": "زیادہ تر عالمگیری مربوط فائلیں"
 }
