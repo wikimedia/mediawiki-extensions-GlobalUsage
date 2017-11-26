@@ -26,5 +26,6 @@
 	"apihelp-query+globalusage-param-prop": "amaminay a susin:\n;url: micunus url.\n;pageid:micunus kasabelih ID.\n;namespace:micunus pangangananay a salaedan ID.",
 	"apihelp-query+globalusage-param-limit": "atatiku papina masasiketay.",
 	"apihelp-query+globalusage-param-filterlocal": "misebseb tu tangan itiniay a pisaungay zasatu.",
-	"apihelp-query+globalusage-example-1": "maala [[:File:Example.jpg]] saungay zasatu"
+	"apihelp-query+globalusage-example-1": "maala [[:File:Example.jpg]] saungay zasatu",
+	"globalusage-header": "tina kasabelih paazih tangan i zuma wiki mapasaungay i zasatu, kisu a kapah tu i tangan u pisapuelac tu kasabelih sazikuzay matepa uyniyay cesyun."
 }
