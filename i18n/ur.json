@@ -17,7 +17,7 @@
 	"globalusage-no-results": "[[:$1]] کا استعمال دوسری ویکیپیڈیاؤں میں نہیں کیا گیا ہے۔",
 	"globalusage-on-wiki": "$2 پر استعمال",
 	"globalusage-of-file": "مندرجہ ذیل ویکیوں میں یہ فائل زیر استعمال ہے:",
-	"globalusage-more": "اس  ملف/فائل کا [[{{#Special:GlobalUsage}}/$1|مزید عالمی استعمال]] دیکھیے۔",
+	"globalusage-more": "اس فائل کا [[{{#Special:GlobalUsage}}/$1|مزید عالمی استعمال]] دیکھیے۔",
 	"globalusage-filterlocal": "مقامی استعمال کو دکھانے نہیں",
 	"mostgloballylinkedfiles": "زیادہ تر عالمگیری مربوط فائلیں"
 }
