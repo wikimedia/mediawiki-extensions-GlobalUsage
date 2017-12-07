@@ -6,5 +6,6 @@
 	},
 	"globalusage": "yennar file malyn",
 	"globalusage-on-wiki": "malyn $2",
-	"globalusage-of-file": "Ngawaliny wam-wikis ngarlark file:"
+	"globalusage-of-file": "Ngawaliny wam-wikis ngarlark file:",
+	"globalusage-more": "Djinang [[{{#Special:GlobalUsage}}/$1|ngatti yennar malyn]] nidja file."
 }
