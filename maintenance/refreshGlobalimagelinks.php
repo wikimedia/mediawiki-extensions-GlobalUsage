@@ -3,7 +3,7 @@
  * Maintenance script to populate the globalimagelinks table. Needs to be run
  * on all wikis.
  */
-$path = dirname( dirname( __DIR__ ) );
+$path = dirname( dirname( dirname( __DIR__ ) ) );
 
 if ( getenv( 'MW_INSTALL_PATH' ) !== false ) {
 	$path = getenv( 'MW_INSTALL_PATH' );
