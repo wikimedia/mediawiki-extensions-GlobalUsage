@@ -10,7 +10,7 @@
 	},
 	"type": "specialpage",
 	"SpecialPages": {
-		"MostGloballyLinkedFiles": "MostGloballyLinkedFilesPage",
+		"MostGloballyLinkedFiles": "SpecialMostGloballyLinkedFiles",
 		"GloballyWantedFiles": "SpecialGloballyWantedFiles",
 		"GlobalUsage": "SpecialGlobalUsage"
 	},
@@ -36,7 +36,7 @@
 		"GlobalUsageQuery": "includes/GlobalUsageQuery.php",
 		"ApiQueryGlobalUsage": "includes/ApiQueryGlobalUsage.php",
 		"GlobalUsageCachePurgeJob": "includes/GlobalUsageCachePurgeJob.php",
-		"MostGloballyLinkedFilesPage": "includes/SpecialMostGloballyLinkedFiles.php",
+		"SpecialMostGloballyLinkedFiles": "includes/SpecialMostGloballyLinkedFiles.php",
 		"SpecialGloballyWantedFiles": "includes/SpecialGloballyWantedFiles.php"
 	},
 	"@doc": [

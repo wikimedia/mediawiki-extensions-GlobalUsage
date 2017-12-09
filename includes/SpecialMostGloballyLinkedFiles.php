@@ -7,7 +7,7 @@
  * @author Brian Wolff <bawolff+wn@gmail.com>
  */
 
-class MostGloballyLinkedFilesPage extends MostimagesPage {
+class SpecialMostGloballyLinkedFiles extends MostimagesPage {
 
 	function __construct( $name = 'MostGloballyLinkedFiles' ) {
 		parent::__construct( $name );
