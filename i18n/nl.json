@@ -7,7 +7,8 @@
 			"McDutchie",
 			"Mbch331",
 			"Mainframe98",
-			"Ooswesthoesbes"
+			"Ooswesthoesbes",
+			"Mar(c)"
 		]
 	},
 	"globalusage": "Globaal bestandsgebruik",
@@ -27,7 +28,7 @@
 	"globallywantedfiles-summary": "Lijst van bestanden die het vaakst zijn ingesloten over alle wiki's, terwijl ze niet bestaan. Voor de lijst die alleen rekening houdt met het gebruik op {{SITENAME}}, zie [[{{#special:WantedFiles}}]]. Bestandsgebruik van wiki's waar de eerste letter hoofdletter gevoelig is worden mogelijk niet correct  gerapporteerd als niet-bestaand.",
 	"globallywantedfiles-foreign-repo": "<strong>Waarschuwing:</strong> Deze wiki maakt gebruik van een externe bestandsrepository. Bestanden van de vreemde repository die in gebruik zijn op deze lijst als doorgehaald blauwe links, ondanks het feit dat ze bestaan.",
 	"apihelp-query+globalusage-description": "Weergeeft het globale gebruik voor een bepaalde afbeelding.",
-	"apihelp-query+globalusage-summary": "Weergeeft het globale gebruik voor een bepaalde afbeelding.",
+	"apihelp-query+globalusage-summary": "Retourneert het globale gebruik voor een bepaalde afbeelding.",
 	"apihelp-query+globalusage-param-prop": "Welke eigenschappen er moeten worden teruggestuurd:\n;url:Voegt de URL toe.\n;pageid:Voegt de pagina-ID toe.\n;namespace:Voegt de naamruimte-ID toe.",
 	"apihelp-query+globalusage-param-limit": "Hoeveel links er moeten worden teruggestuurd.",
 	"apihelp-query+globalusage-param-filterlocal": "Lokaal gebruik van dit bestand filteren.",
