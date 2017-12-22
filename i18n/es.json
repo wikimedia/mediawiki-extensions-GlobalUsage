@@ -20,7 +20,7 @@
 	"globalusage-text": "Buscar uso de archivo global",
 	"globalusage-no-results": "[[:$1]] no se utiliza en otros wikis.",
 	"globalusage-on-wiki": "Uso en $2",
-	"globalusage-of-file": "Los siguientes wiki usan este archivo:",
+	"globalusage-of-file": "Los wikis siguientes utilizan este archivo:",
 	"globalusage-more": "Ver [[{{#Special:GlobalUsage}}/$1|más uso global]] de este archivo.",
 	"globalusage-filterlocal": "No mostrar el uso local",
 	"mostgloballylinkedfiles": "Archivos más enlazados globalmente",
