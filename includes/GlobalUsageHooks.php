@@ -221,8 +221,8 @@ class GlobalUsageHooks {
 	}
 
 	public static function onwgQueryPages( &$queryPages ) {
-		$queryPages[] = [ 'GlobalUsage\SpecialMostGloballyLinkedFiles', 'MostGloballyLinkedFiles' ];
-		$queryPages[] = [ 'GlobalUsage\SpecialGloballyWantedFiles', 'GloballyWantedFiles' ];
+		$queryPages[] = [ 'SpecialMostGloballyLinkedFiles', 'MostGloballyLinkedFiles' ];
+		$queryPages[] = [ 'SpecialGloballyWantedFiles', 'GloballyWantedFiles' ];
 		return true;
 	}
 }
