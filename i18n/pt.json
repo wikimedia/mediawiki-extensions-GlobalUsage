@@ -24,11 +24,11 @@
 	"mostgloballylinkedfiles-summary": "Lista com os ficheiros mais incorporados em todas as wikis. Para a lista equivalente que leva em conta apenas utilizações na wiki {{SITENAME}}, veja [[{{#special:MostLinkedFiles}}]].",
 	"globallywantedfiles": "Ficheiros procurados globalmente",
 	"globallywantedfiles-summary": "Lista com os ficheiros mais incorporados em todas as wikis, mesmo que não existam. Para ver a lista equivalente, que só considera ficheiros existentes na wiki {{SITENAME}}, veja [[{{#special:WantedFiles}}]]. Os ficheiros em wikis que diferenciam o uso de maiúsculas e minúsculas na primeira letra do nome do ficheiro, podem ser incorretamente classificados como inexistentes.",
-	"globallywantedfiles-foreign-repo": "<strong>Aviso:</strong> Esta wiki usa um repositório externo de ficheiros. Os ficheiros do repositório externo que sejam utilizados aparecem nesta lista como links azuis cruzados, apesar de existirem.",
+	"globallywantedfiles-foreign-repo": "<strong>Aviso:</strong> Esta wiki usa um repositório externo de ficheiros. Os ficheiros do repositório externo que sejam utilizados aparecem nesta lista como hiperligações azuis cruzadas, apesar de existirem.",
 	"apihelp-query+globalusage-description": "Devolve a utilização global de uma certa imagem.",
 	"apihelp-query+globalusage-summary": "Devolve a utilização global de uma certa imagem.",
 	"apihelp-query+globalusage-param-prop": "As propriedades a devolver:\n;url:Adiciona um URL.\n;pageid:Adiciona um identificador de página.\n;namespace:Adiciona um identificador de espaço nominal.",
-	"apihelp-query+globalusage-param-limit": "Quantos links devolver.",
+	"apihelp-query+globalusage-param-limit": "O número de hiperligações a serem devolvidas.",
 	"apihelp-query+globalusage-param-filterlocal": "Filtar a utilização local do ficheiro.",
 	"apihelp-query+globalusage-example-1": "Obter a utilização de [[:File:Example.jpg]]",
 	"globalusage-header": "Esta página mostra em que wikis é utilizado um ficheiro. Pode também encontrar essa informação na parte inferior da página de descrição."
