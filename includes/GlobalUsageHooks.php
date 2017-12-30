@@ -223,6 +223,9 @@ class GlobalUsageHooks {
 	public static function onwgQueryPages( &$queryPages ) {
 		$queryPages[] = [ 'SpecialMostGloballyLinkedFiles', 'MostGloballyLinkedFiles' ];
 		$queryPages[] = [ 'SpecialGloballyWantedFiles', 'GloballyWantedFiles' ];
+		if ( GlobalUsage::onSharedRepo() ) {
+			$queryPages[] = [ 'SpecialGloballyUnusedFiles', 'GloballyUnusedFiles' ];
+		}
 		return true;
 	}
 }
