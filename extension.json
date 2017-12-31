@@ -12,6 +12,7 @@
 	"SpecialPages": {
 		"MostGloballyLinkedFiles": "SpecialMostGloballyLinkedFiles",
 		"GloballyWantedFiles": "SpecialGloballyWantedFiles",
+		"GloballyUnusedFiles": "SpecialGloballyUnusedFiles",
 		"GlobalUsage": "SpecialGlobalUsage"
 	},
 	"JobClasses": {
@@ -37,7 +38,8 @@
 		"ApiQueryGlobalUsage": "includes/ApiQueryGlobalUsage.php",
 		"GlobalUsageCachePurgeJob": "includes/GlobalUsageCachePurgeJob.php",
 		"SpecialMostGloballyLinkedFiles": "includes/SpecialMostGloballyLinkedFiles.php",
-		"SpecialGloballyWantedFiles": "includes/SpecialGloballyWantedFiles.php"
+		"SpecialGloballyWantedFiles": "includes/SpecialGloballyWantedFiles.php",
+		"SpecialGloballyUnusedFiles": "includes/SpecialGloballyUnusedFiles.php"
 	},
 	"@doc": [
 		"Things that can cause link updates:",
