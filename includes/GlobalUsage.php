@@ -262,7 +262,7 @@ class GlobalUsage {
 			'options' => [ 'GROUP BY' => 'gil_to' ],
 			'join_conds' => [
 				'img1' => [ 'LEFT JOIN',
-					'gil_to = img_name'
+					'gil_to = img1.img_name'
 				],
 				'page' => [ 'LEFT JOIN', [
 					'gil_to = page_title',
