@@ -40,7 +40,7 @@
 	"apihelp-query+globalusage-example-1": "{{doc-apihelp-example|query+globalusage}}",
 	"globalusage-header": "Text message used in [[Special:GlobalUsage]] right above the form describing the purpose of special page.",
 	"globalusage-header-image": "{{notranslate}}. Extra header for on-wiki customization. $1 - File being looked for.",
-	"globallyunusedfilestext": "Header message of [[Special:GloballyUnusedFiles]]",
 	"globallyunusedfiles": "{{doc-special|GloballyUnusedFiles}}",
+	"globallyunusedfilestext": "Header message of [[Special:GloballyUnusedFiles]]",
 	"globallyunusedfiles-error-nonsharedrepo": "This error is displayed if user tries to access wiki which is not on shared repo"
 }
