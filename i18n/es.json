@@ -33,5 +33,8 @@
 	"apihelp-query+globalusage-param-limit": "Cuántos enlaces se devolverán.",
 	"apihelp-query+globalusage-param-filterlocal": "Filtrar uso local del archivo.",
 	"apihelp-query+globalusage-example-1": "Obtener uso de [[:File:Example.jpg]]",
-	"globalusage-header": "Esta página muestra donde se usa un archivo en otros wikis. También puedes encontrar esta información en la parte inferior la página de descripción del archivo."
+	"globalusage-header": "Esta página muestra donde se usa un archivo en otros wikis. También puedes encontrar esta información en la parte inferior la página de descripción del archivo.",
+	"globallyunusedfiles": "Archivos en desuso globalmente",
+	"globallyunusedfilestext": "Los archivos siguientes existen pero no están incrustados en ninguna página de ningún wiki.",
+	"globallyunusedfiles-error-nonsharedrepo": "Este wiki no pertenece al repositorio compartido"
 }

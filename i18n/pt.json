@@ -31,5 +31,8 @@
 	"apihelp-query+globalusage-param-limit": "O número de hiperligações a serem devolvidas.",
 	"apihelp-query+globalusage-param-filterlocal": "Filtar a utilização local do ficheiro.",
 	"apihelp-query+globalusage-example-1": "Obter a utilização de [[:File:Example.jpg]]",
-	"globalusage-header": "Esta página mostra em que wikis é utilizado um ficheiro. Pode também encontrar essa informação na parte inferior da página de descrição."
+	"globalusage-header": "Esta página mostra em que wikis é utilizado um ficheiro. Pode também encontrar essa informação na parte inferior da página de descrição.",
+	"globallyunusedfiles": "Ficheiros não utilizados globalmente",
+	"globallyunusedfilestext": "Os seguintes ficheiros existem mas não foram incorporados em nenhuma página de nenhuma wiki.",
+	"globallyunusedfiles-error-nonsharedrepo": "Esta wiki não está no repositório partilhado"
 }
