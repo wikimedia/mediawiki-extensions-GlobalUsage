@@ -5,7 +5,8 @@
 			"Sator",
 			"Theklan",
 			"Xabier Armendaritz",
-			"Subi"
+			"Subi",
+			"Mikel Ibaiba"
 		]
 	},
 	"globalusage": "Fitxategiaren erabilera orokorra",
@@ -15,5 +16,6 @@
 	"globalusage-text": "Fitxategiaren erabilera orokorra bilatu.",
 	"globalusage-on-wiki": "$2 proiektuan duen erabilera",
 	"globalusage-of-file": "Hurrengo beste wikiek fitxategi hau darabilte:",
-	"globalusage-more": "Ikus fitxategi honen [[{{#Special:GlobalUsage}}/$1|erabilpen global gehiago]]."
+	"globalusage-more": "Ikus fitxategi honen [[{{#Special:GlobalUsage}}/$1|erabilpen global gehiago]].",
+	"globallyunusedfiles": "Globalki fitxategi erabiligabeak"
 }
