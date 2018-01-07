@@ -4,7 +4,8 @@
 			"Joseph",
 			"Vito Genovese",
 			"Stultiwikia",
-			"Arystanbek"
+			"Arystanbek",
+			"Hedda"
 		]
 	},
 	"globalusage": "Küresel dosya kullanımı",
@@ -24,5 +25,6 @@
 	"apihelp-query+globalusage-param-prop": "Hangi özellikleri dönmek için:\n;url:url Ekler.\n;pageıd:sayfa NUMARASI Ekler.\n;AD:AD KİMLİĞİ Ekler.",
 	"apihelp-query+globalusage-param-limit": "Dönüş için kaç bağlantıları.",
 	"apihelp-query+globalusage-param-filterlocal": "Dosya filtre yerel kullanımı.",
-	"apihelp-query+globalusage-example-1": "Kullanımı [[:File:Example.jpg]]olsun"
+	"apihelp-query+globalusage-example-1": "Kullanımı [[:File:Example.jpg]]olsun",
+	"globallyunusedfiles": "Küresel olarak kullanılmayan dosyalar"
 }
