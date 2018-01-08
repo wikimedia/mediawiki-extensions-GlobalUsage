@@ -26,5 +26,8 @@
 	"apihelp-query+globalusage-param-limit": "Cuántos enllaces hai que devolver.",
 	"apihelp-query+globalusage-param-filterlocal": "Filtriar l'usu llocal del ficheru.",
 	"apihelp-query+globalusage-example-1": "Ver l'usu de [[:File:Example.jpg]]",
-	"globalusage-header": "Esta páxina amuesa onde s'usa un ficheru n'otres wikis. Tamién puedes atopar esta información na parte inferior de la páxina de descripción del ficheru."
+	"globalusage-header": "Esta páxina amuesa onde s'usa un ficheru n'otres wikis. Tamién puedes atopar esta información na parte inferior de la páxina de descripción del ficheru.",
+	"globallyunusedfiles": "Ficheros sin usu globalmente",
+	"globallyunusedfilestext": "Los ficheros siguientes esisten pero nun tán inxertaos en nenguna páxina de nenguna wiki.",
+	"globallyunusedfiles-error-nonsharedrepo": "Esta wiki nun ta nel atroxamientu compartíu"
 }

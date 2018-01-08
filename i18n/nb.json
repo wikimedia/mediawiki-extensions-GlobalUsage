@@ -28,5 +28,8 @@
 	"apihelp-query+globalusage-param-limit": "Hvor mange lenker som skal returneres.",
 	"apihelp-query+globalusage-param-filterlocal": "Filtrer lokal bruk av filen.",
 	"apihelp-query+globalusage-example-1": "Få bruk av [[:File:Example.jpg]]",
-	"globalusage-header": "Denne siden viser hvor en fil brukes på andre wikier. Du kan også finne denne informasjonen på bunnen av filbeskrivelsessiden."
+	"globalusage-header": "Denne siden viser hvor en fil brukes på andre wikier. Du kan også finne denne informasjonen på bunnen av filbeskrivelsessiden.",
+	"globallyunusedfiles": "Globalt ubrukte filer",
+	"globallyunusedfilestext": "Følgende filer fins, men brukes ikke på noen sider på noen wikier.",
+	"globallyunusedfiles-error-nonsharedrepo": "Denne wikien er ikke på det delte fillageret"
 }
