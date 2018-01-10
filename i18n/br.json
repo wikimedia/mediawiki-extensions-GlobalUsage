@@ -15,5 +15,6 @@
 	"globalusage-of-file": "Ober a ra ar wikioù da-heul gant ar restr-mañ :",
 	"globalusage-more": "Gwelet [[{{#Special:GlobalUsage}}/$1|muioc'h eus implij hollek]] ar restr-mañ.",
 	"globalusage-filterlocal": "Arabat diskouez an implij lec'hel",
-	"globallyunusedfiles": "Restroù implijet ral boaz"
+	"globallyunusedfiles": "Restroù implijet ral boaz",
+	"globallyunusedfiles-error-nonsharedrepo": "Ar wiki-se n'eo war ar milec'h rannañ"
 }
