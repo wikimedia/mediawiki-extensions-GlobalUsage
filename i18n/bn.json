@@ -18,5 +18,6 @@
 	"globalusage-on-wiki": "$2-এ ব্যবহার",
 	"globalusage-of-file": "নিচের অন্যান্য উইকিগুলো এই ফাইলটি ব্যবহার করে:",
 	"globalusage-more": "এই ফাইলের [[{{#Special:GlobalUsage}}/$1|অন্যান্য বৈশ্বিক ব্যবহার]] দেখুন।",
-	"globalusage-filterlocal": "স্থানীয় ব্যবহার দেখানোর প্রয়োজন নেই"
+	"globalusage-filterlocal": "স্থানীয় ব্যবহার দেখানোর প্রয়োজন নেই",
+	"globallyunusedfilestext": "নিম্নোক্ত ফাইলগুলি বিদ্যমান কিন্তু কোনো উইকির কোনো পৃষ্ঠাতে তা সংযুক্ত করা হয় নি।"
 }
