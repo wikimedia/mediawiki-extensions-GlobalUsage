@@ -11,7 +11,7 @@
 	"globalusage-text": "Rechèrchiér l’usâjo globâl du fichiér",
 	"globalusage-no-results": "[[:$1]] est pas utilisâ sur d’ôtros vouiquis.",
 	"globalusage-on-wiki": "Usâjo dessus $2",
-	"globalusage-of-file": "Cetos ôtros vouiquis utilisont ceti fichiér :",
+	"globalusage-of-file": "Cetos ôtros vouiquis emplèyont cél fichiér :",
 	"globalusage-more": "Vêre l’[[{{#Special:GlobalUsage}}/$1|usâjo gllobâl]] de cél fichiér.",
 	"globalusage-filterlocal": "Pas montrar l’usâjo local"
 }

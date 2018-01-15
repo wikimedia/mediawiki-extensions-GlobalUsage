@@ -34,5 +34,6 @@
 	"apihelp-query+globalusage-example-1": "Obter uso de[[:File:Example.jpg]]",
 	"globalusage-header": "Esta página mostra em quais páginas de outras wikis um arquivo é usado. Essa informação também pode ser encontrada na parte inferior da página de descrição de um arquivo.",
 	"globallyunusedfiles": "Arquivos não utilizados globalmente",
+	"globallyunusedfilestext": "Os seguintes arquivos existem mas não foram incorporados em nenhuma página de nenhuma wiki.",
 	"globallyunusedfiles-error-nonsharedrepo": "Este wiki não está no repositório compartilhado"
 }
