@@ -31,5 +31,8 @@
 	"apihelp-query+globalusage-param-limit": "כמה קישורים להחזיר.",
 	"apihelp-query+globalusage-param-filterlocal": "סינון לפי השימוש המקומי בקובץ.",
 	"apihelp-query+globalusage-example-1": "קבלת שימוש בקובץ [[:File:Example.jpg]]",
-	"globalusage-header": "הדף הזה מציג איפה הקובץ משמש באתרי ויקי אחרים. אפשר גם למצוא את המידע הזה בתחתית דף תיאור הקובץ."
+	"globalusage-header": "הדף הזה מציג איפה הקובץ משמש באתרי ויקי אחרים. אפשר גם למצוא את המידע הזה בתחתית דף תיאור הקובץ.",
+	"globallyunusedfiles": "קבצים שאינם בשימוש גלובלי",
+	"globallyunusedfilestext": "הקבצים הבאים קיימים, אבל אינם מוטמעים בשום דף בשום ויקי.",
+	"globallyunusedfiles-error-nonsharedrepo": "הוויקי הזה אניו במאגר משותף"
 }

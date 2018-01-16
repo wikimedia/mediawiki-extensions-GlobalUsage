@@ -6,10 +6,11 @@
 			"OsamaK",
 			"Abanima",
 			"Maroen1990",
-			"أحمد"
+			"أحمد",
+			"ديفيد"
 		]
 	},
-	"globalusage": "استخدامات الملف",
+	"globalusage": "الاستخدام العالمي للملف",
 	"globalusage-for": "استخدام \"$1\" العام",
 	"globalusage-filename": "اسم الملف:",
 	"globalusage-desc": "[[Special:GlobalUsage|صفحة خاصة]] لرؤية الاستخدام العام للملف",
@@ -17,7 +18,7 @@
 	"globalusage-text": "ابحث في الاستخدام العام لملف",
 	"globalusage-no-results": "[[:$1]] غير مستخدم في ويكيات أخرى.",
 	"globalusage-on-wiki": "الاستخدام في $2",
-	"globalusage-of-file": "الويكيات التالية تستخدم هذا الملف:",
+	"globalusage-of-file": "الويكيات الأخرى التالية تستخدم هذا الملف:",
 	"globalusage-more": "اعرض [[{{#Special:GlobalUsage}}/$1|المزيد من الاستخدام العام]] لهذا الملف.",
 	"globalusage-filterlocal": "لا تعرض الاستخدام المحلي",
 	"mostgloballylinkedfiles": "أكثر الملفات وصلاً على جميع الويكيات",
