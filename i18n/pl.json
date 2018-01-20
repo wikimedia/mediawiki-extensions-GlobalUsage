@@ -30,5 +30,6 @@
 	"apihelp-query+globalusage-param-limit": "Liczba linków do zwrócenia.",
 	"apihelp-query+globalusage-param-filterlocal": "Pomiń informacje o lokalnym użyciu pliku.",
 	"apihelp-query+globalusage-example-1": "Pobierz informacje o wykorzystaniu [[:File:Example.jpg]]",
-	"globalusage-header": "Ta strona pokazuje, gdzie plik został wykorzystany na innych wiki. Te informacje wyświetlają się również w dolnej części strony opisu pliku."
+	"globalusage-header": "Ta strona pokazuje, gdzie plik został wykorzystany na innych wiki. Te informacje wyświetlają się również w dolnej części strony opisu pliku.",
+	"globallyunusedfilestext": "Następujące pliki istnieją, ale nie są osadzone na żadnej stronie żadnej wiki."
 }
