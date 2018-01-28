@@ -20,6 +20,8 @@ class RefreshGlobalImageLinks extends Maintenance {
 		$this->addOption( 'start-image', 'il_to of the image to start with' );
 		$this->addOption( 'pages', 'CSV of (existing,nonexisting)', true, true );
 		$this->setBatchSize( 500 );
+
+		$this->requireExtension( 'Global Usage' );
 	}
 
 	public function execute() {
