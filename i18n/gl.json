@@ -30,5 +30,7 @@
 	"apihelp-query+globalusage-param-filterlocal": "Filtrar o uso local do ficheiro.",
 	"apihelp-query+globalusage-example-1": "Obter o uso de [[:File:Example.jpg]]",
 	"globalusage-header": "Esta páxina amosa o uso dun ficheiro noutras wikis. Tamén pode atopar esta información ao final da páxina de descrición do ficheiro.",
-	"globallyunusedfiles": "Ficheiros en desuso globalmente"
+	"globallyunusedfiles": "Ficheiros en desuso globalmente",
+	"globallyunusedfilestext": "Os ficheiros seguintes existen pero non están incluídos en ningunha páxina de ningún wiki.",
+	"globallyunusedfiles-error-nonsharedrepo": "Este wiki non pertence ó repositorio compartido"
 }
