@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"LeGuyanaisPure"
+		]
+	},
+	"globalusage": "Izaj global di fiché",
+	"globalusage-on-wiki": "Itilizasyon asou $2",
+	"globalusage-of-file": "Ròt wiki swivan ka itilizé sa imaj :",
+	"globalusage-more": "Wè [[{{#Special:GlobalUsage}}/$1|davantaj asou itilizasyon global]] di sa fiché."
+}

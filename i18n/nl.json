@@ -33,5 +33,6 @@
 	"apihelp-query+globalusage-param-limit": "Hoeveel links er moeten worden teruggestuurd.",
 	"apihelp-query+globalusage-param-filterlocal": "Lokaal gebruik van dit bestand filteren.",
 	"apihelp-query+globalusage-example-1": "Laat zien waar [[:File:Example.jpg]] gebruikt wordt",
-	"globalusage-header": "Deze pagina toont waar een bestand wordt gebruikt op andere wiki's. U kunt deze informatie ook onderaan de bestandspagina vinden."
+	"globalusage-header": "Deze pagina toont waar een bestand wordt gebruikt op andere wiki's. U kunt deze informatie ook onderaan de bestandspagina vinden.",
+	"globallyunusedfiles": "Globale ongebruikte bestanden"
 }
