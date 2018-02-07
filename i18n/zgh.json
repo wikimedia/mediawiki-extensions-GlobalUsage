@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Amara-Amaziɣ"
+			"Amara-Amaziɣ",
+			"Mdb897"
 		]
 	},
 	"globalusage": "ⴰⵙⵎⵔⵙ ⴰⵖⵣⵓⵔⴰⵏ ⵏ ⵓⴼⴰⵢⵍⵓ",
-	"globalusage-on-wiki": "ⴰⵙⵎⵔⵙ ⴳ $2"
+	"globalusage-on-wiki": "ⴰⵙⵎⵔⵙ ⴳ $2",
+	"globalusage-of-file": "ⵉⵡⵉⴽⵉⵜⵏ ⴰⴷ ⵢⴰⴹⵏ ⴰⵔ ⵙⵙⵎⵔⵙⵏ ⴰⴼⴰⵢⵍⵓ ⴰⴷ:"
 }
