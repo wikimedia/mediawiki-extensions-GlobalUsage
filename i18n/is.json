@@ -2,10 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"S.Örvarr.S",
-			"Snævar"
+			"Snævar",
+			"Sveinn í Felli"
 		]
 	},
 	"globalusage": "Altæk notkun skráar",
+	"globalusage-filename": "Skráarheiti:",
 	"globalusage-ok": "Leita",
 	"globalusage-on-wiki": "Notkun á $2",
 	"globalusage-of-file": "Eftirfarandi wikar nota einnig þessa skrá:",

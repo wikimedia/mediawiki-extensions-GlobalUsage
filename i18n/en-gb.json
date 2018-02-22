@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Chase me ladies, I'm the Cavalry"
+			"Chase me ladies, I'm the Cavalry",
+			"Manvydasz"
 		]
 	},
 	"globalusage": "Global file usage",
 	"globalusage-on-wiki": "Usage on $2",
-	"globalusage-of-file": "The following other wikis use this file:"
+	"globalusage-of-file": "Šie sekantys projektai naudoja šią rinkmeną:"
 }
