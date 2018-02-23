@@ -6,7 +6,9 @@
 			"Okras",
 			"Striking Blue",
 			"Kaganer",
-			"Otogi"
+			"Otogi",
+			"Mouse21",
+			"Movses"
 		]
 	},
 	"globalusage": "Глобальное использование файла",
@@ -32,5 +34,7 @@
 	"apihelp-query+globalusage-param-filterlocal": "Отфильтровать локальное использование файла.",
 	"apihelp-query+globalusage-example-1": "Получить информацию об использовании [[:File:Example.jpg]]",
 	"globalusage-header": "Эта страница показывает, где в других вики-проектах используется файл. Вы также можете найти эту информацию в нижней части странице описания файла.",
-	"globallyunusedfiles": "Глобально неиспользуемые файлы"
+	"globallyunusedfiles": "Глобально неиспользуемые файлы",
+	"globallyunusedfilestext": "Следующие файлы существуют, но не встраиваются ни в какую страницу на любую вики.",
+	"globallyunusedfiles-error-nonsharedrepo": "Эта вики не включена в общий репозиторий"
 }
