@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Bonevarluri",
-			"Mogoeilor"
+			"Mogoeilor",
+			"Beyronvan"
 		]
 	},
 	"globalusage": "وه کار گرتن جانیا جهونی",
@@ -10,7 +11,7 @@
 	"globalusage-ok": "پی جوری",
 	"globalusage-text": "مئن جوری وه کارگرتن سرتاسری جانیا",
 	"globalusage-no-results": "[[:$1]] د ویکی یا هنی وه کار گرته بیه.",
-	"globalusage-on-wiki": "ۋ کار گرتن د $2",
+	"globalusage-on-wiki": "ڤ کار گرتن د $2",
 	"globalusage-of-file": "ویکیا هنی که هان د دماتر سی ای جانیا وه کار گرته بیه:",
 	"globalusage-more": "[[{{#Special:GlobalUsage}}/$1|وه کار گرتن جهونی بیشتر]] سی ای جانیا نه سیل بکیت.",
 	"globalusage-filterlocal": "استفاده ولات نشینی نه نشو نئه",

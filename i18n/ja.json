@@ -4,7 +4,8 @@
 			"Fryed-peach",
 			"Shirayuki",
 			"青子守歌",
-			"Otokoume"
+			"Otokoume",
+			"Yusuke1109"
 		]
 	},
 	"globalusage": "グローバルなファイル使用状況",
@@ -18,5 +19,10 @@
 	"globalusage-of-file": "以下に挙げる他のウィキがこの画像を使っています:",
 	"globalusage-more": "このファイルの[[{{#Special:GlobalUsage}}/$1|グローバル使用状況]]を表示する。",
 	"globalusage-filterlocal": "ローカル使用状況を表示しない",
-	"mostgloballylinkedfiles": "グローバルに被リンク数の多いファイル"
+	"mostgloballylinkedfiles": "グローバルに被リンク数の多いファイル",
+	"globallywantedfiles": "グローバルにファイル情報ページが存在しないファイル",
+	"apihelp-query+globalusage-param-limit": "返すリンクの数。",
+	"apihelp-query+globalusage-example-1": "[[:File:Example.jpg]]の使用状況を取得する",
+	"globallyunusedfiles": "グローバルに使用されていないファイル",
+	"globallyunusedfiles-error-nonsharedrepo": "このウィキは共有リポジトリにありません"
 }
