@@ -13,7 +13,7 @@ require_once $path . '/maintenance/Maintenance.php';
 
 use MediaWiki\MediaWikiServices;
 
-class RefreshGlobalImageLinks extends Maintenance {
+class RefreshGlobalimagelinks extends Maintenance {
 	public function __construct() {
 		parent::__construct();
 		$this->addOption( 'start-page', 'page_id of the page to start with' );
@@ -154,5 +154,5 @@ class RefreshGlobalImageLinks extends Maintenance {
 	}
 }
 
-$maintClass = 'RefreshGlobalImageLinks';
-require_once DO_MAINTENANCE;
+$maintClass = 'RefreshGlobalimagelinks';
+require_once RUN_MAINTENANCE_IF_MAIN;
