@@ -7,6 +7,8 @@
  * @author Brian Wolff <bawolff+wn@gmail.com>
  */
 
+use Wikimedia\Rdbms\IDatabase;
+
 class SpecialMostGloballyLinkedFiles extends MostimagesPage {
 
 	function __construct( $name = 'MostGloballyLinkedFiles' ) {
