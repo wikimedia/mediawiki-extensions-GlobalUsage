@@ -9,7 +9,7 @@
 			"Vitorvicentevalente"
 		]
 	},
-	"globalusage": "Utilização global de um ficheiro",
+	"globalusage": "Utilização global do ficheiro",
 	"globalusage-for": "Utilização global de \"$1\"",
 	"globalusage-filename": "Nome do ficheiro:",
 	"globalusage-desc": "[[Special:GlobalUsage|Página especial]] para consultar a utilização global de ficheiros",
