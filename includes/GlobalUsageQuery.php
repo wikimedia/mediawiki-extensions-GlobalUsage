@@ -1,4 +1,7 @@
 <?php
+
+use Wikimedia\Rdbms\IDatabase;
+
 /**
  * A helper class to query the globalimagelinks table
  *
@@ -17,6 +20,11 @@ class GlobalUsageQuery {
 	private $target;
 
 	private $lastRow;
+
+	/**
+	 * @var IDatabase
+	 */
+	private $db;
 
 	/**
 	 * @param mixed $target Title or array of db keys of target(s).
