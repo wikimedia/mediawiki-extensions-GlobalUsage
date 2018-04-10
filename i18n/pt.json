@@ -16,7 +16,7 @@
 	"globalusage-ok": "Pesquisar",
 	"globalusage-text": "Pesquisar a utilização global de um ficheiro",
 	"globalusage-no-results": "[[:$1]] não é usado noutras wikis.",
-	"globalusage-on-wiki": "Uso na $2",
+	"globalusage-on-wiki": "Uso no domínio $2",
 	"globalusage-of-file": "As seguintes wikis usam este ficheiro:",
 	"globalusage-more": "Ver [[{{#Special:GlobalUsage}}/$1|a utilização global]] deste ficheiro.",
 	"globalusage-filterlocal": "Não mostrar as utilizações locais",
