@@ -30,5 +30,6 @@
 	"apihelp-query+globalusage-param-filterlocal": "پالایش کاربردهای محلی پرونده.",
 	"apihelp-query+globalusage-example-1": "گرفتن استفاده‌های [[:File:Example.jpg]]",
 	"globalusage-header": "این صفحه نشان می‌دهد که یک پرونده کجا در ویکی‌های دیگر استفاده شده‌است. شما می‌توانید این اطلاعات را در پایین صفحهٔ توضیحات پرونده نیز بیابید.",
-	"globallyunusedfiles": "پرونده‌های سراسری استفاده نشده"
+	"globallyunusedfiles": "پرونده‌های سراسری استفاده نشده",
+	"globallyunusedfiles-error-nonsharedrepo": "این ویکی در مخزن مشترک قرار ندارد"
 }
