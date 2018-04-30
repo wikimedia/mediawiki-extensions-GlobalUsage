@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Anok kutai jang"
+		]
+	},
+	"globalusage": "Bapake data global",
+	"globalusage-on-wiki": "Penggunaan di $2",
+	"globalusage-of-file": "Wiki laeng akang pake berkas ini",
+	"globalusage-more": "Lia [[{{#Special:GlobalUsage}}/$1|labe banya dong pake secara global]] akang berkas."
+}
