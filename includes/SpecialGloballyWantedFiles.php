@@ -10,7 +10,7 @@
 class SpecialGloballyWantedFiles extends WantedFilesPage {
 
 	function __construct( $name = 'GloballyWantedFiles' ) {
-		return parent::__construct( $name );
+		parent::__construct( $name );
 	}
 
 	/**
