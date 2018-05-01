@@ -27,5 +27,9 @@
 	"apihelp-query+globalusage-param-prop": "എന്തൊക്കെയാണ് തിരിച്ചുനൽകേണ്ടത്:\n;url:യു.ആർ.എൽ. ചേർക്കുന്നു.\n;pageid:താളിന്റെ ഐ.ഡി. ചേർക്കുന്നു.\n;namespace:നാമമേഖലയുടെ ഐ.ഡി. ചേർക്കുന്നു.",
 	"apihelp-query+globalusage-param-limit": "എത്ര കണ്ണികൾ തിരിച്ചുനൽകണം.",
 	"apihelp-query+globalusage-param-filterlocal": "പ്രമാണത്തിന്റെ പ്രാദേശിക ഉപയോഗം അരിക്കുക.",
-	"apihelp-query+globalusage-example-1": "[[:File:Example.jpg]] എന്ന പ്രമാണത്തിന്റെ ആഗോള ഉപയോഗം എടുക്കുക"
+	"apihelp-query+globalusage-example-1": "[[:File:Example.jpg]] എന്ന പ്രമാണത്തിന്റെ ആഗോള ഉപയോഗം എടുക്കുക",
+	"globalusage-header": "മറ്റ് വിക്കികളീൽ എവിടെയാണ് ഒരു പ്രമാണം ഉപയോഗിക്കപ്പെട്ടിരിക്കുന്നതെന്ന് ഈ താൾ പ്രദർശിപ്പിക്കുന്നു. ഈ വിവരം പ്രമാണത്തിന്റെ വിവരണ താളിന്റെ അടിയിലും താങ്കൾക്ക് കാണാവുന്നതാണ്.",
+	"globallyunusedfiles": "ഒരിടത്തും ഉപയോഗിക്കാത്ത പ്രമാണങ്ങൾ",
+	"globallyunusedfilestext": "ഇനിക്കൊടുക്കുന്ന പ്രമാണങ്ങൾ നിലവിലുണ്ടെങ്കിലും, ഒരു വിക്കിയിലേയും ഒരു താളിലും ഉപയോഗിച്ചിട്ടുള്ളവയല്ല.",
+	"globallyunusedfiles-error-nonsharedrepo": "ഈ വിക്കി പങ്ക് വെയ്ക്കപ്പെട്ടിട്ടുള്ള റെപോയിൽ ഉള്ളതല്ല"
 }
