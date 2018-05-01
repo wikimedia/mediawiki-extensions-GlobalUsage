@@ -70,7 +70,7 @@ class GlobalUsageQuery {
 	/**
 	 * Return the offset set by the user
 	 *
-	 * @return array offset
+	 * @return string offset
 	 */
 	public function getOffsetString() {
 		return implode( '|', $this->offset );

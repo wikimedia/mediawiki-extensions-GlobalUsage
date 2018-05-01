@@ -27,7 +27,7 @@ class GlobalUsage {
 	 * Sets the images used by a certain page
 	 *
 	 * @param Title $title Title of the page
-	 * @param array $images Array of db keys of images used
+	 * @param string[] $images Array of db keys of images used
 	 * @param int $pageIdFlags
 	 * @param int|null $ticket
 	 */
@@ -59,7 +59,7 @@ class GlobalUsage {
 	/**
 	 * Get all global images from a certain page
 	 * @param int $id
-	 * @return array
+	 * @return string[]
 	 */
 	public function getLinksFromPage( $id ) {
 		$res = $this->db->select(
@@ -84,7 +84,7 @@ class GlobalUsage {
 	 * Deletes all entries from a certain page to certain files
 	 *
 	 * @param int $id Page id of the page
-	 * @param mixed $to File name(s)
+	 * @param string[]|null $to File name(s)
 	 * @param int|null $ticket
 	 */
 	public function deleteLinksFromPage( $id, array $to = null, $ticket = null ) {
