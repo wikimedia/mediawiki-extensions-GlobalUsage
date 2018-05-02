@@ -5,8 +5,8 @@
  * to be in sync, so the later can be used for the local jobs.
  */
 class GlobalUsageCachePurgeJob extends Job {
-	function __construct( $title, $params, $id = 0 ) {
-		parent::__construct( 'globalUsageCachePurge', $title, $params, $id );
+	function __construct( $title, $params ) {
+		parent::__construct( 'globalUsageCachePurge', $title, $params );
 		$this->removeDuplicates = true; // expensive
 	}
 
