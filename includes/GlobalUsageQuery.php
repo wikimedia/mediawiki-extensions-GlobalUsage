@@ -47,7 +47,7 @@ class GlobalUsageQuery {
 	 * Set the offset parameter
 	 *
 	 * @param string $offset offset
-	 * @param bool $reversed True if this is the upper offset
+	 * @param bool|null $reversed True if this is the upper offset
 	 * @return bool
 	 */
 	public function setOffset( $offset, $reversed = null ) {

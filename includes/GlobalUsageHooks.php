@@ -198,7 +198,7 @@ class GlobalUsageHooks {
 	/**
 	 * Hook to apply schema changes
 	 *
-	 * @param DatabaseUpdater $updater
+	 * @param DatabaseUpdater|null $updater
 	 * @return bool
 	 */
 	public static function onLoadExtensionSchemaUpdates( $updater = null ) {
