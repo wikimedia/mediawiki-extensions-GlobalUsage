@@ -7,5 +7,6 @@
 	"globalusage": "Neungui beureukaih global",
 	"globalusage-ok": "Mita",
 	"globalusage-on-wiki": "Seuneungui bak $2",
-	"globalusage-of-file": "Wiki la'én di yup nyoë geungui beureukaih nyoë:"
+	"globalusage-of-file": "Wiki la'én di yup nyoë geungui beureukaih nyoë:",
+	"globalusage-more": "Eu [[{{#Special:GlobalUsage}}/$1|leubèh le neungui ban dum]] nibak beureukaih nyoe."
 }

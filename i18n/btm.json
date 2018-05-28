@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Simartampua"
+		]
+	},
+	"globalusage": "Pamakean berkas sude",
+	"globalusage-on-wiki": "Ipake tu $2",
+	"globalusage-of-file": "Wiki lain namamake berkas on:",
+	"globalusage-more": "Sise [[{{#Special:GlobalUsage}}/$1|pamakean global]] ni berkas on ."
+}
