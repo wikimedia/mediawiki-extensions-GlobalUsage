@@ -18,6 +18,8 @@
 	"globalusage-more": "이 파일의 [[{{#Special:GlobalUsage}}/$1|더 많은 사용 내역]]을 봅니다.",
 	"globalusage-filterlocal": "이 위키에서 이 파일을 사용하고 있는 문서를 보이지 않기",
 	"apihelp-query+globalusage-summary": "특정 그림에 대한 모든 위키의 그림 사용 정보를 반환합니다.",
+	"apihelp-query+globalusage-param-limit": "반환할 링크 수입니다.",
+	"apihelp-query+globalusage-example-1": "[[:File:Example.jpg]]을 사용하고 있는 문서를 가져옵니다",
 	"globallyunusedfiles": "전역적으로 사용되지 않는 파일",
 	"globallyunusedfilestext": "다음의 파일은 존재하지만 어느 위키의 문서에도 포함되어 있지 않습니다.",
 	"globallyunusedfiles-error-nonsharedrepo": "이 위키는 공유 저장소에 없습니다"
