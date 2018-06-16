@@ -2,12 +2,20 @@
 	"@metadata": {
 		"authors": [
 			"Octahedron80",
-			"Horus"
+			"Horus",
+			"Aefgh39622"
 		]
 	},
 	"globalusage": "การใช้ไฟล์ทั่วโลก",
-	"globalusage-ok": "สืบค้น",
+	"globalusage-for": "การใช้ทั่วโลกสำหรับ  \"$1\"",
+	"globalusage-filename": "ชื่อไฟล์:",
+	"globalusage-desc": "[[Special:GlobalUsage|หน้าพิเศษ]]สำหรับดูการใช้ไฟล์ทั่วโลก",
+	"globalusage-ok": "ค้นหา",
+	"globalusage-text": "ค้นหาการใช้ไฟล์ทั่วโลก",
+	"globalusage-no-results": "[[:$1]] ไม่ได้ถูกใช้บนวิกิอื่น",
 	"globalusage-on-wiki": "การใช้บน $2",
 	"globalusage-of-file": "วิกิอื่นต่อไปนี้ใช้ไฟล์นี้:",
-	"globalusage-more": "ดู[[{{#Special:GlobalUsage}}/$1|การใช้ทั่วโลกเพิ่มเติม]]ของไฟล์นี้"
+	"globalusage-more": "ดู[[{{#Special:GlobalUsage}}/$1|การใช้ทั่วโลกเพิ่มเติม]]ของไฟล์นี้",
+	"globalusage-filterlocal": "ไม่ต้องแสดงการใช้ท้องถิ่น",
+	"mostgloballylinkedfiles": "ไฟล์ที่ลิงก์ทั่วโลกมากที่สุด"
 }
