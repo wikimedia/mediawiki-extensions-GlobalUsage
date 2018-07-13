@@ -10,7 +10,8 @@
 			"Simon Shek",
 			"Cwlin0416",
 			"Liuxinyu970226",
-			"Wwycheuk"
+			"Wwycheuk",
+			"Kly"
 		]
 	},
 	"globalusage": "全域檔案使用狀況",
@@ -30,9 +31,13 @@
 	"globallywantedfiles-summary": "跨所有 Wiki 中被內嵌最多次數但不存在的檔案清單。 同類型清單但只顯示於 {{SITENAME}} 中的使用狀況，請參考 [[{{#special:WantedFiles}}]]。　檔案使用狀況在第一個字母不區分大小寫的 wiki 中可能會被錯誤回報成需要的檔案。",
 	"globallywantedfiles-foreign-repo": "<strong>警告：</strong> 此 Wiki 使用外部的檔案儲存庫，正在使用的外部儲存庫檔案會以藍色刪除線的連結於清單上，既使檔案實際存在。",
 	"apihelp-query+globalusage-description": "回傳特定圖片的全域圖片使用狀況。",
+	"apihelp-query+globalusage-summary": "回傳特定圖片的全域圖片使用狀況。",
 	"apihelp-query+globalusage-param-prop": "要回傳的屬性：\n;url:加入 url。\n;pageid:加入頁面 ID。\n;namespace:加入命名空間 ID。",
 	"apihelp-query+globalusage-param-limit": "要回傳多少連結。",
 	"apihelp-query+globalusage-param-filterlocal": "過濾檔案的本地使用狀況。",
 	"apihelp-query+globalusage-example-1": "取得 [[:File:Example.jpg]] 的使用狀況",
-	"globalusage-header": "此頁面顯示檔案在其他 wiki 被使用的狀況，您也可以在檔案的描述頁面底端找到這些資訊。"
+	"globalusage-header": "此頁面顯示檔案在其他 wiki 被使用的狀況，您也可以在檔案的描述頁面底端找到這些資訊。",
+	"globallyunusedfiles": "全域未使用的檔案",
+	"globallyunusedfilestext": "以下檔案為存在，但未嵌入在任何 wiki 的任何頁面裡。",
+	"globallyunusedfiles-error-nonsharedrepo": "此 wiki 不在分享儲存庫裡"
 }
