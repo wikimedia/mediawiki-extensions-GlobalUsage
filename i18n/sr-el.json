@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Michaello",
-			"Milicevic01"
+			"Milicevic01",
+			"Zoranzoki21"
 		]
 	},
 	"globalusage": "Globalna upotreba datoteke",
@@ -12,7 +13,7 @@
 	"globalusage-text": "Pretraga globalne upotrebe datoteke",
 	"globalusage-no-results": "[[:$1]] se ne koristi na drugim vikijima.",
 	"globalusage-on-wiki": "Upotreba na $2",
-	"globalusage-of-file": "Drugi Vikiji koji koriste ovu datoteku:",
+	"globalusage-of-file": "Drugi vikiji koji koriste ovu datoteku:",
 	"globalusage-more": "Još [[{{#Special:GlobalUsage}}/$1|globalnog korišćenja]] ove datoteke.",
 	"globalusage-filterlocal": "Ne prikazuj lokalnu upotrebu",
 	"mostgloballylinkedfiles": "Datoteke s najviše veza globalno",
