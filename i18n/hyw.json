@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"ArmenBakkalian"
+			"ArmenBakkalian",
+			"Rajemian"
 		]
 	},
 	"globalusage": "Նիշքի համընդհանուր օգտագործում",
 	"globalusage-on-wiki": "Օգտագործումը $2 կայքին վրայ",
-	"globalusage-of-file": "Հետեւեալ Ուիքիները եւս կ'օգտագործեն այս նիշքը՝"
+	"globalusage-of-file": "Հետեւեալ Ուիքիները եւս կ'օգտագործեն այս նիշքը՝",
+	"globalusage-more": "Տեսնել այս նիշքի [[{{#Special:GlobalUsage}}/$1|աւելի համընդհանուր օգտագործումը]]:"
 }
