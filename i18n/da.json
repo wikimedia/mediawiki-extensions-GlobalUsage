@@ -2,11 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Jon Harald Søby",
-			"Peter Alberti"
+			"Peter Alberti",
+			"Saederup92"
 		]
 	},
 	"globalusage": "Global filanvendelse",
 	"globalusage-for": "Global anvendelse af \"$1\"",
+	"globalusage-filename": "Filnavn:",
 	"globalusage-desc": "[[Special:GlobalUsage|Specialside]] til at vise global filanvendelse",
 	"globalusage-ok": "Søg",
 	"globalusage-text": "Søg i global filanvendelse",
