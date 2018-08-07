@@ -6,5 +6,6 @@
 	},
 	"globalusage": "ဝှာင် သွက်ဂွံသုင်စောဲ ဂလုပ်ဗဴ",
 	"globalusage-on-wiki": "ဗီုစကာ ပ္ဍဲ $2",
-	"globalusage-of-file": "ဗွဲသၟဝ်ဏအ်ဂှ် ဒှ်အရာ ဝဳကဳတၞဟ် မစကာလဝ် ဝှာင်ဏအ်၊၊"
+	"globalusage-of-file": "ဗွဲသၟဝ်ဏအ်ဂှ် ဒှ်အရာ ဝဳကဳတၞဟ် မစကာလဝ် ဝှာင်ဏအ်၊၊",
+	"globalusage-more": "ဗဵု [[{{#Special:GlobalUsage}}/$1|more global usage]] ဝှာင်ဏအ်၊၊"
 }
