@@ -26,5 +26,8 @@
 	"apihelp-query+globalusage-param-limit": "Quanda collegaminde da turnà.",
 	"apihelp-query+globalusage-param-filterlocal": "Filtre le ause locale d'u file.",
 	"apihelp-query+globalusage-example-1": "Pigghie l'ause de [[:File:Example.jpg]]",
-	"globalusage-header": "Sta pàgene face 'ndrucà addò 'u file avène ausate jndr'à otre uicchi. Tu puè pure acchià sta 'mbormazione jndr'à pàgene de descrizione d'u file."
+	"globalusage-header": "Sta pàgene face 'ndrucà addò 'u file avène ausate jndr'à otre uicchi. Tu puè pure acchià sta 'mbormazione jndr'à pàgene de descrizione d'u file.",
+	"globallyunusedfiles": "Le file non ausate globbalmende",
+	"globallyunusedfilestext": "Le seguende file esistone ma non g'onne state mise jndr'à nisciuna pàgene de nisciuna uicchi.",
+	"globallyunusedfiles-error-nonsharedrepo": "Sta uicchi non ge se iacchie sus a 'u repo condivise"
 }
