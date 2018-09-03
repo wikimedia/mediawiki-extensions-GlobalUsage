@@ -111,7 +111,7 @@ class SpecialGlobalUsage extends SpecialPage {
 		$form->appendContent(
 			$fieldset,
 			new OOUI\HtmlSnippet(
-				Html::hidden( 'title', $this->getPageTitle()->getPrefixedText() )  .
+				Html::hidden( 'title', $this->getPageTitle()->getPrefixedText() ) .
 				Html::hidden( 'limit', $this->getRequest()->getInt( 'limit', 50 ) )
 			)
 		);
