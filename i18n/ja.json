@@ -5,7 +5,8 @@
 			"Shirayuki",
 			"青子守歌",
 			"Otokoume",
-			"Yusuke1109"
+			"Yusuke1109",
+			"Kkairri"
 		]
 	},
 	"globalusage": "グローバルなファイル使用状況",
@@ -21,7 +22,11 @@
 	"globalusage-filterlocal": "ローカル使用状況を表示しない",
 	"mostgloballylinkedfiles": "グローバルに被リンク数の多いファイル",
 	"globallywantedfiles": "グローバルにファイル情報ページが存在しないファイル",
+	"apihelp-query+globalusage-description": "与えられたファイルのグローバルでの画像利用状況を返します。",
+	"apihelp-query+globalusage-summary": "与えられたファイルのグローバルでの画像利用状況を返します。",
+	"apihelp-query+globalusage-param-prop": "返すプロパティ:\n;url: URLを追加します。\n;pageid: ページIDを追加します。\n;namespace: 名前空間のIDを追加します。",
 	"apihelp-query+globalusage-param-limit": "返すリンクの数。",
+	"apihelp-query+globalusage-param-filterlocal": "ローカルにおけるファイルの利用をフィルタする。",
 	"apihelp-query+globalusage-example-1": "[[:File:Example.jpg]]の使用状況を取得する",
 	"globallyunusedfiles": "グローバルに使用されていないファイル",
 	"globallyunusedfiles-error-nonsharedrepo": "このウィキは共有リポジトリにありません"
