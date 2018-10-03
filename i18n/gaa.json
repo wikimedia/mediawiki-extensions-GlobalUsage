@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mybluberet"
+			"Mybluberet",
+			"Chivano"
 		]
 	},
+	"globalusage": "Jeŋ faili kɛ nifeemɔ",
 	"globalusage-on-wiki": "Enitsumɔ yɛ $2",
 	"globalusage-of-file": "Wiki krokomɛi nɛɛ kɛ faili nɛɛ tsuɔ nii"
 }
