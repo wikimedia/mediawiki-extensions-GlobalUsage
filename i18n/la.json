@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Lesgles"
+			"Lesgles",
+			"UV"
 		]
 	},
 	"globalusage": "Usus fasciculi per inceptus Vicimediorum",
-	"globalusage-on-wiki": "Usus in $2"
+	"globalusage-on-wiki": "Usus in $2",
+	"globalusage-of-file": "Quae incepta Vici fasciculo utuntur:"
 }
