@@ -5,7 +5,8 @@
 			"Vito Genovese",
 			"Stultiwikia",
 			"Arystanbek",
-			"Hedda"
+			"Hedda",
+			"Sayginer"
 		]
 	},
 	"globalusage": "Küresel dosya kullanımı",
@@ -18,6 +19,7 @@
 	"globalusage-of-file": "Bu dosya aşağıdaki diğer vikiler tarafından kullanılmaktadır:",
 	"globalusage-more": "Bu dosyanın [[{{#Special:GlobalUsage}}/$1|daha fazla küresel kullanımını]] gör.",
 	"globalusage-filterlocal": "Yerel kullanımı gösterme",
+	"mostgloballylinkedfiles": "En çok küresel bağlantı verilen dosyalar",
 	"globallywantedfiles": "Küresel istedim dosyaları",
 	"globallywantedfiles-summary": "Mevcut bulunmamalarına rağmen tüm vikiler arasında en fazla sayıda gömülmüş dosyaların listesi. Sadece {{SITENAME}} üzerindeki kullanımları hesaba katan denk bir liste için bkz. [[{{#special:WantedFiles}}]]. İlk harfi büyük/küçük duyarlı olan vikilerdeki dosya kullanımlarında yanlışlıkla rapor ediliyor olabilir.",
 	"globallywantedfiles-foreign-repo": "<strong>Uyarı:</strong> Bu wiki kullanan bir yabancı dosya deposu. Kullanımda olan yabancı deposundan dosya var olmasına rağmen mavi bağlantıları kopmuş olarak bu listede görünecektir.",
