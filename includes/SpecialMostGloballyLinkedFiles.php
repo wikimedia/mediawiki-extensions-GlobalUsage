@@ -11,7 +11,7 @@ use Wikimedia\Rdbms\IDatabase;
 
 class SpecialMostGloballyLinkedFiles extends MostimagesPage {
 
-	function __construct( $name = 'MostGloballyLinkedFiles' ) {
+	public function __construct( $name = 'MostGloballyLinkedFiles' ) {
 		parent::__construct( $name );
 	}
 
@@ -20,7 +20,7 @@ class SpecialMostGloballyLinkedFiles extends MostimagesPage {
 	 * If we're not on a shared repo, try to redirect there.
 	 * @param string $par
 	 */
-	function execute( $par ) {
+	public function execute( $par ) {
 		if ( GlobalUsage::onSharedRepo() ) {
 			parent::execute( $par );
 		} else {
@@ -32,7 +32,7 @@ class SpecialMostGloballyLinkedFiles extends MostimagesPage {
 	 * Don't want to do cached handling on non-shared repo, since we only redirect.
 	 * @return bool
 	 */
-	function isCacheable() {
+	public function isCacheable() {
 		return GlobalUsage::onSharedRepo();
 	}
 
@@ -40,7 +40,7 @@ class SpecialMostGloballyLinkedFiles extends MostimagesPage {
 	 * What query to do.
 	 * @return array
 	 */
-	function getQueryInfo() {
+	public function getQueryInfo() {
 		$this->assertOnSharedRepo();
 		return [
 			'tables' => [ 'globalimagelinks' ],
@@ -75,7 +75,7 @@ class SpecialMostGloballyLinkedFiles extends MostimagesPage {
 	 *
 	 * @return bool Should this be listed in Special:SpecialPages
 	 */
-	function isListed() {
+	public function isListed() {
 		return GlobalUsage::onSharedRepo();
 	}
 
@@ -85,7 +85,7 @@ class SpecialMostGloballyLinkedFiles extends MostimagesPage {
 	 * globalimagelinks db.
 	 * @return IDatabase
 	 */
-	function getRecacheDB() {
+	public function getRecacheDB() {
 		global $wgGlobalUsageDatabase;
 
 		// There's no reason why we couldn't make this special page work on all wikis,

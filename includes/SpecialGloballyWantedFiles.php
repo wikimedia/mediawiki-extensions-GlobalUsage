@@ -9,7 +9,7 @@
  */
 class SpecialGloballyWantedFiles extends WantedFilesPage {
 
-	function __construct( $name = 'GloballyWantedFiles' ) {
+	public function __construct( $name = 'GloballyWantedFiles' ) {
 		parent::__construct( $name );
 	}
 
@@ -18,7 +18,7 @@ class SpecialGloballyWantedFiles extends WantedFilesPage {
 	 * If we're not on a shared repo, try to redirect there.
 	 * @param string $par
 	 */
-	function execute( $par ) {
+	public function execute( $par ) {
 		if ( GlobalUsage::onSharedRepo() ) {
 			parent::execute( $par );
 		} else {
@@ -31,7 +31,7 @@ class SpecialGloballyWantedFiles extends WantedFilesPage {
 	 *
 	 * @return String html to output
 	 */
-	function getPageHeader() {
+	public function getPageHeader() {
 		if ( RepoGroup::singleton()->hasForeignRepos() ) {
 			return $this->msg( 'globallywantedfiles-foreign-repo' )->parseAsBlock();
 		} else {
@@ -49,7 +49,7 @@ class SpecialGloballyWantedFiles extends WantedFilesPage {
 	 * shared repo db).
 	 * @return bool
 	 */
-	function isCacheable() {
+	public function isCacheable() {
 		global $wgGlobalUsageDatabase;
 		return GlobalUsage::onSharedRepo()
 			&& ( !$wgGlobalUsageDatabase || $wgGlobalUsageDatabase === wfWikiID() );
@@ -60,11 +60,11 @@ class SpecialGloballyWantedFiles extends WantedFilesPage {
 	 *
 	 * @return bool Should this be listed in Special:SpecialPages
 	 */
-	function isListed() {
+	public function isListed() {
 		return GlobalUsage::onSharedRepo();
 	}
 
-	function getQueryInfo() {
+	public function getQueryInfo() {
 		return GlobalUsage::getWantedFilesQueryInfo();
 	}
 

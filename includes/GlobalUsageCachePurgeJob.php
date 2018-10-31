@@ -5,12 +5,12 @@
  * to be in sync, so the later can be used for the local jobs.
  */
 class GlobalUsageCachePurgeJob extends Job {
-	function __construct( $title, $params ) {
+	public function __construct( $title, $params ) {
 		parent::__construct( 'globalUsageCachePurge', $title, $params );
 		$this->removeDuplicates = true; // expensive
 	}
 
-	function run() {
+	public function run() {
 		$title = $this->getTitle();
 		if ( !$title->inNamespace( NS_FILE ) ) {
 			return true; // umm, OK

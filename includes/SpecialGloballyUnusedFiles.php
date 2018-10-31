@@ -28,7 +28,7 @@
  * @ingroup SpecialPage
  */
 class SpecialGloballyUnusedFiles extends ImageQueryPage {
-	function __construct( $name = 'GloballyUnusedFiles' ) {
+	public function __construct( $name = 'GloballyUnusedFiles' ) {
 		parent::__construct( $name );
 	}
 
@@ -36,7 +36,7 @@ class SpecialGloballyUnusedFiles extends ImageQueryPage {
 	 * Check if we are on wiki with globalimagelinks table in database.
 	 * @return bool
 	 */
-	function isOnGlobalUsageDatabase() {
+	private function isOnGlobalUsageDatabase() {
 		global $wgGlobalUsageDatabase;
 		return !$wgGlobalUsageDatabase || $wgGlobalUsageDatabase === wfWikiID();
 	}
@@ -46,7 +46,7 @@ class SpecialGloballyUnusedFiles extends ImageQueryPage {
 	 * @throws ErrorPageError if we are not on a wiki with GlobalUsage database
 	 * @param string $par
 	 */
-	function execute( $par ) {
+	public function execute( $par ) {
 		if ( self::isOnGlobalUsageDatabase() ) {
 			parent::execute( $par );
 		} else {
@@ -58,7 +58,7 @@ class SpecialGloballyUnusedFiles extends ImageQueryPage {
 	 * Allow to cache only if globalimagelinks table exists in database.
 	 * @return bool
 	 */
-	function isCacheable() {
+	public function isCacheable() {
 		return self::isOnGlobalUsageDatabase();
 	}
 
@@ -66,23 +66,23 @@ class SpecialGloballyUnusedFiles extends ImageQueryPage {
 	 * Only list this special page on the wiki that has globalimagelinks table.
 	 * @return bool Should this be listed in Special:SpecialPages
 	 */
-	function isListed() {
+	public function isListed() {
 		return self::isOnGlobalUsageDatabase();
 	}
 
-	function isExpensive() {
+	public function isExpensive() {
 		return true;
 	}
 
-	function sortDescending() {
+	public function sortDescending() {
 		return false;
 	}
 
-	function isSyndicated() {
+	public function isSyndicated() {
 		return false;
 	}
 
-	function getQueryInfo() {
+	public function getQueryInfo() {
 		if ( !self::isOnGlobalUsageDatabase() ) {
 			throw new Exception( "This wiki is not on shared repo" );
 		}
@@ -114,11 +114,11 @@ class SpecialGloballyUnusedFiles extends ImageQueryPage {
 		return $retval;
 	}
 
-	function usesTimestamps() {
+	public function usesTimestamps() {
 		return true;
 	}
 
-	function getPageHeader() {
+	public function getPageHeader() {
 		return $this->msg( 'globallyunusedfilestext' )->parseAsBlock();
 	}
 
