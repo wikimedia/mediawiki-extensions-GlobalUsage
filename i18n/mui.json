@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Jawadywn"
+			"Jawadywn",
+			"Masjawad99"
 		]
 	},
-	"globalusage": "Pemakek-an berkas global",
-	"globalusage-on-wiki": "Dipakék di $2",
-	"globalusage-of-file": "Galo-galo wiki laén yang makék berkas ni:"
+	"globalusage": "Pemakian berkas global",
+	"globalusage-on-wiki": "Dipaki di $2",
+	"globalusage-of-file": "Galo-galo wiki laén yang maki berkas ni:"
 }
