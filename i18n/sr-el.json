@@ -8,7 +8,8 @@
 	},
 	"globalusage": "Globalna upotreba datoteke",
 	"globalusage-for": "Globalna upotreba datoteke „$1“",
-	"globalusage-desc": "[[Special:GlobalUsage|Specijalna strana]] za pregled globalnog korišćenja fajlova",
+	"globalusage-filename": "Naziv datoteke:",
+	"globalusage-desc": "[[Special:GlobalUsage|Posebna stranica]] za pregled globalne upotrebe datoteka",
 	"globalusage-ok": "Pretraga",
 	"globalusage-text": "Pretraga globalne upotrebe datoteke",
 	"globalusage-no-results": "[[:$1]] se ne koristi na drugim vikijima.",
@@ -19,5 +20,16 @@
 	"mostgloballylinkedfiles": "Datoteke s najviše veza globalno",
 	"mostgloballylinkedfiles-summary": "Spisak datoteka koje se najviše koriste na svim vikijima. Za spisak datoteka koje se najviše koriste na {{SITENAME}}, pogledajte [[{{#special:MostLinkedFiles}}]].",
 	"globallywantedfiles": "Globalno tražene datoteke",
-	"globallywantedfiles-summary": "Spisak najtraženih datoteka koje se koriste na svim vikijima a ne postoje Za spisak najtraženih datoteka za {{SITENAME}}, pogledajte [[{{#special:WantedFiles}}]]. Na ovom spisku se mogu nalaziti i datoteke koje postoje, zbog osetljivosti nekih vikija na veličinu prvog slova."
+	"globallywantedfiles-summary": "Spisak najtraženih datoteka koje se koriste na svim vikijima a ne postoje Za spisak najtraženih datoteka za {{SITENAME}}, pogledajte [[{{#special:WantedFiles}}]]. Na ovom spisku se mogu nalaziti i datoteke koje postoje, zbog osetljivosti nekih vikija na veličinu prvog slova.",
+	"globallywantedfiles-foreign-repo": "<strong>Upozorenje: Ovaj viki koristi odvojeno skladište datoteka. Datoteke sa stranog skladišta datoteka koji su u upotrebi će se prikazati na ovoj listi kao što izbacuje plave veze uprkos činjenici da one postoje.</strong>",
+	"apihelp-query+globalusage-description": "Vraća globalno korišćenje slike za određenu sliku.",
+	"apihelp-query+globalusage-summary": "Vraća globalno korišćenje slike za određenu sliku.",
+	"apihelp-query+globalusage-param-prop": "Koja svojstva da vrati:\n;url:Dodaje link.\n;pageid:Dodaje ID stranice.\n;namespace:Dodaje ID imenskog prostora.",
+	"apihelp-query+globalusage-param-limit": "Koliko linkova da vratim?",
+	"apihelp-query+globalusage-param-filterlocal": "Filtriraj lokalnu upotrebu datoteke.",
+	"apihelp-query+globalusage-example-1": "Preuzmi upotrebu [[:File:Example.jpg]].",
+	"globalusage-header": "Ova stranica pokazuje gde se koristi datoteka na ostalim vikijima. Takođe možete pronaći informaciju o tome na dnu stranice za opis datoteke.",
+	"globallyunusedfiles": "Globalno nekorišćene datoteke",
+	"globallyunusedfilestext": "Navedene datoteke postoje ali se ne koriste ni na jednoj stranici nekog vikija.",
+	"globallyunusedfiles-error-nonsharedrepo": "Ovaj viki nije na odvojenom skladištu datoteka."
 }
