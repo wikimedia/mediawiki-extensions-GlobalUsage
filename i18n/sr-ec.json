@@ -7,7 +7,8 @@
 			"Михајло Анђелковић",
 			"Milicevic01",
 			"Obsuser",
-			"Zoranzoki21"
+			"Zoranzoki21",
+			"BadDog"
 		]
 	},
 	"globalusage": "Глобална употреба датотеке",
@@ -32,7 +33,7 @@
 	"apihelp-query+globalusage-param-limit": "Колико линкова да вратим?",
 	"apihelp-query+globalusage-param-filterlocal": "Филтрирај локалну употребу датотеке.",
 	"apihelp-query+globalusage-example-1": "Преузми употребу [[:File:Example.jpg]].",
-	"globalusage-header": "Ова страница показује где се користи датотека на осталим викијима. Такође можете пронаћи информацију о томе на дну странице за опис датотеке.",
+	"globalusage-header": "Ова страница приказује где се користи датотека на другим викијима. Такође можете пронаћи информацију о томе на дну странице за опис датотеке.",
 	"globallyunusedfiles": "Глобално некоришћене датотеке",
 	"globallyunusedfilestext": "Наведене датотеке постоје али се не користе ни на једној страници неког викија.",
 	"globallyunusedfiles-error-nonsharedrepo": "Овај вики није на одвојеном складишту датотека."
