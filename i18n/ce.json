@@ -4,13 +4,13 @@
 			"Умар"
 		]
 	},
-	"globalusage": "Массо проекташкахь пайдаэцар гойту лахахь",
-	"globalusage-for": "Массо проекташкахь пайдаэцар «$1»",
+	"globalusage": "Глобалан файл лелор",
+	"globalusage-for": "Глобалан лелор «$1»",
 	"globalusage-desc": "Массанхьа файл лелор хьожу [[Special:GlobalUsage|белхан агӀо]]",
 	"globalusage-ok": "Лахар",
-	"globalusage-text": "Массо проекташкахь файлах пайдаэцар лахар",
+	"globalusage-text": "Глобалан файл лелор лаха.",
 	"globalusage-on-wiki": "Лелор [[:File:$1|$1]] $2",
 	"globalusage-of-file": "ХӀара файл лелош ю лахахь гайтина йолу википедеш чохь:",
-	"globalusage-more": "Хьажа [[{{#Special:GlobalUsage}}/$1|массо проекташкахь пайдаэцар]] хӀокху файлас.",
-	"globalusage-filterlocal": "Ма гайта массо проекташкахь пайдаэцар"
+	"globalusage-more": "Хьажа хӀара файл [[{{#Special:GlobalUsage}}/$1|глобалан лелор]].",
+	"globalusage-filterlocal": "Локалан лелор ма гайта"
 }
