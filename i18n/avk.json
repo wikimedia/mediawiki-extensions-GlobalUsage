@@ -6,5 +6,6 @@
 	},
 	"globalusage": "Jadifa iyeltakura",
 	"globalusage-on-wiki": "Favera dene $2",
-	"globalusage-of-file": "Valevefi wiki va bat iyeltak malsaved :"
+	"globalusage-of-file": "Valevefi wiki va bat iyeltak malsaved :",
+	"globalusage-more": "[[{{#Special:GlobalUsage}}/$1|loa favera]] va bat iyeltak wil !!"
 }
