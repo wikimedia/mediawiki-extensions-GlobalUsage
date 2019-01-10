@@ -32,5 +32,8 @@
 	"apihelp-query+globalusage-param-limit": "Скільки посилань виводити.",
 	"apihelp-query+globalusage-param-filterlocal": "Відфільтрувати локальне використання файлу.",
 	"apihelp-query+globalusage-example-1": "Отримати використання [[:File:Example.jpg]]",
-	"globalusage-header": "Ця сторінка показує де використовується файл на інших Вікі. Ви також можете знайти цю інформацію внизу на сторінці в описі файлу."
+	"globalusage-header": "Ця сторінка показує де використовується файл на інших Вікі. Ви також можете знайти цю інформацію внизу на сторінці в описі файлу.",
+	"globallyunusedfiles": "Глобально невикористовувані файли",
+	"globallyunusedfilestext": "Такі файли існують, але не вбудовані в жодну сторінку в будь-якій вікі.",
+	"globallyunusedfiles-error-nonsharedrepo": "Цієї вікі немає в спільному репозиторії"
 }
