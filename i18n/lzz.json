@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Cem Rize"
+		]
+	},
+	"globalusage": "Küresel dosya kullanımı",
+	"globalusage-on-wiki": "$2 üzerinde kullanımı",
+	"globalusage-of-file": "Bu dosya aşağıdaki diğer vikiler tarafından kullanılmaktadır:",
+	"globalusage-more": "Bu dosyanın [[{{#Special:GlobalUsage}}/$1|daha fazla küresel kullanımını]] gör."
+}
