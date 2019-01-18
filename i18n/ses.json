@@ -6,5 +6,6 @@
 	},
 	"globalusage": "Adduɲɲaa-me tuku goyyan",
 	"globalusage-on-wiki": "Goyyan $2 ga",
-	"globalusage-of-file": "Wiiki goy taney wey ga goy nda tukoo woo:"
+	"globalusage-of-file": "Wiiki goy taney wey ga goy nda tukoo woo:",
+	"globalusage-more": "Dii [[{{#Special:GlobalUsage}}/$1|adduɲɲaa-mee goyyan]] tukoo woo se."
 }
