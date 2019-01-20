@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ukabia"
+			"Ukabia",
+			"Uzoma Ozurumba"
 		]
 	},
-	"globalusage-ok": "Tùwe"
+	"globalusage-ok": "Tùwe",
+	"globalusage-on-wiki": "Ihe eji na $2",
+	"globalusage-of-file": "Wikis ndi a edeputara na eji kwa failụ a:"
 }
