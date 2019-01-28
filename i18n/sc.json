@@ -4,5 +4,7 @@
 			"L2212"
 		]
 	},
-	"globalusage-on-wiki": "Impreu in $2"
+	"globalusage": "Impreu globale de su documentu",
+	"globalusage-on-wiki": "Impreu in $2",
+	"globalusage-of-file": "Impreu de custu documentu in àteras wikis:"
 }
