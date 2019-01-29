@@ -202,7 +202,7 @@ class GlobalUsageHooks {
 	 * @return bool
 	 */
 	public static function onLoadExtensionSchemaUpdates( $updater = null ) {
-		$dir = dirname( __DIR__ ) . '/patches';
+		$dir = dirname( __DIR__ ) . '/sql';
 
 		if ( $updater->getDB()->getType() == 'mysql' || $updater->getDB()->getType() == 'sqlite' ) {
 			$updater->addExtensionUpdate( [ 'addTable', 'globalimagelinks',
