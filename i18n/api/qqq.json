@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Zoranzoki21"
+		]
+	},
+	"apihelp-query+globalusage-description": "{{doc-apihelp-description|query+globalusage}}",
+	"apihelp-query+globalusage-summary": "{{doc-apihelp-summary|query+globalusage}}",
+	"apihelp-query+globalusage-param-prop": "{{doc-apihelp-param|query+globalusage|prop}}",
+	"apihelp-query+globalusage-param-limit": "{{doc-apihelp-param|query+globalusage|limit}}",
+	"apihelp-query+globalusage-param-filterlocal": "{{doc-apihelp-param|query+globalusage|filterlocal}}",
+	"apihelp-query+globalusage-example-1": "{{doc-apihelp-example|query+globalusage}}"
+}
