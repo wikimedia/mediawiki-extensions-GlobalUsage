@@ -326,6 +326,20 @@ $specialPageAliases['sk'] = [
 	'GlobalUsage' => [ 'GlobálneVyužitie' ],
 ];
 
+/** Serbian Cyrillic (српски (ћирилица)) */
+$specialPageAliases['sr-ec'] = [
+	'GlobalUsage' => [ 'ГлобалнаУпотреба', 'Глобална_употреба' ],
+	'GloballyWantedFiles' => [ 'Глобално_тражене_датотеке' ],
+	'GloballyUnusedFiles' => [ 'Глобално_некоришћене_датотеке' ]
+];
+
+/** Serbian Latin (srpski (latinica)) */
+$specialPageAliases['sr-el'] = [
+	'GlobalUsage' => [ 'GlobalnaUpotreba', 'Globalna_upotreba' ],
+	'GloballyWantedFiles' => [ 'Globalno_tražene_datoteke' ],
+	'GloballyUnusedFiles' => [ 'Globalno_nekorišćene_datoteke' ]
+];
+
 /** Swedish (svenska) */
 $specialPageAliases['sv'] = [
 	'GlobalUsage' => [ 'Global_användning' ],
