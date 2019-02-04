@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Cwlin0416",
+			"Kly"
+		]
+	},
+	"apihelp-query+globalusage-description": "回傳特定圖片的全域圖片使用狀況。",
+	"apihelp-query+globalusage-summary": "回傳特定圖片的全域圖片使用狀況。",
+	"apihelp-query+globalusage-param-prop": "要回傳的屬性：\n;url:加入 url。\n;pageid:加入頁面 ID。\n;namespace:加入命名空間 ID。",
+	"apihelp-query+globalusage-param-limit": "要回傳多少連結。",
+	"apihelp-query+globalusage-param-filterlocal": "過濾檔案的本地使用狀況。",
+	"apihelp-query+globalusage-example-1": "取得 [[:File:Example.jpg]] 的使用狀況"
+}

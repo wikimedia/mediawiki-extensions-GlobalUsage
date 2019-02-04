@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"V.narsikar"
+		]
+	},
+	"apihelp-query+globalusage-description": "एखाद्या चित्राचा वैश्विक चित्र-वापर म्हणून परतावा देते.",
+	"apihelp-query+globalusage-param-prop": "कोणत्या गुणधर्मांचा परतावा मिळवायचा:\n;url:url जोडते.\n;pageid:पानओळखण जोडते.\n;namespace:नामविश्वे ओळखण जोडते.",
+	"apihelp-query+globalusage-param-limit": "किती दुव्यांचा परतावा घ्यायचा.",
+	"apihelp-query+globalusage-param-filterlocal": "या संचिकेचा स्थानिक वापर गाळा.",
+	"apihelp-query+globalusage-example-1": "[[:File:Example.jpg]] याचा वापर मिळवा"
+}

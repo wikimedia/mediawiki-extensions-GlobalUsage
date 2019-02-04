@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Okras"
+		]
+	},
+	"apihelp-query+globalusage-description": "Возвращает информацию о глобальном использовании определённого изображения.",
+	"apihelp-query+globalusage-summary": "Возвращает информацию о глобальном использовании определённого изображения.",
+	"apihelp-query+globalusage-param-prop": "Какие свойства возвращать:\n;url:Добавляет URL-адрес.\n;pageid:Добавляет ID страницы.\n;namespace:Добавляет ID пространства имён.",
+	"apihelp-query+globalusage-param-limit": "Сколько ссылок возвращать.",
+	"apihelp-query+globalusage-param-filterlocal": "Отфильтровать локальное использование файла.",
+	"apihelp-query+globalusage-example-1": "Получить информацию об использовании [[:File:Example.jpg]]"
+}

@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Zoranzoki21"
+		]
+	},
+	"apihelp-query+globalusage-description": "Враћа глобално коришћење слике за одређену слику.",
+	"apihelp-query+globalusage-summary": "Враћа глобално коришћење слике за одређену слику.",
+	"apihelp-query+globalusage-param-prop": "Која својства да врати:\n;url:Додаје линк.\n;pageid:Додаје ID странице.\n;namespace:Додаје ID именског простора.",
+	"apihelp-query+globalusage-param-limit": "Колико линкова да вратим?",
+	"apihelp-query+globalusage-param-filterlocal": "Филтрирај локалну употребу датотеке.",
+	"apihelp-query+globalusage-example-1": "Преузми употребу [[:File:Example.jpg]]."
+}

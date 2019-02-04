@@ -20,10 +20,5 @@
 	"globallywantedfiles": "Globaalselt oodatumad failid",
 	"globallywantedfiles-summary": "Siin on loetletud failid, mida on kõigi vikide peale kokku enim manustatud, kuigi neid faile pole. Sarnase loendi, mis võtab arvesse vaid kasutust saidil {{SITENAME}}, leiad leheküljelt [[{{#special:WantedFiles}}]]. Valesti võivad oodatud failidena kajastuda failid, mida kasutatakse vikides, kus esitäht on tõstutundlik.",
 	"globallywantedfiles-foreign-repo": "<strong>Hoiatus:</strong> See viki kasutab välist failihoidlat. Välisest hoidlast pärit failide linke näidatakse siin sinisena ja läbikriipsutatult, kuigi need failid on olemas.",
-	"apihelp-query+globalusage-description": "Tagastab kindla pildi globaalse kasutuse.",
-	"apihelp-query+globalusage-param-prop": "Millised atribuudid tagastada:\n;url: Lisab internetiaadressi.\n;pageid: Lisab lehekülje identifikaatori.\n;namespace: Lisab nimeruumi identifikaatori.",
-	"apihelp-query+globalusage-param-limit": "Kui palju linke tagastada.",
-	"apihelp-query+globalusage-param-filterlocal": "Arva välja faili kohalik kasutus.",
-	"apihelp-query+globalusage-example-1": "Hangi faili [[:File:Example.jpg|Example.jpg]] kasutus",
 	"globalusage-header": "Siin leheküljel näidatakse, kus faili teistes vikides kasutatakse. Samad andmed leiad ka faili kirjelduslehekülje allosas."
 }

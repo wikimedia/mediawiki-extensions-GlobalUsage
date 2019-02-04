@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ssola"
+		]
+	},
+	"apihelp-query+globalusage-description": "Retorna l'ús global d'una imatge determinada.",
+	"apihelp-query+globalusage-param-limit": "Quants enllaços es retornaran."
+}

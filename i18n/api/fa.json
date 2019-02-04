@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Huji",
+			"Ladsgroup"
+		]
+	},
+	"apihelp-query+globalusage-description": "فهرستی سراسری از کاربردهای یک تصویر خاص بر می‌گرداند.",
+	"apihelp-query+globalusage-summary": "فهرستی سراسری از کاربردهای یک تصویر خاص بر می‌گرداند.",
+	"apihelp-query+globalusage-param-prop": "کدام ویژگی‌ها برگردانده شود:\n;url:نشانی اینترنتی را می‌افزاید.\n;pageid:شناسهٔ صفحه را می‌افزاید.\n;namespace:شناسهٔ فضای نام را می‌افزاید.",
+	"apihelp-query+globalusage-param-limit": "تعداد پیوندها برای بازگرداندن",
+	"apihelp-query+globalusage-param-filterlocal": "پالایش کاربردهای محلی پرونده.",
+	"apihelp-query+globalusage-example-1": "گرفتن استفاده‌های [[:File:Example.jpg]]"
+}

@@ -25,10 +25,5 @@
 	"globallywantedfiles": "Globaliai norimi failai",
 	"globallywantedfiles-summary": "Sąrašas failų, kurie daugiausiai kartų buvo įterpti visuose vikiuose, neskaitant neegzistuojančių. Norėdami pamatyti ekvivalentų sąrašą, kuris apima tik {{SITENAME}}, žiūrėkite [[{{#special:WantedFiles}}]]. File naudojimas vikiuose paisantiems pirmosios raidės lygį gali sąlygoti neteisingą priskyrimą prie norimų failų.",
 	"globallywantedfiles-foreign-repo": "<strong>Įspėjimas:</strong> Šis vikis naudoja užsenietiškas failų talpyklas. Naudojami failai iš užsenietiškų talpyklų šiame sąraše bus rodomi kaip išbrauktos mėlynos nuorodos, nepaisant fakto, kad jie egzistuoja.",
-	"apihelp-query+globalusage-description": "Grąžinti globalų paveikslėlio naudojimą konkrečiam paveikslėliui.",
-	"apihelp-query+globalusage-param-prop": "Kurias parinktis grąžinti:\n;url:Prideda url adresą.\n;pageid:Prideda puslapio ID.\n;namespace:Prideda vardų srities ID.",
-	"apihelp-query+globalusage-param-limit": "Kiek nuorodų grąžinti.",
-	"apihelp-query+globalusage-param-filterlocal": "Košti vietinį rinkmenos naudojimą.",
-	"apihelp-query+globalusage-example-1": "Gauti [[:File:Example.jpg]] naudojimą",
 	"globalusage-header": "Šis puslapis nurodo, kur failas yra naudojamas šiame vikyje. Jūs taip pat galite rasti šią informaciją failo aprašymo puslapio apačioje."
 }

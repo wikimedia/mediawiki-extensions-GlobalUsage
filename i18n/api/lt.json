@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Albertas",
+			"Hugo.arg"
+		]
+	},
+	"apihelp-query+globalusage-description": "Grąžinti globalų paveikslėlio naudojimą konkrečiam paveikslėliui.",
+	"apihelp-query+globalusage-param-prop": "Kurias parinktis grąžinti:\n;url:Prideda url adresą.\n;pageid:Prideda puslapio ID.\n;namespace:Prideda vardų srities ID.",
+	"apihelp-query+globalusage-param-limit": "Kiek nuorodų grąžinti.",
+	"apihelp-query+globalusage-param-filterlocal": "Košti vietinį rinkmenos naudojimą.",
+	"apihelp-query+globalusage-example-1": "Gauti [[:File:Example.jpg]] naudojimą"
+}

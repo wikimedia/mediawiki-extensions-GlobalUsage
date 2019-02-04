@@ -19,10 +19,5 @@
 	"globallywantedfiles": "'E file cchiù addimannate globbalmente",
 	"globallywantedfiles-summary": "Elenche 'e file ca se so mpise 'a maggior parte 'e vote spannute pe' tutt' 'e wiki pure si nun esisteno. Pe n'avé n'elenco equivalente ca pigliasse cunto surtanto 'e ll'use int'a {{SITENAME}}, vedite [[{{#special:WantedFiles}}]]. L'ause 'e lu file 'a wiki ca fossero senzibbele a 'e maiuscole ncopp' 'a primma lettera se ponno ripurtà erroneamente comm'addimannate.",
 	"globallywantedfiles-foreign-repo": "<strong>Attenziò:</strong> stu wiki aùsa n'archivio 'e file esterno. 'E file 'e ll'archivio esterno ca songo 'n'uso sarranno mmustate dint'a st'elenco cu nu cullegamento blu barrato, ancora che overo esistessero.",
-	"apihelp-query+globalusage-description": "Torna l'aùse 'e l'immaggene globbale pe' na cierta immaggene.",
-	"apihelp-query+globalusage-param-prop": "Quala proprietà 'a turnà:\n;url:Azzecca url.\n;pageid:Azzecca identificaziona 'e paggena.\n;namespace:Azzecca identificaziona 'e namespace.",
-	"apihelp-query+globalusage-param-limit": "Quante cullegamiente wiki s'avesser'a turnà",
-	"apihelp-query+globalusage-param-filterlocal": "Filtra l'ause lucale d' 'o file.",
-	"apihelp-query+globalusage-example-1": "Piglia l'auso 'e [[:File:Example.jpg]]",
 	"globalusage-header": "Sta paggena mmustasse quanno nu file s'ausa dint'a ll'ati wiki. Putite truvà st'informazione abbascio ncopp' 'a paggena 'e descriziona."
 }

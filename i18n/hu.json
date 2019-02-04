@@ -20,12 +20,6 @@
 	"globalusage-filterlocal": "Ne mutassa a helyi használatot",
 	"mostgloballylinkedfiles": "Globálisan legtöbbet hivatkozott fájlok",
 	"globallywantedfiles": "Globálisan keresett fájlok",
-	"apihelp-query+globalusage-description": "Egy adott kép globális használatának lekérése.",
-	"apihelp-query+globalusage-summary": "Egy adott kép globális használatának lekérése.",
-	"apihelp-query+globalusage-param-prop": "Lekérendő tulajdonságok:\n;url: A lap URL-je.\n;pageid: A lapazonosító.\n;namespace: A névtér azonosítója.",
-	"apihelp-query+globalusage-param-limit": "A visszaadandó linkek száma.",
-	"apihelp-query+globalusage-param-filterlocal": "A fájl helyi használatának kiszűrése.",
-	"apihelp-query+globalusage-example-1": "A [[:File:Example.jpg]] használatának lekérése",
 	"globallyunusedfiles": "Globálisan nem használt fájlok",
 	"globallyunusedfilestext": "A következő fájlok léteznek, de nincsenek használatban egyetlen wiki egyetlen lapján se.",
 	"globallyunusedfiles-error-nonsharedrepo": "Ez a wiki nem a központi médiatár"

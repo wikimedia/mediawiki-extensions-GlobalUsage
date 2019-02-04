@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16"
+		]
+	},
+	"apihelp-query+globalusage-description": "Restituisce l'utilizzo globale di una certa immagine.",
+	"apihelp-query+globalusage-summary": "Restituisce l'utilizzo globale di una certa immagine.",
+	"apihelp-query+globalusage-param-prop": "Quali proprietà restituire:\n;url:Aggiungi url.\n;pageid:Aggiungi ID pagina.\n;namespace:Aggiungi ID namespace.",
+	"apihelp-query+globalusage-param-limit": "Quanti collegamenti restituire.",
+	"apihelp-query+globalusage-param-filterlocal": "Filtra l'utilizzo locale del file.",
+	"apihelp-query+globalusage-example-1": "Ottieni uso di [[:File:Example.jpg]]"
+}

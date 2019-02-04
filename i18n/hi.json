@@ -22,7 +22,6 @@
 	"globalusage-filterlocal": "स्थानीय उपयोग ना दिखाएँ",
 	"mostgloballylinkedfiles": "विश्व स्तर पर सबसे ज्यादा जुड़ी फाइलें",
 	"globallywantedfiles": "वैश्विक आवश्यक फ़ाइलें",
-	"apihelp-query+globalusage-param-limit": "कितना कड़ी दिखेगा।",
 	"globallyunusedfiles": "वैश्विक रूप से अप्रयुक्त फ़ाइलें",
 	"globallyunusedfilestext": "\nनिम्न फाइलें मौजूद हैं लेकिन किसी भी विकि पर किसी भी पृष्ठ में लगाई नहीं की गई हैं।",
 	"globallyunusedfiles-error-nonsharedrepo": "यह विकी साझा रेपो पर नहीं है"

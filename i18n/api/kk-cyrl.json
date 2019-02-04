@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Arystanbek"
+		]
+	},
+	"apihelp-query+globalusage-param-limit": "Қайту үшін қанша сілтемелер.",
+	"apihelp-query+globalusage-param-filterlocal": "Жергілікті қолданысын сүзгілеу",
+	"apihelp-query+globalusage-example-1": "[[:File:Example.jpg]] қолданысын алу"
+}

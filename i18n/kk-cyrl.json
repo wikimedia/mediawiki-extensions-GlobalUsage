@@ -16,8 +16,5 @@
 	"globalusage-more": "Бұл файлдың [[{{#Special:GlobalUsage}}/$1|көбірек ғаламдық қолданылуын]] қарау.",
 	"globalusage-filterlocal": "Жергілікті қолданылуын көрсетпеу",
 	"mostgloballylinkedfiles": "Ғаламдық ең көп сілтенген беттер",
-	"globallywantedfiles": "Ғаламдық қажет етілген файл",
-	"apihelp-query+globalusage-param-limit": "Қайту үшін қанша сілтемелер.",
-	"apihelp-query+globalusage-param-filterlocal": "Жергілікті қолданысын сүзгілеу",
-	"apihelp-query+globalusage-example-1": "[[:File:Example.jpg]] қолданысын алу"
+	"globallywantedfiles": "Ғаламдық қажет етілген файл"
 }

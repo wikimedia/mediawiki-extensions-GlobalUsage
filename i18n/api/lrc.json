@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mogoeilor"
+		]
+	},
+	"apihelp-query+globalusage-param-limit": "چن گله هوم پیوند سی ؤرئشتن هئ.",
+	"apihelp-query+globalusage-param-filterlocal": "فیلتر وه کار گرتن ولات نشینی جانیا.",
+	"apihelp-query+globalusage-example-1": "وه کار گرتن [[:File:Example.jpg]]"
+}
