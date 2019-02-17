@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Lanciné.kounfantoh.fofana"
+			"Lanciné.kounfantoh.fofana",
+			"Youssoufkadialy"
 		]
 	},
-	"globalusage-on-wiki": "ߊ߬ ߟߊߓߊ߯ߙߊ߫ ߦߊ߲߬"
+	"globalusage": "ߞߐߕߐ߮ ߟߊߓߊ߯ߙߊߟߌ߫ ߞߙߎߞߙߍ",
+	"globalusage-on-wiki": "ߊ߬ ߟߊߓߊ߯ߙߊ߫ $2",
+	"globalusage-of-file": "ߥߞߌ߫ ߕߐ߭ ߢߌ߲߬ ߠߎ߬ ߦߋ߫ ߞߐߕߐ߮ ߣߌ߲߬ ߠߊߓߊ߯ߙߊ߫ ߟߊ߫"
 }
