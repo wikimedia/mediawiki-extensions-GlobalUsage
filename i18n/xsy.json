@@ -4,5 +4,9 @@
 			"Lalotahes"
 		]
 	},
-	"globalusage-of-file": "hani wahoer ’aroma’ ray wiki ’anoka hini tang’an ："
+	"globalusage": " saeboeh tang’an kapinatawawan",
+	"globalusage-ok": "komi:im",
+	"globalusage-on-wiki": "$2 ka pinatawawan",
+	"globalusage-of-file": "hani wahoer ’aroma’ ray wiki ’anoka hini tang’an ：",
+	"globalusage-more": " komita ray tang’an ka [[{{#Special:GlobalUsage}}/$1| ’ima ’akoy ray saeboeh ’oemaeh ka pinatawaw ]]."
 }
