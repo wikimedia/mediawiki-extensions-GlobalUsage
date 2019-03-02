@@ -154,5 +154,5 @@ class RefreshGlobalimagelinks extends Maintenance {
 	}
 }
 
-$maintClass = 'RefreshGlobalimagelinks';
+$maintClass = RefreshGlobalimagelinks::class;
 require_once RUN_MAINTENANCE_IF_MAIN;
