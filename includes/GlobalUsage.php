@@ -50,9 +50,12 @@ class GlobalUsage {
 
 		$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
 		$ticket = $ticket ?: $lbFactory->getEmptyTransactionTicket( __METHOD__ );
-		foreach ( array_chunk( $insert, $wgUpdateRowsPerQuery ) as $insertBatch ) {
+		$insertBatches = array_chunk( $insert, $wgUpdateRowsPerQuery );
+		foreach ( $insertBatches as $insertBatch ) {
 			$this->db->insert( 'globalimagelinks', $insertBatch, __METHOD__, [ 'IGNORE' ] );
-			$lbFactory->commitAndWaitForReplication( __METHOD__, $ticket );
+			if ( count( $insertBatches ) > 1 ) {
+				$lbFactory->commitAndWaitForReplication( __METHOD__, $ticket );
+			}
 		}
 	}
 
