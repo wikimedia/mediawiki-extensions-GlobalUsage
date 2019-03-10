@@ -3,10 +3,11 @@
 		"authors": [
 			"Snakesteuben",
 			"Robin0van0der0vliet",
-			"Robin van der Vliet"
+			"Robin van der Vliet",
+			"PiefPafPier"
 		]
 	},
-	"globalusage": "Globaal triemgebrûk",
+	"globalusage": "Globaal bestânsgebrûk",
 	"globalusage-ok": "Sykje",
 	"globalusage-on-wiki": "Gebrûk yn $2"
 }
