@@ -24,7 +24,7 @@ class SpecialGlobalUsage extends SpecialPage {
 	 * @param string $par
 	 */
 	public function execute( $par ) {
-		$target = $par ? $par : $this->getRequest()->getVal( 'target' );
+		$target = $par ?: $this->getRequest()->getVal( 'target' );
 		$this->target = Title::makeTitleSafe( NS_FILE, $target );
 
 		$this->filterLocal = $this->getRequest()->getCheck( 'filterlocal' );
