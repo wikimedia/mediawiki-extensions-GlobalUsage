@@ -1,4 +1,9 @@
 {
-	"@metadata": [],
-	"globalusage-ok": "Dii"
+	"@metadata": {
+		"authors": [
+			"Aguve"
+		]
+	},
+	"globalusage-ok": "Dii",
+	"globalusage-on-wiki": "Ezã $2"
 }
