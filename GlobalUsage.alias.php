@@ -87,6 +87,14 @@ $specialPageAliases['ce'] = [
 	'GlobalUsage' => [ 'Глобальни_лелор' ],
 ];
 
+/** Czech (čeština) */
+$specialPageAliases['cs'] = [
+	'GlobalUsage' => [ 'Globální_využití' ],
+	'MostGloballyLinkedFiles' => [ 'Globálně_nejodkazovanější_soubory' ],
+	'GloballyWantedFiles' => [ 'Globálně_chybějící_soubory' ],
+	'GloballyUnusedFiles' => [ 'Globálně_nepoužité_soubory' ]
+];
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = [
 	'GlobalUsage' => [ 'Globale_Benutzung', 'Globale_Verwendung' ],
