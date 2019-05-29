@@ -22,6 +22,8 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
+use MediaWiki\MediaWikiServices;
+
 class ApiQueryGlobalUsage extends ApiQueryBase {
 	public function __construct( $query, $moduleName ) {
 		parent::__construct( $query, $moduleName, 'gu' );
@@ -42,6 +44,9 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 			$query->setLimit( $params['limit'] );
 			$query->filterLocal( $params['filterlocal'] );
 			$query->filterNamespaces( $params['namespace'] );
+			if ( $params['site'] ) {
+				$query->filterSites( $params['site'] );
+			}
 
 			# Execute the query
 			$query->execute();
@@ -109,6 +114,8 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 	}
 
 	public function getAllowedParams() {
+		$sites = MediaWikiServices::getInstance()->getSiteLookup()->getSites()
+			->getGlobalIdentifiers();
 		return [
 			'prop' => [
 				ApiBase::PARAM_DFLT => 'url',
@@ -130,6 +137,10 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 				ApiBase::PARAM_TYPE => 'namespace',
 				ApiBase::PARAM_DFLT => '*',
 				ApiBase::PARAM_ISMULTI => true,
+			],
+			'site' => [
+				ApiBase::PARAM_TYPE => $sites,
+				ApiBase::PARAM_ISMULTI => true
 			],
 			'continue' => [
 				ApiBase::PARAM_HELP_MSG => 'api-help-param-continue',
