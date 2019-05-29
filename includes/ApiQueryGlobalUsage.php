@@ -41,6 +41,7 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 			}
 			$query->setLimit( $params['limit'] );
 			$query->filterLocal( $params['filterlocal'] );
+			$query->filterNamespaces( $params['namespace'] );
 
 			# Execute the query
 			$query->execute();
@@ -124,6 +125,11 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 				ApiBase::PARAM_MIN => 1,
 				ApiBase::PARAM_MAX => ApiBase::LIMIT_BIG1,
 				ApiBase::PARAM_MAX2 => ApiBase::LIMIT_BIG2
+			],
+			'namespace' => [
+				ApiBase::PARAM_TYPE => 'namespace',
+				ApiBase::PARAM_DFLT => '*',
+				ApiBase::PARAM_ISMULTI => true,
 			],
 			'continue' => [
 				ApiBase::PARAM_HELP_MSG => 'api-help-param-continue',

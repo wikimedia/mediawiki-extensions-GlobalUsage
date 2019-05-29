@@ -9,5 +9,6 @@
 	"apihelp-query+globalusage-param-prop": "{{doc-apihelp-param|query+globalusage|prop}}",
 	"apihelp-query+globalusage-param-limit": "{{doc-apihelp-param|query+globalusage|limit}}",
 	"apihelp-query+globalusage-param-filterlocal": "{{doc-apihelp-param|query+globalusage|filterlocal}}",
+	"apihelp-query+globalusage-param-namespace": "{{doc-apihelp-param|query+globalusage|namespace}}",
 	"apihelp-query+globalusage-example-1": "{{doc-apihelp-example|query+globalusage}}"
 }

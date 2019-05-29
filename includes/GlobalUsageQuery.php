@@ -14,6 +14,9 @@ class GlobalUsageQuery {
 	private $result;
 	private $reversed = false;
 
+	/** @var int[] namespace ID(s) desired */
+	private $filterNamespaces;
+
 	/**
 	 * @var Title|array
 	 */
@@ -125,6 +128,14 @@ class GlobalUsageQuery {
 	}
 
 	/**
+	 * Return results only for these namespaces.
+	 * @param int[] $namespaces numeric namespace IDs
+	 */
+	public function filterNamespaces( $namespaces ) {
+		$this->filterNamespaces = $namespaces;
+	}
+
+	/**
 	 * Executes the query
 	 */
 	public function execute() {
@@ -160,6 +171,10 @@ class GlobalUsageQuery {
 		if ( $this->filterLocal ) {
 			// Don't show local file usage
 			$where[] = 'gil_wiki != ' . $this->db->addQuotes( wfWikiId() );
+		}
+
+		if ( $this->filterNamespaces ) {
+			$where['gil_page_namespace_id'] = $this->filterNamespaces;
 		}
 
 		$options = [
