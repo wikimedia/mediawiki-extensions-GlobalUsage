@@ -1,12 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Arystanbek"
+			"Arystanbek",
+			"Mirzali"
 		]
 	},
 	"apihelp-query+globalusage-description": "Belirli bir görüntü verir genel görüntü kullanımı.",
 	"apihelp-query+globalusage-param-prop": "Hangi özellikleri dönmek için:\n;url:url Ekler.\n;pageıd:sayfa NUMARASI Ekler.\n;AD:AD KİMLİĞİ Ekler.",
 	"apihelp-query+globalusage-param-limit": "Dönüş için kaç bağlantıları.",
 	"apihelp-query+globalusage-param-filterlocal": "Dosya filtre yerel kullanımı.",
+	"apihelp-query+globalusage-param-namespace": "Sonuçları bu ad alanlarıyla sınırlandırın.",
 	"apihelp-query+globalusage-example-1": "Kullanımı [[:File:Example.jpg]]olsun"
 }

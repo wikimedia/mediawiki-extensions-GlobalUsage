@@ -17,7 +17,7 @@
 	"globalusage": "全域檔案使用狀況",
 	"globalusage-for": "\"$1\" 的全域使用狀況",
 	"globalusage-filename": "檔案名稱：",
-	"globalusage-desc": "用來檢視全域檔案使用狀況的 [[Special:GlobalUsage|特殊頁面]]",
+	"globalusage-desc": "用來檢視全域檔案使用狀況的[[Special:GlobalUsage|特殊頁面]]",
 	"globalusage-ok": "搜尋",
 	"globalusage-text": "搜尋全域檔案使用狀況",
 	"globalusage-no-results": "[[:$1]] 未在其他 Wiki 中使用。",

@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Felipe L. Ewald"
+			"Felipe L. Ewald",
+			"Eduardo Addad de Oliveira"
 		]
 	},
 	"apihelp-query+globalusage-description": "Retorna o uso global para uma determinada imagem.",
@@ -9,5 +10,6 @@
 	"apihelp-query+globalusage-param-prop": "Quais as propriedades a serem retornadas:\n;url:Adiciona url.\n;pageid:Adiciona ID da página.\nN;namespace: Adiciona ID do espaço nominal.",
 	"apihelp-query+globalusage-param-limit": "Quantos links serão retornados.",
 	"apihelp-query+globalusage-param-filterlocal": "Filtre o uso local do arquivo.",
+	"apihelp-query+globalusage-param-namespace": "Limite os resultados para esses espaços nominais.",
 	"apihelp-query+globalusage-example-1": "Obter uso de[[:File:Example.jpg]]"
 }

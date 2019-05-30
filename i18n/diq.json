@@ -4,17 +4,18 @@
 			"Erdemaslancan",
 			"Xoser",
 			"Gırd",
-			"1917 Ekim Devrimi"
+			"1917 Ekim Devrimi",
+			"Mirzali"
 		]
 	},
-	"globalusage": "Karo dosyayê globali",
+	"globalusage": "Gurenayışê dosyaya gılovere",
 	"globalusage-for": "Dosyayê globali ser ''$1''",
-	"globalusage-desc": "[[Special:GlobalUsage|Pelo xas]] ke karo dosyayê globali bivine",
+	"globalusage-desc": "Gurenayışê dosyaya gılovere rê [[Special:GlobalUsage|pela xase]] bıvêne",
 	"globalusage-ok": "Cı geyre",
-	"globalusage-text": "Karo dosyayê globali bigêre",
+	"globalusage-text": "Gurenayışê dosyaya gılovere cı geyre",
 	"globalusage-no-results": "[[:$1]] wikiyanê binan de çini yo.",
-	"globalusage-on-wiki": "Kar ser $2i de",
+	"globalusage-on-wiki": "$2 sero guriyayış",
 	"globalusage-of-file": "Ena dosya wikiyanê binan dè karêna.",
-	"globalusage-more": "[[{{#Special:GlobalUsage}}/$1|hesabê globalê]] ena dosya bıvinên",
+	"globalusage-more": "Yê na dosya [[{{#Special:GlobalUsage}}/$1|gurenayışê gıloveri tayêna]] bıvêne.",
 	"globalusage-filterlocal": "Karo local nimocne"
 }

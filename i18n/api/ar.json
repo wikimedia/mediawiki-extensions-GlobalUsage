@@ -3,7 +3,8 @@
 		"authors": [
 			"Abanima",
 			"Meno25",
-			"ديفيد"
+			"ديفيد",
+			"Kassem7899"
 		]
 	},
 	"apihelp-query+globalusage-description": "يعطي المعلومات عن استخدام صورة معينة في جميع الويكيات.",
@@ -11,5 +12,6 @@
 	"apihelp-query+globalusage-param-prop": "أي الخصائص لإرجاعها:\n;url:يضيف مسار.\n;pageid:يضيف رقم صفحة.\n;namespace:يضيف رقم نطاق.",
 	"apihelp-query+globalusage-param-limit": "كم عدد الوصلات للعودة.",
 	"apihelp-query+globalusage-param-filterlocal": "ترشيح الاستخدام المحلي للملف.",
+	"apihelp-query+globalusage-param-namespace": "احصر النتائج إلى مساحات الاسم المحددة.",
 	"apihelp-query+globalusage-example-1": "الحصول على استخدام [[:File:Example.jpg]]"
 }

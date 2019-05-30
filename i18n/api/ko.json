@@ -7,5 +7,6 @@
 	"apihelp-query+globalusage-summary": "특정 그림에 대한 모든 위키의 그림 사용 정보를 반환합니다.",
 	"apihelp-query+globalusage-param-limit": "반환할 링크 수입니다.",
 	"apihelp-query+globalusage-param-filterlocal": "로컬에서 파일을 사용하는 문서를 필터링합니다.",
+	"apihelp-query+globalusage-param-namespace": "이 이름공간으로 결과를 제한합니다.",
 	"apihelp-query+globalusage-example-1": "[[:File:Example.jpg]]을 사용하고 있는 문서를 가져옵니다"
 }

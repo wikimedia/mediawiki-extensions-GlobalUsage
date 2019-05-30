@@ -9,5 +9,6 @@
 	"apihelp-query+globalusage-param-prop": "Кои својства да се дадат:\n;url: Додава URL.\n;pageid: Додава назнака на страницата.\n;namespace: Додава назнака на именскиот простор.",
 	"apihelp-query+globalusage-param-limit": "Колку врски да се дадат.",
 	"apihelp-query+globalusage-param-filterlocal": "Филтрирај месна употреба на податотеката.",
+	"apihelp-query+globalusage-param-namespace": "Ограничи го исходот на овие именски простори.",
 	"apihelp-query+globalusage-example-1": "Дај употреба на [[:File:Example.jpg]]"
 }

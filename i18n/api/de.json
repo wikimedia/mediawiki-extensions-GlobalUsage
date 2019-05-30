@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Metalhead64"
+			"Metalhead64",
+			"Mirzali"
 		]
 	},
 	"apihelp-query+globalusage-description": "Gibt die globale Bildverwendung für ein bestimmtes Bild zurück.",
@@ -9,5 +10,6 @@
 	"apihelp-query+globalusage-param-prop": "Welche Eigenschaften zurückgegeben werden sollen:\n;url:Ergänzt die URL.\n;pageid:Ergänzt die Kennung der Seite.\n;namespace:Ergänzt die Kennung des Namensraums.",
 	"apihelp-query+globalusage-param-limit": "Wie viele Links zurückgegeben werden sollen.",
 	"apihelp-query+globalusage-param-filterlocal": "Lokale Verwendungen der Datei filtern.",
+	"apihelp-query+globalusage-param-namespace": "Beschränkt die Ergebnisse auf diese Namensräume.",
 	"apihelp-query+globalusage-example-1": "Ruft die Verwendung von [[:File:Example.jpg]] ab"
 }
