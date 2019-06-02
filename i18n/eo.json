@@ -2,11 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Yekrats",
-			"Lucas"
+			"Lucas",
+			"Mirin"
 		]
 	},
 	"globalusage": "Suma uzado de la dosiero",
 	"globalusage-for": "Ĝenerala uzado por \"$1\"",
+	"globalusage-filename": "Dosiernomo:",
 	"globalusage-desc": "[[Special:GlobalUsage|Speciala paĝo]] por rigardi uzadon de ĝeneralaj dosieroj",
 	"globalusage-ok": "Serĉi",
 	"globalusage-text": "Serĉi uzadon de ĝeneralaj dosieroj.",

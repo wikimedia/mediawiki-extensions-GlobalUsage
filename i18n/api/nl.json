@@ -4,7 +4,8 @@
 			"Mainframe98",
 			"Mar(c)",
 			"Mbch331",
-			"McDutchie"
+			"McDutchie",
+			"Duckson32"
 		]
 	},
 	"apihelp-query+globalusage-description": "Weergeeft het globale gebruik voor een bepaalde afbeelding.",
@@ -12,5 +13,6 @@
 	"apihelp-query+globalusage-param-prop": "Welke eigenschappen er moeten worden teruggestuurd:\n;url:Voegt de URL toe.\n;pageid:Voegt de pagina-ID toe.\n;namespace:Voegt de naamruimte-ID toe.",
 	"apihelp-query+globalusage-param-limit": "Hoeveel links er moeten worden teruggestuurd.",
 	"apihelp-query+globalusage-param-filterlocal": "Lokaal gebruik van dit bestand filteren.",
+	"apihelp-query+globalusage-param-namespace": "Beperk resultaten tot deze namespaces.",
 	"apihelp-query+globalusage-example-1": "Laat zien waar [[:File:Example.jpg]] gebruikt wordt"
 }
