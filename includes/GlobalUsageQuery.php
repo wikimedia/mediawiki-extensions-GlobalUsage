@@ -17,6 +17,9 @@ class GlobalUsageQuery {
 	/** @var int[] namespace ID(s) desired */
 	private $filterNamespaces;
 
+	/** @var string[] sites desired*/
+	private $filterSites;
+
 	/**
 	 * @var Title|array
 	 */
@@ -136,6 +139,14 @@ class GlobalUsageQuery {
 	}
 
 	/**
+	 * Return results only for these sites.
+	 * @param string[] $sites wiki site names
+	 */
+	public function filterSites( $sites ) {
+		$this->filterSites = $sites;
+	}
+
+	/**
 	 * Executes the query
 	 */
 	public function execute() {
@@ -175,6 +186,10 @@ class GlobalUsageQuery {
 
 		if ( $this->filterNamespaces ) {
 			$where['gil_page_namespace_id'] = $this->filterNamespaces;
+		}
+
+		if ( $this->filterSites ) {
+			$where['gil_wiki'] = $this->filterSites;
 		}
 
 		$options = [
