@@ -9,5 +9,6 @@
 	"apihelp-query+globalusage-param-prop": "As propriedades a devolver:\n;url:Adiciona um URL.\n;pageid:Adiciona um identificador de página.\n;namespace:Adiciona um identificador de espaço nominal.",
 	"apihelp-query+globalusage-param-limit": "O número de hiperligações a serem devolvidas.",
 	"apihelp-query+globalusage-param-filterlocal": "Filtar a utilização local do ficheiro.",
+	"apihelp-query+globalusage-param-namespace": "Limitar os resultados a estes espaços nominais.",
 	"apihelp-query+globalusage-example-1": "Obter a utilização de [[:File:Example.jpg]]"
 }
