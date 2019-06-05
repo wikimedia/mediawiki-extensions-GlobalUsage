@@ -11,5 +11,6 @@
 	"apihelp-query+globalusage-param-limit": "Quantos links serão retornados.",
 	"apihelp-query+globalusage-param-filterlocal": "Filtre o uso local do arquivo.",
 	"apihelp-query+globalusage-param-namespace": "Limite os resultados para esses espaços nominais.",
+	"apihelp-query+globalusage-param-site": "Limite os resultados para esses sites.",
 	"apihelp-query+globalusage-example-1": "Obter uso de[[:File:Example.jpg]]"
 }

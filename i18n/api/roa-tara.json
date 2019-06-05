@@ -10,5 +10,6 @@
 	"apihelp-query+globalusage-param-limit": "Quanda collegaminde da turnà.",
 	"apihelp-query+globalusage-param-filterlocal": "Filtre le ause locale d'u file.",
 	"apihelp-query+globalusage-param-namespace": "Limite le resultate a chiste namespace.",
+	"apihelp-query+globalusage-param-site": "Limite le resultate a chiste site.",
 	"apihelp-query+globalusage-example-1": "Pigghie l'ause de [[:File:Example.jpg]]"
 }
