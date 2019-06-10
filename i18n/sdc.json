@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jun Misugi"
+		]
+	},
+	"globalusage": "Usu grobari di file",
+	"globalusage-on-wiki": "Usànzia in $2",
+	"globalusage-of-file": "Li sighenti althri vichii utirìzani chisthu file:",
+	"globalusage-more": "Vedi [[{{#Special:GlobalUsage}}/$1|althru usu i' lu mondu]] di kisthu archibiu."
+}

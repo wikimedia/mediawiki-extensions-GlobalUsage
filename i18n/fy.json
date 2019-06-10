@@ -9,5 +9,6 @@
 	},
 	"globalusage": "Globaal bestânsgebrûk",
 	"globalusage-ok": "Sykje",
-	"globalusage-on-wiki": "Gebrûk op $2"
+	"globalusage-on-wiki": "Gebrûk op $2",
+	"globalusage-of-file": "De neikommende oare wiki's brûke dit bestân:"
 }
