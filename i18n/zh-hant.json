@@ -28,7 +28,7 @@
 	"mostgloballylinkedfiles": "最多全域連結的檔案",
 	"mostgloballylinkedfiles-summary": "跨所有 Wiki 中被內嵌最多次數的檔案清單。 同類型清單但只顯示於 {{SITENAME}} 中的使用狀況，請參考 [[{{#special:MostLinkedFiles}}]]。",
 	"globallywantedfiles": "全域需要的檔案",
-	"globallywantedfiles-summary": "跨所有 Wiki 中被內嵌最多次數但不存在的檔案清單。 同類型清單但只顯示於 {{SITENAME}} 中的使用狀況，請參考 [[{{#special:WantedFiles}}]]。　檔案使用狀況在第一個字母不區分大小寫的 wiki 中可能會被錯誤回報成需要的檔案。",
+	"globallywantedfiles-summary": "跨所有 Wiki 中被內嵌最多次數但不存在的檔案清單。 同類型清單但只顯示於 {{SITENAME}} 中的使用狀況，請參考 [[{{#special:WantedFiles}}]]。檔案使用狀況在第一個字母不區分大小寫的 wiki 中可能會被錯誤回報成需要的檔案。",
 	"globallywantedfiles-foreign-repo": "<strong>警告：</strong> 此 Wiki 使用外部的檔案儲存庫，正在使用的外部儲存庫檔案會以藍色刪除線的連結於清單上，既使檔案實際存在。",
 	"globalusage-header": "此頁面顯示檔案在其他 wiki 被使用的狀況，您也可以在檔案的描述頁面底端找到這些資訊。",
 	"globallyunusedfiles": "全域未使用的檔案",
