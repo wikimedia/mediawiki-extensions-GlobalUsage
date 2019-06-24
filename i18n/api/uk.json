@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Piramidion",
-			"Ата"
+			"Ата",
+			"Vlad5250"
 		]
 	},
 	"apihelp-query+globalusage-description": "Видає глобальне використання певного зображення.",
@@ -10,5 +11,7 @@
 	"apihelp-query+globalusage-param-prop": "Які властивості виводити:\n;url:Додає url.\n;pageid:Додає ID сторінки.\n;namespace:Додає ID простору назв.",
 	"apihelp-query+globalusage-param-limit": "Скільки посилань виводити.",
 	"apihelp-query+globalusage-param-filterlocal": "Відфільтрувати локальне використання файлу.",
+	"apihelp-query+globalusage-param-namespace": "Обмежити результати до цих просторів назв.",
+	"apihelp-query+globalusage-param-site": "Обмежити результати до цих сайтів.",
 	"apihelp-query+globalusage-example-1": "Отримати використання [[:File:Example.jpg]]"
 }
