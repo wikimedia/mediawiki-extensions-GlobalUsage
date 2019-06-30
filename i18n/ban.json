@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Carma citrawati"
+			"Carma citrawati",
+			"NoiX180"
 		]
 	},
-	"globalusage": "panganggenan berkas global",
-	"globalusage-on-wiki": "panganggén ring $2",
-	"globalusage-of-file": "Wiki lianan puniki nganggén berkas puniki"
+	"globalusage": "Panganggén berkas sajagaté",
+	"globalusage-on-wiki": "Panganggén ring $2",
+	"globalusage-of-file": "Wiki lianan puniki nganggén berkas puniki",
+	"globalusage-more": "Cingak [[{{#Special:GlobalUsage}}/$1|panganggén sajagaté sané lianan]] saking berkas puniki."
 }
