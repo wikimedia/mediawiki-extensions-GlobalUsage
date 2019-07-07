@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Geoleplubo"
+		]
+	},
+	"globalusage": "Usage global du fichier",
+	"globalusage-on-wiki": "Utilisacion édseur $2",
+	"globalusage-of-file": "Chés eutes wikis suivants uzette chole fichier :",
+	"globalusage-more": "Vir [[{{#Special:GlobalUsage}}/$1|davantage édseur l’utilisacion globale]] éd chole fichié-lo."
+}

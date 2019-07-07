@@ -5,8 +5,8 @@
 			"NoiX180"
 		]
 	},
-	"globalusage": "Panganggén berkas sajagaté",
+	"globalusage": "Panganggén depukan sajagaté",
 	"globalusage-on-wiki": "Panganggén ring $2",
-	"globalusage-of-file": "Wiki lianan puniki nganggén berkas puniki",
+	"globalusage-of-file": "Wiki lianan ring sor puniki nganggén depukan puniki:",
 	"globalusage-more": "Cingak [[{{#Special:GlobalUsage}}/$1|panganggén sajagaté sané lianan]] saking berkas puniki."
 }
