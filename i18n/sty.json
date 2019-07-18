@@ -5,9 +5,9 @@
 			"Sorbat"
 		]
 	},
-	"globalusage": "Файлның глобаль ҡулланыуы",
+	"globalusage": "Файлның глобаль ошланыуы",
 	"globalusage-filename": "Файл исем:",
-	"globalusage-on-wiki": "$2 проектынта ҡулланыу",
-	"globalusage-of-file": "Пы файл түмәнтәге википроектларта ҡулланылаты:",
-	"globalusage-more": "Пы файлның [[{{#Special:GlobalUsage}}/$1|глобаль ҡулланышын]] ҡарағалы."
+	"globalusage-on-wiki": "$2 проектынта ошланыу",
+	"globalusage-of-file": "Пы файл түмәнтәге пикипроектларта ошланылаты:",
+	"globalusage-more": "Пы файлның [[{{#Special:GlobalUsage}}/$1|глобаль ошланышын]] ҡарағалы."
 }
