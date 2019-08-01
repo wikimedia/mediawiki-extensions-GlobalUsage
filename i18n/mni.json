@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Awangba Mangang"
+			"Awangba Mangang",
+			"Amire80"
 		]
 	},
 	"globalusage": "ꯃꯥꯂꯦꯝꯒꯤ ꯊꯥꯛꯇꯥ ꯁꯤꯖꯤꯟꯅꯕꯥ ꯐꯥꯏꯜ",
 	"globalusage-on-wiki": "$2 ꯗꯥ ꯁꯤꯖꯤꯟꯅꯩ",
 	"globalusage-of-file": "Atei loinariba wikisingna madi gi file c sijinnei",
-	"globalusage-more": "View [[{{#Special:GlobalUsage}}/$1|more global usage]] of this file."
+	"globalusage-more": "ꯌꯦꯡꯉꯨ [[{{#Special:GlobalUsage}}/$1|ꯃꯂꯦꯝꯒꯤ ꯊꯥꯛꯀꯤ ꯁꯤꯖꯤꯟꯅꯐꯝ]] ꯑꯗꯨ ꯃꯁꯤꯒꯤ ꯐꯥꯏꯜꯁꯤꯗ ꯫"
 }
