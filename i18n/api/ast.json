@@ -9,5 +9,7 @@
 	"apihelp-query+globalusage-param-prop": "Qué propiedaes devolver:\n;url: Amiesta la URL.\n;pageid: Amiesta la ID de la páxina.\n;namespace: Amiesta la ID del espaciu de nomes.",
 	"apihelp-query+globalusage-param-limit": "Cuántos enllaces hai que devolver.",
 	"apihelp-query+globalusage-param-filterlocal": "Filtriar l'usu llocal del ficheru.",
+	"apihelp-query+globalusage-param-namespace": "Llendar los resultaos a estos espacios de nome.",
+	"apihelp-query+globalusage-param-site": "Llendar los resultaos a estos sitios.",
 	"apihelp-query+globalusage-example-1": "Ver l'usu de [[:File:Example.jpg]]"
 }
