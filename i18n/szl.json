@@ -2,11 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Herr Kriss",
-			"Krol111"
+			"Krol111",
+			"Uostofchuodnego"
 		]
 	},
-	"globalusage": "Globalne wykorzystańy plika",
+	"globalusage": "Globalne użycie zbioru",
 	"globalusage-ok": "Šnupej",
-	"globalusage-on-wiki": "Wykorzystańy we $2",
-	"globalusage-of-file": "Tyn plik je wykorzystywany tyż we inkszych projektach wiki:"
+	"globalusage-on-wiki": "Użycie we $2",
+	"globalusage-of-file": "Tyn zbiōr je używany tyż we inkszych projektach wiki:",
+	"globalusage-more": "Pokŏż [[{{#Special:GlobalUsage}}/$1|listã globalnego użyciŏ]] tego zbioru."
 }
