@@ -11,5 +11,7 @@
 	"apihelp-query+globalusage-param-prop": "Que propiedades devolver:\n;url: Engade a URL.\n;pageid: Engade o identificador da páxina.\n;namespace: Engade o identificador do espazo de nomes.",
 	"apihelp-query+globalusage-param-limit": "Cantas ligazóns devolver.",
 	"apihelp-query+globalusage-param-filterlocal": "Filtrar o uso local do ficheiro.",
+	"apihelp-query+globalusage-param-namespace": "Limitar resultados a estes espazos de nomes.",
+	"apihelp-query+globalusage-param-site": "Limitar resultados a estos sitios.",
 	"apihelp-query+globalusage-example-1": "Obter o uso de [[:File:Example.jpg]]"
 }
