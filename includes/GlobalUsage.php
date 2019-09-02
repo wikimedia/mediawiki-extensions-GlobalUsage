@@ -132,8 +132,6 @@ class GlobalUsage {
 	 * @param Title $title Title of the file to copy entries from.
 	 */
 	public function copyLocalImagelinks( Title $title ) {
-		global $wgContLang;
-
 		$res = $this->db->select(
 			[ 'imagelinks', 'page' ],
 			[ 'il_to', 'page_id', 'page_namespace', 'page_title' ],
@@ -142,12 +140,13 @@ class GlobalUsage {
 		);
 
 		$insert = [];
+		$contLang = MediaWikiServices::getInstance()->getContentLanguage();
 		foreach ( $res as $row ) {
 			$insert[] = [
 				'gil_wiki' => $this->interwiki,
 				'gil_page' => $row->page_id,
 				'gil_page_namespace_id' => $row->page_namespace,
-				'gil_page_namespace' => $wgContLang->getNsText( $row->page_namespace ),
+				'gil_page_namespace' => $contLang->getNsText( $row->page_namespace ),
 				'gil_page_title' => $row->page_title,
 				'gil_to' => $row->il_to,
 			];
