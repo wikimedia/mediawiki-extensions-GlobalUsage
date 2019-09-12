@@ -5,11 +5,12 @@
 			"Jordi Roqué",
 			"SMP",
 			"Vriullop",
-			"Ssola"
+			"Ssola",
+			"Fitoschido"
 		]
 	},
 	"globalusage": "Ús global del fitxer",
-	"globalusage-for": "Ús global per «$1»",
+	"globalusage-for": "Ús global del fitxer «$1»",
 	"globalusage-desc": "[[Special:GlobalUsage|Pàgina especial]] per a veure l'ús global del fitxer",
 	"globalusage-ok": "Cerca",
 	"globalusage-text": "Cerca l'ús global del fitxer.",
