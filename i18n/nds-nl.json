@@ -11,7 +11,7 @@
 	"globalusage-text": "Globaal bestaandsgebruuk bekieken",
 	"globalusage-no-results": "[[:$1]] wörden niet gebruukt in aandere wiki's.",
 	"globalusage-on-wiki": "Bruuk in $2",
-	"globalusage-of-file": "De volgende andere wikis bruken dit bestand:",
-	"globalusage-more": "[[{{#Special:GlobalUsage}}/$1|Globaal gebruuk]] van dit bestaand bekieken.",
+	"globalusage-of-file": "De volgende andere wikis gebruken dit bestand:",
+	"globalusage-more": "[[{{#Special:GlobalUsage}}/$1|Globaal gebruuk]] van dit bestand bekyken.",
 	"globalusage-filterlocal": "Lokaal gebruuk niet laoten zien"
 }

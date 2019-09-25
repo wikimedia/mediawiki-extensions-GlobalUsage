@@ -9,5 +9,7 @@
 	"apihelp-query+globalusage-param-prop": "Hvilke egenskaper som skal returneres:\n;url:Legger til URL.\n;pageid:Legger til side-ID.\n;namespace:Legger til navneroms-ID.",
 	"apihelp-query+globalusage-param-limit": "Hvor mange lenker som skal returneres.",
 	"apihelp-query+globalusage-param-filterlocal": "Filtrer lokal bruk av filen.",
+	"apihelp-query+globalusage-param-namespace": "Begrens resultatene til disse navnerommene.",
+	"apihelp-query+globalusage-param-site": "Begrens resultatene til disse nettstedene.",
 	"apihelp-query+globalusage-example-1": "Få bruk av [[:File:Example.jpg]]"
 }
