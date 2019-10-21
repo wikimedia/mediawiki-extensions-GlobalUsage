@@ -3,7 +3,8 @@
 		"authors": [
 			"TRYPPN",
 			"Trengarasu",
-			"ElangoRamanujam"
+			"ElangoRamanujam",
+			"Balajijagadesh"
 		]
 	},
 	"globalusage": "கோப்பின் முழுமையான பயன்பாடு",
@@ -16,5 +17,8 @@
 	"globalusage-on-wiki": "$2-திட்டத்தில் இதன் பயன்பாடு",
 	"globalusage-of-file": "கீழ்கண்ட மற்ற விக்கிகள் இந்த கோப்பை பயன்படுத்துகின்றன:",
 	"globalusage-more": "[[{{#Special:GlobalUsage}}/$1|சிறப்பு பக்கம்-மொத்த பயன்பாடு]] - இதன் மூலம் இந்த கோப்பின் மொத்த பயன்பாட்டை அறிய முடியும்",
-	"globalusage-filterlocal": "இவ்விடத்தில் பயன்படுத்தப்படுவதை காட்டவேண்டாம்"
+	"globalusage-filterlocal": "இவ்விடத்தில் பயன்படுத்தப்படுவதை காட்டவேண்டாம்",
+	"mostgloballylinkedfiles": "உலக அளவில் அதிகமாக இணைக்கப்பட்ட கோப்புகள்",
+	"globallywantedfiles": "உலகளவில் வேண்டப்படும் கோப்புகள்",
+	"globallyunusedfiles": "உலகளவில் பயன்படுத்தாத கோப்புகள்"
 }

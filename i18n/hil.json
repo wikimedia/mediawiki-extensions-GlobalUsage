@@ -1,8 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Jose77"
+			"Jose77",
+			"Pare Mo"
 		]
 	},
-	"globalusage-ok": "Pangita-a"
+	"globalusage": "Global nga paggamit sa artsibo",
+	"globalusage-ok": "Pangita-a",
+	"globalusage-on-wiki": "Gamit sa $2",
+	"globalusage-of-file": "Ang ining artsibo ginagamit sg mga iban pang wiking ini:"
 }
