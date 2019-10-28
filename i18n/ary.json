@@ -6,5 +6,6 @@
 	},
 	"globalusage": "الاستخدام العالمي للملف",
 	"globalusage-on-wiki": "الاستخدام في $2",
-	"globalusage-of-file": "الويكيات التالية كتستخدم هاد الملف:"
+	"globalusage-of-file": "الويكيات التالية كتستخدم هاد الملف:",
+	"globalusage-more": "اعرض [[{{#Special:GlobalUsage}}/$1|المزيد من الاستخدام العام]] ديال هاد الملف."
 }
