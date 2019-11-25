@@ -1,8 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Pyscowicz"
+			"Pyscowicz",
+			"Palmtree222"
 		]
 	},
-	"globalusage": "Fiilin järjestelmänlaajuinen käyttö"
+	"globalusage": "Fiilin järjestelmänlaajuinen käyttö",
+	"globalusage-on-wiki": "Käyttö kohteessa $2",
+	"globalusage-of-file": "Seuraavat muut wikit käyttävät tätä failia:",
+	"globalusage-more": "Näytä lissää tämän failin [[{{#Special:GlobalUsage}}/$1|järjestelmänlaajuista käyttöä]]."
 }
