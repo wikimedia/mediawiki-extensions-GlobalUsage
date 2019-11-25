@@ -199,10 +199,10 @@ class GlobalUsageHooks {
 	/**
 	 * Hook to apply schema changes
 	 *
-	 * @param DatabaseUpdater|null $updater
+	 * @param DatabaseUpdater $updater
 	 * @return bool
 	 */
-	public static function onLoadExtensionSchemaUpdates( $updater = null ) {
+	public static function onLoadExtensionSchemaUpdates( DatabaseUpdater $updater ) {
 		$dir = dirname( __DIR__ ) . '/sql';
 
 		if ( $updater->getDB()->getType() == 'mysql' || $updater->getDB()->getType() == 'sqlite' ) {
