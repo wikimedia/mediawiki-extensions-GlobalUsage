@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Jaeminlovetaejoon"
+			"Jaeminlovetaejoon",
+			"Khing"
 		]
 	},
+	"globalusage": "Global file usage",
 	"globalusage-on-wiki": "တၢ်သူအီၤလၢ $2"
 }
