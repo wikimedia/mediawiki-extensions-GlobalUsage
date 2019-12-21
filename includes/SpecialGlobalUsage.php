@@ -131,9 +131,7 @@ class SpecialGlobalUsage extends SpecialPage {
 				$this->target,
 				wfFindFile( $this->target ),
 				/* $label */ $this->target->getPrefixedText(),
-				/* $alt */ '', /* $align */ $this->getLanguage()->alignEnd(),
-				/* $handlerParams */ [], /* $framed */ false,
-				/* $manualThumb */ false
+				/* $alt */ '', /* $align */ $this->getLanguage()->alignEnd()
 			);
 			$this->getOutput()->addHtml( $html );
 		}
