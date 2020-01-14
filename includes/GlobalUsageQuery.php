@@ -17,7 +17,7 @@ class GlobalUsageQuery {
 	/** @var int[] namespace ID(s) desired */
 	private $filterNamespaces;
 
-	/** @var string[] sites desired*/
+	/** @var string[] sites desired */
 	private $filterSites;
 
 	/**
@@ -57,7 +57,7 @@ class GlobalUsageQuery {
 	 * @return bool
 	 */
 	public function setOffset( $offset, $reversed = null ) {
-		if ( !is_null( $reversed ) ) {
+		if ( $reversed !== null ) {
 			$this->reversed = $reversed;
 		}
 

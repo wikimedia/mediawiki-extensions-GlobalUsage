@@ -31,12 +31,12 @@ class SpecialGlobalUsage extends SpecialPage {
 
 		$this->setHeaders();
 		$this->getOutput()->addWikiMsg( 'globalusage-header' );
-		if ( !is_null( $this->target ) ) {
+		if ( $this->target !== null ) {
 			$this->getOutput()->addWikiMsg( 'globalusage-header-image', $this->target->getText() );
 		}
 		$this->showForm();
 
-		if ( is_null( $this->target ) ) {
+		if ( $this->target === null ) {
 			$this->getOutput()->setPageTitle( $this->msg( 'globalusage' ) );
 			return;
 		}
@@ -67,7 +67,7 @@ class SpecialGlobalUsage extends SpecialPage {
 				'id' => 'target',
 				'autosize' => true,
 				'infusable' => true,
-				'value' => is_null( $this->target ) ? '' : $this->target->getText(),
+				'value' => $this->target === null ? '' : $this->target->getText(),
 			] ),
 			[
 				'label' => $this->msg( 'globalusage-filename' )->text(),
@@ -125,7 +125,7 @@ class SpecialGlobalUsage extends SpecialPage {
 			] )
 		);
 
-		if ( !is_null( $this->target ) && wfFindFile( $this->target ) ) {
+		if ( $this->target !== null && wfFindFile( $this->target ) ) {
 			// Show the image if it exists
 			$html = Linker::makeThumbLinkObj(
 				$this->target,

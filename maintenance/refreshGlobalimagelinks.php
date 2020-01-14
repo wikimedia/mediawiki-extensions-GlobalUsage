@@ -75,7 +75,7 @@ class RefreshGlobalimagelinks extends Maintenance {
 					}
 					# Add the imagelinks entry to the pages array if the image
 					# does not exist locally
-					if ( !is_null( $row->il_to ) && is_null( $row->img_name ) ) {
+					if ( $row->il_to !== null && $row->img_name === null ) {
 						$pages[$row->page_id][$row->il_to] = $row;
 					}
 					$lastRow = $row;
@@ -106,7 +106,7 @@ class RefreshGlobalimagelinks extends Maintenance {
 					# Be nice to the database
 					$lbFactory->commitAndWaitForReplication( __METHOD__, $ticket );
 				}
-			} while ( !is_null( $lastRow ) );
+			} while ( $lastRow !== null );
 		}
 
 		// Clean up broken links from pages that no longer exist...
@@ -149,7 +149,7 @@ class RefreshGlobalimagelinks extends Maintenance {
 				if ( $deleted > 0 ) {
 					$lbFactory->commitAndWaitForReplication( __METHOD__, $ticket );
 				}
-			};
+			}
 		}
 	}
 }
