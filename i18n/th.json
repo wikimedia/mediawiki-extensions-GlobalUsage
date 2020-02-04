@@ -3,10 +3,11 @@
 		"authors": [
 			"Octahedron80",
 			"Horus",
-			"Aefgh39622"
+			"Aefgh39622",
+			"Ans"
 		]
 	},
-	"globalusage": "การใช้ไฟล์ทั่วโลก",
+	"globalusage": "การเรียกใช้ไฟล์ส่วนกลาง",
 	"globalusage-for": "การใช้ทั่วโลกสำหรับ  \"$1\"",
 	"globalusage-filename": "ชื่อไฟล์:",
 	"globalusage-desc": "[[Special:GlobalUsage|หน้าพิเศษ]]สำหรับดูการใช้ไฟล์ทั่วโลก",
