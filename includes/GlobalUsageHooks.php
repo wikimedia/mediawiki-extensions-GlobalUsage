@@ -211,6 +211,11 @@ class GlobalUsageHooks {
 			$updater->addExtensionUpdate( [ 'addIndex', 'globalimagelinks',
 				'globalimagelinks_wiki_nsid_title',
 				"$dir/patch-globalimagelinks_wiki_nsid_title.sql", true ] );
+			$updater->dropExtensionIndex(
+				'globalimagelinks',
+				'globalimagelinks_to_wiki_page',
+				"$dir/patch-globalimagelinks-pk.sql"
+			);
 		} elseif ( $updater->getDB()->getType() == 'postgresql' ) {
 			$updater->addExtensionUpdate( [ 'addTable', 'globalimagelinks',
 				"$dir/GlobalUsage.pg.sql", true ] );
