@@ -40,7 +40,7 @@ class GlobalUsageImagePageHooks {
 		}
 
 		$context = $imagePage->getContext();
-		$title = $imagePage->getFile()->getTitle();
+		$title = $imagePage->getPage()->getFile()->getTitle();
 		$targetName = $title->getText();
 
 		$query = self::getImagePageQuery( $title );
@@ -96,7 +96,7 @@ class GlobalUsageImagePageHooks {
 	 */
 	protected static function hasResults( $imagePage ) {
 		# Don't display links if the target file does not exist
-		$file = $imagePage->getFile();
+		$file = $imagePage->getPage()->getFile();
 		if ( !$file->exists() ) {
 			return false;
 		}
@@ -113,7 +113,7 @@ class GlobalUsageImagePageHooks {
 			return false;
 		}
 
-		$query = self::getImagePageQuery( $imagePage->getFile()->getTitle() );
+		$query = self::getImagePageQuery( $file->getTitle() );
 		return (bool)$query->getResult();
 	}
 }
