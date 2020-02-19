@@ -194,7 +194,8 @@ class GlobalUsage {
 		global $wgGlobalUsageSharedRepoWiki;
 		// Make sure to get the "canonical" page name, and not a translation.
 		$titleText = $context->getTitle()->getDBkey();
-		list( $canonicalName, $subpage ) = SpecialPageFactory::resolveAlias( $titleText );
+		list( $canonicalName, $subpage ) = MediaWikiServices::getInstance()
+			->getSpecialPageFactory()->resolveAlias( $titleText );
 		$canonicalName = MWNamespace::getCanonicalName( NS_SPECIAL ) . ':' . $canonicalName;
 		if ( $subpage !== null ) {
 			$canonicalName .= '/' . $subpage;
