@@ -29,5 +29,5 @@
 	"globalusage-header": "Bu sayfa bir dosyanın diğer wikilerde nerede kullanıldığını gösterir. Bu bilgiyi dosya açıklaması sayfasının altında da bulabilirsiniz.",
 	"globallyunusedfiles": "Küresel olarak kullanılmayan dosyalar",
 	"globallyunusedfilestext": "Aşağıdaki dosyalar var, ancak herhangi bir wikideki herhangi bir sayfaya gömülmedi.",
-	"globallyunusedfiles-error-nonsharedrepo": "Bu wiki paylaşılan depoda yok"
+	"globallyunusedfiles-error-nonsharedrepo": "Bu viki paylaşılan depoda yok"
 }
