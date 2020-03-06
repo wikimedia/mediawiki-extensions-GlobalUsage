@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Maax"
+			"Maax",
+			"Abdullahi"
 		]
 	},
-	"globalusage-ok": "Raadi"
+	"globalusage": "isticmaalka faylka aduunka",
+	"globalusage-ok": "Raadi",
+	"globalusage-on-wiki": "Ku isticmaal"
 }
