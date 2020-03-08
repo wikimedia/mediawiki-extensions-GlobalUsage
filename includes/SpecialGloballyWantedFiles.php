@@ -7,6 +7,9 @@
  * @author Brian Wolff <bawolff+wn@gmail.com>
  * @ingroup SpecialPage
  */
+
+use MediaWiki\MediaWikiServices;
+
 class SpecialGloballyWantedFiles extends WantedFilesPage {
 
 	public function __construct( $name = 'GloballyWantedFiles' ) {
@@ -32,7 +35,7 @@ class SpecialGloballyWantedFiles extends WantedFilesPage {
 	 * @return String html to output
 	 */
 	public function getPageHeader() {
-		if ( RepoGroup::singleton()->hasForeignRepos() ) {
+		if ( MediaWikiServices::getInstance()->getRepoGroup()->hasForeignRepos() ) {
 			return $this->msg( 'globallywantedfiles-foreign-repo' )->parseAsBlock();
 		} else {
 			// Use grandparent behaviour. Parent adds a message
@@ -89,9 +92,11 @@ class SpecialGloballyWantedFiles extends WantedFilesPage {
 		if ( $title instanceof Title && $safeTitle instanceof Title ) {
 			$linkRenderer = $this->getLinkRenderer();
 			$pageLink = $linkRenderer->makeLink( $title );
-			if ( $safeTitle->isKnown() && wfFindFile( $safeTitle ) ) {
+			if ( $safeTitle->isKnown() &&
+				MediaWikiServices::getInstance()->getRepoGroup()->findFile( $safeTitle )
+			) {
 				// If the title exists and is a file, than strike.
-				// The wfFindFile() call should already be cached from LinkRenderer::makeLink call
+				// The RepoGroup::findFile call should already be cached from LinkRenderer::makeLink call
 				// so it shouldn't be too expensive. However a future @todo would be
 				// to do preload existence checks for files all at once via RepoGroup::findFiles.
 				$pageLink = Html::rawElement( 'del', [], $pageLink );
