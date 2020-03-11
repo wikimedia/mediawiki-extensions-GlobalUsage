@@ -43,39 +43,17 @@
 		"SpecialGloballyUnusedFiles": "includes/SpecialGloballyUnusedFiles.php"
 	},
 	"Hooks": {
-		"LinksUpdateComplete": [
-			"GlobalUsageHooks::onLinksUpdateComplete"
-		],
-		"ArticleDeleteComplete": [
-			"GlobalUsageHooks::onArticleDeleteComplete"
-		],
-		"FileDeleteComplete": [
-			"GlobalUsageHooks::onFileDeleteComplete"
-		],
-		"FileUndeleteComplete": [
-			"GlobalUsageHooks::onFileUndeleteComplete"
-		],
-		"UploadComplete": [
-			"GlobalUsageHooks::onUploadComplete"
-		],
-		"TitleMoveComplete": [
-			"GlobalUsageHooks::onTitleMoveComplete"
-		],
-		"ImagePageAfterImageLinks": [
-			"GlobalUsageImagePageHooks::onImagePageAfterImageLinks"
-		],
-		"ImagePageShowTOC": [
-			"GlobalUsageImagePageHooks::onImagePageShowTOC"
-		],
-		"ParserTestTables": [
-			"GlobalUsageHooks::onParserTestTables"
-		],
-		"LoadExtensionSchemaUpdates": [
-			"GlobalUsageHooks::onLoadExtensionSchemaUpdates"
-		],
-		"wgQueryPages": [
-			"GlobalUsageHooks::onwgQueryPages"
-		]
+		"LinksUpdateComplete": "GlobalUsageHooks::onLinksUpdateComplete",
+		"ArticleDeleteComplete": "GlobalUsageHooks::onArticleDeleteComplete",
+		"FileDeleteComplete": "GlobalUsageHooks::onFileDeleteComplete",
+		"FileUndeleteComplete": "GlobalUsageHooks::onFileUndeleteComplete",
+		"UploadComplete": "GlobalUsageHooks::onUploadComplete",
+		"TitleMoveComplete": "GlobalUsageHooks::onTitleMoveComplete",
+		"ImagePageAfterImageLinks": "GlobalUsageImagePageHooks::onImagePageAfterImageLinks",
+		"ImagePageShowTOC": "GlobalUsageImagePageHooks::onImagePageShowTOC",
+		"ParserTestTables": "GlobalUsageHooks::onParserTestTables",
+		"LoadExtensionSchemaUpdates": "GlobalUsageHooks::onLoadExtensionSchemaUpdates",
+		"wgQueryPages": "GlobalUsageHooks::onwgQueryPages"
 	},
 	"config": {
 		"GlobalUsageDatabase": {
