@@ -5,6 +5,8 @@
  * UI hooks in SpecialGlobalUsage.
  */
 
+use MediaWiki\MediaWikiServices;
+
 class GlobalUsageHooks {
 	/**
 	 * Hook to LinksUpdateComplete
@@ -20,7 +22,7 @@ class GlobalUsageHooks {
 		$images = array_keys( $linksUpdater->getImages() );
 
 		$localFiles = [];
-		$repo = RepoGroup::singleton()->getLocalRepo();
+		$repo = MediaWikiServices::getInstance()->getRepoGroup()->getLocalRepo();
 		$imagesInfo = $repo->findFiles( $images, FileRepo::NAME_AND_TIME_ONLY );
 		foreach ( $imagesInfo as $dbKey => $info ) {
 			'@phan-var array $info';

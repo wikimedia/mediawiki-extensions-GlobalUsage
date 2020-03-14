@@ -4,6 +4,8 @@
  * showing usage on an image page.
  */
 
+use MediaWiki\MediaWikiServices;
+
 class SpecialGlobalUsage extends SpecialPage {
 	/**
 	 * @var Title
@@ -125,15 +127,18 @@ class SpecialGlobalUsage extends SpecialPage {
 			] )
 		);
 
-		if ( $this->target !== null && wfFindFile( $this->target ) ) {
-			// Show the image if it exists
-			$html = Linker::makeThumbLinkObj(
-				$this->target,
-				wfFindFile( $this->target ),
-				/* $label */ $this->target->getPrefixedText(),
-				/* $alt */ '', /* $align */ $this->getLanguage()->alignEnd()
-			);
-			$this->getOutput()->addHtml( $html );
+		if ( $this->target !== null ) {
+			$file = MediaWikiServices::getInstance()->getRepoGroup()->findFile( $this->target );
+			if ( $file ) {
+				// Show the image if it exists
+				$html = Linker::makeThumbLinkObj(
+					$this->target,
+					$file,
+					/* $label */ $this->target->getPrefixedText(),
+					/* $alt */ '', /* $align */ $this->getLanguage()->alignEnd()
+				);
+				$this->getOutput()->addHtml( $html );
+			}
 		}
 	}
 
