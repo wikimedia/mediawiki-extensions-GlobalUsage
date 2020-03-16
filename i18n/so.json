@@ -7,5 +7,6 @@
 	},
 	"globalusage": "isticmaalka faylka aduunka",
 	"globalusage-ok": "Raadi",
-	"globalusage-on-wiki": "Ku isticmaal"
+	"globalusage-on-wiki": "Ku isticmaal $2",
+	"globalusage-of-file": "Wikisyada kale ee soosocda ayaa adeegsanaya faylka:"
 }
