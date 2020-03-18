@@ -9,12 +9,12 @@ CREATE TABLE /*_*/globalimagelinks (
 	-- Page title
 	gil_page_title varchar(255) binary not null,
 	-- Image name
-	gil_to varchar(255) binary not null
+	gil_to varchar(255) binary not null,
+
+	PRIMARY KEY (gil_to, gil_wiki, gil_page)
 ) /*$wgDBTableOptions*/;
 
-CREATE UNIQUE INDEX globalimagelinks_to_wiki_page 
-	ON /*_*/globalimagelinks (gil_to, gil_wiki, gil_page);
-CREATE INDEX globalimagelinks_wiki 
+CREATE INDEX globalimagelinks_wiki
 	ON /*_*/globalimagelinks (gil_wiki, gil_page);
 CREATE INDEX globalimagelinks_wiki_nsid_title
 	ON /*_*/globalimagelinks (gil_wiki, gil_page_namespace_id, gil_page_title);
