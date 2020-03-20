@@ -32,7 +32,7 @@ class SpecialGloballyWantedFiles extends WantedFilesPage {
 	/**
 	 * Output an extra header
 	 *
-	 * @return String html to output
+	 * @return string html to output
 	 */
 	public function getPageHeader() {
 		if ( MediaWikiServices::getInstance()->getRepoGroup()->hasForeignRepos() ) {
@@ -79,7 +79,7 @@ class SpecialGloballyWantedFiles extends WantedFilesPage {
 	 *
 	 * @param Skin $skin
 	 * @param stdClass $result A row from the database
-	 * @return String HTML to output
+	 * @return string HTML to output
 	 */
 	public function formatResult( $skin, $result ) {
 		// If some of the client wikis are $wgCapitalLinks = false

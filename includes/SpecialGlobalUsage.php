@@ -195,7 +195,7 @@ class SpecialGlobalUsage extends SpecialPage {
 	/**
 	 * Helper to format a specific item
 	 * @param array $item
-	 * @return String
+	 * @return string
 	 */
 	public static function formatItem( $item ) {
 		if ( !$item['namespace'] ) {
