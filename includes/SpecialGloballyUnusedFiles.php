@@ -43,8 +43,8 @@ class SpecialGloballyUnusedFiles extends ImageQueryPage {
 
 	/**
 	 * Main execution function. Use the parent if we're on the right wiki.
-	 * @throws ErrorPageError if we are not on a wiki with GlobalUsage database
 	 * @param string $par
+	 * @throws ErrorPageError if we are not on a wiki with GlobalUsage database
 	 */
 	public function execute( $par ) {
 		if ( self::isOnGlobalUsageDatabase() ) {
