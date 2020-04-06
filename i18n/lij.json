@@ -5,10 +5,23 @@
 		]
 	},
 	"globalusage": "Utilizzo globale do file",
+	"globalusage-for": "Utilizzo globâ de \"$1\"",
+	"globalusage-filename": "Nomme do file:",
+	"globalusage-desc": "[[Special:GlobalUsage|Paggina speciale]] pi amiâ l'utilizzo globâ di file",
+	"globalusage-ok": "Çerca",
 	"globalusage-text": "Mostra l'uso globale do file",
+	"globalusage-no-results": "[[:$1]] o no l'è doeuviou inte di atre wiki.",
 	"globalusage-on-wiki": "Deuviou inte seguente paggine de $2:",
 	"globalusage-of-file": "Sto file chì o l'è deuviou da sti atri wiki ascì",
 	"globalusage-more": "Visualizza l'[[{{#Special:GlobalUsage}}/$1|utilizzo globale]] de questo file.",
 	"globalusage-filterlocal": "No mostrâ l'uso locale",
-	"globalusage-header": "Sta paggina chì a mostra onde l'è che 'n file o l'è doeuviou inti atre wiki. Ti poeu trovâ st'informaçion ascì in fondo a-a paggina de descriçion do file."
+	"mostgloballylinkedfiles": "File ciù inganciæ globalmente",
+	"mostgloballylinkedfiles-summary": "Lista di file ch'en stæti inciosci o ciu gran nummio de votte inte tutte e wikki. Pe 'na lista equivalente ch'a pigge in conscidiassion soo che l'utilizzo insce {{SITENAME}}, amia [[{{#special:MostLinkedFiles}}]].",
+	"globallywantedfiles": "File recesti globalmente",
+	"globallywantedfiles-summary": "Lista di file ch'en stæti inciosci o ciu gran nummio de votte inte tutte e wikki sciben che no existan. Pe 'na lista equivalente ch'a pigge in conscidiassion soo che l'utilizzo insce {{SITENAME}}, amia [[{{#special:WantedFiles}}]]. I utilizzi di file da de wikki senscibbile a-e primme lettie maiuscole poeuan ese riportæ pe sballio comme recesti.",
+	"globallywantedfiles-foreign-repo": "<strong>Atension:</strong> sta wiki chie a l'adoeuvia 'n depoxito de file esterno. I file da-o depoxito esterno ch'en in doeuvia saian mostræ inte sta lista comme 'n ingancio bloeu sbarou, con tutto che ghe seggian.",
+	"globalusage-header": "Sta paggina chì a mostra onde l'è che 'n file o l'è doeuviou inti atre wiki. Ti poeu trovâ st'informaçion ascì in fondo a-a paggina de descriçion do file.",
+	"globallyunusedfiles": "File globalmente inutilizzæ",
+	"globallyunusedfilestext": "I seguenti file existan ma no son incorpoæ inte nisciun-a paggina de nisciun-a wikki.",
+	"globallyunusedfiles-error-nonsharedrepo": "Sta wikki chie a no fa parte do depoxito comun"
 }
