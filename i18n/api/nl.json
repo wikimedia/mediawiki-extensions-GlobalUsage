@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Duckson32",
 			"Mainframe98",
 			"Mar(c)",
 			"Mbch331",
-			"McDutchie",
-			"Duckson32"
+			"McDutchie"
 		]
 	},
 	"apihelp-query+globalusage-description": "Weergeeft het globale gebruik voor een bepaalde afbeelding.",

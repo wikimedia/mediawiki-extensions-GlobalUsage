@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ykhwong",
-			"Kwj2772"
+			"Kwj2772",
+			"Ykhwong"
 		]
 	},
 	"apihelp-query+globalusage-summary": "특정 그림에 대한 모든 위키의 그림 사용 정보를 반환합니다.",

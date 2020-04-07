@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Okras",
-			"Movses"
+			"Movses",
+			"Okras"
 		]
 	},
 	"apihelp-query+globalusage-description": "Возвращает информацию о глобальном использовании определённого изображения.",
