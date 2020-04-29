@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Asenoner"
+			"Asenoner",
+			"Starladin"
 		]
 	},
 	"globalusage": "Coche l documënt ie stat adurvà ntëur l mond",
 	"globalusage-on-wiki": "Adurvà sun $2",
-	"globalusage-of-file": "Ënghe chësta wikis adroa chësc documënt:"
+	"globalusage-of-file": "Ënghe chësta wikis adroa chësc documënt:",
+	"globalusage-more": "Mostra [[{{#Special:GlobalUsage}}/$1|utilisaziun globala]] de chësc file."
 }
