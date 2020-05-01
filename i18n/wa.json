@@ -7,5 +7,6 @@
 	},
 	"globalusage": "Eployaedje tot avå do fitchî",
 	"globalusage-on-wiki": "Eployaedje so $2",
-	"globalusage-of-file": "Les ôtes shuvants wikis eployèt c’&nbsp;fitchî ci&nbsp;:"
+	"globalusage-of-file": "Les ôtes shuvants wikis eployèt c’&nbsp;fitchî ci&nbsp;:",
+	"globalusage-more": "Loukîz [[{{#Special:GlobalUsage}}/$1|di pus so l’&nbsp;eployaedje totavå]] di ci fitchî ci."
 }
