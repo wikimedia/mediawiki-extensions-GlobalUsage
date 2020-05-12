@@ -57,15 +57,15 @@
 	},
 	"config": {
 		"GlobalUsageDatabase": {
-			"documentation": "If set to false, the local database contains the globalimagelinks table, else set to something understandable to LBFactory",
+			"description": "If set to false, the local database contains the globalimagelinks table, else set to something understandable to LBFactory",
 			"value": false
 		},
 		"GlobalUsageSharedRepoWiki": {
-			"documentation": "Name of the shared repo that backlinks are shared for",
+			"description": "Name of the shared repo that backlinks are shared for",
 			"value": false
 		},
 		"GlobalUsagePurgeBacklinks": {
-			"documentation": "If set to true, this will purge pages on the wikis that use a file when it changes. This works by directly inserting HTMLCacheUpdate jobs into the local wikis. @see $wgGlobalUsagePurgeBacklinks",
+			"description": "If set to true, this will purge pages on the wikis that use a file when it changes. This works by directly inserting HTMLCacheUpdate jobs into the local wikis. @see $wgGlobalUsagePurgeBacklinks",
 			"value": false
 		}
 	},
