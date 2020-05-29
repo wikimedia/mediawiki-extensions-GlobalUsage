@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Diki Ananta",
 			"Meursault2004",
 			"NoiX180"
 		]
@@ -13,6 +14,6 @@
 	"globalusage-no-results": "[[:$1]] ora dianggo nèng wiki liya.",
 	"globalusage-on-wiki": "Kanggo ing $2",
 	"globalusage-of-file": "Wiki liya ngisor iki nganggo barkas iki:",
-	"globalusage-more": "Deleng [[{{#Special:GlobalUsage}}/$1|panganggo liyané sadonya]] saka kaca iki.",
+	"globalusage-more": "Deleng [[{{#Special:GlobalUsage}}/$1|naraguna liyané sadonya]] saka kaca iki.",
 	"globalusage-filterlocal": "Aja tuduhaké anggoan lokal"
 }
