@@ -137,7 +137,6 @@ class SpecialGlobalUsage extends SpecialPage {
 					/* $label */ $this->target->getPrefixedText(),
 					/* $alt */ '', /* $align */ $this->getLanguage()->alignEnd()
 				);
-				// @phan-suppress-next-line SecurityCheck-XSS
 				$this->getOutput()->addHtml( $html );
 			}
 		}
