@@ -78,7 +78,7 @@ class GlobalUsageHooks {
 			// Push the jobs after DB commit but cancel on rollback
 			wfGetDB( DB_MASTER )->onTransactionIdle( function () use ( $jobs ) {
 				JobQueueGroup::singleton()->lazyPush( $jobs );
-			} );
+			}, __METHOD__ );
 		}
 
 		return true;
