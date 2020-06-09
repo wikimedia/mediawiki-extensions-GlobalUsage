@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bellatrix10"
+			"Bellatrix10",
+			"Ookuninusi"
 		]
 	},
 	"globalusage": "Globalna upotreba datoteke",
-	"globalusage-on-wiki": "Upotreba na $2"
+	"globalusage-on-wiki": "Upotreba na $2",
+	"globalusage-of-file": "Sljedeći wikiji koriste ovu datoteku:"
 }
