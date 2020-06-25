@@ -5,9 +5,27 @@
  * UI hooks in SpecialGlobalUsage.
  */
 
+use MediaWiki\Linker\LinkTarget;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Revision\RevisionRecord;
+use MediaWiki\User\UserIdentity;
 
 class GlobalUsageHooks {
+	/**
+	 * Callback on extension registration
+	 *
+	 * Register hooks based on version to keep support for mediawiki versions before 1.35
+	 */
+	public static function onRegistration() {
+		global $wgHooks;
+
+		if ( version_compare( MW_VERSION, '1.35', '>=' ) ) {
+			$wgHooks['PageMoveComplete'][] = 'GlobalUsageHooks::onPageMoveComplete';
+		} else {
+			$wgHooks['TitleMoveComplete'][] = 'GlobalUsageHooks::onTitleMoveComplete';
+		}
+	}
+
 	/**
 	 * Hook to LinksUpdateComplete
 	 * Deletes old links from usage table and insert new ones.
@@ -64,6 +82,50 @@ class GlobalUsageHooks {
 	 * @return bool
 	 */
 	public static function onTitleMoveComplete( $ot, $nt, $user, $pageid, $redirid ) {
+		self::onMoveCompleteInternal( $ot, $nt, $pageid );
+
+		return true;
+	}
+
+	/**
+	 * Hook to PageMoveComplete
+	 * Sets the page title in usage table to the new name.
+	 * For shared file moves, purges all pages in the wiki farm that use the files.
+	 * @param LinkTarget $ot
+	 * @param LinkTarget $nt
+	 * @param UserIdentity $user
+	 * @param int $pageid
+	 * @param int $redirid
+	 * @param string $reason
+	 * @param RevisionRecord $revisionRecord
+	 * @return bool
+	 */
+	public static function onPageMoveComplete(
+		LinkTarget $ot,
+		LinkTarget $nt,
+		UserIdentity $user,
+		int $pageid,
+		int $redirid,
+		string $reason,
+		RevisionRecord $revisionRecord
+	) {
+		self::onMoveCompleteInternal(
+			Title::newFromLinkTarget( $ot ),
+			Title::newFromLinkTarget( $nt ),
+			$pageid
+		);
+
+		return true;
+	}
+
+	/**
+	 * Shared handler for onPageMoveComplete and onTitleMoveComplete
+	 *
+	 * @param Title $ot
+	 * @param Title $nt
+	 * @param int $pageid
+	 */
+	private static function onMoveCompleteInternal( Title $ot, Title $nt, int $pageid ) {
 		$gu = self::getGlobalUsage();
 		$gu->moveTo( $pageid, $nt );
 
@@ -80,8 +142,6 @@ class GlobalUsageHooks {
 				JobQueueGroup::singleton()->lazyPush( $jobs );
 			}, __METHOD__ );
 		}
-
-		return true;
 	}
 
 	/**
