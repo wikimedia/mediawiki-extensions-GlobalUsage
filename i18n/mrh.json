@@ -7,5 +7,6 @@
 	},
 	"globalusage": "Khizaw faih hmâna zie",
 	"globalusage-on-wiki": "$2 chô liata hmâna",
-	"globalusage-of-file": "Ary liata wiki thokhapazy ta he faih he ama hmâh:"
+	"globalusage-of-file": "Ary liata wiki thokhapazy ta he faih he ama hmâh:",
+	"globalusage-more": "He faih [[{{#Special:GlobalUsage}}/$1|khiazaw hmâna hluh via]] palâ teih."
 }
