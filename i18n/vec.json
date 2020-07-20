@@ -11,7 +11,7 @@
 	"globalusage-ok": "Serca",
 	"globalusage-text": "Serca utilizo globale file",
 	"globalusage-no-results": "[[:$1]] no xe mia doparà su de altre wiki.",
-	"globalusage-on-wiki": "Utilizo de [[:File:$1|$1]] su $2",
+	"globalusage-on-wiki": "Doparamento de [[:File:$1|$1]] in $2",
 	"globalusage-of-file": "St'altre wiki cua le dopara sto file:",
 	"globalusage-more": "Varda ła [[{{#Special:GlobalUsage}}/$1|doparasion globałe]] de sto file.",
 	"globalusage-filterlocal": "No stà mostrar l'utilizo local"
