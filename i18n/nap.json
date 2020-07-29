@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"C.R."
+			"C.R.",
+			"Cryptex nap"
 		]
 	},
-	"globalusage": "Auso globbale d' 'o file",
+	"globalusage": "Auso globbale d’’o file",
 	"globalusage-for": "Auso globbale pe' \"$1\"",
 	"globalusage-desc": "[[Special:GlobalUsage|Paggena speciale]] pe' vedé aùse 'e file globbale",
 	"globalusage-ok": "Ascìa",
