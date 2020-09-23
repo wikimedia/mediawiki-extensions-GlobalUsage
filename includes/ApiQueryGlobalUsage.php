@@ -22,6 +22,7 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
+use MediaWiki\Logger\LoggerFactory;
 use MediaWiki\MediaWikiServices;
 
 class ApiQueryGlobalUsage extends ApiQueryBase {
@@ -53,7 +54,23 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 
 			# Create the result
 			$apiResult = $this->getResult();
+
+			// Handle `ApiQueryGlobalUsage.php Undefined index error when accessing $pageIds`
+			// Ref T263601
+			// TODO fix this instead of just skipping it
+			$logger = LoggerFactory::getInstance( 'GlobalUsage' );
 			foreach ( $query->getResult() as $image => $wikis ) {
+				if ( !isset( $pageIds[$image] ) ) {
+					$logger->warning(
+						__METHOD__ . ' tried to access page id for {image},' .
+						' but one was not set. See T263601',
+						[
+							'image' => $image
+						]
+					);
+					continue;
+				}
+
 				$pageId = intval( $pageIds[$image] );
 				foreach ( $wikis as $wiki => $result ) {
 					foreach ( $result as $item ) {
