@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Gott wisst"
+			"Gott wisst",
+			"Heahwrita"
 		]
 	},
 	"globalusage": "Ymelan eormen nytt",
 	"globalusage-on-wiki": "Nytt on $2",
-	"globalusage-of-file": "Þās wiki brūcaþ þās ymelan:"
+	"globalusage-of-file": "Þas wiki brucaþ þissa ymelena:"
 }
