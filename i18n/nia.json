@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Anugrahgori",
 			"Slaia"
 		]
 	},
 	"globalusage": "Fangoguna'ö berkas global",
-	"globalusage-on-wiki": "Fangoguna'ö $2",
+	"globalusage-on-wiki": "Fangoguna'ö ba $2",
 	"globalusage-of-file": "Wiki tanö bö'ö sangoguna'ö berkas andre",
 	"globalusage-more": "Faigi [[{{#Special:GlobalUsage}}/$1|more global usage]] berkas andre."
 }
