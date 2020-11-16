@@ -2,11 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Bangin",
+			"Bikarhêner",
 			"Gomada"
 		]
 	},
 	"globalusage": "Bikaranîna gerdûnî ya pelê",
 	"globalusage-ok": "Lê bigere",
 	"globalusage-on-wiki": "Bikaranîna di $2 de",
-	"globalusage-of-file": "Ev wîkiyên di rêzê de vê pelê bi kar tînin:"
+	"globalusage-of-file": "Ev wîkiyên di rêzê de vê pelê bi kar tînin:",
+	"globalusage-more": "[[{{#Special:GlobalUsage}}/$1|Zêdetir bikaranîna global]] a vê pelê bibîne."
 }

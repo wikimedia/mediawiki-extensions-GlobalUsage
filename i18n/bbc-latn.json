@@ -6,5 +6,6 @@
 	},
 	"globalusage": "Pamangke alualu global",
 	"globalusage-on-wiki": "Pamangkean tu $2",
-	"globalusage-of-file": "Wiki na asing mamangke surat partadingan on:"
+	"globalusage-of-file": "Wiki na asing mamangke surat partadingan on:",
+	"globalusage-more": "Bereng [[{{#Special:GlobalUsage}}/$1|lumobi godangan pamangke global]] sian berkas on."
 }
