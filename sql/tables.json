@@ -1,0 +1,56 @@
+[
+	{
+		"name": "globalimagelinks",
+		"columns": [
+			{
+				"name": "gil_wiki",
+				"comment": "Wiki id",
+				"type": "string",
+				"options": { "length": 32, "notnull": true }
+			},
+			{
+				"name": "gil_page",
+				"comment": "page_id on the local wiki",
+				"type": "integer",
+				"options": { "notnull": true, "unsigned": true }
+			},
+			{
+				"name": "gil_page_namespace_id",
+				"comment": "page namespace",
+				"type": "integer",
+				"options": { "notnull": true }
+			},
+			{
+				"name": "gil_page_namespace",
+				"comment": "Namespace, since the foreign namespaces may not match the local ones",
+				"type": "string",
+				"options": { "length": 255, "notnull": false }
+			},
+			{
+				"name": "gil_page_title",
+				"comment": "Page title",
+				"type": "string",
+				"options": { "length": 255, "notnull": false }
+			},
+			{
+				"name": "gil_to",
+				"comment": "Image name",
+				"type": "string",
+				"options": { "length": 255, "notnull": false }
+			}
+		],
+		"indexes": [
+			{
+				"name": "globalimagelinks_wiki",
+				"columns": [ "gil_wiki", "gil_page" ],
+				"unique": false
+			},
+			{
+				"name": "globalimagelinks_wiki_nsid_title",
+				"columns": [ "gil_wiki", "gil_page_namespace_id", "gil_page_title" ],
+				"unique": false
+			}
+		],
+		"pk": [ "gil_to", "gil_wiki", "gil_page" ]
+	}
+]

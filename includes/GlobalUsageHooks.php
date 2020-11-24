@@ -267,23 +267,26 @@ class GlobalUsageHooks {
 	public static function onLoadExtensionSchemaUpdates( DatabaseUpdater $updater ) {
 		$dir = dirname( __DIR__ ) . '/sql';
 
-		if ( $updater->getDB()->getType() == 'mysql' || $updater->getDB()->getType() == 'sqlite' ) {
-			$updater->addExtensionUpdate( [ 'addTable', 'globalimagelinks',
-				"$dir/GlobalUsage.sql", true ] );
-			$updater->addExtensionUpdate( [ 'addIndex', 'globalimagelinks',
+		$type = $updater->getDB()->getType();
+		$updater->addExtensionTable( 'globalimagelinks', "$dir/$type/tables-generated.sql" );
+
+		if ( $type === 'mysql' || $type === 'sqlite' ) {
+			$updater->addExtensionIndex(
+				'globalimagelinks',
 				'globalimagelinks_wiki_nsid_title',
-				"$dir/patch-globalimagelinks_wiki_nsid_title.sql", true ] );
+				"$dir/patch-globalimagelinks_wiki_nsid_title.sql"
+			);
 			$updater->dropExtensionIndex(
 				'globalimagelinks',
 				'globalimagelinks_to_wiki_page',
 				"$dir/patch-globalimagelinks-pk.sql"
 			);
-		} elseif ( $updater->getDB()->getType() == 'postgresql' ) {
-			$updater->addExtensionUpdate( [ 'addTable', 'globalimagelinks',
-				"$dir/GlobalUsage.pg.sql", true ] );
-			$updater->addExtensionUpdate( [ 'addIndex', 'globalimagelinks',
+		} elseif ( $type === 'postgresql' ) {
+			$updater->addExtensionIndex(
+				'globalimagelinks',
 				'globalimagelinks_wiki_nsid_title',
-				"$dir/patch-globalimagelinks_wiki_nsid_title.pg.sql", true ] );
+				"$dir/postgres/patch-globalimagelinks_wiki_nsid_title.sql"
+			);
 		}
 		return true;
 	}
