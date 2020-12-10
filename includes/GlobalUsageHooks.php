@@ -138,7 +138,7 @@ class GlobalUsageHooks {
 				$jobs[] = new GlobalUsageCachePurgeJob( $nt, [] );
 			}
 			// Push the jobs after DB commit but cancel on rollback
-			wfGetDB( DB_MASTER )->onTransactionIdle( function () use ( $jobs ) {
+			wfGetDB( DB_MASTER )->onTransactionCommitOrIdle( function () use ( $jobs ) {
 				JobQueueGroup::singleton()->lazyPush( $jobs );
 			}, __METHOD__ );
 		}
