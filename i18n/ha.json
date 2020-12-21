@@ -1,6 +1,9 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Kambai Akau"
+		]
 	},
-	"globalusage-ok": "Nema"
+	"globalusage-ok": "Nema",
+	"globalusage-on-wiki": "Amfani a kan $2"
 }
