@@ -6,5 +6,6 @@
 	},
 	"globalusage": "Global Dateibenutzung",
 	"globalusage-on-wiki": "Ferwennung uff $2",
-	"globalusage-of-file": "Die nochfolghende annre Wikis ferwenne dies Datei:"
+	"globalusage-of-file": "Die nochfolghende annre Wikis ferwenne dies Datei:",
+	"globalusage-more": "[[{{#Special:GlobalUsage}}/$1|Weidere global Ferwennunge]] die Datei gucke."
 }
