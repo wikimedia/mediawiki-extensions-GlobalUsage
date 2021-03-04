@@ -6,5 +6,6 @@
 	},
 	"globalusage": "Aapanaka apüla tü anaajaalaakalü",
 	"globalusage-on-wiki": "Aainjaa süka $2",
-	"globalusage-of-file": "Na wikis tüseena saapain anaajalaaka tüü"
+	"globalusage-of-file": "Na wikis tüseena saapain anaajalaaka tüü",
+	"globalusage-more": "Pi'rajaa [[{{#Special:GlobalUsage}}/$1|aapawaa natüma napüshua'a]] anaajaalaka tüü."
 }
