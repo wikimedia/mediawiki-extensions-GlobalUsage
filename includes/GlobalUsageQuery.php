@@ -1,5 +1,8 @@
 <?php
 
+namespace MediaWiki\Extension\GlobalUsage;
+
+use Title;
 use Wikimedia\Rdbms\IDatabase;
 
 /**

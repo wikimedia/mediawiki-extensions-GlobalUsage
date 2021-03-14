@@ -1,5 +1,12 @@
 <?php
 
+namespace MediaWiki\Extension\GlobalUsage;
+
+use ImagePage;
+use Sanitizer;
+use Title;
+use WikiMap;
+
 class GlobalUsageImagePageHooks {
 	private static $queryCache = [];
 

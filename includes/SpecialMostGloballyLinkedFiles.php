@@ -7,6 +7,10 @@
  * @author Brian Wolff <bawolff+wn@gmail.com>
  */
 
+namespace MediaWiki\Extension\GlobalUsage;
+
+use Exception;
+use MostimagesPage;
 use Wikimedia\Rdbms\IDatabase;
 
 class SpecialMostGloballyLinkedFiles extends MostimagesPage {

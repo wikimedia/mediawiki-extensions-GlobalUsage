@@ -1,4 +1,12 @@
 <?php
+
+namespace MediaWiki\Extension\GlobalUsage;
+
+use HTMLCacheUpdateJob;
+use Job;
+use JobQueueGroup;
+use Title;
+
 /**
  * Class to insert HTMLCacheUpdate jobs on local wikis to purge all pages that use
  * a given shared file. Note that the global and local image link tables are assumed
