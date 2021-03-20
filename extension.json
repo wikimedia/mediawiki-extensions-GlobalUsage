@@ -10,16 +10,16 @@
 	},
 	"type": "specialpage",
 	"SpecialPages": {
-		"MostGloballyLinkedFiles": "SpecialMostGloballyLinkedFiles",
-		"GloballyWantedFiles": "SpecialGloballyWantedFiles",
-		"GloballyUnusedFiles": "SpecialGloballyUnusedFiles",
-		"GlobalUsage": "SpecialGlobalUsage"
+		"MostGloballyLinkedFiles": "MediaWiki\\Extension\\GlobalUsage\\SpecialMostGloballyLinkedFiles",
+		"GloballyWantedFiles": "MediaWiki\\Extension\\GlobalUsage\\SpecialGloballyWantedFiles",
+		"GloballyUnusedFiles": "MediaWiki\\Extension\\GlobalUsage\\SpecialGloballyUnusedFiles",
+		"GlobalUsage": "MediaWiki\\Extension\\GlobalUsage\\SpecialGlobalUsage"
 	},
 	"JobClasses": {
-		"globalUsageCachePurge": "GlobalUsageCachePurgeJob"
+		"globalUsageCachePurge": "MediaWiki\\Extension\\GlobalUsage\\GlobalUsageCachePurgeJob"
 	},
 	"APIPropModules": {
-		"globalusage": "ApiQueryGlobalUsage"
+		"globalusage": "MediaWiki\\Extension\\GlobalUsage\\ApiQueryGlobalUsage"
 	},
 	"MessagesDirs": {
 		"GlobalUsage": [
@@ -30,31 +30,22 @@
 	"ExtensionMessagesFiles": {
 		"GlobalUsageAliases": "GlobalUsage.alias.php"
 	},
-	"AutoloadClasses": {
-		"GlobalUsage": "includes/GlobalUsage.php",
-		"GlobalUsageHooks": "includes/GlobalUsageHooks.php",
-		"GlobalUsageImagePageHooks": "includes/GlobalUsageImagePageHooks.php",
-		"SpecialGlobalUsage": "includes/SpecialGlobalUsage.php",
-		"GlobalUsageQuery": "includes/GlobalUsageQuery.php",
-		"ApiQueryGlobalUsage": "includes/ApiQueryGlobalUsage.php",
-		"GlobalUsageCachePurgeJob": "includes/GlobalUsageCachePurgeJob.php",
-		"SpecialMostGloballyLinkedFiles": "includes/SpecialMostGloballyLinkedFiles.php",
-		"SpecialGloballyWantedFiles": "includes/SpecialGloballyWantedFiles.php",
-		"SpecialGloballyUnusedFiles": "includes/SpecialGloballyUnusedFiles.php"
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\GlobalUsage\\": "includes/"
 	},
 	"Hooks": {
-		"LinksUpdateComplete": "GlobalUsageHooks::onLinksUpdateComplete",
-		"ArticleDeleteComplete": "GlobalUsageHooks::onArticleDeleteComplete",
-		"FileDeleteComplete": "GlobalUsageHooks::onFileDeleteComplete",
-		"FileUndeleteComplete": "GlobalUsageHooks::onFileUndeleteComplete",
-		"UploadComplete": "GlobalUsageHooks::onUploadComplete",
-		"ImagePageAfterImageLinks": "GlobalUsageImagePageHooks::onImagePageAfterImageLinks",
-		"ImagePageShowTOC": "GlobalUsageImagePageHooks::onImagePageShowTOC",
-		"ParserTestTables": "GlobalUsageHooks::onParserTestTables",
-		"LoadExtensionSchemaUpdates": "GlobalUsageHooks::onLoadExtensionSchemaUpdates",
-		"wgQueryPages": "GlobalUsageHooks::onwgQueryPages"
+		"LinksUpdateComplete": "MediaWiki\\Extension\\GlobalUsage\\Hooks::onLinksUpdateComplete",
+		"ArticleDeleteComplete": "MediaWiki\\Extension\\GlobalUsage\\Hooks::onArticleDeleteComplete",
+		"FileDeleteComplete": "MediaWiki\\Extension\\GlobalUsage\\Hooks::onFileDeleteComplete",
+		"FileUndeleteComplete": "MediaWiki\\Extension\\GlobalUsage\\Hooks::onFileUndeleteComplete",
+		"UploadComplete": "MediaWiki\\Extension\\GlobalUsage\\Hooks::onUploadComplete",
+		"ImagePageAfterImageLinks": "MediaWiki\\Extension\\GlobalUsage\\GlobalUsageImagePageHooks::onImagePageAfterImageLinks",
+		"ImagePageShowTOC": "MediaWiki\\Extension\\GlobalUsage\\GlobalUsageImagePageHooks::onImagePageShowTOC",
+		"ParserTestTables": "MediaWiki\\Extension\\GlobalUsage\\Hooks::onParserTestTables",
+		"LoadExtensionSchemaUpdates": "MediaWiki\\Extension\\GlobalUsage\\Hooks::onLoadExtensionSchemaUpdates",
+		"wgQueryPages": "MediaWiki\\Extension\\GlobalUsage\\Hooks::onwgQueryPages"
 	},
-	"callback": "GlobalUsageHooks::onRegistration",
+	"callback": "MediaWiki\\Extension\\GlobalUsage\\Hooks::onRegistration",
 	"config": {
 		"GlobalUsageDatabase": {
 			"description": "If set to false, the local database contains the globalimagelinks table, else set to something understandable to LBFactory",

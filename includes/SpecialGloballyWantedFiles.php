@@ -8,7 +8,16 @@
  * @ingroup SpecialPage
  */
 
+namespace MediaWiki\Extension\GlobalUsage;
+
+use Html;
 use MediaWiki\MediaWikiServices;
+use Skin;
+use SpecialPage;
+use stdClass;
+use Title;
+use WantedFilesPage;
+use WantedQueryPage;
 
 class SpecialGloballyWantedFiles extends WantedFilesPage {
 

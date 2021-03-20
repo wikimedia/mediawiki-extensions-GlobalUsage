@@ -11,6 +11,7 @@ if ( getenv( 'MW_INSTALL_PATH' ) !== false ) {
 
 require_once $path . '/maintenance/Maintenance.php';
 
+use MediaWiki\Extension\GlobalUsage\GlobalUsage;
 use MediaWiki\MediaWikiServices;
 
 class RefreshGlobalimagelinks extends Maintenance {

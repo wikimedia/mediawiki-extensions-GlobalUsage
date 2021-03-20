@@ -4,7 +4,22 @@
  * showing usage on an image page.
  */
 
+namespace MediaWiki\Extension\GlobalUsage;
+
+use Html;
+use Linker;
 use MediaWiki\MediaWikiServices;
+use OOUI\ButtonInputWidget;
+use OOUI\CheckboxInputWidget;
+use OOUI\FieldLayout;
+use OOUI\FieldsetLayout;
+use OOUI\FormLayout;
+use OOUI\HtmlSnippet;
+use OOUI\PanelLayout;
+use OOUI\TextInputWidget;
+use SpecialPage;
+use Title;
+use WikiMap;
 
 class SpecialGlobalUsage extends SpecialPage {
 	/**
@@ -57,14 +72,14 @@ class SpecialGlobalUsage extends SpecialPage {
 
 		$this->getOutput()->enableOOUI();
 		/* Build form */
-		$form = new OOUI\FormLayout( [
+		$form = new FormLayout( [
 			'method' => 'get',
 			'action' => $wgScript,
 		] );
 
 		$fields = [];
-		$fields[] = new OOUI\FieldLayout(
-			new OOUI\TextInputWidget( [
+		$fields[] = new FieldLayout(
+			new TextInputWidget( [
 				'name' => 'target',
 				'id' => 'target',
 				'autosize' => true,
@@ -78,8 +93,8 @@ class SpecialGlobalUsage extends SpecialPage {
 		);
 
 		// Filter local checkbox
-		$fields[] = new OOUI\FieldLayout(
-			new OOUI\CheckboxInputWidget( [
+		$fields[] = new FieldLayout(
+			new CheckboxInputWidget( [
 				'name' => 'filterlocal',
 				'id' => 'mw-filterlocal',
 				'value' => '1',
@@ -92,8 +107,8 @@ class SpecialGlobalUsage extends SpecialPage {
 		);
 
 		// Submit button
-		$fields[] = new OOUI\FieldLayout(
-			new OOUI\ButtonInputWidget( [
+		$fields[] = new FieldLayout(
+			new ButtonInputWidget( [
 				'value' => $this->msg( 'globalusage-ok' )->text(),
 				'label' => $this->msg( 'globalusage-ok' )->text(),
 				'flags' => [ 'primary', 'progressive' ],
@@ -104,7 +119,7 @@ class SpecialGlobalUsage extends SpecialPage {
 			]
 		);
 
-		$fieldset = new OOUI\FieldsetLayout( [
+		$fieldset = new FieldsetLayout( [
 			'label' => $this->msg( 'globalusage-text' )->text(),
 			'id' => 'globalusage-text',
 			'items' => $fields,
@@ -112,14 +127,14 @@ class SpecialGlobalUsage extends SpecialPage {
 
 		$form->appendContent(
 			$fieldset,
-			new OOUI\HtmlSnippet(
+			new HtmlSnippet(
 				Html::hidden( 'title', $this->getPageTitle()->getPrefixedText() ) .
 				Html::hidden( 'limit', $this->getRequest()->getInt( 'limit', 50 ) )
 			)
 		);
 
 		$this->getOutput()->addHTML(
-			new OOUI\PanelLayout( [
+			new PanelLayout( [
 				'expanded' => false,
 				'padded' => true,
 				'framed' => true,

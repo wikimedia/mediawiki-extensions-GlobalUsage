@@ -5,12 +5,22 @@
  * UI hooks in SpecialGlobalUsage.
  */
 
+namespace MediaWiki\Extension\GlobalUsage;
+
+use Article;
+use DatabaseUpdater;
+use File;
+use FileRepo;
+use JobQueueGroup;
+use LinksUpdate;
 use MediaWiki\Linker\LinkTarget;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Revision\RevisionRecord;
 use MediaWiki\User\UserIdentity;
+use Title;
+use User;
 
-class GlobalUsageHooks {
+class Hooks {
 	/**
 	 * Callback on extension registration
 	 *

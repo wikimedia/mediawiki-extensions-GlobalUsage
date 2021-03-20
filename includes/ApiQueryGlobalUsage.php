@@ -22,7 +22,12 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
+namespace MediaWiki\Extension\GlobalUsage;
+
+use ApiBase;
+use ApiQueryBase;
 use MediaWiki\MediaWikiServices;
+use WikiMap;
 
 class ApiQueryGlobalUsage extends ApiQueryBase {
 	public function __construct( $query, $moduleName ) {

@@ -1,6 +1,13 @@
 <?php
 
+namespace MediaWiki\Extension\GlobalUsage;
+
+use DeferredUpdates;
+use IContextSource;
 use MediaWiki\MediaWikiServices;
+use MWNamespace;
+use Title;
+use WikiMap;
 use Wikimedia\Rdbms\IDatabase;
 
 class GlobalUsage {

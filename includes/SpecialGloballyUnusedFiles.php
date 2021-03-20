@@ -22,6 +22,12 @@
  * @ingroup SpecialPage
  */
 
+namespace MediaWiki\Extension\GlobalUsage;
+
+use ErrorPageError;
+use Exception;
+use ImageQueryPage;
+
 /**
  * A special page that lists globally unused files
  *
@@ -47,7 +53,7 @@ class SpecialGloballyUnusedFiles extends ImageQueryPage {
 	 * @throws ErrorPageError if we are not on a wiki with GlobalUsage database
 	 */
 	public function execute( $par ) {
-		if ( self::isOnGlobalUsageDatabase() ) {
+		if ( $this->isOnGlobalUsageDatabase() ) {
 			parent::execute( $par );
 		} else {
 			throw new ErrorPageError( 'globallyunusedfiles', 'globallyunusedfiles-error-nonsharedrepo' );
@@ -59,7 +65,7 @@ class SpecialGloballyUnusedFiles extends ImageQueryPage {
 	 * @return bool
 	 */
 	public function isCacheable() {
-		return self::isOnGlobalUsageDatabase();
+		return $this->isOnGlobalUsageDatabase();
 	}
 
 	/**
@@ -67,7 +73,7 @@ class SpecialGloballyUnusedFiles extends ImageQueryPage {
 	 * @return bool Should this be listed in Special:SpecialPages
 	 */
 	public function isListed() {
-		return self::isOnGlobalUsageDatabase();
+		return $this->isOnGlobalUsageDatabase();
 	}
 
 	public function isExpensive() {
@@ -83,7 +89,7 @@ class SpecialGloballyUnusedFiles extends ImageQueryPage {
 	}
 
 	public function getQueryInfo() {
-		if ( !self::isOnGlobalUsageDatabase() ) {
+		if ( !$this->isOnGlobalUsageDatabase() ) {
 			throw new Exception( "This wiki is not on shared repo" );
 		}
 
