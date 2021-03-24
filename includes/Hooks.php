@@ -87,23 +87,9 @@ class Hooks {
 		string $reason,
 		RevisionRecord $revisionRecord
 	) {
-		self::onMoveCompleteInternal(
-			Title::newFromLinkTarget( $ot ),
-			Title::newFromLinkTarget( $nt ),
-			$pageid
-		);
+		$ot = Title::newFromLinkTarget( $ot );
+		$nt = Title::newFromLinkTarget( $nt );
 
-		return true;
-	}
-
-	/**
-	 * Internal handler for onPageMoveComplete
-	 *
-	 * @param Title $ot
-	 * @param Title $nt
-	 * @param int $pageid
-	 */
-	private static function onMoveCompleteInternal( Title $ot, Title $nt, int $pageid ) {
 		$gu = self::getGlobalUsage();
 		$gu->moveTo( $pageid, $nt );
 
@@ -120,6 +106,8 @@ class Hooks {
 				JobQueueGroup::singleton()->lazyPush( $jobs );
 			}, __METHOD__ );
 		}
+
+		return true;
 	}
 
 	/**
