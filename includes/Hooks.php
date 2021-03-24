@@ -22,21 +22,6 @@ use User;
 
 class Hooks {
 	/**
-	 * Callback on extension registration
-	 *
-	 * Register hooks based on version to keep support for mediawiki versions before 1.35
-	 */
-	public static function onRegistration() {
-		global $wgHooks;
-
-		if ( version_compare( MW_VERSION, '1.35', '>=' ) ) {
-			$wgHooks['PageMoveComplete'][] = 'GlobalUsageHooks::onPageMoveComplete';
-		} else {
-			$wgHooks['TitleMoveComplete'][] = 'GlobalUsageHooks::onTitleMoveComplete';
-		}
-	}
-
-	/**
 	 * Hook to LinksUpdateComplete
 	 * Deletes old links from usage table and insert new ones.
 	 * @param LinksUpdate $linksUpdater
@@ -81,23 +66,6 @@ class Hooks {
 	}
 
 	/**
-	 * Hook to TitleMoveComplete
-	 * Sets the page title in usage table to the new name.
-	 * For shared file moves, purges all pages in the wiki farm that use the files.
-	 * @param Title $ot
-	 * @param Title $nt
-	 * @param User $user
-	 * @param int $pageid
-	 * @param int $redirid
-	 * @return bool
-	 */
-	public static function onTitleMoveComplete( $ot, $nt, $user, $pageid, $redirid ) {
-		self::onMoveCompleteInternal( $ot, $nt, $pageid );
-
-		return true;
-	}
-
-	/**
 	 * Hook to PageMoveComplete
 	 * Sets the page title in usage table to the new name.
 	 * For shared file moves, purges all pages in the wiki farm that use the files.
@@ -129,7 +97,7 @@ class Hooks {
 	}
 
 	/**
-	 * Shared handler for onPageMoveComplete and onTitleMoveComplete
+	 * Internal handler for onPageMoveComplete
 	 *
 	 * @param Title $ot
 	 * @param Title $nt

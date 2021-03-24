@@ -6,7 +6,7 @@
 	"descriptionmsg": "globalusage-desc",
 	"license-name": "MIT",
 	"requires": {
-		"MediaWiki": ">= 1.34.0"
+		"MediaWiki": ">= 1.35.0"
 	},
 	"type": "specialpage",
 	"SpecialPages": {
@@ -41,11 +41,11 @@
 		"UploadComplete": "MediaWiki\\Extension\\GlobalUsage\\Hooks::onUploadComplete",
 		"ImagePageAfterImageLinks": "MediaWiki\\Extension\\GlobalUsage\\GlobalUsageImagePageHooks::onImagePageAfterImageLinks",
 		"ImagePageShowTOC": "MediaWiki\\Extension\\GlobalUsage\\GlobalUsageImagePageHooks::onImagePageShowTOC",
+		"PageMoveComplete": "MediaWiki\\Extension\\GlobalUsage\\Hooks::onPageMoveComplete",
 		"ParserTestTables": "MediaWiki\\Extension\\GlobalUsage\\Hooks::onParserTestTables",
 		"LoadExtensionSchemaUpdates": "MediaWiki\\Extension\\GlobalUsage\\Hooks::onLoadExtensionSchemaUpdates",
 		"wgQueryPages": "MediaWiki\\Extension\\GlobalUsage\\Hooks::onwgQueryPages"
 	},
-	"callback": "MediaWiki\\Extension\\GlobalUsage\\Hooks::onRegistration",
 	"config": {
 		"GlobalUsageDatabase": {
 			"description": "If set to false, the local database contains the globalimagelinks table, else set to something understandable to LBFactory",
