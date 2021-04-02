@@ -6,5 +6,6 @@
 	},
 	"globalusage": "Miziwekamig niibiwa-mazina'igan aabaji'",
 	"globalusage-on-wiki": "Aabaji' biindig $2",
-	"globalusage-of-file": "Ongow bakaan wigi aabaji' wa'aw niibiwa-mazina'igan:"
+	"globalusage-of-file": "Ongow bakaan wigi aabaji' wa'aw niibiwa-mazina'igan:",
+	"globalusage-more": "Waabam [[{{#Special:GlobalUsage}}/$1|nawaj miziwekamig aabaji']] biindig wa'aw niibiwa-mazina'igan."
 }
