@@ -30,7 +30,8 @@ class RefreshGlobalimagelinks extends Maintenance {
 
 		$dbr = wfGetDB( DB_REPLICA );
 		$gdbw = GlobalUsage::getGlobalDB( DB_MASTER );
-		$gu = new GlobalUsage( wfWikiID(), $gdbw );
+		$gdbr = GlobalUsage::getGlobalDB( DB_REPLICA );
+		$gu = new GlobalUsage( wfWikiID(), $gdbw, $gdbr );
 
 		$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
 		$ticket = $lbFactory->getEmptyTransactionTicket( __METHOD__ );

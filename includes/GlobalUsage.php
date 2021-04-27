@@ -17,17 +17,24 @@ class GlobalUsage {
 	/**
 	 * @var IDatabase
 	 */
-	private $db;
+	private $dbw;
+
+	/**
+	 * @var IDatabase
+	 */
+	private $dbr;
 
 	/**
 	 * Construct a GlobalUsage instance for a certain wiki.
 	 *
 	 * @param string $interwiki Interwiki prefix of the wiki
-	 * @param IDatabase $db Database object
+	 * @param IDatabase $dbw Database object for write (primary)
+	 * @param IDatabase $dbr Database object for read (replica)
 	 */
-	public function __construct( $interwiki, IDatabase $db ) {
+	public function __construct( $interwiki, IDatabase $dbw, IDatabase $dbr ) {
 		$this->interwiki = $interwiki;
-		$this->db = $db;
+		$this->dbw = $dbw;
+		$this->dbr = $dbr;
 	}
 
 	/**
@@ -39,7 +46,7 @@ class GlobalUsage {
 	 * @param int|null $ticket
 	 */
 	public function insertLinks(
-		Title $title, array $images, $pageIdFlags = Title::GAID_FOR_UPDATE, $ticket = null
+		Title $title, array $images, $pageIdFlags = Title::READ_LATEST, $ticket = null
 	) {
 		global $wgUpdateRowsPerQuery;
 
@@ -59,7 +66,7 @@ class GlobalUsage {
 		$ticket = $ticket ?: $lbFactory->getEmptyTransactionTicket( __METHOD__ );
 		$insertBatches = array_chunk( $insert, $wgUpdateRowsPerQuery );
 		foreach ( $insertBatches as $insertBatch ) {
-			$this->db->insert( 'globalimagelinks', $insertBatch, __METHOD__, [ 'IGNORE' ] );
+			$this->dbw->insert( 'globalimagelinks', $insertBatch, __METHOD__, [ 'IGNORE' ] );
 			if ( count( $insertBatches ) > 1 ) {
 				$lbFactory->commitAndWaitForReplication( __METHOD__, $ticket );
 			}
@@ -72,7 +79,7 @@ class GlobalUsage {
 	 * @return string[]
 	 */
 	public function getLinksFromPage( $id ) {
-		$res = $this->db->select(
+		$res = $this->dbr->select(
 			'globalimagelinks',
 			'gil_to',
 			[
@@ -109,11 +116,11 @@ class GlobalUsage {
 			$ticket = $ticket ?: $lbFactory->getEmptyTransactionTicket( __METHOD__ );
 			foreach ( array_chunk( $to, $wgUpdateRowsPerQuery ) as $toBatch ) {
 				$where['gil_to'] = $toBatch;
-				$this->db->delete( 'globalimagelinks', $where, __METHOD__ );
+				$this->dbw->delete( 'globalimagelinks', $where, __METHOD__ );
 				$lbFactory->commitAndWaitForReplication( __METHOD__, $ticket );
 			}
 		} else {
-			$this->db->delete( 'globalimagelinks', $where, __METHOD__ );
+			$this->dbw->delete( 'globalimagelinks', $where, __METHOD__ );
 		}
 	}
 
@@ -123,7 +130,7 @@ class GlobalUsage {
 	 * @param Title $title Title of the file
 	 */
 	public function deleteLinksToFile( $title ) {
-		$this->db->delete(
+		$this->dbw->delete(
 			'globalimagelinks',
 			[
 				'gil_wiki' => $this->interwiki,
@@ -139,7 +146,7 @@ class GlobalUsage {
 	 * @param Title $title Title of the file to copy entries from.
 	 */
 	public function copyLocalImagelinks( Title $title ) {
-		$res = $this->db->select(
+		$res = $this->dbr->select(
 			[ 'imagelinks', 'page' ],
 			[ 'il_to', 'page_id', 'page_namespace', 'page_title' ],
 			[ 'il_from = page_id', 'il_to' => $title->getDBkey() ],
@@ -161,7 +168,7 @@ class GlobalUsage {
 
 		$fname = __METHOD__;
 		DeferredUpdates::addCallableUpdate( function () use ( $insert, $fname ) {
-			$this->db->insert( 'globalimagelinks', $insert, $fname, [ 'IGNORE' ] );
+			$this->dbw->insert( 'globalimagelinks', $insert, $fname, [ 'IGNORE' ] );
 		} );
 	}
 
@@ -172,7 +179,7 @@ class GlobalUsage {
 	 * @param Title $title New title of the page
 	 */
 	public function moveTo( $id, $title ) {
-		$this->db->update(
+		$this->dbw->update(
 			'globalimagelinks',
 			[
 				'gil_page_namespace_id' => $title->getNamespace(),

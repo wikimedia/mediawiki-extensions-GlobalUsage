@@ -49,7 +49,7 @@ class Hooks {
 		$missingFiles = array_diff( $images, $localFiles );
 
 		$gu = self::getGlobalUsage();
-		$articleId = $title->getArticleID( Title::GAID_FOR_UPDATE );
+		$articleId = $title->getArticleID( Title::READ_NORMAL );
 		$existing = $gu->getLinksFromPage( $articleId );
 
 		// Calculate changes
@@ -57,7 +57,7 @@ class Hooks {
 		$removed = array_diff( $existing, $missingFiles );
 
 		// Add new usages and delete removed
-		$gu->insertLinks( $title, $added, Title::GAID_FOR_UPDATE, $ticket );
+		$gu->insertLinks( $title, $added, Title::READ_LATEST, $ticket );
 		if ( $removed ) {
 			$gu->deleteLinksFromPage( $articleId, $removed, $ticket );
 		}
@@ -211,7 +211,11 @@ class Hooks {
 	 * @return GlobalUsage
 	 */
 	private static function getGlobalUsage() {
-		return new GlobalUsage( wfWikiID(), GlobalUsage::getGlobalDB( DB_MASTER ) );
+		return new GlobalUsage(
+			wfWikiID(),
+			GlobalUsage::getGlobalDB( DB_MASTER ),
+			GlobalUsage::getGlobalDB( DB_REPLICA )
+		);
 	}
 
 	/**
