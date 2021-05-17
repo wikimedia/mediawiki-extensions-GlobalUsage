@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Bosogo",
 			"Chorobek",
 			"Janatkg"
 		]
 	},
+	"globalusage": "Файлдын глобалдык колдонуушу",
+	"globalusage-on-wiki": "$2 долбоорунда колдонулат",
 	"globalusage-of-file": "Бул файл төмөнкү уикилерде колдонулат:"
 }

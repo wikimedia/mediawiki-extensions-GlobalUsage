@@ -6,6 +6,7 @@
 			"Mar(c)",
 			"Mbch331",
 			"McDutchie",
+			"Nickthijssen1994",
 			"Ooswesthoesbes",
 			"Siebrand",
 			"Sjoerddebruin"
@@ -18,7 +19,7 @@
 	"globalusage-ok": "Zoeken",
 	"globalusage-text": "Globaal bestandsgebruik bekijken",
 	"globalusage-no-results": "[[:$1]] wordt niet gebruikt in andere wiki's.",
-	"globalusage-on-wiki": "Gebruik op $2",
+	"globalusage-on-wiki": "Gebruikt op $2",
 	"globalusage-of-file": "De volgende andere wiki's gebruiken dit bestand:",
 	"globalusage-more": "[[{{#Special:GlobalUsage}}/$1|Globaal gebruik]] van dit bestand bekijken.",
 	"globalusage-filterlocal": "Lokaal gebruik niet weergeven",
