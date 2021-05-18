@@ -219,8 +219,10 @@ class SpecialGlobalUsage extends SpecialPage {
 			$page = "{$item['namespace']}:{$item['title']}";
 		}
 
-		$link = WikiMap::makeForeignLink( $item['wiki'], $page,
-			str_replace( '_', ' ', htmlspecialchars( $page ) ) );
+		$link = WikiMap::makeForeignLink(
+			$item['wiki'], $page,
+			str_replace( '_', ' ', $page )
+		);
 		// Return only the title if no link can be constructed
 		return $link === false ? htmlspecialchars( $page ) : $link;
 	}
