@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Besnik b",
 			"Mikullovci11",
 			"Olsi"
 		]
@@ -12,7 +13,7 @@
 	"globalusage-text": "Kërkoni përdorim global të skedës",
 	"globalusage-no-results": "[[:$1]] nuk është përdorur në wiki-t e tjerë.",
 	"globalusage-on-wiki": "Përdorimi në $2",
-	"globalusage-of-file": "Wiki-t e tjerë në vijim e përdorin këtë skedë:",
+	"globalusage-of-file": "Kjo skedë përdoret nga Wiki të tjera në vijim:",
 	"globalusage-more": "Shikoni [[{{#Special:GlobalUsage}}/$1|më shumë përdorim global]] të kësaj skede.",
 	"globalusage-filterlocal": "Mos tregoni përdorimin lokal"
 }
