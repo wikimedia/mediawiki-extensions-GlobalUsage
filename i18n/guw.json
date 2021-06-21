@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Gadarawamo",
 			"Misteld"
 		]
 	},
-	"globalusage-on-wiki": "Zinzanlẹ to $2"
+	"globalusage": "Weda he wẹkẹlọ blebu nọzan",
+	"globalusage-on-wiki": "Zinzanlẹ to $2",
+	"globalusage-of-file": "Wikis deepo le no zan wepo ehe"
 }
