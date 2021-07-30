@@ -42,7 +42,6 @@
 		"ImagePageAfterImageLinks": "MediaWiki\\Extension\\GlobalUsage\\GlobalUsageImagePageHooks::onImagePageAfterImageLinks",
 		"ImagePageShowTOC": "MediaWiki\\Extension\\GlobalUsage\\GlobalUsageImagePageHooks::onImagePageShowTOC",
 		"PageMoveComplete": "MediaWiki\\Extension\\GlobalUsage\\Hooks::onPageMoveComplete",
-		"ParserTestTables": "MediaWiki\\Extension\\GlobalUsage\\Hooks::onParserTestTables",
 		"LoadExtensionSchemaUpdates": "MediaWiki\\Extension\\GlobalUsage\\Hooks::onLoadExtensionSchemaUpdates",
 		"wgQueryPages": "MediaWiki\\Extension\\GlobalUsage\\Hooks::onwgQueryPages"
 	},

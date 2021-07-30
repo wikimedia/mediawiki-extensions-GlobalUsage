@@ -219,16 +219,6 @@ class Hooks {
 	}
 
 	/**
-	 * Hook to make sure globalimagelinks table gets duplicated for parsertests
-	 * @param array &$tables
-	 * @return bool
-	 */
-	public static function onParserTestTables( &$tables ) {
-		$tables[] = 'globalimagelinks';
-		return true;
-	}
-
-	/**
 	 * Hook to apply schema changes
 	 *
 	 * @param DatabaseUpdater $updater
