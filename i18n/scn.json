@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ajeje Brazorf",
 			"Aushulz",
 			"Gmelfi",
 			"Pippinu",
@@ -8,6 +9,7 @@
 		]
 	},
 	"globalusage": "Utilizzu glubbali dû file",
+	"globalusage-filename": "Nomu dû file:",
 	"globalusage-ok": "Va arricerca",
 	"globalusage-on-wiki": "Utilizzu supra $2",
 	"globalusage-of-file": "Puru li wiki appressu ùsanu stu file:",
