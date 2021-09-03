@@ -6,5 +6,6 @@
 	},
 	"globalusage": "Glob'l fail yuus'j",
 	"globalusage-on-wiki": "Yuus'j orn $2",
-	"globalusage-of-file": "T' folowin' otha wikis yuus dis fail:"
+	"globalusage-of-file": "T' folowin' otha wikis yuus dis fail:",
+	"globalusage-more": "Luket [[{{#Special:GlobalUsage}}/$1|mor gloeb'l yuus'j]] o' dis fail."
 }
