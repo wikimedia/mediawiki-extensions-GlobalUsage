@@ -5,7 +5,6 @@ namespace MediaWiki\Extension\GlobalUsage;
 use DeferredUpdates;
 use IContextSource;
 use MediaWiki\MediaWikiServices;
-use MWNamespace;
 use Title;
 use WikiMap;
 use Wikimedia\Rdbms\IDatabase;
@@ -208,9 +207,9 @@ class GlobalUsage {
 		global $wgGlobalUsageSharedRepoWiki;
 		// Make sure to get the "canonical" page name, and not a translation.
 		$titleText = $context->getTitle()->getDBkey();
-		list( $canonicalName, $subpage ) = MediaWikiServices::getInstance()
-			->getSpecialPageFactory()->resolveAlias( $titleText );
-		$canonicalName = MWNamespace::getCanonicalName( NS_SPECIAL ) . ':' . $canonicalName;
+		$services = MediaWikiServices::getInstance();
+		list( $canonicalName, $subpage ) = $services->getSpecialPageFactory()->resolveAlias( $titleText );
+		$canonicalName = $services->getNamespaceInfo()->getCanonicalName( NS_SPECIAL ) . ':' . $canonicalName;
 		if ( $subpage !== null ) {
 			$canonicalName .= '/' . $subpage;
 		}
