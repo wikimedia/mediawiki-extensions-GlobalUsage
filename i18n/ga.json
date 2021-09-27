@@ -6,9 +6,6 @@
 			"පසිඳු කාවින්ද"
 		]
 	},
-	"globalusage": "Úsáid comhad domhanda",
 	"globalusage-ok": "Cuardaigh",
-	"globalusage-on-wiki": "Úsáid ar $2",
-	"globalusage-of-file": "Úsáideann na vicis eile seo a leanas an comhad seo:",
-	"globalusage-more": "Amharc [[{{#Special:GlobalUsage}}/$1|úsáid níos domhanda]] den chomhad seo."
+	"globalusage-on-wiki": "Úsáid ar $2"
 }
