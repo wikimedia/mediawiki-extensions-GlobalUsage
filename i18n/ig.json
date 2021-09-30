@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Tochiprecious",
 			"Ukabia",
 			"Uzoma Ozurumba"
 		]
@@ -8,5 +9,6 @@
 	"globalusage": "Ejiji failụ zụrụ ọha",
 	"globalusage-ok": "Tùwe",
 	"globalusage-on-wiki": "Ihe eji na $2",
-	"globalusage-of-file": "Wikis ndi a edeputara na eji kwa failụ a:"
+	"globalusage-of-file": "Wikis ndi a edeputara na eji kwa failụ a:",
+	"globalusage-more": "Lee [[{{#Special:GlobalUsage}}/$1|more global usage]] of this file."
 }
