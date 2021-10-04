@@ -4,5 +4,8 @@
 			"Ayire Adongo"
 		]
 	},
-	"globalusage-of-file": "Bana wa za’a lagum tara la wikis pɔkɔ wa:"
+	"globalusage": "Tɛngepaberɛ pɔkɔ puam tuuma",
+	"globalusage-on-wiki": "Tara ita $2",
+	"globalusage-of-file": "Bana wa za’a lagum tara la wikis pɔkɔ wa:",
+	"globalusage-more": "Bise [[{{#Special:GlobalUsage}}/$1|more global usage]] pɔkɔ wa yele."
 }
