@@ -6,6 +6,7 @@
 	},
 	"globalusage": "Uso global de iste file",
 	"globalusage-for": "Uso global pro \"$1\"",
+	"globalusage-filename": "Nomine del file:",
 	"globalusage-desc": "[[Special:GlobalUsage|Pagina special]] pro vider le uso global de files",
 	"globalusage-ok": "Cercar",
 	"globalusage-text": "Cercar uso global de files.",
@@ -13,5 +14,14 @@
 	"globalusage-on-wiki": "Uso in $2",
 	"globalusage-of-file": "Le altere wikis sequente usa iste imagine:",
 	"globalusage-more": "Vider [[{{#Special:GlobalUsage}}/$1|altere usos global]] de iste file.",
-	"globalusage-filterlocal": "Non monstrar uso local"
+	"globalusage-filterlocal": "Non monstrar uso local",
+	"mostgloballylinkedfiles": "Le files le plus ligate globalmente",
+	"mostgloballylinkedfiles-summary": "Lista de files que ha essite incastrate le plus grande numero de vices sur tote le wikis. Pro le lista equivalente que prende in conto solmente le usos sur {{SITENAME}}, vide [[{{#special:MostLinkedFiles}}]].",
+	"globallywantedfiles": "Files desirate globalmente",
+	"globallywantedfiles-summary": "Lista de files que ha essite incastrate le plus grande numero de vices sur tote le wikis in despecto de lor non-existentia. Pro le lista equivalente que prende in conto solmente le usos sur {{SITENAME}}, vide [[{{#special:WantedFiles}}]]. Le files sur wikis que differentia le uso de majusculas e minusculas in le prime littera del nomine del file, pote esser incorrectemente reportate como inexistente.",
+	"globallywantedfiles-foreign-repo": "<strong>Attention:</strong> Iste wiki usa un repositorio externe de files. Le files del repositorio externe que es in uso appare in iste lista como ligamines blau barrate in despecto del facto que illos existe.",
+	"globalusage-header": "Iste pagina indica ubi un file es usate sur altere wikis. Tu pote tamben trovar ille information al fin del pagina de description del file.",
+	"globallyunusedfiles": "Files globalmente non usate",
+	"globallyunusedfilestext": "Le sequente files existe ma non es incastrate in alcun pagina sur alcun wiki.",
+	"globallyunusedfiles-error-nonsharedrepo": "Iste wiki non es sur le repositorio condividite."
 }

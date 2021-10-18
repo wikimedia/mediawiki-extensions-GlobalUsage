@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Em-em",
 			"Kambai Akau"
 		]
 	},
+	"globalusage": "Amfanin fayil a ko'ina",
 	"globalusage-ok": "Nema",
 	"globalusage-on-wiki": "Amfani a kan $2"
 }
