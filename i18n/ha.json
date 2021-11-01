@@ -8,5 +8,6 @@
 	"globalusage": "Amfanin fayil a ko'ina",
 	"globalusage-ok": "Nema",
 	"globalusage-on-wiki": "Amfani a kan $2",
-	"globalusage-of-file": "Wadannan sauran wikis suna amfani da fayil din anan"
+	"globalusage-of-file": "Wadannan sauran wikis suna amfani da fayil din anan",
+	"globalusage-more": "Duba [[{{#Special:GlobalUsage}}/$1|ƙarin amfanin]] wannan fayil."
 }
