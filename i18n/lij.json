@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Giromin Cangiaxo"
+			"Giromin Cangiaxo",
+			"N. Longo"
 		]
 	},
 	"globalusage": "Utilizzo globale do file",
@@ -11,7 +12,7 @@
 	"globalusage-ok": "Çerca",
 	"globalusage-text": "Mostra l'uso globale do file",
 	"globalusage-no-results": "[[:$1]] o no l'è doeuviou inte di atre wiki.",
-	"globalusage-on-wiki": "Deuviou inte seguente paggine de $2:",
+	"globalusage-on-wiki": "Dêuviòu inte pàgine de $2 chi de sótta:",
 	"globalusage-of-file": "Sto file chì o l'è deuviou da sti atri wiki ascì",
 	"globalusage-more": "Visualizza l'[[{{#Special:GlobalUsage}}/$1|utilizzo globale]] de questo file.",
 	"globalusage-filterlocal": "No mostrâ l'uso locale",
