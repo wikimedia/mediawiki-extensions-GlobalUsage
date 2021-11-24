@@ -9,7 +9,8 @@
 			"Macofe",
 			"Platonides",
 			"Ryo567",
-			"Translationista"
+			"Translationista",
+			"Jakeukalane"
 		]
 	},
 	"globalusage": "Uso global del archivo",
@@ -20,15 +21,15 @@
 	"globalusage-text": "Buscar uso de archivo global",
 	"globalusage-no-results": "[[:$1]] no se utiliza en otros wikis.",
 	"globalusage-on-wiki": "Uso en $2",
-	"globalusage-of-file": "Los wikis siguientes utilizan este archivo:",
+	"globalusage-of-file": "Las wikis siguientes utilizan este archivo:",
 	"globalusage-more": "Ver [[{{#Special:GlobalUsage}}/$1|más uso global]] de este archivo.",
 	"globalusage-filterlocal": "No mostrar el uso local",
 	"mostgloballylinkedfiles": "Archivos más enlazados globalmente",
-	"mostgloballylinkedfiles-summary": "Lista de archivos que se han incrustado el mayor número de veces a través de todos los wikis. Para el equivalente de la lista que sólo tiene en cuenta los usos en {{SITENAME}}, véase [[{{#special:MostLinkedFiles}}]].",
+	"mostgloballylinkedfiles-summary": "Lista de archivos que se han incrustado el mayor número de veces a través de todas las wikis. Para el equivalente de la lista que sólo tiene en cuenta los usos en {{SITENAME}}, véase [[{{#special:MostLinkedFiles}}]].",
 	"globallywantedfiles": "Archivos solicitados globalmente",
-	"globallywantedfiles-foreign-repo": "<strong>Atención:</strong> este wiki usa un repositorio de archivos externo. Los archivos de este repositorio que estén en uso se mostrarán en esta lista como enlaces azules tachados a pesar de que existen.",
+	"globallywantedfiles-foreign-repo": "<strong>Atención:</strong> esta wiki usa un repositorio de archivos externo. Los archivos de este repositorio que estén en uso se mostrarán en esta lista como enlaces azules tachados a pesar de que existen.",
 	"globalusage-header": "Esta página muestra donde se usa un archivo en otros wikis. También puedes encontrar esta información en la parte inferior la página de descripción del archivo.",
 	"globallyunusedfiles": "Archivos en desuso globalmente",
 	"globallyunusedfilestext": "Los archivos siguientes existen pero no están incrustados en ninguna página de ningún wiki.",
-	"globallyunusedfiles-error-nonsharedrepo": "Este wiki no pertenece al repositorio compartido"
+	"globallyunusedfiles-error-nonsharedrepo": "Esta wiki no pertenece al repositorio compartido"
 }

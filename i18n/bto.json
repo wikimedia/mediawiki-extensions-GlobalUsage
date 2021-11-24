@@ -4,5 +4,7 @@
 			"Filipinayzd"
 		]
 	},
-	"globalusage-on-wiki": "Paggamit sa $2"
+	"globalusage": "Pangkinaban na gamit ka file",
+	"globalusage-on-wiki": "Paggamit sa $2",
+	"globalusage-more": "Bayda a [[{{#Special:GlobalUsage}}/$1|rugang na pangkinaban na paggamit]] kadi fil."
 }

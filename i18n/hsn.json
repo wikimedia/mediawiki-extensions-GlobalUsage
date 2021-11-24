@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"ChoiChong"
+		]
+	},
+	"globalusage": "全域文件用途",
+	"globalusage-on-wiki": "$2上亇用途",
+	"globalusage-of-file": "以下其他wiki使用啯文件：",
+	"globalusage-more": "眙啯杂文件亇[[{{#Special:GlobalUsage}}/$1|更多全域用途]]。"
+}

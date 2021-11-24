@@ -6,5 +6,6 @@
 	},
 	"globalusage": "Щаллагу дунияллул суратрая мюнпат ласаву",
 	"globalusage-on-wiki": "Ишла баву $2",
-	"globalusage-of-file": "Ва файл ишла дайсар вай викирдал:"
+	"globalusage-of-file": "Ва файл ишла дайсар вай викирдал:",
+	"globalusage-more": "Ххал дан [[{{#Special:GlobalUsage}}/$1|щала дунияллул аьркин шаву]] ва файлдул"
 }
