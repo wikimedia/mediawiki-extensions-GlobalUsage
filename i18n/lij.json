@@ -5,7 +5,7 @@
 			"N. Longo"
 		]
 	},
-	"globalusage": "Utilizzo globale do file",
+	"globalusage": "Utilìzzo globâle do file",
 	"globalusage-for": "Utilizzo globâ de \"$1\"",
 	"globalusage-filename": "Nomme do file:",
 	"globalusage-desc": "[[Special:GlobalUsage|Paggina speciale]] pi amiâ l'utilizzo globâ di file",
@@ -13,8 +13,8 @@
 	"globalusage-text": "Mostra l'uso globale do file",
 	"globalusage-no-results": "[[:$1]] o no l'è doeuviou inte di atre wiki.",
 	"globalusage-on-wiki": "Dêuviòu inte pàgine de $2 chi de sótta:",
-	"globalusage-of-file": "Sto file chì o l'è deuviou da sti atri wiki ascì",
-	"globalusage-more": "Visualizza l'[[{{#Special:GlobalUsage}}/$1|utilizzo globale]] de questo file.",
+	"globalusage-of-file": "Quésto file o l'é dêuviou da 'ste âtre wiki ascì:",
+	"globalusage-more": "Véddi l'[[{{#Special:GlobalUsage}}/$1|ûzo globâle]] de quésto file.",
 	"globalusage-filterlocal": "No mostrâ l'uso locale",
 	"mostgloballylinkedfiles": "File ciù inganciæ globalmente",
 	"mostgloballylinkedfiles-summary": "Lista di file ch'en stæti inciosci o ciu gran nummio de votte inte tutte e wikki. Pe 'na lista equivalente ch'a pigge in conscidiassion soo che l'utilizzo insce {{SITENAME}}, amia [[{{#special:MostLinkedFiles}}]].",
