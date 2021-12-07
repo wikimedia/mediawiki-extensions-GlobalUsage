@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Lea.Fakauvea"
+		]
+	},
+	"globalusage": "Faka'aoga'i o te koga",
+	"globalusage-on-wiki": "E toe 'asi i $2",
+	"globalusage-of-file": "Ko te 'u wiki aeni e faka'aoga'i te koga aeni:",
+	"globalusage-more": "Sio ki te [[{{#Special:GlobalUsage}}/$1|faka'aoga'i fakamālamanei]] o te koga aeni."
+}

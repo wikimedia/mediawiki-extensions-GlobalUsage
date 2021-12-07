@@ -3,10 +3,12 @@
 		"authors": [
 			"LNDDYL",
 			"SolidBlock",
-			"飞舞回堂前"
+			"飞舞回堂前",
+			"列维劳德"
 		]
 	},
 	"globalusage": "總文之用",
 	"globalusage-ok": "尋",
-	"globalusage-on-wiki": "$2上之用"
+	"globalusage-on-wiki": "$2上之用",
+	"globalusage-of-file": "下他共筆連本檔："
 }

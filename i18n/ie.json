@@ -3,11 +3,12 @@
 		"authors": [
 			"Mithridates",
 			"OIS",
-			"Stavanger7"
+			"Stavanger7",
+			"Renan"
 		]
 	},
-	"globalusage": "Global usage del file",
-	"globalusage-on-wiki": "Usage in $2",
+	"globalusage": "Usu global del file",
+	"globalusage-on-wiki": "Usu in $2",
 	"globalusage-of-file": "Li altri wikis a sequer usa ti-ci file:",
-	"globalusage-more": "Vi [[{{#Special:GlobalUsage}}/$1|plu de global usage]] de ti-ci file."
+	"globalusage-more": "Vider [[{{#Special:GlobalUsage}}/$1|plu del usu global]] de ti-ci file."
 }

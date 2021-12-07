@@ -6,5 +6,6 @@
 	},
 	"globalusage": "Floua nga i kè bé yo i lika kwlaa",
 	"globalusage-on-wiki": "I yolè $2 sou",
-	"globalusage-of-file": "Wikis ouflè nga moun bé fa floua nga"
+	"globalusage-of-file": "Wikis ouflè nga moun bé fa floua nga",
+	"globalusage-more": "Nian floua boué nga [[{{#Special:GlobalUsage}}/$1|kè bé yé i titi]]."
 }

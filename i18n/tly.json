@@ -6,9 +6,9 @@
 			"Гусейн"
 		]
 	},
-	"globalusage": "Çı fayli qlobal istifadə",
+	"globalusage": "Фајли умуми око дој",
 	"globalusage-ok": "Bınəv",
-	"globalusage-on-wiki": "Çı $2 istifadə",
-	"globalusage-of-file": "Im fayl oko doə beydə bı vikiyonədə:",
-	"globalusage-more": "Diyə karde konco [[{{#Special:GlobalUsage}}/$1|qlobəl oko doydən]] ım fayli."
+	"globalusage-on-wiki": "Око доә бејдә $2",
+	"globalusage-of-file": "Ым фајл око доә бејдә бы викијонәдә:",
+	"globalusage-more": "Дијә карде конҹо [[{{#Special:GlobalUsage}}/$1|умуми око дојдән]] ым фајли."
 }
