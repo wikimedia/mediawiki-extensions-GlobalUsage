@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"GastonJeremiah"
+			"GastonJeremiah",
+			"Amire80"
 		]
 	},
-	"globalusage": "Wadg beermga zãnb",
-	"globalusage-on-wiki": "H3b $2 jugun"
+	"globalusage": "Wadg beermga zaŋb",
+	"globalusage-on-wiki": "!!FUZZYY!!Hɛb $2 jugun",
+	"globalusage-of-file": "Wikibolii zaŋta tiim wadgan ke na:",
+	"globalusage-more": "Nyan [[{{#Special:GlobalUsage}}/$1|kɔrƒand zang ]] wadgab kena jugun."
 }
