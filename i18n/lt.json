@@ -17,7 +17,7 @@
 	"globalusage-text": "Ieškoti globalaus failo naudojimo",
 	"globalusage-no-results": "[[:$1]] nenaudojama kituose Wiki projektuose.",
 	"globalusage-on-wiki": "Naudojama $2",
-	"globalusage-of-file": "Ši rinkmena naudojama šiose wiki svetainėse:",
+	"globalusage-of-file": "Ši rinkmena naudojama šiose viki svetainėse:",
 	"globalusage-more": "Žiūrėti [[{{#Special:GlobalUsage}}/$1|visuotinį šios rinkmenos naudojimą]].",
 	"globalusage-filterlocal": "Nerodyti lokalaus naudojimo",
 	"mostgloballylinkedfiles": "Daugiausia globaliai susietų failų",

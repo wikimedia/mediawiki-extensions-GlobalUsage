@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"RFScott"
+		]
+	},
+	"globalusage": "Ялоду файлади дёбовори",
+	"globalusage-on-wiki": "Такораори $2ду",
+	"globalusage-of-file": "Эй файлади тэй викиду дёбойни",
+	"globalusage-more": "Эй файл [[{{#Special:GlobalUsage}}/$1|дёбойвани]] ичэури"
+}

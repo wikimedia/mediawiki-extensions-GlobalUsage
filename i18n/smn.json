@@ -1,10 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Trondtr"
+			"Trondtr",
+			"Yupik"
 		]
 	},
 	"globalusage": "Tiätuvuárhá kevttim ubâ systeemist",
+	"globalusage-filename": "Tiätuvuárkkánommâ:",
+	"globalusage-ok": "Uusâ",
 	"globalusage-on-wiki": "Kiävttu saajeest $2",
 	"globalusage-of-file": "Čuávuvááh eres wikih kevttih taam tiätuvuárhá.",
 	"globalusage-more": "Čääiti lase taan tiätuvuárhá  [[{{#Special:GlobalUsage}}/$1|vuáhádâhvijđosii kiävtu]]."

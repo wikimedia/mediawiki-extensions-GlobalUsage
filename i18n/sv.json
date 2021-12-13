@@ -7,7 +7,8 @@
 			"Lejonel",
 			"Lokal Profil",
 			"M.M.S.",
-			"WikiPhoenix"
+			"WikiPhoenix",
+			"Sabelöga"
 		]
 	},
 	"globalusage": "Global filanvändning",
@@ -26,7 +27,7 @@
 	"globallywantedfiles": "Globalt önskade filer",
 	"globallywantedfiles-summary": "Lista över filer som har blivit inbäddade flest gånger över alla wikier, trots att de inte finns. För motsvarande lista som enbart tar hänsyn till användningen på {{SITENAME}}, se [[{{#special:WantedFiles}}]]. Filanvändningar från wikier med en skiftlägeskänslig begynnelsebokstav kan felaktigt räknas med.",
 	"globallywantedfiles-foreign-repo": "<strong>Varning:</strong> Denna wiki använder ett externt filarkiv. Filer från den externa databasen som används kommer att visa på denna lista som genomstrukna blå länkar trots att de finns.",
-	"globalusage-header": "Denna sida visar var en fil används på andra wikis. Du kan också hitta information på botten av den filens beskrivningssida.",
+	"globalusage-header": "Denna sida visar var en fil används på andra wikier. Du kan också hitta information på botten av den filens beskrivningssida.",
 	"globallyunusedfiles": "Globalt oanvända filer",
 	"globallyunusedfilestext": "Följande filer finns men är inte inbäddade på någon sidan på någon wiki.",
 	"globallyunusedfiles-error-nonsharedrepo": "Denna wiki är inte på det delade kodförvaret"

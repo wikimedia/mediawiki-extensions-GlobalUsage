@@ -3,12 +3,13 @@
 		"authors": [
 			"Dağlı95",
 			"PPerviz",
-			"Wertuose"
+			"Wertuose",
+			"NMW03"
 		]
 	},
 	"globalusage": "Faylın qlobal istifadəsi",
 	"globalusage-ok": "Axtar",
 	"globalusage-on-wiki": "$2 layihəsində istifadəsi",
 	"globalusage-of-file": "Bu fayl aşağıdakı vikilərdə istifadə olunur:",
-	"globalusage-more": "Bu faylın [[{{#Special:GlobalUsage}}/$1|daha ətraflı qlobal istifadəsinə]] baxın."
+	"globalusage-more": "Bu faylın [[{{#Special:GlobalUsage}}/$1|qlobal istifadəsinə]] baxın."
 }

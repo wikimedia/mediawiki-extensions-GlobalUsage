@@ -10,7 +10,8 @@
 			"Otogi",
 			"Putnik",
 			"Striking Blue",
-			"Александр Сигачёв"
+			"Александр Сигачёв",
+			"Helpau"
 		]
 	},
 	"globalusage": "Глобальное использование файла",
@@ -20,7 +21,7 @@
 	"globalusage-ok": "Найти",
 	"globalusage-text": "Поиск глобального использования файла.",
 	"globalusage-no-results": "[[:$1]] не используется в других вики.",
-	"globalusage-on-wiki": "Использование [[:File:$1|$1]] в $2",
+	"globalusage-on-wiki": "Использование в $2",
 	"globalusage-of-file": "Данный файл используется в следующих вики:",
 	"globalusage-more": "Просмотреть [[{{#Special:GlobalUsage}}/$1|глобальное использование]] этого файла.",
 	"globalusage-filterlocal": "Не показывать локальное использование",

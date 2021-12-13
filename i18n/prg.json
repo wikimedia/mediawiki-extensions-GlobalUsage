@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nērtiks Jōrgesuns"
+		]
+	},
+	"globalusage": "Glōbala zūrbrukjas terpausnā",
+	"globalusage-on-wiki": "Tērpautan en $2",
+	"globalusage-of-file": "Ripīntis kittas wikis tērpaui šin zūrbrukin:",
+	"globalusage-more": "Waidinnais šisse zūrbrukes [[{{#Special:GlobalUsage}}/$1|glōbalas tērpausnas līstin]]."
+}

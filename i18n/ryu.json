@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"ChoiChong"
+		]
+	},
+	"globalusage": "グローバルファイルぬ使用状況",
+	"globalusage-on-wiki": "$2 での使用状況",
+	"globalusage-of-file": "以下に挙ぎーる他ぬウィキぬくぬ画像ちかとーいびーん:",
+	"globalusage-more": "くぬファイルぬ[[{{#Special:GlobalUsage}}/$1|グローバル使用状況]]んーじゅん。"
+}

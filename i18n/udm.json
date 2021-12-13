@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Wadorgurt"
+			"Wadorgurt",
+			"Kotwys"
 		]
 	},
-	"globalusage": "Мукет проектъёсын файл уже кутон",
+	"globalusage": "Мукет проектъёсын файлэз уже кутон",
 	"globalusage-on-wiki": "Уже кутон $2 пушкын",
 	"globalusage-of-file": "Та викиос файлэз уже куто:",
 	"globalusage-more": "Та файлэз [[{{#Special:GlobalUsage}}/$1|глобальной уже кутонэз]] учкыны."

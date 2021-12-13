@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Khalid Mahmood"
+			"Khalid Mahmood",
+			"Abbas dhothar"
 		]
 	},
 	"globalusage": "گلوبل فائل ورتن",
 	"globalusage-for": "گلوبل فائل ورتن \"$1\" لئی",
+	"globalusage-filename": "فائل دا ناں:",
 	"globalusage-desc": "[[Special:GlobalUsage|Special page]] جگت فائل ورتن",
 	"globalusage-ok": "کھوجو",
 	"globalusage-text": "گلوبل فائل ورتن کھوجو",

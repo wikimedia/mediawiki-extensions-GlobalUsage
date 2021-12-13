@@ -2,11 +2,15 @@
 	"@metadata": {
 		"authors": [
 			"Jonny84",
-			"Schläsinger"
+			"Schläsinger",
+			"Äberlausitzer"
 		]
 	},
 	"globalusage": "Globale Dateinutzung",
 	"globalusage-desc": "[[Special:GlobalUsage|Spezialseyte]] zur Oazeige, ei welchen Projekten de Dateien annes gemeinsam genutzten Repositoriums verwendet waan",
 	"globalusage-ok": "Sucha",
-	"globalusage-text": "Globale Suche noach der Dateiverwendung"
+	"globalusage-text": "Globale Suche noach der Dateiverwendung",
+	"globalusage-on-wiki": "Verwendung uff $2",
+	"globalusage-of-file": "De noachfulgenda andern Wikis verwenda diese Datei:",
+	"globalusage-more": "[[{{#Special:GlobalUsage}}/$1|Weitere globale Verwendunga]] dieser Datei oaschaua."
 }

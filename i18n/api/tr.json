@@ -3,15 +3,16 @@
 		"authors": [
 			"Arystanbek",
 			"BaRaN6161 TURK",
-			"Mirzali"
+			"Mirzali",
+			"MuratTheTurkish"
 		]
 	},
-	"apihelp-query+globalusage-description": "Belirli bir görüntü verir genel görüntü kullanımı.",
-	"apihelp-query+globalusage-summary": "Belirli bir görüntü için genel görüntü kullanımını döndürür.",
-	"apihelp-query+globalusage-param-prop": "Hangi özellikleri dönmek için:\n;url:url Ekler.\n;pageıd:sayfa NUMARASI Ekler.\n;AD:AD KİMLİĞİ Ekler.",
+	"apihelp-query+globalusage-description": "Belirli bir görüntü için küresel resim kullanımını döndürür.",
+	"apihelp-query+globalusage-summary": "Belirli bir görüntü için genel resim kullanımını döndürür.",
+	"apihelp-query+globalusage-param-prop": "Hangi özellikleri dönmek için:\n;url:Url ekler.\n;pageid:Sayfa kimliği ekler.\n;namespace:Ad alanı kimliği ekler.",
 	"apihelp-query+globalusage-param-limit": "Dönüş için kaç bağlantıları.",
-	"apihelp-query+globalusage-param-filterlocal": "Dosya filtre yerel kullanımı.",
+	"apihelp-query+globalusage-param-filterlocal": "Dosyanın yerel kullanımını filtreleyin.",
 	"apihelp-query+globalusage-param-namespace": "Sonuçları bu ad alanlarıyla sınırlandırın.",
 	"apihelp-query+globalusage-param-site": "Sonuçları bu sitelerle sınırlayın.",
-	"apihelp-query+globalusage-example-1": "Kullanımı [[:File:Example.jpg]]olsun"
+	"apihelp-query+globalusage-example-1": "[[:File:Example.jpg]] kullanımını alın"
 }

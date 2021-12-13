@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Adehertogh"
+		]
+	},
+	"globalusage": "Globalno chasňaripen le suboren",
+	"globalusage-ok": "Rode",
+	"globalusage-on-wiki": "Chasňarel pre $2",
+	"globalusage-of-file": "Kala aver wiki chasňaren kada suboris:",
+	"globalusage-more": "Te sikhavel [[{{#Special:GlobalUsage}}/$1|buter o globalno chrasňaripen]] kale suboriske."
+}

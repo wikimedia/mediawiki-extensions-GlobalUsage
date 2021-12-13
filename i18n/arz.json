@@ -10,5 +10,6 @@
 	"globalusage-ok": "بحث",
 	"globalusage-text": "بحث استخدام الملف العام",
 	"globalusage-on-wiki": "الاستخدام ف $2",
-	"globalusage-of-file": "الويكيات التانيه دى بتستخدم الفايل ده:"
+	"globalusage-of-file": "الويكيات التانيه دى بتستخدم الفايل ده:",
+	"globalusage-more": "اعرض [[{{#Special:GlobalUsage}}/$1|استخدام عام اكتر]] للملف ده."
 }

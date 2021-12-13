@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Nkankane"
+			"Nkankane",
+			"3atbulletz"
 		]
 	},
 	"globalusage": "Ukusetshenziswa komqulu jikelele",
-	"globalusage-on-wiki": "Ukusetshenziswa ku-$2"
+	"globalusage-on-wiki": "Ukusetshenziswa ku-$2",
+	"globalusage-of-file": "Amanye ama-wiki asebenzisa lefayela"
 }

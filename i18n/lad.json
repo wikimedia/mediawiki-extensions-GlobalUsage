@@ -1,8 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Menachem.Moreira"
+			"Menachem.Moreira",
+			"WikiiiTranslator"
 		]
 	},
-	"globalusage-ok": "Bushkar"
+	"globalusage": "Uso global de la dosya",
+	"globalusage-ok": "Bushkar",
+	"globalusage-on-wiki": "Uso en $2",
+	"globalusage-of-file": "Las vikis siguientes usan esta dosya:",
+	"globalusage-more": "Ver [[{{#Special:GlobalUsage}}/$1|uso de la dosya]] en más prodjektos."
 }

@@ -1,17 +1,18 @@
 {
 	"@metadata": {
 		"authors": [
-			"Iwan Novirion"
+			"Iwan Novirion",
+			"David Wadie Fisher-Freberg"
 		]
 	},
-	"globalusage": "Panggunoan berkas global",
+	"globalusage": "Pamakaian berkas global",
 	"globalusage-for": "Panggunoan global untuak \"$1\"",
 	"globalusage-desc": "[[Special:GlobalUsage|Laman istimewa]] untuak mancaliak panggunoan berkas sacaro global",
 	"globalusage-ok": "Cari",
 	"globalusage-text": "Cari panggunoan berkas sacaro global.",
 	"globalusage-no-results": "[[:$1]] indak digunoan di wiki lain.",
-	"globalusage-on-wiki": "Panggunoan pado $2",
-	"globalusage-of-file": "Wiki barikuik manggunoan berkas ko:",
+	"globalusage-on-wiki": "Pamakaian pado $2",
+	"globalusage-of-file": "Wiki nan mamakai berkas ko:",
 	"globalusage-more": "Calaik [[{{#Special:GlobalUsage}}/$1|labiah banyak panggunoan global]] dari berkas ko.",
 	"globalusage-filterlocal": "Jan tunjuakan panggunoan lokal"
 }

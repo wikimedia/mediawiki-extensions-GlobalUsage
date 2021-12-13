@@ -3,11 +3,14 @@
 		"authors": [
 			"Amara-Amaziɣ",
 			"Aslmad mohamed belarhzali",
-			"Mdb897"
+			"Mdb897",
+			"Brahim-essaidi",
+			"Hakim1bal"
 		]
 	},
 	"globalusage": "ⴰⵙⵎⵔⵙ ⴰⵖⵣⵓⵔⴰⵏ ⵏ ⵓⴼⴰⵢⵍⵓ",
+	"globalusage-ok": "ⵔⵣⵓ",
 	"globalusage-on-wiki": "ⴰⵙⵎⵔⵙ ⴳ $2",
 	"globalusage-of-file": "ⵉⵡⵉⴽⵉⵜⵏ ⴰⴷ ⵢⴰⴹⵏ ⴰⵔ ⵙⵙⵎⵔⵙⵏ ⴰⴼⴰⵢⵍⵓ ⴰⴷ:",
-	"globalusage-more": "ⵙⴽⵏ[[{{#Special:GlobalUsage}}/$1|ⵓⴳⴳⴰⵔ ⵖⴼ ⵓⵙⵙⵎⵔⵙ ⴰⵎⴰⵜⴰⵢ]] ⵏ ⵓⴼⴰⵢⵍⵓ ⴰⴷ."
+	"globalusage-more": "ⵙⴽⵏ [[{{#Special:GlobalUsage}}/$1|ⵓⴳⴳⴰⵔ ⵖⴼ ⵓⵙⵙⵎⵔⵙ ⴰⵎⴰⵜⴰⵢ]] ⵏ ⵓⴼⴰⵢⵍⵓ ⴰⴷ."
 }
