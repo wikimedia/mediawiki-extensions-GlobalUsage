@@ -3,6 +3,7 @@
 		"authors": [
 			"Crt",
 			"Nike",
+			"Veikk0.ma",
 			"ZeiP"
 		]
 	},
@@ -15,5 +16,6 @@
 	"globalusage-on-wiki": "Käyttö kohteessa $2",
 	"globalusage-of-file": "Seuraavat muut wikit käyttävät tätä tiedostoa:",
 	"globalusage-more": "Näytä lisää tämän tiedoston [[{{#Special:GlobalUsage}}/$1|järjestelmänlaajuista käyttöä]].",
-	"globalusage-filterlocal": "Älä näytä paikallista käyttöä"
+	"globalusage-filterlocal": "Älä näytä paikallista käyttöä",
+	"globallywantedfiles-summary": "Lista tiedostoista, joita on upotettu sisältöön eniten kaikissa wikeissä siitä huolimatta, että tiedostoa ei ole olemassa. Samanlaisen listan tiedostoista joita on käytetty vain {{SITENAME}}-sivustolla löydät sivulta [[{{#special:WantedFiles}}]]. Tiedostojen käyttö saattaa olla väärin raportoitu sivustoilla joissa tiedostonimen ensimmäisen kirjaimen kirjainkoolla on väliä."
 }
