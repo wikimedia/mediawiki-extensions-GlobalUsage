@@ -19,6 +19,7 @@ use MediaWiki\Revision\RevisionRecord;
 use MediaWiki\User\UserIdentity;
 use Title;
 use User;
+use WikiMap;
 
 class Hooks {
 	/**
@@ -202,7 +203,7 @@ class Hooks {
 	private static function fileUpdatesCreatePurgeJobs() {
 		global $wgGlobalUsageSharedRepoWiki, $wgGlobalUsagePurgeBacklinks;
 
-		return ( $wgGlobalUsagePurgeBacklinks && wfWikiId() === $wgGlobalUsageSharedRepoWiki );
+		return ( $wgGlobalUsagePurgeBacklinks && WikiMap::getCurrentWikiId() === $wgGlobalUsageSharedRepoWiki );
 	}
 
 	/**
@@ -212,7 +213,7 @@ class Hooks {
 	 */
 	private static function getGlobalUsage() {
 		return new GlobalUsage(
-			wfWikiID(),
+			WikiMap::getCurrentWikiId(),
 			GlobalUsage::getGlobalDB( DB_PRIMARY ),
 			GlobalUsage::getGlobalDB( DB_REPLICA )
 		);

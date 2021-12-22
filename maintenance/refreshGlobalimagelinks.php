@@ -31,7 +31,7 @@ class RefreshGlobalimagelinks extends Maintenance {
 		$dbr = wfGetDB( DB_REPLICA );
 		$gdbw = GlobalUsage::getGlobalDB( DB_PRIMARY );
 		$gdbr = GlobalUsage::getGlobalDB( DB_REPLICA );
-		$gu = new GlobalUsage( wfWikiID(), $gdbw, $gdbr );
+		$gu = new GlobalUsage( WikiMap::getCurrentWikiId(), $gdbw, $gdbr );
 
 		$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
 		$ticket = $lbFactory->getEmptyTransactionTicket( __METHOD__ );
@@ -118,7 +118,7 @@ class RefreshGlobalimagelinks extends Maintenance {
 				$this->output( "Querying for broken links after (page_id) = ($lastPageId)\n" );
 
 				$res = $gdbw->select( 'globalimagelinks', 'gil_page',
-					[ 'gil_wiki' => wfWikiID(), "gil_page > $lastPageId" ],
+					[ 'gil_wiki' => WikiMap::getCurrentWikiId(), "gil_page > $lastPageId" ],
 					__METHOD__,
 					[ 'ORDER BY' => 'gil_page', 'LIMIT' => $this->mBatchSize ]
 				);

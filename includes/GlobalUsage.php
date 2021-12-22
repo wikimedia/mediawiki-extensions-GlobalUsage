@@ -243,9 +243,9 @@ class GlobalUsage {
 		if ( !$wgGlobalUsageSharedRepoWiki ) {
 			// backwards compatability with settings from before $wgGlobalUsageSharedRepoWiki
 			// was introduced.
-			return $wgGlobalUsageDatabase === wfWikiID() || !$wgGlobalUsageDatabase;
+			return $wgGlobalUsageDatabase === WikiMap::getCurrentWikiId() || !$wgGlobalUsageDatabase;
 		} else {
-			return $wgGlobalUsageSharedRepoWiki === wfWikiID();
+			return $wgGlobalUsageSharedRepoWiki === WikiMap::getCurrentWikiId();
 		}
 	}
 

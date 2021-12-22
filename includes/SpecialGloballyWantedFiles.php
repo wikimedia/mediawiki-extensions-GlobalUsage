@@ -18,6 +18,7 @@ use stdClass;
 use Title;
 use WantedFilesPage;
 use WantedQueryPage;
+use WikiMap;
 
 class SpecialGloballyWantedFiles extends WantedFilesPage {
 
@@ -64,7 +65,7 @@ class SpecialGloballyWantedFiles extends WantedFilesPage {
 	public function isCacheable() {
 		global $wgGlobalUsageDatabase;
 		return GlobalUsage::onSharedRepo()
-			&& ( !$wgGlobalUsageDatabase || $wgGlobalUsageDatabase === wfWikiID() );
+			&& ( !$wgGlobalUsageDatabase || $wgGlobalUsageDatabase === WikiMap::getCurrentWikiId() );
 	}
 
 	/**

@@ -27,6 +27,7 @@ namespace MediaWiki\Extension\GlobalUsage;
 use ErrorPageError;
 use Exception;
 use ImageQueryPage;
+use WikiMap;
 
 /**
  * A special page that lists globally unused files
@@ -44,7 +45,7 @@ class SpecialGloballyUnusedFiles extends ImageQueryPage {
 	 */
 	private function isOnGlobalUsageDatabase() {
 		global $wgGlobalUsageDatabase;
-		return !$wgGlobalUsageDatabase || $wgGlobalUsageDatabase === wfWikiID();
+		return !$wgGlobalUsageDatabase || $wgGlobalUsageDatabase === WikiMap::getCurrentWikiId();
 	}
 
 	/**

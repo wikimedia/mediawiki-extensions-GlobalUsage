@@ -7,6 +7,7 @@ use Job;
 use JobQueueGroup;
 use MediaWiki\MediaWikiServices;
 use Title;
+use WikiMap;
 
 /**
  * Class to insert HTMLCacheUpdate jobs on local wikis to purge all pages that use
@@ -47,7 +48,7 @@ class GlobalUsageCachePurgeJob extends Job {
 		$res = $dbr->select(
 			'globalimagelinks',
 			[ 'gil_wiki', 'gil_to' ],
-			[ 'gil_to' => $filesForPurge, 'gil_wiki != ' . $dbr->addQuotes( wfWikiID() ) ],
+			[ 'gil_to' => $filesForPurge, 'gil_wiki != ' . $dbr->addQuotes( WikiMap::getCurrentWikiId() ) ],
 			__METHOD__,
 			[ 'DISTINCT' ]
 		);

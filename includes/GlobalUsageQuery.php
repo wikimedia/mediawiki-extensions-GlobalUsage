@@ -3,6 +3,7 @@
 namespace MediaWiki\Extension\GlobalUsage;
 
 use Title;
+use WikiMap;
 use Wikimedia\Rdbms\IDatabase;
 
 /**
@@ -184,7 +185,7 @@ class GlobalUsageQuery {
 
 		if ( $this->filterLocal ) {
 			// Don't show local file usage
-			$where[] = 'gil_wiki != ' . $this->db->addQuotes( wfWikiId() );
+			$where[] = 'gil_wiki != ' . $this->db->addQuotes( WikiMap::getCurrentWikiId() );
 		}
 
 		if ( $this->filterNamespaces ) {
