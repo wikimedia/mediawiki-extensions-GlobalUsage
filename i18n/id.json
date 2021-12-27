@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Bennylin",
+			"Daud I.F. Argana",
 			"Farras",
 			"IvanLanin",
 			"Kenrick95",
@@ -10,6 +11,7 @@
 	},
 	"globalusage": "Penggunaan berkas global",
 	"globalusage-for": "Penggunaan global untuk \"$1\"",
+	"globalusage-filename": "Nama berkas:",
 	"globalusage-desc": "[[Special:GlobalUsage|Halaman istimewa]] untuk melihat penggunaan berkas secara global",
 	"globalusage-ok": "Cari",
 	"globalusage-text": "Cari penggunaan berkas secara global.",
@@ -17,5 +19,14 @@
 	"globalusage-on-wiki": "Penggunaan pada $2",
 	"globalusage-of-file": "Wiki lain berikut menggunakan berkas ini:",
 	"globalusage-more": "Lihat [[{{#Special:GlobalUsage}}/$1|lebih banyak penggunaan global]] dari berkas ini.",
-	"globalusage-filterlocal": "Jangan tunjukkan penggunaan lokal"
+	"globalusage-filterlocal": "Jangan tunjukkan penggunaan lokal",
+	"mostgloballylinkedfiles": "Berkas yang paling banyak ditautkan secara global",
+	"mostgloballylinkedfiles-summary": "Daftar berkas yang paling sering ditanamkan di semua wiki. Untuk daftar ekuivalen yang hanya mempertimbangkan penggunaan di {{SITENAME}}, lihat [[{{#special:MostLinkedFiles}}]].",
+	"globallywantedfiles": "Berkas yang diinginkan secara global",
+	"globallywantedfiles-summary": "Daftar berkas yang paling sering ditanamkan di semua wiki padahal tidak ada. Untuk daftar ekuivalen yang hanya mempertimbangkan penggunaan di {{SITENAME}}, lihat [[{{#special:WantedFiles}}]]. Penggunaan berkas dari wiki yang huruf pertamanya peka kapital mungkin salah dilaporkan sebagai diinginkan.",
+	"globallywantedfiles-foreign-repo": "<strong>Peringatan</strong>: Wiki ini menggunakan repositori berkas yang asing. Berkas-berkas yang sedang digunakan dari repositori asing tersebut akan muncul dalam daftar ini sebagai pranala biru yang dicoret biarpun pada hakikatnya berkas tersebut ada.",
+	"globalusage-header": "Halaman ini menampilkan di mana suatu berkas digunakan di wiki-wiki lain. Anda juga bisa menemukan informasi tersebut di bagian bawah halaman deskripsi berkas.",
+	"globallyunusedfiles": "Berkas yang tidak digunakan secara global",
+	"globallyunusedfilestext": "Berkas-berkas berikut ada, tetapi tidak ditanamkan di halaman apa pun di wiki mana pun.",
+	"globallyunusedfiles-error-nonsharedrepo": "Wiki ini tidak ada di repositori yang dibagikan"
 }
