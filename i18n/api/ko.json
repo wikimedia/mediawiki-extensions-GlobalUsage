@@ -5,6 +5,7 @@
 			"Ykhwong"
 		]
 	},
+	"apihelp-query+globalusage-description": "특정한 이미지에 대한 전역 사용 내역을 반환합니다.",
 	"apihelp-query+globalusage-summary": "특정 그림에 대한 모든 위키의 그림 사용 정보를 반환합니다.",
 	"apihelp-query+globalusage-param-prop": "출력할 속성:\n;url: url을 추가\n;pageid: 문서 ID를 추가.\n;namespace: 이름공간 ID를 추가.",
 	"apihelp-query+globalusage-param-limit": "반환할 링크 수입니다.",
