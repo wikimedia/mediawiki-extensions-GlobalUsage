@@ -6,5 +6,6 @@
 	},
 	"globalusage": "Opaĩwara mukatiuruçawa puruçawa",
 	"globalusage-on-wiki": "Upurú $2 upé",
-	"globalusage-of-file": "Amũ wiki'etá ĩdé resó kurí remaã taupurú kuá mukatiuruçawa."
+	"globalusage-of-file": "Amũ wiki'etá ĩdé resó kurí remaã taupurú kuá mukatiuruçawa.",
+	"globalusage-more": "Umaã [[{{#Special:GlobalUsage}}/$1|opaĩwara puruçawa]] kuá mukatiuruçawa çui."
 }

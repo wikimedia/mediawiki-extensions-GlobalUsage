@@ -9,7 +9,13 @@
 		]
 	},
 	"globalusage": "ߞߐߕߐ߮ ߟߊߓߊ߯ߙߊߟߌ߫ ߞߙߎߞߙߍ",
+	"globalusage-filename": "ߞߐߕߐ߮ ߕߐ߮:",
+	"globalusage-ok": "ߢߌߣߌ߲ߠߌ߲",
+	"globalusage-text": "ߖߊ߯ߓߊ ߞߐߕߐ߮ ߟߊ߬ߓߊ߰ߙߊ߬ߟߌ ߟߎ߬ ߢߌߣߌ߲߫",
+	"globalusage-no-results": "[[:$1]] ߟߊߓߊ߯ߙߊߣߍ߲߫ ߕߍ߫ ߥߞߌ߫ ߜߘߍ ߟߎ߬ ߓߟߏ߫.",
 	"globalusage-on-wiki": "ߊ߬ ߟߊߓߊ߯ߙߊ߫ $2 ߘߐ߫",
 	"globalusage-of-file": "ߥߞߌ߫ ߕߐ߭ ߢߌ߲߬ ߠߎ߬ ߦߋ߫ ߞߐߕߐ߮ ߣߌ߲߬ ߠߊߓߊ߯ߙߊ߫ ߟߊ߫:",
-	"globalusage-more": "ߞߐߕߐ߮ ߣߌ߲߬  [[{{#Special:GlobalUsage}}/$1|more global usage]] ߦߋߟߌ."
+	"globalusage-more": "ߞߐߕߐ߮ ߣߌ߲߬  [[{{#Special:GlobalUsage}}/$1|more global usage]] ߦߋߟߌ.",
+	"globalusage-filterlocal": "ߕߌ߲߬ߞߎߘߎ߲ ߟߊ߬ߓߊ߰ߙߊ߬ߟߌ ߟߎ߬ ߞߊߣߊ߬ ߦߌ߬ߘߊ߬",
+	"mostgloballylinkedfiles": "ߞߐߕߐ߮ ߡߍ߲ ߠߎ߬ ߜߋ߲߬ߞߘߎ߬ߣߍ߲߬ߓߊ ߦߋ߫ ߖߊ߯ߓߊ ߞߊߓߋ ߟߊ߫"
 }
