@@ -4,7 +4,6 @@ namespace MediaWiki\Extension\GlobalUsage;
 
 use HTMLCacheUpdateJob;
 use Job;
-use JobQueueGroup;
 use MediaWiki\MediaWikiServices;
 use Title;
 use WikiMap;
@@ -32,7 +31,8 @@ class GlobalUsageCachePurgeJob extends Job {
 		$filesForPurge = [ $title->getDbKey() ]; // title to purge backlinks to
 		// All File pages that redirect this one may have backlinks that need purging.
 		// These backlinks are probably broken now (missing files or double redirects).
-		$backlinkCache = MediaWikiServices::getInstance()
+		$services = MediaWikiServices::getInstance();
+		$backlinkCache = $services
 			->getBacklinkCacheFactory()
 			->getBacklinkCache( $title );
 		foreach ( $backlinkCache->getLinks( 'redirect' ) as $redirTitle ) {
@@ -65,8 +65,9 @@ class GlobalUsageCachePurgeJob extends Job {
 		}
 
 		// Batch insert the jobs by wiki to save a few round trips
+		$jobQueueGroupFactory = $services->getJobQueueGroupFactory();
 		foreach ( $jobsByWiki as $wiki => $jobs ) {
-			JobQueueGroup::singleton( $wiki )->push( $jobs );
+			$jobQueueGroupFactory->makeJobQueueGroup( $wiki )->push( $jobs );
 		}
 
 		return true;
