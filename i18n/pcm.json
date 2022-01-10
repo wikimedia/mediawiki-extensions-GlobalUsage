@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Egiebizzy",
 			"Samatics"
 		]
 	},
-	"globalusage-on-wiki": "Dem yus am fo $2"
+	"globalusage": "Di way dem dey use am for di whole world",
+	"globalusage-on-wiki": "Dem yus am fo $2",
+	"globalusage-of-file": "Na dis tin dem oda wiki dey uze"
 }
