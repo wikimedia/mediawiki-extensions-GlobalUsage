@@ -11,7 +11,6 @@ use Article;
 use DatabaseUpdater;
 use File;
 use FileRepo;
-use JobQueueGroup;
 use LinksUpdate;
 use MediaWiki\Linker\LinkTarget;
 use MediaWiki\MediaWikiServices;
@@ -104,7 +103,7 @@ class Hooks {
 			}
 			// Push the jobs after DB commit but cancel on rollback
 			wfGetDB( DB_PRIMARY )->onTransactionCommitOrIdle( static function () use ( $jobs ) {
-				JobQueueGroup::singleton()->lazyPush( $jobs );
+				MediaWikiServices::getInstance()->getJobQueueGroupFactory()->makeJobQueueGroup()->lazyPush( $jobs );
 			}, __METHOD__ );
 		}
 
@@ -146,7 +145,7 @@ class Hooks {
 
 			if ( self::fileUpdatesCreatePurgeJobs() ) {
 				$job = new GlobalUsageCachePurgeJob( $file->getTitle(), [] );
-				JobQueueGroup::singleton()->push( $job );
+				MediaWikiServices::getInstance()->getJobQueueGroupFactory()->makeJobQueueGroup()->push( $job );
 			}
 		}
 
@@ -169,7 +168,7 @@ class Hooks {
 
 		if ( self::fileUpdatesCreatePurgeJobs() ) {
 			$job = new GlobalUsageCachePurgeJob( $title, [] );
-			JobQueueGroup::singleton()->push( $job );
+			MediaWikiServices::getInstance()->getJobQueueGroupFactory()->makeJobQueueGroup()->push( $job );
 		}
 
 		return true;
@@ -188,7 +187,7 @@ class Hooks {
 
 		if ( self::fileUpdatesCreatePurgeJobs() ) {
 			$job = new GlobalUsageCachePurgeJob( $upload->getTitle(), [] );
-			JobQueueGroup::singleton()->push( $job );
+			MediaWikiServices::getInstance()->getJobQueueGroupFactory()->makeJobQueueGroup()->push( $job );
 		}
 
 		return true;
