@@ -6,5 +6,6 @@
 	},
 	"globalusage": "Enkozesa ya fayiro omunsi",
 	"globalusage-on-wiki": "Enkoresa omu $2",
-	"globalusage-of-file": "Ezi Ezindi Wikiz nizi koresa egyi fayiro"
+	"globalusage-of-file": "Ezi Ezindi Wikiz nizi koresa egyi fayiro",
+	"globalusage-more": "Reeba [[{{#Special:Globalusage}}/$1|enkoresa yensi]]eya fayiro egyi"
 }
