@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kakonjo"
+		]
+	},
+	"globalusage": "Enkozesa ya fayiro omunsi",
+	"globalusage-on-wiki": "Enkoresa omu $2",
+	"globalusage-of-file": "Ezi Ezindi Wikiz nizi koresa egyi fayiro",
+	"globalusage-more": "Reeba [[{{#Special:GlobalUsage}}/$1|more global usage]] eya fayiro egyi."
+}
