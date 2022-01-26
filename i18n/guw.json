@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Gadarawamo",
-			"Misteld"
+			"Misteld",
+			"Samatics"
 		]
 	},
-	"globalusage": "Wepo he wẹkẹlọ blebu nọzan",
-	"globalusage-on-wiki": "Zinzanlẹ to $2",
-	"globalusage-of-file": "Wikis deepo le no zan wepo ehe",
-	"globalusage-more": "Pọn [[{{#Special:GlobalUsage}}/$1|more global usage]] wepo ehe tọn."
+	"globalusage": "Wepo he nọ yin yiyizan lẹdo aihọn pé",
+	"globalusage-on-wiki": "Yizan to $2",
+	"globalusage-of-file": "Wiki devo ehe lẹ nọ zan wepo ehe:",
+	"globalusage-more": "Pọn [[{{#Special:GlobalUsage}}/$1|lehe yiyizan lẹdo aihọn pé]] wepo ehe tọn te."
 }
