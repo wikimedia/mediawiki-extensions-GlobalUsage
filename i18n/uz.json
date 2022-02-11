@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Malikxan",
 			"Sociologist"
 		]
 	},
+	"globalusage": "Faylning global foydalanilishi",
+	"globalusage-on-wiki": "$2 loyihasida foydalanilishi",
 	"globalusage-of-file": "Ushbu fayl quyidagi vikilarda ishlatilyapti:"
 }
