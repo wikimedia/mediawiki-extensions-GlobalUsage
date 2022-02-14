@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Agilight",
-			"Монгуш Салим"
+			"Монгуш Салим",
+			"Riverman"
 		]
 	},
 	"globalusage": "Файлдың делгем ажыглаашкыны",
-	"globalusage-on-wiki": "Ажыглаан арыннары: $2"
+	"globalusage-on-wiki": "Ажыглаан арыннары: $2",
+	"globalusage-of-file": "Бо файлды дараазында викилер ажыглап турар:"
 }
