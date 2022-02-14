@@ -8,5 +8,6 @@
 	},
 	"globalusage": "Файлдың делгем ажыглаашкыны",
 	"globalusage-on-wiki": "Ажыглаан арыннары: $2",
-	"globalusage-of-file": "Бо файлды дараазында викилер ажыглап турар:"
+	"globalusage-of-file": "Бо файлды дараазында викилер ажыглап турар:",
+	"globalusage-more": "Ол файлдың [[{{#Special:GlobalUsage}}/$1|глобалдыг ажыглалын]] көөр."
 }
