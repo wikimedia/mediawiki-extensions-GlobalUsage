@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ideophagous",
 			"SADIQUI"
 		]
 	},
 	"globalusage": "الاستخدام العالمي للملف",
 	"globalusage-on-wiki": "الاستخدام في $2",
-	"globalusage-of-file": "الويكيات التالية كتستخدم هاد الملف:",
-	"globalusage-more": "اعرض [[{{#Special:GlobalUsage}}/$1|المزيد من الاستخدام العام]] ديال هاد الملف."
+	"globalusage-of-file": "لويكيات التالية كاتخدّم هاد لفيشي:",
+	"globalusage-more": "شوف [[{{#Special:GlobalUsage}}/$1|تّخدام لأعم]] ديال هاد لفيشي."
 }
