@@ -3,17 +3,18 @@
 		"authors": [
 			"Filipinayzd",
 			"Geopoet",
-			"ShimunUfesoj"
+			"ShimunUfesoj",
+			"Daramlagon"
 		]
 	},
-	"globalusage": "Pankinabang gamit nin sagunson",
+	"globalusage": "Pankinaban na paggamit sa file",
 	"globalusage-for": "Pankinabang ginagamit para sa \"$1\"",
 	"globalusage-desc": "[[Special:GlobalUsage|Espesyal na pahina]] tanganing tanawon an pankinabang paggamit nin sagunson",
 	"globalusage-ok": "Hanapon",
 	"globalusage-text": "Hanapa an pankinabang paggamit nin sagunson",
 	"globalusage-no-results": "[[:$1]] dae tabi pinaggagamit sa ibang mga wikis.",
-	"globalusage-on-wiki": "Yaon an paggamit sa $2",
-	"globalusage-of-file": "Minaganit an minasunod na ibang mga wikis kan sagunson na ini:",
-	"globalusage-more": "Tanawon an [[{{#Special:GlobalUsage}}/$1|kadagdagan na pankinabang paggamit]] kaining sagunson.",
+	"globalusage-on-wiki": "Paggamit sa $2",
+	"globalusage-of-file": "Ginagamit kan mga minasunod na wiki an file na ini:",
+	"globalusage-more": "Hilingon an [[{{#Special:GlobalUsage}}/$1|kadagdagan na pankinaban na paggamit]] sa file na ini.",
 	"globalusage-filterlocal": "Dae ipagpahiling an lokal na paggamit"
 }
