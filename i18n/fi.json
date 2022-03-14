@@ -2,12 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Crt",
+			"Moottori",
 			"Nike",
 			"Veikk0.ma",
 			"ZeiP"
 		]
 	},
-	"globalusage": "Tiedoston järjestelmänlaajuinen käyttö",
+	"globalusage": "Tiedoston globaali käyttö",
 	"globalusage-for": "Tiedoston ”$1” järjestelmänlaajuinen käyttö",
 	"globalusage-desc": "[[Special:GlobalUsage|Toimintosivu]], joka näyttää tiedoston järjestelmänlaajuisen käytön.",
 	"globalusage-ok": "Hae",
