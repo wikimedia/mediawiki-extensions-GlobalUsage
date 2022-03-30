@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Dinhxuanduyet"
+			"Dinhxuanduyet",
+			"NguoiDungKhongDinhDanh"
 		]
 	},
-	"apihelp-query+globalusage-param-limit": "Có bao nhiêu liên kết được trả về."
+	"apihelp-query+globalusage-param-limit": "Tổng số liên kết trả về."
 }

@@ -5,10 +5,11 @@
 			"Nike",
 			"ZeiP",
 			"Moottori",
-			"Veikk0.ma"
+			"Veikk0.ma",
+			"Zache"
 		]
 	},
-	"globalusage": "Tiedoston globaali käyttö",
+	"globalusage": "Tiedoston järjestelmänlaajuinen käyttö",
 	"globalusage-for": "Tiedoston ”$1” järjestelmänlaajuinen käyttö",
 	"globalusage-desc": "[[Special:GlobalUsage|Toimintosivu]], joka näyttää tiedoston järjestelmänlaajuisen käytön.",
 	"globalusage-ok": "Hae",
