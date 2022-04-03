@@ -28,6 +28,7 @@ use ApiBase;
 use ApiQueryBase;
 use MediaWiki\MediaWikiServices;
 use WikiMap;
+use Wikimedia\ParamValidator\ParamValidator;
 use Wikimedia\ParamValidator\TypeDef\IntegerDef;
 
 class ApiQueryGlobalUsage extends ApiQueryBase {
@@ -125,29 +126,29 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 			->getGlobalIdentifiers();
 		return [
 			'prop' => [
-				ApiBase::PARAM_DFLT => 'url',
-				ApiBase::PARAM_TYPE => [
+				ParamValidator::PARAM_DEFAULT => 'url',
+				ParamValidator::PARAM_TYPE => [
 					'url',
 					'pageid',
 					'namespace',
 				],
-				ApiBase::PARAM_ISMULTI => true,
+				ParamValidator::PARAM_ISMULTI => true,
 			],
 			'limit' => [
-				ApiBase::PARAM_DFLT => 10,
-				ApiBase::PARAM_TYPE => 'limit',
+				ParamValidator::PARAM_DEFAULT => 10,
+				ParamValidator::PARAM_TYPE => 'limit',
 				IntegerDef::PARAM_MIN => 1,
 				IntegerDef::PARAM_MAX => ApiBase::LIMIT_BIG1,
 				IntegerDef::PARAM_MAX2 => ApiBase::LIMIT_BIG2
 			],
 			'namespace' => [
-				ApiBase::PARAM_TYPE => 'namespace',
-				ApiBase::PARAM_DFLT => '*',
-				ApiBase::PARAM_ISMULTI => true,
+				ParamValidator::PARAM_TYPE => 'namespace',
+				ParamValidator::PARAM_DEFAULT => '*',
+				ParamValidator::PARAM_ISMULTI => true,
 			],
 			'site' => [
-				ApiBase::PARAM_TYPE => $sites,
-				ApiBase::PARAM_ISMULTI => true
+				ParamValidator::PARAM_TYPE => $sites,
+				ParamValidator::PARAM_ISMULTI => true
 			],
 			'continue' => [
 				ApiBase::PARAM_HELP_MSG => 'api-help-param-continue',
