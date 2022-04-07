@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Chaduvari",
-			"Veeven"
+			"Veeven",
+			"Bvprasadenwiki"
 		]
 	},
-	"globalusage": "సార్వత్రిక ఫైలు వాడుక",
+	"globalusage": "ప్రపంచ వ్యాప్తంగా ఫైలు వాడుక",
 	"globalusage-for": "\"$1\" యొక్క సార్వత్రిక వాడుక",
 	"globalusage-desc": "సార్వత్రిక ఫైలు వాడుకని చూడడానికి [[Special:GlobalUsage|ప్రత్యేక పేజీ]]",
 	"globalusage-ok": "వెతుకు",
