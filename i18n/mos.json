@@ -3,10 +3,12 @@
 		"authors": [
 			"AaaRazak",
 			"Abdul Fatawu 352",
-			"Amire80"
+			"Amire80",
+			"Cdilalo47"
 		]
 	},
 	"globalusage": "Andũni fisiye tʋʋma",
 	"globalusage-on-wiki": "Tarek teague $2",
-	"globalusage-of-file": "Wikis zẽnga tʋm na ni fisiye:"
+	"globalusage-of-file": "Wikis zẽnga tʋm na ni fisiye:",
+	"globalusage-more": "Gese [[{{#Special:GlobalUsage}}/$1|more global usage]] fisiye kada"
 }
