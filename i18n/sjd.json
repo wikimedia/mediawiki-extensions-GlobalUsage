@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Meerrahtar"
+			"Meerrahtar",
+			"Merrahtar"
 		]
 	},
-	"globalusage": "Глобальнэ фа̄йл оаннҍмушш"
+	"globalusage": "Глобальнэ фа̄йл оаннҍмушш",
+	"globalusage-on-wiki": "Оаннҍмушш тэйт сэенҍ: $2"
 }
