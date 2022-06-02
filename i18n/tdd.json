@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"咽頭べさ"
+		]
+	},
+	"globalusage": "ᥘᥩᥒᥲᥓᥬᥳᥖᥪᥰᥜᥣᥭᥱᥘᥨᥛᥲᥚᥣᥳ",
+	"globalusage-on-wiki": "ᥓᥬᥳᥝᥭᥳ $2",
+	"globalusage-of-file": "ᥝᥤᥱᥑᥤᥱᥓᥫᥰᥟᥢᥴᥓᥬᥳᥝᥭᥳ ᥜᥣᥭᥱᥟᥢᥴᥢᥭᥳ:",
+	"globalusage-more": "ᥖᥨᥭᥰ ᥜᥣᥭᥱ[[{{#Special:GlobalUsage}}/$1|more global usage]] ᥟᥢᥴᥢᥭᥳ."
+}
