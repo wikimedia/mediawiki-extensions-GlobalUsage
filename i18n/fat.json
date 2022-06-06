@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ebenoffen1"
+			"Ebenoffen1",
+			"Leonard Nketsia"
 		]
 	},
 	"globalusage": "Wiadze mfɛndzanan fael dwumadzi",
 	"globalusage-on-wiki": "Yɛdze dzi dwuma wɔ $2",
-	"globalusage-of-file": "Wikis afofor a wɔka do yi dze dɛm fael yi dzi dwuma:"
+	"globalusage-of-file": "Wikis afofor a wɔka do yi dze dɛm fael yi dzi dwuma:",
+	"globalusage-more": "Hwɛ dɛm fael yi no  [[{{#Special:GlobalUsage}}/$1|dwumadzi wɔ wiase nyinara mu bi ka ho]]."
 }
