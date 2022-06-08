@@ -9,7 +9,9 @@
 		]
 	},
 	"globalusage": "ߞߐߕߐ߮ ߟߊߓߊ߯ߙߊߟߌ߫ ߞߙߎߞߙߍ",
+	"globalusage-for": "ߖߊ߯ߓߊ ߟߊ߬ߓߊ߰ߙߊ߬ߟߌ \"$1\" ߢߍ߫",
 	"globalusage-filename": "ߞߐߕߐ߮ ߕߐ߮:",
+	"globalusage-desc": "[[Special:GlobalUsage|ߞߐߜߍ߫ ߞߙߍߞߙߍߣߍ߲]] ߛߊ߫ ߞߊ߬ ߖߌ߬ߦߊ߬ߓߍ ߘߏ߫ ߟߊߓߊ߯ߙߊߟߌ ߦߋ߫ ߖߊ߯ߓߊ ߞߣߐ߫",
 	"globalusage-ok": "ߢߌߣߌ߲ߠߌ߲",
 	"globalusage-text": "ߖߊ߯ߓߊ ߞߐߕߐ߮ ߟߊ߬ߓߊ߰ߙߊ߬ߟߌ ߟߎ߬ ߢߌߣߌ߲߫",
 	"globalusage-no-results": "[[:$1]] ߟߊߓߊ߯ߙߊߣߍ߲߫ ߕߍ߫ ߥߞߌ߫ ߜߘߍ ߟߎ߬ ߓߟߏ߫.",
