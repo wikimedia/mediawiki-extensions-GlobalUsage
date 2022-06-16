@@ -5,5 +5,7 @@
 		]
 	},
 	"globalusage": "Global file usage",
+	"globalusage-on-wiki": "Magwiliskilo pa $2",
+	"globalusage-of-file": "Ma wiki ghanyake agho ghakugwiliska ichi:",
 	"globalusage-more": "Onani [[{{#Special:GlobalUsage}}/$1|more global usage]] of this file."
 }
