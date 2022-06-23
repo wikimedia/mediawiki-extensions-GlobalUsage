@@ -6,5 +6,6 @@
 	},
 	"globalusage": "Uso global di fail",
 	"globalusage-on-wiki": "Uso na $2",
-	"globalusage-of-file": "E próksimo otro wikinan ta usa e fail akí"
+	"globalusage-of-file": "E próksimo otro wikinan ta usa e fail akí",
+	"globalusage-more": "Mira [[{{#Special:GlobalUsage}}/$1|mas uzo global]] di e fail akí."
 }
