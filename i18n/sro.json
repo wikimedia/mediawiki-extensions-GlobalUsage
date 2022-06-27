@@ -5,5 +5,7 @@
 		]
 	},
 	"globalusage": "Totu is imperus de su documentu",
-	"globalusage-on-wiki": "Imperau in $2"
+	"globalusage-on-wiki": "Imperau in $2",
+	"globalusage-of-file": "Imperant custu documentu is wikis afatantis:",
+	"globalusage-more": "Càstia [[{{#Special:GlobalUsage}}/$1|àterus imperus globalis]] de custu documentu."
 }
