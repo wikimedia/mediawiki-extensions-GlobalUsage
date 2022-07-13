@@ -231,21 +231,11 @@ class Hooks {
 		$updater->addExtensionTable( 'globalimagelinks', "$dir/$type/tables-generated.sql" );
 
 		if ( $type === 'mysql' || $type === 'sqlite' ) {
-			$updater->addExtensionIndex(
-				'globalimagelinks',
-				'globalimagelinks_wiki_nsid_title',
-				"$dir/patch-globalimagelinks_wiki_nsid_title.sql"
-			);
+			// 1.35
 			$updater->dropExtensionIndex(
 				'globalimagelinks',
 				'globalimagelinks_to_wiki_page',
 				"$dir/patch-globalimagelinks-pk.sql"
-			);
-		} elseif ( $type === 'postgresql' ) {
-			$updater->addExtensionIndex(
-				'globalimagelinks',
-				'globalimagelinks_wiki_nsid_title',
-				"$dir/postgres/patch-globalimagelinks_wiki_nsid_title.sql"
 			);
 		}
 		return true;
