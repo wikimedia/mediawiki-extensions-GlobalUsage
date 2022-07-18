@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"এম আবু সাঈদ"
+			"এম আবু সাঈদ",
+			"ꠢꠣꠍꠘ ꠞꠣꠎꠣ"
 		]
 	},
 	"globalusage": "ꠉ꠆ꠟꠛꠣꠟ ꠚꠣꠁꠟ ꠛꠦꠛꠀꠞ",
-	"globalusage-on-wiki": "$2-ꠔ ꠛꠦꠛꠀꠞ"
+	"globalusage-on-wiki": "$2-ꠔ ꠛꠦꠛꠀꠞ",
+	"globalusage-of-file": "ꠃꠁꠇꠤ ꠅꠉꠥꠁꠘ꠆ꠔꠧꠅ ꠁ ꠚꠣꠁꠟ ꠛꠦꠛꠀꠞ ꠅꠞ:",
+	"globalusage-more": "ꠖꠦꠈꠂꠘ [[{{#Special:GlobalUsage}}/$1|more global usage]] of this file."
 }
