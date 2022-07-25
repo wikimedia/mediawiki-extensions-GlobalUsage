@@ -2,11 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Jose77",
-			"Pare Mo"
+			"Pare Mo",
+			"Kai theos en ho logos"
 		]
 	},
 	"globalusage": "Global nga paggamit sa artsibo",
 	"globalusage-ok": "Pangita-a",
 	"globalusage-on-wiki": "Gamit sa $2",
-	"globalusage-of-file": "Ang ining artsibo ginagamit sg mga iban pang wiking ini:"
+	"globalusage-of-file": "Ang ining artsibo ginagamit sg mga iban pang wiking ini:",
+	"globalusage-more": "Tan-awon [[{{#Special:GlobalUsage}}/$1|pa ang pangkalibotanong paggamit]] sang sini nga papel."
 }

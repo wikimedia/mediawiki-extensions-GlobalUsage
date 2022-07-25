@@ -6,5 +6,6 @@
 	},
 	"globalusage": "Ikoreshwa rya dosiye muri rusangi",
 	"globalusage-on-wiki": "Ikoreshwa kuri $2",
-	"globalusage-of-file": "Izindi wiki zikurikira zikoresha iyi dosiye:"
+	"globalusage-of-file": "Izindi wiki zikurikira zikoresha iyi dosiye:",
+	"globalusage-more": "Raba [[{{#Special:GlobalUsage}}/$1|ikoresha muri rusangi]] ry'ino dosiye."
 }
