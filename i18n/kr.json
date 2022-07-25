@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Aliyu shaba"
+			"Aliyu shaba",
+			"Mohammedbama123"
 		]
 	},
-	"globalusage-on-wiki": "Awodoy faida,a kladin $2"
+	"globalusage": "Faida file denabe",
+	"globalusage-on-wiki": "Awodoy faida,a kladin $2",
+	"globalusage-of-file": "Wiki gade ye file adelan faidaten"
 }
