@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Bada Kaji",
 			"NehalDaveND",
 			"पर्वत सुबेदी",
 			"बिप्लब आनन्द",
@@ -9,7 +10,7 @@
 		]
 	},
 	"globalusage": "विश्वव्यापी फाइल प्रयोग",
-	"globalusage-ok": "खोज्ने",
+	"globalusage-ok": "खोज्नुहोस्",
 	"globalusage-on-wiki": "$2 मा उपयोग",
 	"globalusage-of-file": "निम्न अन्य विकिहरूमा यस फाइलको प्रयोग:",
 	"globalusage-more": "यस फाइलको [[{{#Special:GlobalUsage}}/$1|विश्वव्यापी उपयोगको अधिक जानकारी]] हेर्नुहोस् ।"
