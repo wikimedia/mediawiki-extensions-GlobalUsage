@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Huji",
-			"Ladsgroup"
+			"Ladsgroup",
+			"Jeeputer"
 		]
 	},
 	"apihelp-query+globalusage-description": "فهرستی سراسری از کاربردهای یک تصویر خاص بر می‌گرداند.",
@@ -10,5 +11,7 @@
 	"apihelp-query+globalusage-param-prop": "کدام ویژگی‌ها برگردانده شود:\n;url:نشانی اینترنتی را می‌افزاید.\n;pageid:شناسهٔ صفحه را می‌افزاید.\n;namespace:شناسهٔ فضای نام را می‌افزاید.",
 	"apihelp-query+globalusage-param-limit": "تعداد پیوندها برای بازگرداندن",
 	"apihelp-query+globalusage-param-filterlocal": "پالایش کاربردهای محلی پرونده.",
+	"apihelp-query+globalusage-param-namespace": "محدودسازی نتایج به این فضاهای نام.",
+	"apihelp-query+globalusage-param-site": "محدودسازی نتایج به این وبگاه‌ها.",
 	"apihelp-query+globalusage-example-1": "گرفتن استفاده‌های [[:File:Example.jpg]]"
 }
