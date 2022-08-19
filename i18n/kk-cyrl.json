@@ -8,7 +8,7 @@
 	},
 	"globalusage": "Глобалды файл қолданылуы",
 	"globalusage-for": "\"$1\" дегеннің ғаламдық қолданылуы",
-	"globalusage-desc": "[[Special:GlobalUsage|Арнайы бетінде]] файлдың ғаламдық пайдаланылуын қарау",
+	"globalusage-desc": "Глобалды файл қолданылуын көру үшін [[Special:GlobalUsage|арнайы бет]]",
 	"globalusage-ok": "Іздеу",
 	"globalusage-text": "Файлдың ғаламдық қолданылуын іздеу",
 	"globalusage-no-results": "[[:$1]] басқа уикилерде қолданылмайды.",
