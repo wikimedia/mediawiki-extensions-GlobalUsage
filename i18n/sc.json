@@ -6,5 +6,6 @@
 	},
 	"globalusage": "Impreu globale de su documentu",
 	"globalusage-on-wiki": "Impreu in $2",
-	"globalusage-of-file": "Impreu de custu documentu in àteras wikis:"
+	"globalusage-of-file": "Impreu de custu documentu in àteras wikis:",
+	"globalusage-more": "Càstia [[{{#Special:GlobalUsage}}/$1|àteros impreos globales]] de custu documentu."
 }
