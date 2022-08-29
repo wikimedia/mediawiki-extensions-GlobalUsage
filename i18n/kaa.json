@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Inabat Allanova",
 			"Nurlan"
 		]
 	},
 	"globalusage": "Fayldı global paydalanıw",
-	"globalusage-on-wiki": "$2 joybarında qollanıw"
+	"globalusage-on-wiki": "$2 joybarında qollanıw",
+	"globalusage-of-file": "Tómendegi basqa wikilar bul fayldan paydalanadı:",
+	"globalusage-more": "Bul fayldıń [[{{#Special:GlobalUsage}}/$1|kóbirek global paydalanıw]] bólimin kóriń."
 }
