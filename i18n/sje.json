@@ -4,6 +4,8 @@
 			"Olve Utne"
 		]
 	},
+	"globalusage": "Globála fijjlaadnem",
 	"globalusage-on-wiki": "Adnem $2 sinne",
-	"globalusage-of-file": "Dá mubbe wikiprosjiekta idni dáv fijlav:"
+	"globalusage-of-file": "Dá mubbe wikiprosjiekta idni dáv fijlav:",
+	"globalusage-more": "Vuosedä [[{{#Special:GlobalUsage}}/$1|ienap globála adnemav]] dát fijlast."
 }
