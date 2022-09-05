@@ -7,5 +7,6 @@
 	},
 	"globalusage": "Itilizasyon global de fichye a",
 	"globalusage-on-wiki": "Itilizasyon sou $2",
-	"globalusage-of-file": "Wiki sa a yo sèvi ak fichye sa a:"
+	"globalusage-of-file": "Wiki sa a yo sèvi ak fichye sa a:",
+	"globalusage-more": "Gade [[{{#Special:GlobalUsage}}/$1|pi itilizasyon global]] fichye sa a."
 }
