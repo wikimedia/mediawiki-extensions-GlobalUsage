@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Abbas dhothar",
+			"Bgo eiu",
 			"Khalid Mahmood"
 		]
 	},
-	"globalusage": "گلوبل فائل ورتن",
+	"globalusage": "فائل ویاپک ورتوں",
 	"globalusage-for": "گلوبل فائل ورتن \"$1\" لئی",
 	"globalusage-filename": "فائل دا ناں:",
 	"globalusage-desc": "[[Special:GlobalUsage|Special page]] جگت فائل ورتن",
