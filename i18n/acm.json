@@ -4,5 +4,7 @@
 			"Ahmedadeljaff"
 		]
 	},
-	"globalusage-on-wiki": "الأستخـدام في $2"
+	"globalusage": "الأستخدام العالمي للملف",
+	"globalusage-on-wiki": "الأستخـدام في $2",
+	"globalusage-of-file": "الويكيات الثانية تستخدم هذا الملف:"
 }
