@@ -4,5 +4,7 @@
 			"Kahin He"
 		]
 	},
-	"globalusage-on-wiki": "$2兮使用情况"
+	"globalusage": "全域文件使用情况",
+	"globalusage-on-wiki": "$2兮使用情况",
+	"globalusage-of-file": "以下其他wiki使用者个文件："
 }
