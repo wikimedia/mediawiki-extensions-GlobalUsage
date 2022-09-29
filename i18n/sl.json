@@ -7,6 +7,7 @@
 	},
 	"globalusage": "Globalna uporaba datoteke",
 	"globalusage-for": "Globalna uporaba za »$1«",
+	"globalusage-filename": "Ime datoteke:",
 	"globalusage-desc": "[[Special:GlobalUsage|Posebna stran]] za ogled globalne uporabe datoteke",
 	"globalusage-ok": "Iskanje",
 	"globalusage-text": "Iskanje globalne uporabe datoteke",
@@ -14,5 +15,6 @@
 	"globalusage-on-wiki": "uporaba na $2",
 	"globalusage-of-file": "To datoteko uporabljajo tudi naslednji wikiji:",
 	"globalusage-more": "Oglejte si [[{{#Special:GlobalUsage}}/$1|globalno uporabo]] te datoteke.",
-	"globalusage-filterlocal": "Ne prikaži lokalne uporabe"
+	"globalusage-filterlocal": "Ne prikaži lokalne uporabe",
+	"globalusage-header": "Ta stran prikazuje, kjer v drugih vikijih je uporabljena datoteka. Ta podatek lahko poiščete tudi na dnu opisne strani datoteke."
 }
