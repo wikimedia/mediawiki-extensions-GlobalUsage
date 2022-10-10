@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Vickylin77s"
 		]
 	},
 	"globalusage": "O laleko no tang^an i po:long no micokaymas",
-	"globalusage-ok": " saoo’",
+	"globalusage-ok": "saoo’",
 	"globalusage-on-wiki": "O demak to picokaymas no $2",
-	"globalusage-of-file": " i kalaenoay oya no roma a wiki  micokaymas tonini a tang^an ：",
-	"globalusage-more": " misongila’ a minengneng tona [[{{#Special:GlobalUsage}}/$1| matongal ko hekal to picokaymas]] no tang’an"
+	"globalusage-of-file": "i kalaenoay oya no roma a wiki  micokaymas tonini a tang^an ：",
+	"globalusage-more": "misongila’ a minengneng tona [[{{#Special:GlobalUsage}}/$1| matongal ko hekal to picokaymas]] no tang’an"
 }
