@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"ऐक्टिवेटेड्"
+		]
+	},
+	"globalusage": "बैस्विक सञ्चिका उपयोग",
+	"globalusage-on-wiki": "$2 पर उपयोग",
+	"globalusage-of-file": "इ सञ्चिकाके उपयोग इसब दूसरो बिकि कर हई:",
+	"globalusage-more": "इ सञ्चिकाके [[{{#Special:GlobalUsage}}/$1|बैस्विक उपयोगको अधिकजानकारी]] देख।"
+}
