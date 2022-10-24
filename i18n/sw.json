@@ -2,11 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Hussein m mmbaga",
-			"Kwisha"
+			"Kwisha",
+			"Wangombe"
 		]
 	},
 	"globalusage": "Matumizi ya faili ulimwenguni",
 	"globalusage-ok": "Tafuta",
 	"globalusage-on-wiki": "Matumizi kwa $2",
-	"globalusage-of-file": "Wiki nyingine hutumia faili hizi:"
+	"globalusage-of-file": "Wiki nyingine hutumia faili hizi:",
+	"globalusage-more": "Tazama [[{{#Special:GlobalUsage}}/$1|matumizi zaidi ya kimataifa]] ya faili hii."
 }
