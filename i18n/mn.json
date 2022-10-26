@@ -4,5 +4,7 @@
 			"Chinneeb"
 		]
 	},
-	"globalusage-ok": "Хайх"
+	"globalusage": "Файлын хэрэглээ (бүх төсөл)",
+	"globalusage-ok": "Хайх",
+	"globalusage-on-wiki": "$2 дахь хэрэглээ"
 }
