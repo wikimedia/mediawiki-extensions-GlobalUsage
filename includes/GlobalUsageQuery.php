@@ -243,18 +243,10 @@ class GlobalUsageQuery {
 		// Always return the result in the same order; regardless whether reversed was specified
 		// reversed is really only used to determine from which direction the offset is
 		$rows = [];
-		foreach ( $res as $row ) {
-			$rows[] = $row;
-		}
-		if ( $this->reversed ) {
-			$rows = array_reverse( $rows );
-		}
-
-		// Build the result array
 		$count = 0;
 		$this->hasMore = false;
-		$this->result = [];
-		foreach ( $rows as $row ) {
+		foreach ( $res as $row ) {
+			$rows[] = $row;
 			$count++;
 			if ( $count > $this->limit ) {
 				// We've reached the extra row that indicates that there are more rows
@@ -262,7 +254,14 @@ class GlobalUsageQuery {
 				$this->lastRow = $row;
 				break;
 			}
+		}
+		if ( $this->reversed ) {
+			$rows = array_reverse( $rows );
+		}
 
+		// Build the result array
+		$this->result = [];
+		foreach ( $rows as $row ) {
 			if ( !isset( $this->result[$row->gil_to] ) ) {
 				$this->result[$row->gil_to] = [];
 			}
