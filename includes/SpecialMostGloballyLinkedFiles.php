@@ -10,14 +10,21 @@
 namespace MediaWiki\Extension\GlobalUsage;
 
 use Exception;
-use MostimagesPage;
+use ImageQueryPage;
+use MediaWiki\Cache\LinkBatchFactory;
 use WikiMap;
 use Wikimedia\Rdbms\IDatabase;
+use Wikimedia\Rdbms\ILoadBalancer;
 
-class SpecialMostGloballyLinkedFiles extends MostimagesPage {
+class SpecialMostGloballyLinkedFiles extends ImageQueryPage {
 
-	public function __construct( $name = 'MostGloballyLinkedFiles' ) {
-		parent::__construct( $name );
+	public function __construct(
+		ILoadBalancer $loadBalancer,
+		LinkBatchFactory $linkBatchFactory
+	) {
+		parent::__construct( 'MostGloballyLinkedFiles' );
+		$this->setDBLoadBalancer( $loadBalancer );
+		$this->setLinkBatchFactory( $linkBatchFactory );
 	}
 
 	/**
@@ -31,6 +38,14 @@ class SpecialMostGloballyLinkedFiles extends MostimagesPage {
 		} else {
 			GlobalUsage::redirectSpecialPageToSharedRepo( $this->getContext() );
 		}
+	}
+
+	public function isExpensive() {
+		return true;
+	}
+
+	public function isSyndicated() {
+		return false;
 	}
 
 	/**
@@ -59,6 +74,10 @@ class SpecialMostGloballyLinkedFiles extends MostimagesPage {
 				'HAVING' => 'COUNT(*) > 1'
 			]
 		];
+	}
+
+	protected function getCellHtml( $row ) {
+		return $this->msg( 'nimagelinks' )->numParams( $row->value )->escaped() . '<br />';
 	}
 
 	/**
@@ -108,5 +127,9 @@ class SpecialMostGloballyLinkedFiles extends MostimagesPage {
 				[ $this->getName(), 'QueryPage::recache', 'vslow' ]
 			);
 		}
+	}
+
+	protected function getGroupName() {
+		return 'highuse';
 	}
 }
