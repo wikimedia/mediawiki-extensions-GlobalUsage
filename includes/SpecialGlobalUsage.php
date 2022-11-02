@@ -9,6 +9,7 @@ namespace MediaWiki\Extension\GlobalUsage;
 use Html;
 use Linker;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Navigation\PagerNavigationBuilder;
 use OOUI\ButtonInputWidget;
 use OOUI\CheckboxInputWidget;
 use OOUI\FieldLayout;
@@ -228,7 +229,7 @@ class SpecialGlobalUsage extends SpecialPage {
 	}
 
 	/**
-	 * Helper function to create the navbar, stolen from wfViewPrevNext
+	 * Helper function to create the navbar
 	 *
 	 * @param GlobalUsageQuery $query An executed GlobalUsageQuery object
 	 * @return string Navbar HTML
@@ -237,7 +238,7 @@ class SpecialGlobalUsage extends SpecialPage {
 		$target = $this->target->getText();
 		$limit = $query->getLimit();
 
-		# Find out which strings are for the prev and which for the next links
+		// Find out which strings are for the prev and which for the next links
 		$offset = $query->getOffsetString();
 		$continue = $query->getContinueString();
 		if ( $query->isReversed() ) {
@@ -248,59 +249,46 @@ class SpecialGlobalUsage extends SpecialPage {
 			$to = $offset;
 		}
 
-		# Get prev/next link display text
-		$prevMsg = $this->msg( 'prevn' )->numParams( $limit );
-		$nextMsg = $this->msg( 'nextn' )->numParams( $limit );
-		# Get prev/next link title text
-		$pTitle = $this->msg( 'prevn-title' )->numParams( $limit )->escaped();
-		$nTitle = $this->msg( 'nextn-title' )->numParams( $limit )->escaped();
-
-		# Fetch the title object
+		// Fetch the title object
 		$title = $this->getPageTitle();
-		$linkRenderer = $this->getLinkRenderer();
 
-		# Make 'previous' link
+		$navBuilder = new PagerNavigationBuilder( $this );
+		$navBuilder
+			->setPage( $title )
+			->setPrevTooltipMsg( 'prevn-title' )
+			->setNextTooltipMsg( 'nextn-title' )
+			->setLimitTooltipMsg( 'shown-title' );
+
+		// Default query for all links, including nulls to ensure consistent order of parameters.
+		// 'from'/'to' parameters are overridden for the 'previous'/'next' links below.
+		$q = [
+			'target' => $target,
+			'filterlocal' => null,
+			'from' => $to,
+			'to' => null,
+			'limit' => (string)$limit,
+		];
+		if ( $this->filterLocal ) {
+			$q['filterlocal'] = '1';
+		}
+		$navBuilder->setLinkQuery( $q );
+
+		// Make 'previous' link
 		if ( $to ) {
-			$attr = [ 'title' => $pTitle, 'class' => 'mw-prevlink' ];
-			$q = [ 'limit' => $limit, 'to' => $to, 'target' => $target ];
-			if ( $this->filterLocal ) {
-				$q['filterlocal'] = '1';
-			}
-			$plink = $linkRenderer->makeLink( $title, $prevMsg->text(), $attr, $q );
-		} else {
-			$plink = $prevMsg->escaped();
+			$q = [ 'from' => null, 'to' => $to ];
+			$navBuilder->setPrevLinkQuery( $q );
 		}
-
-		# Make 'next' link
+		// Make 'next' link
 		if ( $from ) {
-			$attr = [ 'title' => $nTitle, 'class' => 'mw-nextlink' ];
-			$q = [ 'limit' => $limit, 'from' => $from, 'target' => $target ];
-			if ( $this->filterLocal ) {
-				$q['filterlocal'] = '1';
-			}
-			$nlink = $linkRenderer->makeLink( $title, $nextMsg->text(), $attr, $q );
-		} else {
-			$nlink = $nextMsg->escaped();
+			$q = [ 'from' => $from, 'to' => null ];
+			$navBuilder->setNextLinkQuery( $q );
 		}
+		// Make links to set number of items per page
+		$navBuilder
+			->setLimitLinkQueryParam( 'limit' )
+			->setCurrentLimit( $limit );
 
-		# Make links to set number of items per page
-		$numLinks = [];
-		$lang = $this->getLanguage();
-		foreach ( [ 20, 50, 100, 250, 500 ] as $num ) {
-			$fmtLimit = $lang->formatNum( $num );
-
-			$q = [ 'from' => $to, 'limit' => $num, 'target' => $target ];
-			if ( $this->filterLocal ) {
-				$q['filterlocal'] = '1';
-			}
-			$lTitle = $this->msg( 'shown-title' )->numParams( $num )->escaped();
-			$attr = [ 'title' => $lTitle, 'class' => 'mw-numlink' ];
-
-			$numLinks[] = $linkRenderer->makeLink( $title, $fmtLimit, $attr, $q );
-		}
-		$nums = $lang->pipeList( $numLinks );
-
-		return $this->msg( 'viewprevnext' )->rawParams( $plink, $nlink, $nums )->escaped();
+		return $navBuilder->getHtml();
 	}
 
 	/**
