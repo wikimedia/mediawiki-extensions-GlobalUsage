@@ -203,25 +203,21 @@ class GlobalUsageQuery {
 
 		// Set the continuation condition
 		if ( $this->offset ) {
-			$qTo = $this->db->addQuotes( $this->offset[0] );
-			$qWiki = $this->db->addQuotes( $this->offset[1] );
-			$qPage = intval( $this->offset[2] );
-
 			// Check which limit we got in order to determine which way to traverse rows
 			if ( $this->reversed ) {
 				// Reversed traversal; do not include offset row
-				$op1 = '<';
-				$op2 = '<';
+				$op = '<';
 				$options['ORDER BY'] = 'gil_to DESC, gil_wiki DESC, gil_page DESC';
 			} else {
 				// Normal traversal; include offset row
-				$op1 = '>';
-				$op2 = '>=';
+				$op = '>=';
 			}
 
-			$where[] = "(gil_to $op1 $qTo) OR " .
-				"(gil_to = $qTo AND gil_wiki $op1 $qWiki) OR " .
-				"(gil_to = $qTo AND gil_wiki = $qWiki AND gil_page $op2 $qPage)";
+			$where[] = $this->db->buildComparison( $op, [
+				'gil_to' => $this->offset[0],
+				'gil_wiki' => $this->offset[1],
+				'gil_page' => intval( $this->offset[2] ),
+			] );
 		}
 
 		/* Perform select (Duh.) */
