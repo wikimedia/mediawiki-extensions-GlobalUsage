@@ -2,10 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Sociologist",
-			"Malikxan"
+			"Malikxan",
+			"Zafar Shamsiddinov"
 		]
 	},
 	"globalusage": "Faylning global foydalanilishi",
 	"globalusage-on-wiki": "$2 loyihasida foydalanilishi",
-	"globalusage-of-file": "Ushbu fayl quyidagi vikilarda ishlatilyapti:"
+	"globalusage-of-file": "Ushbu fayl quyidagi vikilarda ishlatilyapti:",
+	"globalusage-more": "Ushbu faylni [[{{#Special:GlobalUsage}}/$1|koʻproq global foydalanish]]dan koʻring."
 }
