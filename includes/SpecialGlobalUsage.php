@@ -303,6 +303,36 @@ class SpecialGlobalUsage extends SpecialPage {
 		return $this->msg( 'viewprevnext' )->rawParams( $plink, $nlink, $nums )->escaped();
 	}
 
+	/**
+	 * Return an array of subpages beginning with $search that this special page will accept.
+	 *
+	 * @param string $search Prefix to search for
+	 * @param int $limit Maximum number of results to return (usually 10)
+	 * @param int $offset Number of results to skip (usually 0)
+	 * @return string[] Matching subpages
+	 */
+	public function prefixSearchSubpages( $search, $limit, $offset ) {
+		if ( !GlobalUsage::onSharedRepo() ) {
+			// Local files on non-shared wikis are not useful as suggestion
+			return [];
+		}
+		$title = Title::newFromText( $search, NS_FILE );
+		if ( !$title || $title->getNamespace() !== NS_FILE ) {
+			// No prefix suggestion outside of file namespace
+			return [];
+		}
+		$searchEngine = MediaWikiServices::getInstance()->getSearchEngineFactory()->create();
+		$searchEngine->setLimitOffset( $limit, $offset );
+		// Autocomplete subpage the same as a normal search, but just for (local) files
+		$searchEngine->setNamespaces( [ NS_FILE ] );
+		$result = $searchEngine->defaultPrefixSearch( $search );
+
+		return array_map( static function ( Title $t ) {
+			// Remove namespace in search suggestion
+			return $t->getText();
+		}, $result );
+	}
+
 	protected function getGroupName() {
 		return 'media';
 	}
