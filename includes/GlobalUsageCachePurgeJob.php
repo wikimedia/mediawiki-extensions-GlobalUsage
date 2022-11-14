@@ -35,9 +35,9 @@ class GlobalUsageCachePurgeJob extends Job {
 		$backlinkCache = $services
 			->getBacklinkCacheFactory()
 			->getBacklinkCache( $title );
-		foreach ( $backlinkCache->getLinks( 'redirect' ) as $redirTitle ) {
-			if ( $redirTitle->getNamespace() == NS_FILE ) {
-				$filesForPurge[] = $redirTitle->getDbKey();
+		foreach ( $backlinkCache->getLinkPages( 'redirect' ) as $redirPageIdentity ) {
+			if ( $redirPageIdentity->getNamespace() == NS_FILE ) {
+				$filesForPurge[] = $redirPageIdentity->getDbKey();
 			}
 		}
 		// Remove any duplicates in case titles link to themselves
