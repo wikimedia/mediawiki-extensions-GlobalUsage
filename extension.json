@@ -10,8 +10,21 @@
 	},
 	"type": "specialpage",
 	"SpecialPages": {
-		"MostGloballyLinkedFiles": "MediaWiki\\Extension\\GlobalUsage\\SpecialMostGloballyLinkedFiles",
-		"GloballyWantedFiles": "MediaWiki\\Extension\\GlobalUsage\\SpecialGloballyWantedFiles",
+		"MostGloballyLinkedFiles": {
+			"class": "MediaWiki\\Extension\\GlobalUsage\\SpecialMostGloballyLinkedFiles",
+			"services": [
+				"DBLoadBalancer",
+				"LinkBatchFactory"
+			]
+		},
+		"GloballyWantedFiles": {
+			"class": "MediaWiki\\Extension\\GlobalUsage\\SpecialGloballyWantedFiles",
+			"services": [
+				"DBLoadBalancer",
+				"LinkBatchFactory",
+				"RepoGroup"
+			]
+		},
 		"GloballyUnusedFiles": "MediaWiki\\Extension\\GlobalUsage\\SpecialGloballyUnusedFiles",
 		"GlobalUsage": "MediaWiki\\Extension\\GlobalUsage\\SpecialGlobalUsage"
 	},

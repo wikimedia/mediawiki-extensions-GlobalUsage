@@ -11,19 +11,29 @@
 namespace MediaWiki\Extension\GlobalUsage;
 
 use Html;
-use MediaWiki\MediaWikiServices;
+use MediaWiki\Cache\LinkBatchFactory;
+use RepoGroup;
 use Skin;
 use SpecialPage;
 use stdClass;
 use Title;
-use WantedFilesPage;
 use WantedQueryPage;
 use WikiMap;
+use Wikimedia\Rdbms\ILoadBalancer;
 
-class SpecialGloballyWantedFiles extends WantedFilesPage {
+class SpecialGloballyWantedFiles extends WantedQueryPage {
 
-	public function __construct( $name = 'GloballyWantedFiles' ) {
-		parent::__construct( $name );
+	private RepoGroup $repoGroup;
+
+	public function __construct(
+		ILoadBalancer $loadBalancer,
+		LinkBatchFactory $linkBatchFactory,
+		RepoGroup $repoGroup
+	) {
+		parent::__construct( 'GloballyWantedFiles' );
+		$this->setDBLoadBalancer( $loadBalancer );
+		$this->setLinkBatchFactory( $linkBatchFactory );
+		$this->repoGroup = $repoGroup;
 	}
 
 	/**
@@ -39,18 +49,26 @@ class SpecialGloballyWantedFiles extends WantedFilesPage {
 		}
 	}
 
+	protected function forceExistenceCheck() {
+		// Same as MediaWiki core WantedFiles
+		return true;
+	}
+
+	protected function existenceCheck( Title $title ) {
+		// Same as MediaWiki core WantedFiles
+		return (bool)$this->repoGroup->findFile( $title );
+	}
+
 	/**
 	 * Output an extra header
 	 *
 	 * @return string html to output
 	 */
 	public function getPageHeader() {
-		if ( MediaWikiServices::getInstance()->getRepoGroup()->hasForeignRepos() ) {
+		if ( $this->repoGroup->hasForeignRepos() ) {
 			return $this->msg( 'globallywantedfiles-foreign-repo' )->parseAsBlock();
 		} else {
-			// Use grandparent behaviour. Parent adds a message
-			// about the tracking category which doesn't make sense here.
-			return WantedQueryPage::getPageHeader();
+			return parent::getPageHeader();
 		}
 	}
 
@@ -103,7 +121,7 @@ class SpecialGloballyWantedFiles extends WantedFilesPage {
 			$linkRenderer = $this->getLinkRenderer();
 			$pageLink = $linkRenderer->makeLink( $title );
 			if ( $safeTitle->isKnown() &&
-				MediaWikiServices::getInstance()->getRepoGroup()->findFile( $safeTitle )
+				$this->repoGroup->findFile( $safeTitle )
 			) {
 				// If the title exists and is a file, than strike.
 				// The RepoGroup::findFile call should already be cached from LinkRenderer::makeLink call
@@ -120,5 +138,9 @@ class SpecialGloballyWantedFiles extends WantedFilesPage {
 		} else {
 			return $this->msg( 'wantedpages-badtitle', $result->title )->escaped();
 		}
+	}
+
+	protected function getGroupName() {
+		return 'maintenance';
 	}
 }
