@@ -242,7 +242,6 @@ class GlobalUsageQuery {
 		$count = 0;
 		$this->hasMore = false;
 		foreach ( $res as $row ) {
-			$rows[] = $row;
 			$count++;
 			if ( $count > $this->limit ) {
 				// We've reached the extra row that indicates that there are more rows
@@ -250,6 +249,7 @@ class GlobalUsageQuery {
 				$this->lastRow = $row;
 				break;
 			}
+			$rows[] = $row;
 		}
 		if ( $this->reversed ) {
 			$rows = array_reverse( $rows );
