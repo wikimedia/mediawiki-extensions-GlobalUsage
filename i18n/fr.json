@@ -16,8 +16,8 @@
 		]
 	},
 	"globalusage": "Usage global du fichier",
-	"globalusage-for": "Usage global pour « $1 »",
-	"globalusage-filename": "Nom de fichier :",
+	"globalusage-for": "Usage global pour « $1 »",
+	"globalusage-filename": "Nom du fichier :",
 	"globalusage-desc": "[[Special:GlobalUsage|Page spéciale]] pour voir l’usage global d’une image",
 	"globalusage-ok": "Rechercher",
 	"globalusage-text": "Rechercher l’usage global du fichier",
