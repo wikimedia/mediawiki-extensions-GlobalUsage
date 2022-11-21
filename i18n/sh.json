@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"OC Ripper",
-			"Vlad5250"
+			"Vlad5250",
+			"BadDog"
 		]
 	},
 	"globalusage": "Globalna upotreba datoteke",
@@ -13,7 +14,7 @@
 	"globalusage-text": "Pretraga globalne upotrebe datoteke",
 	"globalusage-no-results": "[[:$1]] se ne koristi na drugim wikijima.",
 	"globalusage-on-wiki": "Upotreba na $2",
-	"globalusage-of-file": "Sljedeći wikiji koriste ovu datoteku:",
+	"globalusage-of-file": "Ovu datoteku upotrebljavaju i sljedeći projekti:",
 	"globalusage-more": "Pogledajte [[{{#Special:GlobalUsage}}/$1|globalne upotrebe]] ove datoteke.",
 	"globalusage-filterlocal": "Ne prikazuj mjesnu upotrebu",
 	"mostgloballylinkedfiles": "Datoteke s najviše linkova globalno",

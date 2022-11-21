@@ -13,7 +13,7 @@
 	"globalusage-text": "Iskanje globalne uporabe datoteke",
 	"globalusage-no-results": "[[:$1]] se v drugih vikijih ne uporablja.",
 	"globalusage-on-wiki": "uporaba na $2",
-	"globalusage-of-file": "To datoteko uporabljajo tudi naslednji wikiji:",
+	"globalusage-of-file": "To datoteko uporabljajo tudi naslednji vikiji:",
 	"globalusage-more": "Oglejte si [[{{#Special:GlobalUsage}}/$1|globalno uporabo]] te datoteke.",
 	"globalusage-filterlocal": "Ne prikaži lokalne uporabe",
 	"globalusage-header": "Ta stran prikazuje, kje v drugih vikijih je datoteka uporabljena. Ta podatek lahko poiščete tudi na dnu opisne strani datoteke."
