@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Kimberli Mäkäräinen (WMNO)",
 			"Yupik"
 		]
 	},
 	"globalusage-filename": "Fiilanamma:",
-	"globalusage-ok": "Oza"
+	"globalusage-ok": "Oza",
+	"globalusage-on-wiki": "Geavaheapmi prošeavttas $2"
 }
