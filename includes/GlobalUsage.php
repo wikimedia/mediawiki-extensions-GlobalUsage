@@ -143,9 +143,10 @@ class GlobalUsage {
 	 * Copy local links to global table
 	 *
 	 * @param Title $title Title of the file to copy entries from.
+	 * @param IDatabase $localDbr Database object for reading the local links from
 	 */
-	public function copyLocalImagelinks( Title $title ) {
-		$res = $this->dbr->select(
+	public function copyLocalImagelinks( Title $title, IDatabase $localDbr ) {
+		$res = $localDbr->select(
 			[ 'imagelinks', 'page' ],
 			[ 'il_to', 'page_id', 'page_namespace', 'page_title' ],
 			[ 'il_from = page_id', 'il_to' => $title->getDBkey() ],

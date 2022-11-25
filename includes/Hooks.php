@@ -141,7 +141,7 @@ class Hooks {
 	public static function onFileDeleteComplete( $file, $oldimage, $article, $user, $reason ) {
 		if ( !$oldimage ) {
 			$gu = self::getGlobalUsage();
-			$gu->copyLocalImagelinks( $file->getTitle() );
+			$gu->copyLocalImagelinks( $file->getTitle(), wfGetDB( DB_PRIMARY ) );
 
 			if ( self::fileUpdatesCreatePurgeJobs() ) {
 				$job = new GlobalUsageCachePurgeJob( $file->getTitle(), [] );
