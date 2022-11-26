@@ -289,7 +289,7 @@ class SpecialGlobalUsage extends SpecialPage {
 		foreach ( [ 20, 50, 100, 250, 500 ] as $num ) {
 			$fmtLimit = $lang->formatNum( $num );
 
-			$q = [ 'offset' => $offset, 'limit' => $num, 'target' => $target ];
+			$q = [ 'from' => $to, 'limit' => $num, 'target' => $target ];
 			if ( $this->filterLocal ) {
 				$q['filterlocal'] = '1';
 			}
