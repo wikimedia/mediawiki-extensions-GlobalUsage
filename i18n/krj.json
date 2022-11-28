@@ -1,8 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Jose77"
+			"Jose77",
+			"Pare Mo"
 		]
 	},
-	"globalusage-ok": "Sagap"
+	"globalusage": "Global nga paggamit kang fayl",
+	"globalusage-ok": "Sagap",
+	"globalusage-on-wiki": "Paggamit sa $2",
+	"globalusage-of-file": "Ang diyâ nga fayl ginagamit kang manga iba nga wiki:",
+	"globalusage-more": "Tërëkon ang [[{{#Special:GlobalUsage}}/$1|mas global nga paggamit]] kang diyâ nga fayl."
 }

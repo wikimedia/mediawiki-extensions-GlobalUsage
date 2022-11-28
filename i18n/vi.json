@@ -4,7 +4,8 @@
 			"Dinhxuanduyet",
 			"Minh Nguyen",
 			"Vinhtantran",
-			"Thienhau2003"
+			"Thienhau2003",
+			"CactiStaccingCrane"
 		]
 	},
 	"globalusage": "Sử dụng tập tin toàn cục",
@@ -16,7 +17,7 @@
 	"globalusage-no-results": "[[:$1]] không được sử dụng tại các wiki khác.",
 	"globalusage-on-wiki": "Trang sử dụng tại $2",
 	"globalusage-of-file": "Những wiki sau đang sử dụng tập tin này:",
-	"globalusage-more": "Xem tập tin này [[{{#Special:GlobalUsage}}/$1|đang dùng ở đâu toàn hệ thống]].",
+	"globalusage-more": "Xem thêm tập tin này [[{{#Special:GlobalUsage}}/$1|đang dùng ở đâu trên toàn cục]].",
 	"globalusage-filterlocal": "Ẩn trang nội bộ sử dụng",
 	"mostgloballylinkedfiles": "Tập tin được liên kết đến nhiều nhất toàn cục",
 	"mostgloballylinkedfiles-summary": "Danh sách các tập tin được nhúng vào nhiều trang nhất trên tất cả các wiki. Xem danh sách tương tự chỉ tính các trang trên {{SITENAME}} tại [[{{#special:MostLinkedFiles}}]].",
