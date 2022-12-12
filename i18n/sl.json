@@ -16,5 +16,12 @@
 	"globalusage-of-file": "To datoteko uporabljajo tudi naslednji vikiji:",
 	"globalusage-more": "Oglejte si [[{{#Special:GlobalUsage}}/$1|globalno uporabo]] te datoteke.",
 	"globalusage-filterlocal": "Ne prikaži lokalne uporabe",
-	"globalusage-header": "Ta stran prikazuje, kje v drugih vikijih je datoteka uporabljena. Ta podatek lahko poiščete tudi na dnu opisne strani datoteke."
+	"mostgloballylinkedfiles": "Globalno najbolj povezane datoteke",
+	"mostgloballylinkedfiles-summary": "Seznam datotek, ki so v vseh vikijih vključene največkrat. Za enakovreden seznam, ki upošteva samo uporabo v projektu {{SITENAME}} glejte [[{{#special:MostLinkedFiles}}]].",
+	"globallywantedfiles": "Globalno želelene datoteke",
+	"globallywantedfiles-foreign-repo": "<strong>Opozorilo:</strong> Ta viki uporablja zunanji repozitorij datotek. Datoteke iz zunanjega repozitorija, ki se uporabljajo, bodo na tem seznamu prikazane kot prečrtane modre povezave, kljub temu da obstajajo.",
+	"globalusage-header": "Ta stran prikazuje, kje v drugih vikijih je datoteka uporabljena. Ta podatek lahko poiščete tudi na dnu opisne strani datoteke.",
+	"globallyunusedfiles": "Globalno neuporabljene datoteke",
+	"globallyunusedfilestext": "Naslednje datoteke obstajajo, vendar niso vključene v nobeno stran v nobenem vikiju.",
+	"globallyunusedfiles-error-nonsharedrepo": "Ta viki ne uporablja skupnega repozitorija"
 }
