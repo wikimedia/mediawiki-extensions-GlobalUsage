@@ -3,7 +3,8 @@
 		"authors": [
 			"Michaello",
 			"Milicevic01",
-			"Zoranzoki21"
+			"Zoranzoki21",
+			"Kizule"
 		]
 	},
 	"globalusage": "Globalna upotreba datoteke",
@@ -22,8 +23,8 @@
 	"globallywantedfiles": "Globalno tražene datoteke",
 	"globallywantedfiles-summary": "Spisak najtraženih datoteka koje se koriste na svim vikijima a ne postoje Za spisak najtraženih datoteka za {{SITENAME}}, pogledajte [[{{#special:WantedFiles}}]]. Na ovom spisku se mogu nalaziti i datoteke koje postoje, zbog osetljivosti nekih vikija na veličinu prvog slova.",
 	"globallywantedfiles-foreign-repo": "<strong>Upozorenje: Ovaj viki koristi odvojeno skladište datoteka. Datoteke sa stranog skladišta datoteka koji su u upotrebi će se prikazati na ovoj listi kao što izbacuje plave veze uprkos činjenici da one postoje.</strong>",
-	"globalusage-header": "Ova stranica pokazuje gde se koristi datoteka na ostalim vikijima. Takođe možete pronaći informaciju o tome na dnu stranice za opis datoteke.",
-	"globallyunusedfiles": "Globalno nekorišćene datoteke",
+	"globalusage-header": "Ova stranica prikazuje gde se koristi datoteka na drugim vikijima. Takođe možete pronaći informaciju o tome na dnu stranice za opis datoteke.",
+	"globallyunusedfiles": "Globalno neupotrebljene datoteke",
 	"globallyunusedfilestext": "Navedene datoteke postoje ali se ne koriste ni na jednoj stranici nekog vikija.",
 	"globallyunusedfiles-error-nonsharedrepo": "Ovaj viki nije na odvojenom skladištu datoteka."
 }
