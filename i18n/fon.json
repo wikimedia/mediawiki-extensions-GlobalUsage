@@ -6,5 +6,6 @@
 	},
 	"globalusage": "Wéma ɔ zizán tɔn",
 	"globalusage-on-wiki": "Lě e nɔ zán $2 gbɔn é",
-	"globalusage-of-file": "Wikis élɔ lɛ ɖo wékpo élɔ zan wɛ:"
+	"globalusage-of-file": "Wikis élɔ lɛ ɖo wékpo élɔ zan wɛ:",
+	"globalusage-more": "Kpɔn [[{{#Special:GlobalUsage}}/$1|zizan ɖaxo]] wema élɔ tɔn."
 }
