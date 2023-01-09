@@ -1,13 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Lloffiwr"
+			"Lloffiwr",
+			"Afalau"
 		]
 	},
 	"globalusage": "Defnydd cydwici y ffeil",
 	"globalusage-for": "Defnydd cydwici y ffeil \"$1\"",
+	"globalusage-filename": "Enw'r ffeil:",
 	"globalusage-desc": "[[Special:GlobalUsage|Tudalen arbennig]] yn dangos defnydd cydwici y ffeil",
-	"globalusage-ok": "Chwilier",
+	"globalusage-ok": "Chwilio",
 	"globalusage-text": "Chwilio am ddefnydd cydwici y ffeil",
 	"globalusage-no-results": "Ni ddefnyddir [[:$1]] ar wicis eraill.",
 	"globalusage-on-wiki": "Y defnydd ar $2",
