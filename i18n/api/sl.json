@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"apihelp-query+globalusage-description": "Vrne globalno uporabo slike za določeno sliko.",
+	"apihelp-query+globalusage-summary": "Vrne globalno uporabo slike za določeno sliko.",
+	"apihelp-query+globalusage-param-prop": "Katere lastnosti naj bodo vrnjene:\n;url:Doda URL.\n;pageid:Doda ID strani.\n;namespace:Doda ID imenskega prostora.",
+	"apihelp-query+globalusage-param-limit": "Koliko povezav naj bo vrnjenih.",
+	"apihelp-query+globalusage-param-filterlocal": "Filtriranje lokalne uporabe datoteke.",
+	"apihelp-query+globalusage-param-namespace": "Omejitev zadetkov na te imenske prostore.",
+	"apihelp-query+globalusage-param-site": "Omejitev zadetkov na ta mesta.",
+	"apihelp-query+globalusage-example-1": "Pridobi uporabo [[:File:Example.jpg]]"
+}
