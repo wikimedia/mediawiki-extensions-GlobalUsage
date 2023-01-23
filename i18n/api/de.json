@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Justman10000",
 			"Metalhead64",
 			"Mirzali"
 		]
@@ -11,5 +12,6 @@
 	"apihelp-query+globalusage-param-limit": "Wie viele Links zurückgegeben werden sollen.",
 	"apihelp-query+globalusage-param-filterlocal": "Lokale Verwendungen der Datei filtern.",
 	"apihelp-query+globalusage-param-namespace": "Beschränkt die Ergebnisse auf diese Namensräume.",
+	"apihelp-query+globalusage-param-site": "Beschränke die Ergebnisse auf diese Websites.",
 	"apihelp-query+globalusage-example-1": "Ruft die Verwendung von [[:File:Example.jpg]] ab"
 }

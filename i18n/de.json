@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Brettchenweber",
 			"Kghbln",
 			"Metalhead64",
 			"Raimond Spekking",
@@ -10,7 +11,7 @@
 	"globalusage": "Globale Dateiverwendung",
 	"globalusage-for": "Globale Dateiverwendung für „$1“",
 	"globalusage-filename": "Dateiname:",
-	"globalusage-desc": "Erweitert das Wiki um eine [[Special:GlobalUsage|Spezialseite]] mit der angezeigt wird, in welchen Wikis eine Datei aus einem gemeinsam genutzten Repositoriums verwendet wird",
+	"globalusage-desc": "Erweitert das Wiki um eine [[Special:GlobalUsage|Spezialseite]], mit der angezeigt wird, in welchen Wikis eine Datei aus einem gemeinsam genutzten Repositorium verwendet wird",
 	"globalusage-ok": "Suchen",
 	"globalusage-text": "Globale Suche nach der Dateiverwendung",
 	"globalusage-no-results": "[[:$1]] wird nicht auf anderen Wikis verwendet.",
