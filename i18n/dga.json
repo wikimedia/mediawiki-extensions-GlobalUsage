@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Zakaria Tunsung"
+			"Zakaria Tunsung",
+			"NgmenRaphael"
 		]
 	},
 	"globalusage": "Donɛɛ zaa daga tontone",
 	"globalusage-on-wiki": "Era enna $2",
-	"globalusage-of-file": "Ana wikis mine ŋa maŋ tonna neŋ a daga ŋa:"
+	"globalusage-of-file": "Ana wikis mine ŋa maŋ tonna neŋ a daga ŋa:",
+	"globalusage-more": "View=Bale/kaa"
 }
