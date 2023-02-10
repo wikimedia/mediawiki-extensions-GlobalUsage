@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"Keenan Pepper",
 			"LesVisages"
 		]
 	},
-	"globalusage": "kepeken pi ijo ni lon lipu ale"
+	"globalusage": "kepeken pi ijo ni lon lipu ale",
+	"globalusage-on-wiki": "kepeken lon $2"
 }
