@@ -15,7 +15,7 @@
 	"globalusage-no-results": "[[:$1]] se ne koristi na drugim wikijima.",
 	"globalusage-on-wiki": "Upotreba na projektu $2",
 	"globalusage-of-file": "Ovu datoteku upotrebljavaju i sljedeći projekti:",
-	"globalusage-more": "Pogledajte [[{{#Special:GlobalUsage}}/$1|globalne upotrebe]] ove datoteke.",
+	"globalusage-more": "[[{{#Special:GlobalUsage}}/$1|Potpunija globalna upotreba datoteke]]",
 	"globalusage-filterlocal": "Ne prikazuj mjesnu upotrebu",
 	"mostgloballylinkedfiles": "Datoteke s najviše linkova globalno",
 	"mostgloballylinkedfiles-summary": "Popis najupotrebljenih datoteka na globalnom nivou (uzimajući u obzir sve wikije). Popis najčešće korištenih datoteka na {{SITENAME}} naći ćete na [[{{#special:MostLinkedFiles}}]].",
