@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Zakaria Tunsung",
-			"NgmenRaphael"
+			"NgmenRaphael",
+			"Linus Konkor"
 		]
 	},
 	"globalusage": "Donɛɛ zaa daga tontone",
 	"globalusage-on-wiki": "Era enna $2",
 	"globalusage-of-file": "Ana wikis mine ŋa maŋ tonna neŋ a daga ŋa:",
-	"globalusage-more": "View=Bale/kaa"
+	"globalusage-more": "Teɛroŋ [[{{#Special:GlobalUsage}}/$1|\nmore global usage]] kyaare a gaŋe ŋa."
 }
