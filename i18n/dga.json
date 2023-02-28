@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Linus Konkor",
 			"NgmenRaphael",
 			"Zakaria Tunsung"
@@ -9,5 +10,5 @@
 	"globalusage": "Donɛɛ zaa daga tontone",
 	"globalusage-on-wiki": "Era enna $2",
 	"globalusage-of-file": "Ana wikis mine ŋa maŋ tonna neŋ a daga ŋa:",
-	"globalusage-more": "Teɛroŋ [[{{#Special:GlobalUsage}}/$1|\nmore global usage]] kyaare a gaŋe ŋa."
+	"globalusage-more": "Teɛroŋ [[{{#Special:GlobalUsage}}/$1|more global usage]] kyaare a gaŋe ŋa."
 }
