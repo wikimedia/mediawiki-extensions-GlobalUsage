@@ -4,6 +4,8 @@
 			"Ella Lachow"
 		]
 	},
+	"globalusage": "Ubba fayiliyaa go'etuwaa",
 	"globalusage-on-wiki": "Go'ettidoy $2",
-	"globalusage-of-file": "Ha kaalliyaa hara wiikkete ha fayiliyaa go'ettoosana:"
+	"globalusage-of-file": "Ha kaalliyaa hara wiikkete ha fayiliyaa go'ettoosana:",
+	"globalusage-more": "Ha fayiliyaa salo gufantto go'ettaabaa[[{{#Special:GlobalUsage}}/$1|more global usage]] be'a."
 }
