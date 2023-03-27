@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ahmedadeljaff"
+			"Ahmedadeljaff",
+			"MRidhaAJ"
 		]
 	},
 	"globalusage": "الأستخدام العالمي للملف",
 	"globalusage-on-wiki": "الأستخـدام في $2",
-	"globalusage-of-file": "الويكيات الثانية تستخدم هذا الملف:"
+	"globalusage-of-file": "الويكيات الثانية تستخدم هذا الملف:",
+	"globalusage-more": "اعرض [[{{#Special:GlobalUsage}}/$1|بعد من الاستخدام العام]] بهاذ الملف"
 }
