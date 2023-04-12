@@ -8,5 +8,6 @@
 	"globalusage": "Allmeen Datei-Bruuk",
 	"globalusage-ok": "Söken",
 	"globalusage-on-wiki": "Bruuk op $2",
-	"globalusage-of-file": "Disse annern Wikis bruukt disse Datei:"
+	"globalusage-of-file": "Disse annern Wikis bruukt disse Datei:",
+	"globalusage-more": "Kiek na [[{{#Special:GlobalUsage}}/$1|mehr almeen Bruuk]] von disse Datei."
 }
