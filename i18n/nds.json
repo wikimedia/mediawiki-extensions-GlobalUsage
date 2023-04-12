@@ -1,8 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Joachim Mos"
+			"Joachim Mos",
+			"Wikiundeplattsnacker"
 		]
 	},
-	"globalusage-ok": "Söken"
+	"globalusage": "Allmeen Datei-Bruuk",
+	"globalusage-ok": "Söken",
+	"globalusage-on-wiki": "Bruuk op $2",
+	"globalusage-of-file": "Disse annern Wikis bruukt disse Datei:"
 }
