@@ -4,5 +4,7 @@
 			"Han4299"
 		]
 	},
-	"globalusage-on-wiki": "Pammakeang ri $2"
+	"globalusage": "Pammakeang barakkasak global",
+	"globalusage-on-wiki": "Pammakeang ri $2",
+	"globalusage-of-file": "Iami anne wiki maraenga ammakei anne barakkasak:"
 }
