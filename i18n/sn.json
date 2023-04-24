@@ -6,5 +6,6 @@
 	},
 	"globalusage": "Kushandiswa kwe fayera pasirose",
 	"globalusage-on-wiki": "Hushandiso pa $2",
-	"globalusage-of-file": "Mawiki anotevera ayo anoshandisa fayera iri:"
+	"globalusage-of-file": "Mawiki anotevera ayo anoshandisa fayera iri:",
+	"globalusage-more": "Ringa [[{{#Special:GlobalUsage}}/$1|kushandiswa kumwe kwe vupasirose]] kwe fayera rino."
 }
