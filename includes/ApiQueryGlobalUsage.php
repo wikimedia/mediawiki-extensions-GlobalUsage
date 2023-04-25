@@ -27,7 +27,7 @@ namespace MediaWiki\Extension\GlobalUsage;
 use ApiBase;
 use ApiQueryBase;
 use MediaWiki\MediaWikiServices;
-use WikiMap;
+use MediaWiki\WikiMap\WikiMap;
 use Wikimedia\ParamValidator\ParamValidator;
 use Wikimedia\ParamValidator\TypeDef\IntegerDef;
 

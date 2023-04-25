@@ -12,13 +12,13 @@ namespace MediaWiki\Extension\GlobalUsage;
 
 use Html;
 use MediaWiki\Cache\LinkBatchFactory;
+use MediaWiki\WikiMap\WikiMap;
 use RepoGroup;
 use Skin;
 use SpecialPage;
 use stdClass;
 use Title;
 use WantedQueryPage;
-use WikiMap;
 use Wikimedia\Rdbms\ILoadBalancer;
 
 class SpecialGloballyWantedFiles extends WantedQueryPage {

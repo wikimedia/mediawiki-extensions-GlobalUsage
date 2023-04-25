@@ -3,9 +3,9 @@
 namespace MediaWiki\Extension\GlobalUsage;
 
 use ImagePage;
+use MediaWiki\WikiMap\WikiMap;
 use Sanitizer;
 use Title;
-use WikiMap;
 
 class GlobalUsageImagePageHooks {
 	private static $queryCache = [];

@@ -5,8 +5,8 @@ namespace MediaWiki\Extension\GlobalUsage;
 use DeferredUpdates;
 use IContextSource;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\WikiMap\WikiMap;
 use Title;
-use WikiMap;
 use Wikimedia\Rdbms\IDatabase;
 
 class GlobalUsage {

@@ -13,6 +13,7 @@ require_once $path . '/maintenance/Maintenance.php';
 
 use MediaWiki\Extension\GlobalUsage\GlobalUsage;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\WikiMap\WikiMap;
 
 class RefreshGlobalimagelinks extends Maintenance {
 	public function __construct() {

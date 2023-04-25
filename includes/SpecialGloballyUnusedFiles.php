@@ -27,7 +27,7 @@ namespace MediaWiki\Extension\GlobalUsage;
 use ErrorPageError;
 use Exception;
 use ImageQueryPage;
-use WikiMap;
+use MediaWiki\WikiMap\WikiMap;
 
 /**
  * A special page that lists globally unused files
