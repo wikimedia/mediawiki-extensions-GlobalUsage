@@ -4,8 +4,8 @@
 			"Vlad5250"
 		]
 	},
-	"apihelp-query+globalusage-description": "Vraća globalno korišćenje slike za određenu sliku.",
-	"apihelp-query+globalusage-summary": "Vraća globalno korišćenje slike za određenu sliku.",
+	"apihelp-query+globalusage-description": "Vraća globalno korištenje slike za određenu sliku.",
+	"apihelp-query+globalusage-summary": "Vraća globalno korištenje slike za određenu sliku.",
 	"apihelp-query+globalusage-param-prop": "Koja svojstva da vrati:\n;url: Dodaje url.\n;pageid: Dodaje naznaku stranice.\n;namespace: Dodaje naznaku imenskog prostora.",
 	"apihelp-query+globalusage-param-limit": "Koliko linkova dati.",
 	"apihelp-query+globalusage-param-filterlocal": "Filtriraj lokalnu upotrebu datoteke.",
