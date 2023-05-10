@@ -26,5 +26,7 @@
 	"globallywantedfiles": "Globaliai norimi failai",
 	"globallywantedfiles-summary": "Sąrašas failų, kurie daugiausiai kartų buvo įterpti visuose vikiuose, neskaitant neegzistuojančių. Norėdami pamatyti ekvivalentų sąrašą, kuris apima tik {{SITENAME}}, žiūrėkite [[{{#special:WantedFiles}}]]. File naudojimas vikiuose paisantiems pirmosios raidės lygį gali sąlygoti neteisingą priskyrimą prie norimų failų.",
 	"globallywantedfiles-foreign-repo": "<strong>Įspėjimas:</strong> Šis vikis naudoja užsenietiškas failų talpyklas. Naudojami failai iš užsenietiškų talpyklų šiame sąraše bus rodomi kaip išbrauktos mėlynos nuorodos, nepaisant fakto, kad jie egzistuoja.",
-	"globalusage-header": "Šis puslapis nurodo, kur failas yra naudojamas šiame vikyje. Jūs taip pat galite rasti šią informaciją failo aprašymo puslapio apačioje."
+	"globalusage-header": "Šis puslapis nurodo, kur failas yra naudojamas šiame vikyje. Jūs taip pat galite rasti šią informaciją failo aprašymo puslapio apačioje.",
+	"globallyunusedfiles": "Visuotinai nenaudojami failai",
+	"globallyunusedfilestext": "Šie failai egzistuoja, bet nėra įterpti į jokį puslapį jokioje viki."
 }
