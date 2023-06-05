@@ -8,8 +8,22 @@
 		]
 	},
 	"globalusage": "Faylın qlobal istifadəsi",
+	"globalusage-for": "\"$1\" üçün qlobal istifadə",
+	"globalusage-filename": "Fayl adı:",
+	"globalusage-desc": "Qlobal fayl istifadəsinə baxmaq üçün [[Special:GlobalUsage|xüsusi səhifə]]",
 	"globalusage-ok": "Axtar",
+	"globalusage-text": "Qlobal fayl istifadəsini axtarın",
+	"globalusage-no-results": "[[:$1]] digər vikilərdə istifadə edilmir.",
 	"globalusage-on-wiki": "$2 layihəsində istifadəsi",
 	"globalusage-of-file": "Bu fayl aşağıdakı vikilərdə istifadə olunur:",
-	"globalusage-more": "Bu faylın [[{{#Special:GlobalUsage}}/$1|qlobal istifadəsinə]] baxın."
+	"globalusage-more": "Bu faylın [[{{#Special:GlobalUsage}}/$1|qlobal istifadəsinə]] baxın.",
+	"globalusage-filterlocal": "Lokal istifadəni göstərmə",
+	"mostgloballylinkedfiles": "Ən çox qlobal əlaqə verilən fayllar",
+	"mostgloballylinkedfiles-summary": "Bütün vikilərdə ən çox yerləşdirilmiş faylların siyahısı. Yalnız {{SITENAME}} saytındakı istifadə siyahısı üçün [[{{#special:MostLinkedFiles}}]] səhifəsinə nəzər yetirin.",
+	"globallywantedfiles": "Qlobal olaraq axtarılan fayllar",
+	"globallywantedfiles-foreign-repo": "<strong>Xəbərdarlıq:</strong> Bu viki xarici fayl deposundan istifadə edir. İstifadədə olan xarici repozitoriyadan olan fayllar mövcud olmasına baxmayaraq, bu siyahıda mavi keçidlər kimi görünəcək.",
+	"globalusage-header": "Bu səhifə faylın digər vikilərdə harada istifadə edildiyini göstərir. Siz həmçinin bu məlumatı faylın təsviri səhifəsinin altında tapa bilərsiniz.",
+	"globallyunusedfiles": "Qlobal istifadə olunmayan fayllar",
+	"globallyunusedfilestext": "Aşağıdakı fayllar mövcuddur, lakin heç bir vikidə heç bir səhifəyə daxil edilməyib.",
+	"globallyunusedfiles-error-nonsharedrepo": "Bu viki paylaşılan anbarda deyil"
 }
