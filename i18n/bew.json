@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bangrapip"
+		]
+	},
+	"globalusage": "Pemakéan berekas global",
+	"globalusage-on-wiki": "Pemakéan di $2",
+	"globalusage-of-file": "Ni laèn wiki maké ni berekas:",
+	"globalusage-more": "Deleng [[{{#Special:GlobalUsage}}/$1|lebi banyak pemakéan global]] deri ni berekas."
+}
