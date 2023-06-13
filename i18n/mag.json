@@ -4,8 +4,8 @@
 			"ऐक्टिवेटेड्"
 		]
 	},
-	"globalusage": "बैस्विक सञ्चिका उपयोग",
+	"globalusage": "बैश्विक सञ्चिका उपयोग",
 	"globalusage-on-wiki": "$2 पर उपयोग",
-	"globalusage-of-file": "ई सञ्चिकाके उपयोग ईसब दूसरो बिकि करहई:",
-	"globalusage-more": "ई सञ्चिकाके [[{{#Special:GlobalUsage}}/$1|बैस्विक उपयोगके अधिकजानकारी]] देखी।"
+	"globalusage-of-file": "ई सञ्चिकाके उपयोग ईसब दूसरो बिकि करहे:",
+	"globalusage-more": "ई सञ्चिकाके [[{{#Special:GlobalUsage}}/$1|बैश्विक उपयोगके अधिक जानकारी]] देखी।"
 }
