@@ -3,10 +3,11 @@
 		"authors": [
 			"Agilight",
 			"Riverman",
-			"Монгуш Салим"
+			"Монгуш Салим",
+			"Karak-Kyzyl"
 		]
 	},
-	"globalusage": "Файлдың делгем ажыглаашкыны",
+	"globalusage": "Файлды делгем ажыглаары",
 	"globalusage-on-wiki": "Ажыглаан арыннары: $2",
 	"globalusage-of-file": "Бо файлды дараазында викилер ажыглап турар:",
 	"globalusage-more": "Ол файлдың [[{{#Special:GlobalUsage}}/$1|глобалдыг ажыглалын]] көөр."
