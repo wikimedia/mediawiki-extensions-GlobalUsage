@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Herryz",
-			"Salomo Christian Hutajulu"
+			"Salomo Christian Hutajulu",
+			"27christian11"
 		]
 	},
-	"globalusage": "Pamangke surat partadingan global",
-	"globalusage-on-wiki": "Pamangkean tu $2",
-	"globalusage-of-file": "Wiki na asing mamangke surat partadingan on:",
-	"globalusage-more": "Bereng [[{{#Special:GlobalUsage}}/$1|lumobi godangan pamangke global]] sian berkas on."
+	"globalusage": "Parhaseangon ugasan na global",
+	"globalusage-on-wiki": "Parhaseangon di $2",
+	"globalusage-of-file": "Wiki na asing manghaseanghon ugasan on:",
+	"globalusage-more": "Ida [[{{#Special:GlobalUsage}}/$1|lumobi godangan pamangke global]] sian ugasan on."
 }
