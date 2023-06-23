@@ -4,7 +4,6 @@
 			"Bryan Tong Minh"
 		]
 	},
-	"apihelp-query+globalusage-description": "Returns global image usage for a certain image.",
 	"apihelp-query+globalusage-summary": "Returns global image usage for a certain image.",
 	"apihelp-query+globalusage-param-prop": "Which properties to return:\n;url:Adds url.\n;pageid:Adds page ID.\n;namespace:Adds namespace ID.",
 	"apihelp-query+globalusage-param-limit": "How many links to return.",
