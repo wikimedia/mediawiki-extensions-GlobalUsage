@@ -4,7 +4,6 @@
 			"Tacsipacsi"
 		]
 	},
-	"apihelp-query+globalusage-description": "Egy adott kép globális használatának lekérése.",
 	"apihelp-query+globalusage-summary": "Egy adott kép globális használatának lekérése.",
 	"apihelp-query+globalusage-param-prop": "Lekérendő tulajdonságok:\n;url: A lap URL-je.\n;pageid: A lapazonosító.\n;namespace: A névtér azonosítója.",
 	"apihelp-query+globalusage-param-limit": "A visszaadandó linkek száma.",

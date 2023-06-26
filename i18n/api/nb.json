@@ -4,7 +4,6 @@
 			"Jon Harald Søby"
 		]
 	},
-	"apihelp-query+globalusage-description": "Returnerer global bildebruk for et visst bilde.",
 	"apihelp-query+globalusage-summary": "Returnerer global bildebruk for et visst bilde.",
 	"apihelp-query+globalusage-param-prop": "Hvilke egenskaper som skal returneres:\n;url:Legger til URL.\n;pageid:Legger til side-ID.\n;namespace:Legger til navneroms-ID.",
 	"apihelp-query+globalusage-param-limit": "Hvor mange lenker som skal returneres.",

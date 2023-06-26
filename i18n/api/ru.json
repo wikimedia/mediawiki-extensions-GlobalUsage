@@ -5,7 +5,6 @@
 			"Okras"
 		]
 	},
-	"apihelp-query+globalusage-description": "Возвращает информацию о глобальном использовании определённого изображения.",
 	"apihelp-query+globalusage-summary": "Возвращает информацию о глобальном использовании определённого изображения.",
 	"apihelp-query+globalusage-param-prop": "Какие свойства возвращать:\n;url:Добавляет URL-адрес.\n;pageid:Добавляет ID страницы.\n;namespace:Добавляет ID пространства имён.",
 	"apihelp-query+globalusage-param-limit": "Сколько ссылок возвращать.",

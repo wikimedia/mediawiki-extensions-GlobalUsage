@@ -5,7 +5,6 @@
 			"Xiplus"
 		]
 	},
-	"apihelp-query+globalusage-description": "返回某一图片的全域图片使用。",
 	"apihelp-query+globalusage-summary": "返回某一图片的全域图片使用。",
 	"apihelp-query+globalusage-param-prop": "返回的属性：\n;url:加入url。\n;pageid:加入页面ID。\n;namespace:加入命名空间ID。",
 	"apihelp-query+globalusage-param-limit": "返回的链接数。",

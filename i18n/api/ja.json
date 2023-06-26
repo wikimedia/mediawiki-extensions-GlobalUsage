@@ -5,7 +5,6 @@
 			"Yusuke1109"
 		]
 	},
-	"apihelp-query+globalusage-description": "与えられたファイルのグローバルでの画像利用状況を返します。",
 	"apihelp-query+globalusage-summary": "与えられたファイルのグローバルでの画像利用状況を返します。",
 	"apihelp-query+globalusage-param-prop": "返すプロパティ:\n;url: URLを追加します。\n;pageid: ページIDを追加します。\n;namespace: 名前空間のIDを追加します。",
 	"apihelp-query+globalusage-param-limit": "返すリンクの数。",

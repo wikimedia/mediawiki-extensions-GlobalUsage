@@ -4,7 +4,6 @@
 			"C.R."
 		]
 	},
-	"apihelp-query+globalusage-description": "Torna l'aùse 'e l'immaggene globbale pe' na cierta immaggene.",
 	"apihelp-query+globalusage-param-prop": "Quala proprietà 'a turnà:\n;url:Azzecca url.\n;pageid:Azzecca identificaziona 'e paggena.\n;namespace:Azzecca identificaziona 'e namespace.",
 	"apihelp-query+globalusage-param-limit": "Quante cullegamiente wiki s'avesser'a turnà",
 	"apihelp-query+globalusage-param-filterlocal": "Filtra l'ause lucale d' 'o file.",

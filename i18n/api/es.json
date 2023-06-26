@@ -6,7 +6,6 @@
 			"Ryo567"
 		]
 	},
-	"apihelp-query+globalusage-description": "Devuelve el uso global de una determinada imagen.",
 	"apihelp-query+globalusage-summary": "Devuelve el uso global de una imagen en concreto.",
 	"apihelp-query+globalusage-param-prop": "Qué propiedades se devolverán:\n;url: añade una URL.\n;pageid: añade una ID de página.\n;namespace: añade una ID de un espacio de nombres.",
 	"apihelp-query+globalusage-param-limit": "Cuántos enlaces se devolverán.",

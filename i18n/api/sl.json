@@ -4,7 +4,6 @@
 			"Eleassar"
 		]
 	},
-	"apihelp-query+globalusage-description": "Vrne globalno uporabo slike za določeno sliko.",
 	"apihelp-query+globalusage-summary": "Vrne globalno uporabo slike za določeno sliko.",
 	"apihelp-query+globalusage-param-prop": "Katere lastnosti naj bodo vrnjene:\n;url:Doda URL.\n;pageid:Doda ID strani.\n;namespace:Doda ID imenskega prostora.",
 	"apihelp-query+globalusage-param-limit": "Koliko povezav naj bo vrnjenih.",

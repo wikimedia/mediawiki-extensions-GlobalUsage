@@ -4,7 +4,6 @@
 			"Bjankuloski06"
 		]
 	},
-	"apihelp-query+globalusage-description": "Ја дава глобалната употреба на дадена слика.",
 	"apihelp-query+globalusage-summary": "Ја дава глобалната употреба на дадена слика.",
 	"apihelp-query+globalusage-param-prop": "Кои својства да се дадат:\n;url: Додава URL.\n;pageid: Додава назнака на страницата.\n;namespace: Додава назнака на именскиот простор.",
 	"apihelp-query+globalusage-param-limit": "Колку врски да се дадат.",

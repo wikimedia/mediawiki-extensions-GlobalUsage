@@ -4,7 +4,6 @@
 			"McDutchie"
 		]
 	},
-	"apihelp-query+globalusage-description": "Restitue le uso global de un certe imagine.",
 	"apihelp-query+globalusage-summary": "Restitue le uso global de un certe imagine.",
 	"apihelp-query+globalusage-param-prop": "Qual proprietates restituer:\n;url:Adde le URL.\n;pageid:Adde le ID del pagina.\n;namespace:Adde le ID del spatio de nomines.",
 	"apihelp-query+globalusage-param-limit": "Quante ligamines restituer.",

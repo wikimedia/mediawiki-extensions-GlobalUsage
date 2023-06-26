@@ -5,7 +5,6 @@
 			"WikiPhoenix"
 		]
 	},
-	"apihelp-query+globalusage-description": "Returnerar den globala bildanvändning för en viss bild.",
 	"apihelp-query+globalusage-summary": "Returnerar global bildanvändning för en särskild bild.",
 	"apihelp-query+globalusage-param-prop": "Vilka egenskaper att återvända:\n;url:Lägger till url.\n;sidid:Lägger till sid-ID.\n;namespace:Lägger till namnrymd-ID.",
 	"apihelp-query+globalusage-param-limit": "Hur många länkar som ska returneras.",

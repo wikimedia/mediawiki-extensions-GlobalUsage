@@ -4,7 +4,6 @@
 			"NMW03"
 		]
 	},
-	"apihelp-query+globalusage-description": "Müəyyən bir şəkil üçün qlobal şəkil istifadəsini göstərir.",
 	"apihelp-query+globalusage-summary": "Müəyyən bir şəkil üçün qlobal şəkil istifadəsini göstərir.",
 	"apihelp-query+globalusage-param-prop": "Hansı parametrləri göstərir:\n;url:Url əlavə edir.\n;pageid:Səhifə ID-sini əlavə edir.\n;namespace:Ad sahəsi ID-sini əlavə edir.",
 	"apihelp-query+globalusage-param-limit": "Göstərmək üçün neçə keçid.",

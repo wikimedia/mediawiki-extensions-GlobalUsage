@@ -7,7 +7,6 @@
 			"Wladek92"
 		]
 	},
-	"apihelp-query+globalusage-description": "Renvoie l’utilisation globale d’une image particulière.",
 	"apihelp-query+globalusage-summary": "Renvoie l’utilisation globale d’une certaine image.",
 	"apihelp-query+globalusage-param-prop": "Quelles propriétés renvoyer :\n;url:ajoute l’URL ;\n;pageid:ajoute l’identifiant de page ;\n;namespace:ajoute l’identifiant de l’espace de noms.",
 	"apihelp-query+globalusage-param-limit": "Combien de liens renvoyer.",

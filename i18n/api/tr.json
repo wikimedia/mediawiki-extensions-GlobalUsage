@@ -7,7 +7,6 @@
 			"MuratTheTurkish"
 		]
 	},
-	"apihelp-query+globalusage-description": "Belirli bir görüntü için küresel resim kullanımını döndürür.",
 	"apihelp-query+globalusage-summary": "Belirli bir görüntü için genel resim kullanımını döndürür.",
 	"apihelp-query+globalusage-param-prop": "Hangi özellikleri dönmek için:\n;url:Url ekler.\n;pageid:Sayfa kimliği ekler.\n;namespace:Ad alanı kimliği ekler.",
 	"apihelp-query+globalusage-param-limit": "Dönüş için kaç bağlantıları.",

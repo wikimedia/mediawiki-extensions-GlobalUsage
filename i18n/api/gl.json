@@ -6,7 +6,6 @@
 			"Iváns"
 		]
 	},
-	"apihelp-query+globalusage-description": "Amosar o uso global dunha imaxe concreta.",
 	"apihelp-query+globalusage-summary": "Amosa o uso global dunha imaxe concreta.",
 	"apihelp-query+globalusage-param-prop": "Que propiedades devolver:\n;url: Engade a URL.\n;pageid: Engade o identificador da páxina.\n;namespace: Engade o identificador do espazo de nomes.",
 	"apihelp-query+globalusage-param-limit": "Cantas ligazóns devolver.",

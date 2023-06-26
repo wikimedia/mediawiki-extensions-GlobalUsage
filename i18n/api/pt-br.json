@@ -6,7 +6,6 @@
 			"Felipe L. Ewald"
 		]
 	},
-	"apihelp-query+globalusage-description": "Retorna o uso global para uma determinada imagem.",
 	"apihelp-query+globalusage-summary": "Retorna o uso global para uma determinada imagem.",
 	"apihelp-query+globalusage-param-prop": "Quais as propriedades a serem retornadas:\n;url:Adiciona url.\n;pageid:Adiciona ID da página.\nN;namespace: Adiciona ID do espaço nominal.",
 	"apihelp-query+globalusage-param-limit": "Quantos links serão retornados.",

@@ -4,7 +4,6 @@
 			"Lam-ang"
 		]
 	},
-	"apihelp-query+globalusage-description": "Mangisubli ti global a panagusar iti ladawan para iti naisangayan a ladawan.",
 	"apihelp-query+globalusage-summary": "Mangisubli ti global a panagusar iti ladawan para iti naisangayan a ladawan.",
 	"apihelp-query+globalusage-param-prop": "No ania a tagtagikua ti maisubli:\n;url:Agnayon iti url.\n;pageid:Agnayon ti ID ti panid.\n;namespace:Agnayon ti ID ti nagan ti espasio.",
 	"apihelp-query+globalusage-param-limit": "No mano kadagiti silpo ti maisubli.",

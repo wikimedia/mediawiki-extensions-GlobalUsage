@@ -6,7 +6,6 @@
 			"Nokeoo"
 		]
 	},
-	"apihelp-query+globalusage-description": "Grąžinti globalų paveikslėlio naudojimą konkrečiam paveikslėliui.",
 	"apihelp-query+globalusage-summary": "Grąžina tam tikro paveikslėlio visuotinį paveikslėlio naudojimą.",
 	"apihelp-query+globalusage-param-prop": "Kurias parinktis grąžinti:\n;url:Prideda url adresą.\n;pageid:Prideda puslapio ID.\n;namespace:Prideda vardų srities ID.",
 	"apihelp-query+globalusage-param-limit": "Kiek nuorodų grąžinti.",

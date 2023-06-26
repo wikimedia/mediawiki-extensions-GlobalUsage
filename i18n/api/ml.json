@@ -4,7 +4,6 @@
 			"Praveenp"
 		]
 	},
-	"apihelp-query+globalusage-description": "ഒരു പ്രത്യേക ചിത്രത്തിന്റെ ആഗോള ഉപയോഗം നൽകുന്നു.",
 	"apihelp-query+globalusage-summary": "ഒരു പ്രത്യേക ചിത്രത്തിന്റെ ആഗോള ഉപയോഗം നൽകുന്നു.",
 	"apihelp-query+globalusage-param-prop": "എന്തൊക്കെയാണ് തിരിച്ചുനൽകേണ്ടത്:\n;url:യു.ആർ.എൽ. ചേർക്കുന്നു.\n;pageid:താളിന്റെ ഐ.ഡി. ചേർക്കുന്നു.\n;namespace:നാമമേഖലയുടെ ഐ.ഡി. ചേർക്കുന്നു.",
 	"apihelp-query+globalusage-param-limit": "എത്ര കണ്ണികൾ തിരിച്ചുനൽകണം.",

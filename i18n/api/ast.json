@@ -4,7 +4,6 @@
 			"Xuacu"
 		]
 	},
-	"apihelp-query+globalusage-description": "Devuelve l'usu global d'una determinada imaxe.",
 	"apihelp-query+globalusage-summary": "Devuelve l'usu global d'una determinada imaxe.",
 	"apihelp-query+globalusage-param-prop": "Qué propiedaes devolver:\n;url: Amiesta la URL.\n;pageid: Amiesta la ID de la páxina.\n;namespace: Amiesta la ID del espaciu de nomes.",
 	"apihelp-query+globalusage-param-limit": "Cuántos enllaces hai que devolver.",

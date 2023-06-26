@@ -5,7 +5,6 @@
 			"Zoranzoki21"
 		]
 	},
-	"apihelp-query+globalusage-description": "Vraća globalno korišćenje slike za određenu sliku.",
 	"apihelp-query+globalusage-summary": "Vraća globalno korišćenje slike za određenu sliku.",
 	"apihelp-query+globalusage-param-prop": "Koja svojstva da vrati:\n;url:Dodaje link.\n;pageid:Dodaje ID stranice.\n;namespace:Dodaje ID imenskog prostora.",
 	"apihelp-query+globalusage-param-limit": "Koliko linkova da vratim?",
