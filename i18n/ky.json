@@ -9,5 +9,6 @@
 	"globalusage": "Файлдын глобалдык колдонуушу",
 	"globalusage-ok": "Издөө",
 	"globalusage-on-wiki": "$2 долбоорунда колдонулат",
-	"globalusage-of-file": "Бул файл төмөнкү уикилерде колдонулат:"
+	"globalusage-of-file": "Бул файл төмөнкү уикилерде колдонулат:",
+	"globalusage-more": "Бул файлдын [[{{#Special:GlobalUsage}}/$1|глобалдык колдонулушун]] көрүү."
 }

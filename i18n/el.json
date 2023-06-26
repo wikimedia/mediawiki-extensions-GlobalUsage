@@ -7,11 +7,13 @@
 			"Omnipaedista",
 			"Protnet",
 			"ZaDiak",
-			"Απεργός"
+			"Απεργός",
+			"DesVaMan"
 		]
 	},
 	"globalusage": "Καθολική χρήση αρχείου",
 	"globalusage-for": "Καθολική χρήση για \"$1\"",
+	"globalusage-filename": "Όνομα αρχείου:",
 	"globalusage-desc": "[[Special:GlobalUsage|Special page]], για να δείτε  καθολικό αρχείο χρήση",
 	"globalusage-ok": "Αναζήτηση",
 	"globalusage-text": "Αναζήτηση καθολικής χρήσης αρχείου",
@@ -19,5 +21,13 @@
 	"globalusage-on-wiki": "Χρήση σε $2",
 	"globalusage-of-file": "Τα ακόλουθα άλλα wiki χρησιμοποιούν αυτό το αρχείο:",
 	"globalusage-more": "Δείτε  [[{{#Special:GlobalUsage}}/$1|περισσότερη καθολική χρήση]] αυτού του αρχείου.",
-	"globalusage-filterlocal": "Να μην εμφανίζει τοπική χρήση"
+	"globalusage-filterlocal": "Να μην εμφανίζει τοπική χρήση",
+	"mostgloballylinkedfiles": "Τα περισσότερα αρχεία που συνδέονται παγκοσμίως",
+	"mostgloballylinkedfiles-summary": "Λίστα αρχείων που έχουν ενσωματωθεί τις περισσότερες φορές σε όλα τα wiki. Για την ισοδύναμη λίστα που λαμβάνει υπόψη μόνο τις χρήσεις στο {{SITENAME}}, ανατρέξτε στο [[{{#special:MostLinkedFiles}}]].",
+	"globallywantedfiles": "Αρχεία που αναζητούνται παγκοσμίως",
+	"globallywantedfiles-foreign-repo": "<strong>Προειδοποίηση:</strong> Αυτό το wiki χρησιμοποιεί έναν ξένο χώρο αποθήκευσης αρχείων. Τα αρχεία από το ξένο χώρο αποθήκευσης που χρησιμοποιούνται θα εμφανίζονται σε αυτήν τη λίστα ως διαγρμμένοι μπλε σύνδεσμοι παρά το γεγονός ότι υπάρχουν.",
+	"globalusage-header": "Αυτή η σελίδα δείχνει πού χρησιμοποιείται ένα αρχείο σε άλλα wiki. Μπορείτε επίσης να βρείτε αυτές τις πληροφορίες στο κάτω μέρος της σελίδας περιγραφής του αρχείου.",
+	"globallyunusedfiles": "Παγκοσμίως αχρησιμοποίητα αρχεία",
+	"globallyunusedfilestext": "Τα ακόλουθα αρχεία υπάρχουν αλλά δεν είναι ενσωματωμένα σε καμία σελίδα σε κανένα wiki.",
+	"globallyunusedfiles-error-nonsharedrepo": "Αυτό το wiki δεν βρίσκεται στο κοινόχρηστο αποθετήριο"
 }
