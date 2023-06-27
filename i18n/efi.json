@@ -6,5 +6,6 @@
 	},
 	"globalusage": "Ikpehe emi ofụri owo ẹsede",
 	"globalusage-on-wiki": "Ẹdade ẹnam ke $2",
-	"globalusage-of-file": "Mbon eken oro ẹdade ikpehe wikis ẹnam n̄kpọ ẹsika ikpehe emi:"
+	"globalusage-of-file": "Mbon eken oro ẹdade ikpehe wikis ẹnam n̄kpọ ẹsika ikpehe emi:",
+	"globalusage-more": "Se [[{{#Special:GlobalUsage}}/$1|mbon eken ke ererimbot emi ẹdade ikpehe emi ẹnam n̄kpọ]] eke ikpehe emi."
 }
