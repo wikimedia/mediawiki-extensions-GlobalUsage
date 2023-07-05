@@ -1,10 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"Lifeway",
 			"Сай",
 			"Санюн Вадик"
 		]
 	},
 	"globalusage": "Файлым глобально кучылтмаш",
-	"globalusage-ok": "Кычал"
+	"globalusage-ok": "Кычал",
+	"globalusage-on-wiki": "$2 проектыште кучылтмаш",
+	"globalusage-of-file": "Тиде файл тыгай викилаште кучылталтеш:"
 }
