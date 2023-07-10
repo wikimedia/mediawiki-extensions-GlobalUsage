@@ -3,12 +3,13 @@
 		"authors": [
 			"Ganbarzada",
 			"Patriot Kur",
-			"Гусейн"
+			"Гусейн",
+			"Patriot Kor"
 		]
 	},
-	"globalusage": "Фајли умуми око дој",
+	"globalusage": "Fajli umumi oko doj",
 	"globalusage-ok": "Bınəv",
-	"globalusage-on-wiki": "Око доә бејдә $2",
-	"globalusage-of-file": "Ым фајл око доә бејдә бы викијонәдә:",
+	"globalusage-on-wiki": "Oko doə bejdə $2",
+	"globalusage-of-file": "Ym fajl oko doə bejdə by vikijonədə:",
 	"globalusage-more": "Дијә карде конҹо [[{{#Special:GlobalUsage}}/$1|умуми око дојдән]] ым фајли."
 }
