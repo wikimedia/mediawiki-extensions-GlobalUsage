@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Kotwys",
-			"Wadorgurt"
+			"Wadorgurt",
+			"Света Поторочина"
 		]
 	},
 	"globalusage": "Мукет проектъёсын файлэз уже кутон",
 	"globalusage-on-wiki": "Уже кутон $2 пушкын",
-	"globalusage-of-file": "Та викиос файлэз уже куто:",
-	"globalusage-more": "Та файлэз [[{{#Special:GlobalUsage}}/$1|глобальной уже кутонэз]] учкыны."
+	"globalusage-of-file": "Та файлэз ужазы куто кайтаосыз викиос:",
+	"globalusage-more": "Та файллэсь [[{{#Special:GlobalUsage}}/$1|глобальной уже кутӥськемзэ ]] учкыны."
 }
