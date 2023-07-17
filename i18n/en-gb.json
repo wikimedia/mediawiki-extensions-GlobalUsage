@@ -3,10 +3,12 @@
 		"authors": [
 			"Chase me ladies, I'm the Cavalry",
 			"Incnis Mrsi",
-			"Manvydasz"
+			"Manvydasz",
+			"Piano1forte2"
 		]
 	},
 	"globalusage": "Global file usage",
+	"globalusage-for": "Global usage for '$1'",
 	"globalusage-on-wiki": "Usage on $2",
 	"globalusage-of-file": "The following other wikis use this file:"
 }
