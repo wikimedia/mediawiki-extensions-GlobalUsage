@@ -1,10 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Keresturec"
+			"Keresturec",
+			"Vlad5250"
 		]
 	},
 	"globalusage": "Ґлобалне хаснованє файла",
+	"globalusage-filename": "Назва файлу:",
+	"globalusage-ok": "Глєдай",
+	"globalusage-text": "Глєданє ґлобалного хаснованя файлу",
 	"globalusage-on-wiki": "Хаснованє на $2",
 	"globalusage-of-file": "Шлїдуяци други викиї хтори хасную тот файл:",
 	"globalusage-more": "Опатриц [[{{#Special:GlobalUsage}}/$1|ґлобалне хаснованє]]того файлу."
