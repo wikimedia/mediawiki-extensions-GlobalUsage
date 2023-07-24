@@ -1,7 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
-			"Vlad5250"
+			"Winston Sung"
 		]
 	},
 	"apihelp-query+globalusage-summary": "Vraća globalno korištenje slike za određenu sliku.",
