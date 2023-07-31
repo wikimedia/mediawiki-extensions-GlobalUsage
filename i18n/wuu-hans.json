@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Winston Sung"
+		]
+	},
+	"globalusage": "全域文件用场",
+	"globalusage-on-wiki": "$2上个用途",
+	"globalusage-of-file": "下底个其他wiki使用箇只文件：",
+	"globalusage-more": "查看本文件个[[{{#Special:GlobalUsage}}/$1|更多全域用途]]。"
+}
