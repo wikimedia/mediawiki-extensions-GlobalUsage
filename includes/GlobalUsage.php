@@ -316,6 +316,6 @@ class GlobalUsage {
 		$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
 		$lb = $lbFactory->getMainLB( $wgGlobalUsageDatabase );
 
-		return $lb->getConnectionRef( $index, [], $wgGlobalUsageDatabase );
+		return $lb->getConnection( $index, [], $wgGlobalUsageDatabase );
 	}
 }
