@@ -133,6 +133,7 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 					'namespace',
 				],
 				ParamValidator::PARAM_ISMULTI => true,
+				ApiBase::PARAM_HELP_MSG_PER_VALUE => [],
 			],
 			'limit' => [
 				ParamValidator::PARAM_DEFAULT => 10,
