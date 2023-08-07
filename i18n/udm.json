@@ -3,11 +3,12 @@
 		"authors": [
 			"Wadorgurt",
 			"Kotwys",
-			"Света Поторочина"
+			"Света Поторочина",
+			"Udmwiki"
 		]
 	},
-	"globalusage": "Мукет проектъёсын файлэз уже кутон",
+	"globalusage": "Файлэз мукет проектъёсын уже кутон",
 	"globalusage-on-wiki": "Уже кутон $2 пушкын",
-	"globalusage-of-file": "Та файлэз ужазы куто кайтаосыз викиос:",
+	"globalusage-of-file": "Та файлэз ужазы куто мукетъёсыз викиос:",
 	"globalusage-more": "Та файллэсь [[{{#Special:GlobalUsage}}/$1|глобальной уже кутӥськемзэ ]] учкыны."
 }

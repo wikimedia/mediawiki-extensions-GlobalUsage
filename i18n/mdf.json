@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Numulunj pilgae"
+			"Numulunj pilgae",
+			"Валгриш"
 		]
 	},
 	"globalusage": "Глобальнаста файлань тевс нолдама",
-	"globalusage-on-wiki": "$2-са тевс нолдави"
+	"globalusage-on-wiki": "$2-са тевс нолдави",
+	"globalusage-of-file": "Тя файлась нолдави тевс сяда тволдонь викитнень эса"
 }
