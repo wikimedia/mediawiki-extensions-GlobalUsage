@@ -7,7 +7,10 @@
 		]
 	},
 	"apihelp-query+globalusage-summary": "Gibt die globale Verwendung für ein bestimmtes Bild zurück.",
-	"apihelp-query+globalusage-param-prop": "Welche Eigenschaften zurückgegeben werden sollen:\n;url:Ergänzt die URL.\n;pageid:Ergänzt die Kennung der Seite.\n;namespace:Ergänzt die Kennung des Namensraums.",
+	"apihelp-query+globalusage-param-prop": "Welche Eigenschaften zurückgegeben werden sollen:",
+	"apihelp-query+globalusage-paramvalue-prop-url": "Ergänzt die URL.",
+	"apihelp-query+globalusage-paramvalue-prop-pageid": "Ergänzt die Kennung der Seite.",
+	"apihelp-query+globalusage-paramvalue-prop-namespace": "Ergänzt die Kennung des Namensraums.",
 	"apihelp-query+globalusage-param-limit": "Wie viele Links zurückgegeben werden sollen.",
 	"apihelp-query+globalusage-param-filterlocal": "Lokale Verwendungen der Datei filtern.",
 	"apihelp-query+globalusage-param-namespace": "Beschränkt die Ergebnisse auf diese Namensräume.",

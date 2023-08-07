@@ -5,7 +5,10 @@
 		]
 	},
 	"apihelp-query+globalusage-summary": "Restitue le uso global de un certe imagine.",
-	"apihelp-query+globalusage-param-prop": "Qual proprietates restituer:\n;url:Adde le URL.\n;pageid:Adde le ID del pagina.\n;namespace:Adde le ID del spatio de nomines.",
+	"apihelp-query+globalusage-param-prop": "Qual proprietates restituer:",
+	"apihelp-query+globalusage-paramvalue-prop-url": "Adde le URL.",
+	"apihelp-query+globalusage-paramvalue-prop-pageid": "Adde le ID del pagina.",
+	"apihelp-query+globalusage-paramvalue-prop-namespace": "Adde le ID del spatio de nomines.",
 	"apihelp-query+globalusage-param-limit": "Quante ligamines restituer.",
 	"apihelp-query+globalusage-param-filterlocal": "Filtrar le uso local del file.",
 	"apihelp-query+globalusage-param-namespace": "Limitar le resultatos a iste spatios de nomines.",
