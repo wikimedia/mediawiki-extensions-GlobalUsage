@@ -5,7 +5,10 @@
 		]
 	},
 	"apihelp-query+globalusage-summary": "Ја дава глобалната употреба на дадена слика.",
-	"apihelp-query+globalusage-param-prop": "Кои својства да се дадат:\n;url: Додава URL.\n;pageid: Додава назнака на страницата.\n;namespace: Додава назнака на именскиот простор.",
+	"apihelp-query+globalusage-param-prop": "Кои својства да се дадат:",
+	"apihelp-query+globalusage-paramvalue-prop-url": "Додава URL.",
+	"apihelp-query+globalusage-paramvalue-prop-pageid": "Додава назнака на страница.",
+	"apihelp-query+globalusage-paramvalue-prop-namespace": "Додава назнака на именски простор.",
 	"apihelp-query+globalusage-param-limit": "Колку врски да се дадат.",
 	"apihelp-query+globalusage-param-filterlocal": "Филтрирај месна употреба на податотеката.",
 	"apihelp-query+globalusage-param-namespace": "Ограничи го исходот на овие именски простори.",
