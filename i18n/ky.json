@@ -6,9 +6,12 @@
 			"Bosogo"
 		]
 	},
-	"globalusage": "Файлдын глобалдык колдонуушу",
+	"globalusage": "Файлдын глобалдык колдонулушу",
+	"globalusage-filename": "Файлдын аталышы:",
 	"globalusage-ok": "Издөө",
+	"globalusage-no-results": "«[[:$1]]‎» башка викилерде колдонулбайт.",
 	"globalusage-on-wiki": "$2 долбоорунда колдонулат",
-	"globalusage-of-file": "Бул файл төмөнкү уикилерде колдонулат:",
-	"globalusage-more": "Бул файлдын [[{{#Special:GlobalUsage}}/$1|глобалдык колдонулушун]] көрүү."
+	"globalusage-of-file": "Бул файл төмөнкү викилерде колдонулат:",
+	"globalusage-more": "Бул файлдын [[{{#Special:GlobalUsage}}/$1|глобалдык колдонулушун]] көрүү.",
+	"globalusage-filterlocal": "Жергиликтүү колдонууну көрсөтпө"
 }
