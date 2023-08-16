@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"HalanTul"
+			"HalanTul",
+			"MARKSDNW"
 		]
 	},
 	"globalusage": "Билэни киэҥник туттуу",
@@ -11,7 +12,7 @@
 	"globalusage-text": "Киэҥник туттуллар билэни көрдөөһүн",
 	"globalusage-no-results": "[[:$1]] атын биикигэ туттуллубат.",
 	"globalusage-on-wiki": "Манна $2 туттуу",
-	"globalusage-of-file": "Бу билэ мннык биикилэргэ туттуллар:",
+	"globalusage-of-file": "Бу билэ маннык биикилэргэ туттуллар:",
 	"globalusage-more": "Билэ [[{{#Special:GlobalUsage}}/$1|киэҥник туттуллуутун]] көрүү.",
 	"globalusage-filterlocal": "Локаал туттууну көрдөрүмэ"
 }
