@@ -4,5 +4,7 @@
 			"Martindimaggio"
 		]
 	},
-	"globalusage-on-wiki": "Ghusarme mi $2"
+	"globalusage": "Usu të filit globali",
+	"globalusage-on-wiki": "Ghusarme mi $2",
+	"globalusage-of-file": "Edhè kto wiki çë vijën usarën stu file:"
 }
