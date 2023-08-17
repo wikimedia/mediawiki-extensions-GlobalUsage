@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"З. ӘЙЛЕ",
 			"Янмурза Баки"
 		]
 	},
-	"apihelp-query+globalusage-param-prop": "Ниндәй күрһәткестәрен кире ҡайтарырға:\n;url: URL-адрес өҫтәй.\n;pageid: ID битен өҫтәй.\n;namespace: ID исемдәр арауығын өҫтәй.",
+	"apihelp-query+globalusage-param-prop": "Ниндәй үҙенсәлектәрен кире ҡайтарырға:",
 	"apihelp-query+globalusage-param-limit": "Күпме һылтанмаларҙы кире ҡайтарырға.",
 	"apihelp-query+globalusage-param-filterlocal": "Файлдың локаль ҡулланылыуын һөҙөргә.",
 	"apihelp-query+globalusage-example-1": "[[:File:Example.jpg]] Ҡулланыу турһында мәғлүмәт алырға."
