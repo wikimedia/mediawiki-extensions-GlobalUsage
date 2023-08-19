@@ -10,6 +10,7 @@ use Html;
 use Linker;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Navigation\PagerNavigationBuilder;
+use MediaWiki\Title\Title;
 use MediaWiki\WikiMap\WikiMap;
 use OOUI\ButtonInputWidget;
 use OOUI\CheckboxInputWidget;
@@ -20,7 +21,6 @@ use OOUI\HtmlSnippet;
 use OOUI\PanelLayout;
 use OOUI\TextInputWidget;
 use SpecialPage;
-use Title;
 
 class SpecialGlobalUsage extends SpecialPage {
 	/**

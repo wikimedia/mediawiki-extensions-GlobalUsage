@@ -2,8 +2,8 @@
 
 namespace MediaWiki\Extension\GlobalUsage;
 
+use MediaWiki\Title\Title;
 use MediaWiki\WikiMap\WikiMap;
-use Title;
 use Wikimedia\Rdbms\IDatabase;
 
 /**
