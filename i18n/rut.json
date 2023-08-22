@@ -6,5 +6,6 @@
 	},
 	"globalusage": "Уртахды файл ишмлеш",
 	"globalusage-on-wiki": "Ишлемиш $2 ана",
-	"globalusage-of-file": "Мид файл ишлемиш руур мид вики-мы:"
+	"globalusage-of-file": "Мид файл ишлемиш руур мид вики-мы:",
+	"globalusage-more": "Гакъ мид файлад [[{{#Special:GlobalUsage}}/$1|глобальный ишлемиш ыIын]]."
 }
