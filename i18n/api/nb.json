@@ -5,7 +5,10 @@
 		]
 	},
 	"apihelp-query+globalusage-summary": "Returnerer global bildebruk for et visst bilde.",
-	"apihelp-query+globalusage-param-prop": "Hvilke egenskaper som skal returneres:\n;url:Legger til URL.\n;pageid:Legger til side-ID.\n;namespace:Legger til navneroms-ID.",
+	"apihelp-query+globalusage-param-prop": "Hvilke egenskaper som skal returneres:",
+	"apihelp-query+globalusage-paramvalue-prop-url": "Legger til URL.",
+	"apihelp-query+globalusage-paramvalue-prop-pageid": "Legger til side-ID.",
+	"apihelp-query+globalusage-paramvalue-prop-namespace": "Legger til navneroms-ID.",
 	"apihelp-query+globalusage-param-limit": "Hvor mange lenker som skal returneres.",
 	"apihelp-query+globalusage-param-filterlocal": "Filtrer lokal bruk av filen.",
 	"apihelp-query+globalusage-param-namespace": "Begrens resultatene til disse navnerommene.",
