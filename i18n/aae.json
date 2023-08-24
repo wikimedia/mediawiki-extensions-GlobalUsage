@@ -6,5 +6,6 @@
 	},
 	"globalusage": "Usu të filit globali",
 	"globalusage-on-wiki": "Ghusarme mi $2",
-	"globalusage-of-file": "Edhè kto wiki çë vijën usarën stu file:"
+	"globalusage-of-file": "Edhè kto wiki çë vijën usarën stu file:",
+	"globalusage-more": "Vrej [[{{#Special:GlobalUsage}}/$1|l'utilizzu globali]] të ktë file."
 }
