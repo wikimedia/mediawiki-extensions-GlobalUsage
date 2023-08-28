@@ -1,8 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Astahar",
 			"Chavash"
 		]
 	},
-	"globalusage": "Файлпа глобаллӑ усӑ курасси"
+	"globalusage": "Файлпа глобаллӑ усӑ курасси",
+	"globalusage-on-wiki": "$2 усӑ курасси",
+	"globalusage-of-file": "Ку файлпа ҫак викисенче усӑ курнӑ:",
+	"globalusage-more": "Ку файлпа [[{{#Special:GlobalUsage}}/$1|глобальлӗ]] епле усӑ курнине пӑх."
 }
