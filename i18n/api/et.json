@@ -5,8 +5,11 @@
 		]
 	},
 	"apihelp-query+globalusage-description": "Tagastab kindla pildi globaalse kasutuse.",
+	"apihelp-query+globalusage-summary": "Tagastab teabe kindla pildi globaalse kasutuse kohta.",
 	"apihelp-query+globalusage-param-prop": "Millised atribuudid tagastada:\n;url: Lisab internetiaadressi.\n;pageid: Lisab lehekülje identifikaatori.\n;namespace: Lisab nimeruumi identifikaatori.",
 	"apihelp-query+globalusage-param-limit": "Kui palju linke tagastada.",
 	"apihelp-query+globalusage-param-filterlocal": "Arva välja faili kohalik kasutus.",
+	"apihelp-query+globalusage-param-namespace": "Piirdu tulemustega neist nimeruumidest.",
+	"apihelp-query+globalusage-param-site": "Piirdu tulemustega neilt saitidelt.",
 	"apihelp-query+globalusage-example-1": "Hangi faili [[:File:Example.jpg|Example.jpg]] kasutus"
 }
