@@ -5,7 +5,18 @@
 		]
 	},
 	"globalusage": "Pemakéan berekas global",
+	"globalusage-for": "Pemakéan global bakal \"$1\"",
+	"globalusage-filename": "Nama berekas:",
+	"globalusage-ok": "Cari",
+	"globalusage-text": "Cari pemakéan berekas global",
+	"globalusage-no-results": "[[:$1]] kaga' dipaké di laèn-laèn wiki.",
 	"globalusage-on-wiki": "Pemakéan di $2",
 	"globalusage-of-file": "Ni laèn wiki maké ni berekas:",
-	"globalusage-more": "Deleng [[{{#Special:GlobalUsage}}/$1|lebi banyak pemakéan global]] deri ni berekas."
+	"globalusage-more": "Deleng [[{{#Special:GlobalUsage}}/$1|lebi banyak pemakéan global]] deri ni berekas.",
+	"globalusage-filterlocal": "Jangan kasi unjuk pemakéan setempat",
+	"mostgloballylinkedfiles": "Berekas nyang paling banyak disènggèt secara global",
+	"globallywantedfiles": "Berekas nyang dipèngènin secara global",
+	"globalusage-header": "Ni halaman ngasi unjuk di mana atu berekas dipaké di laèn-laèn wiki. Lu bisa juga' nemuin tu inpormasi di bawahnya halaman jabaran berekas.",
+	"globallyunusedfiles": "Berekas nyang kaga' kepaké secara global",
+	"globallyunusedfiles-error-nonsharedrepo": "Ni wiki bukan di gudang barengan"
 }
