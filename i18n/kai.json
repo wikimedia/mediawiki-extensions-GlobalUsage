@@ -4,5 +4,8 @@
 			"Musaddam Idriss"
 		]
 	},
-	"globalusage-on-wiki": "ampani a $2"
+	"globalusage": "Wàan ta shafi a baimàalā",
+	"globalusage-on-wiki": "ampani a $2",
+	"globalusage-of-file": "Aye wikis kinē ampani kà payiil ayam:",
+	"globalusage-more": "Nā [[{{#Special:GlobalUsage}}/$1|more global usage]] ma shafi ayam."
 }
