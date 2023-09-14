@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Winston Sung"
+			"Winston Sung",
+			"Benojan"
 		]
 	},
-	"globalusage-on-wiki": "$2上个用途"
+	"globalusage-on-wiki": "$2上个用法"
 }
