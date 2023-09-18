@@ -3,11 +3,13 @@
 		"authors": [
 			"Nayvik",
 			"Omshivaprakash",
-			"VASANTH S.N."
+			"VASANTH S.N.",
+			"~aanzx"
 		]
 	},
 	"globalusage": "ಜಾಗತಿಕ ಕಡತ ಉಪಯೋಗ",
 	"globalusage-ok": "ಹುಡುಕು",
 	"globalusage-on-wiki": "$2 ಮೇಲೆ ಬಳಕೆ",
-	"globalusage-of-file": "ಈ ಕಡತವನ್ನು ಕೆಳಗಿನ ಬೇರೆ ವಿಕಿಗಳೂ ಉಪಯೋಗಿಸುತ್ತಿವೆ:"
+	"globalusage-of-file": "ಈ ಕಡತವನ್ನು ಕೆಳಗಿನ ಬೇರೆ ವಿಕಿಗಳೂ ಉಪಯೋಗಿಸುತ್ತಿವೆ:",
+	"globalusage-more": "ಈ ಫೈಲ್‌ನ [[{{#Special:GlobalUsage}}/$1|ಹೆಚ್ಚು ಜಾಗತಿಕ ಬಳಕೆಯನ್ನು]] ವೀಕ್ಷಿಸಿ."
 }

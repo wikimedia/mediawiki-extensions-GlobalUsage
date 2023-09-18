@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Kurdbuddha",
-			"Paraw2"
+			"Paraw2",
+			"TerranBoy"
 		]
 	},
 	"globalusage": "ئەوکاربردن سەراێسەری پەڕگە",
-	"globalusage-ok": "جوورین",
-	"globalusage-on-wiki": "ئەوکاربردن لە $2",
+	"globalusage-ok": "مینەکردن",
+	"globalusage-on-wiki": "وەکاربردن لە $2",
 	"globalusage-of-file": "ئەی ویکیەیل ترەکیش ئەی پەڕگە ئەوکاربەن:"
 }
