@@ -6,7 +6,7 @@
 		]
 	},
 	"apihelp-query+globalusage-param-prop": "Ниндәй үҙенсәлектәрен кире ҡайтарырға:",
-	"apihelp-query+globalusage-param-limit": "Күпме һылтанмаларҙы кире ҡайтарырға.",
-	"apihelp-query+globalusage-param-filterlocal": "Файлдың локаль ҡулланылыуын һөҙөргә.",
-	"apihelp-query+globalusage-example-1": "[[:File:Example.jpg]] Ҡулланыу турһында мәғлүмәт алырға."
+	"apihelp-query+globalusage-param-limit": "Күпме һылтанманы кире ҡайтарырға.",
+	"apihelp-query+globalusage-param-filterlocal": "Файлдың локаль ҡулланылыуын фильтрларға.",
+	"apihelp-query+globalusage-example-1": "[[:File:Example.jpg]] ҡулланыу турһында мәғлүмәт алырға."
 }
