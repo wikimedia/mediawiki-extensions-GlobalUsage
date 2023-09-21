@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Саид Мисарбиев",
 			"Умар"
 		]
 	},
@@ -11,7 +12,7 @@
 	"globalusage-ok": "Лахар",
 	"globalusage-text": "Глобалан файл лелор лаха.",
 	"globalusage-no-results": "[[:$1]] кхечу викишкахь лелош йац.",
-	"globalusage-on-wiki": "Лелор [[:File:$1|$1]] $2 чохь",
+	"globalusage-on-wiki": "Лелор $2",
 	"globalusage-of-file": "ХӀара файл лелош йу лахахь гайтина йолу википедеш чохь:",
 	"globalusage-more": "Хьажа хӀара файл [[{{#Special:GlobalUsage}}/$1|глобалан лелор]].",
 	"globalusage-filterlocal": "Локалан лелор ма гайта",
