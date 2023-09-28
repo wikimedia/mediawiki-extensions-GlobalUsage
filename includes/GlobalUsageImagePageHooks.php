@@ -3,11 +3,16 @@
 namespace MediaWiki\Extension\GlobalUsage;
 
 use ImagePage;
+use MediaWiki\Page\Hook\ImagePageAfterImageLinksHook;
+use MediaWiki\Page\Hook\ImagePageShowTOCHook;
 use MediaWiki\Title\Title;
 use MediaWiki\WikiMap\WikiMap;
 use Sanitizer;
 
-class GlobalUsageImagePageHooks {
+class GlobalUsageImagePageHooks implements
+	ImagePageAfterImageLinksHook,
+	ImagePageShowTOCHook
+{
 	private static $queryCache = [];
 
 	/**
@@ -39,11 +44,10 @@ class GlobalUsageImagePageHooks {
 	 *
 	 * @param ImagePage $imagePage
 	 * @param string &$html HTML to add to the image page as global usage section
-	 * @return bool
 	 */
-	public static function onImagePageAfterImageLinks( $imagePage, &$html ) {
+	public function onImagePageAfterImageLinks( $imagePage, &$html ) {
 		if ( !self::hasResults( $imagePage ) ) {
-			return true;
+			return;
 		}
 
 		$context = $imagePage->getContext();
@@ -75,23 +79,19 @@ class GlobalUsageImagePageHooks {
 			}
 			$html .= '</div>';
 		}
-
-		return true;
 	}
 
 	/**
 	 * Show a link to the global image links in the TOC if there are any results available.
 	 * @param ImagePage $imagePage
 	 * @param array &$toc
-	 * @return bool
 	 */
-	public static function onImagePageShowTOC( $imagePage, &$toc ) {
+	public function onImagePageShowTOC( $imagePage, &$toc ) {
 		if ( self::hasResults( $imagePage ) ) {
 			# Insert a link after the 3rd entry in the TOC
 			array_splice( $toc, 3, 0, '<li><a href="#globalusage">'
 				. $imagePage->getContext()->msg( 'globalusage' )->escaped() . '</a></li>' );
 		}
-		return true;
 	}
 
 	/**

@@ -47,16 +47,27 @@
 		"MediaWiki\\Extension\\GlobalUsage\\": "includes/"
 	},
 	"Hooks": {
-		"LinksUpdateComplete": "MediaWiki\\Extension\\GlobalUsage\\Hooks::onLinksUpdateComplete",
-		"ArticleDeleteComplete": "MediaWiki\\Extension\\GlobalUsage\\Hooks::onArticleDeleteComplete",
-		"FileDeleteComplete": "MediaWiki\\Extension\\GlobalUsage\\Hooks::onFileDeleteComplete",
-		"FileUndeleteComplete": "MediaWiki\\Extension\\GlobalUsage\\Hooks::onFileUndeleteComplete",
-		"UploadComplete": "MediaWiki\\Extension\\GlobalUsage\\Hooks::onUploadComplete",
-		"ImagePageAfterImageLinks": "MediaWiki\\Extension\\GlobalUsage\\GlobalUsageImagePageHooks::onImagePageAfterImageLinks",
-		"ImagePageShowTOC": "MediaWiki\\Extension\\GlobalUsage\\GlobalUsageImagePageHooks::onImagePageShowTOC",
-		"PageMoveComplete": "MediaWiki\\Extension\\GlobalUsage\\Hooks::onPageMoveComplete",
-		"LoadExtensionSchemaUpdates": "MediaWiki\\Extension\\GlobalUsage\\Hooks::onLoadExtensionSchemaUpdates",
-		"wgQueryPages": "MediaWiki\\Extension\\GlobalUsage\\Hooks::onwgQueryPages"
+		"LinksUpdateComplete": "main",
+		"ArticleDeleteComplete": "main",
+		"FileDeleteComplete": "main",
+		"FileUndeleteComplete": "main",
+		"UploadComplete": "main",
+		"ImagePageAfterImageLinks": "imagepage",
+		"ImagePageShowTOC": "imagepage",
+		"PageMoveComplete": "main",
+		"LoadExtensionSchemaUpdates": "schema",
+		"wgQueryPages": "main"
+	},
+	"HookHandlers": {
+		"main": {
+			"class": "MediaWiki\\Extension\\GlobalUsage\\Hooks"
+		},
+		"imagepage": {
+			"class": "MediaWiki\\Extension\\GlobalUsage\\GlobalUsageImagePageHooks"
+		},
+		"schema": {
+			"class": "MediaWiki\\Extension\\GlobalUsage\\SchemaHooks"
+		}
 	},
 	"config": {
 		"GlobalUsageDatabase": {

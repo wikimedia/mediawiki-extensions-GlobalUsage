@@ -7,28 +7,45 @@
 
 namespace MediaWiki\Extension\GlobalUsage;
 
-use Article;
-use DatabaseUpdater;
-use File;
+use Content;
 use FileRepo;
 use LinksUpdate;
+use LocalFile;
+use ManualLogEntry;
+use MediaWiki\Hook\FileDeleteCompleteHook;
+use MediaWiki\Hook\FileUndeleteCompleteHook;
+use MediaWiki\Hook\LinksUpdateCompleteHook;
+use MediaWiki\Hook\PageMoveCompleteHook;
+use MediaWiki\Hook\UploadCompleteHook;
 use MediaWiki\Linker\LinkTarget;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Page\Hook\ArticleDeleteCompleteHook;
 use MediaWiki\Revision\RevisionRecord;
+use MediaWiki\SpecialPage\Hook\WgQueryPagesHook;
 use MediaWiki\Title\Title;
 use MediaWiki\User\UserIdentity;
 use MediaWiki\WikiMap\WikiMap;
+use UploadBase;
 use User;
+use WikiFilePage;
+use WikiPage;
 
-class Hooks {
+class Hooks implements
+	LinksUpdateCompleteHook,
+	ArticleDeleteCompleteHook,
+	FileDeleteCompleteHook,
+	FileUndeleteCompleteHook,
+	UploadCompleteHook,
+	PageMoveCompleteHook,
+	WgQueryPagesHook
+{
 	/**
 	 * Hook to LinksUpdateComplete
 	 * Deletes old links from usage table and insert new ones.
 	 * @param LinksUpdate $linksUpdater
 	 * @param int|null $ticket
-	 * @return bool
 	 */
-	public static function onLinksUpdateComplete( LinksUpdate $linksUpdater, $ticket = null ) {
+	public function onLinksUpdateComplete( $linksUpdater, $ticket ) {
 		$title = $linksUpdater->getTitle();
 
 		// Create a list of locally existing images (DB keys)
@@ -61,8 +78,6 @@ class Hooks {
 		if ( $removed ) {
 			$gu->deleteLinksFromPage( $articleId, $removed, $ticket );
 		}
-
-		return true;
 	}
 
 	/**
@@ -76,16 +91,15 @@ class Hooks {
 	 * @param int $redirid
 	 * @param string $reason
 	 * @param RevisionRecord $revisionRecord
-	 * @return bool
 	 */
-	public static function onPageMoveComplete(
-		LinkTarget $ot,
-		LinkTarget $nt,
-		UserIdentity $user,
-		int $pageid,
-		int $redirid,
-		string $reason,
-		RevisionRecord $revisionRecord
+	public function onPageMoveComplete(
+		$ot,
+		$nt,
+		$user,
+		$pageid,
+		$redirid,
+		$reason,
+		$revisionRecord
 	) {
 		$ot = Title::newFromLinkTarget( $ot );
 		$nt = Title::newFromLinkTarget( $nt );
@@ -106,39 +120,38 @@ class Hooks {
 				MediaWikiServices::getInstance()->getJobQueueGroupFactory()->makeJobQueueGroup()->lazyPush( $jobs );
 			}, __METHOD__ );
 		}
-
-		return true;
 	}
 
 	/**
 	 * Hook to ArticleDeleteComplete
 	 * Deletes entries from usage table.
-	 * @param Article $article
+	 * @param WikiPage $article
 	 * @param User $user
 	 * @param string $reason
 	 * @param int $id
-	 * @return bool
+	 * @param Content|null $content
+	 * @param ManualLogEntry $logEntry
+	 * @param int $archivedRevisionCount
 	 */
-	public static function onArticleDeleteComplete( $article, $user, $reason, $id ) {
+	public function onArticleDeleteComplete( $article, $user, $reason, $id,
+		$content, $logEntry, $archivedRevisionCount
+	) {
 		$gu = self::getGlobalUsage();
 		// @FIXME: avoid making DB replication lag
 		$gu->deleteLinksFromPage( $id );
-
-		return true;
 	}
 
 	/**
 	 * Hook to FileDeleteComplete
 	 * Copies the local link table to the global.
 	 * Purges all pages in the wiki farm that use the file if it is a shared repo file.
-	 * @param File $file
-	 * @param File $oldimage
-	 * @param Article $article
+	 * @param LocalFile $file
+	 * @param string|null $oldimage
+	 * @param WikiFilePage|null $article
 	 * @param User $user
 	 * @param string $reason
-	 * @return bool
 	 */
-	public static function onFileDeleteComplete( $file, $oldimage, $article, $user, $reason ) {
+	public function onFileDeleteComplete( $file, $oldimage, $article, $user, $reason ) {
 		if ( !$oldimage ) {
 			if ( !GlobalUsage::onSharedRepo() ) {
 				$gu = self::getGlobalUsage();
@@ -150,8 +163,6 @@ class Hooks {
 				MediaWikiServices::getInstance()->getJobQueueGroupFactory()->makeJobQueueGroup()->push( $job );
 			}
 		}
-
-		return true;
 	}
 
 	/**
@@ -162,9 +173,8 @@ class Hooks {
 	 * @param array $versions
 	 * @param User $user
 	 * @param string $reason
-	 * @return bool
 	 */
-	public static function onFileUndeleteComplete( $title, $versions, $user, $reason ) {
+	public function onFileUndeleteComplete( $title, $versions, $user, $reason ) {
 		$gu = self::getGlobalUsage();
 		$gu->deleteLinksToFile( $title );
 
@@ -172,18 +182,15 @@ class Hooks {
 			$job = new GlobalUsageCachePurgeJob( $title, [] );
 			MediaWikiServices::getInstance()->getJobQueueGroupFactory()->makeJobQueueGroup()->push( $job );
 		}
-
-		return true;
 	}
 
 	/**
 	 * Hook to UploadComplete
 	 * Deletes the file from the global link table.
 	 * Purges all pages in the wiki farm that use the file if it is a shared repo file.
-	 * @param File $upload
-	 * @return bool
+	 * @param UploadBase $upload
 	 */
-	public static function onUploadComplete( $upload ) {
+	public function onUploadComplete( $upload ) {
 		$gu = self::getGlobalUsage();
 		$gu->deleteLinksToFile( $upload->getTitle() );
 
@@ -191,8 +198,6 @@ class Hooks {
 			$job = new GlobalUsageCachePurgeJob( $upload->getTitle(), [] );
 			MediaWikiServices::getInstance()->getJobQueueGroupFactory()->makeJobQueueGroup()->push( $job );
 		}
-
-		return true;
 	}
 
 	/**
@@ -220,35 +225,11 @@ class Hooks {
 		);
 	}
 
-	/**
-	 * Hook to apply schema changes
-	 *
-	 * @param DatabaseUpdater $updater
-	 * @return bool
-	 */
-	public static function onLoadExtensionSchemaUpdates( DatabaseUpdater $updater ) {
-		$dir = dirname( __DIR__ ) . '/sql';
-
-		$type = $updater->getDB()->getType();
-		$updater->addExtensionTable( 'globalimagelinks', "$dir/$type/tables-generated.sql" );
-
-		if ( $type === 'mysql' || $type === 'sqlite' ) {
-			// 1.35
-			$updater->dropExtensionIndex(
-				'globalimagelinks',
-				'globalimagelinks_to_wiki_page',
-				"$dir/patch-globalimagelinks-pk.sql"
-			);
-		}
-		return true;
-	}
-
-	public static function onwgQueryPages( &$queryPages ) {
+	public function onWgQueryPages( &$queryPages ) {
 		$queryPages[] = [ 'SpecialMostGloballyLinkedFiles', 'MostGloballyLinkedFiles' ];
 		$queryPages[] = [ 'SpecialGloballyWantedFiles', 'GloballyWantedFiles' ];
 		if ( GlobalUsage::onSharedRepo() ) {
 			$queryPages[] = [ 'SpecialGloballyUnusedFiles', 'GloballyUnusedFiles' ];
 		}
-		return true;
 	}
 }
