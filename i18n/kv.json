@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Enye Lav"
+			"Enye Lav",
+			"СерМар"
 		]
 	},
 	"globalusage": "Файлнас глобальнӧя вӧдитчӧм",
-	"globalusage-on-wiki": "Вӧдитчӧны $2-ын"
+	"globalusage-on-wiki": "Вӧдитчӧны $2-ын",
+	"globalusage-of-file": "Тайӧ файлӧн вӧдитчӧны мукӧд викиын:",
+	"globalusage-more": "Видзӧдлыны тайӧ файлӧн[[{{#Special:GlobalUsage}}/$1|быдлаын вӧдитчӧмсӧ]]."
 }
