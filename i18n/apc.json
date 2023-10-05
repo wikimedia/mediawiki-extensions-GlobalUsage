@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"FunLater"
+		]
+	},
+	"globalusage": "إستعمال العالمي للملف",
+	"globalusage-on-wiki": "الإستعمال ع $2",
+	"globalusage-of-file": "هيدي الويكيات التانية بتستعمل هيدا الملف:",
+	"globalusage-more": "فرجى [[{{#Special:GlobalUsage}}/$1|بعد من الإستخدام العام]] تبع هيدا الملف."
+}

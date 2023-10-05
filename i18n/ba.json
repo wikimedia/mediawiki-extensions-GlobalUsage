@@ -9,7 +9,7 @@
 			"З. ӘЙЛЕ"
 		]
 	},
-	"globalusage": "Файлды дөйөм ҡулланыу",
+	"globalusage": "Файлды глобаль ҡулланыу",
 	"globalusage-for": "\"$1\" файлын дөйөм ҡулланыу",
 	"globalusage-desc": "Файлды дөйөм ҡулланыуҙы ҡарау өсөн [[Special:GlobalUsage|махсус бит]]",
 	"globalusage-ok": "Эҙләү",
@@ -17,7 +17,7 @@
 	"globalusage-no-results": "[[:$1]] башҡа вики-проекттарҙа ҡулланылмай.",
 	"globalusage-on-wiki": "$2 проектында ҡулланыу",
 	"globalusage-of-file": "Был файл түбәндәге википроекттарҙа ҡулланыла:",
-	"globalusage-more": "Был файлды [[{{#Special:GlobalUsage}}/$1|дөйөм ҡулланыу тураһында]] ҡарарға.",
+	"globalusage-more": "Был файлды [[{{#Special:GlobalUsage}}/$1|глобаль ҡулланыуҙы]] ҡарарға.",
 	"globalusage-filterlocal": "Локаль ҡулланыуҙы күрһәтмәҫкә",
 	"mostgloballylinkedfiles": "Глобаль бәйләнештәре иң күп булған файлдар.",
 	"mostgloballylinkedfiles-summary": "Бөтә вики-проекттарҙа иң күп ҡулланылған файлдарҙың исемлеге. «{{SITENAME}}» сайтында ғына ҡулланылған шундай уҡ исемлекте ҡарар өсөн [[{{#special:MostLinkedFiles}}]] күсегеҙ.",

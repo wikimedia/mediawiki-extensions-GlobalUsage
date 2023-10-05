@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Huuchin"
+			"Huuchin",
+			"Ukhant Erdemt"
 		]
 	},
 	"globalusage": "Делкән боомгин кергллт",
 	"globalusage-on-wiki": "$2 талд керглсн",
-	"globalusage-of-file": "Эн викист эн боомг керглгднә:"
+	"globalusage-of-file": "Эн викист эн боомг керглгднә:",
+	"globalusage-more": "View [[{{#Special:GlobalUsage}}/$1|more global usage]] of this file."
 }
