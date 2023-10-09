@@ -1,10 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Игорь Бродский"
+			"Игорь Бродский",
+			"Лариса Чиркова"
 		]
 	},
-	"globalusage": "Failan globaline kävutamine",
+	"globalusage": "Failan leved kävutamine",
 	"globalusage-ok": "Ectä",
-	"globalusage-on-wiki": "Failan kävutamine $2-vikiš"
+	"globalusage-on-wiki": "Kävuta $2",
+	"globalusage-of-file": "Uded wiki-lehtpoled kävutoitaba necen failan:",
+	"globalusage-more": "Kacu[[{{#Special:GlobalUsage}}/$1|levenzoitud kävutamine]] neciš failas."
 }
