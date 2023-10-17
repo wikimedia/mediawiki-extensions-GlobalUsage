@@ -2,12 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Ilja.mos",
-			"Mashoi7"
+			"Mashoi7",
+			"Ruppijeva"
 		]
 	},
-	"globalusage": "Globualine failan käyttö",
+	"globalusage": "Tiijoston globualline käyttö",
 	"globalusage-ok": "Eči",
 	"globalusage-on-wiki": "$2 käyttö",
-	"globalusage-of-file": "Nämmä wikit käytetäh tädä failua:",
+	"globalusage-of-file": "Nämmä jällesolijat wikit käytetäh tädä tiedostuo:",
 	"globalusage-more": "Kačo ližiä tämän failan  [[{{#Special:GlobalUsage}}/$1|globalnoidu käyttyö]]."
 }
