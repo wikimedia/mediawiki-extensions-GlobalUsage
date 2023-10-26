@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Huuchin",
-			"Ukhant Erdemt"
+			"Ukhant Erdemt",
+			"Алия"
 		]
 	},
-	"globalusage": "Делкән боомгин кергллт",
-	"globalusage-on-wiki": "$2 талд керглсн",
-	"globalusage-of-file": "Эн викист эн боомг керглгднә:",
+	"globalusage": "Файлын керглән (бүк төсл)",
+	"globalusage-on-wiki": "$2-дк керглән",
+	"globalusage-of-file": "Эн файл дарук викист ашглгддг:",
 	"globalusage-more": "View [[{{#Special:GlobalUsage}}/$1|more global usage]] of this file."
 }
