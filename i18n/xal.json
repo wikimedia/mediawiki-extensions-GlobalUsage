@@ -9,5 +9,5 @@
 	"globalusage": "Файлын керглән (бүк төсл)",
 	"globalusage-on-wiki": "$2-дк керглән",
 	"globalusage-of-file": "Эн файл дарук викист ашглгддг:",
-	"globalusage-more": "View [[{{#Special:GlobalUsage}}/$1|more global usage]] of this file."
+	"globalusage-more": "Эн файлын [[{{#Special:GlobalUsage}}/$1|бүк кергләг]] үзх."
 }
