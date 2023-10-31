@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"AlexandrL714"
+			"AlexandrL714",
+			"Oxianboal"
 		]
 	},
 	"globalusage": "Файлның глобальнай тузаланызы",
-	"globalusage-on-wiki": "Тузаланғаны $2",
-	"globalusage-of-file": "Пу файл пу викилерде тузаланылча:"
+	"globalusage-on-wiki": "$2 тузаланғаны",
+	"globalusage-of-file": "Пу файл пу викилерде тузаланылча:",
+	"globalusage-more": "Файлның [[{{#Special:GlobalUsage}}/$1|Тиксi тилекейде]] тузаланғанын кӧзідерге."
 }

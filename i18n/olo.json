@@ -8,7 +8,7 @@
 	},
 	"globalusage": "Tiijoston globualline käyttö",
 	"globalusage-ok": "Eči",
-	"globalusage-on-wiki": "$2 käyttö",
-	"globalusage-of-file": "Nämmä jällesolijat wikit käytetäh tädä tiedostuo:",
+	"globalusage-on-wiki": "käyttö $2 kohtas",
+	"globalusage-of-file": "Nämmä jällesolijat wikit käytetäh tädä tiijostuo:",
 	"globalusage-more": "Kačo ližiä tämän tiijoston  [[{{#Special:GlobalUsage}}/$1|globuallizes käytös]]."
 }
