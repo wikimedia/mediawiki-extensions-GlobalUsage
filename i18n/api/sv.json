@@ -6,7 +6,10 @@
 		]
 	},
 	"apihelp-query+globalusage-summary": "Returnerar global bildanvändning för en särskild bild.",
-	"apihelp-query+globalusage-param-prop": "Vilka egenskaper att återvända:\n;url:Lägger till url.\n;sidid:Lägger till sid-ID.\n;namespace:Lägger till namnrymd-ID.",
+	"apihelp-query+globalusage-param-prop": "Vilka egenskaper som ska returneras:",
+	"apihelp-query+globalusage-paramvalue-prop-url": "Lägger till webbadress.",
+	"apihelp-query+globalusage-paramvalue-prop-pageid": "Lägger till sidans ID.",
+	"apihelp-query+globalusage-paramvalue-prop-namespace": "Lägger till namnrymdens ID.",
 	"apihelp-query+globalusage-param-limit": "Hur många länkar som ska returneras.",
 	"apihelp-query+globalusage-param-filterlocal": "Filtrera lokal användning av filen.",
 	"apihelp-query+globalusage-param-namespace": "Begränsa resultaten till dessa namnrymder.",
