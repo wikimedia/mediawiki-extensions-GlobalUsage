@@ -18,5 +18,6 @@
 	"globalusage-filterlocal": "Локалан лелор ма гайта",
 	"globallywantedfiles": "Глобалан оьшу файлаш",
 	"globalusage-header": "ХӀокху агӀонгахь гойту кхечу вики-проекташкахь файл лелор. ХӀара хаам каро йиш йу файлан агӀонан лахарчу декъехь.",
-	"globallyunusedfiles": "Файл глобалан лелор"
+	"globallyunusedfiles": "Файл глобалан лелор",
+	"globallyunusedfiles-error-nonsharedrepo": "ХӀара вики йукъара репозиторин йукъатоьхна йац"
 }

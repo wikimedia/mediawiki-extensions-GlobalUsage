@@ -3,7 +3,8 @@
 		"authors": [
 			"GuoPC",
 			"Liuxinyu970226",
-			"Xiplus"
+			"Xiplus",
+			"星海"
 		]
 	},
 	"apihelp-query+globalusage-summary": "返回某一图片的全域图片使用。",
@@ -13,5 +14,7 @@
 	"apihelp-query+globalusage-paramvalue-prop-namespace": "添加命名空间ID。",
 	"apihelp-query+globalusage-param-limit": "返回的链接数。",
 	"apihelp-query+globalusage-param-filterlocal": "过滤文件的本地用途。",
+	"apihelp-query+globalusage-param-namespace": "将结果限制为这些命名空间。",
+	"apihelp-query+globalusage-param-site": "将结果限制在这些站点上。",
 	"apihelp-query+globalusage-example-1": "获取[[:File:Example.jpg]]的用途"
 }

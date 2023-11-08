@@ -3,7 +3,8 @@
 		"authors": [
 			"Cwlin0416",
 			"Kly",
-			"Winston Sung"
+			"Winston Sung",
+			"星海"
 		]
 	},
 	"apihelp-query+globalusage-summary": "回傳特定圖片的全域圖片使用狀況。",
@@ -14,6 +15,6 @@
 	"apihelp-query+globalusage-param-limit": "要回傳多少連結。",
 	"apihelp-query+globalusage-param-filterlocal": "過濾檔案的本地使用狀況。",
 	"apihelp-query+globalusage-param-namespace": "對這些命名空間限制結果",
-	"apihelp-query+globalusage-param-site": "對這些站台限制結果。",
+	"apihelp-query+globalusage-param-site": "對這些站點限制結果。",
 	"apihelp-query+globalusage-example-1": "取得 [[:File:Example.jpg]] 的使用狀況"
 }
