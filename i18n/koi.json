@@ -5,5 +5,7 @@
 		]
 	},
 	"globalusage": "Файл паськыта уджӧтӧм",
-	"globalusage-on-wiki": "$2 -ын уджӧтӧм"
+	"globalusage-on-wiki": "$2 -ын уджӧтӧм",
+	"globalusage-of-file": "Этія файлсӧ пыртӧны уджӧ татшӧм викиын:",
+	"globalusage-more": "Синмавны[[{{#Special:GlobalUsage}}/$1|паськыта уджӧ пыртӧм]]этія файллісь"
 }
