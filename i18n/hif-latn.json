@@ -11,5 +11,5 @@
 	"globalusage-ok": "Khojo",
 	"globalusage-on-wiki": "$2 pe upyog",
 	"globalusage-of-file": "Ii aur duusra wiki ii file ke use kare hai:",
-	"globalusage-more": "View [[{{#Special:GlobalUsage}}/$1|more global usage]] of this file."
+	"globalusage-more": "Ii file ke [[{{#Special:GlobalUsage}}/$1|more global usage]] kedekho."
 }
