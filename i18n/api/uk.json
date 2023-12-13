@@ -7,7 +7,10 @@
 		]
 	},
 	"apihelp-query+globalusage-summary": "Видає глобальне використання певного зображення.",
-	"apihelp-query+globalusage-param-prop": "Які властивості виводити:\n;url:Додає url.\n;pageid:Додає ID сторінки.\n;namespace:Додає ID простору назв.",
+	"apihelp-query+globalusage-param-prop": "Які властивості виводити:",
+	"apihelp-query+globalusage-paramvalue-prop-url": "Додає url.",
+	"apihelp-query+globalusage-paramvalue-prop-pageid": "Додає ID сторінки.",
+	"apihelp-query+globalusage-paramvalue-prop-namespace": "Додає ID простору назв.",
 	"apihelp-query+globalusage-param-limit": "Скільки посилань виводити.",
 	"apihelp-query+globalusage-param-filterlocal": "Відфільтрувати локальне використання файлу.",
 	"apihelp-query+globalusage-param-namespace": "Обмежити результати до цих просторів назв.",
