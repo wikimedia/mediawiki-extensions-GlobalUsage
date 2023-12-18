@@ -6,7 +6,7 @@
 		]
 	},
 	"globalusage": "Бүхы түсэлөөр файл хэрэглэлгэ",
-	"globalusage-on-wiki": "$2 дахин хэрэглэхэ",
+	"globalusage-on-wiki": "$2 соо хэрэглэлгэ",
 	"globalusage-of-file": "Энэ файл удаадахи викинүүдтэ хэрэглэгдэнэ гэбэл:",
 	"globalusage-more": "Энэ  файлай [[{{#Special:GlobalUsage}}/$1| ехэ хэмжээнэй хэрэглэлгые]] хараха."
 }

@@ -3,12 +3,13 @@
 		"authors": [
 			"Cwlin0416",
 			"Kly",
+			"SunAfterRain",
 			"Winston Sung",
 			"星海"
 		]
 	},
 	"apihelp-query+globalusage-summary": "回傳特定圖片的全域圖片使用狀況。",
-	"apihelp-query+globalusage-param-prop": "要回傳的屬性：\n;url:加入 url。\n;pageid:加入頁面 ID。\n;namespace:加入命名空間 ID。",
+	"apihelp-query+globalusage-param-prop": "返回的屬性：",
 	"apihelp-query+globalusage-paramvalue-prop-url": "新增URL。",
 	"apihelp-query+globalusage-paramvalue-prop-pageid": "新增頁面ID。",
 	"apihelp-query+globalusage-paramvalue-prop-namespace": "新增命名空間ID。",
