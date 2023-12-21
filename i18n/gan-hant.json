@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Symane"
+			"Symane",
+			"ZhuofanWu"
 		]
 	},
-	"globalusage-ok": "尋吖"
+	"globalusage": "全域文件用途",
+	"globalusage-ok": "尋吖",
+	"globalusage-on-wiki": "$2 嗰使用狀況"
 }
