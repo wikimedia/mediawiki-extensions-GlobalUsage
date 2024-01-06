@@ -10,15 +10,15 @@
 
 namespace MediaWiki\Extension\GlobalUsage;
 
-use Html;
 use MediaWiki\Cache\LinkBatchFactory;
+use MediaWiki\Html\Html;
+use MediaWiki\SpecialPage\SpecialPage;
+use MediaWiki\SpecialPage\WantedQueryPage;
 use MediaWiki\Title\Title;
 use MediaWiki\WikiMap\WikiMap;
 use RepoGroup;
 use Skin;
-use SpecialPage;
 use stdClass;
-use WantedQueryPage;
 use Wikimedia\Rdbms\ILoadBalancer;
 
 class SpecialGloballyWantedFiles extends WantedQueryPage {

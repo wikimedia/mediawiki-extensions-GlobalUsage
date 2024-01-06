@@ -9,9 +9,9 @@ namespace MediaWiki\Extension\GlobalUsage;
 
 use Content;
 use FileRepo;
-use LinksUpdate;
 use LocalFile;
 use ManualLogEntry;
+use MediaWiki\Deferred\LinksUpdate\LinksUpdate;
 use MediaWiki\Hook\FileDeleteCompleteHook;
 use MediaWiki\Hook\FileUndeleteCompleteHook;
 use MediaWiki\Hook\LinksUpdateCompleteHook;
@@ -23,10 +23,10 @@ use MediaWiki\Page\Hook\ArticleDeleteCompleteHook;
 use MediaWiki\Revision\RevisionRecord;
 use MediaWiki\SpecialPage\Hook\WgQueryPagesHook;
 use MediaWiki\Title\Title;
+use MediaWiki\User\User;
 use MediaWiki\User\UserIdentity;
 use MediaWiki\WikiMap\WikiMap;
 use UploadBase;
-use User;
 use WikiFilePage;
 use WikiPage;
 

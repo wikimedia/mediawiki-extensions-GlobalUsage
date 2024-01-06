@@ -2,8 +2,8 @@
 
 namespace MediaWiki\Extension\GlobalUsage;
 
-use DeferredUpdates;
 use IContextSource;
+use MediaWiki\Deferred\DeferredUpdates;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
 use MediaWiki\WikiMap\WikiMap;

@@ -6,7 +6,7 @@
 	"descriptionmsg": "globalusage-desc",
 	"license-name": "MIT",
 	"requires": {
-		"MediaWiki": ">= 1.41"
+		"MediaWiki": ">= 1.42"
 	},
 	"type": "specialpage",
 	"SpecialPages": {

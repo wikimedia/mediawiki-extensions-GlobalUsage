@@ -26,7 +26,7 @@ namespace MediaWiki\Extension\GlobalUsage;
 
 use ErrorPageError;
 use Exception;
-use ImageQueryPage;
+use MediaWiki\SpecialPage\ImageQueryPage;
 use MediaWiki\WikiMap\WikiMap;
 
 /**

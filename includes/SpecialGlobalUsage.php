@@ -6,10 +6,11 @@
 
 namespace MediaWiki\Extension\GlobalUsage;
 
-use Html;
-use Linker;
+use MediaWiki\Html\Html;
+use MediaWiki\Linker\Linker;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Navigation\PagerNavigationBuilder;
+use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Title\Title;
 use MediaWiki\WikiMap\WikiMap;
 use OOUI\ButtonInputWidget;
@@ -20,7 +21,6 @@ use OOUI\FormLayout;
 use OOUI\HtmlSnippet;
 use OOUI\PanelLayout;
 use OOUI\TextInputWidget;
-use SpecialPage;
 
 class SpecialGlobalUsage extends SpecialPage {
 	/**

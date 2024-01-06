@@ -5,9 +5,9 @@ namespace MediaWiki\Extension\GlobalUsage;
 use ImagePage;
 use MediaWiki\Page\Hook\ImagePageAfterImageLinksHook;
 use MediaWiki\Page\Hook\ImagePageShowTOCHook;
+use MediaWiki\Parser\Sanitizer;
 use MediaWiki\Title\Title;
 use MediaWiki\WikiMap\WikiMap;
-use Sanitizer;
 
 class GlobalUsageImagePageHooks implements
 	ImagePageAfterImageLinksHook,

@@ -10,8 +10,8 @@
 namespace MediaWiki\Extension\GlobalUsage;
 
 use Exception;
-use ImageQueryPage;
 use MediaWiki\Cache\LinkBatchFactory;
+use MediaWiki\SpecialPage\ImageQueryPage;
 use MediaWiki\WikiMap\WikiMap;
 use Wikimedia\Rdbms\IDatabase;
 use Wikimedia\Rdbms\ILoadBalancer;
