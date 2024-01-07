@@ -399,11 +399,13 @@ $specialPageAliases['zh-hans'] = [
 	'GlobalUsage' => [ '全域使用情况' ],
 	'MostGloballyLinkedFiles' => [ '全域最多链接文件' ],
 	'GloballyWantedFiles' => [ '全域需要的文件' ],
+	'GloballyUnusedFiles' => [ '全域未使用文件' ],
 ];
 
 /** Traditional Chinese (中文（繁體）‎) */
 $specialPageAliases['zh-hant'] = [
 	'GlobalUsage' => [ '全域使用狀況' ],
-	'MostGloballyLinkedFiles' => [ '全域最多連接檔案' ],
+	'MostGloballyLinkedFiles' => [ '全域最多連結檔案', '全域最多連接檔案' ],
 	'GloballyWantedFiles' => [ '全域需要的檔案' ],
+	'GloballyUnusedFiles' => [ '全域未使用的檔案' ],
 ];
