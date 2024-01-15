@@ -6,7 +6,7 @@
 		]
 	},
 	"globalusage": "Файлнаң прай чирде тузаланары",
-	"globalusage-on-wiki": "тузаланғаны $2",
+	"globalusage-on-wiki": "Тузаланғаны $2",
 	"globalusage-of-file": "Пу файл пу викилерде тузаланылча:",
 	"globalusage-more": "Пу файлның [[{{#Special:GlobalUsage}}/$1|тиксi тузаланылғанын]] кӧрерге."
 }
