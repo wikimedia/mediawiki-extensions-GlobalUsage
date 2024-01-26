@@ -97,7 +97,7 @@ class RefreshGlobalimagelinks extends Maintenance {
 						$title = Title::newFromRow( reset( $rows ) );
 						$images = array_keys( $rows );
 						# Since we have a pretty accurate page_id, don't specify
-						# Title::GAID_FOR_UPDATE
+						# IDBAccessObject::READ_LATEST
 						$gu->insertLinks( $title, $images, /* $flags */ 0 );
 					}
 				}
