@@ -9,6 +9,7 @@ namespace MediaWiki\Extension\GlobalUsage;
 
 use Content;
 use FileRepo;
+use IDBAccessObject;
 use LocalFile;
 use ManualLogEntry;
 use MediaWiki\Deferred\LinksUpdate\LinksUpdate;
@@ -66,7 +67,7 @@ class Hooks implements
 		$missingFiles = array_diff( $images, $localFiles );
 
 		$gu = self::getGlobalUsage();
-		$articleId = $title->getArticleID( Title::READ_NORMAL );
+		$articleId = $title->getArticleID( IDBAccessObject::READ_NORMAL );
 		$existing = $gu->getLinksFromPage( $articleId );
 
 		// Calculate changes
@@ -74,7 +75,7 @@ class Hooks implements
 		$removed = array_diff( $existing, $missingFiles );
 
 		// Add new usages and delete removed
-		$gu->insertLinks( $title, $added, Title::READ_LATEST, $ticket );
+		$gu->insertLinks( $title, $added, IDBAccessObject::READ_LATEST, $ticket );
 		if ( $removed ) {
 			$gu->deleteLinksFromPage( $articleId, $removed, $ticket );
 		}

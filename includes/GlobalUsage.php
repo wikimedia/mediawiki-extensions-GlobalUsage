@@ -3,6 +3,7 @@
 namespace MediaWiki\Extension\GlobalUsage;
 
 use IContextSource;
+use IDBAccessObject;
 use MediaWiki\Deferred\DeferredUpdates;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
@@ -45,7 +46,7 @@ class GlobalUsage {
 	 * @param int|null $ticket
 	 */
 	public function insertLinks(
-		Title $title, array $images, $pageIdFlags = Title::READ_LATEST, $ticket = null
+		Title $title, array $images, $pageIdFlags = IDBAccessObject::READ_LATEST, $ticket = null
 	) {
 		global $wgUpdateRowsPerQuery;
 
