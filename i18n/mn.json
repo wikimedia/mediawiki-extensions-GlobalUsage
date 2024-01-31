@@ -1,10 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Chinneeb"
+			"Chinneeb",
+			"Enkhsaihan2005"
 		]
 	},
 	"globalusage": "Файлын хэрэглээ (бүх төсөл)",
 	"globalusage-ok": "Хайх",
-	"globalusage-on-wiki": "$2 дахь хэрэглээ"
+	"globalusage-on-wiki": "$2 дахь хэрэглээ",
+	"globalusage-of-file": "Дараах бусад вики энэ файлыг ашигладаг:",
+	"globalusage-more": "Энэ файлын [[{{#Special:GlobalUsage}}/$1|дэлхийн хэрэглээг]] харах."
 }
