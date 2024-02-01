@@ -5,7 +5,10 @@
 		]
 	},
 	"apihelp-query+globalusage-summary": "Torne l'ause de l'immaggine globbale pe 'na certe immaggine.",
-	"apihelp-query+globalusage-param-prop": "Ce probbietà ha turnà:\n;url:Aggiunge url.\n;pageid:Aggiunge ID d'a pàgene.\n;namespace:Aggiunge ID d'u namespace.",
+	"apihelp-query+globalusage-param-prop": "Ce probbietà onna turnà:",
+	"apihelp-query+globalusage-paramvalue-prop-url": "Aggiunge url.",
+	"apihelp-query+globalusage-paramvalue-prop-pageid": "Aggiunge ID d'a pàgene.",
+	"apihelp-query+globalusage-paramvalue-prop-namespace": "Aggiunge ID d'u namespace.",
 	"apihelp-query+globalusage-param-limit": "Quanda collegaminde da turnà.",
 	"apihelp-query+globalusage-param-filterlocal": "Filtre le ause locale d'u file.",
 	"apihelp-query+globalusage-param-namespace": "Limite le resultate a chiste namespace.",
