@@ -2,12 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Ibrahim",
-			"ToJack"
+			"ToJack",
+			"ZulfiqorF"
 		]
 	},
 	"globalusage": "Истифодаи саросарии парванда",
 	"globalusage-desc": "[[Special:GlobalUsage|Саҳифаи вижа]] барои дидани истифодаи саросарии парванда",
 	"globalusage-ok": "Ҷустуҷӯ",
 	"globalusage-text": "Ҷустуҷӯи истифодаи саросарии парванда.",
-	"globalusage-on-wiki": "Истифода дар $2"
+	"globalusage-on-wiki": "Истифода дар $2",
+	"globalusage-of-file": "Викиҳои дигари зерин ин файлро истифода мекунанд:"
 }
