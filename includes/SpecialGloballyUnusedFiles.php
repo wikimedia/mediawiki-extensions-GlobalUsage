@@ -25,9 +25,9 @@
 namespace MediaWiki\Extension\GlobalUsage;
 
 use ErrorPageError;
-use Exception;
 use MediaWiki\SpecialPage\ImageQueryPage;
 use MediaWiki\WikiMap\WikiMap;
+use RuntimeException;
 
 /**
  * A special page that lists globally unused files
@@ -91,7 +91,7 @@ class SpecialGloballyUnusedFiles extends ImageQueryPage {
 
 	public function getQueryInfo() {
 		if ( !$this->isOnGlobalUsageDatabase() ) {
-			throw new Exception( "This wiki is not on shared repo" );
+			throw new RuntimeException( "This wiki is not on shared repo" );
 		}
 
 		$retval = [

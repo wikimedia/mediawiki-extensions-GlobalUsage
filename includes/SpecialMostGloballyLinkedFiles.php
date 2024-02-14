@@ -9,10 +9,10 @@
 
 namespace MediaWiki\Extension\GlobalUsage;
 
-use Exception;
 use MediaWiki\Cache\LinkBatchFactory;
 use MediaWiki\SpecialPage\ImageQueryPage;
 use MediaWiki\WikiMap\WikiMap;
+use RuntimeException;
 use Wikimedia\Rdbms\IDatabase;
 use Wikimedia\Rdbms\ILoadBalancer;
 
@@ -88,7 +88,7 @@ class SpecialMostGloballyLinkedFiles extends ImageQueryPage {
 	 */
 	protected function assertOnSharedRepo() {
 		if ( !GlobalUsage::onSharedRepo() ) {
-			throw new Exception(
+			throw new RuntimeException(
 				'Special:MostGloballyLinkedFiles should only be processed on the shared repo'
 			);
 		}
