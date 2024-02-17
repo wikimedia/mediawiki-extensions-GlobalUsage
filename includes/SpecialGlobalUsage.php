@@ -55,11 +55,11 @@ class SpecialGlobalUsage extends SpecialPage {
 		$this->showForm();
 
 		if ( $this->target === null ) {
-			$this->getOutput()->setPageTitle( $this->msg( 'globalusage' ) );
+			$this->getOutput()->setPageTitleMsg( $this->msg( 'globalusage' ) );
 			return;
 		}
 
-		$this->getOutput()->setPageTitle(
+		$this->getOutput()->setPageTitleMsg(
 			$this->msg( 'globalusage-for', $this->target->getPrefixedText() ) );
 
 		$this->showResult();
