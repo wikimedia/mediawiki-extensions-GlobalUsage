@@ -4,5 +4,7 @@
 			"MthulisiNcube"
 		]
 	},
-	"globalusage-on-wiki": "Hingisa pa $2"
+	"globalusage": "Hingisiwa kwefayili hango yose",
+	"globalusage-on-wiki": "Hingisa pa $2",
+	"globalusage-of-file": "Dzimwe wikis dzinotebela dzohingisa fayile iyeyi:"
 }
