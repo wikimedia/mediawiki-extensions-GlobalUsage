@@ -2,10 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Akpan Ndifreke",
-			"Bernardgift"
+			"Bernardgift",
+			"Ekemini5"
 		]
 	},
 	"globalusage": "Ukama nwed ederimbot",
+	"globalusage-on-wiki": "Nagha ekame ke $2‎",
 	"globalusage-of-file": "Adi kene wikis ako, kama nwed adam:",
 	"globalusage-more": "Sio uwak [[{{#Special:GlobalUsage}}/$1|ukama nwed ederimbot]] ke nwed ami."
 }
