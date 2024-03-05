@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"POSSUM chowg"
+			"POSSUM chowg",
+			"Amire80"
 		]
 	},
-	"globalusage": "Kanawi ikta pus łaska mamuk ukuk fayl",
+	"globalusage": "Kanawi ikta pus ɬaska mamuk ukuk fayl",
 	"globalusage-on-wiki": "Qha $2 mamuk ukuk pipa",
 	"globalusage-of-file": "Kanawi ukuk x̣luima wiki mamuk ukuk fayl:",
 	"globalusage-more": "Nanich [[{{#Special:GlobalUsage}}/$1|qhata kanawi iliʔi mamuk]] ukuk fayl."
