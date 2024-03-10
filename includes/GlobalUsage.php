@@ -210,7 +210,7 @@ class GlobalUsage {
 		// Make sure to get the "canonical" page name, and not a translation.
 		$titleText = $context->getTitle()->getDBkey();
 		$services = MediaWikiServices::getInstance();
-		list( $canonicalName, $subpage ) = $services->getSpecialPageFactory()->resolveAlias( $titleText );
+		[ $canonicalName, $subpage ] = $services->getSpecialPageFactory()->resolveAlias( $titleText );
 		$canonicalName = $services->getNamespaceInfo()->getCanonicalName( NS_SPECIAL ) . ':' . $canonicalName;
 		if ( $subpage !== null ) {
 			$canonicalName .= '/' . $subpage;
