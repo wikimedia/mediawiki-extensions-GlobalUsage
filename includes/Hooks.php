@@ -117,9 +117,12 @@ class Hooks implements
 				$jobs[] = new GlobalUsageCachePurgeJob( $nt, [] );
 			}
 			// Push the jobs after DB commit but cancel on rollback
-			wfGetDB( DB_PRIMARY )->onTransactionCommitOrIdle( static function () use ( $jobs ) {
-				MediaWikiServices::getInstance()->getJobQueueGroupFactory()->makeJobQueueGroup()->lazyPush( $jobs );
-			}, __METHOD__ );
+			MediaWikiServices::getInstance()
+				->getConnectionProvider()
+				->getPrimaryDatabase()
+				->onTransactionCommitOrIdle( static function () use ( $jobs ) {
+					MediaWikiServices::getInstance()->getJobQueueGroupFactory()->makeJobQueueGroup()->lazyPush( $jobs );
+				}, __METHOD__ );
 		}
 	}
 
@@ -156,7 +159,12 @@ class Hooks implements
 		if ( !$oldimage ) {
 			if ( !GlobalUsage::onSharedRepo() ) {
 				$gu = self::getGlobalUsage();
-				$gu->copyLocalImagelinks( $file->getTitle(), wfGetDB( DB_PRIMARY ) );
+				$gu->copyLocalImagelinks(
+					$file->getTitle(),
+					MediaWikiServices::getInstance()
+						->getConnectionProvider()
+						->getPrimaryDatabase()
+				);
 			}
 
 			if ( self::fileUpdatesCreatePurgeJobs() ) {

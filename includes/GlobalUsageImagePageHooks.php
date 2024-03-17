@@ -3,6 +3,7 @@
 namespace MediaWiki\Extension\GlobalUsage;
 
 use ImagePage;
+use MediaWiki\MediaWikiServices;
 use MediaWiki\Page\Hook\ImagePageAfterImageLinksHook;
 use MediaWiki\Page\Hook\ImagePageShowTOCHook;
 use MediaWiki\Parser\Sanitizer;
@@ -113,7 +114,9 @@ class GlobalUsageImagePageHooks implements
 		# we detect this is a bit hacky and less than ideal. See bug 23136 for
 		# a discussion.
 		global $wgGlobalUsageDatabase;
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = MediaWikiServices::getInstance()
+			->getConnectionProvider()
+			->getReplicaDatabase();
 		if ( $file->getRepoName() == 'local'
 			&& $dbr->getDBname() != $wgGlobalUsageDatabase
 		) {

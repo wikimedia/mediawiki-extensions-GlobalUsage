@@ -30,7 +30,9 @@ class RefreshGlobalimagelinks extends Maintenance {
 	public function execute() {
 		$pages = explode( ',', $this->getOption( 'pages' ) );
 
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = MediaWikiServices::getInstance()
+			->getConnectionProvider()
+			->getReplicaDatabase();
 		$gdbw = GlobalUsage::getGlobalDB( DB_PRIMARY );
 		$gdbr = GlobalUsage::getGlobalDB( DB_REPLICA );
 		$gu = new GlobalUsage( WikiMap::getCurrentWikiId(), $gdbw, $gdbr );
