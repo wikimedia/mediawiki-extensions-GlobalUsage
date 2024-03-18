@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"122112ê",
 			"Jose77",
 			"Protostar"
 		]
 	},
-	"globalusage-ok": "Sarch"
+	"globalusage-ok": "Sarch",
+	"globalusage-on-wiki": "Yuz na $2"
 }
