@@ -3,20 +3,23 @@
 		"authors": [
 			"Aefgh39622",
 			"Ans",
+			"Ekminarin",
 			"Horus",
 			"Octahedron80"
 		]
 	},
-	"globalusage": "การใช้ไฟล์ส่วนกลาง",
-	"globalusage-for": "การใช้ทั่วโลกสำหรับ  \"$1\"",
+	"globalusage": "การใช้ไฟล์ข้ามโครงการ",
+	"globalusage-for": "การใช้ข้ามโครงการสำหรับ  \"$1\"",
 	"globalusage-filename": "ชื่อไฟล์:",
-	"globalusage-desc": "[[Special:GlobalUsage|หน้าพิเศษ]]สำหรับดูการใช้ไฟล์ทั่วโลก",
+	"globalusage-desc": "[[Special:GlobalUsage|หน้าพิเศษ]]สำหรับดูการใช้ไฟล์ข้ามโครงการ",
 	"globalusage-ok": "ค้นหา",
-	"globalusage-text": "ค้นหาการใช้ไฟล์ทั่วโลก",
+	"globalusage-text": "ค้นหาการใช้ไฟล์ข้ามโครงการ",
 	"globalusage-no-results": "[[:$1]] ไม่ได้ถูกใช้บนวิกิอื่น",
 	"globalusage-on-wiki": "การใช้บน $2",
 	"globalusage-of-file": "วิกิอื่นต่อไปนี้ใช้ไฟล์นี้:",
-	"globalusage-more": "ดู[[{{#Special:GlobalUsage}}/$1|การใช้ทั่วโลกเพิ่มเติม]]ของไฟล์นี้",
+	"globalusage-more": "ดู[[{{#Special:GlobalUsage}}/$1|การใช้ข้ามโครงการเพิ่มเติม]]ของไฟล์นี้",
 	"globalusage-filterlocal": "ไม่ต้องแสดงการใช้ท้องถิ่น",
-	"mostgloballylinkedfiles": "ไฟล์ที่ลิงก์ทั่วโลกมากที่สุด"
+	"mostgloballylinkedfiles": "ไฟล์ที่ลิงก์ข้ามโครงการมากที่สุด",
+	"globallywantedfiles": "ไฟล์ที่ต้องการข้ามโครงการ",
+	"globallyunusedfiles": "ไฟล์ที่ไม่ได้ใช้ข้ามโครงการ"
 }
