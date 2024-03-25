@@ -10,8 +10,8 @@
 	"globalusage-filename": "Файлдын аталышы:",
 	"globalusage-ok": "Издөө",
 	"globalusage-no-results": "«[[:$1]]‎» башка викилерде колдонулбайт.",
-	"globalusage-on-wiki": "$2 долбоорунда колдонулат",
+	"globalusage-on-wiki": "$2 сайтындагы колдонулушу",
 	"globalusage-of-file": "Бул файл төмөнкү викилерде колдонулат:",
 	"globalusage-more": "Бул файлдын [[{{#Special:GlobalUsage}}/$1|глобалдык колдонулушун]] көрүү.",
-	"globalusage-filterlocal": "Жергиликтүү колдонууну көрсөтпө"
+	"globalusage-filterlocal": "Жергиликтүү колдонулушу көрсөтүлбөсүн"
 }
