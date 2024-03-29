@@ -6,6 +6,9 @@
 			"Protostar"
 		]
 	},
+	"globalusage": "Di we aw dɛn de yuz fayl dɛn ɔlsay na di wɔl",
 	"globalusage-ok": "Sarch",
-	"globalusage-on-wiki": "Yuz na $2"
+	"globalusage-on-wiki": "Yuz na $2",
+	"globalusage-of-file": "Di ɔda wiki dɛn we de dɔŋ ya de yuz dis fayl:",
+	"globalusage-more": "Luk [[{{#Special:GlobalUsage}}/$1|more global usage]] fɔ dis fayl."
 }
