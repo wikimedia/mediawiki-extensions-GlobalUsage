@@ -66,7 +66,12 @@ class GlobalUsage {
 		$ticket = $ticket ?: $lbFactory->getEmptyTransactionTicket( __METHOD__ );
 		$insertBatches = array_chunk( $insert, $wgUpdateRowsPerQuery );
 		foreach ( $insertBatches as $insertBatch ) {
-			$this->dbw->insert( 'globalimagelinks', $insertBatch, __METHOD__, [ 'IGNORE' ] );
+			$this->dbw->newInsertQueryBuilder()
+				->insertInto( 'globalimagelinks' )
+				->ignore()
+				->rows( $insertBatch )
+				->caller( __METHOD__ )
+				->execute();
 			if ( count( $insertBatches ) > 1 ) {
 				$lbFactory->commitAndWaitForReplication( __METHOD__, $ticket );
 			}
@@ -116,11 +121,19 @@ class GlobalUsage {
 			$ticket = $ticket ?: $lbFactory->getEmptyTransactionTicket( __METHOD__ );
 			foreach ( array_chunk( $to, $wgUpdateRowsPerQuery ) as $toBatch ) {
 				$where['gil_to'] = $toBatch;
-				$this->dbw->delete( 'globalimagelinks', $where, __METHOD__ );
+				$this->dbw->newDeleteQueryBuilder()
+					->deleteFrom( 'globalimagelinks' )
+					->where( $where )
+					->caller( __METHOD__ )
+					->execute();
 				$lbFactory->commitAndWaitForReplication( __METHOD__, $ticket );
 			}
 		} else {
-			$this->dbw->delete( 'globalimagelinks', $where, __METHOD__ );
+			$this->dbw->newDeleteQueryBuilder()
+				->deleteFrom( 'globalimagelinks' )
+				->where( $where )
+				->caller( __METHOD__ )
+				->execute();
 		}
 	}
 
@@ -130,14 +143,14 @@ class GlobalUsage {
 	 * @param Title $title Title of the file
 	 */
 	public function deleteLinksToFile( $title ) {
-		$this->dbw->delete(
-			'globalimagelinks',
-			[
+		$this->dbw->newDeleteQueryBuilder()
+			->deleteFrom( 'globalimagelinks' )
+			->where( [
 				'gil_wiki' => $this->interwiki,
 				'gil_to' => $title->getDBkey()
-			],
-			__METHOD__
-		);
+			] )
+			->caller( __METHOD__ )
+			->execute();
 	}
 
 	/**
@@ -169,7 +182,12 @@ class GlobalUsage {
 
 		$fname = __METHOD__;
 		DeferredUpdates::addCallableUpdate( function () use ( $insert, $fname ) {
-			$this->dbw->insert( 'globalimagelinks', $insert, $fname, [ 'IGNORE' ] );
+			$this->dbw->newInsertQueryBuilder()
+				->insertInto( 'globalimagelinks' )
+				->ignore()
+				->rows( $insert )
+				->caller( $fname )
+				->execute();
 		} );
 	}
 
