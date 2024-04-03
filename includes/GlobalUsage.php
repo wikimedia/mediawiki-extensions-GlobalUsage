@@ -198,19 +198,19 @@ class GlobalUsage {
 	 * @param Title $title New title of the page
 	 */
 	public function moveTo( $id, $title ) {
-		$this->dbw->update(
-			'globalimagelinks',
-			[
+		$this->dbw->newUpdateQueryBuilder()
+			->update( 'globalimagelinks' )
+			->set( [
 				'gil_page_namespace_id' => $title->getNamespace(),
 				'gil_page_namespace' => $title->getNsText(),
 				'gil_page_title' => $title->getDBkey()
-			],
-			[
+			] )
+			->where( [
 				'gil_wiki' => $this->interwiki,
 				'gil_page' => $id
-			],
-			__METHOD__
-		);
+			] )
+			->caller( __METHOD__ )
+			->execute();
 	}
 
 	/**
