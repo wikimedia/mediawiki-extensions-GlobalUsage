@@ -167,6 +167,10 @@ class GlobalUsage {
 			__METHOD__
 		);
 
+		if ( !$res ) {
+			return;
+		}
+
 		$insert = [];
 		$contLang = MediaWikiServices::getInstance()->getContentLanguage();
 		foreach ( $res as $row ) {
