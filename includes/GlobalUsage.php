@@ -167,7 +167,7 @@ class GlobalUsage {
 			__METHOD__
 		);
 
-		if ( !$res ) {
+		if ( !$res->numRows() ) {
 			return;
 		}
 
