@@ -49,29 +49,25 @@ class RefreshGlobalimagelinks extends Maintenance {
 				$this->output( "Querying links after (page_id, il_to) = ($lastPageId, $lastIlTo)\n" );
 
 				# Query all pages and any imagelinks associated with that
-				$res = $dbr->select(
-					[ 'page', 'imagelinks', 'image' ],
-					[
+				$res = $dbr->newSelectQueryBuilder()
+					->select( [
 						'page_id', 'page_namespace', 'page_title',
 						'il_to', 'img_name'
-					],
-					$dbr->buildComparison( '>', [
+					] )
+					->from( 'page' )
+					// LEFT JOIN imagelinks since we need to delete usage
+					// from all images, even if they don't have images anymore
+					->leftJoin( 'imagelinks', null, 'page_id = il_from' )
+					// Check to see if images exist locally
+					->leftJoin( 'image', null, 'il_to = img_name' )
+					->where( $dbr->buildComparison( '>', [
 						'page_id' => $lastPageId,
 						'il_to' => $lastIlTo,
-					] ),
-					__METHOD__,
-					[
-						'ORDER BY' => $dbr->implicitOrderby() ? 'page_id' : 'page_id, il_to',
-						'LIMIT' => $this->mBatchSize,
-					],
-					[
-						# LEFT JOIN imagelinks since we need to delete usage
-						# from all images, even if they don't have images anymore
-						'imagelinks' => [ 'LEFT JOIN', 'page_id = il_from' ],
-						# Check to see if images exist locally
-						'image' => [ 'LEFT JOIN', 'il_to = img_name' ]
-					]
-				);
+					] ) )
+					->orderBy( $dbr->implicitOrderby() ? 'page_id' : 'page_id, il_to' )
+					->limit( $this->mBatchSize )
+					->caller( __METHOD__ )
+					->fetchResultSet();
 
 				# Build up a tree per pages
 				$pages = [];
@@ -122,14 +118,17 @@ class RefreshGlobalimagelinks extends Maintenance {
 			while ( 1 ) {
 				$this->output( "Querying for broken links after (page_id) = ($lastPageId)\n" );
 
-				$res = $gdbw->select( 'globalimagelinks', 'gil_page',
-					[
+				$res = $gdbw->newSelectQueryBuilder()
+					->select( 'gil_page' )
+					->from( 'globalimagelinks' )
+					->where( [
 						'gil_wiki' => WikiMap::getCurrentWikiId(),
-						$gdbw->buildComparison( '>', [ 'gil_page' => $lastPageId ] )
-					],
-					__METHOD__,
-					[ 'ORDER BY' => 'gil_page', 'LIMIT' => $this->mBatchSize ]
-				);
+						$gdbw->expr( 'gil_page', '>', $lastPageId ),
+					] )
+					->orderBy( 'gil_page' )
+					->limit( $this->mBatchSize )
+					->caller( __METHOD__ )
+					->fetchResultSet();
 
 				if ( !$res->numRows() ) {
 					break;
@@ -141,8 +140,12 @@ class RefreshGlobalimagelinks extends Maintenance {
 					$lastPageId = (int)$row->gil_page;
 				}
 
-				$lres = $dbr->select( 'page', 'page_id',
-					[ 'page_id' => array_keys( $pageIds ) ], __METHOD__ );
+				$lres = $dbr->newSelectQueryBuilder()
+					->select( 'page_id' )
+					->from( 'page' )
+					->where( [ 'page_id' => array_keys( $pageIds ) ] )
+					->caller( __METHOD__ )
+					->fetchResultSet();
 
 				foreach ( $lres as $row ) {
 					$pageIds[$row->page_id] = true;

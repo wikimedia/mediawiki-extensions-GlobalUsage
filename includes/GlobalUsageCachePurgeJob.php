@@ -45,13 +45,16 @@ class GlobalUsageCachePurgeJob extends Job {
 
 		// Find all wikis that use any of these files in any of their pages...
 		$dbr = GlobalUsage::getGlobalDB( DB_REPLICA );
-		$res = $dbr->select(
-			'globalimagelinks',
-			[ 'gil_wiki', 'gil_to' ],
-			[ 'gil_to' => $filesForPurge, 'gil_wiki != ' . $dbr->addQuotes( WikiMap::getCurrentWikiId() ) ],
-			__METHOD__,
-			[ 'DISTINCT' ]
-		);
+		$res = $dbr->newSelectQueryBuilder()
+			->select( [ 'gil_wiki', 'gil_to' ] )
+			->distinct()
+			->from( 'globalimagelinks' )
+			->where( [
+				'gil_to' => $filesForPurge,
+				$dbr->expr( 'gil_wiki', '!=', WikiMap::getCurrentWikiId() ),
+			] )
+			->caller( __METHOD__ )
+			->fetchResultSet();
 
 		// Build up a list of HTMLCacheUpdateJob jobs to put on each affected wiki to clear
 		// the caches for all pages that link to these file pages. These jobs will use the

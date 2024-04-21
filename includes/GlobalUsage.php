@@ -84,22 +84,15 @@ class GlobalUsage {
 	 * @return string[]
 	 */
 	public function getLinksFromPage( $id ) {
-		$res = $this->dbr->select(
-			'globalimagelinks',
-			'gil_to',
-			[
+		return $this->dbr->newSelectQueryBuilder()
+			->select( 'gil_to' )
+			->from( 'globalimagelinks' )
+			->where( [
 				'gil_wiki' => $this->interwiki,
 				'gil_page' => $id,
-			],
-			__METHOD__
-		);
-
-		$images = [];
-		foreach ( $res as $row ) {
-			$images[] = $row->gil_to;
-		}
-
-		return $images;
+			] )
+			->caller( __METHOD__ )
+			->fetchFieldValues();
 	}
 
 	/**
@@ -160,12 +153,13 @@ class GlobalUsage {
 	 * @param IDatabase $localDbr Database object for reading the local links from
 	 */
 	public function copyLocalImagelinks( Title $title, IDatabase $localDbr ) {
-		$res = $localDbr->select(
-			[ 'imagelinks', 'page' ],
-			[ 'il_to', 'page_id', 'page_namespace', 'page_title' ],
-			[ 'il_from = page_id', 'il_to' => $title->getDBkey() ],
-			__METHOD__
-		);
+		$res = $localDbr->newSelectQueryBuilder()
+			->select( [ 'il_to', 'page_id', 'page_namespace', 'page_title' ] )
+			->from( 'imagelinks' )
+			->join( 'page', null, 'il_from = page_id' )
+			->where( [ 'il_to' => $title->getDBkey() ] )
+			->caller( __METHOD__ )
+			->fetchResultSet();
 
 		if ( !$res->numRows() ) {
 			return;

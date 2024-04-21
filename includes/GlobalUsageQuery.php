@@ -5,6 +5,7 @@ namespace MediaWiki\Extension\GlobalUsage;
 use MediaWiki\Title\Title;
 use MediaWiki\WikiMap\WikiMap;
 use Wikimedia\Rdbms\IDatabase;
+use Wikimedia\Rdbms\SelectQueryBuilder;
 
 /**
  * A helper class to query the globalimagelinks table
@@ -155,7 +156,19 @@ class GlobalUsageQuery {
 	 */
 	public function execute() {
 		/* Construct the SQL query */
-		$tables = [ 'globalimagelinks' ];
+		$queryBuilder = $this->db->newSelectQueryBuilder()
+			->select( [
+				'gil_to',
+				'gil_wiki',
+				'gil_page',
+				'gil_page_namespace_id',
+				'gil_page_namespace',
+				'gil_page_title'
+			] )
+			->from( 'globalimagelinks' )
+			// Select an extra row to check whether we have more rows available
+			->limit( $this->limit + 1 )
+			->caller( __METHOD__ );
 
 		// Add target image(s)
 		if ( is_array( $this->target ) ) { // array of dbkey strings
@@ -167,17 +180,15 @@ class GlobalUsageQuery {
 		}
 		switch ( $namespace ) {
 			case NS_FILE:
-				$where = [ 'gil_to' => $queryIn ];
+				$queryBuilder->where( [ 'gil_to' => $queryIn ] );
 				break;
 			case NS_CATEGORY:
-				$tables[] = 'categorylinks';
-				$tables[] = 'page';
-				$where = [
+				$queryBuilder->join( 'categorylinks', null, 'page_id = cl_from' );
+				$queryBuilder->join( 'page', null, 'page_title = gil_to' );
+				$queryBuilder->where( [
 					'cl_to' => $queryIn,
-					'cl_from = page_id',
-					'page_namespace = ' . NS_FILE,
-					'gil_to = page_title',
-				];
+					'page_namespace' => NS_FILE,
+				] );
 				break;
 			default:
 				return;
@@ -185,21 +196,16 @@ class GlobalUsageQuery {
 
 		if ( $this->filterLocal ) {
 			// Don't show local file usage
-			$where[] = 'gil_wiki != ' . $this->db->addQuotes( WikiMap::getCurrentWikiId() );
+			$queryBuilder->andWhere( $this->db->expr( 'gil_wiki', '!=', WikiMap::getCurrentWikiId() ) );
 		}
 
 		if ( $this->filterNamespaces ) {
-			$where['gil_page_namespace_id'] = $this->filterNamespaces;
+			$queryBuilder->andWhere( [ 'gil_page_namespace_id' => $this->filterNamespaces ] );
 		}
 
 		if ( $this->filterSites ) {
-			$where['gil_wiki'] = $this->filterSites;
+			$queryBuilder->andWhere( [ 'gil_wiki' => $this->filterSites ] );
 		}
-
-		$options = [
-			// Select an extra row to check whether we have more rows available
-			'LIMIT' => $this->limit + 1,
-		];
 
 		// Set the continuation condition
 		if ( $this->offset ) {
@@ -207,33 +213,20 @@ class GlobalUsageQuery {
 			if ( $this->reversed ) {
 				// Reversed traversal; do not include offset row
 				$op = '<';
-				$options['ORDER BY'] = 'gil_to DESC, gil_wiki DESC, gil_page DESC';
+				$queryBuilder->orderBy( [ 'gil_to', 'gil_wiki', 'gil_page' ], SelectQueryBuilder::SORT_DESC );
 			} else {
 				// Normal traversal; include offset row
 				$op = '>=';
 			}
 
-			$where[] = $this->db->buildComparison( $op, [
+			$queryBuilder->andWhere( $this->db->buildComparison( $op, [
 				'gil_to' => $this->offset[0],
 				'gil_wiki' => $this->offset[1],
 				'gil_page' => intval( $this->offset[2] ),
-			] );
+			] ) );
 		}
 
-		/* Perform select (Duh.) */
-		$res = $this->db->select( $tables,
-			[
-				'gil_to',
-				'gil_wiki',
-				'gil_page',
-				'gil_page_namespace_id',
-				'gil_page_namespace',
-				'gil_page_title'
-			],
-			$where,
-			__METHOD__,
-			$options
-		);
+		$res = $queryBuilder->fetchResultSet();
 
 		/* Process result */
 		// Always return the result in the same order; regardless whether reversed was specified
