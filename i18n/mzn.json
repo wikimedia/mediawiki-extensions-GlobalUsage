@@ -4,8 +4,8 @@
 			"محک"
 		]
 	},
-	"globalusage": "پرونده‌ی ِهمه جایی استفاده بیی‌ین",
+	"globalusage": "پرونده‌یِ گِردِ استفاده‌ئون",
 	"globalusage-on-wiki": "کاربرد $2 دله",
 	"globalusage-of-file": "این ویکیون هم این پرونده جه استفاده کانّه:",
-	"globalusage-more": "[[{{#Special:GlobalUsage}}/$1|سراسری استفاده‌ئون]] ره این پرونده جه سِراق هاده."
+	"globalusage-more": "[[{{#Special:GlobalUsage}}/$1|سراسری استفاده]] ره این پرونده جه سٮراق هاده."
 }
