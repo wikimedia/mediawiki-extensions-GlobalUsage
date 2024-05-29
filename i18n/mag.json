@@ -5,7 +5,14 @@
 		]
 	},
 	"globalusage": "बैश्विक सञ्चिका उपयोग",
+	"globalusage-filename": "सञ्चिकानाम:",
+	"globalusage-ok": "खोजी",
+	"globalusage-text": "बैश्विक सञ्चिका उपयोग खोजी ।",
+	"globalusage-no-results": "[[:$1]] अन्य विकिपर प्रयोग नै होएल हे ।",
 	"globalusage-on-wiki": "$2 पर उपयोग",
 	"globalusage-of-file": "ई सञ्चिकाके उपयोग निम्न दोसरो विकि करहे :",
-	"globalusage-more": "ई सञ्चिकाके [[{{#Special:GlobalUsage}}/$1|बैश्विक उपयोगके अधिक जानकारी]] देखी ।"
+	"globalusage-more": "ई सञ्चिकाके [[{{#Special:GlobalUsage}}/$1|बैश्विक उपयोगके अधिक जानकारी]] देखी ।",
+	"globalusage-filterlocal": "स्थानीय उपयोग नै देखावी",
+	"mostgloballylinkedfiles": "बैश्वस्तर पर सबसे अधिक जुड़ल सञ्चिका",
+	"globallywantedfiles": "बैश्विक आवश्यक सञ्चिका"
 }
