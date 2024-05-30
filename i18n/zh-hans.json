@@ -6,27 +6,28 @@
 			"Hydra",
 			"Liangent",
 			"Liuxinyu970226",
-			"Xiaomingyan"
+			"Xiaomingyan",
+			"LittlePaw365"
 		]
 	},
 	"globalusage": "全域文件用途",
 	"globalusage-for": "“$1”的全域用途",
 	"globalusage-filename": "文件名：",
-	"globalusage-desc": "查看全域文件用途的[[Special:GlobalUsage|特殊页面]]",
+	"globalusage-desc": "可查看全域文件用途的[[Special:GlobalUsage|特殊页面]]",
 	"globalusage-ok": "搜索",
 	"globalusage-text": "搜索全域文件用途",
 	"globalusage-no-results": "[[:$1]]没有用于其他wiki。",
 	"globalusage-on-wiki": "$2上的用途",
 	"globalusage-of-file": "以下其他wiki使用此文件：",
-	"globalusage-more": "查看本文件的[[{{#Special:GlobalUsage}}/$1|更多全域用途]]。",
+	"globalusage-more": "查看此文件的[[{{#Special:GlobalUsage}}/$1|更多全域用途]]。",
 	"globalusage-filterlocal": "不显示本地用途",
-	"mostgloballylinkedfiles": "最多全域链接文件",
+	"mostgloballylinkedfiles": "最多全域链接的文件",
 	"mostgloballylinkedfiles-summary": "这是跨所有wiki嵌入页面最多次数的文件列表。关于在{{SITENAME}}上只考虑用途的等价列表，参见[[{{#special:MostLinkedFiles}}]]。",
 	"globallywantedfiles": "全域需要的文件",
 	"globallywantedfiles-summary": "这是跨所有wiki嵌入页面最多次数的文件列表，尽管不存在。关于在{{SITENAME}}上只考虑用途的等价列表，参见[[{{#special:WantedFiles}}]]。从第一个字母大小写敏感的wiki起的文件使用可能会不希望的被错误报告。",
 	"globallywantedfiles-foreign-repo": "<strong>警告：</strong>此wiki使用外部的文件存储库。来自外部存储库使用中的文件将在此列表显示成蓝色链接，尽管它们事实上存在。",
 	"globalusage-header": "此页面显示在其他wiki的何处使用的文件。您也可以在文件说明页面的底部找到信息。",
-	"globallyunusedfiles": "全域未使用文件",
+	"globallyunusedfiles": "全域未使用的文件",
 	"globallyunusedfilestext": "以下现存文件尚未在任何wiki的页面上嵌入。",
 	"globallyunusedfiles-error-nonsharedrepo": "此wiki并不在共享存储库上"
 }
