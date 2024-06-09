@@ -2,8 +2,8 @@
 
 namespace MediaWiki\Extension\GlobalUsage;
 
-use IContextSource;
 use IDBAccessObject;
+use MediaWiki\Context\IContextSource;
 use MediaWiki\Deferred\DeferredUpdates;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
