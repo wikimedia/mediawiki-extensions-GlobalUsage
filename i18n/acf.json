@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Suitcaseshoes"
+		]
+	},
+	"globalusage": "Itilizasyon fichyé global",
+	"globalusage-on-wiki": "Itilizasyon asou $2",
+	"globalusage-of-file": "Lòt wiki sala ka itilizé fichyé sala:",
+	"globalusage-more": "Gadé [[{{#Special:GlobalUsage}}/$1|pli itilizasyon global]] pou fichyé sala."
+}
