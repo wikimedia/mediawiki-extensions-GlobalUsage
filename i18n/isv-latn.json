@@ -5,6 +5,23 @@
 		]
 	},
 	"globalusage": "Globalno izkoristanje fajla",
+	"globalusage-for": "Globalno upotrěbjenje «$1»",
+	"globalusage-filename": "Nazva fajla:",
+	"globalusage-desc": "[[Special:GlobalUsage|Specialna stranica]] za prěgledanje globalnogo upotrěbjenja fajla",
+	"globalusage-ok": "Iskati",
+	"globalusage-text": "Iskanje globalnogo upotrěbjenja fajla",
+	"globalusage-no-results": "[[:$1]] ne upotrěbjaje se v drugyh viki.",
 	"globalusage-on-wiki": "Izkoristanje v $2",
-	"globalusage-of-file": "Tutoj fajl upotrěbjajut takože ine viki:"
+	"globalusage-of-file": "Tutoj fajl upotrěbjajut takože ine viki:",
+	"globalusage-more": "Pogleděti [[{{#Special:GlobalUsage}}/$1|globalno upotrěbjenje]] tutogo fajla.",
+	"globalusage-filterlocal": "Ne pokazati lokalno upotrěbjenje",
+	"mostgloballylinkedfiles": "Globalno najbolje upotrěbjene fajly",
+	"mostgloballylinkedfiles-summary": "Spisok fajlov upotrěbjajemyh največše čislo razov po vsih viki. Za analogičny spisok, ktory sodrživaje samo upotrěbjenje na sajtu {{SITENAME}}, pozrite [[{{#special:MostLinkedFiles}}]].",
+	"globallywantedfiles": "Globalno potrěbne fajly",
+	"globallywantedfiles-summary": "Spisok fajlov upotrěbjajemyh največše čislo razov po vsih viki, pomimo togo, že ne jestvujut. Za analogičny spisok, ktory sodrživaje samo upotrěbjenje na sajtu {{SITENAME}}, pozrite [[{{#special:WantedFiles}}]]. Fajly upotrěbjajeme v viki, ktore različajut medžu velikoju i maloju prvoju bukvoju, mogut byti pogrěšno ukazane kako potrěbne.",
+	"globallywantedfiles-foreign-repo": "<strong>Prěduprědženje:</strong> tuta viki koristaje vněšnje hranilišče fajlov. Upotrěbjajeme fajly iz vněšnjego hranilišča sut pokazane v tutom spisku kako prěčrknute modre linky, pomimo togo, že jestvujut.",
+	"globalusage-header": "Tuta stranica pokazyvaje, kde fajl upotrěbjaje se v drugyh viki. Vy takože možete najdti tu informaciju v dolnoj česti stranice s opisom fajla.",
+	"globallyunusedfiles": "Globalno neupotrěbjajeme fajly",
+	"globallyunusedfilestext": "Slědujuče fajly jestvujut, ale ne sut vključene na nijednoj stranici v nijednoj viki.",
+	"globallyunusedfiles-error-nonsharedrepo": "Tuta viki ne upotrěbjaje obče hranilišče"
 }
