@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Tofeiku"
+			"Tofeiku",
+			"Ultron90"
 		]
 	},
 	"globalusage": "Penggunaan pail sejagat",
-	"globalusage-on-wiki": "Pemakayan ta' $2"
+	"globalusage-on-wiki": "Pemakayan ta' $2",
+	"globalusage-of-file": "Wiki-wiki tu ginuno ole' pail tu:"
 }

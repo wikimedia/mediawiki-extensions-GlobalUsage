@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"IJzeren Jan"
+		]
+	},
+	"apihelp-query+globalusage-summary": "Vračaje globalno koristanje oprěděljenogo fajla.",
+	"apihelp-query+globalusage-param-prop": "Koje svojstva vračati:",
+	"apihelp-query+globalusage-paramvalue-prop-url": "Dodavaje URL.",
+	"apihelp-query+globalusage-paramvalue-prop-pageid": "Dodavaje ID stranice.",
+	"apihelp-query+globalusage-paramvalue-prop-namespace": "Dodavaje ID imennogo prostora.",
+	"apihelp-query+globalusage-param-limit": "Koliko linkov vračati.",
+	"apihelp-query+globalusage-param-filterlocal": "Filtrovati lokalno koristanje fajla.",
+	"apihelp-query+globalusage-param-namespace": "Ograničiti rezultaty do tutyh imennyh prostorov.",
+	"apihelp-query+globalusage-param-site": "Ograničiti rezultaty do tutyh sajtov.",
+	"apihelp-query+globalusage-example-1": "Dostati koristanje fajla [[:File:Example.jpg]]"
+}
