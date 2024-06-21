@@ -6,5 +6,6 @@
 	},
 	"globalusage": "Глобално изкористање фајла",
 	"globalusage-on-wiki": "Изкористанје в $2",
-	"globalusage-of-file": "Тутој фајл употрєбјајут такоже ине вики:"
+	"globalusage-of-file": "Тутој фајл употрєбјајут такоже ине вики:",
+	"globalusage-more": "Погледєти [[{{#Special:GlobalUsage}}/$1|глобално употрєбјенје]] тутого фајла."
 }
