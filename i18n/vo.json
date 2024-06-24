@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Malafaya",
+			"Morozof",
 			"Smeira"
 		]
 	},
@@ -9,5 +10,6 @@
 	"globalusage-desc": "[[Special:GlobalUsage|Pad patik]] ad logön ragivigebi valöpik",
 	"globalusage-ok": "Sukön",
 	"globalusage-text": "Sükön ragivigebi valöpik.",
-	"globalusage-on-wiki": "Geb su $2"
+	"globalusage-on-wiki": "Geb su $2",
+	"globalusage-of-file": "Proyegs votik sököl di ‚wiki’ gebons nünedi at:"
 }
