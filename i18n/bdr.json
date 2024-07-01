@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"Syafiq.y",
 			"Tofeiku",
 			"Ultron90"
 		]
 	},
 	"globalusage": "Penggunaan pail sejagat",
 	"globalusage-on-wiki": "Pemakayan ta' $2",
-	"globalusage-of-file": "Wiki-wiki tu ginuno ole' pail tu:"
+	"globalusage-of-file": "Wiki-wiki tu ginuno ole' pail tu:",
+	"globalusage-more": "Ngenda' [[{{#Special:GlobalUsage}}/$1|iko lagi jomo makai]] pail tu."
 }
