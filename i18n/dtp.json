@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Jilorisa",
-			"Meqqal"
+			"Meqqal",
+			"CorrelMoris38"
 		]
 	},
 	"globalusage": "Pomogunaan fail sompomogunan",
 	"globalusage-on-wiki": "Kopomogunaan id $2",
-	"globalusage-of-file": "Pail diti ginuna do wiki suai:",
+	"globalusage-of-file": "Fail diti ginuna do wiki suai:",
 	"globalusage-more": "Intangai [[{{#Special:GlobalUsage}}/$1|lobi momomoguno sompomogunan]] do pail diti"
 }

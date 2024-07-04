@@ -4,5 +4,8 @@
 			"Song GK"
 		]
 	},
-	"globalusage-of-file": "Fail tu dikena mega wiki-wiki tu:"
+	"globalusage": "Guna fail global",
+	"globalusage-on-wiki": "Guna ba $2",
+	"globalusage-of-file": "Fail tu dikena mega wiki-wiki tu:",
+	"globalusage-more": "Peda [[{{#Special:GlobalUsage}}/$1|mayuh agi guna globall]] ari fail tu."
 }
