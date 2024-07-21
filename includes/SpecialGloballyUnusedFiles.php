@@ -101,7 +101,7 @@ class SpecialGloballyUnusedFiles extends ImageQueryPage {
 				'title' => 'img_name',
 				'value' => 'img_timestamp',
 			],
-			'conds' => [ 'gil_to IS NULL' ],
+			'conds' => [ 'gil_to' => null ],
 			'join_conds' => [ 'globalimagelinks' => [ 'LEFT JOIN', 'gil_to = img_name' ] ]
 		];
 
@@ -110,7 +110,7 @@ class SpecialGloballyUnusedFiles extends ImageQueryPage {
 			$retval['tables'] = [ 'image', 'page', 'categorylinks',
 				'globalimagelinks' ];
 			$retval['conds']['page_namespace'] = NS_FILE;
-			$retval['conds'][] = 'cl_from IS NULL';
+			$retval['conds']['cl_from'] = null;
 			$retval['conds'][] = 'img_name = page_title';
 			$retval['join_conds']['categorylinks'] = [
 				'LEFT JOIN', 'cl_from = page_id' ];
