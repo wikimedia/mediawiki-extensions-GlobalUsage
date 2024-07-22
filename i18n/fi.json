@@ -4,6 +4,7 @@
 			"Crt",
 			"Moottori",
 			"Nike",
+			"Samoasambia",
 			"Veikk0.ma",
 			"Zache",
 			"ZeiP"
@@ -11,13 +12,15 @@
 	},
 	"globalusage": "Tiedoston järjestelmänlaajuinen käyttö",
 	"globalusage-for": "Tiedoston ”$1” järjestelmänlaajuinen käyttö",
+	"globalusage-filename": "Tiedostonimi:",
 	"globalusage-desc": "[[Special:GlobalUsage|Toimintosivu]], joka näyttää tiedoston järjestelmänlaajuisen käytön.",
 	"globalusage-ok": "Hae",
 	"globalusage-text": "Tiedoston käytön järjestelmänlaajuinen haku",
 	"globalusage-no-results": "[[:$1]] ei ole käytössä muissa wikeissä.",
-	"globalusage-on-wiki": "Käyttö kohteessa $2",
+	"globalusage-on-wiki": "Käyttö sivustolla $2",
 	"globalusage-of-file": "Seuraavat muut wikit käyttävät tätä tiedostoa:",
 	"globalusage-more": "Näytä lisää tämän tiedoston [[{{#Special:GlobalUsage}}/$1|järjestelmänlaajuista käyttöä]].",
 	"globalusage-filterlocal": "Älä näytä paikallista käyttöä",
-	"globallywantedfiles-summary": "Lista tiedostoista, joita on upotettu sisältöön eniten kaikissa wikeissä siitä huolimatta, että tiedostoa ei ole olemassa. Samanlaisen listan tiedostoista joita on käytetty vain {{SITENAME}}-sivustolla löydät sivulta [[{{#special:WantedFiles}}]]. Tiedostojen käyttö saattaa olla väärin raportoitu sivustoilla joissa tiedostonimen ensimmäisen kirjaimen kirjainkoolla on väliä."
+	"globallywantedfiles-summary": "Lista tiedostoista, joita on upotettu sisältöön eniten kaikissa wikeissä siitä huolimatta, että tiedostoa ei ole olemassa. Samanlaisen listan tiedostoista, joita on käytetty vain {{GRAMMAR:inessive|{{SITENAME}}}} löydät sivulta [[{{#special:WantedFiles}}]]. Tiedostojen käyttö saattaa olla väärin raportoitu sivustoilla joissa tiedostonimen ensimmäisen kirjaimen kirjainkoolla on väliä.",
+	"globalusage-header": "Tämä sivu näyttää, missä muissa wikeissä tiedostoa käytetään. Löydät nämä tiedot myös tiedoston kuvaussivun alalaidasta."
 }
