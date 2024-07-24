@@ -19,19 +19,19 @@ use MediaWiki\WikiMap\WikiMap;
 use RepoGroup;
 use Skin;
 use stdClass;
-use Wikimedia\Rdbms\ILoadBalancer;
+use Wikimedia\Rdbms\IConnectionProvider;
 
 class SpecialGloballyWantedFiles extends WantedQueryPage {
 
 	private RepoGroup $repoGroup;
 
 	public function __construct(
-		ILoadBalancer $loadBalancer,
+		IConnectionProvider $dbProvider,
 		LinkBatchFactory $linkBatchFactory,
 		RepoGroup $repoGroup
 	) {
 		parent::__construct( 'GloballyWantedFiles' );
-		$this->setDBLoadBalancer( $loadBalancer );
+		$this->setDatabaseProvider( $dbProvider );
 		$this->setLinkBatchFactory( $linkBatchFactory );
 		$this->repoGroup = $repoGroup;
 	}

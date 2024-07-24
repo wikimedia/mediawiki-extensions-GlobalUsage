@@ -13,14 +13,14 @@
 		"MostGloballyLinkedFiles": {
 			"class": "MediaWiki\\Extension\\GlobalUsage\\SpecialMostGloballyLinkedFiles",
 			"services": [
-				"DBLoadBalancer",
+				"ConnectionProvider",
 				"LinkBatchFactory"
 			]
 		},
 		"GloballyWantedFiles": {
 			"class": "MediaWiki\\Extension\\GlobalUsage\\SpecialGloballyWantedFiles",
 			"services": [
-				"DBLoadBalancer",
+				"ConnectionProvider",
 				"LinkBatchFactory",
 				"RepoGroup"
 			]
