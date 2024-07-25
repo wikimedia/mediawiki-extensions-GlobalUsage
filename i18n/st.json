@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Tšepo"
+			"Tšepo",
+			"Maryam AlAkini"
 		]
 	},
-	"globalusage-on-wiki": "Tšebeliso ho $2"
+	"globalusage": "Lefatšeng ka bophara tšebeliso ea faele",
+	"globalusage-on-wiki": "Tšebeliso ho $2",
+	"globalusage-of-file": "Li-wiki tse ling tse latelang li sebelisa faele ena:"
 }
