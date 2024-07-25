@@ -8,5 +8,6 @@
 	},
 	"globalusage": "Umumiy fayl qullanıluvı",
 	"globalusage-on-wiki": "$2 leyhasında qullanıluvı",
-	"globalusage-of-file": "Bu fayl aşağıdaki başqa vikilerde qullanıla:"
+	"globalusage-of-file": "Bu fayl aşağıdaki başqa vikilerde qullanıla:",
+	"globalusage-more": "Bu faylnıñ [[{{#Special:GlobalUsage}}/$1|global qullanılğanını]] köster."
 }
