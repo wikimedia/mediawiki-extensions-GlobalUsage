@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ella Lachow"
+			"Ella Lachow",
+			"Malaalaa"
 		]
 	},
 	"globalusage": "Ubba fayiliyaa go'etuwaa",
 	"globalusage-on-wiki": "Go'ettidoy $2",
 	"globalusage-of-file": "Ha kaalliyaa hara wiikkete ha fayiliyaa go'ettoosana:",
-	"globalusage-more": "Ha fayiliyaa salo gufantto go'ettaabaa[[{{#Special:GlobalUsage}}/$1|more global usage]] be'a."
+	"globalusage-more": "Ha fayliya salo gufantto go'etuwabaa[[{{#Special:GlobalUsage}}/$1|more global usage]] be'a."
 }
