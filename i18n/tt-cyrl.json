@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Derslek",
+			"Don Alessandro",
 			"Ерней",
 			"Ильнар"
 		]
@@ -15,5 +16,5 @@
 	"globalusage-on-wiki": "$2 проектында куллану",
 	"globalusage-of-file": "Әлеге файл аста бирелгән викиларда куллана:",
 	"globalusage-more": "Бу файлның [[{{#Special:GlobalUsage}}/$1|гомуми кулланышын]] карау.",
-	"globalusage-filterlocal": "Локаль кулланышын күрсәтмәскә"
+	"globalusage-filterlocal": "Локаль кулланышын күрсәтмәү"
 }
