@@ -5,8 +5,5 @@
 			"Tšepo"
 		]
 	},
-	"globalusage": "Lefatšeng ka bophara tšebeliso ea faele",
-	"globalusage-on-wiki": "Tšebeliso ho $2",
-	"globalusage-of-file": "Li-wiki tse ling tse latelang li sebelisa faele ena:",
-	"globalusage-more": "Sheba [[{{#Special:GlobalUsage}}/$1|ho feta tshebediso ya lefatshe lohle]] ya faele ena."
+	"globalusage-on-wiki": "Tšebeliso ho $2"
 }
