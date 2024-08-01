@@ -7,5 +7,6 @@
 	},
 	"globalusage": "Lulo nyangagi yizhe",
 	"globalusage-on-wiki": "Etunlo ta $2",
-	"globalusage-of-file": "Wiki nakenazhi'e lo daka nana"
+	"globalusage-of-file": "Wiki nakenazhi'e lo daka nana",
+	"globalusage-more": "Cinle [[{{#special:GlobalUsage}}/$1|more global\nusage]] nyan daka nana."
 }
