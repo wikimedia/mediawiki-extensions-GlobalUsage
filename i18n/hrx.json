@@ -4,8 +4,8 @@
 			"Iohanen"
 		]
 	},
-	"globalusage": "Global Dateibenutzung",
+	"globalusage": "Globaal Arkivferwennung",
 	"globalusage-on-wiki": "Ferwennung uff $2",
-	"globalusage-of-file": "Die nohfollichende annre Wikis ferwenne do die Datei:",
-	"globalusage-more": "[[{{#Special:GlobalUsage}}/$1|Weidre global Ferwennunge]] die Datei gucke."
+	"globalusage-of-file": "Die nohfollichende annre Wikis ferwenne do de Arkiv:",
+	"globalusage-more": "[[{{#Special:GlobalUsage}}/$1|Weidre globaale Ferwennunge]] fun do dem Arkiv gucke."
 }

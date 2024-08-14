@@ -5,5 +5,7 @@
 		]
 	},
 	"globalusage": "tóng-àn hōo-lâng sái--ê tsōng-hóng",
-	"globalusage-on-wiki": "$2 hōo lâng īng--ê tsîng-hîng"
+	"globalusage-on-wiki": "$2 hōo lâng īng--ê tsîng-hîng",
+	"globalusage-of-file": "Ē-kha--ê kî-thann wiki īng tio̍h tsit--ê tóng-àn:",
+	"globalusage-more": "Khuànn tsit-ê tóng-àn ê [[{{#Special:GlobalUsage}}/$1|koh-khah-tsuē tsuân-i̍k sú-iōng]]."
 }
