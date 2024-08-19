@@ -14,6 +14,7 @@ class GlobalUsageImagePageHooks implements
 	ImagePageAfterImageLinksHook,
 	ImagePageShowTOCHook
 {
+	/** @var GlobalUsageQuery[] */
 	private static $queryCache = [];
 
 	/**

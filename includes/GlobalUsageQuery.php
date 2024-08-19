@@ -4,6 +4,7 @@ namespace MediaWiki\Extension\GlobalUsage;
 
 use MediaWiki\Title\Title;
 use MediaWiki\WikiMap\WikiMap;
+use stdClass;
 use Wikimedia\Rdbms\IDatabase;
 use Wikimedia\Rdbms\SelectQueryBuilder;
 
@@ -12,11 +13,17 @@ use Wikimedia\Rdbms\SelectQueryBuilder;
  *
  */
 class GlobalUsageQuery {
+	/** @var int */
 	private $limit = 50;
+	/** @var array */
 	private $offset;
+	/** @var bool */
 	private $hasMore = false;
+	/** @var bool */
 	private $filterLocal = false;
+	/** @var array[][][] */
 	private $result;
+	/** @var bool|null */
 	private $reversed = false;
 
 	/** @var int[] namespace ID(s) desired */
@@ -30,6 +37,7 @@ class GlobalUsageQuery {
 	 */
 	private $target;
 
+	/** @var stdClass|null */
 	private $lastRow;
 
 	/**
