@@ -4,5 +4,7 @@
 			"Muisha wiki hke"
 		]
 	},
-	"globalusage-on-wiki": "Kolesa ro ku $2"
+	"globalusage": "Ko wangakolesa afishiye",
+	"globalusage-on-wiki": "Kolesa ro ku $2",
+	"globalusage-of-file": "Asawiki sosikulikire sinakolesa afishiye ino"
 }
