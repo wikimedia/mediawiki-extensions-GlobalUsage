@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"Kscanne",
 			"MinecraftAustralia",
 			"Tem",
 			"පසිඳු කාවින්ද"
 		]
 	},
 	"globalusage-ok": "Cuardaigh",
-	"globalusage-on-wiki": "Úsáid ar $2"
+	"globalusage-on-wiki": "Úsáid ar $2",
+	"globalusage-of-file": "Úsáidtear an comhad seo ar na vicithe seo a leanas:"
 }
