@@ -3,9 +3,11 @@
 		"authors": [
 			"MinecraftAustralia",
 			"Tem",
-			"පසිඳු කාවින්ද"
+			"පසිඳු කාවින්ද",
+			"Kscanne"
 		]
 	},
 	"globalusage-ok": "Cuardaigh",
-	"globalusage-on-wiki": "Úsáid ar $2"
+	"globalusage-on-wiki": "Úsáid ar $2",
+	"globalusage-of-file": "Úsáidtear an comhad seo ar na vicithe seo a leanas:"
 }
