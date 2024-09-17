@@ -44,8 +44,8 @@ class SpecialGloballyUnusedFiles extends ImageQueryPage {
 	 * @return bool
 	 */
 	private function isOnGlobalUsageDatabase() {
-		global $wgGlobalUsageDatabase;
-		return !$wgGlobalUsageDatabase || $wgGlobalUsageDatabase === WikiMap::getCurrentWikiId();
+		$globalUsageDatabase = $this->getConfig()->get( 'GlobalUsageDatabase' );
+		return !$globalUsageDatabase || $globalUsageDatabase === WikiMap::getCurrentWikiId();
 	}
 
 	/**

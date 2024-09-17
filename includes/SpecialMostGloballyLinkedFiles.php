@@ -110,14 +110,13 @@ class SpecialMostGloballyLinkedFiles extends ImageQueryPage {
 	 * @return IDatabase
 	 */
 	public function getRecacheDB() {
-		global $wgGlobalUsageDatabase;
-
 		// There's no reason why we couldn't make this special page work on all wikis,
 		// it just doesn't really make sense to. We should be prevented from getting
 		// to this point by $this->isCachable(), but just to be safe:
 		$this->assertOnSharedRepo();
 
-		if ( $wgGlobalUsageDatabase === false || $wgGlobalUsageDatabase === WikiMap::getCurrentWikiId() ) {
+		$globalUsageDatabase = $this->getConfig()->get( 'GlobalUsageDatabase' );
+		if ( $globalUsageDatabase === false || $globalUsageDatabase === WikiMap::getCurrentWikiId() ) {
 			// We are using the local wiki
 			return parent::getRecacheDB();
 		} else {
