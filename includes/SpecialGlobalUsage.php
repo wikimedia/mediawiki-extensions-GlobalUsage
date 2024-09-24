@@ -8,6 +8,7 @@ namespace MediaWiki\Extension\GlobalUsage;
 
 use MediaWiki\Html\Html;
 use MediaWiki\Linker\Linker;
+use MediaWiki\MainConfigNames;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Navigation\PagerNavigationBuilder;
 use MediaWiki\SpecialPage\SpecialPage;
@@ -69,13 +70,11 @@ class SpecialGlobalUsage extends SpecialPage {
 	 * Shows the search form
 	 */
 	private function showForm() {
-		global $wgScript;
-
 		$this->getOutput()->enableOOUI();
 		/* Build form */
 		$form = new FormLayout( [
 			'method' => 'get',
-			'action' => $wgScript,
+			'action' => $this->getConfig()->get( MainConfigNames::Script ),
 		] );
 
 		$fields = [];

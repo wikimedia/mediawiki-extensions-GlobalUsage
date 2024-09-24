@@ -81,9 +81,9 @@ class SpecialGloballyWantedFiles extends WantedQueryPage {
 	 * @return bool
 	 */
 	public function isCacheable() {
-		global $wgGlobalUsageDatabase;
+		$globalUsageDatabase = $this->getConfig()->get( 'GlobalUsageDatabase' );
 		return GlobalUsage::onSharedRepo()
-			&& ( !$wgGlobalUsageDatabase || $wgGlobalUsageDatabase === WikiMap::getCurrentWikiId() );
+			&& ( !$globalUsageDatabase || $globalUsageDatabase === WikiMap::getCurrentWikiId() );
 	}
 
 	/**
