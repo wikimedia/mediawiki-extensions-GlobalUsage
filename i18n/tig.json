@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"IdrisSeid"
+			"IdrisSeid",
+			"Kassala"
 		]
 	},
 	"globalusage": "ዕሙማይ መትነፋዕ መለፍ",
-	"globalusage-on-wiki": "መትነፍዖት ዲብ $2"
+	"globalusage-on-wiki": "መትነፍዖት ዲብ $2",
+	"globalusage-of-file": "ለተሉ ብዕዳም ዊኪታት እሊ ለተሌ ፋይላ ልትነፍዑ፡",
+	"globalusage-more": "ናይ ኢሊ ፋይል [[{{#Special:GlobalUsage}}/$1|እብ ዝያድ ናይ ሐባር]] አርኤ."
 }

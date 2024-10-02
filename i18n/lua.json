@@ -6,5 +6,6 @@
 	},
 	"globalusage": "Dikuata mudimu onso ne fichier",
 	"globalusage-on-wiki": "Dienza mudimu pa $2",
-	"globalusage-of-file": "Wikis mikuabu idi ilonda idi ikuata mudimu nyi muaba udibu bateka malubu"
+	"globalusage-of-file": "Wikis mikuabu idi ilonda idi ikuata mudimu nyi muaba udibu bateka malubu",
+	"globalusage-more": "Kumona [[{{#Special:GlobalUsage}}/$1|kabidi mu dikuata dia mudimu mu mishindu yonsu]] dia muaba wa malubu ewu."
 }
