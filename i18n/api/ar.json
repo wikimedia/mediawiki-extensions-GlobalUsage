@@ -4,11 +4,15 @@
 			"Abanima",
 			"Kassem7899",
 			"Meno25",
+			"NEHAOUA",
 			"ديفيد"
 		]
 	},
 	"apihelp-query+globalusage-summary": "يرجع استخدام الصورة العالمي لصورة معينة.",
-	"apihelp-query+globalusage-param-prop": "أي الخصائص لإرجاعها:\n;url:يضيف مسار.\n;pageid:يضيف رقم صفحة.\n;namespace:يضيف رقم نطاق.",
+	"apihelp-query+globalusage-param-prop": "أي الخصائص لإرجاعها:",
+	"apihelp-query+globalusage-paramvalue-prop-url": "إضافة مسار.",
+	"apihelp-query+globalusage-paramvalue-prop-pageid": "إضافة معرف الصفحة.",
+	"apihelp-query+globalusage-paramvalue-prop-namespace": "إضافة معرف النطاق.",
 	"apihelp-query+globalusage-param-limit": "كم عدد الوصلات للعودة.",
 	"apihelp-query+globalusage-param-filterlocal": "ترشيح الاستخدام المحلي للملف.",
 	"apihelp-query+globalusage-param-namespace": "احصر النتائج إلى مساحات الاسم المحددة.",
