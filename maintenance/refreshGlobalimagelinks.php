@@ -12,6 +12,7 @@ if ( getenv( 'MW_INSTALL_PATH' ) !== false ) {
 require_once $path . '/maintenance/Maintenance.php';
 
 use MediaWiki\Extension\GlobalUsage\GlobalUsage;
+use MediaWiki\Maintenance\Maintenance;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
 use MediaWiki\WikiMap\WikiMap;

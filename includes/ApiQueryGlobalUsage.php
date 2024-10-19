@@ -24,8 +24,8 @@
 
 namespace MediaWiki\Extension\GlobalUsage;
 
-use ApiBase;
-use ApiQueryBase;
+use MediaWiki\Api\ApiBase;
+use MediaWiki\Api\ApiQueryBase;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\WikiMap\WikiMap;
 use Wikimedia\ParamValidator\ParamValidator;

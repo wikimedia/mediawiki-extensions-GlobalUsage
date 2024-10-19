@@ -7,11 +7,10 @@
 
 namespace MediaWiki\Extension\GlobalUsage;
 
-use Content;
 use FileRepo;
-use IDBAccessObject;
 use LocalFile;
 use ManualLogEntry;
+use MediaWiki\Content\Content;
 use MediaWiki\Deferred\LinksUpdate\LinksUpdate;
 use MediaWiki\Hook\FileDeleteCompleteHook;
 use MediaWiki\Hook\FileUndeleteCompleteHook;
@@ -29,6 +28,7 @@ use MediaWiki\User\UserIdentity;
 use MediaWiki\WikiMap\WikiMap;
 use UploadBase;
 use WikiFilePage;
+use Wikimedia\Rdbms\IDBAccessObject;
 use WikiPage;
 
 class Hooks implements
