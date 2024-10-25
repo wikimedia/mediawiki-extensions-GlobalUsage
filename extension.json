@@ -32,7 +32,12 @@
 		"globalUsageCachePurge": "MediaWiki\\Extension\\GlobalUsage\\GlobalUsageCachePurgeJob"
 	},
 	"APIPropModules": {
-		"globalusage": "MediaWiki\\Extension\\GlobalUsage\\ApiQueryGlobalUsage"
+		"globalusage": {
+			"class": "MediaWiki\\Extension\\GlobalUsage\\ApiQueryGlobalUsage",
+			"services": [
+				"SiteLookup"
+			]
+		}
 	},
 	"MessagesDirs": {
 		"GlobalUsage": [

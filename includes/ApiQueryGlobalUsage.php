@@ -25,15 +25,23 @@
 namespace MediaWiki\Extension\GlobalUsage;
 
 use MediaWiki\Api\ApiBase;
+use MediaWiki\Api\ApiQuery;
 use MediaWiki\Api\ApiQueryBase;
-use MediaWiki\MediaWikiServices;
+use MediaWiki\Site\SiteLookup;
 use MediaWiki\WikiMap\WikiMap;
 use Wikimedia\ParamValidator\ParamValidator;
 use Wikimedia\ParamValidator\TypeDef\IntegerDef;
 
 class ApiQueryGlobalUsage extends ApiQueryBase {
-	public function __construct( $query, $moduleName ) {
+	private SiteLookup $siteLookup;
+
+	public function __construct(
+		ApiQuery $query,
+		string $moduleName,
+		SiteLookup $siteLookup
+	) {
 		parent::__construct( $query, $moduleName, 'gu' );
+		$this->siteLookup = $siteLookup;
 	}
 
 	public function execute() {
@@ -122,8 +130,7 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 	}
 
 	public function getAllowedParams() {
-		$sites = MediaWikiServices::getInstance()->getSiteLookup()->getSites()
-			->getGlobalIdentifiers();
+		$sites = $this->siteLookup->getSites()->getGlobalIdentifiers();
 		return [
 			'prop' => [
 				ParamValidator::PARAM_DEFAULT => 'url',
