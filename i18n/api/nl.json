@@ -13,7 +13,7 @@
 	"apihelp-query+globalusage-paramvalue-prop-url": "Voegt URL toe.",
 	"apihelp-query+globalusage-paramvalue-prop-pageid": "Voegt pagina-ID toe.",
 	"apihelp-query+globalusage-paramvalue-prop-namespace": "Voegt naamruimte-ID toe.",
-	"apihelp-query+globalusage-param-limit": "Hoeveel links er moeten worden teruggestuurd.",
+	"apihelp-query+globalusage-param-limit": "Hoeveel koppelingen er moeten worden geretourneerd.",
 	"apihelp-query+globalusage-param-filterlocal": "Lokaal gebruik van dit bestand filteren.",
 	"apihelp-query+globalusage-param-namespace": "Beperk resultaten tot deze naamruimten.",
 	"apihelp-query+globalusage-param-site": "Beperk resultaten tot deze sites.",
