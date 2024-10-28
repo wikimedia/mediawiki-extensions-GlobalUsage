@@ -102,7 +102,7 @@ class GlobalUsage {
 	 * @param string[]|null $to File name(s)
 	 * @param int|null $ticket
 	 */
-	public function deleteLinksFromPage( $id, array $to = null, $ticket = null ) {
+	public function deleteLinksFromPage( $id, ?array $to = null, $ticket = null ) {
 		global $wgUpdateRowsPerQuery;
 
 		$where = [
