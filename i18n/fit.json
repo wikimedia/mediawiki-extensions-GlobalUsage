@@ -5,8 +5,5 @@
 			"Pyscowicz"
 		]
 	},
-	"globalusage": "Fiilin järjestelmänlaajuinen käyttö",
-	"globalusage-on-wiki": "Käyttö kohteessa $2",
-	"globalusage-of-file": "Seuraavat muut wikit käyttävät tätä fiiliä:",
-	"globalusage-more": "Näytä lissää tämän failin [[{{#Special:GlobalUsage}}/$1|järjestelmänlaajuista käyttöä]]."
+	"globalusage": "Fiilin järjestelmänlaajuinen käyttö"
 }
