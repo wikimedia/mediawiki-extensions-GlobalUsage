@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Kizule",
-			"Zoranzoki21"
+			"Zoranzoki21",
+			"Milicevic01"
 		]
 	},
 	"apihelp-query+globalusage-description": "Враћа глобално коришћење слике за одређену слику.",
