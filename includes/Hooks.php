@@ -234,6 +234,7 @@ class Hooks implements
 		);
 	}
 
+	/** @inheritDoc */
 	public function onWgQueryPages( &$queryPages ) {
 		$queryPages[] = [ 'SpecialMostGloballyLinkedFiles', 'MostGloballyLinkedFiles' ];
 		$queryPages[] = [ 'SpecialGloballyWantedFiles', 'GloballyWantedFiles' ];

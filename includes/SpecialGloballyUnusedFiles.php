@@ -81,18 +81,22 @@ class SpecialGloballyUnusedFiles extends ImageQueryPage {
 		return $this->isOnGlobalUsageDatabase();
 	}
 
+	/** @inheritDoc */
 	public function isExpensive() {
 		return true;
 	}
 
+	/** @inheritDoc */
 	public function sortDescending() {
 		return false;
 	}
 
+	/** @inheritDoc */
 	public function isSyndicated() {
 		return false;
 	}
 
+	/** @inheritDoc */
 	public function getQueryInfo() {
 		if ( !$this->isOnGlobalUsageDatabase() ) {
 			throw new RuntimeException( "This wiki is not on shared repo" );
@@ -125,14 +129,17 @@ class SpecialGloballyUnusedFiles extends ImageQueryPage {
 		return $retval;
 	}
 
+	/** @inheritDoc */
 	public function usesTimestamps() {
 		return true;
 	}
 
+	/** @inheritDoc */
 	public function getPageHeader() {
 		return $this->msg( 'globallyunusedfilestext' )->parseAsBlock();
 	}
 
+	/** @inheritDoc */
 	protected function getGroupName() {
 		return 'maintenance';
 	}

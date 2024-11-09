@@ -129,6 +129,7 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 		}
 	}
 
+	/** @inheritDoc */
 	public function getAllowedParams() {
 		$sites = $this->siteLookup->getSites()->getGlobalIdentifiers();
 		return [
@@ -176,6 +177,7 @@ class ApiQueryGlobalUsage extends ApiQueryBase {
 		];
 	}
 
+	/** @inheritDoc */
 	public function getCacheMode( $params ) {
 		return 'public';
 	}

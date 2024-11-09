@@ -329,6 +329,7 @@ class SpecialGlobalUsage extends SpecialPage {
 		}, $result );
 	}
 
+	/** @inheritDoc */
 	protected function getGroupName() {
 		return 'media';
 	}

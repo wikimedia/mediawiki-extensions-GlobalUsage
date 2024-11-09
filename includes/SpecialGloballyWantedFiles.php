@@ -49,11 +49,13 @@ class SpecialGloballyWantedFiles extends WantedQueryPage {
 		}
 	}
 
+	/** @inheritDoc */
 	protected function forceExistenceCheck() {
 		// Same as MediaWiki core WantedFiles
 		return true;
 	}
 
+	/** @inheritDoc */
 	protected function existenceCheck( Title $title ) {
 		// Same as MediaWiki core WantedFiles
 		return (bool)$this->repoGroup->findFile( $title );
@@ -95,6 +97,7 @@ class SpecialGloballyWantedFiles extends WantedQueryPage {
 		return GlobalUsage::onSharedRepo();
 	}
 
+	/** @inheritDoc */
 	public function getQueryInfo() {
 		return GlobalUsage::getWantedFilesQueryInfo();
 	}
@@ -140,6 +143,7 @@ class SpecialGloballyWantedFiles extends WantedQueryPage {
 		}
 	}
 
+	/** @inheritDoc */
 	protected function getGroupName() {
 		return 'maintenance';
 	}

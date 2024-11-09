@@ -40,10 +40,12 @@ class SpecialMostGloballyLinkedFiles extends ImageQueryPage {
 		}
 	}
 
+	/** @inheritDoc */
 	public function isExpensive() {
 		return true;
 	}
 
+	/** @inheritDoc */
 	public function isSyndicated() {
 		return false;
 	}
@@ -76,6 +78,7 @@ class SpecialMostGloballyLinkedFiles extends ImageQueryPage {
 		];
 	}
 
+	/** @inheritDoc */
 	protected function getCellHtml( $row ) {
 		return $this->msg( 'nimagelinks' )->numParams( $row->value )->escaped() . '<br />';
 	}
@@ -128,6 +131,7 @@ class SpecialMostGloballyLinkedFiles extends ImageQueryPage {
 		}
 	}
 
+	/** @inheritDoc */
 	protected function getGroupName() {
 		return 'highuse';
 	}
