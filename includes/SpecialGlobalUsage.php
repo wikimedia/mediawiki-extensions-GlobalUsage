@@ -9,7 +9,6 @@ namespace MediaWiki\Extension\GlobalUsage;
 use MediaWiki\Html\Html;
 use MediaWiki\Linker\Linker;
 use MediaWiki\MainConfigNames;
-use MediaWiki\MediaWikiServices;
 use MediaWiki\Navigation\PagerNavigationBuilder;
 use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Title\Title;
@@ -22,6 +21,8 @@ use OOUI\FormLayout;
 use OOUI\HtmlSnippet;
 use OOUI\PanelLayout;
 use OOUI\TextInputWidget;
+use RepoGroup;
+use SearchEngineFactory;
 
 class SpecialGlobalUsage extends SpecialPage {
 	/**
@@ -34,8 +35,16 @@ class SpecialGlobalUsage extends SpecialPage {
 	 */
 	protected $filterLocal;
 
-	public function __construct() {
+	private RepoGroup $repoGroup;
+	private SearchEngineFactory $searchEngineFactory;
+
+	public function __construct(
+		RepoGroup $repoGroup,
+		SearchEngineFactory $searchEngineFactory
+	) {
 		parent::__construct( 'GlobalUsage' );
+		$this->repoGroup = $repoGroup;
+		$this->searchEngineFactory = $searchEngineFactory;
 	}
 
 	/**
@@ -143,7 +152,7 @@ class SpecialGlobalUsage extends SpecialPage {
 		);
 
 		if ( $this->target !== null ) {
-			$file = MediaWikiServices::getInstance()->getRepoGroup()->findFile( $this->target );
+			$file = $this->repoGroup->findFile( $this->target );
 			if ( $file ) {
 				// Show the image if it exists
 				$html = Linker::makeThumbLinkObj(
@@ -308,7 +317,7 @@ class SpecialGlobalUsage extends SpecialPage {
 			// No prefix suggestion outside of file namespace
 			return [];
 		}
-		$searchEngine = MediaWikiServices::getInstance()->getSearchEngineFactory()->create();
+		$searchEngine = $this->searchEngineFactory->create();
 		$searchEngine->setLimitOffset( $limit, $offset );
 		// Autocomplete subpage the same as a normal search, but just for (local) files
 		$searchEngine->setNamespaces( [ NS_FILE ] );

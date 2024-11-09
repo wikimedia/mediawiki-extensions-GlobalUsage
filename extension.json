@@ -25,8 +25,19 @@
 				"RepoGroup"
 			]
 		},
-		"GloballyUnusedFiles": "MediaWiki\\Extension\\GlobalUsage\\SpecialGloballyUnusedFiles",
-		"GlobalUsage": "MediaWiki\\Extension\\GlobalUsage\\SpecialGlobalUsage"
+		"GloballyUnusedFiles": {
+			"class": "MediaWiki\\Extension\\GlobalUsage\\SpecialGloballyUnusedFiles",
+			"services": [
+				"ConnectionProvider"
+			]
+		},
+		"GlobalUsage": {
+			"class": "MediaWiki\\Extension\\GlobalUsage\\SpecialGlobalUsage",
+			"services": [
+				"RepoGroup",
+				"SearchEngineFactory"
+			]
+		}
 	},
 	"JobClasses": {
 		"globalUsageCachePurge": "MediaWiki\\Extension\\GlobalUsage\\GlobalUsageCachePurgeJob"

@@ -28,6 +28,7 @@ use ErrorPageError;
 use MediaWiki\SpecialPage\ImageQueryPage;
 use MediaWiki\WikiMap\WikiMap;
 use RuntimeException;
+use Wikimedia\Rdbms\IConnectionProvider;
 
 /**
  * A special page that lists globally unused files
@@ -35,8 +36,11 @@ use RuntimeException;
  * @ingroup SpecialPage
  */
 class SpecialGloballyUnusedFiles extends ImageQueryPage {
-	public function __construct( $name = 'GloballyUnusedFiles' ) {
-		parent::__construct( $name );
+	public function __construct(
+		IConnectionProvider $dbProvider
+	) {
+		parent::__construct( 'GloballyUnusedFiles' );
+		$this->setDatabaseProvider( $dbProvider );
 	}
 
 	/**
