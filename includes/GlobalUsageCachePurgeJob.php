@@ -14,7 +14,7 @@ use MediaWiki\WikiMap\WikiMap;
  * to be in sync, so the later can be used for the local jobs.
  */
 class GlobalUsageCachePurgeJob extends Job {
-	public function __construct( $title, $params ) {
+	public function __construct( Title $title, array $params ) {
 		parent::__construct( 'globalUsageCachePurge', $title, $params );
 		$this->removeDuplicates = true; // expensive
 	}
