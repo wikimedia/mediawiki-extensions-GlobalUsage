@@ -2,12 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Aliyu shaba",
-			"Amire80",
 			"Mohammedbama123"
 		]
 	},
-	"globalusage": "Faida file denabe",
+	"globalusage": "Faida liwuram denabe",
 	"globalusage-on-wiki": "Awodoy faida, a kladin $2",
-	"globalusage-of-file": "Wiki gade ye file adelan faidaten:",
-	"globalusage-more": "Kuru [[{{#Special:GlobalUsage}}/$1|faida dinabǝ ]] file ade ye"
+	"globalusage-of-file": "Wiki gade ye liwuram adelan faidaten:",
+	"globalusage-more": "Kuru [[{{#Special:GlobalUsage}}/$1|faida dinabǝ]] liwuram ade ye"
 }

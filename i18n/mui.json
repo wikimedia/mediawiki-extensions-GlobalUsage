@@ -5,7 +5,8 @@
 			"Masjawad99"
 		]
 	},
-	"globalusage": "Pemakian berkas global",
-	"globalusage-on-wiki": "Dipaki di $2",
-	"globalusage-of-file": "Galo-galo wiki laén yang maki berkas ni:"
+	"globalusage": "Pemakîan setuo sejagat",
+	"globalusage-on-wiki": "Pemakîan di $2",
+	"globalusage-of-file": "Galo-galo wiki laén yang makî setuo ni:",
+	"globalusage-more": "Seli' [[{{#Special:GlobalUsage}}/$1|pemakîan sejagat laénnyo]] dari setuo ni."
 }

@@ -6,5 +6,6 @@
 	},
 	"globalusage": "Pammakeang barakkasak global",
 	"globalusage-on-wiki": "Pammakeang ri $2",
-	"globalusage-of-file": "Iami anne wiki maraenga ammakei anne barakkasak:"
+	"globalusage-of-file": "Iami anne wiki maraenga ammakei anne barakkasak:",
+	"globalusage-more": "Lihat [[{{#Special:GlobalUsage}}/$1|lebih banyak penggunaan global]] dari berkas ini."
 }
