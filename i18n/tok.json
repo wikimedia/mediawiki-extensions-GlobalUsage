@@ -2,9 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Keenan Pepper",
-			"LesVisages"
+			"LesVisages",
+			"Tamzin"
 		]
 	},
-	"globalusage": "kepeken pi ijo ni lon lipu ale",
-	"globalusage-on-wiki": "kepeken lon $2"
+	"globalusage": "kepeken sitelen lon lipu ale",
+	"globalusage-on-wiki": "kepeken lon $2",
+	"globalusage-of-file": "lipu ante ni li kepeken sitelen ni:",
+	"globalusage-more": "sitelen ni la o lukin e [[{{#Special:GlobalUsage}}/$1|kepeken lon lipu ale pi kulupu lipu ni]]"
 }
