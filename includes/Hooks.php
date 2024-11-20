@@ -50,7 +50,7 @@ class Hooks implements
 		$title = $linksUpdater->getTitle();
 
 		// Create a list of locally existing images (DB keys)
-		$images = array_keys( $linksUpdater->getImages() );
+		$images = array_keys( $linksUpdater->getParserOutput()->getImages() );
 
 		$localFiles = [];
 		$repo = MediaWikiServices::getInstance()->getRepoGroup()->getLocalRepo();
