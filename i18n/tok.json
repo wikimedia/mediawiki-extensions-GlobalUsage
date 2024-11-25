@@ -3,11 +3,12 @@
 		"authors": [
 			"LesVisages",
 			"Keenan Pepper",
-			"Tamzin"
+			"Tamzin",
+			".hecko"
 		]
 	},
 	"globalusage": "kepeken sitelen lon lipu ale",
-	"globalusage-on-wiki": "kepeken lon $2",
+	"globalusage-on-wiki": "kepeken lon lipu $2",
 	"globalusage-of-file": "lipu ante ni li kepeken sitelen ni:",
 	"globalusage-more": "sitelen ni la o lukin e [[{{#Special:GlobalUsage}}/$1|kepeken lon lipu ale pi kulupu lipu ni]]"
 }
