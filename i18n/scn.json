@@ -5,17 +5,18 @@
 			"Aushulz",
 			"Gmelfi",
 			"Pippinu",
-			"Sarvaturi"
+			"Sarvaturi",
+			"GianAntonucci"
 		]
 	},
-	"globalusage": "Utilizzu glubbali dû file",
+	"globalusage": "Usu glubbali dû pricu",
 	"globalusage-for": "Usu glubbali di \"$1\"",
 	"globalusage-filename": "Nomu dû file:",
 	"globalusage-desc": "[[Special:GlobalUsage|Pàggina spiciali]] pi taliari l'usu glubbali dî file",
 	"globalusage-ok": "Va arricerca",
 	"globalusage-no-results": "[[:$1]] nun è usatu n àutri wiki.",
-	"globalusage-on-wiki": "Utilizzu supra $2",
-	"globalusage-of-file": "Puru li wiki appressu ùsanu stu file:",
+	"globalusage-on-wiki": "Usu nna $2",
+	"globalusage-of-file": "Macari i wiki appressu ùsanu stu pricu:",
 	"globalusage-more": "Talìa [[{{#Special:GlobalUsage}}/$1|l'utilizzu glubbali]] di stu file.",
 	"globalusage-filterlocal": "Nun ammustrari l'usu lucali",
 	"mostgloballylinkedfiles": "File chiù richiamati glubbalmenti",
