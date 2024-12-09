@@ -16,6 +16,7 @@ use MediaWiki\Maintenance\Maintenance;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
 use MediaWiki\WikiMap\WikiMap;
+use Wikimedia\Rdbms\IDBAccessObject;
 
 class RefreshGlobalimagelinks extends Maintenance {
 	public function __construct() {
@@ -97,7 +98,7 @@ class RefreshGlobalimagelinks extends Maintenance {
 						$images = array_keys( $rows );
 						# Since we have a pretty accurate page_id, don't specify
 						# IDBAccessObject::READ_LATEST
-						$gu->insertLinks( $title, $images, /* $flags */ 0 );
+						$gu->insertLinks( $title, $images, IDBAccessObject::READ_NORMAL );
 					}
 				}
 
