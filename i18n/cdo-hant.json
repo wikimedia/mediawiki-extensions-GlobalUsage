@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Winston Sung"
+		]
+	},
+	"globalusage-desc": "查看全域文件使法其[[Special:GlobalUsage|特殊頁面]]",
+	"globalusage-text": "尋討全域文件使法"
+}
