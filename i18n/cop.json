@@ -6,5 +6,6 @@
 	},
 	"globalusage": "Ⲡϫⲓⲛⲭⲣⲁⲥⲑⲉ ⲛ̀ⲕⲟⲥⲙⲟⲥ ⲙ̀ⲡⲁⲓⲕⲟⲓϩⲓ",
 	"globalusage-on-wiki": "Ⲡϫⲓⲛⲭⲣⲁⲥⲑⲉ ϧⲉⲛ$2",
-	"globalusage-of-file": "Ⲁⲩⲭⲣⲁⲥⲑⲉ ⲙ̀ⲡⲁⲓⲕⲟⲓϩⲓ ϧⲉⲛⲛⲁⲓⲟⲩⲓⲕⲓ:"
+	"globalusage-of-file": "Ⲁⲩⲭⲣⲁⲥⲑⲉ ⲙ̀ⲡⲁⲓⲕⲟⲓϩⲓ ϧⲉⲛⲛⲁⲓⲟⲩⲓⲕⲓ:",
+	"globalusage-more": "Ⲟⲩⲱⲛϩ [[{{#Special:GlobalUsage}}/$1|ⲛ̀ϫⲓⲛⲉⲣⲭⲣⲁⲥⲑⲉ ⲛ̀ⲕⲟⲥⲙⲓⲕⲟⲥ]] ⲛ̀ⲧⲉⲡⲁⲓⲕⲟⲓϩⲓ."
 }
