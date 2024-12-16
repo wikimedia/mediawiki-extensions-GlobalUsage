@@ -6,5 +6,6 @@
 	},
 	"globalusage": "Guna pail dunia",
 	"globalusage-on-wiki": "Guna di $2",
-	"globalusage-of-file": "Wiki lain ni guna fail ni:"
+	"globalusage-of-file": "Wiki lain ni guna fail ni:",
+	"globalusage-more": "Nampak [[{{#Special:GlobalUsage}}/$1|guna global lagi]] untuk pail ni."
 }
