@@ -58,7 +58,8 @@ class Hooks implements
 		foreach ( $imagesInfo as $dbKey => $info ) {
 			'@phan-var array $info';
 			$localFiles[] = $dbKey;
-			if ( $dbKey !== $info['title'] ) { // redirect
+			if ( $dbKey !== $info['title'] ) {
+				// redirect
 				$localFiles[] = $info['title'];
 			}
 		}

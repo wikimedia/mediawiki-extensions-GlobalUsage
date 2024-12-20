@@ -16,19 +16,23 @@ use MediaWiki\WikiMap\WikiMap;
 class GlobalUsageCachePurgeJob extends Job {
 	public function __construct( Title $title, array $params ) {
 		parent::__construct( 'globalUsageCachePurge', $title, $params );
-		$this->removeDuplicates = true; // expensive
+		// expensive job
+		$this->removeDuplicates = true;
 	}
 
 	public function run() {
 		$title = $this->getTitle();
 		if ( !$title->inNamespace( NS_FILE ) ) {
-			return true; // umm, OK
+			// umm, OK
+			return true;
 		}
 
-		$rootParams = Job::newRootJobParams( // "overall" purge job info
+		// "overall" purge job info
+		$rootParams = Job::newRootJobParams(
 			"GlobalUsage:htmlCacheUpdate:imagelinks:{$title->getPrefixedText()}" );
 
-		$filesForPurge = [ $title->getDbKey() ]; // title to purge backlinks to
+		// title to purge backlinks to
+		$filesForPurge = [ $title->getDbKey() ];
 		// All File pages that redirect this one may have backlinks that need purging.
 		// These backlinks are probably broken now (missing files or double redirects).
 		$services = MediaWikiServices::getInstance();
