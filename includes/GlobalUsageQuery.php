@@ -179,10 +179,12 @@ class GlobalUsageQuery {
 			->caller( __METHOD__ );
 
 		// Add target image(s)
-		if ( is_array( $this->target ) ) { // array of dbkey strings
+		if ( is_array( $this->target ) ) {
+			// array of dbkey strings
 			$namespace = NS_FILE;
 			$queryIn = $this->target;
-		} else { // a Title object
+		} else {
+			// a Title object
 			$namespace = $this->target->getNamespace();
 			$queryIn = $this->target->getDbKey();
 		}

@@ -158,8 +158,9 @@ class SpecialGlobalUsage extends SpecialPage {
 				$html = Linker::makeThumbLinkObj(
 					$this->target,
 					$file,
-					/* $label */ $this->target->getPrefixedText(),
-					/* $alt */ '', /* $align */ $this->getLanguage()->alignEnd()
+					$this->target->getPrefixedText(),
+					'',
+					$this->getLanguage()->alignEnd()
 				);
 				$this->getOutput()->addHtml( $html );
 			}
