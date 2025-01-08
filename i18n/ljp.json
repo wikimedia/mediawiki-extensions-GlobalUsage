@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"DedeKurnn"
+		]
+	},
+	"globalusage": "Pumakayan bondol global",
+	"globalusage-on-wiki": "Tipakay di $2",
+	"globalusage-of-file": "Wiki baghih say makay bondol sinji:",
+	"globalusage-more": "Liyak [[{{#Special:GlobalUsage}}/$1|ghada lamon pumakayan global]] jak bondol sinji."
+}
