@@ -6,5 +6,6 @@
 	},
 	"globalusage": "𐌱𐍂𐌿𐌺𐌴𐌹𐌽𐍃 𐍆𐌰𐌾𐌻𐌴 𐌰𐌻𐌻𐌰𐌹𐌼 𐍃𐍄𐌰𐌳𐌹𐌼",
 	"globalusage-on-wiki": "𐌱𐍂𐌿𐌺𐌴𐌹𐌽𐍃 𐌰𐌽𐌰 $2",
-	"globalusage-of-file": "𐌸𐍉 𐌹𐍆𐍄𐌿𐌼𐍉𐌽𐌰 𐌰𐌽𐌸𐌰𐍂𐌰 𐍅𐌹𐌺𐌾𐌰 𐌱𐍂𐌿𐌺𐌾𐌰𐌽𐌳 𐌸𐌹𐍃 𐍆𐌰𐌾𐌻𐌹𐍃:"
+	"globalusage-of-file": "𐌸𐍉 𐌹𐍆𐍄𐌿𐌼𐍉𐌽𐌰 𐌰𐌽𐌸𐌰𐍂𐌰 𐍅𐌹𐌺𐌾𐌰 𐌱𐍂𐌿𐌺𐌾𐌰𐌽𐌳 𐌸𐌹𐍃 𐍆𐌰𐌾𐌻𐌹𐍃:",
+	"globalusage-more": "𐍃𐌰𐌹𐍈 [[{{#Special:GlobalUsage}}/$1|𐌼𐌰𐌹𐍃 𐌱𐍂𐌿𐌺𐌴𐌹𐌽 𐌲𐌰𐌼𐌰𐌹𐌽𐌰]] 𐌸𐌹𐍃 𐍆𐌰𐌾𐌻𐌹𐍃."
 }
