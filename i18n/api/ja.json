@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Kkairri",
-			"Yusuke1109"
+			"Yusuke1109",
+			"Kokage si"
 		]
 	},
 	"apihelp-query+globalusage-description": "与えられたファイルのグローバルでの画像利用状況を返します。",
