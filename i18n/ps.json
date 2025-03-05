@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ahmed-Najib-Biabani-Ibrahimkhel"
+			"Ahmed-Najib-Biabani-Ibrahimkhel",
+			"شاه زمان پټان"
 		]
 	},
-	"globalusage": "د نړېوالې دوتنې کارېدنه",
+	"globalusage": "د نړۍوالې دوتنې کارېدنه",
 	"globalusage-for": "د \"$1\" لپاره نړېوالې کارېدنې",
 	"globalusage-filename": "د دوتنې نوم:",
 	"globalusage-desc": "د نړېوالې دوتنې د کارېدنگ د مخليدنې لپاره [[Special:GlobalUsage|ځانگړی مخ]]",
@@ -12,8 +13,8 @@
 	"globalusage-text": "د نړېوالې دوتنې کارېدنې پلټل",
 	"globalusage-no-results": "[[:$1]] په نورو ويکي گانو نه کارېږي.",
 	"globalusage-on-wiki": "په $2 کارونې",
-	"globalusage-of-file": "همدا دوتنه لاندينۍ نورې ويکي گانې کاروي:",
-	"globalusage-more": "د دې دوتنې [[{{#Special:GlobalUsage}}/$1|نورې نړېوالې کارېدنې]] کتل.",
+	"globalusage-of-file": "همدا دوتنه لاندې نورې ويکي گانې هم کاروي:",
+	"globalusage-more": "د دې دوتنې [[{{#Special:GlobalUsage}}/$1|نورې نړۍوالې کارېدنې]] کتل.",
 	"globalusage-filterlocal": "سيمه ايزې کارونې مه ښکاره کوه",
 	"globalusage-header": "په نورو ويکي گانو باندې د يوې دوتنې د کارېدنې مالومات په همدې مخ کتلی شی. تاسې همدا ډول مالومات د يوې دوتنې د څرگندونې مخ په پای کې هم موندلی شی."
 }
