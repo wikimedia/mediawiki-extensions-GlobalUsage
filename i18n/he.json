@@ -17,8 +17,8 @@
 	"globalusage-text": "חיפוש שימוש גלובלי בקובץ",
 	"globalusage-no-results": "[[:$1]] אינו בשימוש באתרי ויקי אחרים.",
 	"globalusage-on-wiki": "שימוש באתר $2",
-	"globalusage-of-file": "אתרי הוויקי השונים הבאים משתמשים בקובץ זה:",
-	"globalusage-more": "צפייה ב[[{{#Special:GlobalUsage}}/$1|שימושים גלובליים נוספים]] של קובץ זה.",
+	"globalusage-of-file": "אתרי הוויקי האחרים הבאים משתמשים בקובץ הזה:",
+	"globalusage-more": "צפייה ב[[{{#Special:GlobalUsage}}/$1|שימושים גלובליים נוספים]] של הקובץ הזה.",
 	"globalusage-filterlocal": "לא להציג שימוש מקומי",
 	"mostgloballylinkedfiles": "הקבצים המקושרים ביותר",
 	"mostgloballylinkedfiles-summary": "רשימת קבצים שהוטבעו הכי הרבה בכל אתרי הוויקי. לרשימה המקבילה שלוקחת בחשבון שימוש באתר {{SITENAME}}, ר' [[{{#special:MostLinkedFiles}}]].",
@@ -28,5 +28,5 @@
 	"globalusage-header": "הדף הזה מציג איפה הקובץ משמש באתרי ויקי אחרים. אפשר גם למצוא את המידע הזה בתחתית דף תיאור הקובץ.",
 	"globallyunusedfiles": "קבצים שאינם בשימוש גלובלי",
 	"globallyunusedfilestext": "הקבצים הבאים קיימים, אבל אינם מוטבעים בשום דף בשום ויקי.",
-	"globallyunusedfiles-error-nonsharedrepo": "הוויקי הזה אניו במאגר משותף"
+	"globallyunusedfiles-error-nonsharedrepo": "הוויקי הזה אינו במאגר משותף"
 }
