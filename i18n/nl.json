@@ -20,7 +20,7 @@
 	"globalusage-text": "Globaal bestandsgebruik bekijken",
 	"globalusage-no-results": "[[:$1]] wordt niet gebruikt in andere wiki's.",
 	"globalusage-on-wiki": "Gebruikt op $2",
-	"globalusage-of-file": "De volgende andere wiki's gebruiken dit bestand:",
+	"globalusage-of-file": "Dit bestand wordt op de volgende andere wiki’s gebruikt:",
 	"globalusage-more": "[[{{#Special:GlobalUsage}}/$1|Globaal gebruik]] van dit bestand bekijken.",
 	"globalusage-filterlocal": "Lokaal gebruik niet weergeven",
 	"mostgloballylinkedfiles": "Wereldwijd meest gekoppelde bestanden",
