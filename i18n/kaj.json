@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Kuzayet",
-			"Jjnzamah"
+			"Jjnzamah",
+			"Kambai Akau"
 		]
 	},
 	"globalusage": "fial npfwong tyak kasa",
 	"globalusage-on-wiki": "N yya pfwong du̱$2",
 	"globalusage-of-file": "Tssup ba̱yaan áwikis a̱n yya pfwong du̱ falki a̱ni:",
-	"globalusage-more": "Ccang [[((#A̱wuwat:Nyyapfong Ka̱sa))/$1|ka̱tswa nyyapfong ka̱sa]] an yyi fial ani."
+	"globalusage-more": "Ccang [[{{#Special:GlobalUsage}}/$1|ka̱tswa nyyapfong ka̱sa]] an yyi fial ani."
 }
