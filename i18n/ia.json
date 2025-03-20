@@ -12,7 +12,7 @@
 	"globalusage-text": "Cercar uso global de files.",
 	"globalusage-no-results": "[[:$1]] non es usate in altere wikis.",
 	"globalusage-on-wiki": "Uso in $2",
-	"globalusage-of-file": "Le altere wikis sequente usa iste imagine:",
+	"globalusage-of-file": "Le altere wikis sequente usa iste file:",
 	"globalusage-more": "Vider [[{{#Special:GlobalUsage}}/$1|altere usos global]] de iste file.",
 	"globalusage-filterlocal": "Non monstrar uso local",
 	"mostgloballylinkedfiles": "Le files le plus ligate globalmente",
