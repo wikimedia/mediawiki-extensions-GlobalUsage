@@ -20,6 +20,7 @@ class GlobalUsageCachePurgeJob extends Job {
 		$this->removeDuplicates = true;
 	}
 
+	/** @inheritDoc */
 	public function run() {
 		$title = $this->getTitle();
 		if ( !$title->inNamespace( NS_FILE ) ) {
