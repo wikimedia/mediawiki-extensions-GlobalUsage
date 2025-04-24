@@ -2,8 +2,8 @@
 
 namespace MediaWiki\Extension\GlobalUsage;
 
-use HTMLCacheUpdateJob;
-use Job;
+use MediaWiki\JobQueue\Job;
+use MediaWiki\JobQueue\Jobs\HTMLCacheUpdateJob;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
 use MediaWiki\WikiMap\WikiMap;

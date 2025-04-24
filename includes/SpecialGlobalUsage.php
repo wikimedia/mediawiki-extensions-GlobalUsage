@@ -6,6 +6,7 @@
 
 namespace MediaWiki\Extension\GlobalUsage;
 
+use MediaWiki\FileRepo\RepoGroup;
 use MediaWiki\Html\Html;
 use MediaWiki\Linker\Linker;
 use MediaWiki\MainConfigNames;
@@ -21,7 +22,6 @@ use OOUI\FormLayout;
 use OOUI\HtmlSnippet;
 use OOUI\PanelLayout;
 use OOUI\TextInputWidget;
-use RepoGroup;
 use SearchEngineFactory;
 
 class SpecialGlobalUsage extends SpecialPage {

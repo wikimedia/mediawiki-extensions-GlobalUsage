@@ -11,13 +11,13 @@
 namespace MediaWiki\Extension\GlobalUsage;
 
 use MediaWiki\Cache\LinkBatchFactory;
+use MediaWiki\FileRepo\RepoGroup;
 use MediaWiki\Html\Html;
+use MediaWiki\Skin\Skin;
 use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\SpecialPage\WantedQueryPage;
 use MediaWiki\Title\Title;
 use MediaWiki\WikiMap\WikiMap;
-use RepoGroup;
-use Skin;
 use stdClass;
 use Wikimedia\Rdbms\IConnectionProvider;
 
