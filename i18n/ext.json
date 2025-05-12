@@ -6,5 +6,6 @@
 	},
 	"globalusage": "Gastu mundial l'archivu",
 	"globalusage-on-wiki": "Gastu en $2",
-	"globalusage-of-file": "Las siguientis güiquis gastan esti archivuː"
+	"globalusage-of-file": "Las siguientis güiquis gastan esti archivuː",
+	"globalusage-more": "Vél [[{{#Special:GlobalUsage}}/$1|más gastu mundial]] desti archivu."
 }
