@@ -4,11 +4,12 @@
 			"LNDDYL",
 			"SolidBlock",
 			"列维劳德",
-			"飞舞回堂前"
+			"飞舞回堂前",
+			"物灵"
 		]
 	},
 	"globalusage": "總文之用",
 	"globalusage-ok": "尋",
 	"globalusage-on-wiki": "$2上之用",
-	"globalusage-of-file": "下他共筆連本檔："
+	"globalusage-of-file": "援於外站："
 }
