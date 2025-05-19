@@ -7,7 +7,8 @@
 			"Shirayuki",
 			"TKsdik8900",
 			"Yusuke1109",
-			"青子守歌"
+			"青子守歌",
+			"Foomin10"
 		]
 	},
 	"globalusage": "グローバルなファイル使用状況",
@@ -18,7 +19,7 @@
 	"globalusage-text": "グローバルなファイル使用状況を検索",
 	"globalusage-no-results": "[[:$1]] は他のウィキでは使用されていません。",
 	"globalusage-on-wiki": "$2 での使用状況",
-	"globalusage-of-file": "以下に挙げる他のウィキがこの画像を使っています:",
+	"globalusage-of-file": "次に掲げる他のウィキでもこの画像を使用しています:",
 	"globalusage-more": "このファイルの[[{{#Special:GlobalUsage}}/$1|グローバル使用状況]]を表示する。",
 	"globalusage-filterlocal": "ローカル使用状況を表示しない",
 	"mostgloballylinkedfiles": "グローバルに被リンク数の多いファイル",
