@@ -6,7 +6,7 @@
 		]
 	},
 	"apihelp-query+globalusage-summary": "Vraća globalno korišćenje slike za određenu sliku.",
-	"apihelp-query+globalusage-param-prop": "Koja svojstva da vrati:\n;url:Dodaje link.\n;pageid:Dodaje ID stranice.\n;namespace:Dodaje ID imenskog prostora.",
+	"apihelp-query+globalusage-param-prop": "Koja svojstva da vrati:",
 	"apihelp-query+globalusage-param-limit": "Koliko linkova da vratim?",
 	"apihelp-query+globalusage-param-filterlocal": "Filtriraj lokalnu upotrebu datoteke.",
 	"apihelp-query+globalusage-example-1": "Preuzmi upotrebu [[:File:Example.jpg]]."
