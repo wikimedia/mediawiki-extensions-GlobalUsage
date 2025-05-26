@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Patoasado97",
-			"TSolange"
+			"TSolange",
+			"VicenteCancheM"
 		]
 	},
-	"globalusage-on-wiki": "U búukinta'al ti' $2",
+	"globalusage": "U k'abéetkunsa'al archivo tuláakal tu'ux",
+	"globalusage-on-wiki": "U kabéetkunsa'al ti' $2",
 	"globalusage-of-file": "Le wikis je'ela' ku meyajtiko'ob le archivoa':"
 }
