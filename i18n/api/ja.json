@@ -3,6 +3,7 @@
 		"authors": [
 			"Kkairri",
 			"Kokage si",
+			"Shirayuki",
 			"Yusuke1109"
 		]
 	},
@@ -12,6 +13,6 @@
 	"apihelp-query+globalusage-paramvalue-prop-pageid": "ページIDを追加します。",
 	"apihelp-query+globalusage-paramvalue-prop-namespace": "名前空間のIDを追加します。",
 	"apihelp-query+globalusage-param-limit": "返すリンクの数。",
-	"apihelp-query+globalusage-param-filterlocal": "ローカルにおけるファイルの利用をフィルタする。",
+	"apihelp-query+globalusage-param-filterlocal": "ローカルにおけるファイルの利用をフィルターする。",
 	"apihelp-query+globalusage-example-1": "[[:File:Example.jpg]]の使用状況を取得する"
 }
