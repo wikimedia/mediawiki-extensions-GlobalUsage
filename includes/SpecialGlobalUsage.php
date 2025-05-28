@@ -202,10 +202,17 @@ class SpecialGlobalUsage extends SpecialPage {
 		$out->addHtml( '<div id="mw-globalusage-result">' );
 		foreach ( $query->getSingleImageResult() as $wiki => $result ) {
 			$out->addHtml(
-				'<h2>' . $this->msg(
-					'globalusage-on-wiki',
-					$targetName, WikiMap::getWikiName( $wiki ) )->parse()
-					. "</h2><ul>\n" );
+				Html::rawElement(
+					'h2',
+					[],
+					$this->msg(
+						'globalusage-on-wiki',
+						$targetName,
+						WikiMap::getWikiName( $wiki )
+					)->parse()
+				) . "\n"
+				. Html::openElement( 'ul', [ 'class' => 'plainlinks' ] ) . "\n"
+			);
 			foreach ( $result as $item ) {
 				$out->addHtml( "\t<li>" . self::formatItem( $item ) . "</li>\n" );
 			}

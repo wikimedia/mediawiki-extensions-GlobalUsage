@@ -2,6 +2,7 @@
 
 namespace MediaWiki\Extension\GlobalUsage;
 
+use MediaWiki\Html\Html;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Page\Hook\ImagePageAfterImageLinksHook;
 use MediaWiki\Page\Hook\ImagePageShowTOCHook;
@@ -75,7 +76,7 @@ class GlobalUsageImagePageHooks implements
 			$html .= '<h2 id="globalusage">' . $context->msg( 'globalusage' )->escaped() . "</h2>\n"
 				. '<div id="mw-imagepage-section-globalusage">'
 				. $context->msg( 'globalusage-of-file' )->parseAsBlock()
-				. "<ul>\n" . $guHtml . "</ul>\n";
+				. Html::rawElement( 'ul', [ 'class' => 'plainlinks' ], $guHtml ) . "\n";
 			if ( $query->hasMore() ) {
 				$html .= $context->msg( 'globalusage-more', $targetName )->parseAsBlock();
 			}
