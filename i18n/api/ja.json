@@ -3,13 +3,14 @@
 		"authors": [
 			"Kkairri",
 			"Yusuke1109",
-			"Kokage si"
+			"Kokage si",
+			"Shirayuki"
 		]
 	},
 	"apihelp-query+globalusage-description": "与えられたファイルのグローバルでの画像利用状況を返します。",
 	"apihelp-query+globalusage-summary": "与えられたファイルのグローバルでの画像利用状況を返します。",
 	"apihelp-query+globalusage-param-prop": "返すプロパティ:\n;url: URLを追加します。\n;pageid: ページIDを追加します。\n;namespace: 名前空間のIDを追加します。",
 	"apihelp-query+globalusage-param-limit": "返すリンクの数。",
-	"apihelp-query+globalusage-param-filterlocal": "ローカルにおけるファイルの利用をフィルタする。",
+	"apihelp-query+globalusage-param-filterlocal": "ローカルにおけるファイルの利用をフィルターする。",
 	"apihelp-query+globalusage-example-1": "[[:File:Example.jpg]]の使用状況を取得する"
 }

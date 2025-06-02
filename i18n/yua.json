@@ -8,5 +8,6 @@
 	},
 	"globalusage": "U k'abéetkunsa'al archivo tuláakal tu'ux",
 	"globalusage-on-wiki": "U kabéetkunsa'al ti' $2",
-	"globalusage-of-file": "Le wikis je'ela' ku meyajtiko'ob le archivoa':"
+	"globalusage-of-file": "Le wikis je'ela' ku meyajtiko'ob le archivoa':",
+	"globalusage-more": "Ilawil[[{{#Special:GlobalUsage}}/$1|tuláakal u k'abéetkunsajil]] le archivoa'."
 }

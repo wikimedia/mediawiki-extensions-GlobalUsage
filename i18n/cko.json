@@ -2,10 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Biema",
-			"Yaw-kan"
+			"Yaw-kan",
+			"Nachim"
 		]
 	},
 	"globalusage": "Durunya kɛrɛ fali yowaa",
 	"globalusage-on-wiki": "i juma yo $2",
-	"globalusage-of-file": "Ahin wikisim fa ahin faali nnyɔ juma"
+	"globalusage-of-file": "Ahin wikisim fa ahin faali nnyɔ juma",
+	"globalusage-more": "Niɛ[[{{#Special:GlobalUsage}}/$1|kabo durunya awɔrɛ dɔŋgu fa yo juma]] ahin faali ni"
 }
