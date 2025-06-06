@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Whatback11",
 			"고솜"
 		]
 	},
 	"globalusage": "몬딱ᄒᆞᆫ 파일 쓰임",
 	"globalusage-on-wiki": "$2 서의 ᄉᆞ용상황",
-	"globalusage-of-file": "다심 위키서 이 파일을 쓰ᇝ져:"
+	"globalusage-of-file": "다심 위키서 이 파일을 쓰ᇝ져:",
+	"globalusage-more": "이 파일의 [[{{#Special:GlobalUsage}}/$1|더 많은 사용 내역]]을 ᄇᆞ레우다."
 }
