@@ -8,5 +8,6 @@
 	"globalusage": "ئورتاق ھۆججەت ئىشلىتىلىشى",
 	"globalusage-ok": "ئىزدە",
 	"globalusage-on-wiki": "$2 دىكى ئىشلىتىشى",
-	"globalusage-of-file": "تۆۋەندىكى باشقا ۋىكىلار بۇ ھۆججەتنى ئىشلىتىدۇ:"
+	"globalusage-of-file": "تۆۋەندىكى باشقا ۋىكىلار بۇ ھۆججەتنى ئىشلىتىدۇ:",
+	"globalusage-more": "بۇ ھۆججەتنىڭ [[{{#Special:GlobalUsage}}/$1|تېخىمۇ كۆپ ئومۇمىيەت ئىشلىتىلىشى]]نى كۆرسىتىدۇ"
 }
