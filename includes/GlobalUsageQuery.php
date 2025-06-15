@@ -2,6 +2,8 @@
 
 namespace MediaWiki\Extension\GlobalUsage;
 
+use MediaWiki\MainConfigNames;
+use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
 use MediaWiki\WikiMap\WikiMap;
 use stdClass;
@@ -195,10 +197,24 @@ class GlobalUsageQuery {
 			case NS_CATEGORY:
 				$queryBuilder->join( 'categorylinks', null, 'page_id = cl_from' );
 				$queryBuilder->join( 'page', null, 'page_title = gil_to' );
-				$queryBuilder->where( [
-					'cl_to' => $queryIn,
-					'page_namespace' => NS_FILE,
-				] );
+
+				$migrationStage = MediaWikiServices::getInstance()->getMainConfig()->get(
+					MainConfigNames::CategoryLinksSchemaMigrationStage
+				);
+
+				if ( $migrationStage & SCHEMA_COMPAT_READ_OLD ) {
+					$queryBuilder->where( [
+						'cl_to' => $queryIn,
+						'page_namespace' => NS_FILE,
+					] );
+				} else {
+					$queryBuilder->join( 'linktarget', null, 'lt_id = cl_target_id' );
+					$queryBuilder->where( [
+						'lt_title' => $queryIn,
+						'lt_namespace' => NS_CATEGORY,
+						'page_namespace' => NS_FILE,
+					] );
+				}
 				break;
 			default:
 				return;
