@@ -3,6 +3,8 @@
  * Maintenance script to populate the globalimagelinks table. Needs to be run
  * on all wikis.
  */
+
+// @codeCoverageIgnoreStart
 $path = dirname( dirname( dirname( __DIR__ ) ) );
 
 if ( getenv( 'MW_INSTALL_PATH' ) !== false ) {
@@ -10,6 +12,7 @@ if ( getenv( 'MW_INSTALL_PATH' ) !== false ) {
 }
 
 require_once $path . '/maintenance/Maintenance.php';
+// @codeCoverageIgnoreEnd
 
 use MediaWiki\Extension\GlobalUsage\GlobalUsage;
 use MediaWiki\Maintenance\Maintenance;
@@ -169,5 +172,7 @@ class RefreshGlobalimagelinks extends Maintenance {
 	}
 }
 
+// @codeCoverageIgnoreStart
 $maintClass = RefreshGlobalimagelinks::class;
 require_once RUN_MAINTENANCE_IF_MAIN;
+// @codeCoverageIgnoreEnd
