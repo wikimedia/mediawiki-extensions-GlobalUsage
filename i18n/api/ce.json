@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Умар"
+		]
+	},
+	"apihelp-query+globalusage-param-prop": "Муьлха башхаллаш йухайерзо:",
+	"apihelp-query+globalusage-paramvalue-prop-url": "ТӀетуху URL.",
+	"apihelp-query+globalusage-paramvalue-prop-pageid": "АгӀонан ID тӀетуху.",
+	"apihelp-query+globalusage-param-limit": "Маса хьажорг йухайерзо.",
+	"apihelp-query+globalusage-param-filterlocal": "Локалан файл лелоран фильтраци йар."
+}
