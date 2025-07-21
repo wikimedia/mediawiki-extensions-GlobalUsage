@@ -4,5 +4,6 @@
 			"Умар"
 		]
 	},
-	"apihelp-query+globalusage-param-limit": "Маса хьажорг йухайерзо."
+	"apihelp-query+globalusage-param-limit": "Маса хьажорг йухайерзо.",
+	"apihelp-query+globalusage-param-filterlocal": "Локалан файл лелоран фильтраци йар."
 }

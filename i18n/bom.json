@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Rwang PS"
+			"Rwang PS",
+			"Kambai Akau"
 		]
 	},
 	"globalusage": "Duk fwom jeinmoma",
 	"globalusage-on-wiki": "Wura e le $2",
-	"globalusage-of-file": "Be pyevemo divwang vurum be ra fwom di duk hemo",
-	"globalusage-more": "Be konnmomajei"
+	"globalusage-of-file": "Be pyevemo divwang vurum be ra fwom di duk hemoː",
+	"globalusage-more": "Di [[{{#Special:GlobalUsage}}/$1|more global usage]] be konmomajei."
 }
