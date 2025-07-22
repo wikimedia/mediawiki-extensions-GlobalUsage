@@ -26,7 +26,6 @@ namespace MediaWiki\Extension\GlobalUsage;
 
 use MediaWiki\Exception\ErrorPageError;
 use MediaWiki\SpecialPage\ImageQueryPage;
-use MediaWiki\WikiMap\WikiMap;
 use RuntimeException;
 use Wikimedia\Rdbms\IConnectionProvider;
 
@@ -48,8 +47,7 @@ class SpecialGloballyUnusedFiles extends ImageQueryPage {
 	 * @return bool
 	 */
 	private function isOnGlobalUsageDatabase() {
-		$globalUsageDatabase = $this->getConfig()->get( 'GlobalUsageDatabase' );
-		return !$globalUsageDatabase || $globalUsageDatabase === WikiMap::getCurrentWikiId();
+		return GlobalUsage::onSharedRepo();
 	}
 
 	/**

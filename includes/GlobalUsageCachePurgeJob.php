@@ -49,7 +49,7 @@ class GlobalUsageCachePurgeJob extends Job {
 		$filesForPurge = array_values( array_unique( $filesForPurge ) );
 
 		// Find all wikis that use any of these files in any of their pages...
-		$dbr = GlobalUsage::getGlobalDB( DB_REPLICA );
+		$dbr = $services->getConnectionProvider()->getReplicaDatabase( 'virtual-globalusage' );
 		$res = $dbr->newSelectQueryBuilder()
 			->select( [ 'gil_wiki', 'gil_to' ] )
 			->distinct()

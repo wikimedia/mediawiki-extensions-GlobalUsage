@@ -228,10 +228,12 @@ class Hooks implements
 	 * @return GlobalUsage
 	 */
 	private static function getGlobalUsage() {
+		$connectionProvider = MediaWikiServices::getInstance()->getConnectionProvider();
+
 		return new GlobalUsage(
 			WikiMap::getCurrentWikiId(),
-			GlobalUsage::getGlobalDB( DB_PRIMARY ),
-			GlobalUsage::getGlobalDB( DB_REPLICA )
+			$connectionProvider->getPrimaryDatabase( 'virtual-globalusage' ),
+			$connectionProvider->getReplicaDatabase( 'virtual-globalusage' )
 		);
 	}
 

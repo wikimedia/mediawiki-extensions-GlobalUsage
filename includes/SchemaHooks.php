@@ -18,15 +18,24 @@ class SchemaHooks implements LoadExtensionSchemaUpdatesHook {
 		$dir = dirname( __DIR__ ) . '/sql';
 
 		$type = $updater->getDB()->getType();
-		$updater->addExtensionTable( 'globalimagelinks', "$dir/$type/tables-generated.sql" );
+		$updater->addExtensionUpdateOnVirtualDomain( [
+			'virtual-globalusage',
+			'addTable',
+			'globalimagelinks',
+			"$dir/$type/tables-generated.sql",
+			true
+		] );
 
 		if ( $type === 'mysql' || $type === 'sqlite' ) {
 			// 1.35
-			$updater->dropExtensionIndex(
+			$updater->addExtensionUpdateOnVirtualDomain( [
+				'virtual-globalusage',
+				'dropExtensionIndex',
 				'globalimagelinks',
 				'globalimagelinks_to_wiki_page',
-				"$dir/patch-globalimagelinks-pk.sql"
-			);
+				"$dir/patch-globalimagelinks-pk.sql",
+				true
+			] );
 		}
 	}
 

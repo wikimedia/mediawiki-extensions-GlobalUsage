@@ -3,7 +3,6 @@
 namespace MediaWiki\Extension\GlobalUsage;
 
 use MediaWiki\Html\Html;
-use MediaWiki\MediaWikiServices;
 use MediaWiki\Page\Hook\ImagePageAfterImageLinksHook;
 use MediaWiki\Page\Hook\ImagePageShowTOCHook;
 use MediaWiki\Page\ImagePage;
@@ -113,15 +112,9 @@ class GlobalUsageImagePageHooks implements
 
 		# Don't show global usage if the file is local.
 		# Do show it however if the current repo is the shared repo. The way
-		# we detect this is a bit hacky and less than ideal. See bug 23136 for
+		# we detect this is a bit hacky and less than ideal. See T25136 for
 		# a discussion.
-		global $wgGlobalUsageDatabase;
-		$dbr = MediaWikiServices::getInstance()
-			->getConnectionProvider()
-			->getReplicaDatabase();
-		if ( $file->getRepoName() == 'local'
-			&& $dbr->getDBname() != $wgGlobalUsageDatabase
-		) {
+		if ( $file->getRepoName() == 'local' && !GlobalUsage::onSharedRepo() ) {
 			return false;
 		}
 

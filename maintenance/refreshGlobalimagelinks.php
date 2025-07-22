@@ -16,7 +16,6 @@ require_once $path . '/maintenance/Maintenance.php';
 
 use MediaWiki\Extension\GlobalUsage\GlobalUsage;
 use MediaWiki\Maintenance\Maintenance;
-use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
 use MediaWiki\WikiMap\WikiMap;
 use Wikimedia\Rdbms\IDBAccessObject;
@@ -35,14 +34,13 @@ class RefreshGlobalimagelinks extends Maintenance {
 	public function execute() {
 		$pages = explode( ',', $this->getOption( 'pages' ) );
 
-		$dbr = MediaWikiServices::getInstance()
-			->getConnectionProvider()
-			->getReplicaDatabase();
-		$gdbw = GlobalUsage::getGlobalDB( DB_PRIMARY );
-		$gdbr = GlobalUsage::getGlobalDB( DB_REPLICA );
+		$connProvider = $this->getServiceContainer()->getConnectionProvider();
+		$dbr = $connProvider->getReplicaDatabase();
+		$gdbw = $connProvider->getPrimaryDatabase( 'virtual-globalusage' );
+		$gdbr = $connProvider->getReplicaDatabase( 'virtual-globalusage' );
 		$gu = new GlobalUsage( WikiMap::getCurrentWikiId(), $gdbw, $gdbr );
 
-		$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
+		$lbFactory = $this->getServiceContainer()->getDBLoadBalancerFactory();
 		$ticket = $lbFactory->getEmptyTransactionTicket( __METHOD__ );
 
 		// Clean up links for existing pages...

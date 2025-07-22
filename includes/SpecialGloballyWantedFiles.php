@@ -17,7 +17,6 @@ use MediaWiki\Skin\Skin;
 use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\SpecialPage\WantedQueryPage;
 use MediaWiki\Title\Title;
-use MediaWiki\WikiMap\WikiMap;
 use stdClass;
 use Wikimedia\Rdbms\IConnectionProvider;
 
@@ -77,15 +76,10 @@ class SpecialGloballyWantedFiles extends WantedQueryPage {
 	/**
 	 * Don't want to do cached handling on non-shared repo, since we only redirect.
 	 *
-	 * Also make sure that GlobalUsage db same as shared repo.
-	 * (To catch the unlikely case where GlobalUsage db is different db from the
-	 * shared repo db).
 	 * @return bool
 	 */
 	public function isCacheable() {
-		$globalUsageDatabase = $this->getConfig()->get( 'GlobalUsageDatabase' );
-		return GlobalUsage::onSharedRepo()
-			&& ( !$globalUsageDatabase || $globalUsageDatabase === WikiMap::getCurrentWikiId() );
+		return GlobalUsage::onSharedRepo();
 	}
 
 	/**

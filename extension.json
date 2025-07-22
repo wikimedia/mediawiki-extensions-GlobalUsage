@@ -86,10 +86,6 @@
 		}
 	},
 	"config": {
-		"GlobalUsageDatabase": {
-			"description": "If set to false, the local database contains the globalimagelinks table, else set to something understandable to LBFactory",
-			"value": false
-		},
 		"GlobalUsageSharedRepoWiki": {
 			"description": "Name of the shared repo that backlinks are shared for",
 			"value": false
@@ -99,5 +95,8 @@
 			"value": false
 		}
 	},
+	"DatabaseVirtualDomains": [
+		"virtual-globalusage"
+	],
 	"manifest_version": 2
 }

@@ -11,10 +11,9 @@ namespace MediaWiki\Extension\GlobalUsage;
 
 use MediaWiki\Cache\LinkBatchFactory;
 use MediaWiki\SpecialPage\ImageQueryPage;
-use MediaWiki\WikiMap\WikiMap;
 use RuntimeException;
 use Wikimedia\Rdbms\IConnectionProvider;
-use Wikimedia\Rdbms\IDatabase;
+use Wikimedia\Rdbms\IReadableDatabase;
 
 class SpecialMostGloballyLinkedFiles extends ImageQueryPage {
 
@@ -110,7 +109,7 @@ class SpecialMostGloballyLinkedFiles extends ImageQueryPage {
 	 * In most common configs (including WMF's), this wouldn't be needed. However
 	 * for completeness support having the shared repo db be separate from the
 	 * globalimagelinks db.
-	 * @return IDatabase
+	 * @return IReadableDatabase
 	 */
 	public function getRecacheDB() {
 		// There's no reason why we couldn't make this special page work on all wikis,
@@ -118,16 +117,12 @@ class SpecialMostGloballyLinkedFiles extends ImageQueryPage {
 		// to this point by $this->isCachable(), but just to be safe:
 		$this->assertOnSharedRepo();
 
-		$globalUsageDatabase = $this->getConfig()->get( 'GlobalUsageDatabase' );
-		if ( $globalUsageDatabase === false || $globalUsageDatabase === WikiMap::getCurrentWikiId() ) {
+		if ( GlobalUsage::onSharedRepo() ) {
 			// We are using the local wiki
 			return parent::getRecacheDB();
 		} else {
 			// The global usage db could be on a different db
-			return GlobalUsage::getGlobalDB(
-				DB_REPLICA,
-				[ $this->getName(), 'QueryPage::recache', 'vslow' ]
-			);
+			return $this->getDatabaseProvider()->getReplicaDatabase( 'virtual-globalusage', 'vslow' );
 		}
 	}
 

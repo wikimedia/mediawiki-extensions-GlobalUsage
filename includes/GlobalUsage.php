@@ -9,6 +9,7 @@ use MediaWiki\Title\Title;
 use MediaWiki\WikiMap\WikiMap;
 use Wikimedia\Rdbms\IDatabase;
 use Wikimedia\Rdbms\IDBAccessObject;
+use Wikimedia\Rdbms\IReadableDatabase;
 
 class GlobalUsage {
 	/** @var string */
@@ -20,7 +21,7 @@ class GlobalUsage {
 	private $dbw;
 
 	/**
-	 * @var IDatabase
+	 * @var IReadableDatabase
 	 */
 	private $dbr;
 
@@ -29,9 +30,9 @@ class GlobalUsage {
 	 *
 	 * @param string $interwiki Interwiki prefix of the wiki
 	 * @param IDatabase $dbw Database object for write (primary)
-	 * @param IDatabase $dbr Database object for read (replica)
+	 * @param IReadableDatabase $dbr Database object for read (replica)
 	 */
-	public function __construct( $interwiki, IDatabase $dbw, IDatabase $dbr ) {
+	public function __construct( $interwiki, IDatabase $dbw, IReadableDatabase $dbr ) {
 		$this->interwiki = $interwiki;
 		$this->dbw = $dbw;
 		$this->dbr = $dbr;
@@ -150,9 +151,9 @@ class GlobalUsage {
 	 * Copy local links to global table
 	 *
 	 * @param Title $title Title of the file to copy entries from.
-	 * @param IDatabase $localDbr Database object for reading the local links from
+	 * @param IReadableDatabase $localDbr Database object for reading the local links from
 	 */
-	public function copyLocalImagelinks( Title $title, IDatabase $localDbr ) {
+	public function copyLocalImagelinks( Title $title, IReadableDatabase $localDbr ) {
 		$res = $localDbr->newSelectQueryBuilder()
 			->select( [ 'il_to', 'page_id', 'page_namespace', 'page_title' ] )
 			->from( 'imagelinks' )
@@ -253,18 +254,13 @@ class GlobalUsage {
 	 *
 	 * @note This assumes the user has a single shared repo. If the user has
 	 *   multiple/nested foreign repos, then its unclear what it means to
-	 *   be on the "shared repo". See discussion on bug 23136.
+	 *   be on the "shared repo". See discussion on T25136.
 	 * @return bool
 	 */
 	public static function onSharedRepo() {
-		global $wgGlobalUsageSharedRepoWiki, $wgGlobalUsageDatabase;
-		if ( !$wgGlobalUsageSharedRepoWiki ) {
-			// backwards compatability with settings from before $wgGlobalUsageSharedRepoWiki
-			// was introduced.
-			return $wgGlobalUsageDatabase === WikiMap::getCurrentWikiId() || !$wgGlobalUsageDatabase;
-		} else {
-			return $wgGlobalUsageSharedRepoWiki === WikiMap::getCurrentWikiId();
-		}
+		global $wgGlobalUsageSharedRepoWiki;
+
+		return !$wgGlobalUsageSharedRepoWiki || $wgGlobalUsageSharedRepoWiki === WikiMap::getCurrentWikiId();
 	}
 
 	/**
@@ -320,19 +316,5 @@ class GlobalUsage {
 		}
 
 		return $qi;
-	}
-
-	/**
-	 * @param int $index DB_PRIMARY/DB_REPLICA
-	 * @param array $groups
-	 * @return IDatabase
-	 */
-	public static function getGlobalDB( $index, $groups = [] ) {
-		global $wgGlobalUsageDatabase;
-
-		$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
-		$lb = $lbFactory->getMainLB( $wgGlobalUsageDatabase );
-
-		return $lb->getConnection( $index, [], $wgGlobalUsageDatabase );
 	}
 }
