@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"Kateregga1",
 			"Ssemmanda will"
 		]
 	},
-	"globalusage-on-wiki": "Enkozesa ku $2"
+	"globalusage-on-wiki": "Enkozesa ku $2",
+	"globalusage-of-file": "Wiki endala zino wammanga zikozesa fayiro eno:"
 }
