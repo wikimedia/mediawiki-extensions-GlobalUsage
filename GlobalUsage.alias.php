@@ -394,7 +394,15 @@ $specialPageAliases['yue'] = [
 	'GlobalUsage' => [ '全域使用' ],
 ];
 
-/** Simplified Chinese (中文（简体）‎) */
+/** Chinese (中文) */
+$specialPageAliases['zh'] = [
+	'GlobalUsage' => [ 'GlobalUsage' ],
+	'MostGloballyLinkedFiles' => [ 'MostGloballyLinkedFiles' ],
+	'GloballyWantedFiles' => [ 'GloballyWantedFiles' ],
+	'GloballyUnusedFiles' => [ 'GloballyUnusedFiles' ]
+];
+
+/** Simplified Chinese (中文（简体）) */
 $specialPageAliases['zh-hans'] = [
 	'GlobalUsage' => [ '全域使用情况' ],
 	'MostGloballyLinkedFiles' => [ '全域最多链接文件' ],
@@ -402,7 +410,7 @@ $specialPageAliases['zh-hans'] = [
 	'GloballyUnusedFiles' => [ '全域未使用文件' ],
 ];
 
-/** Traditional Chinese (中文（繁體）‎) */
+/** Traditional Chinese (中文（繁體）) */
 $specialPageAliases['zh-hant'] = [
 	'GlobalUsage' => [ '全域使用狀況' ],
 	'MostGloballyLinkedFiles' => [ '全域最多連結檔案', '全域最多連接檔案' ],
