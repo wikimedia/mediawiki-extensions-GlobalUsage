@@ -3,10 +3,11 @@
 		"authors": [
 			"Besnik b",
 			"Mikullovci11",
-			"Olsi"
+			"Olsi",
+			"Xhulianoo"
 		]
 	},
-	"globalusage": "Përdorimi global i skedës",
+	"globalusage": "Përdorimi global i skedarit",
 	"globalusage-for": "Përdorimi global për \"$1\"",
 	"globalusage-desc": "[[Special:GlobalUsage|Faqe speciale]] për të parë përdorimin global të skedës",
 	"globalusage-ok": "Kërko",
