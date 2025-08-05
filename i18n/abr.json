@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Alicia Agyeiwaa"
+			"Alicia Agyeiwaa",
+			"Yaw tuba"
 		]
 	},
 	"globalusage": "Wiase nyinaa faale dwumadie",
 	"globalusage-on-wiki": "Sɛdeɛ bɛde $2 dii dwuma",
-	"globalusage-of-file": "Wikisi nkaeƐ a ɔdidi so nyinaa de faale yi di dwuma"
+	"globalusage-of-file": "Wikisi nkaeƐ a ɔdidi so nyinaa de faale yi di dwuma",
+	"globalusage-more": "Hwɛ [[{{#Special:GlobalUsage}}/$1|wiase nyinaa dwumadie pii]] a ɛwɔ fael yi mu."
 }
