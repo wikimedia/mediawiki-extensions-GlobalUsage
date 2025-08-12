@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"El-hussain14"
+			"El-hussain14",
+			"Mbfika"
 		]
 	},
 	"globalusage": "Amfani fayil ga le'au",
-	"globalusage-on-wiki": "Amfani ngako $2",
+	"globalusage-on-wiki": "Ruta gako $2",
 	"globalusage-of-file": "Ame messe wiki mate aji amfani da ga tayin ye:",
 	"globalusage-more": "Inne[[{{#Special:GlobalUsage}}/$1|more global usage]] of this file."
 }

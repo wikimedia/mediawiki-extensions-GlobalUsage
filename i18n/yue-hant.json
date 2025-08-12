@@ -1,12 +1,28 @@
 {
 	"@metadata": {
 		"authors": [
-			"Winston Sung"
+			"Winston Sung",
+			"Yueman"
 		]
 	},
 	"globalusage": "全域檔案使用情況",
+	"globalusage-for": "「$1」嘅全域使用情況",
+	"globalusage-filename": "檔名：",
+	"globalusage-desc": "去睇全域檔案使用情況嘅[[Special:GlobalUsage|專門版]]",
 	"globalusage-ok": "搵嘢",
+	"globalusage-text": "搵全域檔案使用情況",
+	"globalusage-no-results": "[[:$1]]冇喺其他wiki度用。",
 	"globalusage-on-wiki": "$2嘅使用情況",
 	"globalusage-of-file": "下面嘅維基都用緊呢個檔案：",
-	"globalusage-more": "睇呢個檔案嘅[[{{#Special:GlobalUsage}}/$1|更多全域使用情況]]。"
+	"globalusage-more": "睇呢個檔案嘅[[{{#Special:GlobalUsage}}/$1|更多全域使用情況]]。",
+	"globalusage-filterlocal": "唔顯示本地使用情況",
+	"mostgloballylinkedfiles": "全域連得最多嘅檔案",
+	"mostgloballylinkedfiles-summary": "所有 Wiki 入面用得最多嘅檔案清單。想睇淨係得{{SITENAME}}使用情況嘅清單，去睇[[{{#special:MostLinkedFiles}}]]。",
+	"globallywantedfiles": "全域多文想要嘅檔案",
+	"globallywantedfiles-summary": "所有 Wiki 入面用得最多嘅唔存在檔案清單。想睇淨係得{{SITENAME}}使用情況嘅清單，去睇[[{{#special:WantedFiles}}]]。頭字母分清大細階嘅Wiki可能會將存在嘅檔案誤報做想要。",
+	"globallywantedfiles-foreign-repo": "<strong>警告：</strong> 呢個Wiki用緊外部檔案倉庫，就算檔案實際係存在，清單上面外部檔案倉庫嘅檔案都會顯示成藍色刪除線嘅連結。",
+	"globalusage-header": "呢版顯示個檔案用咗喺其他wiki邊度。你亦可以喺檔案描述版底搵到相關資訊。",
+	"globallyunusedfiles": "全域冇用到嘅檔案",
+	"globallyunusedfilestext": "下面嘅檔案存在，但未有喺任何 Wiki 入面用到。",
+	"globallyunusedfiles-error-nonsharedrepo": "呢個wiki唔喺共享倉庫度"
 }
