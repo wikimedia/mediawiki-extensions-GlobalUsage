@@ -22,17 +22,14 @@ use Wikimedia\Rdbms\IConnectionProvider;
 
 class SpecialGloballyWantedFiles extends WantedQueryPage {
 
-	private RepoGroup $repoGroup;
-
 	public function __construct(
 		IConnectionProvider $dbProvider,
 		LinkBatchFactory $linkBatchFactory,
-		RepoGroup $repoGroup
+		private readonly RepoGroup $repoGroup,
 	) {
 		parent::__construct( 'GloballyWantedFiles' );
 		$this->setDatabaseProvider( $dbProvider );
 		$this->setLinkBatchFactory( $linkBatchFactory );
-		$this->repoGroup = $repoGroup;
 	}
 
 	/**

@@ -34,15 +34,12 @@ use Wikimedia\ParamValidator\ParamValidator;
 use Wikimedia\ParamValidator\TypeDef\IntegerDef;
 
 class ApiQueryGlobalUsage extends ApiQueryBase {
-	private SiteLookup $siteLookup;
-
 	public function __construct(
 		ApiQuery $query,
 		string $moduleName,
-		SiteLookup $siteLookup
+		private readonly SiteLookup $siteLookup,
 	) {
 		parent::__construct( $query, $moduleName, 'gu' );
-		$this->siteLookup = $siteLookup;
 	}
 
 	public function execute() {

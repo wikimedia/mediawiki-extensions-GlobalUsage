@@ -35,16 +35,11 @@ class SpecialGlobalUsage extends SpecialPage {
 	 */
 	protected $filterLocal;
 
-	private RepoGroup $repoGroup;
-	private SearchEngineFactory $searchEngineFactory;
-
 	public function __construct(
-		RepoGroup $repoGroup,
-		SearchEngineFactory $searchEngineFactory
+		private readonly RepoGroup $repoGroup,
+		private readonly SearchEngineFactory $searchEngineFactory,
 	) {
 		parent::__construct( 'GlobalUsage' );
-		$this->repoGroup = $repoGroup;
-		$this->searchEngineFactory = $searchEngineFactory;
 	}
 
 	/**
