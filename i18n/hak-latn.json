@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Winston Sung"
+		]
+	},
+	"globalusage": "Chhiòn-vet tóng-on sṳ́-yung chhong-khóng",
+	"globalusage-ok": "Chhìm",
+	"globalusage-on-wiki": "$2 ke sṳ́-yung chhong-khóng",
+	"globalusage-of-file": "Hâ-lie̍t khì-thâ Wiki chûng sṳ́-yung liá-chak tóng on:",
+	"globalusage-more": "Kiám-sṳ liá vùn-khien ke [[{{#Special:GlobalUsage}}/$1|kiên-tô chhiòn-vet sṳ́-yung chhong-khóng]]."
+}
