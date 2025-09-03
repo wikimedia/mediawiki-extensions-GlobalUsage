@@ -46,7 +46,8 @@
 		"globalusage": {
 			"class": "MediaWiki\\Extension\\GlobalUsage\\ApiQueryGlobalUsage",
 			"services": [
-				"SiteLookup"
+				"SiteLookup",
+				"UrlUtils"
 			]
 		}
 	},
@@ -76,7 +77,12 @@
 	},
 	"HookHandlers": {
 		"main": {
-			"class": "MediaWiki\\Extension\\GlobalUsage\\Hooks"
+			"class": "MediaWiki\\Extension\\GlobalUsage\\Hooks",
+			"services": [
+				"RepoGroup",
+				"JobQueueGroup",
+				"ConnectionProvider"
+			]
 		},
 		"imagepage": {
 			"class": "MediaWiki\\Extension\\GlobalUsage\\GlobalUsageImagePageHooks"

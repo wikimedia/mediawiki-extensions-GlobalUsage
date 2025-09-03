@@ -11,14 +11,15 @@ use MediaWiki\Content\Content;
 use MediaWiki\Deferred\LinksUpdate\LinksUpdate;
 use MediaWiki\FileRepo\File\LocalFile;
 use MediaWiki\FileRepo\FileRepo;
+use MediaWiki\FileRepo\RepoGroup;
 use MediaWiki\Hook\FileDeleteCompleteHook;
 use MediaWiki\Hook\FileUndeleteCompleteHook;
 use MediaWiki\Hook\LinksUpdateCompleteHook;
 use MediaWiki\Hook\PageMoveCompleteHook;
 use MediaWiki\Hook\UploadCompleteHook;
+use MediaWiki\JobQueue\JobQueueGroup;
 use MediaWiki\Linker\LinkTarget;
 use MediaWiki\Logging\ManualLogEntry;
-use MediaWiki\MediaWikiServices;
 use MediaWiki\Page\Hook\ArticleDeleteCompleteHook;
 use MediaWiki\Page\WikiFilePage;
 use MediaWiki\Page\WikiPage;
@@ -29,6 +30,7 @@ use MediaWiki\User\User;
 use MediaWiki\User\UserIdentity;
 use MediaWiki\WikiMap\WikiMap;
 use UploadBase;
+use Wikimedia\Rdbms\IConnectionProvider;
 use Wikimedia\Rdbms\IDBAccessObject;
 
 class Hooks implements
@@ -40,6 +42,13 @@ class Hooks implements
 	PageMoveCompleteHook,
 	WgQueryPagesHook
 {
+	public function __construct(
+		private readonly RepoGroup $repoGroup,
+		private readonly JobQueueGroup $jobQueueGroup,
+		private readonly IConnectionProvider $connectionProvider,
+	) {
+	}
+
 	/**
 	 * Hook to LinksUpdateComplete
 	 * Deletes old links from usage table and insert new ones.
@@ -53,7 +62,7 @@ class Hooks implements
 		$images = array_keys( $linksUpdater->getParserOutput()->getImages() );
 
 		$localFiles = [];
-		$repo = MediaWikiServices::getInstance()->getRepoGroup()->getLocalRepo();
+		$repo = $this->repoGroup->getLocalRepo();
 		$imagesInfo = $repo->findFiles( $images, FileRepo::NAME_AND_TIME_ONLY );
 		foreach ( $imagesInfo as $dbKey => $info ) {
 			'@phan-var array $info';
@@ -67,7 +76,7 @@ class Hooks implements
 
 		$missingFiles = array_diff( $images, $localFiles );
 
-		$gu = self::getGlobalUsage();
+		$gu = $this->getGlobalUsage();
 		$articleId = $title->getArticleID( IDBAccessObject::READ_NORMAL );
 		$existing = $gu->getLinksFromPage( $articleId );
 
@@ -106,7 +115,7 @@ class Hooks implements
 		$ot = Title::newFromLinkTarget( $ot );
 		$nt = Title::newFromLinkTarget( $nt );
 
-		$gu = self::getGlobalUsage();
+		$gu = $this->getGlobalUsage();
 		$gu->moveTo( $pageid, $nt );
 
 		if ( self::fileUpdatesCreatePurgeJobs() ) {
@@ -118,11 +127,9 @@ class Hooks implements
 				$jobs[] = new GlobalUsageCachePurgeJob( $nt, [] );
 			}
 			// Push the jobs after DB commit but cancel on rollback
-			MediaWikiServices::getInstance()
-				->getConnectionProvider()
-				->getPrimaryDatabase()
-				->onTransactionCommitOrIdle( static function () use ( $jobs ) {
-					MediaWikiServices::getInstance()->getJobQueueGroupFactory()->makeJobQueueGroup()->lazyPush( $jobs );
+			$this->connectionProvider->getPrimaryDatabase()
+				->onTransactionCommitOrIdle( function () use ( $jobs ) {
+					$this->jobQueueGroup->lazyPush( $jobs );
 				}, __METHOD__ );
 		}
 	}
@@ -141,7 +148,7 @@ class Hooks implements
 	public function onArticleDeleteComplete( $article, $user, $reason, $id,
 		$content, $logEntry, $archivedRevisionCount
 	) {
-		$gu = self::getGlobalUsage();
+		$gu = $this->getGlobalUsage();
 		// @FIXME: avoid making DB replication lag
 		$gu->deleteLinksFromPage( $id );
 	}
@@ -159,18 +166,16 @@ class Hooks implements
 	public function onFileDeleteComplete( $file, $oldimage, $article, $user, $reason ) {
 		if ( !$oldimage ) {
 			if ( !GlobalUsage::onSharedRepo() ) {
-				$gu = self::getGlobalUsage();
+				$gu = $this->getGlobalUsage();
 				$gu->copyLocalImagelinks(
 					$file->getTitle(),
-					MediaWikiServices::getInstance()
-						->getConnectionProvider()
-						->getPrimaryDatabase()
+					$this->connectionProvider->getPrimaryDatabase()
 				);
 			}
 
 			if ( self::fileUpdatesCreatePurgeJobs() ) {
 				$job = new GlobalUsageCachePurgeJob( $file->getTitle(), [] );
-				MediaWikiServices::getInstance()->getJobQueueGroupFactory()->makeJobQueueGroup()->push( $job );
+				$this->jobQueueGroup->push( $job );
 			}
 		}
 	}
@@ -185,12 +190,12 @@ class Hooks implements
 	 * @param string $reason
 	 */
 	public function onFileUndeleteComplete( $title, $versions, $user, $reason ) {
-		$gu = self::getGlobalUsage();
+		$gu = $this->getGlobalUsage();
 		$gu->deleteLinksToFile( $title );
 
 		if ( self::fileUpdatesCreatePurgeJobs() ) {
 			$job = new GlobalUsageCachePurgeJob( $title, [] );
-			MediaWikiServices::getInstance()->getJobQueueGroupFactory()->makeJobQueueGroup()->push( $job );
+			$this->jobQueueGroup->push( $job );
 		}
 	}
 
@@ -201,12 +206,12 @@ class Hooks implements
 	 * @param UploadBase $upload
 	 */
 	public function onUploadComplete( $upload ) {
-		$gu = self::getGlobalUsage();
+		$gu = $this->getGlobalUsage();
 		$gu->deleteLinksToFile( $upload->getTitle() );
 
 		if ( self::fileUpdatesCreatePurgeJobs() ) {
 			$job = new GlobalUsageCachePurgeJob( $upload->getTitle(), [] );
-			MediaWikiServices::getInstance()->getJobQueueGroupFactory()->makeJobQueueGroup()->push( $job );
+			$this->jobQueueGroup->push( $job );
 		}
 	}
 
@@ -226,13 +231,11 @@ class Hooks implements
 	 *
 	 * @return GlobalUsage
 	 */
-	private static function getGlobalUsage() {
-		$connectionProvider = MediaWikiServices::getInstance()->getConnectionProvider();
-
+	private function getGlobalUsage() {
 		return new GlobalUsage(
 			WikiMap::getCurrentWikiId(),
-			$connectionProvider->getPrimaryDatabase( 'virtual-globalusage' ),
-			$connectionProvider->getReplicaDatabase( 'virtual-globalusage' )
+			$this->connectionProvider->getPrimaryDatabase( 'virtual-globalusage' ),
+			$this->connectionProvider->getReplicaDatabase( 'virtual-globalusage' )
 		);
 	}
 
