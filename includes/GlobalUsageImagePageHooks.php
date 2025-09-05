@@ -60,7 +60,7 @@ class GlobalUsageImagePageHooks implements
 
 		$guHtml = '';
 		foreach ( $query->getSingleImageResult() as $wiki => $result ) {
-			$wikiName = WikiMap::getWikiName( $wiki );
+			$wikiName = GlobalUsageHelper::getWikiName( substr( $wiki, strlen( 'liquipedia-' ) ) );
 			$escWikiName = Sanitizer::escapeClass( $wikiName );
 			$guHtml .= "<li class='mw-gu-onwiki-$escWikiName'>" . $context->msg(
 				'globalusage-on-wiki',
@@ -104,6 +104,8 @@ class GlobalUsageImagePageHooks implements
 	 * @return bool
 	 */
 	protected static function hasResults( $imagePage ) {
+		global $wgDBprefix;
+
 		# Don't display links if the target file does not exist
 		$file = $imagePage->getPage()->getFile();
 		if ( !$file->exists() ) {
@@ -119,7 +121,7 @@ class GlobalUsageImagePageHooks implements
 			->getConnectionProvider()
 			->getReplicaDatabase();
 		if ( $file->getRepoName() == 'local'
-			&& $dbr->getDBname() != $wgGlobalUsageDatabase
+			&& $dbr->getDBname() . '-' . $wgDBprefix != $wgGlobalUsageDatabase
 		) {
 			return false;
 		}

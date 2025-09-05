@@ -194,7 +194,7 @@ class SpecialGlobalUsage extends SpecialPage {
 			$out->addHtml(
 				'<h2>' . $this->msg(
 					'globalusage-on-wiki',
-					$targetName, WikiMap::getWikiName( $wiki ) )->parse()
+					$targetName, GlobalUsageHelper::getWikiName( substr( $wiki, strlen( 'liquipedia-' ) ) ) )->parse()
 					. "</h2><ul>\n" );
 			foreach ( $result as $item ) {
 				$out->addHtml( "\t<li>" . self::formatItem( $item ) . "</li>\n" );

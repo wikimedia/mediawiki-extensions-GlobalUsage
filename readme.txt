@@ -14,3 +14,15 @@ The table globalimagelinks actually does not track the usage of links of images
 on the shared repository, but simply all images that do not exist on the local
 wiki.
 
+
+The following changes compared to upstream have been made:
+
+* includes/GlobalUsageImagePageHooks.php
+   * function onImagePageAfterImageLinks:
+      * replace call to WikiMap::getWikiName( $wiki ) by GlobalUsageHelper::getWikiName( substr( $wiki, strlen( 'liquipedia-' ) ) );
+   * function hasResults:
+      * import global $wgDBprefix;
+      * concatenate the global to the database name $dbr->getDBname()."-".$wgDBprefix
+* includes/SpecialGlobalUsage.php
+   * function showResult:
+      * replace call to WikiMap::getWikiName( $wiki ) by GlobalUsageHelper::getWikiName( substr( $wiki, strlen( 'liquipedia-' ) ) );
