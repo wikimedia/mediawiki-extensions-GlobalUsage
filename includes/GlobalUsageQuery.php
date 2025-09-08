@@ -11,7 +11,6 @@ use Wikimedia\Rdbms\SelectQueryBuilder;
 
 /**
  * A helper class to query the globalimagelinks table
- *
  */
 class GlobalUsageQuery {
 	/** @var int */
@@ -111,7 +110,6 @@ class GlobalUsageQuery {
 	 * Returns the string used for continuation
 	 *
 	 * @return string
-	 *
 	 */
 	public function getContinueString() {
 		if ( $this->hasMore() ) {

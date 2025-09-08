@@ -211,7 +211,6 @@ class Hooks implements
 	}
 
 	/**
-	 *
 	 * Check if file updates on this wiki should cause backlink page purge jobs
 	 *
 	 * @return bool
