@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Aristorkle"
+			"Aristorkle",
+			"Noooote"
 		]
 	},
+	"globalusage": "Usada global de file",
 	"globalusage-on-wiki": "Usada na $2"
 }
