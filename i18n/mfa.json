@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mirlim"
+			"Mirlim",
+			"EmpAhmadK"
 		]
 	},
-	"globalusage": "Pegunoe fail srato",
-	"globalusage-on-wiki": "Pegunoe kak $2",
+	"globalusage": "Pegunoae fail srato",
+	"globalusage-on-wiki": "Pegunoae kak $2",
 	"globalusage-of-file": "Fail ni nyo guno ko wiki-wiki hok laéng bbowoh:",
-	"globalusage-more": "Keléh [[{{#Special:GlobalUsage}}/$1|banyok lagi pegunoe srato]] fail ni"
+	"globalusage-more": "Keléh [[{{#Special:GlobalUsage}}/$1|banyok lagi pegunoae srato]] fail ni"
 }
