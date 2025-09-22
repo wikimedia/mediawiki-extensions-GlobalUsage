@@ -1,8 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"TimumachtikanNawat"
+			"TimumachtikanNawat",
+			"Jose Antonio Guillen Landaverde",
+			"Taty Flores de Constante"
 		]
 	},
-	"globalusage-on-wiki": "Tik $2"
+	"globalusage": "itejtekiw  taltikpak iwan  pal ne taanalis",
+	"globalusage-on-wiki": "Tik $2",
+	"globalusage-of-file": "Ini wijwikis yaw-tekitit iwan ini taanalis",
+	"globalusage-more": "kita [[{{#Special:GlobalUsage}}/$1|more global usage]] pal ini taanalis\n."
 }

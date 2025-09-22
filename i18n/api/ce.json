@@ -5,5 +5,8 @@
 		]
 	},
 	"apihelp-query+globalusage-param-limit": "Маса хьажорг йухайерзо.",
-	"apihelp-query+globalusage-param-filterlocal": "Локалан файл лелоран фильтраци йар."
+	"apihelp-query+globalusage-param-filterlocal": "Локалан файл лелоран фильтраци йар.",
+	"apihelp-query+globalusage-param-namespace": "ЖамӀашна доза тоха хӀокху цӀерийн меттигашкахь.",
+	"apihelp-query+globalusage-param-site": "ХӀокху сайташна тӀехь жамӀаш дарна доза тоха.",
+	"apihelp-query+globalusage-example-1": "[[:File:Example.jpg]] лелоран информаци схьаэца"
 }
