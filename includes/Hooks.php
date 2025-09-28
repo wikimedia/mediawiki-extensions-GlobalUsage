@@ -8,6 +8,7 @@
 namespace MediaWiki\Extension\GlobalUsage;
 
 use MediaWiki\Content\Content;
+use MediaWiki\Deferred\LinksUpdate\ImageLinksTable;
 use MediaWiki\Deferred\LinksUpdate\LinksUpdate;
 use MediaWiki\FileRepo\File\LocalFile;
 use MediaWiki\FileRepo\FileRepo;
@@ -169,7 +170,7 @@ class Hooks implements
 				$gu = $this->getGlobalUsage();
 				$gu->copyLocalImagelinks(
 					$file->getTitle(),
-					$this->connectionProvider->getPrimaryDatabase()
+					$this->connectionProvider->getPrimaryDatabase( ImageLinksTable::VIRTUAL_DOMAIN )
 				);
 			}
 
