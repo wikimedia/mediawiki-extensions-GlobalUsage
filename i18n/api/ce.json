@@ -4,6 +4,7 @@
 			"Умар"
 		]
 	},
+	"apihelp-query+globalusage-summary": "Билгалдаьккхина сурт глобалан лелорах лаьцна информаци йухайерзайо.",
 	"apihelp-query+globalusage-param-limit": "Маса хьажорг йухайерзо.",
 	"apihelp-query+globalusage-param-filterlocal": "Локалан файл лелоран фильтраци йар.",
 	"apihelp-query+globalusage-param-namespace": "ЖамӀашна доза тоха хӀокху цӀерийн меттигашкахь.",
