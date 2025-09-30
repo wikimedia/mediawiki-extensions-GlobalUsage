@@ -4,6 +4,7 @@
 			"Умар"
 		]
 	},
+	"apihelp-query+globalusage-summary": "Билгалдаьккхина сурт глобалан лелорах лаьцна информаци йухайерзайо.",
 	"apihelp-query+globalusage-param-prop": "Муьлха башхаллаш йухайерзо:",
 	"apihelp-query+globalusage-paramvalue-prop-url": "ТӀетуху URL.",
 	"apihelp-query+globalusage-paramvalue-prop-pageid": "АгӀонан ID тӀетуху.",
