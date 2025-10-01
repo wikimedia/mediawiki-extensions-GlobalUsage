@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Andani Inusah"
+			"Andani Inusah",
+			"Yakubu Hami"
 		]
 	},
 	"globalusage": "\n\"Bɔhira file kpataŋa\"",
 	"globalusage-on-wiki": "\"Bɔhira ŋun yɛ $2 ni\"",
-	"globalusage-of-file": "\n“Nɔɔ hiɛ wikis kpɔɔ hiɛ la gbɛŋ yɔɔ nɛ yɛ file ni:”"
+	"globalusage-of-file": "\n“Nɔɔ hiɛ wikis kpɔɔ hiɛ la gbɛŋ yɔɔ nɛ yɛ file ni:”",
+	"globalusage-more": " Wuɔm [[{{#Special:Global usage}}/$1|Ŋunŋmɛ kpɛɛli naabu]] Ŋɔ tɛbɛɛrɛ."
 }
