@@ -24,6 +24,7 @@ use MediaWiki\Logging\ManualLogEntry;
 use MediaWiki\Page\Hook\ArticleDeleteCompleteHook;
 use MediaWiki\Page\WikiFilePage;
 use MediaWiki\Page\WikiPage;
+use MediaWiki\Parser\ParserOutputLinkTypes;
 use MediaWiki\Revision\RevisionRecord;
 use MediaWiki\SpecialPage\Hook\WgQueryPagesHook;
 use MediaWiki\Title\Title;
@@ -60,7 +61,10 @@ class Hooks implements
 		$title = $linksUpdater->getTitle();
 
 		// Create a list of locally existing images (DB keys)
-		$images = array_keys( $linksUpdater->getParserOutput()->getImages() );
+		$images = array_map(
+			static fn ( $elem ) => $elem['link']->getDBkey(),
+			$linksUpdater->getParserOutput()->getLinkList( ParserOutputLinkTypes::MEDIA )
+		);
 
 		$localFiles = [];
 		$repo = $this->repoGroup->getLocalRepo();
