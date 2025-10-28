@@ -5,12 +5,13 @@
 			"Abanima",
 			"Kassem7899",
 			"Meno25",
+			"Mohammed Qays",
 			"NEHAOUA",
 			"ديفيد"
 		]
 	},
 	"apihelp-query+globalusage-summary": "يرجع استخدام الصورة العالمي لصورة معينة.",
-	"apihelp-query+globalusage-param-prop": "أي الخصائص لإرجاعها:",
+	"apihelp-query+globalusage-param-prop": "أي الخواص لإرجاعها:",
 	"apihelp-query+globalusage-paramvalue-prop-url": "إضافة رابط.",
 	"apihelp-query+globalusage-paramvalue-prop-pageid": "إضافة معرف الصفحة.",
 	"apihelp-query+globalusage-paramvalue-prop-namespace": "إضافة معرف النطاق.",
