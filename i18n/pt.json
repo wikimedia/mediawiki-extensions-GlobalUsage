@@ -6,6 +6,7 @@
 			"Hamilton Abreu",
 			"Lijealso",
 			"Malafaya",
+			"Mansil alfalb",
 			"Vitorvicentevalente"
 		]
 	},
@@ -16,7 +17,7 @@
 	"globalusage-ok": "Pesquisar",
 	"globalusage-text": "Pesquisar a utilização global de um ficheiro",
 	"globalusage-no-results": "[[:$1]] não é usado noutras wikis.",
-	"globalusage-on-wiki": "Uso no domínio $2",
+	"globalusage-on-wiki": "Utilização em $2",
 	"globalusage-of-file": "As seguintes wikis usam este ficheiro:",
 	"globalusage-more": "Ver [[{{#Special:GlobalUsage}}/$1|mais utilizações globais]] deste ficheiro.",
 	"globalusage-filterlocal": "Não mostrar as utilizações locais",
