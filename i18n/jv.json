@@ -1,20 +1,21 @@
 {
 	"@metadata": {
 		"authors": [
+			"Bennylin",
 			"Diki Ananta",
 			"Meursault2004",
 			"NoiX180",
 			"Sumbukompor"
 		]
 	},
-	"globalusage": "Panggunané barkas sajagat",
+	"globalusage": "Panggunané berkas sajagat",
 	"globalusage-for": "Anggoan global kanggo \"$1\"",
 	"globalusage-desc": "[[Special:GlobalUsage|Kaca astaméwa]] kanggo ndeleng panggunan global berkas",
 	"globalusage-ok": "Golèk",
 	"globalusage-text": "Golèk panggunan global berkas.",
 	"globalusage-no-results": "[[:$1]] ora dianggo nèng wiki liya.",
 	"globalusage-on-wiki": "Kanggo ing $2",
-	"globalusage-of-file": "Wiki liya ngisor iki nganggo barkas iki:",
+	"globalusage-of-file": "Wiki liya ngisor iki uga nganggo bérkas iki:",
 	"globalusage-more": "Deleng [[{{#Special:GlobalUsage}}/$1|naraguna liyané sadonya]] saka kaca iki.",
 	"globalusage-filterlocal": "Aja tuduhaké anggoan lokal"
 }
