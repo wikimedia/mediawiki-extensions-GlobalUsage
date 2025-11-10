@@ -3,6 +3,7 @@
 		"authors": [
 			"Arystanbek",
 			"BaRaN6161 TURK",
+			"Eleman",
 			"Hedda",
 			"Joseph",
 			"MuratTheTurkish",
@@ -20,7 +21,7 @@
 	"globalusage-text": "Küresel dosya kullanımını ara",
 	"globalusage-no-results": "[[:$1]] diğer vikilerde kullanılmıyor.",
 	"globalusage-on-wiki": "$2 üzerinde kullanımı",
-	"globalusage-of-file": "Aşağıdaki diğer vikiler bu dosyayı kullanır:",
+	"globalusage-of-file": "Aşağıdaki diğer vikiler bu dosyayı kullanmaktadır:",
 	"globalusage-more": "Bu dosyanın [[{{#Special:GlobalUsage}}/$1|daha fazla küresel kullanımını]] görüntüle.",
 	"globalusage-filterlocal": "Yerel kullanımı gösterme",
 	"mostgloballylinkedfiles": "En çok küresel bağlantı verilen dosyalar",

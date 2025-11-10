@@ -7,5 +7,6 @@
 	},
 	"globalusage": "Usada global de file",
 	"globalusage-on-wiki": "Usada na $2",
-	"globalusage-of-file": "El siguiente otro wiki ta usa con este file:"
+	"globalusage-of-file": "El siguiente otro wiki ta usa con este file:",
+	"globalusage-more": "Mira [[{{#Special:GlobalUsage}}/$1|mas usada global]] de este file."
 }
