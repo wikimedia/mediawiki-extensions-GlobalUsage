@@ -4,11 +4,12 @@
 			"Arystanbek",
 			"BaRaN6161 TURK",
 			"Mirzali",
-			"MuratTheTurkish"
+			"MuratTheTurkish",
+			"SaldırganSincap"
 		]
 	},
 	"apihelp-query+globalusage-summary": "Belirli bir görüntü için genel resim kullanımını döndürür.",
-	"apihelp-query+globalusage-param-prop": "Hangi özellikleri dönmek için:\n;url:Url ekler.\n;pageid:Sayfa kimliği ekler.\n;namespace:Ad alanı kimliği ekler.",
+	"apihelp-query+globalusage-param-prop": "Döndürülecek özellikler:",
 	"apihelp-query+globalusage-param-limit": "Dönüş için kaç bağlantıları.",
 	"apihelp-query+globalusage-param-filterlocal": "Dosyanın yerel kullanımını filtreleyin.",
 	"apihelp-query+globalusage-param-namespace": "Sonuçları bu ad alanlarıyla sınırlandırın.",
