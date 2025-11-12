@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Aca",
 			"Winston Sung"
 		]
 	},
@@ -8,5 +9,5 @@
 	"apihelp-query+globalusage-param-prop": "Koja svojstva da vrati:\n;url: Dodaje url.\n;pageid: Dodaje naznaku stranice.\n;namespace: Dodaje naznaku imenskog prostora.",
 	"apihelp-query+globalusage-param-limit": "Koliko linkova dati.",
 	"apihelp-query+globalusage-param-filterlocal": "Filtriraj lokalnu upotrebu datoteke.",
-	"apihelp-query+globalusage-example-1": "Daj upotrebu datoteke [[:File:Example.jpg]]"
+	"apihelp-query+globalusage-example-1": "Dobavi upotrebu datoteke [[:File:Example.jpg]]"
 }
