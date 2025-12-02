@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Winston Sung"
+			"Winston Sung",
+			"Aca"
 		]
 	},
 	"globalusage": "Globalna upotreba datoteke",
@@ -12,9 +13,9 @@
 	"globalusage-text": "Pretraga globalne upotrebe datoteke",
 	"globalusage-no-results": "[[:$1]] se ne koristi na drugim wikijima.",
 	"globalusage-on-wiki": "Upotreba na projektu $2",
-	"globalusage-of-file": "Ovu datoteku upotrebljavaju i sljedeći projekti:",
+	"globalusage-of-file": "Ovu datoteku koriste i sljedeći projekti:",
 	"globalusage-more": "[[{{#Special:GlobalUsage}}/$1|Potpunija globalna upotreba datoteke]]",
-	"globalusage-filterlocal": "Ne prikazuj mjesnu upotrebu",
+	"globalusage-filterlocal": "Ne prikazuj lokalnu upotrebu",
 	"mostgloballylinkedfiles": "Datoteke s najviše linkova globalno",
 	"mostgloballylinkedfiles-summary": "Popis najupotrebljenih datoteka na globalnom nivou (uzimajući u obzir sve wikije). Popis najčešće korištenih datoteka na {{SITENAME}} naći ćete na [[{{#special:MostLinkedFiles}}]].",
 	"globallywantedfiles": "Globalno tražene datoteke",
