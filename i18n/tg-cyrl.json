@@ -11,5 +11,6 @@
 	"globalusage-ok": "Ҷустуҷӯ",
 	"globalusage-text": "Ҷустуҷӯи истифодаи саросарии парванда.",
 	"globalusage-on-wiki": "Истифода дар $2",
-	"globalusage-of-file": "Викиҳои дигари зерин ин файлро истифода мекунанд:"
+	"globalusage-of-file": "Викиҳои дигари зерин ин файлро истифода мекунанд:",
+	"globalusage-more": "Намоиши[[{{#Special:GlobalUsage}}/$1|истифодаи саросарӣ]] аз ин павранда."
 }
