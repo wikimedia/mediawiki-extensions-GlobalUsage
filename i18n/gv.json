@@ -4,5 +4,9 @@
 			"MacTire02"
 		]
 	},
-	"globalusage-ok": "Ronsee"
+	"globalusage": "Ymmyd dowanagh y choadan",
+	"globalusage-ok": "Ronsee",
+	"globalusage-on-wiki": "Ymmyd er $2",
+	"globalusage-of-file": "Ta ny wikighyn eirtyssagh elley gymmydey yn coadan shoh:",
+	"globalusage-more": "Jeeagh er [[{{#Special:GlobalUsage}}/$1|tooilley ymmydyn dowanagh]] jehn choadan shoh."
 }
