@@ -20,7 +20,7 @@
 	"globalusage-on-wiki": "Penggunaan pada $2",
 	"globalusage-of-file": "Wiki lain berikut menggunakan berkas ini:",
 	"globalusage-more": "Lihat [[{{#Special:GlobalUsage}}/$1|lebih banyak penggunaan global]] dari berkas ini.",
-	"globalusage-filterlocal": "Jangan tunjukkan penggunaan setempat",
+	"globalusage-filterlocal": "Jangan tunjukkan penggunaan lokal",
 	"mostgloballylinkedfiles": "Berkas yang paling banyak ditautkan secara global",
 	"mostgloballylinkedfiles-summary": "Daftar berkas yang paling sering ditanamkan di semua wiki. Untuk daftar ekuivalen yang hanya mempertimbangkan penggunaan di {{SITENAME}}, lihat [[{{#special:MostLinkedFiles}}]].",
 	"globallywantedfiles": "Berkas yang diinginkan secara global",
