@@ -4,6 +4,7 @@ namespace MediaWiki\Extension\GlobalUsage;
 
 use MediaWiki\Context\IContextSource;
 use MediaWiki\Deferred\DeferredUpdates;
+use MediaWiki\MainConfigNames;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
 use MediaWiki\WikiMap\WikiMap;
@@ -154,13 +155,26 @@ class GlobalUsage {
 	 * @param IReadableDatabase $localImagelinksDbr Database object for reading the local links from
 	 */
 	public function copyLocalImagelinks( Title $title, IReadableDatabase $localImagelinksDbr ) {
-		$res = $localImagelinksDbr->newSelectQueryBuilder()
-			->select( [ 'il_to', 'page_id', 'page_namespace', 'page_title' ] )
+		$migrationStage = MediaWikiServices::getInstance()->getMainConfig()->get(
+			MainConfigNames::ImageLinksSchemaMigrationStage
+		);
+
+		$qb = $localImagelinksDbr->newSelectQueryBuilder()
+			->select( [ 'page_id', 'page_namespace', 'page_title' ] )
 			->from( 'imagelinks' )
 			->join( 'page', null, 'il_from = page_id' )
-			->where( [ 'il_to' => $title->getDBkey() ] )
-			->caller( __METHOD__ )
-			->fetchResultSet();
+			->caller( __METHOD__ );
+
+		if ( $migrationStage & SCHEMA_COMPAT_READ_OLD ) {
+			$qb->select( 'il_to' );
+			$qb->where( [ 'il_to' => $title->getDBkey() ] );
+		} else {
+			$qb->select( [ 'il_to' => 'lt_title' ] );
+			$qb->join( 'linktarget', null, 'lt_id = il_target_id' );
+			$qb->where( [ 'lt_title' => $title->getDBkey(), 'lt_namespace' => NS_FILE ] );
+		}
+
+		$res = $qb->fetchResultSet();
 
 		if ( !$res->numRows() ) {
 			return;

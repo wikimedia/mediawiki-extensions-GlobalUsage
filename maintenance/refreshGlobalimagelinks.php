@@ -25,7 +25,7 @@ class RefreshGlobalimagelinks extends Maintenance {
 	public function __construct() {
 		parent::__construct();
 		$this->addOption( 'start-page', 'page_id of the page to start with' );
-		$this->addOption( 'start-image', 'il_to of the image to start with' );
+		$this->addOption( 'start-image', 'il_target_id of the image to start with' );
 		$this->addOption( 'pages', 'CSV of (existing,nonexisting)', true, true );
 		$this->setBatchSize( 500 );
 
@@ -47,31 +47,32 @@ class RefreshGlobalimagelinks extends Maintenance {
 		// Clean up links for existing pages...
 		if ( in_array( 'existing', $pages ) ) {
 			$lastPageId = intval( $this->getOption( 'start-page', 0 ) );
-			$lastIlTo = $this->getOption( 'start-image' );
+			$lastIlTargetId = intval( $this->getOption( 'start-image', 0 ) );
 
 			do {
-				$this->output( "Querying links after (page_id, il_to) = ($lastPageId, $lastIlTo)\n" );
+				$this->output( "Querying links after (page_id, il_target_id) = ($lastPageId, $lastIlTargetId)\n" );
 
 				// Query all pages and any imagelinks associated with that
 				$res = $imagelinksDbr->newSelectQueryBuilder()
-					->select( [ 'page_id', 'page_namespace', 'page_title', 'il_to' ] )
+					->select( [ 'page_id', 'page_namespace', 'page_title', 'lt_title', 'lt_id' ] )
 					->from( 'page' )
 					// LEFT JOIN imagelinks since we need to delete usage
 					// from all images, even if they don't have images anymore
 					->leftJoin( 'imagelinks', null, 'page_id = il_from' )
+					->leftJoin( 'linktarget', null, [ 'lt_id = il_target_id', 'lt_namespace' => NS_FILE ] )
 					->where( $imagelinksDbr->buildComparison( '>', [
 						'page_id' => $lastPageId,
-						'il_to' => $lastIlTo,
+						'il_target_id' => $lastIlTargetId,
 					] ) )
-					->orderBy( $imagelinksDbr->implicitOrderby() ? 'page_id' : 'page_id, il_to' )
+					->orderBy( $imagelinksDbr->implicitOrderby() ? 'page_id' : 'page_id, il_target_id' )
 					->limit( $this->mBatchSize )
 					->caller( __METHOD__ )
 					->fetchResultSet();
 
-				// Collect per-page metadata and il_to values for a separate local image existence check
+				// Collect per-page metadata and lt_title values for a separate local image existence check
 				$imagesByPage = [];
 				$pageMeta = [];
-				$ilTosSet = [];
+				$ltTitlesSet = [];
 				$lastRow = null;
 				foreach ( $res as $row ) {
 					$pageId = (int)$row->page_id;
@@ -82,20 +83,20 @@ class RefreshGlobalimagelinks extends Maintenance {
 							'title' => $row->page_title,
 						];
 					}
-					if ( $row->il_to !== null ) {
-						$ilTosSet[$row->il_to] = true;
-						$imagesByPage[$pageId][$row->il_to] = true;
+					if ( $row->lt_title !== null ) {
+						$ltTitlesSet[$row->lt_title] = true;
+						$imagesByPage[$pageId][$row->lt_title] = true;
 					}
 					$lastRow = $row;
 				}
 
 				// Query the local image table separately to find which images exist
 				$existingImages = [];
-				if ( $ilTosSet ) {
+				if ( $ltTitlesSet ) {
 					$imgRes = $dbr->newSelectQueryBuilder()
 						->select( 'img_name' )
 						->from( 'image' )
-						->where( [ 'img_name' => array_keys( $ilTosSet ) ] )
+						->where( [ 'img_name' => array_keys( $ltTitlesSet ) ] )
 						->caller( __METHOD__ )
 						->fetchResultSet();
 					foreach ( $imgRes as $imgRow ) {
@@ -133,7 +134,7 @@ class RefreshGlobalimagelinks extends Maintenance {
 					// We've processed some rows in this iteration, so save
 					// continuation variables
 					$lastPageId = $lastRow->page_id;
-					$lastIlTo = $lastRow->il_to;
+					$lastIlTargetId = $lastRow->lt_id;
 
 					// Be nice to the database
 					$connProvider->commitAndWaitForReplication( __METHOD__, $ticket );
