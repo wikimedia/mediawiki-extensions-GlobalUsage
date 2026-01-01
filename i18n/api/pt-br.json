@@ -3,11 +3,15 @@
 		"authors": [
 			"Eduardo Addad de Oliveira",
 			"Eduardoaddad",
-			"Felipe L. Ewald"
+			"Felipe L. Ewald",
+			"Fúlvio"
 		]
 	},
 	"apihelp-query+globalusage-summary": "Retorna o uso global para uma determinada imagem.",
-	"apihelp-query+globalusage-param-prop": "Quais as propriedades a serem retornadas:\n;url:Adiciona url.\n;pageid:Adiciona ID da página.\nN;namespace: Adiciona ID do espaço nominal.",
+	"apihelp-query+globalusage-param-prop": "Quais as propriedades a serem retornadas:",
+	"apihelp-query+globalusage-paramvalue-prop-url": "Adiciona url.",
+	"apihelp-query+globalusage-paramvalue-prop-pageid": "Adiciona ID da página.",
+	"apihelp-query+globalusage-paramvalue-prop-namespace": "Adiciona ID do espaço nominal.",
 	"apihelp-query+globalusage-param-limit": "Quantos links serão retornados.",
 	"apihelp-query+globalusage-param-filterlocal": "Filtre o uso local do arquivo.",
 	"apihelp-query+globalusage-param-namespace": "Limite os resultados para esses espaços nominais.",
