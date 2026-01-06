@@ -8,7 +8,7 @@
 		]
 	},
 	"apihelp-query+globalusage-summary": "Zwraca globalne wykorzystanie konkretnego pliku.",
-	"apihelp-query+globalusage-param-prop": "Właściwości do zwrócenia:\n;url:Dodaje url.\n;pageid:Dodaje ID strony.\n;namespace:Dodaje ID przestrzeni nazw.",
+	"apihelp-query+globalusage-param-prop": "Właściwości do zwrócenia:",
 	"apihelp-query+globalusage-param-limit": "Liczba linków do zwrócenia.",
 	"apihelp-query+globalusage-param-filterlocal": "Pomiń informacje o lokalnym użyciu pliku.",
 	"apihelp-query+globalusage-param-namespace": "Ogranicz wyniki do tych przestrzeni nazw.",
