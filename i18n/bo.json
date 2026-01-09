@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"Pecha-Tsewang",
 			"Tenzin Thoesam"
 		]
 	},
-	"globalusage": "སྤྱི་ཡོངས་ཡིག་ཆ་སྤྱོད་ཐབས།"
+	"globalusage": "སྤྱི་ཡོངས་ཡིག་ཆ་སྤྱོད་ཐབས།",
+	"globalusage-on-wiki": "$2 ཐོག་བེད་སྤྱོད།"
 }
