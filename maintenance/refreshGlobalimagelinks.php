@@ -16,6 +16,7 @@ require_once $path . '/maintenance/Maintenance.php';
 
 use MediaWiki\Deferred\LinksUpdate\ImageLinksTable;
 use MediaWiki\Extension\GlobalUsage\GlobalUsage;
+use MediaWiki\MainConfigNames;
 use MediaWiki\Maintenance\Maintenance;
 use MediaWiki\Title\Title;
 use MediaWiki\WikiMap\WikiMap;
@@ -41,6 +42,10 @@ class RefreshGlobalimagelinks extends Maintenance {
 		$gdbw = $connProvider->getPrimaryDatabase( 'virtual-globalusage' );
 		$gdbr = $connProvider->getReplicaDatabase( 'virtual-globalusage' );
 		$gu = new GlobalUsage( WikiMap::getCurrentWikiId(), $gdbw, $gdbr );
+
+		$fileSchemaMigrationStage = $this->getServiceContainer()->getMainConfig()->get(
+			MainConfigNames::FileSchemaMigrationStage
+		);
 
 		$ticket = $connProvider->getEmptyTransactionTicket( __METHOD__ );
 
@@ -93,12 +98,25 @@ class RefreshGlobalimagelinks extends Maintenance {
 				// Query the local image table separately to find which images exist
 				$existingImages = [];
 				if ( $ltTitlesSet ) {
-					$imgRes = $dbr->newSelectQueryBuilder()
-						->select( 'img_name' )
-						->from( 'image' )
-						->where( [ 'img_name' => array_keys( $ltTitlesSet ) ] )
-						->caller( __METHOD__ )
-						->fetchResultSet();
+					if ( $fileSchemaMigrationStage & SCHEMA_COMPAT_READ_OLD ) {
+						$imgRes = $dbr->newSelectQueryBuilder()
+							->select( 'img_name' )
+							->from( 'image' )
+							->where( [ 'img_name' => array_keys( $ltTitlesSet ) ] )
+							->caller( __METHOD__ )
+							->fetchResultSet();
+					} else {
+						$imgRes = $dbr->newSelectQueryBuilder()
+							->select( [ 'img_name' => 'file_name' ] )
+							->from( 'file' )
+							->where( [
+								'file_name' => array_keys( $ltTitlesSet ),
+								'file_deleted' => 0,
+							] )
+							->caller( __METHOD__ )
+							->fetchResultSet();
+					}
+
 					foreach ( $imgRes as $imgRow ) {
 						$existingImages[$imgRow->img_name] = true;
 					}

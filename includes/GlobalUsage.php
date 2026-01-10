@@ -13,18 +13,10 @@ use Wikimedia\Rdbms\IDBAccessObject;
 use Wikimedia\Rdbms\IReadableDatabase;
 
 class GlobalUsage {
-	/** @var string */
-	private $interwiki;
 
-	/**
-	 * @var IDatabase
-	 */
-	private $dbw;
-
-	/**
-	 * @var IReadableDatabase
-	 */
-	private $dbr;
+	private string $interwiki;
+	private IDatabase $dbw;
+	private IReadableDatabase $dbr;
 
 	/**
 	 * Construct a GlobalUsage instance for a certain wiki.
@@ -82,10 +74,11 @@ class GlobalUsage {
 
 	/**
 	 * Get all global images from a certain page
+	 *
 	 * @param int $id
 	 * @return string[]
 	 */
-	public function getLinksFromPage( $id ) {
+	public function getLinksFromPage( int $id ) {
 		return $this->dbr->newSelectQueryBuilder()
 			->select( 'gil_to' )
 			->from( 'globalimagelinks' )
@@ -104,7 +97,7 @@ class GlobalUsage {
 	 * @param string[]|null $to File name(s)
 	 * @param int|null $ticket
 	 */
-	public function deleteLinksFromPage( $id, ?array $to = null, $ticket = null ) {
+	public function deleteLinksFromPage( int $id, ?array $to = null, ?int $ticket = null ) {
 		global $wgUpdateRowsPerQuery;
 
 		$where = [
@@ -137,7 +130,7 @@ class GlobalUsage {
 	 *
 	 * @param Title $title Title of the file
 	 */
-	public function deleteLinksToFile( $title ) {
+	public function deleteLinksToFile( Title $title ) {
 		$this->dbw->newDeleteQueryBuilder()
 			->deleteFrom( 'globalimagelinks' )
 			->where( [
@@ -271,7 +264,7 @@ class GlobalUsage {
 	 *   be on the "shared repo". See discussion on T25136.
 	 * @return bool
 	 */
-	public static function onSharedRepo() {
+	public static function onSharedRepo(): bool {
 		global $wgGlobalUsageSharedRepoWiki;
 
 		return !$wgGlobalUsageSharedRepoWiki || $wgGlobalUsageSharedRepoWiki === WikiMap::getCurrentWikiId();
@@ -286,30 +279,65 @@ class GlobalUsage {
 	 * @param string|bool $wiki
 	 * @return array Query info array, as a QueryPage would expect.
 	 */
-	public static function getWantedFilesQueryInfo( $wiki = false ) {
+	public static function getWantedFilesQueryInfo( $wiki = false ): array {
+		$migrationStage = MediaWikiServices::getInstance()->getMainConfig()->get(
+			MainConfigNames::FileSchemaMigrationStage
+		);
+
+		if ( $migrationStage & SCHEMA_COMPAT_READ_OLD ) {
+			$tables = [
+				'img1' => 'image',
+				'img2' => 'image',
+			];
+			$conds = [
+				'img1.img_name' => null,
+				// We also need to exclude file redirects
+				'img2.img_name' => null,
+			];
+			$joinConds = [
+				'img1' => [ 'LEFT JOIN',
+					'gil_to = img1.img_name'
+				],
+				'img2' => [ 'LEFT JOIN',
+					'rd_title = img2.img_name'
+				],
+			];
+		} else {
+			$tables = [
+				'file1' => 'file',
+				'file2' => 'file',
+			];
+			$conds = [
+				'file1.file_name' => null,
+				// We also need to exclude file redirects
+				'file2.file_name' => null,
+			];
+			$joinConds = [
+				'file1' => [ 'LEFT JOIN',
+					[ 'gil_to = file1.file_name', 'file1.file_deleted' => 0 ]
+				],
+				'file2' => [ 'LEFT JOIN',
+					[ 'rd_title = file2.file_name', 'file2.file_deleted' => 0 ]
+				],
+			];
+		}
+
 		$qi = [
 			'tables' => [
 				'globalimagelinks',
 				'page',
 				'redirect',
-				'img1' => 'image',
-				'img2' => 'image',
+				...$tables,
 			],
 			'fields' => [
 				'namespace' => NS_FILE,
 				'title' => 'gil_to',
 				'value' => 'COUNT(*)'
 			],
-			'conds' => [
-				'img1.img_name' => null,
-				// We also need to exclude file redirects
-				'img2.img_name' => null,
-			 ],
+			'conds' => $conds,
 			'options' => [ 'GROUP BY' => 'gil_to' ],
 			'join_conds' => [
-				'img1' => [ 'LEFT JOIN',
-					'gil_to = img1.img_name'
-				],
+				...$joinConds,
 				'page' => [ 'LEFT JOIN', [
 					'gil_to = page_title',
 					'page_namespace' => NS_FILE,
@@ -319,11 +347,9 @@ class GlobalUsage {
 					'rd_namespace' => NS_FILE,
 					'rd_interwiki' => ''
 				] ],
-				'img2' => [ 'LEFT JOIN',
-					'rd_title = img2.img_name'
-				]
 			]
 		];
+
 		if ( $wiki !== false ) {
 			// Limit to just one wiki.
 			$qi['conds']['gil_wiki'] = $wiki;
