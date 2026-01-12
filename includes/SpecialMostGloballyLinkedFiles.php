@@ -9,7 +9,7 @@
 
 namespace MediaWiki\Extension\GlobalUsage;
 
-use MediaWiki\Cache\LinkBatchFactory;
+use MediaWiki\Page\LinkBatchFactory;
 use MediaWiki\SpecialPage\ImageQueryPage;
 use RuntimeException;
 use Wikimedia\Rdbms\IConnectionProvider;
