@@ -13,7 +13,6 @@ $specialPageAliases['en'] = [
 	'GlobalUsage' => [ 'GlobalUsage' ],
 	'MostGloballyLinkedFiles' => [ 'MostGloballyLinkedFiles' ],
 	'GloballyWantedFiles' => [ 'GloballyWantedFiles' ],
-	'GloballyUnusedFiles' => [ 'GloballyUnusedFiles' ]
 ];
 
 /** Arabic (العربية) */
@@ -92,7 +91,6 @@ $specialPageAliases['cs'] = [
 	'GlobalUsage' => [ 'Globální_využití' ],
 	'MostGloballyLinkedFiles' => [ 'Globálně_nejodkazovanější_soubory' ],
 	'GloballyWantedFiles' => [ 'Globálně_chybějící_soubory' ],
-	'GloballyUnusedFiles' => [ 'Globálně_nepoužité_soubory' ]
 ];
 
 /** German (Deutsch) */
@@ -338,14 +336,12 @@ $specialPageAliases['sk'] = [
 $specialPageAliases['sr-ec'] = [
 	'GlobalUsage' => [ 'ГлобалнаУпотреба', 'Глобална_употреба' ],
 	'GloballyWantedFiles' => [ 'Глобално_тражене_датотеке' ],
-	'GloballyUnusedFiles' => [ 'Глобално_некоришћене_датотеке' ]
 ];
 
 /** Serbian Latin (srpski (latinica)) */
 $specialPageAliases['sr-el'] = [
 	'GlobalUsage' => [ 'GlobalnaUpotreba', 'Globalna_upotreba' ],
 	'GloballyWantedFiles' => [ 'Globalno_tražene_datoteke' ],
-	'GloballyUnusedFiles' => [ 'Globalno_nekorišćene_datoteke' ]
 ];
 
 /** Swedish (svenska) */
@@ -399,7 +395,6 @@ $specialPageAliases['zh'] = [
 	'GlobalUsage' => [ 'GlobalUsage' ],
 	'MostGloballyLinkedFiles' => [ 'MostGloballyLinkedFiles' ],
 	'GloballyWantedFiles' => [ 'GloballyWantedFiles' ],
-	'GloballyUnusedFiles' => [ 'GloballyUnusedFiles' ]
 ];
 
 /** Simplified Chinese (中文（简体）) */
@@ -407,7 +402,6 @@ $specialPageAliases['zh-hans'] = [
 	'GlobalUsage' => [ '全域使用情况' ],
 	'MostGloballyLinkedFiles' => [ '全域最多链接文件' ],
 	'GloballyWantedFiles' => [ '全域需要的文件' ],
-	'GloballyUnusedFiles' => [ '全域未使用文件' ],
 ];
 
 /** Traditional Chinese (中文（繁體）) */
@@ -415,5 +409,4 @@ $specialPageAliases['zh-hant'] = [
 	'GlobalUsage' => [ '全域使用狀況' ],
 	'MostGloballyLinkedFiles' => [ '全域最多連結檔案', '全域最多連接檔案' ],
 	'GloballyWantedFiles' => [ '全域需要的檔案' ],
-	'GloballyUnusedFiles' => [ '全域未使用的檔案' ],
 ];

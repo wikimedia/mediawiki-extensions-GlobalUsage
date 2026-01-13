@@ -33,8 +33,5 @@
 	"globallywantedfiles-summary": "Summary of [[Special:GloballyWantedFiles]].\n\n\"Global\" refers to the fact that this takes into account all the wikis in the wiki family, not just the current wiki. This is similar to {{msg-mw|wantedfiles-summary}} or {{msg-mw|wantedfilestext-cat}}, but for the global special page.",
 	"globallywantedfiles-foreign-repo": "Warning shown on top of Special:GloballyWantedFiles (Between the {{msg-mw|perfcachedts}} and {{msg-mw|showingresultsinrange}} messages) if the wiki has a foreign repository enabled.",
 	"globalusage-header": "Text message used in [[Special:GlobalUsage]] right above the form describing the purpose of special page.",
-	"globalusage-header-image": "{{notranslate}}. Extra header for on-wiki customization. $1 - File being looked for.",
-	"globallyunusedfiles": "{{doc-special|GloballyUnusedFiles}}",
-	"globallyunusedfilestext": "Header message of [[Special:GloballyUnusedFiles]]",
-	"globallyunusedfiles-error-nonsharedrepo": "This error is displayed if user tries to access wiki which is not on shared repo"
+	"globalusage-header-image": "{{notranslate}}. Extra header for on-wiki customization. $1 - File being looked for."
 }

@@ -25,12 +25,6 @@
 				"RepoGroup"
 			]
 		},
-		"GloballyUnusedFiles": {
-			"class": "MediaWiki\\Extension\\GlobalUsage\\SpecialGloballyUnusedFiles",
-			"services": [
-				"ConnectionProvider"
-			]
-		},
 		"GlobalUsage": {
 			"class": "MediaWiki\\Extension\\GlobalUsage\\SpecialGlobalUsage",
 			"services": [

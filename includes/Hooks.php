@@ -248,8 +248,5 @@ class Hooks implements
 	public function onWgQueryPages( &$queryPages ) {
 		$queryPages[] = [ 'SpecialMostGloballyLinkedFiles', 'MostGloballyLinkedFiles' ];
 		$queryPages[] = [ 'SpecialGloballyWantedFiles', 'GloballyWantedFiles' ];
-		if ( GlobalUsage::onSharedRepo() ) {
-			$queryPages[] = [ 'SpecialGloballyUnusedFiles', 'GloballyUnusedFiles' ];
-		}
 	}
 }
