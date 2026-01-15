@@ -29,8 +29,5 @@
 	"globallywantedfiles": "Küresel olarak istenen dosyalar",
 	"globallywantedfiles-summary": "Mevcut bulunmamalarına rağmen tüm vikiler arasında en fazla sayıda gömülmüş dosyaların listesi. Yalnızca {{SITENAME}} sitesindeki kullanımları hesaba katan denk bir liste için [[{{#special:WantedFiles}}]] sayfasına bakın. İlk harfi büyük/küçük duyarlı olan vikilerdeki dosya kullanımlarında yanlışlıkla rapor ediliyor olabilir.",
 	"globallywantedfiles-foreign-repo": "<strong>Uyarı:</strong> Bu viki kullanan bir yabancı dosya deposu. Kullanımda olan yabancı deposundan dosya var olmasına rağmen mavi bağlantıları kopmuş olarak bu listede görünecektir.",
-	"globalusage-header": "Bu sayfa bir dosyanın diğer vikilerde nerede kullanıldığını gösterir. Bu bilgiyi dosya açıklaması sayfasının altında da bulabilirsiniz.",
-	"globallyunusedfiles": "Küresel olarak kullanılmayan dosyalar",
-	"globallyunusedfilestext": "Aşağıdaki dosyalar var, ancak herhangi bir vikideki herhangi bir sayfaya gömülmedi.",
-	"globallyunusedfiles-error-nonsharedrepo": "Bu viki paylaşılan depoda yok"
+	"globalusage-header": "Bu sayfa bir dosyanın diğer vikilerde nerede kullanıldığını gösterir. Bu bilgiyi dosya açıklaması sayfasının altında da bulabilirsiniz."
 }

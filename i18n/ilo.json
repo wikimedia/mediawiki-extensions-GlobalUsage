@@ -20,8 +20,5 @@
 	"globallywantedfiles": "Global a makiddaw a pappapeles",
 	"globallywantedfiles-summary": "Listaan dagiti papeles a naisenggaten iti kaaduan a bilang iti namin ano a beses iti ballasiw ti amin a wiki urayno awan. Para iti kapada a listaan a mangipakita laeng kadagiti panagusar iti {{SITENAME}}, kitaen ti [[{{#special:WantedFiles}}]]. Dagiti panagusar iti papeles manipud kadagiti wiki a sensetibo ti umuna a kadakkel ti letra ket mabalin a maireporta a kas saan a kinayat.",
 	"globallywantedfiles-foreign-repo": "<strong>Ballaag:</strong> Daytoy a wiki ket agus-usar ti ganganaet a repositorio ti papeles. Dagiti papeles manipud ti ganganaet a repositorio a maus-usar ket maipakita iti daytoy a listaan a kas nakurosan nga asul a silsilpo urayno dagitoy ket awan.",
-	"globalusage-header": "Ipakita daytoy a panid ti ayan a nakausaran ti papeles kadagti sabali a wiki. Mabalinmo pay a mabirukan dayta a pakaammo iti baba ti panid ti deskripsion ti papeles.",
-	"globallyunusedfiles": "Global a saan a maus-usar a pappapeles",
-	"globallyunusedfilestext": "Dagiti sumaganad a papeles ket adda ngem saanda a naikapet iti ania man a wiki.",
-	"globallyunusedfiles-error-nonsharedrepo": "Daytoy a wiki ket saan nga adda iti pagbingayan a repo"
+	"globalusage-header": "Ipakita daytoy a panid ti ayan a nakausaran ti papeles kadagti sabali a wiki. Mabalinmo pay a mabirukan dayta a pakaammo iti baba ti panid ti deskripsion ti papeles."
 }

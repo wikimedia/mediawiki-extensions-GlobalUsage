@@ -21,8 +21,5 @@
 	"globallywantedfiles": "File recesti globalmente",
 	"globallywantedfiles-summary": "Lista di file ch'en stæti inciosci o ciu gran nummio de votte inte tutte e wikki sciben che no existan. Pe 'na lista equivalente ch'a pigge in conscidiassion soo che l'utilizzo insce {{SITENAME}}, amia [[{{#special:WantedFiles}}]]. I utilizzi di file da de wikki senscibbile a-e primme lettie maiuscole poeuan ese riportæ pe sballio comme recesti.",
 	"globallywantedfiles-foreign-repo": "<strong>Atension:</strong> sta wiki chie a l'adoeuvia 'n depoxito de file esterno. I file da-o depoxito esterno ch'en in doeuvia saian mostræ inte sta lista comme 'n ingancio bloeu sbarou, con tutto che ghe seggian.",
-	"globalusage-header": "Sta paggina chì a mostra onde l'è che 'n file o l'è doeuviou inti atre wiki. Ti poeu trovâ st'informaçion ascì in fondo a-a paggina de descriçion do file.",
-	"globallyunusedfiles": "File globalmente inutilizzæ",
-	"globallyunusedfilestext": "I seguenti file existan ma no son incorpoæ inte nisciun-a paggina de nisciun-a wikki.",
-	"globallyunusedfiles-error-nonsharedrepo": "Sta wikki chie a no fa parte do depoxito comun"
+	"globalusage-header": "Sta paggina chì a mostra onde l'è che 'n file o l'è doeuviou inti atre wiki. Ti poeu trovâ st'informaçion ascì in fondo a-a paggina de descriçion do file."
 }

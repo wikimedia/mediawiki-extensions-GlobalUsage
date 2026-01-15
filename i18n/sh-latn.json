@@ -21,8 +21,5 @@
 	"globallywantedfiles": "Globalno tražene datoteke",
 	"globallywantedfiles-summary": "Popis najupotrebljenih datoteka na globalnom nivou (uzimajući u obzir sve wikije) iako ne postoje. Popis najčešće korištenih datoteka na {{SITENAME}} naći ćete na [[{{#special:WantedFiles}}]]. Korištenje datoteka na wikijima što razlikuju prvo veliko i malo slovo mogu neispravno se smatrati potrebnim.",
 	"globallywantedfiles-foreign-repo": "<strong>Upozorenje:</strong> Ovaj wiki koristi vanjsko skladište podataka. Datoteke iz vanjskog skladišta bit će prikazane kao precrtane plave veze na popisu, iako postoje.",
-	"globalusage-header": "Ova stranica navodi sve lokacije na drugim wikijama gdje se koristi data datoteka. Te informacije možete pronaći i na dnu njene stranice s opisom.",
-	"globallyunusedfiles": "Globalno nekorištene datoteke",
-	"globallyunusedfilestext": "Sljedeće datoteke postoje, ali se ne nalaze na nijednoj stranici u nijednom wikiju.",
-	"globallyunusedfiles-error-nonsharedrepo": "Ovaj wiki nije na odvojenom skladištu"
+	"globalusage-header": "Ova stranica navodi sve lokacije na drugim wikijama gdje se koristi data datoteka. Te informacije možete pronaći i na dnu njene stranice s opisom."
 }

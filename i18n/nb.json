@@ -22,8 +22,5 @@
 	"globallywantedfiles": "Globalt ønskede filer",
 	"globallywantedfiles-summary": "Liste over filer som har blitt brukt mest på alle wikier til tross for at de ikke eksisterer. For en tilsvarende liste med bruk kun på {{SITENAME}}, se [[{{#special:WantedFiles}}]]. Filbruk fra wikier som tillater små bokstaver i starten av sidenavn blir muligens feilrapportert.",
 	"globallywantedfiles-foreign-repo": "<strong>Advarsel:</strong> Denne wikien bruker et eksternt fillager. Filer fra det eksterne fillageret som er i bruk vil vises i listen som utstrekede blå lenker til tross for at de eksisterer.",
-	"globalusage-header": "Denne siden viser hvor en fil brukes på andre wikier. Du kan også finne denne informasjonen på bunnen av filbeskrivelsessiden.",
-	"globallyunusedfiles": "Globalt ubrukte filer",
-	"globallyunusedfilestext": "Følgende filer fins, men brukes ikke på noen sider på noen wikier.",
-	"globallyunusedfiles-error-nonsharedrepo": "Denne wikien er ikke på det delte fillageret"
+	"globalusage-header": "Denne siden viser hvor en fil brukes på andre wikier. Du kan også finne denne informasjonen på bunnen av filbeskrivelsessiden."
 }

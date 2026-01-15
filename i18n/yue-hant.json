@@ -21,8 +21,5 @@
 	"globallywantedfiles": "全域多文想要嘅檔案",
 	"globallywantedfiles-summary": "所有 Wiki 入面用得最多嘅唔存在檔案清單。想睇淨係得{{SITENAME}}使用情況嘅清單，去睇[[{{#special:WantedFiles}}]]。頭字母分清大細階嘅Wiki可能會將存在嘅檔案誤報做想要。",
 	"globallywantedfiles-foreign-repo": "<strong>警告：</strong> 呢個Wiki用緊外部檔案倉庫，就算檔案實際係存在，清單上面外部檔案倉庫嘅檔案都會顯示成藍色刪除線嘅連結。",
-	"globalusage-header": "呢版顯示個檔案用咗喺其他wiki邊度。你亦可以喺檔案描述版底搵到相關資訊。",
-	"globallyunusedfiles": "全域冇用到嘅檔案",
-	"globallyunusedfilestext": "下面嘅檔案存在，但未有喺任何 Wiki 入面用到。",
-	"globallyunusedfiles-error-nonsharedrepo": "呢個wiki唔喺共享倉庫度"
+	"globalusage-header": "呢版顯示個檔案用咗喺其他wiki邊度。你亦可以喺檔案描述版底搵到相關資訊。"
 }

@@ -21,8 +21,5 @@
 	"globallywantedfiles": "Globaalselt oodatumad failid",
 	"globallywantedfiles-summary": "Siin on loetletud failid, mida on kõigi vikide peale kokku enim manustatud, kuigi neid faile pole. Sarnase loendi, mis võtab arvesse vaid kasutust {{GRAMMAR:inessive|{{SITENAME}}}}, leiad leheküljelt [[{{#special:WantedFiles}}]]. Valesti võivad oodatud failidena kajastuda failid, mida kasutatakse vikides, kus esitäht on tõstutundlik.",
 	"globallywantedfiles-foreign-repo": "<strong>Hoiatus:</strong> See viki kasutab välist failihoidlat. Välisest hoidlast pärit failide linke näidatakse siin sinisena ja läbikriipsutatult, kuigi need failid on olemas.",
-	"globalusage-header": "Siin leheküljel näidatakse, kus faili teistes vikides kasutatakse. Samad andmed leiad ka faili kirjelduslehekülje allosas.",
-	"globallyunusedfiles": "Globaalselt kasutamata failid",
-	"globallyunusedfilestext": "Järgmised failid on olemas, aga pole üheski vikis ühelegi leheküljele lisatud.",
-	"globallyunusedfiles-error-nonsharedrepo": "See viki ei ole jagatud varamu."
+	"globalusage-header": "Siin leheküljel näidatakse, kus faili teistes vikides kasutatakse. Samad andmed leiad ka faili kirjelduslehekülje allosas."
 }

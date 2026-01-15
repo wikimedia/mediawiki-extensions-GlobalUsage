@@ -20,6 +20,5 @@
 	"globalusage-more": "[[{{#Special:GlobalUsage}}/$1|சிறப்பு பக்கம்-மொத்த பயன்பாடு]] - இதன் மூலம் இந்த கோப்பின் மொத்த பயன்பாட்டை அறிய முடியும்",
 	"globalusage-filterlocal": "இவ்விடத்தில் பயன்படுத்தப்படுவதை காட்டவேண்டாம்",
 	"mostgloballylinkedfiles": "உலக அளவில் அதிகமாக இணைக்கப்பட்ட கோப்புகள்",
-	"globallywantedfiles": "உலகளவில் வேண்டப்படும் கோப்புகள்",
-	"globallyunusedfiles": "உலகளவில் பயன்படுத்தாத கோப்புகள்"
+	"globallywantedfiles": "உலகளவில் வேண்டப்படும் கோப்புகள்"
 }

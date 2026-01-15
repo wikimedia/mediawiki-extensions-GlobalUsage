@@ -27,8 +27,5 @@
 	"globallywantedfiles": "Pliki potrzebne globalnie",
 	"globallywantedfiles-summary": "Lista plików osadzanych najwięcej razy na wszystkich wiki, nawet jeżeli nie istnieją. Aby zobaczyć odpowiednik tej listy, biorącej pod uwagę tylko wykorzystanie na {{GRAMMAR:MS.lp|{{SITENAME}}}}, zobacz [[{{#special:WantedFiles}}]]. Użycie plików na wiki z rozróżnianiem wielkości pierwszej litery nazwy mogą być nieprawidłowo zgłaszane jako potrzebne.",
 	"globallywantedfiles-foreign-repo": "<strong>Ostrzeżenie:</strong> Ta wiki wykorzystuje zewnętrzne repozytorium plików. Pliki z zewnętrznego repozytorium, które są używane, będą wyświetlane na tej liście jako przekreślone niebieskie linki, bez względu na to czy istnieją.",
-	"globalusage-header": "Ta strona pokazuje, gdzie plik został wykorzystany na innych wiki. Te informacje wyświetlają się również w dolnej części strony opisu pliku.",
-	"globallyunusedfiles": "Globalnie nieużywane pliki",
-	"globallyunusedfilestext": "Następujące pliki istnieją, ale nie są osadzone na żadnej stronie żadnej wiki.",
-	"globallyunusedfiles-error-nonsharedrepo": "Ta wiki nie znajduje się w udostępnianym repozytorium"
+	"globalusage-header": "Ta strona pokazuje, gdzie plik został wykorzystany na innych wiki. Te informacje wyświetlają się również w dolnej części strony opisu pliku."
 }

@@ -31,8 +31,5 @@
 	"globallywantedfiles": "Fichiers globalement demandés",
 	"globallywantedfiles-summary": "Liste des fichiers qui ont été inclus le plus grand nombre de fois dans tous les wikis, bien que n’existant pas. Pour la liste équivalente ne prenant en compte que les utilisations sur {{SITENAME}}, voyez [[{{#special:WantedFiles}}]]. Les utilisations de fichier pour les wikis sensibles à la casse de la première lettre peuvent être signalés à tort comme attendus.",
 	"globallywantedfiles-foreign-repo": "<strong>Attention :</strong> ce wiki utilise un dépôt de fichiers externe. Les fichiers du dépôt externe qui sont en cours d’utilisation s’afficheront dans cette liste comme des liens bleus barrés, même s’ils existent.",
-	"globalusage-header": "Cette page indique où un fichier est utilisé sur d'autres wikis. Vous pouvez également trouver cette information au bas de la page de description du fichier.",
-	"globallyunusedfiles": "Fichiers globalement non utilisés",
-	"globallyunusedfilestext": "Les fichiers suivants existent mais ne sont inclus dans aucune page sur aucun wiki.",
-	"globallyunusedfiles-error-nonsharedrepo": "Ce wiki n’est pas sur le dépôt partagé"
+	"globalusage-header": "Cette page indique où un fichier est utilisé sur d'autres wikis. Vous pouvez également trouver cette information au bas de la page de description du fichier."
 }

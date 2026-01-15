@@ -22,8 +22,5 @@
 	"globalusage-more": "इस चित्र के [[{{#Special:GlobalUsage}}/$1|वैश्विक उपयोग की अधिक जानकारी]] देखें।",
 	"globalusage-filterlocal": "स्थानीय उपयोग ना दिखाएँ",
 	"mostgloballylinkedfiles": "विश्व स्तर पर सबसे ज्यादा जुड़ी फाइलें",
-	"globallywantedfiles": "वैश्विक आवश्यक फ़ाइलें",
-	"globallyunusedfiles": "वैश्विक रूप से अप्रयुक्त फ़ाइलें",
-	"globallyunusedfilestext": "\nनिम्न फाइलें मौजूद हैं लेकिन किसी भी विकि पर किसी भी पृष्ठ में लगाई नहीं की गई हैं।",
-	"globallyunusedfiles-error-nonsharedrepo": "यह विकी साझा रेपो पर नहीं है"
+	"globallywantedfiles": "वैश्विक आवश्यक फ़ाइलें"
 }

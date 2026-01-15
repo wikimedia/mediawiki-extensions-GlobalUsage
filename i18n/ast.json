@@ -20,8 +20,5 @@
 	"globallywantedfiles": "Ficheros solicitaos globalmente",
 	"globallywantedfiles-summary": "Llista de los ficheros que más vegaes tán incluyéndose'n toles wikis anque nun esisten. Pa la llista equivalente que sólo tien en cuenta los usos en {{SITENAME}}, consulta [[{{#special:WantedFiles}}]]. Los usos de ficheros nes wikis sensibles a la primera lletra en mayúscules pueden apaecer incorreutamente como solicitaos.",
 	"globallywantedfiles-foreign-repo": "<strong>Atención:</strong> esta wiki usa un repositoriu de ficheros esternu. Los ficheros del repositoriu esternu que tean usándose apaecerán nesta llista como enllaces azules tachaos anque existen.",
-	"globalusage-header": "Esta páxina amuesa onde s'usa un ficheru n'otres wikis. Tamién puedes atopar esta información na parte inferior de la páxina de descripción del ficheru.",
-	"globallyunusedfiles": "Ficheros sin usu globalmente",
-	"globallyunusedfilestext": "Los ficheros siguientes esisten pero nun tán inxertaos en nenguna páxina de nenguna wiki.",
-	"globallyunusedfiles-error-nonsharedrepo": "Esta wiki nun ta nel atroxamientu compartíu"
+	"globalusage-header": "Esta páxina amuesa onde s'usa un ficheru n'otres wikis. Tamién puedes atopar esta información na parte inferior de la páxina de descripción del ficheru."
 }

@@ -24,8 +24,5 @@
 	"globallywantedfiles": "Qlobal olaraq axtarılan fayllar",
 	"globallywantedfiles-summary": "Mövcud olmamasına baxmayaraq, bütün vikilərdə ən çox yerləşdirilmiş faylların siyahısı. Yalnız {{SITENAME}} saytındakı istifadə siyahısı üçün [[{{#special:WantedFiles}}]] səhifəsinə nəzər yetirin. Birinci hərfin böyük olmasına həssas olan vikilərdəki fayl istifadəsi səhv ola bilər.",
 	"globallywantedfiles-foreign-repo": "<strong>Xəbərdarlıq:</strong> Bu viki xarici fayl deposundan istifadə edir. İstifadədə olan xarici repozitoriyadan olan fayllar mövcud olmasına baxmayaraq, bu siyahıda mavi keçidlər kimi görünəcək.",
-	"globalusage-header": "Bu səhifə faylın digər vikilərdə harada istifadə edildiyini göstərir. Siz həmçinin bu məlumatı faylın təsviri səhifəsinin altında tapa bilərsiniz.",
-	"globallyunusedfiles": "Qlobal istifadə olunmayan fayllar",
-	"globallyunusedfilestext": "Aşağıdakı fayllar mövcuddur, lakin heç bir vikidə heç bir səhifəyə daxil edilməyib.",
-	"globallyunusedfiles-error-nonsharedrepo": "Bu viki paylaşılan anbarda deyil"
+	"globalusage-header": "Bu səhifə faylın digər vikilərdə harada istifadə edildiyini göstərir. Siz həmçinin bu məlumatı faylın təsviri səhifəsinin altında tapa bilərsiniz."
 }

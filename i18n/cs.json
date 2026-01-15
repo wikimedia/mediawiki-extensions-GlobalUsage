@@ -21,8 +21,5 @@
 	"globallywantedfiles": "Globálně chybějící soubory",
 	"globallywantedfiles-summary": "Seznam souborů, které na všech wiki používají nejvícekrát, přestože neexistují. Odpovídající seznam, který bere do úvahy jen použití na {{grammar:6sg|{{SITENAME}}}}, je na [[{{#special:WantedFiles}}]]. Soubory použité na wiki, na kterých záleží na velikosti prvního písmene, mohou být nesprávně považovány za neexistující.",
 	"globallywantedfiles-foreign-repo": "<strong>Upozornění:</strong> Tato wiki používá vzdálené úložiště souborů. Používané soubory ze vzdáleného úložiště se na tomto seznamu objeví jako přeškrtnuté modré odkazy, přestože existují.",
-	"globalusage-header": "Tato stránka zobrazuje, kde se soubor používá na jiných wiki. Tuto informaci najdete také naspodu každé stránky s informacemi o souboru.",
-	"globallyunusedfiles": "Globální nepoužívané soubory",
-	"globallyunusedfilestext": "Následující soubory existují, ale nejsou použity na žádné stránce na žádné wiki.",
-	"globallyunusedfiles-error-nonsharedrepo": "Tato wiki nepoužívá sdílené úložiště"
+	"globalusage-header": "Tato stránka zobrazuje, kde se soubor používá na jiných wiki. Tuto informaci najdete také naspodu každé stránky s informacemi o souboru."
 }

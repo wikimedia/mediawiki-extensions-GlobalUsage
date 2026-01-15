@@ -20,8 +20,5 @@
 	"globallywantedfiles": "Globalno potrěbne fajly",
 	"globallywantedfiles-summary": "Spisok fajlov upotrěbjajemyh največše čislo razov po vsih viki, pomimo togo, že ne jestvujut. Za analogičny spisok, ktory sodrživaje samo upotrěbjenje na sajtu {{SITENAME}}, gledite [[{{#special:WantedFiles}}]]. Fajly upotrěbjajeme v viki, ktore različajut medžu velikoju i maloju prvoju bukvoju, mogut byti pogrěšno ukazane kako potrěbne.",
 	"globallywantedfiles-foreign-repo": "<strong>Čuvanje:</strong> tuta viki koristaje vněšnje hranilišče fajlov. Upotrěbjajeme fajly iz vněšnjego hranilišča sut pokazane v tutom spisku kako prěčrknute modre linky, pomimo togo, že jestvujut.",
-	"globalusage-header": "Tuta stranica pokazyvaje, kde fajl upotrěbjaje se v drugyh viki. Vy takože možete najdti tu informaciju v dolnoj česti stranice s opisom fajla.",
-	"globallyunusedfiles": "Globalno neupotrěbjajeme fajly",
-	"globallyunusedfilestext": "Slědujuče fajly jestvujut, ale ne sut vključene na nijednoj stranici v nijednoj viki.",
-	"globallyunusedfiles-error-nonsharedrepo": "Tuta viki ne upotrěbjaje obče hranilišče"
+	"globalusage-header": "Tuta stranica pokazyvaje, kde fajl upotrěbjaje se v drugyh viki. Vy takože možete najdti tu informaciju v dolnoj česti stranice s opisom fajla."
 }

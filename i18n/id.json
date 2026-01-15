@@ -26,8 +26,5 @@
 	"globallywantedfiles": "Berkas yang diinginkan secara global",
 	"globallywantedfiles-summary": "Daftar berkas yang paling sering ditanamkan di semua wiki padahal tidak ada. Untuk daftar ekuivalen yang hanya mempertimbangkan penggunaan di {{SITENAME}}, lihat [[{{#special:WantedFiles}}]]. Penggunaan berkas dari wiki yang huruf pertamanya peka kapital mungkin salah dilaporkan sebagai diinginkan.",
 	"globallywantedfiles-foreign-repo": "<strong>Peringatan</strong>: Wiki ini menggunakan repositori berkas yang asing. Berkas-berkas yang sedang digunakan dari repositori asing tersebut akan muncul dalam daftar ini sebagai pranala biru yang dicoret biarpun pada hakikatnya berkas tersebut ada.",
-	"globalusage-header": "Halaman ini menampilkan di mana suatu berkas digunakan di wiki-wiki lain. Anda juga bisa menemukan informasi tersebut di bagian bawah halaman deskripsi berkas.",
-	"globallyunusedfiles": "Berkas yang tidak digunakan secara global",
-	"globallyunusedfilestext": "Berkas-berkas berikut ada, tetapi tidak ditanamkan di halaman apa pun di wiki mana pun.",
-	"globallyunusedfiles-error-nonsharedrepo": "Wiki ini tidak ada di repositori yang dibagikan"
+	"globalusage-header": "Halaman ini menampilkan di mana suatu berkas digunakan di wiki-wiki lain. Anda juga bisa menemukan informasi tersebut di bagian bawah halaman deskripsi berkas."
 }

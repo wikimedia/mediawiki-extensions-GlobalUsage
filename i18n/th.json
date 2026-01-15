@@ -20,6 +20,5 @@
 	"globalusage-more": "ดู[[{{#Special:GlobalUsage}}/$1|การใช้ข้ามโครงการเพิ่มเติม]]ของไฟล์นี้",
 	"globalusage-filterlocal": "ไม่ต้องแสดงการใช้ท้องถิ่น",
 	"mostgloballylinkedfiles": "ไฟล์ที่ลิงก์ข้ามโครงการมากที่สุด",
-	"globallywantedfiles": "ไฟล์ที่ต้องการข้ามโครงการ",
-	"globallyunusedfiles": "ไฟล์ที่ไม่ได้ใช้ข้ามโครงการ"
+	"globallywantedfiles": "ไฟล์ที่ต้องการข้ามโครงการ"
 }

@@ -21,8 +21,5 @@
 	"globallywantedfiles": "Globalno želelene datoteke",
 	"globallywantedfiles-summary": "Seznam datotek, ki so v vseh vikijih vključene največkrat, čeprav ne obstajajo. Za enakovreden seznam, ki upošteva samo uporabo v projektu {{SITENAME}} glejte [[{{#special:WantedFiles}}]]. Na tem seznamu je lahko napačno navedena uporaba datotek iz vikijev, ki razlikujejo med velikimi in malimi črkami.",
 	"globallywantedfiles-foreign-repo": "<strong>Opozorilo:</strong> Ta viki uporablja zunanjo shrambo datotek. Datoteke iz zunanje shrambe, ki se uporabljajo, bodo na tem seznamu prikazane kot prečrtane modre povezave, kljub temu da obstajajo.",
-	"globalusage-header": "Ta stran prikazuje, kje v drugih vikijih je datoteka uporabljena. Ta podatek lahko poiščete tudi na dnu opisne strani datoteke.",
-	"globallyunusedfiles": "Globalno neuporabljene datoteke",
-	"globallyunusedfilestext": "Naslednje datoteke obstajajo, vendar niso vključene v nobeno stran v nobenem vikiju.",
-	"globallyunusedfiles-error-nonsharedrepo": "Ta viki ne uporablja skupne shrambe"
+	"globalusage-header": "Ta stran prikazuje, kje v drugih vikijih je datoteka uporabljena. Ta podatek lahko poiščete tudi na dnu opisne strani datoteke."
 }

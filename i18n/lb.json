@@ -17,8 +17,5 @@
 	"globalusage-more": "Kuckt [[{{#Special:GlobalUsage}}/$1|globale Gebrauch]] vun dësem Fichier.",
 	"globalusage-filterlocal": "Déi lokal Benotzung net weisen",
 	"mostgloballylinkedfiles": "Am dackste global verlinkt Fichieren",
-	"globallywantedfiles": "Global gewënscht Fichieren",
-	"globallyunusedfiles": "Global net benotzt Fichieren",
-	"globallyunusedfilestext": "Dës Fichiere gëtt et awer si sinn a kenger Säit op dëser Wiki agebonnen.",
-	"globallyunusedfiles-error-nonsharedrepo": "Dës Wiki ass net an dem gemeinsamen Dossier"
+	"globallywantedfiles": "Global gewënscht Fichieren"
 }

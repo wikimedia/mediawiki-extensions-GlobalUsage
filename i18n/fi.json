@@ -25,7 +25,5 @@
 	"mostgloballylinkedfiles-summary": "Luettelo tiedostoista, joita käytetään eniten kaikissa wikeissä. Vastaava luettelo, joka ottaa huomioon ainoastaan käytön {{GRAMMAR:inessive|{{SITENAME}}}}, löytyy toimintosivulta [[{{#special:MostLinkedFiles}}]].",
 	"globallywantedfiles": "Järjestelmänlaajuisesti halutut tiedostot",
 	"globallywantedfiles-summary": "Lista tiedostoista, joita on upotettu sisältöön eniten kaikissa wikeissä siitä huolimatta, että tiedostoa ei ole olemassa. Samanlaisen listan tiedostoista, joita on käytetty vain {{GRAMMAR:inessive|{{SITENAME}}}} löydät sivulta [[{{#special:WantedFiles}}]]. Tiedostojen käyttö saattaa olla väärin raportoitu sivustoilla joissa tiedostonimen ensimmäisen kirjaimen kirjainkoolla on väliä.",
-	"globalusage-header": "Tämä sivu näyttää, missä muissa wikeissä tiedostoa käytetään. Löydät nämä tiedot myös tiedoston kuvaussivun alalaidasta.",
-	"globallyunusedfiles": "Järjestelmänlaajuisesti käyttämättömät tiedostot",
-	"globallyunusedfilestext": "Seuraavat tiedostot ovat olemassa, mutta niitä ei ole upotettu millekään sivulle missäkään wikissä."
+	"globalusage-header": "Tämä sivu näyttää, missä muissa wikeissä tiedostoa käytetään. Löydät nämä tiedot myös tiedoston kuvaussivun alalaidasta."
 }
