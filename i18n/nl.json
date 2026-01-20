@@ -13,7 +13,7 @@
 		]
 	},
 	"globalusage": "Globaal bestandsgebruik",
-	"globalusage-for": "Globaal gebruik voor \"$1\"",
+	"globalusage-for": "Globaal gebruik van “$1”",
 	"globalusage-filename": "Bestandsnaam:",
 	"globalusage-desc": "[[Special:GlobalUsage|Speciale pagina]] voor het bekijken van globaal bestandsgebruik",
 	"globalusage-ok": "Zoeken",

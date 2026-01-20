@@ -5,7 +5,7 @@
 		]
 	},
 	"globalusage": "Uso global de iste file",
-	"globalusage-for": "Uso global pro \"$1\"",
+	"globalusage-for": "Uso global de “$1”",
 	"globalusage-filename": "Nomine del file:",
 	"globalusage-desc": "[[Special:GlobalUsage|Pagina special]] pro vider le uso global de files",
 	"globalusage-ok": "Cercar",
