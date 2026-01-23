@@ -6,5 +6,6 @@
 	},
 	"globalusage": "Usu global do archivu",
 	"globalusage-on-wiki": "Usu en $2",
-	"globalusage-of-file": "As wikis siguintis utilizan ésti archivu:"
+	"globalusage-of-file": "As wikis siguintis utilizan ésti archivu:",
+	"globalusage-more": "Vel [[{{#Special:GlobalUsage}}/$1|máis usu global]] de ésti archivu."
 }
