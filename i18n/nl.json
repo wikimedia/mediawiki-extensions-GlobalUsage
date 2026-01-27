@@ -26,7 +26,7 @@
 	"mostgloballylinkedfiles": "Wereldwijd meest gekoppelde bestanden",
 	"mostgloballylinkedfiles-summary": "Lijst van bestanden die zijn opgenomen met het hoogste aantal keer over alle wiki's. Voor het equivalent lijst die alleen rekening houdt met de gewoonte op {{SITENAME}}, zie [[{{#special:MostLinkedFiles}}]].",
 	"globallywantedfiles": "Globale gevraagde bestanden",
-	"globallywantedfiles-summary": "Lijst van bestanden die het vaakst zijn ingesloten over alle wiki's, terwijl ze niet bestaan. Voor de lijst die alleen rekening houdt met het gebruik op {{SITENAME}}, zie [[{{#special:WantedFiles}}]]. Bestandsgebruik van wiki's waar de eerste letter hoofdletter gevoelig is worden mogelijk niet correct  gerapporteerd als niet-bestaand.",
-	"globallywantedfiles-foreign-repo": "<strong>Waarschuwing:</strong> Deze wiki maakt gebruik van een externe bestandsrepository. Bestanden van de vreemde repository die in gebruik zijn op deze lijst als doorgehaald blauwe links, ondanks het feit dat ze bestaan.",
-	"globalusage-header": "Deze pagina toont waar een bestand wordt gebruikt op andere wiki's. U kunt deze informatie ook onderaan de bestandspagina vinden."
+	"globallywantedfiles-summary": "Lijst van bestanden die het vaakst zijn ingesloten over alle wiki's, terwijl ze niet bestaan. Voor de lijst die alleen rekening houdt met het gebruik op {{SITENAME}}, zie [[{{#special:WantedFiles}}]]. Bestandsgebruik van wiki's waar de eerste letter hoofdlettergevoelig is worden mogelijk niet correct gerapporteerd als niet-bestaand.",
+	"globallywantedfiles-foreign-repo": "<strong>Waarschuwing:</strong> Deze wiki maakt gebruik van een externe bestandsrepository. Bestanden van de externe repository die in gebruik zijn  worden in deze lijst weergegeven als doorgehaalde blauwe koppelingen, ondanks dat ze bestaan.",
+	"globalusage-header": "Deze pagina laat zien waar een bestand op andere wiki's wordt gebruikt. U kunt die informatie ook onderaan de beschrijvingspagina van het bestand vinden."
 }
