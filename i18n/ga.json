@@ -4,10 +4,13 @@
 			"Kscanne",
 			"MinecraftAustralia",
 			"Tem",
-			"පසිඳු කාවින්ද"
+			"පසිඳු කාවින්ද",
+			"Aindriu80"
 		]
 	},
+	"globalusage": "Úsáid dhomhanda comhad",
 	"globalusage-ok": "Cuardaigh",
 	"globalusage-on-wiki": "Úsáid ar $2",
-	"globalusage-of-file": "Úsáidtear an comhad seo ar na vicithe seo a leanas:"
+	"globalusage-of-file": "Úsáidtear an comhad seo ar na vicithe seo a leanas:",
+	"globalusage-more": "Féach ar [[{{#Special:GlobalUsage}}/$1|tuilleadh úsáide domhanda]] an chomhaid seo."
 }
