@@ -10,7 +10,7 @@
 			"Siddhartha Ghai"
 		]
 	},
-	"globalusage": "चित्र का वैश्विक उपयोग",
+	"globalusage": "फ़ाइल का ग्लोबल उपयोग",
 	"globalusage-for": "\"$1\" का वैश्विक उपयोग",
 	"globalusage-filename": "फ़ाईलनाम:",
 	"globalusage-desc": "वैश्विक फ़ाइल उपयोग देखने के लिये [[Special:GlobalUsage|विशेष पृष्ठ]]",
@@ -18,8 +18,8 @@
 	"globalusage-text": "वैश्विक फ़ाइल उपयोग खोजें।",
 	"globalusage-no-results": "[[:$1]] अन्य विकि पर प्रयोग नहीं हुई है।",
 	"globalusage-on-wiki": "$2 पर उपयोग",
-	"globalusage-of-file": "इस चित्र का उपयोग इन दूसरे विकियों में किया जाता है:",
-	"globalusage-more": "इस चित्र के [[{{#Special:GlobalUsage}}/$1|वैश्विक उपयोग की अधिक जानकारी]] देखें।",
+	"globalusage-of-file": "इस फ़ाइल का उपयोग इन दूसरे विकियों में किया जाता है:",
+	"globalusage-more": "इस फ़ाइल के [[{{#Special:GlobalUsage}}/$1|ग्लोबल उपयोग की अधिक जानकारी]] देखें।",
 	"globalusage-filterlocal": "स्थानीय उपयोग ना दिखाएँ",
 	"mostgloballylinkedfiles": "विश्व स्तर पर सबसे ज्यादा जुड़ी फाइलें",
 	"globallywantedfiles": "वैश्विक आवश्यक फ़ाइलें",
