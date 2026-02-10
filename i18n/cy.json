@@ -14,7 +14,7 @@
 	"globalusage-text": "Chwilio am ddefnydd cydwici y ffeil",
 	"globalusage-no-results": "Ni ddefnyddir [[:$1]] ar wicis eraill.",
 	"globalusage-on-wiki": "Y defnydd ar $2",
-	"globalusage-of-file": "Mae'r wicis eraill hyn yn defnyddio'r ffeil hon:",
+	"globalusage-of-file": "Mae'r wiciau canlynol yn defnyddio'r ffeil hon:",
 	"globalusage-more": "Gweld [[{{#Special:GlobalUsage}}/$1|rhagor o'r defnydd cydwici]] o'r ffeil hon.",
 	"globalusage-filterlocal": "Peidio dangos y defnydd ar y wici hwn"
 }
