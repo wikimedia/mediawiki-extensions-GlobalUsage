@@ -148,26 +148,14 @@ class GlobalUsage {
 	 * @param IReadableDatabase $localImagelinksDbr Database object for reading the local links from
 	 */
 	public function copyLocalImagelinks( Title $title, IReadableDatabase $localImagelinksDbr ) {
-		$migrationStage = MediaWikiServices::getInstance()->getMainConfig()->get(
-			MainConfigNames::ImageLinksSchemaMigrationStage
-		);
-
-		$qb = $localImagelinksDbr->newSelectQueryBuilder()
-			->select( [ 'page_id', 'page_namespace', 'page_title' ] )
+		$res = $localImagelinksDbr->newSelectQueryBuilder()
+			->select( [ 'page_id', 'page_namespace', 'page_title', 'lt_title' ] )
 			->from( 'imagelinks' )
+			->join( 'linktarget', null, 'lt_id = il_target_id' )
 			->join( 'page', null, 'il_from = page_id' )
-			->caller( __METHOD__ );
-
-		if ( $migrationStage & SCHEMA_COMPAT_READ_OLD ) {
-			$qb->select( 'il_to' );
-			$qb->where( [ 'il_to' => $title->getDBkey() ] );
-		} else {
-			$qb->select( [ 'il_to' => 'lt_title' ] );
-			$qb->join( 'linktarget', null, 'lt_id = il_target_id' );
-			$qb->where( [ 'lt_title' => $title->getDBkey(), 'lt_namespace' => NS_FILE ] );
-		}
-
-		$res = $qb->fetchResultSet();
+			->where( [ 'lt_title' => $title->getDBkey(), 'lt_namespace' => NS_FILE ] )
+			->caller( __METHOD__ )
+			->fetchResultSet();
 
 		if ( !$res->numRows() ) {
 			return;
@@ -182,7 +170,7 @@ class GlobalUsage {
 				'gil_page_namespace_id' => $row->page_namespace,
 				'gil_page_namespace' => $contLang->getNsText( $row->page_namespace ),
 				'gil_page_title' => $row->page_title,
-				'gil_to' => $row->il_to,
+				'gil_to' => $row->lt_title,
 			];
 		}
 
