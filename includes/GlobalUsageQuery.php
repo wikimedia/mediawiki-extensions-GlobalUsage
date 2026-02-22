@@ -6,7 +6,7 @@ use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
 use MediaWiki\WikiMap\WikiMap;
 use stdClass;
-use Wikimedia\Rdbms\IDatabase;
+use Wikimedia\Rdbms\IReadableDatabase;
 use Wikimedia\Rdbms\SelectQueryBuilder;
 
 /**
@@ -41,7 +41,7 @@ class GlobalUsageQuery {
 	private $lastRow;
 
 	/**
-	 * @var IDatabase
+	 * @var IReadableDatabase
 	 */
 	private $db;
 
