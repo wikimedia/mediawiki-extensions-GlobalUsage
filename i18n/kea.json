@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Letra.berdi",
 			"Quintino Lopes Castro Tavares",
 			"Waldyrious"
 		]
 	},
-	"globalusage": "Uzu global di fixeru",
-	"globalusage-on-wiki": "Uso na domíniu $2",
-	"globalusage-of-file": "Kes wikis li sta ta uza es fixeru:"
+	"globalusage": "Uzu glubal di fixeru",
+	"globalusage-on-wiki": "Utilizason na $2",
+	"globalusage-of-file": "Kes uikis siginti sta ta uza es fixeru:"
 }
