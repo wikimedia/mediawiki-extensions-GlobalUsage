@@ -2,10 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Tenzin Thoesam",
-			"Pecha-Tsewang"
+			"Pecha-Tsewang",
+			"Dhondup"
 		]
 	},
 	"globalusage": "སྤྱི་ཡོངས་ཡིག་ཆ་སྤྱོད་ཐབས།",
 	"globalusage-on-wiki": "$2 ཐོག་བེད་སྤྱོད།",
-	"globalusage-of-file": "གཤམ་གྱི་ཝི་ཀི་གཞན་ཁག་གིས་ཡིག་ཆ་འདི་བེད་སྤྱོད་བྱེད་བཞིན་འདུག"
+	"globalusage-of-file": "གཤམ་གྱི་ཝི་ཀི་གཞན་ཁག་གིས་ཡིག་ཆ་འདི་བེད་སྤྱོད་བྱེད་བཞིན་འདུག",
+	"globalusage-more": "ཤོག་ངོས་འདིའི་ནང་གི་ [[{{#Special:GlobalUsage}}/$1|more global usage]] འདི་སྟོན།"
 }

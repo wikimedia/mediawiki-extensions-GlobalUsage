@@ -5,11 +5,13 @@
 			"SolidBlock",
 			"列维劳德",
 			"飞舞回堂前",
-			"物灵"
+			"物灵",
+			"Ouclie"
 		]
 	},
 	"globalusage": "總文之用",
 	"globalusage-ok": "尋",
 	"globalusage-on-wiki": "$2上之用",
-	"globalusage-of-file": "援於外站："
+	"globalusage-of-file": "援於外站：",
+	"globalusage-more": "閲是檔之[[{{#Special:GlobalUsage}}/$1|余眾境之用]]"
 }
