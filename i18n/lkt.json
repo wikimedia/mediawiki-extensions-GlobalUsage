@@ -2,10 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Peter57770",
-			"R12ntech"
+			"R12ntech",
+			"Tuwewanzi"
 		]
 	},
-	"globalusage": "Makȟásitomniyaŋ úŋpi",
+	"globalusage": "Makȟásitomniyaŋ wópȟaȟta úŋpi",
 	"globalusage-ok": "Wóle",
-	"globalusage-on-wiki": "$2 tókheškhe úŋpi"
+	"globalusage-on-wiki": "$2 tókheškhe úŋpi",
+	"globalusage-of-file": "Wiki kiƞ lená wópȟaȟta kiƞ le úƞpi"
 }
