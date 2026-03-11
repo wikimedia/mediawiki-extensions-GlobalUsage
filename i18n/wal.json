@@ -5,8 +5,17 @@
 			"Malaalaa"
 		]
 	},
-	"globalusage": "Ubba fayiliyaa go'etuwaa",
+	"globalusage": "Ubba fayliya go'etuwa",
+	"globalusage-for": "$1 salo gufantto go'etuwa",
+	"globalusage-filename": "Fayliya sunttaa:",
+	"globalusage-desc": "Ha fayliya salo gufantto go'etuwabaa[[Special:GlobalUsage|Special page]] be'a.",
+	"globalusage-ok": "Koyya",
+	"globalusage-text": "Ubba fayliya go'etuwa koyya",
+	"globalusage-no-results": "[[:$1]] hara wikketun go'etettibeenna.",
 	"globalusage-on-wiki": "Go'ettidoy $2",
-	"globalusage-of-file": "Ha kaalliyaa hara wiikkete ha fayiliyaa go'ettoosana:",
-	"globalusage-more": "Ha fayliya salo gufantto go'etuwabaa[[{{#Special:GlobalUsage}}/$1|more global usage]] be'a."
+	"globalusage-of-file": "Ha kaalliya hara wikketi ha fayliya go'ettoosana:",
+	"globalusage-more": "Ha fayliya salo gufantto go'etuwabaa[[{{#Special:GlobalUsage}}/$1|more global usage]] be'a.",
+	"globalusage-filterlocal": "Heeraa go'etuwa bessoppa",
+	"mostgloballylinkedfiles": "Daroppe salo gufantton gayttida fayleta",
+	"globallywantedfiles": "Salo gufantton koyyettiya fayleta"
 }
