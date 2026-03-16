@@ -6,5 +6,6 @@
 	},
 	"globalusage": "Caalamti faayelti atnaafac",
 	"globalusage-on-wiki": "Nafaaca $2-ille",
-	"globalusage-of-file": "Ta kataa aki wikis ta faayel yatneefecin"
+	"globalusage-of-file": "Ta kataa aki wikis ta faayel yatneefecin",
+	"globalusage-more": "Ta fayelhi [[{{#Special:GlobalUsage}}/$1|caalamti nafaaca ubul.]]"
 }
