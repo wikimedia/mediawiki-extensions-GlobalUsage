@@ -9,5 +9,6 @@
 	"globalusage": "Makȟásitomniyaŋ wópȟaȟta úŋpi",
 	"globalusage-ok": "Wóle",
 	"globalusage-on-wiki": "$2 tókheškhe úŋpi",
-	"globalusage-of-file": "Wiki kiƞ lená wópȟaȟta kiƞ le úƞpi"
+	"globalusage-of-file": "Wiki kiƞ lená wópȟaȟta kiƞ le úƞpi",
+	"globalusage-more": "Wópȟaȟta kiŋ le [[{{#Special:GlobalUsage}}/$1|makȟógmigmayaƞ oúŋ sáŋpȟa]] waŋyáŋka {{GENDER:|yo|ye|yo/ye}}."
 }
