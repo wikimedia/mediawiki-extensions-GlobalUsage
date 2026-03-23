@@ -17,9 +17,9 @@
 	"globalusage-more": "[[{{#Special:GlobalUsage}}/$1|Potpunija globalna upotreba datoteke]]",
 	"globalusage-filterlocal": "Ne prikazuj lokalnu upotrebu",
 	"mostgloballylinkedfiles": "Datoteke s najviše linkova globalno",
-	"mostgloballylinkedfiles-summary": "Popis najupotrebljenih datoteka na globalnom nivou (uzimajući u obzir sve wikije). Popis najčešće korištenih datoteka na {{SITENAME}} naći ćete na [[{{#special:MostLinkedFiles}}]].",
+	"mostgloballylinkedfiles-summary": "Lista najupotrebljenih datoteka na globalnom nivou (uzimajući u obzir sve wikije). Listu najčešće korištenih datoteka na {{SITENAME}} naći ćete na [[{{#special:MostLinkedFiles}}]].",
 	"globallywantedfiles": "Globalno tražene datoteke",
-	"globallywantedfiles-summary": "Popis najupotrebljenih datoteka na globalnom nivou (uzimajući u obzir sve wikije) iako ne postoje. Popis najčešće korištenih datoteka na {{SITENAME}} naći ćete na [[{{#special:WantedFiles}}]]. Korištenje datoteka na wikijima što razlikuju prvo veliko i malo slovo mogu neispravno se smatrati potrebnim.",
-	"globallywantedfiles-foreign-repo": "<strong>Upozorenje:</strong> Ovaj wiki koristi vanjsko skladište podataka. Datoteke iz vanjskog skladišta bit će prikazane kao precrtane plave veze na popisu, iako postoje.",
+	"globallywantedfiles-summary": "Lista najupotrebljenih datoteka na globalnom nivou (uzimajući u obzir sve wikije) iako ne postoje. Listu najčešće korištenih datoteka na {{SITENAME}} naći ćete na [[{{#special:WantedFiles}}]]. Korištenje datoteka na wikijima što razlikuju prvo veliko i malo slovo mogu neispravno se smatrati potrebnim.",
+	"globallywantedfiles-foreign-repo": "<strong>Upozorenje:</strong> Ovaj wiki koristi vanjsko skladište podataka. Datoteke iz vanjskog skladišta bit će prikazane kao precrtane plave veze na listi, iako postoje.",
 	"globalusage-header": "Ova stranica navodi sve lokacije na drugim wikijama gdje se koristi data datoteka. Te informacije možete pronaći i na dnu njene stranice s opisom."
 }
