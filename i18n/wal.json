@@ -5,12 +5,12 @@
 			"Malaalaa"
 		]
 	},
-	"globalusage": "Ubba fayliya go'etuwa",
-	"globalusage-for": "$1 salo gufantto go'etuwa",
+	"globalusage": "Fayliya lume gezo go'etuwa",
+	"globalusage-for": "$1 lume gezo go'etuwa",
 	"globalusage-filename": "Fayliya sunttaa:",
 	"globalusage-desc": "Ha fayliya salo gufantto go'etuwabaa[[Special:GlobalUsage|Special page]] be'a.",
 	"globalusage-ok": "Koyya",
-	"globalusage-text": "Ubba fayliya go'etuwa koyya",
+	"globalusage-text": "Fayliya lume gezo go'etuwa koyya",
 	"globalusage-no-results": "[[:$1]] hara wikketun go'etettibeenna.",
 	"globalusage-on-wiki": "Go'ettidoy $2",
 	"globalusage-of-file": "Ha kaalliya hara wikketi ha fayliya go'ettoosana:",
