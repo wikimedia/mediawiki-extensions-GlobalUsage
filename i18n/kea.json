@@ -9,5 +9,6 @@
 	},
 	"globalusage": "Uzu glubal di fixeru",
 	"globalusage-on-wiki": "Uzu na dumíni $2",
-	"globalusage-of-file": "Kes uiki siginti sta ta uza es fixeru:"
+	"globalusage-of-file": "Kes uiki siginti sta ta uza es fixeru:",
+	"globalusage-more": "Udja [[{{#Special:GlobalUsage}}/$1|más uzu glubal]] di es fixeru."
 }
