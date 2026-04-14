@@ -3,11 +3,15 @@
 		"authors": [
 			"Movses",
 			"Okras",
-			"Putnik"
+			"Putnik",
+			"Vlad5250"
 		]
 	},
 	"apihelp-query+globalusage-summary": "Возвращает информацию о глобальном использовании определённого изображения.",
 	"apihelp-query+globalusage-param-prop": "Какие свойства возвращать:",
+	"apihelp-query+globalusage-paramvalue-prop-url": "Добавляет URL-адрес.",
+	"apihelp-query+globalusage-paramvalue-prop-pageid": "Добавляет идентификатор страницы.",
+	"apihelp-query+globalusage-paramvalue-prop-namespace": "Добавляет идентификатор пространства имён.",
 	"apihelp-query+globalusage-param-limit": "Сколько ссылок возвращать.",
 	"apihelp-query+globalusage-param-filterlocal": "Отфильтровать локальное использование файла.",
 	"apihelp-query+globalusage-param-namespace": "Ограничить результаты для этих пространств имён.",
