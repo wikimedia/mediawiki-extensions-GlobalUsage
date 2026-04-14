@@ -8,16 +8,14 @@
 namespace MediaWiki\Extension\GlobalUsage;
 
 use MediaWiki\Content\Content;
+use MediaWiki\Deferred\Hook\LinksUpdateCompleteHook;
 use MediaWiki\Deferred\LinksUpdate\ImageLinksTable;
 use MediaWiki\Deferred\LinksUpdate\LinksUpdate;
 use MediaWiki\FileRepo\File\LocalFile;
 use MediaWiki\FileRepo\FileRepo;
 use MediaWiki\FileRepo\RepoGroup;
 use MediaWiki\Hook\FileDeleteCompleteHook;
-use MediaWiki\Hook\FileUndeleteCompleteHook;
-use MediaWiki\Hook\LinksUpdateCompleteHook;
 use MediaWiki\Hook\PageMoveCompleteHook;
-use MediaWiki\Hook\UploadCompleteHook;
 use MediaWiki\JobQueue\JobQueueGroup;
 use MediaWiki\Linker\LinkTarget;
 use MediaWiki\Logging\ManualLogEntry;
@@ -27,11 +25,13 @@ use MediaWiki\Page\WikiPage;
 use MediaWiki\Parser\ParserOutputLinkTypes;
 use MediaWiki\Revision\RevisionRecord;
 use MediaWiki\SpecialPage\Hook\WgQueryPagesHook;
+use MediaWiki\Specials\Hook\FileUndeleteCompleteHook;
 use MediaWiki\Title\Title;
+use MediaWiki\Upload\Hook\UploadCompleteHook;
+use MediaWiki\Upload\UploadBase;
 use MediaWiki\User\User;
 use MediaWiki\User\UserIdentity;
 use MediaWiki\WikiMap\WikiMap;
-use UploadBase;
 use Wikimedia\Rdbms\IConnectionProvider;
 use Wikimedia\Rdbms\IDBAccessObject;
 
