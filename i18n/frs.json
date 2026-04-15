@@ -6,5 +6,6 @@
 	},
 	"globalusage": "Globóóel dóóteiferwenden",
 	"globalusage-on-wiki": "Ferwenden up $2",
-	"globalusage-of-file": "Däi nóókoomend anner Wikis bruukent disser dóótäj:"
+	"globalusage-of-file": "Däi nóókoomend anner Wikis bruukent disser dóótäj:",
+	"globalusage-more": "[[{{#Special:GlobalUsage}}/$1|Meer globóóel ferwendens]] fan disser dóótäj bekiiken."
 }
