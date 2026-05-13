@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"ObaTango"
+			"ObaTango",
+			"Kallmemel"
 		]
 	},
 	"globalusage": "Uso global di fail",
-	"globalusage-on-wiki": "Uso na $2",
-	"globalusage-of-file": "E próksimo otro wikinan ta usa e fail akí",
+	"globalusage-on-wiki": "Usá riba $2",
+	"globalusage-of-file": "E fail aki ta wòrdu usá riba e siguiente wikinan:",
 	"globalusage-more": "Mira [[{{#Special:GlobalUsage}}/$1|mas uzo global]] di e fail akí."
 }
