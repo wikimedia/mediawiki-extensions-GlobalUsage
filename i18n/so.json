@@ -2,11 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Abdullahi",
+			"AhmedG612",
 			"Maax"
 		]
 	},
 	"globalusage": "isticmaalka faylka aduunka",
 	"globalusage-ok": "Raadi",
 	"globalusage-on-wiki": "Ku isticmaal $2",
-	"globalusage-of-file": "Wikisyada kale ee soosocda ayaa adeegsanaya faylka:"
+	"globalusage-of-file": "Wikisyada kale ee soosocda ayaa adeegsanaya faylka:",
+	"globalusage-more": "Eeg [[{{#Special:GlobalUsage}}/$1|isticmaalka caalamiga ah ee dheeraadka ah]] ee faylkan."
 }
