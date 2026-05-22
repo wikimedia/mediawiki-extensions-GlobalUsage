@@ -7,8 +7,20 @@
 		]
 	},
 	"globalusage": "isticmaalka faylka aduunka",
+	"globalusage-for": "Isticmaalka guud ee \"$1\"",
+	"globalusage-filename": "Magaca faylka:",
+	"globalusage-desc": "[[Special:GlobalUsage|Bog gaar ah]] si loo eego isticmaalka guud ee faylka",
 	"globalusage-ok": "Raadi",
+	"globalusage-text": "Raadi isticmaalka guud ee faylka",
+	"globalusage-no-results": "[[:$1]] laguma isticmaalin wiki-yada kale.",
 	"globalusage-on-wiki": "Ku isticmaal $2",
 	"globalusage-of-file": "Wikisyada kale ee soosocda ayaa adeegsanaya faylka:",
-	"globalusage-more": "Eeg [[{{#Special:GlobalUsage}}/$1|isticmaalka caalamiga ah ee dheeraadka ah]] ee faylkan."
+	"globalusage-more": "Eeg [[{{#Special:GlobalUsage}}/$1|isticmaalka caalamiga ah ee dheeraadka ah]] ee faylkan.",
+	"globalusage-filterlocal": "Ha muujin isticmaalka deegaanka",
+	"mostgloballylinkedfiles": "Faylasha ugu badan ee si caalami ah loo xiro",
+	"mostgloballylinkedfiles-summary": "Liiska faylasha inta ugu badan lagu dhex isticmaalay dhammaan wiki-yada. Si aad u aragto liiska u dhigma ee kaliya tixgelinaya isticmaalka {{SITENAME}}, fiiri [[{{#special:MostLinkedFiles}}]].",
+	"globallywantedfiles": "Faylasha si caalami ah loo doonayo",
+	"globallywantedfiles-summary": "Liiska faylasha inta ugu badan lagu dhex isticmaalay dhammaan wiki-yada inkastoo aysan jirin. Si aad u aragto liiska u dhigma ee kaliya tixgelinaya isticmaalka {{SITENAME}}, fiiri [[{{#special:WantedFiles}}]]. Isticmaalka faylasha ee wiki-yada kala sooca xarfaha waaweyn iyo kuwa yar yar ayaa si khaldan loogu sheegi karaa inay yihiin kuwo la doonayo.",
+	"globallywantedfiles-foreign-repo": "<strong>Digniin:</strong> Wiki-gan wuxuu isticmaalaa keyd faylal oo dibadda ah. Faylasha ka yimaada keydkaas ee la isticmaalayo waxay ka muuqan doonaan liiskan sida xiriirro buluug ah oo la xariiqay, inkastoo ay dhab ahaantii jiraan.",
+	"globalusage-header": "Boggan wuxuu muujinayaa meesha fayl lagu isticmaalo wiki-yada kale. Waxa kale oo aad macluumaadkaas ka heli kartaa hoosta bogga sharaxaadda faylka."
 }
