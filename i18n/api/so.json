@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"apihelp-query+globalusage-summary": "Waxay soo celisaa isticmaalka caalamiga ah ee sawir gaar ah.",
+	"apihelp-query+globalusage-param-prop": "Astaamaha la soo celinayo:",
+	"apihelp-query+globalusage-paramvalue-prop-url": "Ku dar url.",
+	"apihelp-query+globalusage-paramvalue-prop-pageid": "Ku dar aqoonsiga bogga.",
+	"apihelp-query+globalusage-paramvalue-prop-namespace": "Ku dar aqoonsiga meel magac.",
+	"apihelp-query+globalusage-param-limit": "Immisa xiriir in la soo celiyo.",
+	"apihelp-query+globalusage-param-filterlocal": "Shaandhee isticmaalka deegaanka ee faylka.",
+	"apihelp-query+globalusage-param-namespace": "Xaddid natiijooyinka meel magacyadan.",
+	"apihelp-query+globalusage-param-site": "Xaddid natiijooyinka goobahan.",
+	"apihelp-query+globalusage-example-1": "Hel isticmaalka [[:File:Example.jpg]]"
+}
