@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Movses",
 			"Okras",
 			"Putnik",
@@ -14,7 +15,7 @@
 	"apihelp-query+globalusage-paramvalue-prop-namespace": "Добавляет идентификатор пространства имён.",
 	"apihelp-query+globalusage-param-limit": "Сколько ссылок возвращать.",
 	"apihelp-query+globalusage-param-filterlocal": "Отфильтровать локальное использование файла.",
-	"apihelp-query+globalusage-param-namespace": "Ограничить результаты для этих пространств имён.",
+	"apihelp-query+globalusage-param-namespace": "Ограничить результаты этими пространствами имён.",
 	"apihelp-query+globalusage-param-site": "Ограничить результаты этим сайтам.",
 	"apihelp-query+globalusage-example-1": "Получить информацию об использовании [[:File:Example.jpg]]"
 }
