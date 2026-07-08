@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Cybernenea11",
+			"Orbitminis",
 			"TheChampionMan1234"
 		]
 	},
 	"globalusage": "Утилизаря глобалэ а фишиерулуй",
-	"globalusage-on-wiki": "Утилизаре ла $2"
+	"globalusage-on-wiki": "Утилизаре ла $2",
+	"globalusage-more": "Визуализаць [[{{#Special:GlobalUsage}}/$1|утилизэриле глобале]] але ачестуй фишиер."
 }
