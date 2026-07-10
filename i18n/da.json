@@ -4,7 +4,8 @@
 			"Antonla",
 			"Jon Harald Søby",
 			"Peter Alberti",
-			"Saederup92"
+			"Saederup92",
+			"Steenth"
 		]
 	},
 	"globalusage": "Global filanvendelse",
@@ -18,5 +19,10 @@
 	"globalusage-of-file": "Følgende andre wikier anvender denne fil:",
 	"globalusage-more": "Vis [[{{#Special:GlobalUsage}}/$1|flere globale anvendelser]] af denne fil.",
 	"globalusage-filterlocal": "Vis ikke lokal anvendelse",
-	"globallywantedfiles": "Globalt ønskede filer"
+	"mostgloballylinkedfiles": "De fleste globalt linkede filer",
+	"mostgloballylinkedfiles-summary": "Liste over filer, der er blevet integreret det højeste antal gange på tværs af alle wikier. For den tilsvarende liste, der kun tager højde for brug på {{SITENAME}}, se [[{{#special:MostLinkedFiles}}]].",
+	"globallywantedfiles": "Globalt ønskede filer",
+	"globallywantedfiles-summary": "Liste over filer, der er blevet integreret det højeste antal gange på tværs af alle wikier, selvom de ikke eksisterer. For den tilsvarende liste, der kun tager højde for brug på {{SITENAME}}, se [[{{#special:WantedFiles}}]]. Filbrug fra wikier med store og små bogstaver i første bogstav kan fejlagtigt blive rapporteret som ønsket.",
+	"globallywantedfiles-foreign-repo": "<strong>Advarsel:</strong>Denne wiki bruger et ekstern filarkiv. Filer fra det ekstern arkiv, der er i brug, vil blive vist på denne liste som overstregede blå links, selvom de eksisterer.",
+	"globalusage-header": "Denne side viser, hvor en fil bruges på andre wikier. Du kan også finde disse oplysninger nederst på siden med filbeskrivelser."
 }
