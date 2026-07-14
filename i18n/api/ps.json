@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"شاه زمان پټان"
+		]
+	},
+	"apihelp-query+globalusage-summary": "د يو ځانگړي انځور لپاره د نړۍ‌وال انځور کارول بېرته راگرځوي.",
+	"apihelp-query+globalusage-param-prop": "کومې ځانتياوې بايد راوگرځول شي:",
+	"apihelp-query+globalusage-paramvalue-prop-url": "وېبتړ ورگډوي.",
+	"apihelp-query+globalusage-paramvalue-prop-pageid": "مخ پېژند ورگډوي.",
+	"apihelp-query+globalusage-paramvalue-prop-namespace": "نوم‌تشيال پېژند ورگډوي.",
+	"apihelp-query+globalusage-param-limit": "څومره تړوني بايد راوگرځول شي.",
+	"apihelp-query+globalusage-param-filterlocal": "د دوتنې ځايي کارول چاڼول.",
+	"apihelp-query+globalusage-param-namespace": "پايلې دې نوم‌تشيالونو پورې محدودې کړئ.",
+	"apihelp-query+globalusage-param-site": "پايلې دې وېبپاڼو پورې محدودې کړئ.",
+	"apihelp-query+globalusage-example-1": "د  [[:File:Example.jpg]] کارونه ترلاسه کول"
+}
