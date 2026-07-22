@@ -1,12 +1,18 @@
 {
 	"@metadata": {
 		"authors": [
+			"Dj",
 			"Tacsipacsi"
 		]
 	},
 	"apihelp-query+globalusage-summary": "Egy adott kép globális használatának lekérése.",
-	"apihelp-query+globalusage-param-prop": "Lekérendő tulajdonságok:\n;url: A lap URL-je.\n;pageid: A lapazonosító.\n;namespace: A névtér azonosítója.",
+	"apihelp-query+globalusage-param-prop": "Lekérendő tulajdonságok:",
+	"apihelp-query+globalusage-paramvalue-prop-url": "A lap URL-je.",
+	"apihelp-query+globalusage-paramvalue-prop-pageid": "A lapazonosító.",
+	"apihelp-query+globalusage-paramvalue-prop-namespace": "A névtér azonosítója.",
 	"apihelp-query+globalusage-param-limit": "A visszaadandó linkek száma.",
 	"apihelp-query+globalusage-param-filterlocal": "A fájl helyi használatának kiszűrése.",
+	"apihelp-query+globalusage-param-namespace": "Korlátozza az eredményeket ezekre a névterekre.",
+	"apihelp-query+globalusage-param-site": "Korlátozza az eredményeket ezekre az oldalakra.",
 	"apihelp-query+globalusage-example-1": "A [[:File:Example.jpg]] használatának lekérése"
 }
