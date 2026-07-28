@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Terfili"
+			"Terfili",
+			"Albinfo"
 		]
 	},
 	"globalusage": "Diever da datoteca global",
-	"globalusage-on-wiki": "Utilisaziun sin $2"
+	"globalusage-on-wiki": "Utilisaziun sin $2",
+	"globalusage-of-file": "Las suandantas autras vichis dovran questa datoteca:",
+	"globalusage-more": "Guardar [[{{#Special:GlobalUsage}}/$1|ulteriurs dievers globals]] da questa datoteca."
 }
