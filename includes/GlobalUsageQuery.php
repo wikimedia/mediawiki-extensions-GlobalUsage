@@ -125,7 +125,7 @@ class GlobalUsageQuery {
 	 * @param int $limit The limit
 	 */
 	public function setLimit( $limit ) {
-		$this->limit = min( $limit, 500 );
+		$this->limit = max( 1, min( $limit, 500 ) );
 	}
 
 	/**
