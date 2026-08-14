@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bachounda"
+		]
+	},
+	"apihelp-query+globalusage-summary": "يرجع الاستعمال العالمي لتصويرة معينة.",
+	"apihelp-query+globalusage-param-prop": "أي الخواص لإرجاعها:",
+	"apihelp-query+globalusage-paramvalue-prop-url": "إضافة رابط.",
+	"apihelp-query+globalusage-paramvalue-prop-pageid": "إضافة معرف الصفحة.",
+	"apihelp-query+globalusage-paramvalue-prop-namespace": "إضافة معرف النطاق.",
+	"apihelp-query+globalusage-param-limit": "شحال عدد الوصلات للعودة.",
+	"apihelp-query+globalusage-param-filterlocal": "ترشيح الاستخدام المحلي للملف.",
+	"apihelp-query+globalusage-param-namespace": "احصر النتائج إلى مساحات الاسم المحددة.",
+	"apihelp-query+globalusage-param-site": "قصر النتائج على هذه المواقع.",
+	"apihelp-query+globalusage-example-1": "الحصول على استخدام [[:File:Example.jpg]]"
+}
