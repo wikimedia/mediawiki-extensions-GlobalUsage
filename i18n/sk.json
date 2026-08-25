@@ -4,7 +4,8 @@
 			"Helix84",
 			"Jaroslav.micek",
 			"Robert Važan",
-			"Yardom78"
+			"Yardom78",
+			"Wizzard"
 		]
 	},
 	"globalusage": "Globálne využitie súborov",
@@ -18,5 +19,10 @@
 	"globalusage-of-file": "Nasledovné ďalšie wiki používajú tento súbor:",
 	"globalusage-more": "Zobraziť [[{{#Special:GlobalUsage}}/$1|ďalšie globálne použitie]] tohto súboru.",
 	"globalusage-filterlocal": "Nezobrazovať lokálne použitie",
+	"mostgloballylinkedfiles": "Najčastejšie globálne používané súbory",
+	"mostgloballylinkedfiles-summary": "Zoznam súborov, ktoré sú najčastejšie vložené na všetkých wiki. Zodpovedajúci zoznam, ktorý zohľadňuje len použitia na {{GRAMMAR:lokál|{{SITENAME}}}}, nájdete na [[{{#special:MostLinkedFiles}}]].",
+	"globallywantedfiles": "Globálne žiadané súbory",
+	"globallywantedfiles-summary": "Zoznam súborov, ktoré sú napriek svojej neexistencii najčastejšie vložené na všetkých wiki. Zodpovedajúci zoznam, ktorý zohľadňuje len použitia na {{GRAMMAR:lokál|{{SITENAME}}}}, nájdete na [[{{#special:WantedFiles}}]]. Použitia súborov z wiki rozlišujúcich veľkosť prvého písmena môžu byť nesprávne uvedené ako žiadané.",
+	"globallywantedfiles-foreign-repo": "<strong>Upozornenie:</strong> Táto wiki používa cudzie úložisko súborov. Používané súbory z cudzieho úložiska sa v tomto zozname zobrazia ako prečiarknuté modré odkazy, hoci existujú.",
 	"globalusage-header": "Táto stránka zobrazuje, kde sa súbor používa na iných wiki. Túto informáciu môžete nájsť aj v spodnej časti stránky s informáciami o súbore."
 }

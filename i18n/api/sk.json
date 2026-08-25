@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"apihelp-query+globalusage-summary": "Vráti globálne použitie daného obrázka.",
+	"apihelp-query+globalusage-param-prop": "Ktoré vlastnosti sa majú vrátiť:",
+	"apihelp-query+globalusage-paramvalue-prop-url": "Pridá URL.",
+	"apihelp-query+globalusage-paramvalue-prop-pageid": "Pridá ID stránky.",
+	"apihelp-query+globalusage-paramvalue-prop-namespace": "Pridá ID menného priestoru.",
+	"apihelp-query+globalusage-param-limit": "Koľko odkazov sa má vrátiť.",
+	"apihelp-query+globalusage-param-filterlocal": "Odfiltrovať lokálne použitie súboru.",
+	"apihelp-query+globalusage-param-namespace": "Obmedziť výsledky na tieto menné priestory.",
+	"apihelp-query+globalusage-param-site": "Obmedziť výsledky na tieto lokality.",
+	"apihelp-query+globalusage-example-1": "Získať použitie súboru [[:File:Example.jpg]]"
+}
