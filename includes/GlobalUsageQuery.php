@@ -187,7 +187,7 @@ class GlobalUsageQuery {
 		} else {
 			// a Title object
 			$namespace = $this->target->getNamespace();
-			$queryIn = $this->target->getDbKey();
+			$queryIn = $this->target->getDBkey();
 		}
 		switch ( $namespace ) {
 			case NS_FILE:

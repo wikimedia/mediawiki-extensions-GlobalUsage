@@ -124,7 +124,7 @@ class SpecialGloballyWantedFiles extends WantedQueryPage {
 				$pageLink = Html::rawElement( 'del', [], $pageLink );
 			}
 
-			$gu = SpecialPage::getTitleFor( 'GlobalUsage', $title->getDBKey() );
+			$gu = SpecialPage::getTitleFor( 'GlobalUsage', $title->getDBkey() );
 			$label = $this->msg( 'nlinks' )->numParams( $result->value )->text();
 			$usages = $linkRenderer->makeLink( $gu, $label );
 

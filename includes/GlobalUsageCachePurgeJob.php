@@ -33,7 +33,7 @@ class GlobalUsageCachePurgeJob extends Job {
 			"GlobalUsage:htmlCacheUpdate:imagelinks:{$title->getPrefixedText()}" );
 
 		// title to purge backlinks to
-		$filesForPurge = [ $title->getDbKey() ];
+		$filesForPurge = [ $title->getDBkey() ];
 		// All File pages that redirect this one may have backlinks that need purging.
 		// These backlinks are probably broken now (missing files or double redirects).
 		$services = MediaWikiServices::getInstance();
@@ -42,7 +42,7 @@ class GlobalUsageCachePurgeJob extends Job {
 			->getBacklinkCache( $title );
 		foreach ( $backlinkCache->getLinkPages( 'redirect' ) as $redirPageIdentity ) {
 			if ( $redirPageIdentity->getNamespace() == NS_FILE ) {
-				$filesForPurge[] = $redirPageIdentity->getDbKey();
+				$filesForPurge[] = $redirPageIdentity->getDBkey();
 			}
 		}
 		// Remove any duplicates in case titles link to themselves
