@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ciell",
 			"Esketti",
 			"Mainframe98",
 			"Mar(c)",
@@ -12,7 +13,7 @@
 			"Sjoerddebruin"
 		]
 	},
-	"globalusage": "Globaal bestandsgebruik",
+	"globalusage": "Mondiaal bestandsgebruik",
 	"globalusage-for": "Globaal gebruik van “$1”",
 	"globalusage-filename": "Bestandsnaam:",
 	"globalusage-desc": "[[Special:GlobalUsage|Speciale pagina]] voor het bekijken van globaal bestandsgebruik",
@@ -21,7 +22,7 @@
 	"globalusage-no-results": "[[:$1]] wordt niet gebruikt in andere wiki's.",
 	"globalusage-on-wiki": "Gebruikt op $2",
 	"globalusage-of-file": "Dit bestand wordt op de volgende andere wiki’s gebruikt:",
-	"globalusage-more": "[[{{#Special:GlobalUsage}}/$1|Globaal gebruik]] van dit bestand bekijken.",
+	"globalusage-more": "[[{{#Special:GlobalUsage}}/$1|Mondiaal gebruik]] van dit bestand bekijken.",
 	"globalusage-filterlocal": "Lokaal gebruik niet weergeven",
 	"mostgloballylinkedfiles": "Wereldwijd meest gekoppelde bestanden",
 	"mostgloballylinkedfiles-summary": "Lijst van bestanden die zijn opgenomen met het hoogste aantal keer over alle wiki's. Voor het equivalent lijst die alleen rekening houdt met de gewoonte op {{SITENAME}}, zie [[{{#special:MostLinkedFiles}}]].",
