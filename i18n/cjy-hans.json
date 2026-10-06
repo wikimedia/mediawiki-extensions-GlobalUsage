@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Villager-bloc-h"
+		]
+	},
+	"globalusage": "全域文件用途",
+	"globalusage-on-wiki": "$2上个用途",
+	"globalusage-of-file": "下面这些别个wiki也用这个文件：",
+	"globalusage-more": "看这个文件个[[{{#Special:GlobalUsage}}/$1|更多全域使用]]。"
+}
