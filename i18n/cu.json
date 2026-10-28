@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"ОйЛ"
+			"ОйЛ",
+			"Oujon"
 		]
 	},
+	"globalusage": "Обьще употрѣблѥниѥ дѣла",
 	"globalusage-ok": "ищи",
 	"globalusage-on-wiki": "польꙃєваниѥ въ $2",
 	"globalusage-of-file": "инꙑ мѣста къдє сѥ дѣло польꙃєвано ѥстъ :"
